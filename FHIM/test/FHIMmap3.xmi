@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:mdmi="http://schema.omg.org/spec/MDMI/1.0">
+  <mdmi:MessageGroup xmi:id="_-A_NoFi8EeaPXJzrbKGcEg" name="FHIM_IntoleranceCondition,HumanPatient" description="IntoleranceCondition,HumanPatient Message Group" defaultLocationExprLang="XPath" defaultConstraintExprLang="JavaScript" defaultRuleExprLang="JavaScript">
+    <domainDictionary xmi:id="_-BK0ZVi8EeaPXJzrbKGcEg">
+      <businessElements xmi:id="_-BK0Zli8EeaPXJzrbKGcEg" name="AllergyConcernContainer" description="A container for organizing the clients's allergies and adverse reactions that are related to one another. Specific observations of problems or other clinical statements captured at a point in time are wrapped into this a Allergy Concern" reference="-" uniqueIdentifier="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0Z1i8EeaPXJzrbKGcEg" name="AllergyConcernStartDate" description="The date the Allergy Concern was first recorded." reference="-" uniqueIdentifier="e7e780ef-09c5-48e9-8b43-75b14e921d35" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0aFi8EeaPXJzrbKGcEg" name="AllergyObservationAllergyTypeCode" description="A code for the specific Type of Allergy observed" reference="-" uniqueIdentifier="39c7c1a7-46c6-45ac-ab76-00a19b198b88" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.3.88.12.3221.6.2" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0aVi8EeaPXJzrbKGcEg" name="AllergyObservationContainer" description="A container for organizing all of the specific assessments and treatments of a patient for a specific allergy / adverse reaction Concern." reference="-" uniqueIdentifier="f2b74432-5fb6-473b-b995-c4d839eacd75" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0ali8EeaPXJzrbKGcEg" name="AllergyObservationID" description="a unique identifier assigned by an administrative body to the specific allergy observation" reference="-" uniqueIdentifier="e16a6146-42c0-4a28-a320-2cd664638f83" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0a1i8EeaPXJzrbKGcEg" name="AllergyReactionContainer" description="A container holding Business Elements associated with each reaction observed in a specific observation. There may be multiple reactions observed in a specific observation." reference="-" uniqueIdentifier="e20b3fd4-a386-4d90-aa17-d4e16cb377a9" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0bFi8EeaPXJzrbKGcEg" name="AllergyReactionID" description="The identifier assigned by the administrative body  to the observation of an allergy reaction." reference="-" uniqueIdentifier="634ccc25-1115-4030-8e6c-535de4c546b8" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0bVi8EeaPXJzrbKGcEg" name="AllergyReactionNotes" description="Notes (unstructured text) describing the reaction by the observer" reference="-" uniqueIdentifier="d0dd472b-e8a8-484f-bfd8-c751f974eabd" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0bli8EeaPXJzrbKGcEg" name="AllergyReactionSeverityValue" description="A code representing the severity of the specific Allergy reaction" reference="-" uniqueIdentifier="1ca83872-3f5c-4347-90f2-6ad9ac91967c" enumValueSet="2.16.840.1.113883.3.88.12.3221.6.8" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0b1i8EeaPXJzrbKGcEg" name="AllergyReactionValue" description="A code representing the type of Allergy reaction" reference="-" uniqueIdentifier="3f3ed4df-0fbb-44f5-9396-0fd79d033fd3" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.3.88.12.3221.7.4" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0cFi8EeaPXJzrbKGcEg" name="AllergyObservationSeverityNotes" description="Notes on the severity of the allergy reaction" reference="-" uniqueIdentifier="9f911ed4-85aa-4628-8b89-a02433b67949" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0cVi8EeaPXJzrbKGcEg" name="AllergyObservationSeverityValue" description="A code representing the severity of the reactions to a specific allergen" reference="-" uniqueIdentifier="7931e589-0680-4a02-9d29-b8cd923b9dc5" enumValueDescrField="hl7" enumValueSet="2.16.840.1.113883.3.88.12.3221.6.8" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0cli8EeaPXJzrbKGcEg" name="DocumentAuthor" reference="-" uniqueIdentifier="38e02314-1ad3-4af5-89cb-3b0b17f7760b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0c1i8EeaPXJzrbKGcEg" name="DocumentAuthorAddress" reference="-" uniqueIdentifier="ecb9af68-f098-48e7-b941-4542104a7ae5" readonly="true">
+        <referenceDatatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0dFi8EeaPXJzrbKGcEg" name="DocumentAuthorName" reference="-" uniqueIdentifier="e6bcac02-6863-4203-9c44-8a9215549c06" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0dVi8EeaPXJzrbKGcEg" name="DocumentAuthorID" reference="-" uniqueIdentifier="6ce0a799-fced-485b-ad83-5ab049b51097" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0dli8EeaPXJzrbKGcEg" name="DocumentAuthorTelecom" reference="-" uniqueIdentifier="4dbf6b62-4deb-4834-a9b8-8acfc5db8bec" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0d1i8EeaPXJzrbKGcEg" name="DocumentAuthorTime" reference="-" uniqueIdentifier="6161dfe6-06d5-4aee-b3f1-8e14ead8338b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0eFi8EeaPXJzrbKGcEg" name="CarePlanGoalId" uniqueIdentifier="ede04232-d0ec-4879-adea-4f7e08ac7917" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0eVi8EeaPXJzrbKGcEg" name="CarePlanGoals" uniqueIdentifier="2c6b9512-41f4-48e5-9471-25d4478a92f7" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0eli8EeaPXJzrbKGcEg" name="CarePlanSection" uniqueIdentifier="409d5f35-22f1-4699-8cce-22ce1ae25e6f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0e1i8EeaPXJzrbKGcEg" name="CarePlanSectionText" uniqueIdentifier="27a3dced-791a-4381-95da-93e68b890c66" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0fFi8EeaPXJzrbKGcEg" name="CarePlanSectionTitle" uniqueIdentifier="7ba0c0ed-1011-4ff1-95d5-855c2a366d38" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0fVi8EeaPXJzrbKGcEg" name="PatientAdministrationGenderCode" description="A code describing the gender of the Patient used in making administrative decisions." reference="-" uniqueIdentifier="03844ed8-168e-4a76-8777-1f759e86eea2" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.1.11.1" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0fli8EeaPXJzrbKGcEg" name="PatientBirthPlaceAddress" description="The address where the Patient was born" reference="-" uniqueIdentifier="787eb894-88e2-445a-9f30-89d38bca3380" readonly="true">
+        <referenceDatatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0f1i8EeaPXJzrbKGcEg" name="PatientDateOfBirth" description="The date of birth of the Patient" reference="-" uniqueIdentifier="86f39389-81b7-464b-a90d-d19ae8410fa2" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0gFi8EeaPXJzrbKGcEg" name="PatientEthnicityCode" description="The code representing the ethnicity specified by the Patient" reference="-" uniqueIdentifier="b29dc139-8a2b-473d-820b-0331b7ae0aa3" enumValueDescrField="HL7" enumValueSet="2.16.840.1.114222.4.11.837" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0gVi8EeaPXJzrbKGcEg" name="PatientHomeAddress" description="The home address for the Patient" reference="-" uniqueIdentifier="eef49a28-a96e-40a7-b328-981c5addd245" readonly="true">
+        <referenceDatatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0gli8EeaPXJzrbKGcEg" name="PatientHomePhone" description="The home telephone number for the Patient" reference="-" uniqueIdentifier="cfb8b147-38a5-4272-87c6-f1fa4cb97457" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0g1i8EeaPXJzrbKGcEg" name="PatientID" description="An identifier that applies to this person as a Patient." reference="-" uniqueIdentifier="c904cd8d-6283-46f9-b671-25702214a8b6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0hFi8EeaPXJzrbKGcEg" name="PatientLanguageAbilityCode" description="A code indicating the Patient's ability with specific language." reference="-" uniqueIdentifier="019b72b7-483c-4fa5-8137-d5ab65bc76ad" enumValueSet="2.16.840.1.113883.1.11.12249" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0hVi8EeaPXJzrbKGcEg" name="PatientLanguageCode" description="A code representing a language used to communicate with the Patient" reference="-" uniqueIdentifier="e2229d9e-f294-4005-b4c3-86e397b892fb" enumValueSet="2.16.840.1.113883.1.11.11526" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0hli8EeaPXJzrbKGcEg" name="PatientLanguageContainer" description="A container used to so that associates individual Business Elements associated with a specific language in which a Patient may be able to communicate." reference="-" uniqueIdentifier="800fb398-f49c-47da-8187-2d285dd58866" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0h1i8EeaPXJzrbKGcEg" name="PatientLanguagePerferenceIndicator" description="Used to indicate (Yes) this is the language to be used in communicating with the Patient" reference="-" uniqueIdentifier="b230a553-9ca0-43d8-abf0-c5d633a567bf" readonly="true">
+        <referenceDatatype xmi:idref="_-BK12li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0iFi8EeaPXJzrbKGcEg" name="PatientMaritalStatus" description="A code specifying  Patient's current domestic partnership status." reference="-" uniqueIdentifier="6cf44ff0-2cfa-493b-98a6-44f35acd195c" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.1.11.12212" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0iVi8EeaPXJzrbKGcEg" name="PatientName" description="the name the Patient normally uses" reference="-" uniqueIdentifier="b8cff71f-9f24-48d4-a33c-69743c5cdf0a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0ili8EeaPXJzrbKGcEg" name="PatientRace" description="A code for a race of the Patient specified by the Patient" reference="-" uniqueIdentifier="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.1.11.14914" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0i1i8EeaPXJzrbKGcEg" name="PatientReligousAffliationCode" description="The code representing the religous afflication specified by the Patient" reference="-" uniqueIdentifier="907a4b6c-e002-4046-973b-0395d0415de9" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.1.11.19185" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0jFi8EeaPXJzrbKGcEg" name="CustodianOrganizationAddress" uniqueIdentifier="21c0890f-4fec-4a68-89fe-0cbbaae6f311" readonly="true">
+        <referenceDatatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0jVi8EeaPXJzrbKGcEg" name="CustodianOrganizationID" uniqueIdentifier="c2248529-5f7c-4c58-833b-46f53e300145" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0jli8EeaPXJzrbKGcEg" name="CustodianOrganizationName" uniqueIdentifier="04a10feb-5ab3-4e83-9bf3-d1c158426d0a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0j1i8EeaPXJzrbKGcEg" name="CustodianOrganizationTelecom" uniqueIdentifier="f763e869-574b-458c-bbfe-fd4542492b86" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0kFi8EeaPXJzrbKGcEg" name="DocumentDataEntererAssignPersonName" reference="-" uniqueIdentifier="46a9bddc-4152-4fa2-9f5b-36a7a708ad28" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0kVi8EeaPXJzrbKGcEg" name="DocumentDataEntererEntityID" reference="-" uniqueIdentifier="6249660d-0b62-43fa-b28f-2098a25fd002" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0kli8EeaPXJzrbKGcEg" name="DocumentDataEntererEntityTelecom" reference="-" uniqueIdentifier="0ef74fc9-38a0-42e2-a9d6-5265aeccbba3" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0k1i8EeaPXJzrbKGcEg" name="DocumentAuthenicatedEntityAddress" reference="-" uniqueIdentifier="25c51852-c2b0-4e1c-a366-223aee77276a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0lFi8EeaPXJzrbKGcEg" name="DocumentAuthenticatedAssignedPersonName" uniqueIdentifier="5f4bc15c-b4d3-43f5-8d9e-e08f38d39442" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0lVi8EeaPXJzrbKGcEg" name="DocumentAuthenticatedEntityTelecom" uniqueIdentifier="72703640-802e-4954-9392-5bcad1117768" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0lli8EeaPXJzrbKGcEg" name="DocumentAuthenticatedSignatureCode" uniqueIdentifier="57fde332-3dff-4eda-b8d8-ff915b6f2ba2" enumValueSet="2.16.840.1.113883.5.89" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0l1i8EeaPXJzrbKGcEg" name="DocumentAuthenticatedTime" uniqueIdentifier="af383f6a-8ca2-41ac-8e3a-9e97ebf5a058" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0mFi8EeaPXJzrbKGcEg" name="DocumentAuthenticatorEntityId" uniqueIdentifier="02e377ba-42e1-4c92-9988-af7f144ff1e5" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0mVi8EeaPXJzrbKGcEg" name="DocumentAuthorCode" uniqueIdentifier="200d6cb5-0d6d-4d35-84aa-d9010b68a6a6" enumValueDescrField="nucc" enumValueSet="2.16.840.1.114222.4.11.1066" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0mli8EeaPXJzrbKGcEg" name="DocumentCode" reference="-" uniqueIdentifier="db98a4bb-4fc0-43cd-b3f2-c860653ea76e" enumValueDescrField="loinc" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0m1i8EeaPXJzrbKGcEg" name="DocumentConfidentialityCode" uniqueIdentifier="2a08de16-fc84-444d-a91c-d4b229fa502e" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.1.11.16926" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0nFi8EeaPXJzrbKGcEg" name="DocumentEncompassingEncounterEffectiveTime" uniqueIdentifier="ae5d7703-0152-4531-b99d-86652602f5f2" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0nVi8EeaPXJzrbKGcEg" name="DocumentEncompassingEncounterID" uniqueIdentifier="a3fbbac5-0a09-4aa2-8f87-f7bc7c573abf" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0nli8EeaPXJzrbKGcEg" name="DocumentID" reference="-" uniqueIdentifier="17cb9e1f-97d6-4ba9-b43f-b6d906392531" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0n1i8EeaPXJzrbKGcEg" name="DocumentIInformantEntityId" reference="-" uniqueIdentifier="45e52bc8-17b3-46da-9c3f-bcd7148fe501" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0oFi8EeaPXJzrbKGcEg" name="DocumentIRelatedInformantPersonName" uniqueIdentifier="ee993d50-0c64-437c-bb8d-c57cb7c67a82" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0oVi8EeaPXJzrbKGcEg" name="DocumentLanguageCode" reference="-" uniqueIdentifier="8f30da3a-b3b1-4842-9207-8dd372aa9c3f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0oli8EeaPXJzrbKGcEg" name="DocumentRealmCode" reference="-" uniqueIdentifier="bac5a0e9-27c0-428a-953a-df50ef81be64" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0o1i8EeaPXJzrbKGcEg" name="DocumentSetId" uniqueIdentifier="ede8df42-388e-4074-b3b5-0c8ea44c9822" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0pFi8EeaPXJzrbKGcEg" name="DocumentTime" reference="-" uniqueIdentifier="02d57129-9f7a-432f-b520-34452bec6e4b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0pVi8EeaPXJzrbKGcEg" name="DocumentTypeID" uniqueIdentifier="2017f144-f571-4f90-b1ec-7c966548b984" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0pli8EeaPXJzrbKGcEg" name="Encounter" uniqueIdentifier="3e1aa1cc-1758-4b7c-9471-e51132045e1d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0p1i8EeaPXJzrbKGcEg" name="EncounterActivityCode" uniqueIdentifier="00b1f01b-476d-4ed2-b451-b1c1001bead8" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0qFi8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosis" uniqueIdentifier="f3771829-e7fb-4f7e-962a-2e9d0a93f7d0" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0qVi8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisNotAProblemObservation" uniqueIdentifier="df955eb5-28ca-4485-b749-fa419dad6374" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0qli8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisNotAProblemObservationCode" uniqueIdentifier="df89f551-11e0-43b2-9d40-7d0ee3878fcb" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0q1i8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisNotAProblemObservationId" uniqueIdentifier="bbe35902-0d82-41ee-990f-ae70a4718712" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0rFi8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisNotAProblemObservationText" uniqueIdentifier="212307e0-d0c5-44ed-aa83-0b44bd3fa53b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0rVi8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisNotAProblemObservationValue" uniqueIdentifier="3aeb0265-28ec-48f0-b642-94aa0f8d5399" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0rli8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisProblemObservationAgeAtObservation" uniqueIdentifier="f252c835-4722-41fb-b1de-c4f5cc340f96" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0r1i8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisProblemObservationCode" uniqueIdentifier="d737efb7-2a63-4b05-8084-84f0c49c9685" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0sFi8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisProblemObservationHealthStatus" uniqueIdentifier="d331da28-78f8-4803-be29-d66416c8158e" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0sVi8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisProblemObservations" uniqueIdentifier="f8d01e4c-2314-4cc1-bd5c-ee42efc1e440" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0sli8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisProblemObservationStatus" uniqueIdentifier="fa242e30-2449-4285-bf9e-2616d70dd74c" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0s1i8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisProblemObservationText" uniqueIdentifier="81001a20-ef5e-4ac4-a11f-c1ce9f0b4a4b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0tFi8EeaPXJzrbKGcEg" name="EncounterActivityDiagnosisProblemObservationValue" uniqueIdentifier="d587b0dd-26fe-4f52-bdd2-804bc0c1a564" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0tVi8EeaPXJzrbKGcEg" name="EncounterActivityId" reference="-" uniqueIdentifier="a4d930f5-6e49-4da5-ac9d-5bda2d49f770" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0tli8EeaPXJzrbKGcEg" name="EncounterActivityIndicationCode" uniqueIdentifier="dc3a1856-7e01-4693-823c-8b2f7252381c" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0t1i8EeaPXJzrbKGcEg" name="EncounterActivityIndications" uniqueIdentifier="0ee2df62-6740-482f-aff1-fee38670ce8f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0uFi8EeaPXJzrbKGcEg" name="EncounterActivityIndicationValue" uniqueIdentifier="a0737a4c-00ae-4a34-b8ab-3b7cefdf5465" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0uVi8EeaPXJzrbKGcEg" name="EncounterActivityServiceLocationBusinessPhone" uniqueIdentifier="b24eeb00-cbf0-488a-8ef2-d468523534df" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0uli8EeaPXJzrbKGcEg" name="EncounterActivityServiceLocations" uniqueIdentifier="88204788-db91-4342-8023-8d40cd713a6e" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0u1i8EeaPXJzrbKGcEg" name="EncounterDischargeDisposition" uniqueIdentifier="83e9af33-e6ba-408b-a9a6-9f3317e87bfe" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0vFi8EeaPXJzrbKGcEg" name="EncounterSectionText" reference="-" uniqueIdentifier="27989bb3-2926-4782-95f4-d99f56e18085" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0vVi8EeaPXJzrbKGcEg" name="EncounterSectionTitle" uniqueIdentifier="6dd55256-d5be-4346-9eab-f59a899bf700" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0vli8EeaPXJzrbKGcEg" name="FamilyHistoryObservation" uniqueIdentifier="dbe24d1d-3d99-4d8d-afe9-4cec2591b618" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0v1i8EeaPXJzrbKGcEg" name="FamilyHistoryObservationAgeAtObservation" uniqueIdentifier="4b0bf86b-4512-44a4-9473-2c473a106d9f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0wFi8EeaPXJzrbKGcEg" name="FamilyHistoryObservationCode" uniqueIdentifier="c09b1f16-9464-4fc3-9916-46ef5fa4857b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0wVi8EeaPXJzrbKGcEg" name="FamilyHistoryObservationId" uniqueIdentifier="55c6a966-2c55-467f-9a8a-76ab62e78f02" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0wli8EeaPXJzrbKGcEg" name="FamilyHistoryObservationRelatedPartyAdministrativeGender" uniqueIdentifier="9d82c959-fe3f-4c1a-a50a-03856c4b306f" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.4.642.1.1" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0w1i8EeaPXJzrbKGcEg" name="FamilyHistoryObservationRelatedPartyBirthDate" uniqueIdentifier="7aae0ee8-a0a8-4a89-89be-fe47d37ccef9" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0xFi8EeaPXJzrbKGcEg" name="FamilyHistoryObservationRelatedPartyCode" uniqueIdentifier="dce9f617-fc0d-48d9-9f52-dd9e8140b0e3" enumValueDescrField="hl7" enumValueSet="2.16.840.1.113883.1.11.19563" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0xVi8EeaPXJzrbKGcEg" name="FamilyHistoryObservationRelatedPartyDeceasedIndicator" uniqueIdentifier="c176c614-c8ba-48b5-8b8e-08a74b12f730" readonly="true">
+        <referenceDatatype xmi:idref="_-BK12li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0xli8EeaPXJzrbKGcEg" name="FamilyHistoryObservationStartTime" uniqueIdentifier="1694da9f-ab89-43a3-b6e9-14386e4bb3b9" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0x1i8EeaPXJzrbKGcEg" name="FamilyHistoryObservationValue" uniqueIdentifier="775c3085-4183-4618-ac0d-9e9cb8521660" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0yFi8EeaPXJzrbKGcEg" name="FamilyHistorySection" uniqueIdentifier="7e48ac01-1752-48d5-99ce-867c8594d01a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0yVi8EeaPXJzrbKGcEg" name="FamilyHistorySectionText" uniqueIdentifier="ba3b6032-f091-49c3-8e30-afc09d257502" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0yli8EeaPXJzrbKGcEg" name="FamilyHistorySectionTitle" uniqueIdentifier="55362342-d008-4c01-8942-d8f0f3840789" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0y1i8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveBattery" uniqueIdentifier="aaf0fc79-b1d8-4c4a-99d6-a5fd56be994c" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0zFi8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveBatteryCode" uniqueIdentifier="840892aa-47b2-49b6-a665-b96ec0d92cb9" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0zVi8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveBatteryId" uniqueIdentifier="57084762-d3f6-477c-8440-76676c995e73" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0zli8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveNotAProblemId" uniqueIdentifier="a3af6e96-5677-4d3c-b825-19d7a7765a26" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0z1i8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveNotAProblemObservation" uniqueIdentifier="10b6c301-2ab1-461e-87da-aa1c8a72a603" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK00Fi8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveNotAProblemObservationMethodCode" uniqueIdentifier="27df59b4-754b-4edf-9b6b-9798f25ff228" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK00Vi8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveNotAProblemObservationValue" uniqueIdentifier="e8fde44a-be02-417c-b2ff-caf3139fd41b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK00li8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveNotAProblemText" uniqueIdentifier="8936cec4-2a7a-4a4d-a7b5-1a22fa5a5bcf" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK001i8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveProblemID" uniqueIdentifier="8d9f9cfe-f865-4c97-a67b-5ff15b16a9c6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK01Fi8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveProblemObservation" uniqueIdentifier="0a9229a4-8d9b-423b-b98d-05974304bc29" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK01Vi8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveProblemObservationMethodCode" uniqueIdentifier="0a89f929-c8ec-4f66-b620-5ee65c76b6c1" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK01li8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveProblemObservationText" uniqueIdentifier="094e879c-cefd-48b5-bca6-5608d4a83d9e" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK011i8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveProblemObservationValue" uniqueIdentifier="294e95e1-85da-44e1-ba3e-75bb3b8f5c88" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK02Fi8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveResultObservation" uniqueIdentifier="b8c2717a-ba55-45ba-8166-f922eec873ef" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK02Vi8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveResultObservationAuthorFunctionCode" uniqueIdentifier="f49516a2-1e16-4b08-b713-0c8062dc5671" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK02li8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveResultObservationAuthorName" uniqueIdentifier="6d50ded1-ca0d-472e-9bbb-cb0e00cdfbfa" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK021i8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveResultObservationAuthorTime" uniqueIdentifier="82bf3953-1cd8-4f2a-b5ff-ee487ccfedfe" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK03Fi8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveResultObservationId" uniqueIdentifier="a4ff5817-d5ae-4cfc-a256-4787c3aeb0ce" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK03Vi8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveResultObservationInterpretationCode" uniqueIdentifier="76ec4438-63e6-407c-b974-66c5c576a161" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK03li8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveResultObservationMethodCode" uniqueIdentifier="6c817bd4-b48e-4dbc-8576-085977dac34c" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK031i8EeaPXJzrbKGcEg" name="FunctionalStatusCognitiveResultObservationTargetSiteCode" uniqueIdentifier="2c3fa2ea-7e20-4c43-8f92-c9873a7ad5e6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK04Fi8EeaPXJzrbKGcEg" name="FunctionalStatusNotAProblemObservation" uniqueIdentifier="8ac58ef6-814f-49d2-8a4d-83a754e1ebe3" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK04Vi8EeaPXJzrbKGcEg" name="FunctionalStatusNotAProblemObservationId" uniqueIdentifier="899b9ded-2f4f-4dc2-80cd-2d277831acb5" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK04li8EeaPXJzrbKGcEg" name="FunctionalStatusNotAProblemObservationMethodCode" uniqueIdentifier="50a44c50-b723-4990-9c48-650e32108984" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK041i8EeaPXJzrbKGcEg" name="FunctionalStatusNotAProblemObservationText" uniqueIdentifier="dd4d7181-6b06-4312-aacd-fe8994e9f3d4" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK05Fi8EeaPXJzrbKGcEg" name="FunctionalStatusNotAProblemObservationValue" uniqueIdentifier="5d6f8330-8a73-41ea-8edc-145ce13f9eb6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK05Vi8EeaPXJzrbKGcEg" name="FunctionalStatusProblemObservation" uniqueIdentifier="54ebb14a-2bd5-4123-a4a0-e92a6022404f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK05li8EeaPXJzrbKGcEg" name="FunctionalStatusProblemObservationId" uniqueIdentifier="c65b2314-4171-4e58-9a32-6c2bb9b3d879" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK051i8EeaPXJzrbKGcEg" name="FunctionalStatusProblemObservationMethodCode" uniqueIdentifier="18380f9e-f5d8-4855-ba6f-0a255f69eb6d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK06Fi8EeaPXJzrbKGcEg" name="FunctionalStatusProblemObservationText" uniqueIdentifier="4db1369c-dfc2-48a6-84b1-21543dd98c2c" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK06Vi8EeaPXJzrbKGcEg" name="FunctionalStatusProblemObservationValue" uniqueIdentifier="3a39e4e1-29a9-488d-92fb-59bd0815b850" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK06li8EeaPXJzrbKGcEg" name="FunctionalStatusResultBattery" uniqueIdentifier="70544a04-0889-46f6-ad2f-87f3c49cd365" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK061i8EeaPXJzrbKGcEg" name="FunctionalStatusResultBatteryID" uniqueIdentifier="1f107244-2f1f-4c57-905d-2a3312129659" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK07Fi8EeaPXJzrbKGcEg" name="FunctionalStatusResultObservation" uniqueIdentifier="d6bf581f-2606-4a13-b804-d5685e9382f7" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK07Vi8EeaPXJzrbKGcEg" name="FunctionalStatusResultObservationAuthorFunctionCode" uniqueIdentifier="3a3d6067-7c90-4702-8d8a-feeb4a4b35a8" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK07li8EeaPXJzrbKGcEg" name="FunctionalStatusResultObservationAuthorPersonName" uniqueIdentifier="c3e6ef3b-5504-44a3-95ac-394c06d04549" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK071i8EeaPXJzrbKGcEg" name="FunctionalStatusResultObservationAuthorTime" uniqueIdentifier="2e8d153a-27cf-4497-865c-339e79560649" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK08Fi8EeaPXJzrbKGcEg" name="FunctionalStatusResultObservationId" uniqueIdentifier="0f7574b9-ac84-42fe-8b59-6ed9baab0ea6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK08Vi8EeaPXJzrbKGcEg" name="FunctionalStatusResultsBatteryCode" uniqueIdentifier="45e59a06-8891-42b5-a8f8-a5844f26e519" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK08li8EeaPXJzrbKGcEg" name="FunctionalStatusResultsObservationCode" uniqueIdentifier="685b6eb8-604d-4be0-972e-b2fa3e94cd99" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK081i8EeaPXJzrbKGcEg" name="FunctionalStatusResultsObservationInterpretationCode" uniqueIdentifier="771d3b22-65e8-4751-8e29-192e1c06466a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK09Fi8EeaPXJzrbKGcEg" name="FunctionalStatusResultsObservationMethodCode" uniqueIdentifier="88496743-0a96-4f91-9287-c1b76275123a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK09Vi8EeaPXJzrbKGcEg" name="FunctionalStatusResultsObservationTargetSite" uniqueIdentifier="5ac8ed31-4165-40a6-b5cf-03747ba0ea80" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK09li8EeaPXJzrbKGcEg" name="FunctionalStatusResultsObservationText" uniqueIdentifier="3e88a44d-23d5-43dd-aace-87d7e704055f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK091i8EeaPXJzrbKGcEg" name="FunctionalStatusResultsObservationValue" uniqueIdentifier="71415e1f-33a7-46d5-bdb7-e8303cfb4442" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0-Fi8EeaPXJzrbKGcEg" name="FunctionalStatusSection" uniqueIdentifier="fd766bc7-febf-42ea-be92-2261b10a0e05" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0-Vi8EeaPXJzrbKGcEg" name="FunctionalStatusSectionText" uniqueIdentifier="b3092720-8497-45d5-bd31-8f09a04a1581" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0-li8EeaPXJzrbKGcEg" name="FunctionalStatusSectionTitle" uniqueIdentifier="459dc8c1-49f9-41d7-84a9-113750c1ae08" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0-1i8EeaPXJzrbKGcEg" name="GuardianAddress" uniqueIdentifier="af5149a1-d90e-4922-af02-ce8d9fa008b3" readonly="true">
+        <referenceDatatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0_Fi8EeaPXJzrbKGcEg" name="GuardianName" uniqueIdentifier="95eaf16d-f5c2-453b-a3a3-006253fddd29" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0_Vi8EeaPXJzrbKGcEg" name="GuardianRelationship" uniqueIdentifier="49e13ec4-7e7b-4644-b4c1-296503240b62" enumValueSet="2.16.840.1.113883.1.11.19563" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0_li8EeaPXJzrbKGcEg" name="GuardianTelecom" uniqueIdentifier="187f9566-2e29-4d5d-a335-b90b8ee88506" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK0_1i8EeaPXJzrbKGcEg" name="ImmunizationAdministeredContainer" reference="-" uniqueIdentifier="7af1b775-e58c-4067-b971-3c743533b308" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1AFi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredDate" reference="-" uniqueIdentifier="f8adcada-f905-4a80-bec8-ae7d53378a3a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1AVi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredDoseQuantity" reference="-" uniqueIdentifier="05682b48-bebd-4f36-b03f-117ffca5d799" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2JVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Ali8EeaPXJzrbKGcEg" name="ImmunizationAdministeredManufacturerName" reference="-" uniqueIdentifier="56d934e7-e99a-48ae-b642-c6f1e69ada43" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1A1i8EeaPXJzrbKGcEg" name="ImmunizationAdministeredNotes" reference="-" uniqueIdentifier="d6c181df-ddf8-446d-8699-841de280d5ee" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1BFi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredId" reference="-" uniqueIdentifier="8c02401f-cd06-41c7-944b-298c0127f188" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1BVi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredLotNumber" reference="-" uniqueIdentifier="008bb3da-b5b5-4344-bdb0-e36a0a76269b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Bli8EeaPXJzrbKGcEg" name="ImmunizationAdministeredPatientEducationCode" reference="-" uniqueIdentifier="cb4b6c1b-f7af-48a2-a3ce-1b092681074d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1B1i8EeaPXJzrbKGcEg" name="ImmunizationAdministeredPatientInstructionsNotes" reference="-" uniqueIdentifier="7eaec129-3f3c-4f0f-99b1-a03eede633fe" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1CFi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredPerformerEntityAddress" reference="-" uniqueIdentifier="94a243da-c63f-4e5a-9a76-318368c3ab5f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1CVi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredPerformerEntityID" reference="-" uniqueIdentifier="61df4ba8-e709-4a8b-bba4-8524eb501fc4" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Cli8EeaPXJzrbKGcEg" name="ImmunizationAdministeredPerformerEntityTelecom" reference="-" uniqueIdentifier="8f25e6d0-7817-4131-9b78-85c5653e2862" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1C1i8EeaPXJzrbKGcEg" name="ImmunizationAdministeredPerformerPersonName" reference="-" uniqueIdentifier="248db248-8547-4efc-b533-0f71158a8039" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1DFi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredPerformerOrganizationTelecom" reference="-" uniqueIdentifier="86572f90-2655-4354-b6d4-123b4180db67" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1DVi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredMedicationCode" reference="-" uniqueIdentifier="3aa3f589-ed3c-47f3-97cc-d97775399103" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Dli8EeaPXJzrbKGcEg" name="ImmunizationRefusedContainer" reference="-" uniqueIdentifier="0893fecd-4422-43be-8f39-ab02a353f576" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1D1i8EeaPXJzrbKGcEg" name="ImmunizationRefusedDate" reference="-" uniqueIdentifier="75e9ee9f-c10a-4c62-872e-b817661f5ea8" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1EFi8EeaPXJzrbKGcEg" name="ImmunizationRefusedReasonCode" reference="-" uniqueIdentifier="5f3f7f86-618a-45d3-a87e-5bec8984ba5e" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1EVi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredRouteCode" reference="-" uniqueIdentifier="095148b4-9810-4c0c-bca9-d4c5c748fa47" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Eli8EeaPXJzrbKGcEg" name="ImmunizationSection" uniqueIdentifier="7c3e5413-220e-4bea-b672-a98ad8c931a8" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1E1i8EeaPXJzrbKGcEg" name="InformantAssignedtEntityAddress" uniqueIdentifier="bb48c680-15be-41b1-b5da-081fc57c626f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1FFi8EeaPXJzrbKGcEg" name="InformationRecipientOrganizationName" uniqueIdentifier="455e4b2f-a6b5-4445-a9e2-d2387452ffa2" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1FVi8EeaPXJzrbKGcEg" name="InformationRecipientPersonName" uniqueIdentifier="569bc6f1-43d1-4690-bbf9-bef60b226f20" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Fli8EeaPXJzrbKGcEg" name="LegalAuthenticatorEntityAddress" uniqueIdentifier="0575a012-a7a7-40b7-8ad4-4cd0df5e5649" readonly="true">
+        <referenceDatatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1F1i8EeaPXJzrbKGcEg" name="LegalAuthenticatorEntityTelecom" uniqueIdentifier="2435a653-8647-417a-bbcf-73890594a267" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1GFi8EeaPXJzrbKGcEg" name="LegalAuthenticatorSignatureCode" uniqueIdentifier="833db84c-fe20-4132-98aa-d26548e35b6f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1GVi8EeaPXJzrbKGcEg" name="LegalAuthorizationSignatureCode" uniqueIdentifier="f36a55bd-660a-4069-8eb0-4b06a581da1a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Gli8EeaPXJzrbKGcEg" name="LegalTimeOfAuthentication" uniqueIdentifier="e7a341a5-4b08-465f-bf22-b4735e59c702" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1G1i8EeaPXJzrbKGcEg" name="MedicationAdministeredDosageRate" description="Identifies the speed with which the medication was introduced into the patient. Typically the rate for an infusion e.g. 200ml in 2 hours. May also expressed as a rate per unit of time such as 100ml per hour" reference="-" uniqueIdentifier="7c16bb80-4d41-4592-994f-b373a6b56b7d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2JVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1HFi8EeaPXJzrbKGcEg" name="MedicationAdministeredDosageRoute" description="The SNOMED CT code (need identifier) specifying the route or physiological path of medication that was administered into or onto the patient. E.g. topical" reference="-" uniqueIdentifier="8fe79500-d0bf-43f3-a6b3-246b75656043" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1HVi8EeaPXJzrbKGcEg" name="MedicationAdministeredDosageSite" description="The  code of the anatomic site where the medication first entered the body. E.g. left arm." reference="-" uniqueIdentifier="117ffc37-696b-4d72-8aaa-0d04e7f3eba1" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Hli8EeaPXJzrbKGcEg" name="MedicationAdministeredDosageUnitCode" description="This is the physical form of the product as presented to the individual." reference="-" uniqueIdentifier="0d00c8b8-b802-4d2e-b42f-8b681db9df5c" enumValueSet="2.16.840.1.113883.3.88.12.3221.8.11" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1H1i8EeaPXJzrbKGcEg" name="MedicationAdministeredID" description="a unique identifier  assigned by an administrative body to identity a particular medication given to a patient.  The datatype InstanceIdentifier also contains data elements to identifies who assigned the unique id." reference="-" uniqueIdentifier="c288c2b4-e001-495d-9cd9-011dcb4c2da5" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1IFi8EeaPXJzrbKGcEg" name="MedicationAdministeredMedicationCode" description="The RXNorm code for the medication administered." reference="-" uniqueIdentifier="271b979b-7064-46cd-b0ad-3d43224499fb" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1IVi8EeaPXJzrbKGcEg" name="MedicationAdministeredNotes" description="Notes (structured text) by the administrator of the medication" reference="-" uniqueIdentifier="e8b737cc-12bc-4dcd-a0a5-650654055fab" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Ili8EeaPXJzrbKGcEg" name="MedicationAdministeredStatusCode" description="Status of the adminstration of the medication.  Except for long running administrations" reference="-" uniqueIdentifier="333e512f-80c4-48f0-9e65-1426e4138f00" enumValueField="code" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1I1i8EeaPXJzrbKGcEg" name="MedicationAdminstered" reference="-" uniqueIdentifier="3a55586d-b8ac-4596-804e-83818f921f91" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1JFi8EeaPXJzrbKGcEg" name="MedicationDispenseID" description="Identifier assigned by the assigned authority / dispensing facility;  the presciption number." reference="-" uniqueIdentifier="f87d540d-8aa1-4a0f-b6f3-ec275b4400a6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1JVi8EeaPXJzrbKGcEg" name="MedicationDispenseOrderRefillsRemaining" description="The number of refills remaining in an order." reference="-" uniqueIdentifier="923094ec-cfe7-4977-bdab-e20ef37276fe" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Jli8EeaPXJzrbKGcEg" name="MedicationPerformerEntityID" uniqueIdentifier="f35845a3-636f-41a3-9b37-cf302e706eb7" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1J1i8EeaPXJzrbKGcEg" name="MedicationPerformerOrganizationAddress" uniqueIdentifier="c92faf9c-4e64-412b-a283-1b08655e38ac" readonly="true">
+        <referenceDatatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1KFi8EeaPXJzrbKGcEg" name="MedicationPerformerOrganizationTelecom" uniqueIdentifier="6349542a-57c7-46e4-bab9-87c69d939940" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1KVi8EeaPXJzrbKGcEg" name="MedicationPrescriptionContainer" description="A container used to associate all data elements of a prescription written medication order by a physician or other designated health professional for a medication to be dispensed by a pharmacy for administration to a patient.  The prescribing practitioner may  give a medication order verbally to a licensed person such as a pharmacist or a nurse.  The medication may be self-administered (by patient or patient's caregiver)." uniqueIdentifier="c95c7f80-c5ff-4b05-b02b-da48c51e248b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Kli8EeaPXJzrbKGcEg" name="MedicationPrescriptionDosageQuantity" description="The amount of medication prescribed to be given at one administration event" uniqueIdentifier="1d72d4ec-fbb5-46dd-b9a9-3c3ca878929b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2JVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1K1i8EeaPXJzrbKGcEg" name="MedicationPrescriptionDosageRoute" description="The  code  (SNOMED CT) specifying the route or physiological path of administration of the medication prescribed." uniqueIdentifier="6756b16a-be99-4e38-bece-47d3e92d55f5" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1LFi8EeaPXJzrbKGcEg" name="MedicationPrescriptionDosageSite" description="A code ( SNOMED CT) specifying the anatomic site where the medicationhas been prescribed to first enter the body." uniqueIdentifier="49d36b42-edc8-41cb-bac2-a41fe726bb61" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1LVi8EeaPXJzrbKGcEg" name="MedicationPrescriptionID" description="a unique identifier  assigned by an administrative body of the prescriber to identify particular medication prescribed to a patient.  The datatype InstanceIdentifier also contains data elements to identifies who / what assigned the unique id." uniqueIdentifier="17b72f19-0ba2-4f45-ab20-7070769fda2f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Lli8EeaPXJzrbKGcEg" name="MedicationPrescriptionPatientInstructions" description="Instructions written by the prescriber as to how the medication is to be taken." uniqueIdentifier="aa868a93-92d8-4887-86f2-c204e5842273" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1L1i8EeaPXJzrbKGcEg" name="MedicationPrescriptionStatusCode" description="A code specifying the present state of the entire prescription (active" uniqueIdentifier="d16d1fb5-528f-441d-bb65-88be2919125d" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1MFi8EeaPXJzrbKGcEg" name="MedicationSection" reference="-" uniqueIdentifier="66b674e8-01c3-4eeb-8677-ef4c2636b555" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1MVi8EeaPXJzrbKGcEg" name="MedicationSectionTitle" reference="-" uniqueIdentifier="4735944c-b380-44f6-b5f7-508f108fc605" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Mli8EeaPXJzrbKGcEg" name="PayerCoverageActivityPayerName" uniqueIdentifier="fbb4481c-684e-49e0-9584-86db700d2e40" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1M1i8EeaPXJzrbKGcEg" name="PayerCoverageActivityPayerType" uniqueIdentifier="13466dc2-3396-4d1f-b358-f9104b96ee55" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1NFi8EeaPXJzrbKGcEg" name="PayerCoverageCollection" description="Semantic Container for all the Semantic Elements contained in a particular instance of Insurance or Payment Coverage.  There can be multiple coverages for a patient." uniqueIdentifier="746bd27e-cf1b-4e85-97e5-ad524f96ca80" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1NVi8EeaPXJzrbKGcEg" name="PayerCoveragePolicyActivity" uniqueIdentifier="ecf9e63f-098a-4237-9426-34939fe2a179" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Nli8EeaPXJzrbKGcEg" name="PayerCoveragePolicyActivityId" uniqueIdentifier="7777e610-61f1-4a98-911e-bd8f45ce9a55" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1N1i8EeaPXJzrbKGcEg" name="PayersCoverageId" uniqueIdentifier="18ae3596-2d99-4ea5-843c-bc68a44bf629" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1OFi8EeaPXJzrbKGcEg" name="PayerSectionText" uniqueIdentifier="1789289c-83dc-4323-b789-5d109c2da816" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1OVi8EeaPXJzrbKGcEg" name="PayerSectionTitle" uniqueIdentifier="55b77b1f-206d-4f6f-8688-55c107d805e7" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Oli8EeaPXJzrbKGcEg" name="PayersSection" uniqueIdentifier="06e1c816-6678-4ebd-bea6-279c4bd2048d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1O1i8EeaPXJzrbKGcEg" name="PregnancyObservationContainer" reference="-" uniqueIdentifier="207914bd-6744-49d2-92af-cbe90598e1b3" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1PFi8EeaPXJzrbKGcEg" name="PregnancyEstimatedDeliveryDate" uniqueIdentifier="3e6b980e-773c-496d-a728-2143bd5b585b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1PVi8EeaPXJzrbKGcEg" name="Problem" uniqueIdentifier="31a49b96-715d-4fce-b592-b10b8fe3ef1c" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Pli8EeaPXJzrbKGcEg" name="ProblemAgeAtObservation" description="The Client's age for the specific observation about the concern or problem" uniqueIdentifier="e22b4f96-a35c-47f5-bd8b-a086f49d00fe" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1P1i8EeaPXJzrbKGcEg" name="ProblemConcernAct" uniqueIdentifier="74848045-870d-4cf7-ae23-6e7d5751621d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1QFi8EeaPXJzrbKGcEg" name="ProblemConcernId" description="a unique identifier assigned by an administrative body to a problem or concern" uniqueIdentifier="c313e009-5743-4dcd-ba20-9aa262b2205d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1QVi8EeaPXJzrbKGcEg" name="ProblemConcernNotes" description="General notes/comments  for description of the Condition" uniqueIdentifier="c3d9a923-8c9c-4611-b8bf-a8e7456c2bba" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Qli8EeaPXJzrbKGcEg" name="ProblemConcernStatus" description="The code to identify the present status of the Concern or Problem." uniqueIdentifier="dcb24f5a-3e8f-43a4-8a00-e219ecbf87b9" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Q1i8EeaPXJzrbKGcEg" name="ProblemObservationCode" description="The code used to Identify of the condition" uniqueIdentifier="90a0b23b-525d-4977-8c5f-d2012dd04da2" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1RFi8EeaPXJzrbKGcEg" name="ProblemObservationHealthStatusValue" uniqueIdentifier="264b4b9c-5206-4ae9-989a-3fa12376ed4c" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1RVi8EeaPXJzrbKGcEg" name="ProblemObservationId" description="unique identifier assigned by an administrative body to specific observation of a problem or concern" uniqueIdentifier="d8d7bfb2-b024-4049-9c87-efc36897e8f7" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Rli8EeaPXJzrbKGcEg" name="ProblemSection" uniqueIdentifier="4b655929-8602-4317-9773-3c150b0dc7db" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1R1i8EeaPXJzrbKGcEg" name="ProblemSectionText" uniqueIdentifier="d33c1f71-efbd-40f0-9ff9-53e8914a40f9" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1SFi8EeaPXJzrbKGcEg" name="ProblemSectionTitle" uniqueIdentifier="dbdd2663-65b8-4634-8a26-5a5c4181a299" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1SVi8EeaPXJzrbKGcEg" name="ProblemStatusValue" uniqueIdentifier="8be01b45-bbc4-44f1-a7e9-78498e4cd063" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Sli8EeaPXJzrbKGcEg" name="ProblemType" uniqueIdentifier="71fd64ec-7f9f-4027-a701-f6326b5750f6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1S1i8EeaPXJzrbKGcEg" name="ProceduralInformationalOrdered" uniqueIdentifier="663ac6f8-2837-44fe-bee8-dd9108aa6dfd" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1TFi8EeaPXJzrbKGcEg" name="ProceduralInformationalOrderedCode" uniqueIdentifier="6b2799df-b0ec-45bd-9c02-03aa1ab27973" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1TVi8EeaPXJzrbKGcEg" name="ProceduralInformationalOrderedId" uniqueIdentifier="07d3f57f-4ba2-41e6-84cd-e70d0fb87797" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Tli8EeaPXJzrbKGcEg" name="ProceduralInformationalOrderedMethodCode" uniqueIdentifier="ec7aa9b9-61f6-43ef-9f7c-b4e871875a1e" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1T1i8EeaPXJzrbKGcEg" name="ProceduralInformationalOrderedPriorityCode" uniqueIdentifier="9275d867-188f-4771-9fc9-190133689a74" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1UFi8EeaPXJzrbKGcEg" name="ProceduralInformationalOrderedStatusCode" uniqueIdentifier="7f77591b-c8f7-493b-8bfd-2f68fb55d705" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1UVi8EeaPXJzrbKGcEg" name="ProceduralInformationalOrderedTargetSite" uniqueIdentifier="69872550-0077-4001-9fe3-a2231cd6f0db" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Uli8EeaPXJzrbKGcEg" name="ProcedureOrderedAllOther" uniqueIdentifier="c1dff64b-dd0a-441b-ac6b-5b68dbf01426" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1U1i8EeaPXJzrbKGcEg" name="ProcedureOrderedAllOtherCode" uniqueIdentifier="e15ba4dd-dccd-4ab1-a6ee-549d68ea791d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1VFi8EeaPXJzrbKGcEg" name="ProcedureOrderedAllOtherId" uniqueIdentifier="6fa1de87-ffbc-4173-ae6d-e6356db9558d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1VVi8EeaPXJzrbKGcEg" name="ProcedureOrderedAllOtherPriorityCode" uniqueIdentifier="8ebc92e7-78df-4352-932b-4c930080e2a5" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Vli8EeaPXJzrbKGcEg" name="ProcedureOrderedAllOtherStatusCode" uniqueIdentifier="a4431aa1-04af-4ae1-8a28-da884c117769" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1V1i8EeaPXJzrbKGcEg" name="ProcedureOrderedPhysical" uniqueIdentifier="80f6bd11-1243-4afb-8914-af7c3544eb73" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1WFi8EeaPXJzrbKGcEg" name="ProcedureOrderedPhysicalCode" uniqueIdentifier="e63ad412-d1d8-424a-9ae1-19338c1238b0" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1WVi8EeaPXJzrbKGcEg" name="ProcedureOrderedPhysicalId" uniqueIdentifier="5816cae0-adad-4f89-8a0b-055ba7843cc5" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Wli8EeaPXJzrbKGcEg" name="ProcedureOrderedPhysicalMethodCode" uniqueIdentifier="ff055858-7834-4213-8605-b23d80f39be0" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1W1i8EeaPXJzrbKGcEg" name="ProcedureOrderedPhysicalPriorityCode" uniqueIdentifier="6aa203f6-6fd1-49dd-a4e3-9085abcd6ef6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1XFi8EeaPXJzrbKGcEg" name="ProcedureOrderedPhysicalStatusCode" uniqueIdentifier="960724e7-1dc8-4e92-be32-640d1b4763d5" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1XVi8EeaPXJzrbKGcEg" name="ProcedureOrderedPhysicalTargetSite" uniqueIdentifier="2ace2e94-939d-4406-8ca5-bae0b53040aa" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Xli8EeaPXJzrbKGcEg" name="ProcedurePerformedAllOther" uniqueIdentifier="add5cedb-4744-4543-acd5-2f7a8c890f63" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1X1i8EeaPXJzrbKGcEg" name="ProcedurePerformedAllOtherCode" uniqueIdentifier="3343d8f6-218f-4d73-8aa7-ea373846e272" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1YFi8EeaPXJzrbKGcEg" name="ProcedurePerformedAllOtherId" uniqueIdentifier="4b813b99-0ed2-4f70-8842-81e0cb12d389" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1YVi8EeaPXJzrbKGcEg" name="ProcedurePerformedAllOtherPriorityCode" uniqueIdentifier="05a50c5d-7bfa-4169-8ec8-4f2bf69f1fdc" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Yli8EeaPXJzrbKGcEg" name="ProcedurePerformedAllOtherStatusCode" uniqueIdentifier="f3bf5eed-2f89-4193-b04f-047e2982a09a" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Y1i8EeaPXJzrbKGcEg" name="ProcedurePerformedInformation" uniqueIdentifier="df2bdb55-aa14-460e-b60d-097e100aa902" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1ZFi8EeaPXJzrbKGcEg" name="ProcedurePerformedInformationCode" uniqueIdentifier="408b342d-1cd8-4f98-9aa5-40508da56bf7" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1ZVi8EeaPXJzrbKGcEg" name="ProcedurePerformedInformationId" uniqueIdentifier="d8453f83-4317-42b9-8b31-c66a49636797" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Zli8EeaPXJzrbKGcEg" name="ProcedurePerformedInformationMethodCode" uniqueIdentifier="7eb848de-837d-46ee-8d9b-85e422a31385" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1Z1i8EeaPXJzrbKGcEg" name="ProcedurePerformedInformationPriorityCode" uniqueIdentifier="e6ed0a7b-e75b-40b4-a5f2-8e20f83129b9" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1aFi8EeaPXJzrbKGcEg" name="ProcedurePerformedInformationStatusCode" uniqueIdentifier="a5844077-e227-4586-8149-279caceed9b2" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1aVi8EeaPXJzrbKGcEg" name="ProcedurePerformedInformationTargetSite" uniqueIdentifier="a1eb6d4f-5c51-4f99-923a-661678822ea5" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1ali8EeaPXJzrbKGcEg" name="ProcedurePerformedPhysical" uniqueIdentifier="3fe9f1d2-f666-4313-931b-88a0bb41789b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1a1i8EeaPXJzrbKGcEg" name="ProcedurePerformedPhysicalCode" uniqueIdentifier="0932b27b-b833-4525-9f3a-ee99a88261a7" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1bFi8EeaPXJzrbKGcEg" name="ProcedurePerformedPhysicalId" uniqueIdentifier="f23632b4-de3d-4a10-9881-ceff3b0d6a20" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1bVi8EeaPXJzrbKGcEg" name="ProcedurePerformedPhysicalMethodCode" uniqueIdentifier="c1bf56e5-c17a-46b8-9646-6adf0d3e40ca" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1bli8EeaPXJzrbKGcEg" name="ProcedurePerformedPhysicalPriorityCode" uniqueIdentifier="f587acbd-3be7-416c-86e2-5072e0c038f8" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1b1i8EeaPXJzrbKGcEg" name="ProcedurePerformedPhysicalStatusCode" uniqueIdentifier="9c40c0fe-59b2-4c50-90c0-decc9d04d39d" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1cFi8EeaPXJzrbKGcEg" name="ProcedurePerformedPhysicalTargetSite" uniqueIdentifier="dbe0f0a1-50b8-4d9d-9118-2f3bed08cca5" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1cVi8EeaPXJzrbKGcEg" name="ProcedureSection" uniqueIdentifier="b7a63343-ca32-4394-88a2-0f4cd2c2aad6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1cli8EeaPXJzrbKGcEg" name="ProcedureSectionText" uniqueIdentifier="c086fc0b-4874-416d-be81-3cebab335d5f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1c1i8EeaPXJzrbKGcEg" name="ProcedureSectiontitle" uniqueIdentifier="b53ae5e0-c044-4695-a3af-7de38f13695c" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1dFi8EeaPXJzrbKGcEg" name="ProviderAddress" uniqueIdentifier="2086420c-042a-46e8-9b05-a26291e99b4d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1dVi8EeaPXJzrbKGcEg" name="DocumentProviderId" reference="-" uniqueIdentifier="85715124-7505-41f8-9efe-682652180b3e" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1dli8EeaPXJzrbKGcEg" name="ProviderOrganizationName" uniqueIdentifier="da27699c-3bfe-4dee-8544-e32ea88d92f2" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1d1i8EeaPXJzrbKGcEg" name="ProviderTelecom" uniqueIdentifier="6d101b13-7ce1-405b-a5d0-bcff0c04908d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1eFi8EeaPXJzrbKGcEg" name="ResultInterpretationCode" uniqueIdentifier="0726044e-77c2-433f-8665-e83c056aab0a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1eVi8EeaPXJzrbKGcEg" name="ResultObservation" uniqueIdentifier="04efdee4-2132-490a-99c4-0f635300879a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1eli8EeaPXJzrbKGcEg" name="ResultObservationCode" uniqueIdentifier="7df4e46a-1c5e-4128-8376-f3aa3e873980" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1e1i8EeaPXJzrbKGcEg" name="ResultObservationID" uniqueIdentifier="7cacd8ec-b82e-46af-a79c-112463384319" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1fFi8EeaPXJzrbKGcEg" name="ResultObservationMethodCode" uniqueIdentifier="8c5b7a09-5e5e-4484-8f9b-c9f9c3a555c4" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1fVi8EeaPXJzrbKGcEg" name="ResultObservationText" uniqueIdentifier="a93fa8f9-0f6b-4002-b081-eec2c637b34a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1fli8EeaPXJzrbKGcEg" name="ResultObservationValue" uniqueIdentifier="6a0b73cb-8123-4364-9b6c-9f27094e3e57" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2JVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1f1i8EeaPXJzrbKGcEg" name="Results" uniqueIdentifier="65da5784-89e3-4175-9561-c9502ffdb064" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1gFi8EeaPXJzrbKGcEg" name="ResultsObservationEffectiveTime" uniqueIdentifier="0de32361-a7d8-451e-96a8-bcdd96f2e9f7" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2HVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1gVi8EeaPXJzrbKGcEg" name="ResultsSection" uniqueIdentifier="9570d563-1a17-4efe-b4cc-0cbd32b2a9f7" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1gli8EeaPXJzrbKGcEg" name="ResultsSectionTitle" uniqueIdentifier="578f2b62-c702-4ef2-8c96-b29bc714cd3c" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1g1i8EeaPXJzrbKGcEg" name="ResultStatus" uniqueIdentifier="80cb17a9-5d46-4c94-968f-c9347e13ebf8" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1hFi8EeaPXJzrbKGcEg" name="SmokingStatusObservationValue" reference="-" uniqueIdentifier="aadeabc0-625a-450e-9400-cdc85debf531" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1hVi8EeaPXJzrbKGcEg" name="SocialHistorySection" reference="-" uniqueIdentifier="0d98de46-d0bf-4b4b-8336-7d8c4f20b9e2" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1hli8EeaPXJzrbKGcEg" name="SocialHistoryObservation" uniqueIdentifier="07861e9b-b6a3-4b37-a8b1-39fb418d7390" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1h1i8EeaPXJzrbKGcEg" name="TobaccoUseObservationContainer" reference="-" uniqueIdentifier="b7a76875-d581-4a89-b0fb-57f9471c0475" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1iFi8EeaPXJzrbKGcEg" name="TobaccoUseObservationValue" reference="-" uniqueIdentifier="d8e3077e-b2a0-499f-8354-c2a0a148c993" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1iVi8EeaPXJzrbKGcEg" name="VitalSignBatteryEffectiveTime" description="When the result of the tests were measured" uniqueIdentifier="7886c093-f505-477d-8bdf-8b693f0ecf8a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2HVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1ili8EeaPXJzrbKGcEg" name="VitalSignBatteryID" uniqueIdentifier="f224b8aa-6871-4bf4-a697-dfb47526ab6f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1i1i8EeaPXJzrbKGcEg" name="VitalSignOrganizer" uniqueIdentifier="7ae54db7-4e6c-4350-9e00-226a4c2f7d9a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1jFi8EeaPXJzrbKGcEg" name="VitalSignResult" uniqueIdentifier="e6195bbe-badf-4ff2-8609-a01dffade5ae" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1jVi8EeaPXJzrbKGcEg" name="VitalSignResultEffectiveTime" description="When the result/specime was obtained from the patient" uniqueIdentifier="19d8e099-b3b1-465c-a9d5-27657dcde133" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2HVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1jli8EeaPXJzrbKGcEg" name="VitalSignResultID" uniqueIdentifier="33891793-d4c1-44e6-b7ed-26da889b0b48" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1j1i8EeaPXJzrbKGcEg" name="VitalSignResultIntepretationCode" uniqueIdentifier="60f64b90-2803-465b-ba6d-79e55c7a45c1" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1kFi8EeaPXJzrbKGcEg" name="VitalSignResultType" uniqueIdentifier="1b8d3c96-5161-4ce2-a8a6-1a694febef6f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1kVi8EeaPXJzrbKGcEg" name="VitalSignResultValue" uniqueIdentifier="2b45bfcd-b0d0-49c6-b8a5-f376297c8e36" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2JVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1kli8EeaPXJzrbKGcEg" name="VitalSignSection" uniqueIdentifier="1344bbb0-bb05-44df-9d86-b90bd60ac951" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1k1i8EeaPXJzrbKGcEg" name="VitalSignsSectionTitle" uniqueIdentifier="bed98adb-cb6d-4254-877b-0cb68d3d7e70" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1lFi8EeaPXJzrbKGcEg" name="DocumentTitle" reference="-" uniqueIdentifier="e02fcb5b-8e5e-4ebb-8252-913b1b080fe0" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1lVi8EeaPXJzrbKGcEg" name="MedicationSectionCode" reference="-" uniqueIdentifier="0a81da94-8f2b-4316-9098-5b9b5df34c9d" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1lli8EeaPXJzrbKGcEg" name="MedicationSectionText" reference="-" uniqueIdentifier="207142e4-e0cd-4e8d-8e0f-b5b705a0d532" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1l1i8EeaPXJzrbKGcEg" name="AllergyConcernID" description="A  unique identifier assigned by an administrative body to a specific allergy concern." reference="-" uniqueIdentifier="c48d4e8b-fde6-455f-895a-f47f180d6e60" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1mFi8EeaPXJzrbKGcEg" name="AllergyConcernStatusCode" description="A code representing the present status of the Allergy Concern" reference="-" uniqueIdentifier="988bb2a3-323e-4005-b2c3-ac20263e68b0" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1mVi8EeaPXJzrbKGcEg" name="AllergyObservationAllergenCode" description="The substance that caused the Allergy reaction" reference="-" uniqueIdentifier="a14fdf6b-cab0-434c-9e67-827e6261cb72" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1mli8EeaPXJzrbKGcEg" name="AllergiesSectionText" description="The text for the Allergy Section" reference="-" uniqueIdentifier="c3d121c5-eb50-40fe-b72e-a4c342d901e6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1m1i8EeaPXJzrbKGcEg" name="AllergiesSectionTitle" description="The Title for the Allergy Section" reference="-" uniqueIdentifier="9b187c47-58cf-4e9d-8f63-d40eae8cfc15" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1nFi8EeaPXJzrbKGcEg" name="AllergyObservationEndTime" reference="-" uniqueIdentifier="6e1aebbb-d3d4-403c-8b04-ba38d02c833b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1nVi8EeaPXJzrbKGcEg" name="AllergyReactionSeverityNotes" reference="-" uniqueIdentifier="8ceee36a-8b13-4c6d-a4b0-cc102f6b60c6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1nli8EeaPXJzrbKGcEg" name="AllergyReactionStartTime" reference="-" uniqueIdentifier="9ed317ef-ea91-44ba-91d7-e047e0b64b72" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1n1i8EeaPXJzrbKGcEg" name="AllergyReactionEndTime" reference="-" uniqueIdentifier="7e33e52a-d709-4e75-a656-b9e6fca12792" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1oFi8EeaPXJzrbKGcEg" name="AllergyObservationStartTime" reference="-" uniqueIdentifier="4136e7ad-6afe-409b-891a-a985f34c4682" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1oVi8EeaPXJzrbKGcEg" name="ImmunizationSectionTitle" reference="-" uniqueIdentifier="4472beee-441c-40b7-99ae-880f397131bb" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1oli8EeaPXJzrbKGcEg" name="VitalSignSectionText" reference="-" uniqueIdentifier="9230a42b-3f41-45aa-91ff-180c0eb4f1c0" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1o1i8EeaPXJzrbKGcEg" name="ImmunizationSectionText" reference="-" uniqueIdentifier="2dffde33-5f9f-42ea-82c0-0adf78bff617" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1pFi8EeaPXJzrbKGcEg" name="DocumentInformationRecipientContainer" reference="-" uniqueIdentifier="c23536d9-1f87-4d95-9fd8-179c22b9db21" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1pVi8EeaPXJzrbKGcEg" name="DocumentDocumentationofServiceEvents" reference="-" uniqueIdentifier="f770f94a-df0a-49c7-ae90-0bb9c5c553ab" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1pli8EeaPXJzrbKGcEg" name="DocumentInformationRecipentOrganizationName" reference="-" uniqueIdentifier="0f9e81fe-e0e2-4f0b-a405-ce55a622569e" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1p1i8EeaPXJzrbKGcEg" name="DocumentLegalAuthenticatorPersonName" reference="-" uniqueIdentifier="24d9bf2d-849f-4890-b7b6-c074dc3fbce9" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1qFi8EeaPXJzrbKGcEg" name="DocumentInformantContainer" reference="-" uniqueIdentifier="21f774e5-6510-4179-89de-621095c502d8" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1qVi8EeaPXJzrbKGcEg" name="DocumentInformantAssignedPersonName" reference="-" uniqueIdentifier="7b2d3700-6cc7-49a9-af2c-cde5464af9b5" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1qli8EeaPXJzrbKGcEg" name="AllergyConcernDeviceCode" reference="-" uniqueIdentifier="b5809749-287a-443e-bb3c-030b093659ca" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1q1i8EeaPXJzrbKGcEg" name="AllergyConcernEndDate" description="The date when the Allergy concern is no longer a concern" reference="-" uniqueIdentifier="99184840-a095-41b1-b361-ce05425e0352" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1rFi8EeaPXJzrbKGcEg" name="AllergyReactionDuration" description="The amount of time that the Adverse Reaction persisted." reference="-" uniqueIdentifier="a5430e33-f046-45e4-a69f-61df6633f56a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1rVi8EeaPXJzrbKGcEg" name="AllergyConcernLastKnownOccuranceDate" description="The last known date and time of the Intolerance Condition" reference="AllergyConcernLastKnownOccuranceDate" uniqueIdentifier="2e75f6cd-4680-40c3-8430-6c28444638bd" readonly="true">
+        <referenceDatatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1rli8EeaPXJzrbKGcEg" name="PatientMobilePhone" description="This is the patient's mobilePhoneNumber" reference="PatientMobilePhone-" uniqueIdentifier="18f6d14d-5c8c-49be-9f93-c1f1a3480e98" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1r1i8EeaPXJzrbKGcEg" name="PatientEmail" description="The patient's preferred personal email address" reference="PatientEmail" uniqueIdentifier="bf759e8d-a00b-4636-bbe4-8c8671835398" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1sFi8EeaPXJzrbKGcEg" name="AllergyObservationComment" description="Free Text comments for the Allergy Observation" reference="AllergyObservationComment" uniqueIdentifier="97bbe3a6-1dd7-4d08-ab6d-08382df87031" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1sVi8EeaPXJzrbKGcEg" name="SocialHistorySectionTitle" reference="SocialHistorySectionTitle" uniqueIdentifier="b4edb4fc-d8a7-45a3-a918-d2a8d51bd008" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1sli8EeaPXJzrbKGcEg" name="ABC Test" reference="-" uniqueIdentifier="4e362eca-4842-4b1b-bdcf-9e04ed89bb39" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1s1i8EeaPXJzrbKGcEg" name="DocumentLegalAuthenticatorEntityId" reference="DocumentLegalAuthenticatorEntityId" uniqueIdentifier="4fef6d53-8f06-41df-a314-73b83014030a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1tFi8EeaPXJzrbKGcEg" name="GuardianContainer" reference="GuardianContainer" uniqueIdentifier="38f8f0cc-d217-4560-9004-b905135af4c0" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1tVi8EeaPXJzrbKGcEg" name="ImmunizationRefusedPerformerName" reference="-" uniqueIdentifier="c82b91c1-9229-44fc-870c-3914d90098cf" readonly="true">
+        <referenceDatatype xmi:idref="_-BK19li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1tli8EeaPXJzrbKGcEg" name="ImmunizationRefusedId" reference="-" uniqueIdentifier="5ffe342d-66be-4367-884a-b37f94ffb1cf" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1t1i8EeaPXJzrbKGcEg" name="ImmunizationRefusedDrugVehicleCode" reference="-" uniqueIdentifier="8408f68d-c4a2-405b-a171-d3a86693913a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1uFi8EeaPXJzrbKGcEg" name="ImmunizationRefusedLotNumber" reference="-" uniqueIdentifier="e161da66-3b1e-4889-8bda-595a4b7ff25c" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1uVi8EeaPXJzrbKGcEg" name="ImmunizationRefusedRouteCode" reference="-" uniqueIdentifier="a3b0450f-33b5-4efb-a9b2-295b94951148" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1uli8EeaPXJzrbKGcEg" name="ImmunizationAdministeredApproachSite" reference="-" uniqueIdentifier="3ab927a0-ccdf-441e-93db-2a7cd7d20089" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1u1i8EeaPXJzrbKGcEg" name="ImmunizationRefusedApproachSite" reference="-" uniqueIdentifier="5b15701b-e8ea-405e-ac99-15a88e6251a0" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1vFi8EeaPXJzrbKGcEg" name="ImmunizationRefusedAdminUnitCode" reference="-" uniqueIdentifier="2e733dce-51b7-45ea-91d1-25bf3b6cae5b" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1vVi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredSeriesNumber" reference="-" uniqueIdentifier="d7221aab-8d8d-4785-8764-8e2c7ad4f08c" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1vli8EeaPXJzrbKGcEg" name="ImmunizationRefusedSeriesNumber" reference="-" uniqueIdentifier="ebd318b8-e937-46cd-b211-845f4d8b4ce4" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13Vi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1v1i8EeaPXJzrbKGcEg" name="ImmunizationRefusedNotes" reference="-" uniqueIdentifier="52f0679d-f068-4fa8-b35e-8b2931f5a094" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1wFi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredAdminUnitCode" reference="-" uniqueIdentifier="27d6eff3-dd49-44d1-b27d-536c63846303" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1wVi8EeaPXJzrbKGcEg" name="ImmunizationRefusedProblemCode" reference="-" uniqueIdentifier="acbb8190-4b32-40dc-b678-a2242b3ad0d0" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1wli8EeaPXJzrbKGcEg" name="ImmunizationRefusedManufacturerName" reference="-" uniqueIdentifier="5ba1ccd8-81be-4226-a802-b5c514e7410c" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1w1i8EeaPXJzrbKGcEg" name="ImmunizationAdministeredProblemCode" description="The underlying condition for the immunization (e.g., mumps)" reference="-" uniqueIdentifier="0104e6b0-a549-4c32-b653-83e9b059c69a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1xFi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredDrugVehicleCode" reference="-" uniqueIdentifier="30386915-08e1-48c6-80a7-9ee5c2c4f2d8" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1xVi8EeaPXJzrbKGcEg" name="ImmunizationAdministeredDrugVehicleQuantity" reference="-" uniqueIdentifier="81c5c16f-4b8f-4870-a098-43ca3ae7224a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2JVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1xli8EeaPXJzrbKGcEg" name="ImmunizationRefusedEntityAddress" reference="-" uniqueIdentifier="09c3383c-d60f-4f2b-be34-6c406e40c637" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1x1i8EeaPXJzrbKGcEg" name="ImmunizationRefusedEntityBOrganizationPhone" reference="-" uniqueIdentifier="a0ee4ae0-7fbf-4ac5-9598-09c79e425505" readonly="true">
+        <referenceDatatype xmi:idref="_-BK18Fi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1yFi8EeaPXJzrbKGcEg" name="ImmunizationRefusedEntityId" reference="-" uniqueIdentifier="6170ed26-52e5-444a-9cf5-a87ad91de8e3" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1yVi8EeaPXJzrbKGcEg" name="ImmunizationRefusedMedicationCode" reference="-" uniqueIdentifier="ab246c37-bc86-437a-b377-15d7274583c4" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1yli8EeaPXJzrbKGcEg" name="ImmunizationRefusedDrugVehicleQuantity" reference="-" uniqueIdentifier="3faff311-2053-4a9d-99f6-7b9b656593ce" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2JVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1y1i8EeaPXJzrbKGcEg" name="ImmunizationRefusedDoseQuantity" reference="-" uniqueIdentifier="cadc51e3-62bf-4d0b-8213-d0ebcda72837" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2JVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1zFi8EeaPXJzrbKGcEg" name="SocialHistoryObservationValue" reference="-" uniqueIdentifier="9ba020b1-eca6-4082-9b00-a8ff13430474" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1zVi8EeaPXJzrbKGcEg" name="SocialHistoryObservationId" reference="-" uniqueIdentifier="6642fc6a-768d-4c7f-9f3c-5bdce9b606f8" readonly="true">
+        <referenceDatatype xmi:idref="_-BK131i8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1zli8EeaPXJzrbKGcEg" name="PregnancyObservationDateRange" reference="-" uniqueIdentifier="3a07db56-96a4-4731-a54b-2b956bddd52a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2HVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK1z1i8EeaPXJzrbKGcEg" name="PregnancyObservationCode" reference="-" uniqueIdentifier="0966cfa2-4c1a-4902-afed-392ad2a130eb" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK10Fi8EeaPXJzrbKGcEg" name="SocialHistoryObservationCode" reference="-" uniqueIdentifier="c61b814f-cf9b-414a-b28f-bb9bf648e6a6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK10Vi8EeaPXJzrbKGcEg" name="SocialHistorySectionText" reference="-" uniqueIdentifier="188dd32c-ce3c-47bb-a722-03c046ff6f1a" readonly="true">
+        <referenceDatatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK10li8EeaPXJzrbKGcEg" name="PregnancyObservationValue" reference="-" uniqueIdentifier="57725dd0-36b9-450e-a85e-60387d16c87f" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK101i8EeaPXJzrbKGcEg" name="SmokingStatusObservationCode" reference="-" uniqueIdentifier="30113a97-fd7d-4d08-b01c-e127f102e440" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK11Fi8EeaPXJzrbKGcEg" name="SmokingStatusObservationDateRange" reference="-" uniqueIdentifier="3256490e-032c-422b-af56-3b11a169a9cf" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2HVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK11Vi8EeaPXJzrbKGcEg" name="SmokingStatusObservationContainer" reference="-" uniqueIdentifier="3b57ecc3-48b2-446f-8b68-320d07dd6586" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK11li8EeaPXJzrbKGcEg" name="TobaccoUserObservationDateRange" reference="-" uniqueIdentifier="c1193027-bef2-4d8c-9840-665de65fddb6" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2HVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK111i8EeaPXJzrbKGcEg" name="TobaccoUseObservationCode" reference="-" uniqueIdentifier="2514f8af-ab40-4124-87f1-71cd882c30e2" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2AVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+      <businessElements xmi:id="_-BK12Fi8EeaPXJzrbKGcEg" name="DocumentAuthenticatorContainer" reference="-" uniqueIdentifier="fed06ffc-d5c5-4c94-991b-7282d620ca73" readonly="true">
+        <referenceDatatype xmi:idref="_-BK2FVi8EeaPXJzrbKGcEg" />
+      </businessElements>
+    </domainDictionary>
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_-BK12Vi8EeaPXJzrbKGcEg" typeName="Binary" description="Binary" reference="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_-BK12li8EeaPXJzrbKGcEg" typeName="Boolean" description="Boolean" reference="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_-BK121i8EeaPXJzrbKGcEg" typeName="DateTime" description="DateTime" reference="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_-BK13Fi8EeaPXJzrbKGcEg" typeName="Decimal" description="Decimal" reference="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_-BK13Vi8EeaPXJzrbKGcEg" typeName="Integer" description="Integer" reference="http://www.w3.org/2001/XMLSchema#integer"/>
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_-BK13li8EeaPXJzrbKGcEg" typeName="String" description="String" reference="http://www.w3.org/2001/XMLSchema#string"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK131i8EeaPXJzrbKGcEg" typeName="InstanceIdentifier">
+      <fields xmi:id="_-BK14Fi8EeaPXJzrbKGcEg" name="extension" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK14Vi8EeaPXJzrbKGcEg" name="root" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK14li8EeaPXJzrbKGcEg" name="assigningAuthorityName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK141i8EeaPXJzrbKGcEg" name="displayable" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK15Fi8EeaPXJzrbKGcEg" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK15Vi8EeaPXJzrbKGcEg" typeName="Address">
+      <fields xmi:id="_-BK15li8EeaPXJzrbKGcEg" name="useablePeriod" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK151i8EeaPXJzrbKGcEg" name="streetAddressLine" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK16Fi8EeaPXJzrbKGcEg" name="city" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK16Vi8EeaPXJzrbKGcEg" name="state" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK16li8EeaPXJzrbKGcEg" name="country" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK161i8EeaPXJzrbKGcEg" name="postalCode" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK17Fi8EeaPXJzrbKGcEg" name="use" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK17Vi8EeaPXJzrbKGcEg" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK17li8EeaPXJzrbKGcEg" name="text" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTSDerived" xmi:id="_-BK171i8EeaPXJzrbKGcEg" typeName="Address_UseabePeriod" restriction="&quot;Address_UseabePeriod&quot;"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK18Fi8EeaPXJzrbKGcEg" typeName="Telecom">
+      <fields xmi:id="_-BK18Vi8EeaPXJzrbKGcEg" name="value" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK18li8EeaPXJzrbKGcEg" name="useablePeriod" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK19Vi8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK181i8EeaPXJzrbKGcEg" name="use" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK19Fi8EeaPXJzrbKGcEg" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTSDerived" xmi:id="_-BK19Vi8EeaPXJzrbKGcEg" typeName="Telecom_UseablePeriod" restriction="&quot;Telecom_UseablePeriod&quot;"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK19li8EeaPXJzrbKGcEg" typeName="PersonName">
+      <fields xmi:id="_-BK191i8EeaPXJzrbKGcEg" name="use" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK1-Fi8EeaPXJzrbKGcEg" name="prefix" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK1-Vi8EeaPXJzrbKGcEg" name="suffix" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK1-li8EeaPXJzrbKGcEg" name="given" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK1-1i8EeaPXJzrbKGcEg" name="family" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK1_Fi8EeaPXJzrbKGcEg" name="validtime" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK1_Vi8EeaPXJzrbKGcEg" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK1_li8EeaPXJzrbKGcEg" name="text" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTExternal" xmi:id="_-BK1_1i8EeaPXJzrbKGcEg" typeName="PersonName_Use" typeSpec="mdmi://datatypes/deferredEnum?type=PersonName_Use&amp;valueSet=C-0-D15913-V200-cpt"/>
+    <datatypes xmi:type="mdmi:DTSDerived" xmi:id="_-BK2AFi8EeaPXJzrbKGcEg" typeName="PersonName_Validtime" restriction="&quot;PersonName_Validtime&quot;"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2AVi8EeaPXJzrbKGcEg" typeName="CodedElement">
+      <fields xmi:id="_-BK2Ali8EeaPXJzrbKGcEg" name="code" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2A1i8EeaPXJzrbKGcEg" name="codeSystem" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2BFi8EeaPXJzrbKGcEg" name="codeSystemName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2BVi8EeaPXJzrbKGcEg" name="codeSystemVersion" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Bli8EeaPXJzrbKGcEg" name="displayName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2B1i8EeaPXJzrbKGcEg" name="originalText" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2CFi8EeaPXJzrbKGcEg" name="qualifier" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2CVi8EeaPXJzrbKGcEg" name="xsi:type" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Cli8EeaPXJzrbKGcEg" name="nullFlavor" maxOccurs="1" description="nullFlavor">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2C1i8EeaPXJzrbKGcEg" name="codeT" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2DFi8EeaPXJzrbKGcEg" name="codeSystemT" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2DVi8EeaPXJzrbKGcEg" name="codeSystemNameT" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Dli8EeaPXJzrbKGcEg" name="codeSystemVersionT" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2D1i8EeaPXJzrbKGcEg" name="displayNameT" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2EFi8EeaPXJzrbKGcEg" typeName="TranslationCE" description="">
+      <fields xmi:id="_-BK2EVi8EeaPXJzrbKGcEg" name="code" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Eli8EeaPXJzrbKGcEg" name="displayName" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2E1i8EeaPXJzrbKGcEg" name="codeSystem" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2FFi8EeaPXJzrbKGcEg" name="codeSystemName" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2FVi8EeaPXJzrbKGcEg" typeName="Container"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2Fli8EeaPXJzrbKGcEg" typeName="EntityName">
+      <fields xmi:id="_-BK2F1i8EeaPXJzrbKGcEg" name="entityType" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK2G1i8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2GFi8EeaPXJzrbKGcEg" name="personName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK2HFi8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2GVi8EeaPXJzrbKGcEg" name="organizationName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Gli8EeaPXJzrbKGcEg" name="nameofTypeUnknown" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTExternal" xmi:id="_-BK2G1i8EeaPXJzrbKGcEg" typeName="EntityName_EntityType" typeSpec="mdmi://datatypes/deferredEnum?type=EntityName_EntityType&amp;valueSet=%22P%20%3D%20person"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2HFi8EeaPXJzrbKGcEg" typeName="EntityName_PersonName"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2HVi8EeaPXJzrbKGcEg" typeName="DateRange">
+      <fields xmi:id="_-BK2Hli8EeaPXJzrbKGcEg" name="low" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2H1i8EeaPXJzrbKGcEg" name="high" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK121i8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2IFi8EeaPXJzrbKGcEg" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2IVi8EeaPXJzrbKGcEg" name="xsi:type" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2Ili8EeaPXJzrbKGcEg" typeName="PhysicalRange" description="">
+      <fields xmi:id="_-BK2I1i8EeaPXJzrbKGcEg" name="low" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2JFi8EeaPXJzrbKGcEg" name="high" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2JVi8EeaPXJzrbKGcEg" typeName="PhysicalQuantity">
+      <fields xmi:id="_-BK2Jli8EeaPXJzrbKGcEg" name="value" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2J1i8EeaPXJzrbKGcEg" name="unit" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2KFi8EeaPXJzrbKGcEg" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2KVi8EeaPXJzrbKGcEg" name="xsi:type" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2Kli8EeaPXJzrbKGcEg" typeName="ReferenceRange"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2K1i8EeaPXJzrbKGcEg" typeName="NormalcyCode"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2LFi8EeaPXJzrbKGcEg" typeName="PhysicalRatio" description="">
+      <fields xmi:id="_-BK2LVi8EeaPXJzrbKGcEg" name="numerator" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Lli8EeaPXJzrbKGcEg" name="denominator" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2L1i8EeaPXJzrbKGcEg" typeName="TimingSchedule" description="">
+      <fields xmi:id="_-BK2MFi8EeaPXJzrbKGcEg" name="period" minOccurs="1" maxOccurs="1" description="number of times per unit">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2MVi8EeaPXJzrbKGcEg" name="unit" minOccurs="1" maxOccurs="1" description="Time Unit for schedule">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Mli8EeaPXJzrbKGcEg" name="operator" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2M1i8EeaPXJzrbKGcEg" name="xsi:type" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2NFi8EeaPXJzrbKGcEg" name="institutionSpecified" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2NVi8EeaPXJzrbKGcEg" typeName="CodeableConcept">
+      <fields xmi:id="_-BK2Nli8EeaPXJzrbKGcEg" name="coding" minOccurs="1">
+        <datatype xmi:idref="_-BK2QVi8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2N1i8EeaPXJzrbKGcEg" name="text" minOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2OFi8EeaPXJzrbKGcEg" typeName="CodeableConceptExtension">
+      <fields xmi:id="_-BK2OVi8EeaPXJzrbKGcEg" name="valueCodeableConcept" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK2NVi8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Oli8EeaPXJzrbKGcEg" name="url" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2O1i8EeaPXJzrbKGcEg" typeName="AddressExtension" restriction="">
+      <fields xmi:id="_-BK2PFi8EeaPXJzrbKGcEg" name="url" minOccurs="1" maxOccurs="1" description="url">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2PVi8EeaPXJzrbKGcEg" name="valueAddress" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK15Vi8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2Pli8EeaPXJzrbKGcEg" typeName="StringExtension">
+      <fields xmi:id="_-BK2P1i8EeaPXJzrbKGcEg" name="url" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2QFi8EeaPXJzrbKGcEg" name="valueString" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2QVi8EeaPXJzrbKGcEg" typeName="Coding">
+      <fields xmi:id="_-BK2Qli8EeaPXJzrbKGcEg" name="system" minOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Q1i8EeaPXJzrbKGcEg" name="version" minOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2RFi8EeaPXJzrbKGcEg" name="code" minOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2RVi8EeaPXJzrbKGcEg" name="display" minOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Rli8EeaPXJzrbKGcEg" name="userSelected" minOccurs="1">
+        <datatype xmi:idref="_-BK12li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2R1i8EeaPXJzrbKGcEg" typeName="Code">
+      <fields xmi:id="_-BK2SFi8EeaPXJzrbKGcEg" name="value" minOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2SVi8EeaPXJzrbKGcEg" typeName="Identifier" description="Identifier">
+      <fields xmi:id="_-BK2Sli8EeaPXJzrbKGcEg" name="use" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2S1i8EeaPXJzrbKGcEg" name="type" maxOccurs="1">
+        <datatype xmi:idref="_-BK2NVi8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2TFi8EeaPXJzrbKGcEg" name="system" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2TVi8EeaPXJzrbKGcEg" name="value" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Tli8EeaPXJzrbKGcEg" name="period" maxOccurs="1">
+        <datatype xmi:idref="_-BK2UFi8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2T1i8EeaPXJzrbKGcEg" name="assigner" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2UFi8EeaPXJzrbKGcEg" typeName="Period">
+      <fields xmi:id="_-BK2UVi8EeaPXJzrbKGcEg" name="start" maxOccurs="1">
+        <datatype xmi:idref="_-BK2U1i8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Uli8EeaPXJzrbKGcEg" name="end" maxOccurs="1">
+        <datatype xmi:idref="_-BK2U1i8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2U1i8EeaPXJzrbKGcEg" typeName="FhirDateTime" description="asdf" typeSpec="">
+      <fields xmi:id="_-BK2VFi8EeaPXJzrbKGcEg" name="value" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2VVi8EeaPXJzrbKGcEg" typeName="FhirAddress">
+      <fields xmi:id="_-BK2Vli8EeaPXJzrbKGcEg" name="use" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2V1i8EeaPXJzrbKGcEg" name="type" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2WFi8EeaPXJzrbKGcEg" name="text" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2WVi8EeaPXJzrbKGcEg" name="line" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Wli8EeaPXJzrbKGcEg" name="city" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2W1i8EeaPXJzrbKGcEg" name="district" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2XFi8EeaPXJzrbKGcEg" name="state" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2XVi8EeaPXJzrbKGcEg" name="postalCode" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Xli8EeaPXJzrbKGcEg" name="country" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2X1i8EeaPXJzrbKGcEg" name="period" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK2UFi8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2YFi8EeaPXJzrbKGcEg" typeName="ContactPoint">
+      <fields xmi:id="_-BK2YVi8EeaPXJzrbKGcEg" name="system" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Yli8EeaPXJzrbKGcEg" name="value" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2Y1i8EeaPXJzrbKGcEg" name="use" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2ZFi8EeaPXJzrbKGcEg" name="rank" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2ZVi8EeaPXJzrbKGcEg" name="period">
+        <datatype xmi:idref="_-BK2UFi8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2Zli8EeaPXJzrbKGcEg" typeName="Contact"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2Z1i8EeaPXJzrbKGcEg" typeName="HumanName">
+      <fields xmi:id="_-BK2aFi8EeaPXJzrbKGcEg" name="use" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2aVi8EeaPXJzrbKGcEg" name="prefix" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2ali8EeaPXJzrbKGcEg" name="suffix" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2a1i8EeaPXJzrbKGcEg" name="given" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2bFi8EeaPXJzrbKGcEg" name="family" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2bVi8EeaPXJzrbKGcEg" name="period" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2bli8EeaPXJzrbKGcEg" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2b1i8EeaPXJzrbKGcEg" name="text" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTSEnumerated" xmi:id="_-BK2cFi8EeaPXJzrbKGcEg" typeName="NullFlavor" isReadonly="true">
+      <literals xmi:id="_-BK2cVi8EeaPXJzrbKGcEg" name="NA" description="not available" code="String"/>
+      <literals xmi:id="_-BK2cli8EeaPXJzrbKGcEg" name="NI" description="not indicated" code="String"/>
+      <literals xmi:id="_-BK2c1i8EeaPXJzrbKGcEg" name="NK" description="not known" code="String"/>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTSEnumerated" xmi:id="_-BK2dFi8EeaPXJzrbKGcEg" typeName="Unit" isReadonly="true">
+      <literals xmi:id="_-BK2dVi8EeaPXJzrbKGcEg" name="kg" description="kilograms" code="string"/>
+      <literals xmi:id="_-BK2dli8EeaPXJzrbKGcEg" name="m " description="meters" code="string"/>
+      <literals xmi:id="_-BK2d1i8EeaPXJzrbKGcEg" name="mg" description="milligrams" code="string"/>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_-BK2eFi8EeaPXJzrbKGcEg" typeName="TranslationDT" isReadonly="true">
+      <fields xmi:id="_-BK2eVi8EeaPXJzrbKGcEg" name="code" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2eli8EeaPXJzrbKGcEg" name="codeSystem" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2e1i8EeaPXJzrbKGcEg" name="codeSystemName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2fFi8EeaPXJzrbKGcEg" name="displayName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2fVi8EeaPXJzrbKGcEg" name="nullFlavor" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK2cFi8EeaPXJzrbKGcEg" />
+      </fields>
+      <fields xmi:id="_-BK2fli8EeaPXJzrbKGcEg" name="originalText" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_-BK13li8EeaPXJzrbKGcEg" />
+      </fields>
+    </datatypes>
+  </mdmi:MessageGroup>
+</xmi:XMI>

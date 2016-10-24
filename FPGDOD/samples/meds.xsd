@@ -1,0 +1,50 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="main">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DATA_RECORD" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="EDIPI"/>
+              <xs:element type="xs:string" name="SITEID"/>
+              <xs:element type="xs:string" name="MONIKER"/>
+              <xs:element type="xs:string" name="SOURCESYSTEM"/>
+              <xs:element type="xs:string" name="FETCHEDFROM"/>
+              <xs:element type="xs:string" name="FETCHEDAT"/>
+              <xs:element type="xs:string" name="FETCHEDWITH"/>
+              <xs:element type="xs:string" name="EVENT_ID"/>
+              <xs:element type="xs:string" name="PRODUCT_NCID"/>
+              <xs:element type="xs:string" name="MED_START_DATE"/>
+              <xs:element type="xs:string" name="ORDER_EXPIRATION_DATE"/>
+              <xs:element type="xs:string" name="ORDERED_DATE"/>
+              <xs:element type="xs:string" name="TIMING_QTY_DISPLAY"/>
+              <xs:element type="xs:string" name="ROUTE_METHOD_NCID"/>
+              <xs:element type="xs:string" name="PRESCRIPTION_NUMBER"/>
+              <xs:element type="xs:string" name="ORDER_NUMBER"/>
+              <xs:element type="xs:string" name="DMIS_ID"/>
+              <xs:element type="xs:string" name="ORDER_STATUS_NCID"/>
+              <xs:element type="xs:string" name="NO_OF_REFILLS"/>
+              <xs:element type="xs:string" name="DISPENSE_QTY"/>
+              <xs:element type="xs:string" name="REFILLS_REMAIN"/>
+              <xs:element type="xs:string" name="DISPENSE_UNIT_NCID"/>
+              <xs:element type="xs:string" name="ENTERED_TIME"/>
+              <xs:element type="xs:string" name="ORDERING_PROVIDER"/>
+              <xs:element type="xs:string" name="LAST_DISPENSED_DATE"/>
+              <xs:element type="xs:string" name="EVENT_START_TIME"/>
+              <xs:element type="xs:string" name="OTC_FLAG"/>
+              <xs:element type="xs:string" name="DAYS_SUPPLY"/>
+              <xs:element type="xs:string" name="FACILITY_NCID"/>
+              <xs:element type="xs:string" name="FACILITY_NAME"/>
+              <xs:element type="xs:string" name="INPATIENT_OUTPATIENT"/>
+              <xs:element type="xs:string" name="ORDERING_PROVIDER_NCID"/>
+              <xs:element type="xs:string" name="DISPENSING_LOCATION"/>
+              <xs:element type="xs:string" name="LOW_DOSE_VALUE"/>
+              <xs:element type="xs:string" name="DOSE_UNITS_NCID"/>
+              <xs:element type="xs:string" name="QTY_VALUE"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

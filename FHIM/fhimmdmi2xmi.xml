@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default"
+	xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+	<target name="default">
+		
+		<delete file="map/FHIMmap.xmi"/>
+	 	<copy file="map/FHIMmap.mdmi" tofile="map/FHIMmap.xmi"/>
+	 		 
+ 	  	<mdmiExport model="platform:/resource/FHIM/map/FHIMmap.xmi" /> 
+	   	
+		<replace file='map/FHIMmap.xmi' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="'/>
+		<replace file='map/FHIMmap.xmi' token='&lt;/businessElement>' value='" />'/>
+		<replace file='map/FHIMmap.xmi' token='&lt;semanticElement>' value='&lt;semanticElement xmi:idref="'/>
+		<replace file='map/FHIMmap.xmi' token='&lt;/semanticElement>' value='" />'/>	
+		<replace file='map/FHIMmap.xmi' token='&lt;referenceDatatype>' value='&lt;referenceDatatype xmi:idref="'/>
+		<replace file='map/FHIMmap.xmi' token='&lt;/referenceDatatype>' value='" />'/>
+		<replace file='map/FHIMmap.xmi' token='&lt;children>' value='&lt;children xmi:idref="'/>
+		<replace file='map/FHIMmap.xmi' token='&lt;/children>' value='" />'/>
+		<replace file='map/FHIMmap.xmi' token='&lt;datatype>' value='&lt;datatype xmi:idref="'/>
+		<replace file='map/FHIMmap.xmi' token='&lt;/datatype>' value='" />'/>
+		<replace file='map/FHIMmap.xmi' token='&lt;syntaxNode xmi:type="mdmi:LeafSyntaxTranslator">#' value='&lt;syntaxNode xmi:idref="'/>
+		<replace file='map/FHIMmap.xmi' token='&lt;syntaxNode xmi:type="mdmi:Bag">' value='&lt;syntaxNode xmi:idref="'/>
+		<replace file='map/FHIMmap.xmi' token='&lt;/syntaxNode>' value='" />'/>
+  
+	 	
+	</target>
+	
+
+	
+</project>

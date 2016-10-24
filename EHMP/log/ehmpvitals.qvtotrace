@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:Trace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:trace="http:///www.eclipse.org/m2m/qvt/operational/trace.ecore">
+  <traceRecords>
+    <mappingOperation name="stepOne" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//stepOne"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_EUFTII_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="MessageGroup">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnoJCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="createPrimitiveDatatypes" package="MDMILibrary" module="MDMILibrary">
+      <runtimeMappingOperation href="qvto:/module.env#//createPrimitiveDatatypes"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="MessageGroup">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnoJCtEeaGc_TLN91agQ"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="stepTwo" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//stepTwo"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_EUFTII_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="root" type="Bag">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trno5CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="stepThree" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//stepThree"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAGroI_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Bag">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnpJCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAKWAI_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnpZCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FATf8I_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnppCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAssociations" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAssociations"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FALkIY_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Bag">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnp5CtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAMLNo_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnqpCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAMLMI_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnqJCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAMLM4_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnqZCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAssociations" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAssociations"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAMyQo_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Bag">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnq5CtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAP1l4_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnsZCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAOndo_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnxJCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FASR04_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnw5CtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAPOho_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnvpCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FARDsY_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnuJCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FASR2Y_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trntpCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FARDt4_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnt5CtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FARDtI_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnsJCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAOnc4_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnrJCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAOncI_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnu5CtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAS45Y_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trntZCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAQcqI_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnuZCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAPOiY_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnvJCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAP1lI_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnrpCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FARqxY_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnspCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAP1kY_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnrZCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAS44o_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnr5CtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAPOgI_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trns5CtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FASR1o_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnupCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAQcpY_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnwZCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAQcoo_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnv5CtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FASR0I_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnwJCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FARqwo_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trntJCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAPOg4_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnwpCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAOAYo_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnvZCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAssociations" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAssociations"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAMyRI_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data.items" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Bag">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnxZCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FANZUI_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data.items" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyJCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FAMyRo_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data.items" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnx5CtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../Vitals/model/vitals.uml#_FANZU4_CEeaQ_LENwCNzvw"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Vitals.data.items" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trn85CtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnyZCtEeaGc_TLN91agQ"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/ehmpvitals.mdmi#_2trnxpCtEeaGc_TLN91agQ"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+</trace:Trace>

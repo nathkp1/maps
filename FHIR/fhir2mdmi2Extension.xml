@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default"
+	xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+	<target name="default">
+		
+		<record name="${basedir}/log/build.log" action="start" append="no"/>
+		
+		<delete file="map/fhirextensionmap.mdmi"/>
+
+	 	 <qvto:transformation
+			uri="platform:/resource/org.mdmi.qvtcda/transforms/Fhir2Mdmi.qvto">
+			<in uri="platform:/resource/FHIR/extension/fhim2fhir.uml" />
+	 		<in uri="platform:/resource/FHIM/RI/RI.xmi" />
+	 	 	<out uri="platform:/resource/FHIR/map/fhirextensionmap.mdmi" />
+	 	 	<trace  uri="platform:/resource/FHIR/log/cdamap.qvtotrace" ></trace>
+			<configProperty name="semanticRoot" value="AllergyIntolerance" />
+			<configProperty name="syntaxRoot" value="IntoleranceCondition" />
+			<configProperty name="mappingStyle" value="NORMAL" />
+		</qvto:transformation>
+		
+		  <!--   
+		<mdmiExport model="platform:/resource/FHIR/map/fhirmap.xmi" /> 
+		<replace file='map/fhirmap.xmi' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="'/>
+		<replace file='map/fhirmap.xmi' token='&lt;/businessElement>' value='" />'/>
+		<replace file='map/fhirmap.xmi' token='&lt;semanticElement>' value='&lt;semanticElement xmi:idref="'/>
+		<replace file='map/fhirmap.xmi' token='&lt;/semanticElement>' value='" />'/>	
+		<replace file='map/fhirmap.xmi' token='&lt;referenceDatatype>' value='&lt;referenceDatatype xmi:idref="'/>
+		<replace file='map/fhirmap.xmi' token='&lt;/referenceDatatype>' value='" />'/>
+		<replace file='map/fhirmap.xmi' token='&lt;children>#' value='&lt;children xmi:idref="'/>
+		<replace file='map/fhirmap.xmi' token='&lt;/children>' value='" />'/>
+		<replace file='map/fhirmap.xmi' token='&lt;datatype>#' value='&lt;datatype xmi:idref="'/>
+		<replace file='map/fhirmap.xmi' token='&lt;/datatype>' value='" />'/>
+		<replace file='map/fhirmap.xmi' token='&lt;syntaxNode xmi:type="mdmi:LeafSyntaxTranslator">#' value='&lt;syntaxNode xmi:idref="'/>
+		<replace file='map/fhirmap.xmi' token='&lt;syntaxNode xmi:type="mdmi:Bag">#' value='&lt;syntaxNode xmi:idref="'/>
+		<replace file='map/fhirmap.xmi' token='&lt;/syntaxNode>' value='" />'/>
+ 	  --> 
+	</target>
+	
+
+	
+</project>

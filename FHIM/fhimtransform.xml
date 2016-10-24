@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default"
+	xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+	<target name="default">
+		
+		<record name="${basedir}/log/build.log" action="start" append="no"/>
+		
+		<delete file="map/FHIMmap.mdmi"/>
+		<delete file="map/FHIMmap.xmi"/>
+
+	 	 <qvto:transformation
+			uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/FHIM2Mdmi.qvto">
+			<in uri="platform:/resource/FHIM/gov.us.fhim.mdmi/FHIM.uml" />
+	 	 	<out uri="platform:/resource/FHIM/map/FHIMmap.mdmi" />
+	 	 	<trace  uri="platform:/resource/FHIM/log/cdamap.qvtotrace" ></trace>
+				<configProperty name="semanticRoot" value="AllergyIntolerance" />
+			<configProperty name="syntaxRoot" value="IntoleranceCondition,HumanPatient" />
+			<configProperty name="mappingStyle" value="NORMAL" />
+		</qvto:transformation>
+	 	
+		<delete file="map/FHIMmap.xmi"/>
+		 	<copy file="map/FHIMmap.mdmi" tofile="map/FHIMmap.xmi"/>
+		 		 
+	 	  	<mdmiExport model="platform:/resource/FHIM/map/FHIMmap.xmi" /> 
+		   	
+			<replace file='map/FHIMmap.xmi' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="'/>
+			<replace file='map/FHIMmap.xmi' token='&lt;/businessElement>' value='" />'/>
+			<replace file='map/FHIMmap.xmi' token='&lt;semanticElement>' value='&lt;semanticElement xmi:idref="'/>
+			<replace file='map/FHIMmap.xmi' token='&lt;/semanticElement>' value='" />'/>	
+			<replace file='map/FHIMmap.xmi' token='&lt;referenceDatatype>' value='&lt;referenceDatatype xmi:idref="'/>
+			<replace file='map/FHIMmap.xmi' token='&lt;/referenceDatatype>' value='" />'/>
+			<replace file='map/FHIMmap.xmi' token='&lt;children>' value='&lt;children xmi:idref="'/>
+			<replace file='map/FHIMmap.xmi' token='&lt;/children>' value='" />'/>
+			<replace file='map/FHIMmap.xmi' token='&lt;datatype>' value='&lt;datatype xmi:idref="'/>
+			<replace file='map/FHIMmap.xmi' token='&lt;/datatype>' value='" />'/>
+			<replace file='map/FHIMmap.xmi' token='&lt;syntaxNode xmi:type="mdmi:LeafSyntaxTranslator">#' value='&lt;syntaxNode xmi:idref="'/>
+			<replace file='map/FHIMmap.xmi' token='&lt;syntaxNode xmi:type="mdmi:Bag">' value='&lt;syntaxNode xmi:idref="'/>
+			<replace file='map/FHIMmap.xmi' token='&lt;/syntaxNode>' value='" />'/>
+	  
+	   
+		 
+  
+	 	
+	</target>
+	
+
+	
+</project>

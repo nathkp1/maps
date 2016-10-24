@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:fhir="http://www.eclipse.org/mdht/schema/profile/fhir/1.0.0" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Package xmi:id="_H4Y3IFQIEea3DercuKCjQA" name="fhim2fhir">
+    <packageImport xmi:id="_H92l8FQIEea3DercuKCjQA">
+      <importedPackage href="../dstu2/FHIR-dstu2.uml#_fO7eECP_EeW3155CxDza7Q"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_H-EoYFQIEea3DercuKCjQA" name="Profiles">
+      <packagedElement xmi:type="uml:Class" xmi:id="_H-EoYVQIEea3DercuKCjQA" name="IntoleranceCondition">
+        <ownedComment xmi:id="_H_F8EFQIEea3DercuKCjQA">
+          <body>Describes an observation of an &quot;Intolerance Condition&quot; of the Patient.  Intolerance Conditions are typically allergies, but the concept of an intolerance condition is broader than just allergies.  For example, an adverse reaction such as the patient becomes nauseous after taking a particular antibiotic is not an allergy, but may serve as a contra-indicator to the use of that antibiotic.  In general, Intolerance Conditions as caused by Food, Drugs, or some environmental factor such as mold, insect venom (i.e., bee stings), or pet dander.</body>
+        </ownedComment>
+        <generalization xmi:id="_H-FPcFQIEea3DercuKCjQA">
+          <general xmi:type="uml:Class" href="../dstu2/FHIR-dstu2.uml#_SlIkGGMNEeWuPtFcCiU3yA"/>
+        </generalization>
+        <ownedAttribute xmi:id="_H_N34FQIEea3DercuKCjQA" name="identifier">
+          <ownedComment xmi:id="_H_QUIFQIEea3DercuKCjQA">
+            <body>Uniquely identifies the Clinical Information/Record.  This property is akin to a record number.  While the record number by itself may not be unique outside of the organization that created it, the Id datatype allows for an assigning authority, which when combined with the local identifier should make the Id unique.  Among other purposes, the id property enables other records to be linked together.  This is particularly needful for Condiions (a sub type of Observations), where on-going Observations made on the same initial Health Concern (aka Problem) or Intolerance Condition can be tracked.&#xD;
+&#xD;
+&quot;Contains a value that uniquely identifies a single allergy for a person&quot; - HL7 Version 2.8, IAM-7&#xD;
+&quot;Contains the identifier assigned by an initiating system to an instance of a problem.&quot; - HL7 Version 2.8, PRB-4&#xD;
+&quot;A unique identifier for the simple observation.&quot; - HL7 FHIR, Observation.identifier.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../dstu2/FHIR-dstu2.uml#_R-v5gGMNEeWuPtFcCiU3yA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H_N34VQIEea3DercuKCjQA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H_N34lQIEea3DercuKCjQA" value="1"/>
+          <redefinedProperty href="../dstu2/FHIR-dstu2.uml#_SlJLIWMNEeWuPtFcCiU3yA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_H_UlkVQIEea3DercuKCjQA" name="status">
+          <ownedComment xmi:id="_H_VMolQIEea3DercuKCjQA">
+            <body>The state of the Clinical Information record, as defined in the state-transition model in the HL7 RIM.  Possible values include: Aborted, Active, Cancelled, Completed, Held, New, Nullified, Obsolete.  Note that this property represents the state of the clinical record, not the state of the thing being recorded (which is an especially important distinction when dealing with Observations).  When the state of the thing being obverved is needed (e.g., in remission), a separate property will be used.  Note also that VistA and RPMS have the concept of being &quot;Entered in Error&quot; which is equivalent to a status of Nullified.  For the Condition subtype of Observation, this property summarizes the current state of the Condition (or subtype such as Health Concern (aka Problem) or Intolerance Condition), as indicated by the last observation made on the Condition.&#xD;
+&#xD;
+&quot;Indicates the verification status for the allergy.&quot; - HL7 Version 2.8, IAM-17.  HL7 Version 2 has the following suggested values (table 438): Unconfirmed; Pending; Suspect; Confirmed or verified; Confirmed but inactive; Erroneous; Doubt raised.&#xD;
+&quot;Contains the observation result status.... This field reflects the current completion status of the results for one Observation Identifier....&quot; - HL7 Version 2.8, OBX-11.&#xD;
+&quot;Contains the current status of the problem at this particular date/time (e.g., active, active-improving, active-stable, active-worsening, inactive, resolved, etc.).&quot; - HL7 Version 2.8, PRB-14&#xD;
+&quot;The status of the result value.&quot; - HL7 FHIR, Observation.status.  Note that the possible values for status in FHIR are: Registered, Preliminary, Final, Amended, Cancelled, Entered in Error.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../dstu2/FHIR-dstu2.uml#_R9lb4GMNEeWuPtFcCiU3yA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H_UlklQIEea3DercuKCjQA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H_VMoFQIEea3DercuKCjQA" value="1"/>
+          <redefinedProperty href="../dstu2/FHIR-dstu2.uml#_SlLAVWMNEeWuPtFcCiU3yA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_H_pVsVQIEea3DercuKCjQA" name="category">
+          <ownedComment xmi:id="_H_p8wVQIEea3DercuKCjQA">
+            <body>Categorizes the reactant to which the patient has demonstrated an intolerance or an allergy.  Possible values include Drug Product, Drug Class, Ingredient, Food Product, and Environmental.  Note that this property may contain more than one value.&#xD;
+&quot;Category of the identified Substance.&quot; - HL7 FHIR, AllergyIntolerance.category.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="../dstu2/FHIR-dstu2.uml#_R9lb4GMNEeWuPtFcCiU3yA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H_pVslQIEea3DercuKCjQA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H_pVs1QIEea3DercuKCjQA" value="*"/>
+          <redefinedProperty href="../dstu2/FHIR-dstu2.uml#_SlLnYGMNEeWuPtFcCiU3yA"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_H4Y3IVQIEea3DercuKCjQA">
+      <eAnnotations xmi:id="_H4Y3IlQIEea3DercuKCjQA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/mdht/schema/profile/fhir/1.0.0#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_FHIR/FHIR.profile.uml#_dtdbUDDkEeWn6bT0Ftydnw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_H-ISwFQIEea3DercuKCjQA">
+      <eAnnotations xmi:id="_H-ISwVQIEea3DercuKCjQA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.mdmi.uml.profile/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <MDMI:MDMIMapping xmi:id="_H--nUFQIEea3DercuKCjQA" base_Class="_H-EoYVQIEea3DercuKCjQA">
+    <elements xmi:id="_H_AcgFQIEea3DercuKCjQA" businessElement="AllergyConcernContainer" modelElement="_H-EoYVQIEea3DercuKCjQA" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath=""/>
+    <elements xmi:id="_H_UlkFQIEea3DercuKCjQA" businessElement="AllergyObservationID" modelElement="_H_N34FQIEea3DercuKCjQA" businessElementId="e16a6146-42c0-4a28-a320-2cd664638f83" modelElementPath="identifier"/>
+    <elements xmi:id="_H_pVsFQIEea3DercuKCjQA" businessElement="AllergyConcernStatusCode" modelElement="_H_UlkVQIEea3DercuKCjQA" businessElementId="988bb2a3-323e-4005-b2c3-ac20263e68b0" modelElementPath="status"/>
+    <elements xmi:id="_H_sZAFQIEea3DercuKCjQA" businessElement="AllergyObservationAllergyTypeCode" modelElement="_H_pVsVQIEea3DercuKCjQA" businessElementId="39c7c1a7-46c6-45ac-ab76-00a19b198b88" modelElementPath="category"/>
+  </MDMI:MDMIMapping>
+  <fhir:StructureDefinition xmi:id="_H_C4wFQIEea3DercuKCjQA" id="_420A62FD03B6418BB10D01EB" uri="http://www.fhims.org/IntoleranceCondition" name="IntoleranceCondition" experimental="true" publisher="Office of National Coordinator" copyright="ONC" base_Class="_H-EoYVQIEea3DercuKCjQA" isLogical="false"/>
+  <fhir:Description xmi:id="_H_GjIFQIEea3DercuKCjQA" base_Comment="_H_F8EFQIEea3DercuKCjQA"/>
+  <fhir:ElementDefinition xmi:id="_H_Oe8FQIEea3DercuKCjQA" id="_nbH1P1aeEd6rJ7jpZ7LBFg" base_Property="_H_N34FQIEea3DercuKCjQA" name="id"/>
+  <fhir:Description xmi:id="_H_QUIVQIEea3DercuKCjQA" base_Comment="_H_QUIFQIEea3DercuKCjQA"/>
+  <fhir:ElementDefinition xmi:id="_H_VMoVQIEea3DercuKCjQA" id="_nbH1TVaeEd6rJ7jpZ7LBFg" base_Property="_H_UlkVQIEea3DercuKCjQA" name="recordStatus"/>
+  <fhir:Description xmi:id="_H_VzsFQIEea3DercuKCjQA" base_Comment="_H_VMolQIEea3DercuKCjQA"/>
+  <fhir:ElementDefinition xmi:id="_H_p8wFQIEea3DercuKCjQA" id="_CeA3sGX_EeCWgYu_gBZhWw" base_Property="_H_pVsVQIEea3DercuKCjQA" name="reactantCategory"/>
+  <fhir:Description xmi:id="_H_p8wlQIEea3DercuKCjQA" base_Comment="_H_p8wVQIEea3DercuKCjQA"/>
+  <fhir:ValueSetBinding xmi:id="_H_p8w1QIEea3DercuKCjQA" base_Property="_H_pVsVQIEea3DercuKCjQA" strength="preferred" valueSetUri="http://hl7.org/fhir/vs/allergy-intolerance-category"/>
+</xmi:XMI>

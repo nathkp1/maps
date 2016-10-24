@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:Trace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:trace="http:///www.eclipse.org/m2m/qvt/operational/trace.ecore">
+  <traceRecords>
+    <mappingOperation name="stepOne" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//stepOne"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="../models/meds.uml#_0I3W8JCsEeaGc_TLN91agQ"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="MessageGroup">
+        <value>
+          <modelElement href="../map/ehmpmeds.mdmi#_kL-FAJcFEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="createPrimitiveDatatypes" package="MDMILibrary" module="MDMILibrary">
+      <runtimeMappingOperation href="qvto:/module.env#//createPrimitiveDatatypes"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="MessageGroup">
+        <value>
+          <modelElement href="../map/ehmpmeds.mdmi#_kL-FAJcFEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="stepTwo" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//stepTwo"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="../models/meds.uml#_0I3W8JCsEeaGc_TLN91agQ"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="root" type="Bag">
+        <value>
+          <modelElement href="../map/ehmpmeds.mdmi#_kL-FA5cFEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/ehmpmeds.mdmi#_kL-FBZcFEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/ehmpmeds.mdmi#_kL-FBJcFEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+</trace:Trace>

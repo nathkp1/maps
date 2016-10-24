@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:mdmi="http://schema.omg.org/spec/MDMI/1.0">
+  <mdmi:MessageGroup xmi:id="_12pKgCEmEeaFMqMQFqptww" name="FHIM_IntoleranceCondition" description="IntoleranceCondition Message Group" defaultLocationExprLang="XPath" defaultConstraintExprLang="JavaScript" defaultRuleExprLang="JavaScript">
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_13ZYjyEmEeaFMqMQFqptww" typeName="Binary" description="Binary" reference="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_13ZYkCEmEeaFMqMQFqptww" typeName="Boolean" description="Boolean" reference="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_13ZYkSEmEeaFMqMQFqptww" typeName="DateTime" description="DateTime" reference="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_13ZYkiEmEeaFMqMQFqptww" typeName="Decimal" description="Decimal" reference="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_13ZYkyEmEeaFMqMQFqptww" typeName="Integer" description="Integer" reference="http://www.w3.org/2001/XMLSchema#integer"/>
+    <datatypes xmi:type="mdmi:DTSPrimitive" xmi:id="_13ZYlCEmEeaFMqMQFqptww" typeName="String" description="String" reference="http://www.w3.org/2001/XMLSchema#string"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZYlSEmEeaFMqMQFqptww" typeName="InstanceIdentifier">
+      <fields xmi:id="_13ZYliEmEeaFMqMQFqptww" name="extension" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYlyEmEeaFMqMQFqptww" name="root" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYmCEmEeaFMqMQFqptww" name="assigningAuthorityName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYmSEmEeaFMqMQFqptww" name="displayable" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYmiEmEeaFMqMQFqptww" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZYmyEmEeaFMqMQFqptww" typeName="Address">
+      <fields xmi:id="_13ZYnCEmEeaFMqMQFqptww" name="useablePeriod" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYnSEmEeaFMqMQFqptww" name="streetAddressLine" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYniEmEeaFMqMQFqptww" name="city" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYnyEmEeaFMqMQFqptww" name="state" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYoCEmEeaFMqMQFqptww" name="country" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYoSEmEeaFMqMQFqptww" name="postalCode" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYoiEmEeaFMqMQFqptww" name="use" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYoyEmEeaFMqMQFqptww" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYpCEmEeaFMqMQFqptww" name="text" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTSDerived" xmi:id="_13ZYpSEmEeaFMqMQFqptww" typeName="Address_UseabePeriod" restriction="&quot;Address_UseabePeriod&quot;"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZYpiEmEeaFMqMQFqptww" typeName="Telecom">
+      <fields xmi:id="_13ZYpyEmEeaFMqMQFqptww" name="value" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYqCEmEeaFMqMQFqptww" name="useablePeriod" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYqyEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYqSEmEeaFMqMQFqptww" name="use" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYqiEmEeaFMqMQFqptww" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTSDerived" xmi:id="_13ZYqyEmEeaFMqMQFqptww" typeName="Telecom_UseablePeriod" restriction="&quot;Telecom_UseablePeriod&quot;"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZYrCEmEeaFMqMQFqptww" typeName="PersonName">
+      <fields xmi:id="_13ZYrSEmEeaFMqMQFqptww" name="use" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYriEmEeaFMqMQFqptww" name="prefix" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYryEmEeaFMqMQFqptww" name="suffix" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYsCEmEeaFMqMQFqptww" name="given" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYsSEmEeaFMqMQFqptww" name="family" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYsiEmEeaFMqMQFqptww" name="validtime" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYsyEmEeaFMqMQFqptww" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYtCEmEeaFMqMQFqptww" name="text" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTExternal" xmi:id="_13ZYtSEmEeaFMqMQFqptww" typeName="PersonName_Use" typeSpec="mdmi://datatypes/deferredEnum?type=PersonName_Use&amp;valueSet=C-0-D15913-V200-cpt"/>
+    <datatypes xmi:type="mdmi:DTSDerived" xmi:id="_13ZYtiEmEeaFMqMQFqptww" typeName="PersonName_Validtime" restriction="&quot;PersonName_Validtime&quot;"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZYtyEmEeaFMqMQFqptww" typeName="CodedElement">
+      <fields xmi:id="_13ZYuCEmEeaFMqMQFqptww" name="code" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYuSEmEeaFMqMQFqptww" name="codeSystem" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYuiEmEeaFMqMQFqptww" name="codeSystemName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYuyEmEeaFMqMQFqptww" name="codeSystemVersion" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYvCEmEeaFMqMQFqptww" name="displayName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYvSEmEeaFMqMQFqptww" name="originalText" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYviEmEeaFMqMQFqptww" name="qualifier" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYvyEmEeaFMqMQFqptww" name="xsi:type" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYwCEmEeaFMqMQFqptww" name="nullFlavor" maxOccurs="1" description="nullFlavor">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYwSEmEeaFMqMQFqptww" name="codeT" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYwiEmEeaFMqMQFqptww" name="codeSystemT" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYwyEmEeaFMqMQFqptww" name="codeSystemNameT" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYxCEmEeaFMqMQFqptww" name="codeSystemVersionT" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYxSEmEeaFMqMQFqptww" name="displayNameT" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZYxiEmEeaFMqMQFqptww" typeName="TranslationCE" description="">
+      <fields xmi:id="_13ZYxyEmEeaFMqMQFqptww" name="code" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYyCEmEeaFMqMQFqptww" name="displayName" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYySEmEeaFMqMQFqptww" name="codeSystem" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYyiEmEeaFMqMQFqptww" name="codeSystemName" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZYyyEmEeaFMqMQFqptww" typeName="Container"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZYzCEmEeaFMqMQFqptww" typeName="EntityName">
+      <fields xmi:id="_13ZYzSEmEeaFMqMQFqptww" name="entityType" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZY0SEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYziEmEeaFMqMQFqptww" name="personName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZY0iEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZYzyEmEeaFMqMQFqptww" name="organizationName" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY0CEmEeaFMqMQFqptww" name="nameofTypeUnknown" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTExternal" xmi:id="_13ZY0SEmEeaFMqMQFqptww" typeName="EntityName_EntityType" typeSpec="mdmi://datatypes/deferredEnum?type=EntityName_EntityType&amp;valueSet=%22P%20%3D%20person"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY0iEmEeaFMqMQFqptww" typeName="EntityName_PersonName"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY0yEmEeaFMqMQFqptww" typeName="DateRange">
+      <fields xmi:id="_13ZY1CEmEeaFMqMQFqptww" name="low" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYkSEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY1SEmEeaFMqMQFqptww" name="high" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYkSEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY1iEmEeaFMqMQFqptww" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY1yEmEeaFMqMQFqptww" name="xsi:type" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY2CEmEeaFMqMQFqptww" typeName="PhysicalRange" description="">
+      <fields xmi:id="_13ZY2SEmEeaFMqMQFqptww" name="low" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY2iEmEeaFMqMQFqptww" name="high" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY2yEmEeaFMqMQFqptww" typeName="PhysicalQuantity">
+      <fields xmi:id="_13ZY3CEmEeaFMqMQFqptww" name="value" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY3SEmEeaFMqMQFqptww" name="unit" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY3iEmEeaFMqMQFqptww" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY3yEmEeaFMqMQFqptww" name="xsi:type" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY4CEmEeaFMqMQFqptww" typeName="ReferenceRange"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY4SEmEeaFMqMQFqptww" typeName="NormalcyCode"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY4iEmEeaFMqMQFqptww" typeName="PhysicalRatio" description="">
+      <fields xmi:id="_13ZY4yEmEeaFMqMQFqptww" name="numerator" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY5CEmEeaFMqMQFqptww" name="denominator" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY5SEmEeaFMqMQFqptww" typeName="TimingSchedule" description="">
+      <fields xmi:id="_13ZY5iEmEeaFMqMQFqptww" name="period" minOccurs="1" maxOccurs="1" description="number of times per unit">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY5yEmEeaFMqMQFqptww" name="unit" minOccurs="1" maxOccurs="1" description="Time Unit for schedule">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY6CEmEeaFMqMQFqptww" name="operator" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY6SEmEeaFMqMQFqptww" name="xsi:type" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY6iEmEeaFMqMQFqptww" name="institutionSpecified" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY6yEmEeaFMqMQFqptww" typeName="CodeableConcept">
+      <fields xmi:id="_13ZY7CEmEeaFMqMQFqptww" name="coding" minOccurs="1">
+        <datatype xmi:idref="_13ZY9yEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY7SEmEeaFMqMQFqptww" name="text" minOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY7iEmEeaFMqMQFqptww" typeName="CodeableConceptExtension">
+      <fields xmi:id="_13ZY7yEmEeaFMqMQFqptww" name="valueCodeableConcept" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZY6yEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY8CEmEeaFMqMQFqptww" name="url" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY8SEmEeaFMqMQFqptww" typeName="AddressExtension" restriction="">
+      <fields xmi:id="_13ZY8iEmEeaFMqMQFqptww" name="url" minOccurs="1" maxOccurs="1" description="url">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY8yEmEeaFMqMQFqptww" name="valueAddress" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYmyEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY9CEmEeaFMqMQFqptww" typeName="StringExtension">
+      <fields xmi:id="_13ZY9SEmEeaFMqMQFqptww" name="url" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY9iEmEeaFMqMQFqptww" name="valueString" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY9yEmEeaFMqMQFqptww" typeName="Coding">
+      <fields xmi:id="_13ZY-CEmEeaFMqMQFqptww" name="system" minOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY-SEmEeaFMqMQFqptww" name="version" minOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY-iEmEeaFMqMQFqptww" name="code" minOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY-yEmEeaFMqMQFqptww" name="display" minOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZY_CEmEeaFMqMQFqptww" name="userSelected" minOccurs="1">
+        <datatype xmi:idref="_13ZYkCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY_SEmEeaFMqMQFqptww" typeName="Code">
+      <fields xmi:id="_13ZY_iEmEeaFMqMQFqptww" name="value" minOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZY_yEmEeaFMqMQFqptww" typeName="Identifier" description="Identifier">
+      <fields xmi:id="_13ZZACEmEeaFMqMQFqptww" name="use" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZASEmEeaFMqMQFqptww" name="type" maxOccurs="1">
+        <datatype xmi:idref="_13ZY6yEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZAiEmEeaFMqMQFqptww" name="system" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZAyEmEeaFMqMQFqptww" name="value" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZBCEmEeaFMqMQFqptww" name="period" maxOccurs="1">
+        <datatype xmi:idref="_13ZZBiEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZBSEmEeaFMqMQFqptww" name="assigner" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZZBiEmEeaFMqMQFqptww" typeName="Period">
+      <fields xmi:id="_13ZZByEmEeaFMqMQFqptww" name="start" maxOccurs="1">
+        <datatype xmi:idref="_13ZZCSEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZCCEmEeaFMqMQFqptww" name="end" maxOccurs="1">
+        <datatype xmi:idref="_13ZZCSEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZZCSEmEeaFMqMQFqptww" typeName="FhirDateTime" description="asdf" typeSpec="">
+      <fields xmi:id="_13ZZCiEmEeaFMqMQFqptww" name="value" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZZCyEmEeaFMqMQFqptww" typeName="FhirAddress">
+      <fields xmi:id="_13ZZDCEmEeaFMqMQFqptww" name="use" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZDSEmEeaFMqMQFqptww" name="type" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZDiEmEeaFMqMQFqptww" name="text" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZDyEmEeaFMqMQFqptww" name="line" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZECEmEeaFMqMQFqptww" name="city" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZESEmEeaFMqMQFqptww" name="district" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZEiEmEeaFMqMQFqptww" name="state" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZEyEmEeaFMqMQFqptww" name="postalCode" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZFCEmEeaFMqMQFqptww" name="country" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZFSEmEeaFMqMQFqptww" name="period" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZZBiEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZZFiEmEeaFMqMQFqptww" typeName="ContactPoint">
+      <fields xmi:id="_13ZZFyEmEeaFMqMQFqptww" name="system" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZGCEmEeaFMqMQFqptww" name="value" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZGSEmEeaFMqMQFqptww" name="use" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZGiEmEeaFMqMQFqptww" name="rank" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZGyEmEeaFMqMQFqptww" name="period">
+        <datatype xmi:idref="_13ZZBiEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZZHCEmEeaFMqMQFqptww" typeName="Contact"/>
+    <datatypes xmi:type="mdmi:DTCStructured" xmi:id="_13ZZHSEmEeaFMqMQFqptww" typeName="HumanName">
+      <fields xmi:id="_13ZZHiEmEeaFMqMQFqptww" name="use" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZHyEmEeaFMqMQFqptww" name="prefix" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZICEmEeaFMqMQFqptww" name="suffix" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZISEmEeaFMqMQFqptww" name="given" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZIiEmEeaFMqMQFqptww" name="family" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZIyEmEeaFMqMQFqptww" name="period" minOccurs="1" maxOccurs="1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13ZZJCEmEeaFMqMQFqptww" name="nullFlavor" minOccurs="1" maxOccurs="1" description="">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+      <fields xmi:id="_13Z_gCEmEeaFMqMQFqptww" name="text" minOccurs="1" maxOccurs="-1">
+        <datatype xmi:idref="_13ZYlCEmEeaFMqMQFqptww" />
+      </fields>
+    </datatypes>
+  </mdmi:MessageGroup>
+</xmi:XMI>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default" xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+
+
+	<target name="default">
+		<antcall target="generateMDMI">
+			<param name="umlmodel" value="vitals.uml" />
+			<param name="mdmimodel" value="dodcdrvitals.mdmi" />
+		</antcall>
+		
+			<antcall target="generateMDMI">
+				<param name="umlmodel" value="meds.uml" />
+				<param name="mdmimodel" value="dodcdrmeds.mdmi" />
+			</antcall>
+		
+			<antcall target="generateMDMI">
+				<param name="umlmodel" value="problems.uml" />
+				<param name="mdmimodel" value="dodcdrproblems.mdmi" />
+			</antcall>
+
+		 
+
+		<antcall target="exportMDMI">
+			<param name="mdmimodel" value="dodcdrvitals.mdmi" />
+			<param name="xmimodel" value="dodcdrvitals.xmi" />
+		</antcall>
+		
+		<antcall target="exportMDMI">
+				<param name="mdmimodel" value="dodcdrmeds.mdmi" />
+			<param name="xmimodel" value="dodcdrmeds.xmi" />
+			</antcall>
+		<antcall target="exportMDMI">
+				<param name="mdmimodel" value="dodcdrproblems.mdmi" />
+			<param name="xmimodel" value="dodcdrproblems.xmi" />
+				
+			</antcall>
+		
+
+		 
+		 
+
+	</target>
+
+
+	<target name="generateMDMI">
+
+		<record name="${basedir}/log/build.log" action="start" append="no" />
+
+
+		<delete file="map/${mdmimodel}" />
+
+		<qvto:transformation uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/dodcdr2mdmi.qvto">
+			<in uri="platform:/resource/FPGDOD/models/${umlmodel}" />
+			<out uri="platform:/resource/FPGDOD/map/${mdmimodel}" />
+			<trace uri="platform:/resource/FPGDOD/log/fpgdod.qvtotrace">
+			</trace>
+		</qvto:transformation>
+
+
+
+	</target>
+
+	<target name="exportMDMI">
+
+		<delete file="map/${xmimodel}" />
+
+		<copy file="map/${mdmimodel}" tofile="map/${xmimodel}" />
+
+		<mdmiExport model="platform:/resource/FPGDOD/map/${xmimodel}" />
+
+		<replace file='map/${xmimodel}' token='&lt;relatedSemanticElement>' value='&lt;relatedSemanticElement xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/relatedSemanticElement>' value='" />' />	
+			<replace file='map/${xmimodel}' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/businessElement>' value='"  >&lt;/businessElement>' />
+			<replace file='map/${xmimodel}' token='&lt;semanticElement>' value='&lt;semanticElement xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/semanticElement>' value='" />' />	
+			<replace file='map/${xmimodel}' token='&lt;referenceDatatype>' value='&lt;referenceDatatype xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/referenceDatatype>' value='" />' />
+			<replace file='map/${xmimodel}' token='&lt;children>#' value='&lt;children xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/children>' value='" />' />
+			<replace file='map/${xmimodel}' token='&lt;datatype>#' value='&lt;datatype xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/datatype>' value='" />' />
+			<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:LeafSyntaxTranslator">#' value='&lt;syntaxNode xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:Bag">#' value='&lt;syntaxNode xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:Choice">#' value='&lt;syntaxNode xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/syntaxNode>' value='" />' />
+			<replace file='map/${xmimodel}' token='xmi:idref="#' value='xmi:idref="' />
+
+	</target>
+ 
+</project>

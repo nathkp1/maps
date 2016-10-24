@@ -1,0 +1,38 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="main">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DATA_RECORD" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="EDIPI"/>
+              <xs:element type="xs:string" name="SITEID"/>
+              <xs:element type="xs:string" name="MONIKER"/>
+              <xs:element type="xs:string" name="SOURCESYSTEM"/>
+              <xs:element type="xs:string" name="FETCHEDFROM"/>
+              <xs:element type="xs:string" name="FETCHEDAT"/>
+              <xs:element type="xs:string" name="FETCHEDWITH"/>
+              <xs:element type="xs:string" name="STATUS_NCID"/>
+              <xs:element type="xs:string" name="EVENT_START_TIME"/>
+              <xs:element type="xs:string" name="ONSET_DATE"/>
+              <xs:element type="xs:string" name="PROBLEM_COMMENT" minOccurs="0"/>
+              <xs:element type="xs:string" name="PROBLEM_MEDCIN"/>
+              <xs:element type="xs:string" name="PROBLEM_NCID"/>
+              <xs:element type="xs:string" name="ICD9_CODE"/>
+              <xs:element type="xs:string" name="CHRONICITY_DESCRIPTION_NCID"/>
+              <xs:element type="xs:string" name="SOURCE_OF_INFO_NCID"/>
+              <xs:element type="xs:string" name="CREATION_TIME"/>
+              <xs:element type="xs:string" name="CLINICIAN_ID_NCID"/>
+              <xs:element type="xs:string" name="CLINICIAN_NAME"/>
+              <xs:element type="xs:string" name="FACILITY_NCID"/>
+              <xs:element type="xs:string" name="FACILITY_NAME"/>
+              <xs:element type="xs:string" name="DMIS_ID"/>
+              <xs:element type="xs:string" name="LAST_MODIFIED_DATE"/>
+              <xs:element type="xs:string" name="EVENT_ID"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

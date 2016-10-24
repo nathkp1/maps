@@ -1,0 +1,194 @@
+import org.mdmi.qvt.CdaUtils2;
+
+import MDMILibrary;
+
+
+modeltype uml uses 'http://www.eclipse.org/uml2/4.0.0/UML';
+modeltype mdmi uses 'http://schema.omg.org/spec/MDMI/1.0';
+modeltype ecore uses 'http://www.eclipse.org/emf/2002/Ecore';
+modeltype mdmiprofile uses 'http://org.mdmi.uml.profile/1';
+ 
+
+transformation generateMDMI(in mdht  : uml, out targetMDMI : mdmi );
+
+configuration property syntaxRoot : String;
+
+
+configuration property semanticRoot : String;
+configuration property mappingStyle : String;
+
+
+main() { 
+ clearCache();
+ mdht.objectsOfType(uml::Package)->map stepOne();
+}
+
+
+mapping uml::Package::stepOne() :  mdmi::MessageGroup when {self.owner = null } {
+
+	result.name := self.name;
+	result.description := syntaxRoot+" Message Group";
+	result.defaultLocationExprLang := "XPath";
+	result.defaultConstraintExprLang :="JavaScript";
+	result.defaultRuleExprLang :="JavaScript";	
+	
+	result.map createPrimitiveDatatypes();
+	// Need hook to create localized datatypes 	
+ 	result.populateBER();
+ 	// Need hook to add datatype maps
+ 	result.datatypeMaps +=   object mdmi::DatatypeMap {
+    name := 'StringToCodedElementMap';
+		ruleLeftToRight := getMap('String','CodedElement');
+		ruleRightToLeft := getMap('CodedElement','String');
+    };
+  
+ 	result.datatypeMaps +=   object mdmi::DatatypeMap {
+    name := 'StringToDateTimeMap';
+		ruleLeftToRight := getMap('String','DateTime');
+		ruleRightToLeft := getMap('DateTime','String');
+    };
+  
+ 	
+ 	var mm : MessageModel := object MessageModel {
+ 		
+ 	};
+ 	
+ 	
+ 	mm.elementSet := object SemanticElementSet {
+		
+	};
+	
+	mm.syntaxModel :=  object MessageSyntaxModel {
+		
+	};
+	
+	mm.messageModelName := self.name;
+	
+	var n : mdmi::_Bag := object mdmi::_Bag {
+		
+	};
+	
+	n.name := self.name;
+	n.location := self.name;
+	
+ 
+	mm.syntaxModel.root := n;
+	n.syntaxModel := mm.syntaxModel;
+	
+  	mm.messageModelName := self.name;
+ 	mm.source := self.name;
+    result.models += mm;
+    
+    self->map stepTwo(n,result.domainDictionary,mm.elementSet);
+  
+}
+
+mapping uml::Package::stepTwo(inout root : mdmi::_Bag,inout dictionary : mdmi::MDMIDomainDictionaryReference,inout  ses : SemanticElementSet ) 
+{
+log(self.qualifiedName);
+self.ownedElement[uml::Package]->map stepTwo(root,dictionary,ses );
+ root.nodes +=  self.ownedElement[uml::Class]->map stepThree(dictionary,ses);
+}
+
+mapping uml::Class::stepThree(inout dictionary : mdmi::MDMIDomainDictionaryReference,inout  ses : SemanticElementSet) : mdmi::_Bag when {self.getStereotypeApplications()[mdmiprofile::MDMIMapping]->notEmpty() } 
+{
+	log(self.qualifiedName);
+	result.name := self.name;
+	result.location := self.name;
+	
+	result.semanticElement := object SemanticElement {
+		name :=   self.getSemanticElementName();
+		elementType := mappingStyle;		
+ 	};
+	ses.semanticElements += result.semanticElement;
+	
+	result.nodes += self.getAllAttributesFix()->map mapAttributes(self.name,dictionary, ses);
+ 	result.nodes +=  self.getAllAssociationsFix()->map mapAssociations(self.name,dictionary,ses);
+}
+
+mapping uml::Property::mapAttributes(in path : String,inout dictionary : mdmi::MDMIDomainDictionaryReference,inout  ses : SemanticElementSet) : mdmi::Node {
+
+init {
+ 	switch { 
+		case (self.getMDMIDatype().equalsIgnoreCase("String")) result := object mdmi::LeafSyntaxTranslator {};
+		case (self.getMDMIDatype().equalsIgnoreCase("ANY")) result := object mdmi::Choice {};
+		else result := object mdmi::_Bag {};
+	};
+	
+	result.semanticElement := object SemanticElement {
+		name :=   self.getSemanticElementName();
+		elementType := mappingStyle;		
+		_datatype := targetMDMI.rootObjects()[mdmi::MessageGroup].datatypes->select(typeName.equalsIgnoreCase(self.getMDMIDatype()))->asSequence()->first();
+ 	};
+ 	
+ 	var ber : MDMIBusinessElementReference  := getBER(dictionary,self.getNearestPackage().searchForMapping(path+'.'+self.name,''));
+ 	
+ 	if (not ber.oclIsInvalid() and ber <> null) then {
+			result.semanticElement.toMdmi += object mdmi::ToSemanticElement {
+				ruleExpressionLanguage := "javaScript";
+				name := "From_" + ber.name; 
+				businessElement := ber;
+				if (not ber.referenceDatatype.typeName.equalsIgnoreCase(result.semanticElement._datatype.typeName)) then {
+					rule := generateRule(ber.referenceDatatype.typeName,result.semanticElement._datatype.typeName,ber.name,"");
+				} endif;
+			};
+			result.semanticElement.fromMdmi += object mdmi::ToBusinessElement {
+				name := "To_" + ber.name;  
+				ruleExpressionLanguage := "javaScript";
+				businessElement := ber;
+				if (not ber.referenceDatatype.typeName.equalsIgnoreCase(result.semanticElement._datatype.typeName)) then {
+						rule := generateRule( result.semanticElement._datatype.typeName,  ber.referenceDatatype.typeName,ber.name,"");
+				} endif;
+			};
+	 } endif;
+	 
+ 	
+	ses.semanticElements += result.semanticElement;
+	
+	result.name := self.name;
+	result.location := self.name;
+ }
+	
+}
+
+mapping uml::Property::mapAssociations(in path : String,inout dictionary : mdmi::MDMIDomainDictionaryReference,inout  ses : SemanticElementSet): mdmi::Bag 
+{
+	result.name := self.name;
+	result.location := self.name;
+	result.semanticElement := object SemanticElement {
+		name :=   self.getSemanticElementName();
+		elementType := mappingStyle;		
+		_datatype := targetMDMI.rootObjects()[mdmi::MessageGroup].datatypes->select(typeName.equalsIgnoreCase('Container'))->asSequence()->first();
+ 	};
+ 	
+ 	var ber : MDMIBusinessElementReference  := getBER(dictionary,self.getNearestPackage().searchForMapping(path+'.'+self.name,''));
+	
+ 	if (not ber.oclIsInvalid() and ber <> null) then {
+			result.semanticElement.toMdmi += object mdmi::ToSemanticElement {
+				ruleExpressionLanguage := "javaScript";
+				name := "From_" + ber.name; 
+				businessElement := ber;
+				if (not ber.referenceDatatype.typeName.equalsIgnoreCase(result.semanticElement._datatype.typeName)) then {
+					rule := generateRule(ber.referenceDatatype.typeName,result.semanticElement._datatype.typeName,ber.name,"");
+				} endif;
+			};
+			result.semanticElement.fromMdmi += object mdmi::ToBusinessElement {
+				name := "To_" + ber.name;  
+				ruleExpressionLanguage := "javaScript";
+				businessElement := ber;
+				if (not ber.referenceDatatype.typeName.equalsIgnoreCase(result.semanticElement._datatype.typeName)) then {
+						rule := generateRule( result.semanticElement._datatype.typeName,  ber.referenceDatatype.typeName,ber.name,"");
+				} endif;
+			};
+	 } endif;
+	 
+ 	
+	ses.semanticElements += result.semanticElement;
+	result.nodes += self.type[uml::Class].getAllAttributesFix()->map mapAttributes(path,dictionary,ses);
+	result.nodes += self.type[uml::Class].getAllAssociationsFix()->map mapAssociations(path+"."+self.name, dictionary,ses);
+}
+
+
+ 
+ 
+  

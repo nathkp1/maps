@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:XSDGeneration="http:///schemas/XSDGeneration/_NblMEM6UEdy3vZDTUklmRg/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/XSDGeneration/_NblMEM6UEdy3vZDTUklmRg/4 pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_NblMEc6UEdy3vZDTUklmRg">
+  <uml:Package xmi:id="_TcqrUJejEeanwsLL6pP2Sg" name="CDRDOD">
+    <packageImport xmi:id="_UP6GIpejEeanwsLL6pP2Sg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzIoEtXEdqhPYJq3sEkGA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UQq7IJejEeanwsLL6pP2Sg" name="Problem">
+      <ownedAttribute xmi:id="_UQriMJejEeanwsLL6pP2Sg" name="DATA_RECORD" type="_UQsJQJejEeanwsLL6pP2Sg" aggregation="composite" association="_3999sJemEeanwsLL6pP2Sg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQwatJejEeanwsLL6pP2Sg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQwas5ejEeanwsLL6pP2Sg" value="*"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_UQsJQJejEeanwsLL6pP2Sg" name="DATA_RECORD" visibility="private">
+        <ownedAttribute xmi:id="_UQsJQZejEeanwsLL6pP2Sg" name="EDIPI">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQsJQ5ejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQsJQpejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQswUJejEeanwsLL6pP2Sg" name="SITEID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQswUpejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQswUZejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQswU5ejEeanwsLL6pP2Sg" name="MONIKER">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQswVZejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQswVJejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQswVpejEeanwsLL6pP2Sg" name="SOURCESYSTEM">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQtXYZejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQtXYJejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQtXYpejEeanwsLL6pP2Sg" name="FETCHEDFROM">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQtXZJejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQtXY5ejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQtXZZejEeanwsLL6pP2Sg" name="FETCHEDAT">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQtXZ5ejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQtXZpejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQtXaJejEeanwsLL6pP2Sg" name="FETCHEDWITH">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQtXapejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQtXaZejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQtXa5ejEeanwsLL6pP2Sg" name="STATUS_NCID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQt-cZejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQt-cJejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQt-cpejEeanwsLL6pP2Sg" name="EVENT_START_TIME">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQt-dJejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQt-c5ejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQt-dZejEeanwsLL6pP2Sg" name="ONSET_DATE">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQt-d5ejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQt-dpejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQt-eJejEeanwsLL6pP2Sg" name="PROBLEM_COMMENT">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQt-epejEeanwsLL6pP2Sg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQt-eZejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQt-e5ejEeanwsLL6pP2Sg" name="PROBLEM_MEDCIN">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQulgZejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQulgJejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQulgpejEeanwsLL6pP2Sg" name="PROBLEM_NCID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQulhJejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQulg5ejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQulhZejEeanwsLL6pP2Sg" name="ICD9_CODE">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQulh5ejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQulhpejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQuliJejEeanwsLL6pP2Sg" name="CHRONICITY_DESCRIPTION_NCID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQulipejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQuliZejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQuli5ejEeanwsLL6pP2Sg" name="SOURCE_OF_INFO_NCID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQvMkJejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQuljJejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQvMkZejEeanwsLL6pP2Sg" name="CREATION_TIME">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQvMk5ejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQvMkpejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQvMlJejEeanwsLL6pP2Sg" name="CLINICIAN_ID_NCID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQvMlpejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQvMlZejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQvMl5ejEeanwsLL6pP2Sg" name="CLINICIAN_NAME">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQvMmZejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQvMmJejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQvMmpejEeanwsLL6pP2Sg" name="FACILITY_NCID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQvzoJejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQvMm5ejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQvzoZejEeanwsLL6pP2Sg" name="FACILITY_NAME">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQvzo5ejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQvzopejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQvzpJejEeanwsLL6pP2Sg" name="DMIS_ID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQvzppejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQvzpZejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQvzp5ejEeanwsLL6pP2Sg" name="LAST_MODIFIED_DATE">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQvzqZejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQvzqJejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UQwasJejEeanwsLL6pP2Sg" name="EVENT_ID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQwaspejEeanwsLL6pP2Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQwasZejEeanwsLL6pP2Sg" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3999sJemEeanwsLL6pP2Sg" memberEnd="_UQriMJejEeanwsLL6pP2Sg _39-kwJemEeanwsLL6pP2Sg">
+      <ownedEnd xmi:id="_39-kwJemEeanwsLL6pP2Sg" type="_UQq7IJejEeanwsLL6pP2Sg" association="_3999sJemEeanwsLL6pP2Sg"/>
+    </packagedElement>
+    <profileApplication xmi:id="_UNFboJejEeanwsLL6pP2Sg">
+      <eAnnotations xmi:id="_UNJtEJejEeanwsLL6pP2Sg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_NblMEc6UEdy3vZDTUklmRg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_yvqaMUtXEdqCydWod9T-cg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_UP6GIJejEeanwsLL6pP2Sg">
+      <eAnnotations xmi:id="_UP6GIZejEeanwsLL6pP2Sg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_eDH5EA-uEd2ng-v1tnpITw"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_ytRNgEtXEdqCydWod9T-cg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_1lcnIJemEeanwsLL6pP2Sg">
+      <eAnnotations xmi:id="_1lcnIZemEeanwsLL6pP2Sg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.mdmi.uml.profile/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <XSDGeneration:SchemaGen xmi:id="_UPw8MJejEeanwsLL6pP2Sg" base_Package="_TcqrUJejEeanwsLL6pP2Sg" complexTypeSuffix="" globalElements="true"/>
+  <MDMI:MDMIMapping xmi:id="_CLTUYJenEeanwsLL6pP2Sg" base_Class="_UQq7IJejEeanwsLL6pP2Sg">
+    <elements xmi:id="_CLTUYZenEeanwsLL6pP2Sg" businessElement="AllergiesSectionText" modelElement="_UQsJQZejEeanwsLL6pP2Sg" businessElementId="c3d121c5-eb50-40fe-b72e-a4c342d901e6" modelElementPath="DATA_RECORD.EDIPI"/>
+  </MDMI:MDMIMapping>
+</xmi:XMI>

@@ -1,0 +1,48 @@
+library MDMILibrary;
+
+modeltype mdmi uses 'http://schema.omg.org/spec/MDMI/1.0';
+
+mapping inout mdmi::MessageGroup::createPrimitiveDatatypes() {
+	
+	datatypes += object mdmi::DTSPrimitive {
+    typeName:="Binary";
+    description:="Binary";
+    reference:="http://www.w3.org/2001/XMLSchema#hexBinary"	
+    };
+    
+   datatypes += object mdmi::DTSPrimitive {
+    typeName:="Boolean";
+    description:="Boolean";
+    reference:="http://www.w3.org/2001/XMLSchema#boolean"	
+    };
+    
+   datatypes += object mdmi::DTSPrimitive {
+    typeName:="DateTime";
+    description:="DateTime";
+    reference:="http://www.w3.org/2001/XMLSchema#dateTime"	
+    };
+    
+   datatypes += object mdmi::DTSPrimitive {
+    typeName:="Decimal";
+    description:="Decimal";
+    reference:="http://www.w3.org/2001/XMLSchema#decimal"	
+    };
+    
+   datatypes += object mdmi::DTSPrimitive {
+    typeName:="Integer";
+    description:="Integer";
+    reference:="http://www.w3.org/2001/XMLSchema#integer"	
+    };
+    
+    datatypes += object mdmi::DTSPrimitive {
+    typeName:="String";
+    description:="String";
+    reference:="http://www.w3.org/2001/XMLSchema#string"	
+    };
+}
+
+
+query getBER(inout dictionary : mdmi::MDMIDomainDictionaryReference, in berId: String ) : MDMIBusinessElementReference
+{   
+ 	return dictionary.businessElements ->select(berId=uniqueIdentifier)->asSequence()->first();
+}

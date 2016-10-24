@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default"
+	xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+	<target name="default">
+		
+		<record name="${basedir}/log/build.log" action="start" append="no"/>
+		
+		<delete file="map/FHIMmap.mdmi"/>
+		<delete file="map/FHIMmap.xmi"/>
+
+	 	 <qvto:transformation
+			uri="platform:/resource/org.mdmi.qvtcda/transforms/WalkAModel.qvto">
+			<in uri="platform:/resource/VPR/model/vpr.uml" />
+	 	 	<out uri="platform:/resource/VPR/map/VPRmap2.mdmi" />
+	 	 	<trace  uri="platform:/resource/VPR/log/cdamap.qvtotrace" ></trace>
+			<configProperty name="semanticRoot" value="AllergyIntolerance" />
+			<configProperty name="syntaxRoot" value="Problem" />
+			<configProperty name="mappingStyle" value="NORMAL" />
+		</qvto:transformation>
+	 	
+	 
+	   
+		 
+  
+	 	
+	</target>
+	
+
+	
+</project>

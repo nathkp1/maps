@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default"
+	xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+	<target name="default">
+		
+		<record name="${basedir}/log/build.log" action="start" append="no"/>
+		
+		<delete file="map/cdamap.mdmi"/>
+	 
+ 
+	 	 <qvto:transformation
+			uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Cda2Mdmi.qvto">
+			<in uri="platform:/resource/CDA/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml" />
+	 	 	<out uri="platform:/resource/CDA/map/cdamap.mdmi" />
+	 	 	<trace  uri="platform:/resource/CDA/log/cdamap.qvtotrace" ></trace>
+			<configProperty name="semanticRoot" value="ClinicalDocument" />
+			<configProperty name="syntaxRoot" value="ContinuityOfCareDocument" />
+			<configProperty name="mappingStyle" value="NORMAL" />
+		</qvto:transformation>
+ 
+		
+		<delete file="map/cdamap.xmi"/>
+	 	<copy file="map/cdamap.mdmi" tofile="map/cdamap.xmi"/>
+	 
+		
+		
+		 
+ 	  	<mdmiExport model="platform:/resource/CDA/map/cdamap.xmi" /> 
+	   	
+	 
+		<replace file='map/cdamap.xmi' token='&lt;relatedSemanticElement>' value='&lt;relatedSemanticElement xmi:idref="'/>
+		<replace file='map/cdamap.xmi' token='&lt;/relatedSemanticElement>' value='" />'/>
+		
+		<replace file='map/cdamap.xmi' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="'/>
+		<replace file='map/cdamap.xmi' token='&lt;/businessElement>' value='"  >&lt;/businessElement>'/>
+		<replace file='map/cdamap.xmi' token='&lt;semanticElement>' value='&lt;semanticElement xmi:idref="'/>
+		<replace file='map/cdamap.xmi' token='&lt;/semanticElement>' value='" />'/>	
+		<replace file='map/cdamap.xmi' token='&lt;referenceDatatype>' value='&lt;referenceDatatype xmi:idref="'/>
+		<replace file='map/cdamap.xmi' token='&lt;/referenceDatatype>' value='" />'/>
+		<replace file='map/cdamap.xmi' token='&lt;children>#' value='&lt;children xmi:idref="'/>
+		<replace file='map/cdamap.xmi' token='&lt;/children>' value='" />'/>
+		<replace file='map/cdamap.xmi' token='&lt;datatype>#' value='&lt;datatype xmi:idref="'/>
+		<replace file='map/cdamap.xmi' token='&lt;/datatype>' value='" />'/>
+		<replace file='map/cdamap.xmi' token='&lt;syntaxNode xmi:type="mdmi:LeafSyntaxTranslator">#' value='&lt;syntaxNode xmi:idref="'/>
+		<replace file='map/cdamap.xmi' token='&lt;syntaxNode xmi:type="mdmi:Bag">#' value='&lt;syntaxNode xmi:idref="'/>
+		
+		<replace file='map/cdamap.xmi' token='&lt;syntaxNode xmi:type="mdmi:Choice">#' value='&lt;syntaxNode xmi:idref="'/>
+			
+		<replace file='map/cdamap.xmi' token='&lt;/syntaxNode>' value='" />'/>
+		
+	 
+		<replace file='map/cdamap.xmi' token='xmi:idref="#' value='xmi:idref="'/>
+		 
+		 
+	  
+	 
+	 	
+	</target>
+	
+
+	
+</project>

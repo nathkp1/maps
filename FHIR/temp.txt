@@ -1,0 +1,24 @@
+var source = From_PatientRace.getValue();
+var target = value.value();
+
+target.setValue('url','xxxxEXTENSIONURLxxxx');
+ 
+
+ 			var valueCodeableConcept = target.getXValue('valueCodeableConcept');
+    			 
+    			var coding = valueCodeableConcept.getNewByName('coding');
+ 
+				if (source.getValue('code') != null) {
+
+					coding.setValue('code', source.getValue('code'));
+				}
+
+				if (source.getValue('displayName') != null) {
+
+					coding.setValue('display', source.getValue('displayName'));
+				}
+				
+				if (source.getValue('codeSystem') != null) {
+
+					coding.setValue('system', source.getValue('codeSystem'));
+				}

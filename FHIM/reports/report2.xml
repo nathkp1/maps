@@ -1,0 +1,1017 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Sean Muir</Author>
+  <LastAuthor>Sean Muir</LastAuthor>
+  <Created>2016-05-17T18:06:57Z</Created>
+  <LastSaved>2016-08-11T14:14:06Z</LastSaved>
+  <Company>JKM Software</Company>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>14680</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>-440</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" ss:Size="20"/>
+   <Interior ss:Color="#3366FF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="20"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="20"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Calisto MT" ss:Size="16" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calisto MT" ss:Size="16" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#3366FF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calisto MT" ss:Size="16" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calisto MT" ss:Size="16" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s106">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calisto MT" ss:Size="16" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#3366FF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s116">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="16" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#FEA746" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="24" ss:ExpandedRowCount="40" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="210"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="422"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="210" ss:Span="1"/>
+   <Column ss:Index="5" ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="210"/>
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="245"/>
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="418"/>
+   <Column ss:StyleID="s63" ss:Width="210" ss:Span="5"/>
+   <Column ss:Index="14" ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="420"/>
+   <Column ss:StyleID="s63" ss:Width="210" ss:Span="2"/>
+   <Column ss:Index="18" ss:Width="210" ss:Span="6"/>
+   <Row ss:AutoFitHeight="0" ss:Height="33" ss:StyleID="s64">
+    <Cell ss:MergeAcross="3" ss:StyleID="s66"><Data ss:Type="String">Referent Index</Data></Cell>
+    <Cell ss:MergeAcross="6" ss:StyleID="s70"><Data ss:Type="String">SOURCE : FHIM_IntoleranceCondition </Data></Cell>
+    <Cell ss:MergeAcross="5" ss:StyleID="s73"><Data ss:Type="String">TARGET:   FHIR DSTU2_DAF-AllergyIntolerance,DAF-Patient </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20" ss:StyleID="s75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Name</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ValueSet Ref</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Source Attribute</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Logical Semantic Path</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">ValueSet Ref</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Cardinality</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Interoperability Measure</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Target Attribute</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">LogicalSemantic Path</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">ValueSet Ref</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Cardinality</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergiesSectionText c3d121c5-eb50-40fe-b72e-a4c342d901e6 </Data></Cell>
+    <Cell><Data ss:Type="String">The text for the Allergy Section</Data></Cell>
+    <Cell><Data ss:Type="String">String</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergiesSectionTitle 9b187c47-58cf-4e9d-8f63-d40eae8cfc15 </Data></Cell>
+    <Cell><Data ss:Type="String">The Title for the Allergy Section</Data></Cell>
+    <Cell><Data ss:Type="String">String</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyConcernContainer fd2c5bda-257f-4b90-8fe4-d483614f2f4d </Data></Cell>
+    <Cell><Data ss:Type="String">A container for organizing the clients's allergies and adverse reactions that are related to one another. Specific observations of problems or other clinical statements captured at a point in time are wrapped into this a Allergy Concern</Data></Cell>
+    <Cell><Data ss:Type="String">Container</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0</Data></Cell>
+    <Cell><Data ss:Type="String">Describes an observation of an &quot;Intolerance Condition&quot; of the Patient.  Intolerance Conditions are typically allergies, but the concept of an intolerance condition is broader than just allergies.  For example, an adverse reaction such as the patient becomes nauseous after taking a particular antibiotic is not an allergy, but may serve as a contra-indicator to the use of that antibiotic.  In general, Intolerance Conditions as caused by Food, Drugs, or some environmental factor such as mold, insect venom (i.e., bee stings), or pet dander.</Data></Cell>
+    <Cell><Data ss:Type="String">Container</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 1 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">DAF-AllergyIntolerance0 </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-AllergyIntolerance0</Data></Cell>
+    <Cell><Data ss:Type="String">Defines constraints and extensions on the AllergyIntolerance resource for use in querying and retrieving allergy information.</Data></Cell>
+    <Cell><Data ss:Type="String">Container</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 1 to  1 </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyConcernDeviceCode b5809749-287a-443e-bb3c-030b093659ca </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">AlertDevice </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.AlertDevice</Data></Cell>
+    <Cell><Data ss:Type="String">&quot;Describes any type of allergy alert device the patient may be carrying or wearing.&quot; - HL7 Version 2.8, IAM-16.  HL7 Version 2 has the following suggested values (table 437): Bracelet; Necklace; Wallet Card.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyConcernEndDate 99184840-a095-41b1-b361-ce05425e0352 </Data></Cell>
+    <Cell><Data ss:Type="String">The date when the Allergy concern is no longer a concern</Data></Cell>
+    <Cell><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">DateAbated </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.DateAbated</Data></Cell>
+    <Cell><Data ss:Type="String">Date upon which this particular Condition is no longer an active concern.                                &quot;The date or estimated date that the condition resolved or went into remission. This is called &quot;abatement&quot; because of the many overloaded connotations associated with &quot;remission&quot; or &quot;resolution&quot; - Conditions are never really resolved, but they can abate.&quot; - HL7 FHIR, Condition resource.                &quot;Contains the date/time that the problem was actually resolved.&quot; - HL7 Version 2.8, PRB-9</Data></Cell>
+    <Cell><Data ss:Type="String">invalid</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyConcernID c48d4e8b-fde6-455f-895a-f47f180d6e60 </Data></Cell>
+    <Cell><Data ss:Type="String">A  unique identifier assigned by an administrative body to a specific allergy concern.</Data></Cell>
+    <Cell><Data ss:Type="String">InstanceIdentifier</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyConcernLastKnownOccuranceDate 2e75f6cd-4680-40c3-8430-6c28444638bd </Data></Cell>
+    <Cell><Data ss:Type="String">The last known date and time of the Intolerance Condition</Data></Cell>
+    <Cell><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyConcernStartDate e7e780ef-09c5-48e9-8b43-75b14e921d35 </Data></Cell>
+    <Cell><Data ss:Type="String">The date the Allergy Concern was first recorded.</Data></Cell>
+    <Cell><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">DateOfOnset </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.DateOfOnset</Data></Cell>
+    <Cell><Data ss:Type="String">Date when this particular Condition first manifested itself or was confirmed via testing if it had not yet manifested itself.  Note that this date may be inprecise (e.g., &quot;sometime in 2006&quot;).                                            &quot;Contains the actual date of the first reaction.&quot; - HL7 Version 2.8, IAM-11                      &quot;Contains the date/time when the problem began.&quot; - HL7 Version 2.8, PRB-16.                      &quot;Estimated or actual date the condition began, in the opinion of the clinician.&quot; - HL7 FHIR, Condition resource.</Data></Cell>
+    <Cell><Data ss:Type="String">invalid</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Onset </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-AllergyIntolerance0.Onset</Data></Cell>
+    <Cell><Data ss:Type="String">Record of the date and/or time of the onset of the Allergy or Intolerance.</Data></Cell>
+    <Cell><Data ss:Type="String">FhirDateTime</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1 </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyConcernStatusCode 988bb2a3-323e-4005-b2c3-ac20263e68b0 </Data></Cell>
+    <Cell><Data ss:Type="String">A code representing the present status of the Allergy Concern</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.11.20.9.19</Data></Cell>
+    <Cell><Data ss:Type="String">RecordStatus </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.RecordStatus</Data></Cell>
+    <Cell><Data ss:Type="String">The state of the Clinical Information record, as defined in the state-transition model in the HL7 RIM.  Possible values include: Aborted, Active, Cancelled, Completed, Held, New, Nullified, Obsolete.  Note that this property represents the state of the clinical record, not the state of the thing being recorded (which is an especially important distinction when dealing with Observations).  When the state of the thing being obverved is needed (e.g., in remission), a separate property will be used.  Note also that VistA and RPMS have the concept of being &quot;Entered in Error&quot; which is equivalent to a status of Nullified.  For the Condition subtype of Observation, this property summarizes the current state of the Condition (or subtype such as Health Concern (aka Problem) or Intolerance Condition), as indicated by the last observation made on the Condition.                                            &quot;Indicates the verification status for the allergy.&quot; - HL7 Version 2.8, IAM-17.  HL7 Version 2 has the following suggested values (table 438): Unconfirmed; Pending; Suspect; Confirmed or verified; Confirmed but inactive; Erroneous; Doubt raised.                      &quot;Contains the observation result status.... This field reflects the current completion status of the results for one Observation Identifier....&quot; - HL7 Version 2.8, OBX-11.                      &quot;Contains the current status of the problem at this particular date/time (e.g., active, active-improving, active-stable, active-worsening, inactive, resolved, etc.).&quot; - HL7 Version 2.8, PRB-14                      &quot;The status of the result value.&quot; - HL7 FHIR, Observation.status.  Note that the possible values for status in FHIR are: Registered, Preliminary, Final, Amended, Cancelled, Entered in Error.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.3.2074.1.1.16</Data></Cell>
+    <Cell><Data ss:Type="String"> 1 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Status </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-AllergyIntolerance0.Status</Data></Cell>
+    <Cell><Data ss:Type="String">Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified Substance.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1 </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyObservationAllergenCode a14fdf6b-cab0-434c-9e67-827e6261cb72 </Data></Cell>
+    <Cell><Data ss:Type="String">The substance that caused the Allergy reaction</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Reactant </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.Reactant</Data></Cell>
+    <Cell><Data ss:Type="String">Identifies the substance to which the patient has an intolerance or allergy.  The reactant will point to a value set, which will be a superset of valuesets for Drug Product, Drug Class, Ingredient, Food Product, and Environmental reactants.                                            &quot;Uniquely identifies a particular allergen.&quot; - HL7 Version 2.8, AL1-3 and IAM-3                      &quot;Identifies the specific allergic reaction that was documented.&quot; - HL7 Version 2.8, IAR-1.                      &quot;Identification of a substance, or a class of substances, that is considered to be responsible for the Adverse reaction risk.&quot; - HL7 FHIR AllergyIntolerance.substance</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.3.2074.1.1.31</Data></Cell>
+    <Cell><Data ss:Type="String"> 1 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Substance </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-AllergyIntolerance0.Substance</Data></Cell>
+    <Cell><Data ss:Type="String">It is strongly recommended that the substance be coded with a terminology, where possible. For example, some terminologies used include RxNorm, SNOMED CT, DM+D, NDFRT, ICD-9, IDC-10, UNI, ATC and CPT. Plain text should only be used if there is no appropriate terminology available. Additional details about a substance can be specified in the text.</Data></Cell>
+    <Cell><Data ss:Type="String">CodeableConcept</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 1 to  1 </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyObservationAllergyTypeCode 39c7c1a7-46c6-45ac-ab76-00a19b198b88 </Data></Cell>
+    <Cell><Data ss:Type="String">A code for the specific Type of Allergy observed</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.3.88.12.3221.6.2</Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCategory </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.IntoleranceCategory</Data></Cell>
+    <Cell><Data ss:Type="String">Provides a categorization of the Intolerance Condtion.  Possible values are members of the SNOMED Allergy Event value set.  This property is required for Meaningful Use.                                            &quot;Indicates a general allergy category (drug, food, pollen, etc.).&quot; - HL7 Version 2.8, AL1-2 and IAM-2.  HL7 Version 2 has the following suggested values (table 127): Drug allergy; Food allergy; Miscellaneous allergy; Miscellaneous contraindication; Environmental Allergy; Animal Allergy; Plant Allergy; Pollen Allergy.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.3.88.12.3221.6.2</Data></Cell>
+    <Cell><Data ss:Type="String"> 1 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Category </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-AllergyIntolerance0.Category</Data></Cell>
+    <Cell><Data ss:Type="String">food | medication | environment | other - Category of Substance</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1 </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyObservationContainer f2b74432-5fb6-473b-b995-c4d839eacd75 </Data></Cell>
+    <Cell><Data ss:Type="String">A container for organizing all of the specific assessments and treatments of a patient for a specific allergy / adverse reaction Concern.</Data></Cell>
+    <Cell><Data ss:Type="String">Container</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyObservationEndTime 6e1aebbb-d3d4-403c-8b04-ba38d02c833b </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyObservationID e16a6146-42c0-4a28-a320-2cd664638f83 </Data></Cell>
+    <Cell><Data ss:Type="String">a unique identifier assigned by an administrative body to the specific allergy observation</Data></Cell>
+    <Cell><Data ss:Type="String">InstanceIdentifier</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Id2 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.Observation.Id2</Data></Cell>
+    <Cell><Data ss:Type="String">Uniquely identifies the Clinical Information/Record.  This property is akin to a record number.  While the record number by itself may not be unique outside of the organization that created it, the Id datatype allows for an assigning authority, which when combined with the local identifier should make the Id unique.  Among other purposes, the id property enables other records to be linked together.  This is particularly needful for Condiions (a sub type of Observations), where on-going Observations made on the same initial Health Concern (aka Problem) or Intolerance Condition can be tracked.                                                        &quot;Contains a value that uniquely identifies a single allergy for a person&quot; - HL7 Version 2.8, IAM-7                            &quot;Contains the identifier assigned by an initiating system to an instance of a problem.&quot; - HL7 Version 2.8, PRB-4                            &quot;A unique identifier for the simple observation.&quot; - HL7 FHIR, Observation.identifier.</Data></Cell>
+    <Cell><Data ss:Type="String">invalid</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 1 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Identifier0 </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-AllergyIntolerance0.Identifier0</Data></Cell>
+    <Cell><Data ss:Type="String">External ids for this item</Data></Cell>
+    <Cell><Data ss:Type="String">Identifier</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1 </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyObservationSeverityNotes 9f911ed4-85aa-4628-8b89-a02433b67949 </Data></Cell>
+    <Cell><Data ss:Type="String">Notes on the severity of the allergy reaction</Data></Cell>
+    <Cell><Data ss:Type="String">String</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyObservationSeverityValue 7931e589-0680-4a02-9d29-b8cd923b9dc5 </Data></Cell>
+    <Cell><Data ss:Type="String">A code representing the severity of the reactions to a specific allergen</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.3.88.12.3221.6.8</Data></Cell>
+    <Cell><Data ss:Type="String">Criticality </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.Criticality</Data></Cell>
+    <Cell><Data ss:Type="String">Provides an indication of the seriousness or intensity of a reaction that the patient would be expected to experience upon a further exposure to the Reactant.                                                              &quot;Indicates the general severity of the allergy&quot; - HL7 Version 2.8, AL1-4, IAM-4, and IAR-2.  HL7 Version 2 has the following suggested values (table 128): Severe; Moderate; Mild; Unknown.                               &quot;Estimate of the potential clinical harm, or seriousness, of the reaction to the identified Substance.&quot; - HL7 FHIR AllergyIntolerance.criticality                                                              The Common Terminology Criteria for Adverse Events (CTCAE) has the following values:                               Grade 1: Mild; asymptomatic or mild symptoms; clinical or diagnostic observations only; intervention not indicated.                               Grade 2: Moderate; minimal, local or noninvasive intervention indicated; limiting age-appropriate instrumental ADL*.                               Grade 3: Severe or medically significant but not immediately life-threatening; hospitalization or prolongation of hospitalization indicated; disabling; limiting self care ADL**.                               Grade 4: Life-threatening consequences; urgent intervention indicated.                               Grade 5: Death related to AE.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.4.642.2.479</Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyObservationStartTime 4136e7ad-6afe-409b-891a-a985f34c4682 </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyReactionContainer e20b3fd4-a386-4d90-aa17-d4e16cb377a9 </Data></Cell>
+    <Cell><Data ss:Type="String">A container holding Business Elements associated with each reaction observed in a specific observation. There may be multiple reactions observed in a specific observation.</Data></Cell>
+    <Cell><Data ss:Type="String">Container</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Reaction </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.Reaction</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Container</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  *  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyReactionDuration a5430e33-f046-45e4-a69f-61df6633f56a </Data></Cell>
+    <Cell><Data ss:Type="String">The amount of time that the Adverse Reaction persisted.</Data></Cell>
+    <Cell><Data ss:Type="String">String</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyReactionEndTime 7e33e52a-d709-4e75-a656-b9e6fca12792 </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyReactionID 634ccc25-1115-4030-8e6c-535de4c546b8 </Data></Cell>
+    <Cell><Data ss:Type="String">The identifier assigned by the administrative body  to the observation of an allergy reaction.</Data></Cell>
+    <Cell><Data ss:Type="String">InstanceIdentifier</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyReactionNotes d0dd472b-e8a8-484f-bfd8-c751f974eabd </Data></Cell>
+    <Cell><Data ss:Type="String">Notes (unstructured text) describing the reaction by the observer</Data></Cell>
+    <Cell><Data ss:Type="String">String</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Description </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.Reaction.Description</Data></Cell>
+    <Cell><Data ss:Type="String">&quot;Text description about the Reaction as a whole, including details of the manifestation if required.&quot; - HL7 FHIR, AllergyIntolerance.event.description.</Data></Cell>
+    <Cell><Data ss:Type="String">String</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyReactionSeverityNotes 8ceee36a-8b13-4c6d-a4b0-cc102f6b60c6 </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">String</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyReactionSeverityValue 1ca83872-3f5c-4347-90f2-6ad9ac91967c </Data></Cell>
+    <Cell><Data ss:Type="String">A code representing the severity of the specific Allergy reaction</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.3.88.12.3221.6.8</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyReactionStartTime 9ed317ef-ea91-44ba-91d7-e047e0b64b72 </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">AllergyReactionValue 3f3ed4df-0fbb-44f5-9396-0fd79d033fd3 </Data></Cell>
+    <Cell><Data ss:Type="String">A code representing the type of Allergy reaction</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.3.88.12.3221.7.4</Data></Cell>
+    <Cell><Data ss:Type="String">Reaction0 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.Reaction.Reaction0</Data></Cell>
+    <Cell><Data ss:Type="String">Indicates the adverse physiological response which is suspected to have been caused by an exposure to the given substance (i.e., the reactant).                                                                                                                    &quot;Identifies the specific allergic reaction that was documented.&quot; - HL7 Version 2.8, AL1-5 and IAM-5                                                          &quot;Clinical symptoms and/or signs that are observed or associated with the Adverse Reaction Event.&quot; - HL7 FHIR, AllergyIntolerance.event.manifestation.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.3.2074.1.1.30</Data></Cell>
+    <Cell><Data ss:Type="String"> 1 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientAdministrationGenderCode 03844ed8-168e-4a76-8777-1f759e86eea2 </Data></Cell>
+    <Cell><Data ss:Type="String">A code describing the gender of the Patient used in making administrative decisions.</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.1.11.1</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Gender </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-Patient0.Gender</Data></Cell>
+    <Cell><Data ss:Type="String">Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1 </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientBirthPlaceAddress 787eb894-88e2-445a-9f30-89d38bca3380 </Data></Cell>
+    <Cell><Data ss:Type="String">The address where the Patient was born</Data></Cell>
+    <Cell><Data ss:Type="String">Address</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">BirthPlace </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-Patient0.BirthPlace</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">AddressExtension</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  * </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientDateOfBirth 86f39389-81b7-464b-a90d-d19ae8410fa2 </Data></Cell>
+    <Cell><Data ss:Type="String">The date of birth of the Patient</Data></Cell>
+    <Cell><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">DateOfBirth12 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.HumanPatient.Subject.DateOfBirth12</Data></Cell>
+    <Cell><Data ss:Type="String">The date and time of the birth or hatching of the living subject.                                                                                                                                &quot;The patient's date and time of birth.&quot; - HL7 Version 2.8, PID-7.                                                                &quot;The next of kin/associated party's birth date and time.&quot; - HL7 Version 2.8, NK1-16.                                                                &quot;The birth date for the person.&quot; - HL7 FHIR, Person.birthDate.                                                                &quot;The date of birth for the individual.&quot; - HL7 FHIR, Patient.birthDate.</Data></Cell>
+    <Cell><Data ss:Type="String">invalid</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">BirthDate </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-Patient0.BirthDate</Data></Cell>
+    <Cell><Data ss:Type="String">The date of birth for the individual</Data></Cell>
+    <Cell><Data ss:Type="String">FhirDateTime</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1 </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientEthnicityCode b29dc139-8a2b-473d-820b-0331b7ae0aa3 </Data></Cell>
+    <Cell><Data ss:Type="String">The code representing the ethnicity specified by the Patient</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.114222.4.11.837</Data></Cell>
+    <Cell><Data ss:Type="String">Ethnicity12 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.HumanPatient.Subject.Ethnicity12</Data></Cell>
+    <Cell><Data ss:Type="String">A group of people whose members identify with each other, through a common heritage, often consisting of a common language, a common culture (often including a shared religion) and an ideology that stresses common ancestry or endogamy .  In addition, an ethnic group often shares an interest in a homeland connected with a specific geographical area and common traditions, including food preferences  (Wikipedia).  Note that unlike race, which concentrates on a person s physical heritage, ethnicity is concerned with the cultural heritage with which a person identifies themselves.  Examples of ethnicity include: German, Scandinavian, Italian, Irish, etc.  These ethnic groups are of the same race (Caucasian, or  white ).  Note also that the set of ethnicity values used may vary based on the purpose for collecting this information.  The U.S. Office of Management and Budget (OMB) issues a set to be used for census purposes.  See OMB publication 15.  This property may contain more than one ethnicity for a given person, identified in no particular order.                                                                &quot;This field further defines the patient's ancestry.&quot; - HL7 Version 2.8, PID-22.                                                                &quot;The next of kin/associated party's ethnic group.&quot; - HL7 Version 2.8, NK1-28.                                                                HL7 Version 2 has the following suggested values (table 189): Hispanic or Latino; Not Hispanic or Latino; Unknown.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.114222.4.11.877</Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  *  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Ethnicity </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-Patient0.Ethnicity</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">CodeableConceptExtension</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  * </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientHomeAddress eef49a28-a96e-40a7-b328-981c5addd245 </Data></Cell>
+    <Cell><Data ss:Type="String">The home address for the Patient</Data></Cell>
+    <Cell><Data ss:Type="String">Address</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Address </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-Patient0.Address</Data></Cell>
+    <Cell><Data ss:Type="String">Patient may have multiple addresses with different uses or applicable periods.</Data></Cell>
+    <Cell><Data ss:Type="String">FhirAddress</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  * </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientHomePhone cfb8b147-38a5-4272-87c6-f1fa4cb97457 </Data></Cell>
+    <Cell><Data ss:Type="String">The home telephone number for the Patient</Data></Cell>
+    <Cell><Data ss:Type="String">Telecom</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Telecom166 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.HumanPatient.Subject.Telecom166</Data></Cell>
+    <Cell><Data ss:Type="String">Indicates how and at what address that the person can be reached via electronic communications. The datatype for this property is ContactPoint, which can be used for telephone numbers as well as email, etc.  The ContactPoint data  type contains a type code to indicate what kind of telecommunications address that is being referenced. Note that this property can contain more than one entry.                                                                                                                                      &quot;Contains the patient's personal telecommunication contact information.&quot; - HL7 Version 2.8, PID-40.                                                                   &quot;A contact detail for the person, e.g. a telephone number or an email address.&quot; - HL7 FHIR, Person.telecom.                                                                   &quot;A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.&quot; - HL7 FHIR, Patient.telecom.</Data></Cell>
+    <Cell><Data ss:Type="String">ContactPoint</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  *  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Telecom </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-Patient0.Telecom</Data></Cell>
+    <Cell><Data ss:Type="String">People have (primary) ways to contact them in some way such as phone, email.</Data></Cell>
+    <Cell><Data ss:Type="String">ContactPoint</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  * </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientLanguageAbilityCode 019b72b7-483c-4fa5-8137-d5ab65bc76ad </Data></Cell>
+    <Cell><Data ss:Type="String">A code indicating the Patient's ability with specific language.</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.1.11.12249</Data></Cell>
+    <Cell><Data ss:Type="String">ProficiencyLevel10 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.HumanPatient.Subject.LanguageCapability10.ProficiencyLevel10</Data></Cell>
+    <Cell><Data ss:Type="String">&quot;A value representing the level of proficiency in a language.&quot; - HL7 V3.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.1.11.12199</Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientLanguageCode e2229d9e-f294-4005-b4c3-86e397b892fb </Data></Cell>
+    <Cell><Data ss:Type="String">A code representing a language used to communicate with the Patient</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.1.11.11526</Data></Cell>
+    <Cell><Data ss:Type="String">Language10 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.HumanPatient.Subject.LanguageCapability10.Language10</Data></Cell>
+    <Cell><Data ss:Type="String">A language for which the Person has some level of proficiency for written or spoken communication.                                                                      &quot;The patient's primary language.  HL7 recommends using ISO table 639&quot; - HL7 Version 2.8, PID-15.                                                                      &quot;The next of kin/associated party's primary speaking language.&quot; - HL7 Version 2.8, NK1-20.                                                                      &quot;The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case. E.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English.&quot; - HL7 FHIR, Patient.communication.language.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 1 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">NONE </Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String">NONE</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">N/A</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientMaritalStatus 6cf44ff0-2cfa-493b-98a6-44f35acd195c </Data></Cell>
+    <Cell><Data ss:Type="String">A code specifying  Patient's current domestic partnership status.</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.1.11.12212</Data></Cell>
+    <Cell><Data ss:Type="String">MaritalStatus12 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.HumanPatient.Subject.MaritalStatus12</Data></Cell>
+    <Cell><Data ss:Type="String">&quot;Contains the patient's marital (civil) status.&quot; - HL7 Version 2.8, PID-16.                                                                      &quot;Contains the next of kin/associated party's marital status.&quot; - HL7 Version 2.8, NK1-14.                                                                      HL7 Version 2 has the following suggested values (table 2): Separated; Divorced; Married; Single; Widowed; Common law; Living together; Domestic partner; Registered domestic partner; Legally Separated; Annulled; Interlocutory; Unmarried; Unknown; Other; Unreported.                                                                      &quot;The domestic partnership status of a person.&quot; - HL7 Version 3 RIM.                                                                      &quot;This field contains a patient's most recent marital (civil) status.&quot; - HL7 FHIR, Patient.maritalStatus.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.1.11.12212</Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">MaritalStatus </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-Patient0.MaritalStatus</Data></Cell>
+    <Cell><Data ss:Type="String">This field contains a patient's most recent marital (civil) status.</Data></Cell>
+    <Cell><Data ss:Type="String">CodeableConcept</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  1 </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientName b8cff71f-9f24-48d4-a33c-69743c5cdf0a </Data></Cell>
+    <Cell><Data ss:Type="String">the name the Patient normally uses</Data></Cell>
+    <Cell><Data ss:Type="String">PersonName</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Name123 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.HumanPatient.Subject.Name123</Data></Cell>
+    <Cell><Data ss:Type="String">The name by which a person is known or legally identified such as the name on a driver's license or passport.  Note that the data type for this property is a PersonName, which includes the various parts that make up a person's name such as family name, prefixes, suffixes, etc.  Note that in HL7, the PersonName data type contains a type code to indicate what kind of name is being referenced.  The FHIM explicitly models the name type, so in this case the attribute name is &quot;Legal Name&quot;, and the type code would be set to &quot;Legal Name&quot; when targeting an HL7 implementation.                                                                                                                                            &quot;Contains one or more of the names of the patient....&quot; - HL7 Version 2.8, PID-5.                                                                      &quot;A name associated with the person.&quot; - HL7 FHIR, Person.name.                                                                      &quot;A name associated with the individual.&quot; - HL7 FHIR, Patient.name</Data></Cell>
+    <Cell><Data ss:Type="String">PersonName</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  *  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Name </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-Patient0.Name</Data></Cell>
+    <Cell><Data ss:Type="String">A patient may have multiple names with different uses or applicable periods. For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns.</Data></Cell>
+    <Cell><Data ss:Type="String">HumanName</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  * </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientRace a0a2b4f1-2ce7-42f3-a184-2dcf71564aea </Data></Cell>
+    <Cell><Data ss:Type="String">A code for a race of the Patient specified by the Patient</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.1.11.14914</Data></Cell>
+    <Cell><Data ss:Type="String">Race12 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.HumanPatient.Subject.Race12</Data></Cell>
+    <Cell><Data ss:Type="String">A classification of humans into large and distinct populations or groups by factors such as heritable phenotypic characteristics or geographic ancestry, but also often influenced by and correlated with traits such as appearance, culture, ethnicity, and socio-economic status.  (Wikipedia).  This property may contain more than one race for a given person, identified in no particular order.                                                                      &quot;This field refers to the patient's race.&quot; - HL7 Version 2.8, PID-10.                                                                      &quot;The race of the next of kin/associated party.&quot; - HL7 Version 2.8, NK1-35.                                                                      HL7 Version 2 has the following suggested values (table 5): American Indian or Alaska Native; Asian; Black or African American; Native Hawaiian or Other Pacific Islander; White; Other Race.</Data></Cell>
+    <Cell><Data ss:Type="String">Code</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.1.11.14914</Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  *  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Race </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-Patient0.Race</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">CodeableConceptExtension</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  * </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">PatientReligousAffliationCode 907a4b6c-e002-4046-973b-0395d0415de9 </Data></Cell>
+    <Cell><Data ss:Type="String">The code representing the religous afflication specified by the Patient</Data></Cell>
+    <Cell><Data ss:Type="String">CodedElement</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.1.11.19185</Data></Cell>
+    <Cell><Data ss:Type="String">ReligiousAffiliation12 </Data></Cell>
+    <Cell><Data ss:Type="String">IntoleranceCondition0.HumanPatient.Subject.ReligiousAffiliation12</Data></Cell>
+    <Cell><Data ss:Type="String">Identifies a set of spiritual beliefs to which the person adheres.  This property is used primarily to accommodate the person's religious preferences in clinical settings.                                                                      &quot;The ... religious preference of a person (e.g. Hinduism, Islam, Roman Catholic). - HL7 Version 3 RIM.                                                                      &quot;Contains the patient's religion.&quot; - HL7 Version 2.8, PID-17.                                                                      &quot;The type of religion practiced by the next of kin/associated party.&quot; - HL7 Version 2.8, NK1-25.                                                                      Note that HL7 Version 2 table 6 lists 85 suggested values for this field.</Data></Cell>
+    <Cell><Data ss:Type="String">String</Data></Cell>
+    <Cell><Data ss:Type="String">2.16.840.1.113883.1.11.19185</Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  *  </Data></Cell>
+    <Cell><Data ss:Type="String">TBD</Data></Cell>
+    <Cell><Data ss:Type="String">Religion </Data></Cell>
+    <Cell><Data ss:Type="String">DAF-Patient0.Religion</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">CodeableConceptExtension</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"> 0 to  * </Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <Zoom>200</Zoom>
+   <PageLayoutZoom>200</PageLayoutZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>9</ActiveRow>
+     <RangeSelection>R10C1:R10C17</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C1:R36C34</Range>
+   <Condition>
+    <Value1>LEFT(Sheet1!RC5,4)=&quot;xxxNONExxx&quot;</Value1>
+    <Format Style='color:#9C0006;background:#FFC7CE'/>
+   </Condition>
+  </ConditionalFormatting>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="14" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="126"/>
+   <Column ss:AutoFitWidth="0" ss:Width="286"/>
+   <Column ss:AutoFitWidth="0" ss:Width="85"/>
+   <Column ss:AutoFitWidth="0" ss:Width="109"/>
+   <Column ss:AutoFitWidth="0" ss:Width="121"/>
+   <Row ss:Index="7" ss:Height="40">
+    <Cell ss:Index="4" ss:StyleID="s76"><Data ss:Type="String">Name</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ValueSet</Data></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">Interoperability Measure</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell ss:Index="4" ss:StyleID="s64"><Data ss:Type="String">AllergyConcernStartDate e7e780ef-09c5-48e9-8b43-75b14e921d35 </Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">The date the Allergy Concern was first recorded.</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">N/A</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ISO-SEMANTIC</Data></Cell>
+   </Row>
+   <Row ss:Height="20">
+    <Cell ss:Index="4" ss:MergeAcross="4" ss:StyleID="s116"><Data ss:Type="String">FHIM</Data></Cell>
+   </Row>
+   <Row ss:Height="20">
+    <Cell ss:Index="4" ss:StyleID="s77"><Data ss:Type="String">Source Attribute</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">ValueSet</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Cardinality</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="147">
+    <Cell ss:Index="4" ss:StyleID="s64"><Data ss:Type="String">DateOfOnset </Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Date when this particular Condition first manifested itself or was confirmed via testing if it had not yet manifested itself.  Note that this date may be inprecise (e.g., &quot;sometime in 2006&quot;).                                            &quot;Contains the actual date of the first reaction.&quot; - HL7 Version 2.8, IAM-11                      &quot;Contains the date/time when the problem began.&quot; - HL7 Version 2.8, PRB-16.                      &quot;Estimated or actual date the condition began, in the opinion of the clinician.&quot; - HL7 FHIR, Condition resource.</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Date</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">N/A</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"> 0 to  1  </Data></Cell>
+   </Row>
+   <Row ss:Height="20">
+    <Cell ss:Index="4" ss:MergeAcross="4" ss:StyleID="s116"><Data ss:Type="String">FHIR</Data></Cell>
+   </Row>
+   <Row ss:Height="20">
+    <Cell ss:Index="4" ss:StyleID="s78"><Data ss:Type="String">Target Attribute</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Datatype</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">ValueSet</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Cardinality</Data></Cell>
+   </Row>
+   <Row ss:Height="30">
+    <Cell ss:Index="4" ss:StyleID="s64"><Data ss:Type="String">Onset </Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Record of the date and/or time of the onset of the Allergy or Intolerance.</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">FhirDateTime</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">N/A</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"> 0 to  1 </Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <TopRowVisible>1</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>8</ActiveRow>
+     <ActiveCol>3</ActiveCol>
+     <RangeSelection>R9C4:R9C8</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R7C4:R8C8</Range>
+   <Condition>
+    <Value1>LEFT(Sheet2!R[-6]C5,4)=&quot;xxxNONExxx&quot;</Value1>
+    <Format Style='color:#9C0006;background:#FFC7CE'/>
+   </Condition>
+  </ConditionalFormatting>
+  <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R10C4:R11C8</Range>
+   <Condition>
+    <Value1>LEFT(Sheet2!R[1048564]C5,4)=&quot;xxxNONExxx&quot;</Value1>
+    <Format Style='color:#9C0006;background:#FFC7CE'/>
+   </Condition>
+  </ConditionalFormatting>
+  <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R13C4:R14C8</Range>
+   <Condition>
+    <Value1>LEFT(Sheet2!R[1048558]C5,4)=&quot;xxxNONExxx&quot;</Value1>
+    <Format Style='color:#9C0006;background:#FFC7CE'/>
+   </Condition>
+  </ConditionalFormatting>
+ </Worksheet>
+</Workbook>

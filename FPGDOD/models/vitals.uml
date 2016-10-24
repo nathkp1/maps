@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:XSDGeneration="http:///schemas/XSDGeneration/_NblMEM6UEdy3vZDTUklmRg/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/XSDGeneration/_NblMEM6UEdy3vZDTUklmRg/4 pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_NblMEc6UEdy3vZDTUklmRg">
+  <uml:Package xmi:id="_7gj1wI_GEeaQ_LENwCNzvw" name="CDRDOD">
+    <packageImport xmi:id="_7guN0o_GEeaQ_LENwCNzvw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzIoEtXEdqhPYJq3sEkGA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7iZBwY_GEeaQ_LENwCNzvw" name="Vitals">
+      <ownedAttribute xmi:id="_7iZBwo_GEeaQ_LENwCNzvw" name="DATA_RECORD" type="_7iZBw4_GEeaQ_LENwCNzvw" aggregation="composite" association="_AWPLQI_HEeaQ_LENwCNzvw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ia3AY_GEeaQ_LENwCNzvw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ia3AI_GEeaQ_LENwCNzvw" value="*"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_7iZBw4_GEeaQ_LENwCNzvw" name="DATA_RECORD" visibility="private">
+        <ownedAttribute xmi:id="_7iZBxI_GEeaQ_LENwCNzvw" name="EDIPI">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iZBxo_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iZBxY_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iZBx4_GEeaQ_LENwCNzvw" name="SITEID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iZo0Y_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iZo0I_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iZo0o_GEeaQ_LENwCNzvw" name="MONIKER">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iZo1I_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iZo04_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iZo1Y_GEeaQ_LENwCNzvw" name="SOURCESYSTEM">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iZo14_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iZo1o_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iZo2I_GEeaQ_LENwCNzvw" name="FETCHEDFROM">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iZo2o_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iZo2Y_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iZo24_GEeaQ_LENwCNzvw" name="FETCHEDAT">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iZo3Y_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iZo3I_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iZo3o_GEeaQ_LENwCNzvw" name="FETCHEDWITH">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iZo4I_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iZo34_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iZo4Y_GEeaQ_LENwCNzvw" name="ENCOUNTER_NUMBER">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iaP4I_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iZo4o_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iaP4Y_GEeaQ_LENwCNzvw" name="PERFORMING_CLINICIAN_NCID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iaP44_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iaP4o_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iaP5I_GEeaQ_LENwCNzvw" name="PERFORMING_CLINICIAN">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iaP5o_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iaP5Y_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iaP54_GEeaQ_LENwCNzvw" name="EVENT_START_GMTIME">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iaP6Y_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iaP6I_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iaP6o_GEeaQ_LENwCNzvw" name="ENTERED_BY_TIME">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iaP7I_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iaP64_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iaP7Y_GEeaQ_LENwCNzvw" name="OBSERVATION_NCID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iaP74_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iaP7o_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iaP8I_GEeaQ_LENwCNzvw" name="TEST_VALUE_NUMBER">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iaP8o_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iaP8Y_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iaP84_GEeaQ_LENwCNzvw" name="UNITS_NCID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iaP9Y_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iaP9I_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7iaP9o_GEeaQ_LENwCNzvw" name="OBSERVATION_SEQUENCE">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ia28I_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iaP94_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7ia28Y_GEeaQ_LENwCNzvw" name="EVENT_ID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ia284_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ia28o_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7ia29I_GEeaQ_LENwCNzvw" name="EDIT_VERSION">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ia29o_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ia29Y_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7ia294_GEeaQ_LENwCNzvw" name="FACILITY_NCID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ia2-Y_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ia2-I_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7ia2-o_GEeaQ_LENwCNzvw" name="FACILITY_NAME">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ia2_I_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ia2-4_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_7ia2_Y_GEeaQ_LENwCNzvw" name="DMIS_ID">
+          <type xmi:type="uml:DataType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ia2_4_GEeaQ_LENwCNzvw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ia2_o_GEeaQ_LENwCNzvw" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_AWPLQI_HEeaQ_LENwCNzvw" memberEnd="_7iZBwo_GEeaQ_LENwCNzvw _AWPyUI_HEeaQ_LENwCNzvw">
+      <ownedEnd xmi:id="_AWPyUI_HEeaQ_LENwCNzvw" type="_7iZBwY_GEeaQ_LENwCNzvw" association="_AWPLQI_HEeaQ_LENwCNzvw"/>
+    </packagedElement>
+    <profileApplication xmi:id="_7gngII_GEeaQ_LENwCNzvw">
+      <eAnnotations xmi:id="_7gngIY_GEeaQ_LENwCNzvw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_NblMEc6UEdy3vZDTUklmRg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://XMLmodeling_PROFILES/XSDGeneration.profile.uml#_yvqaMUtXEdqCydWod9T-cg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_7guN0I_GEeaQ_LENwCNzvw">
+      <eAnnotations xmi:id="_7guN0Y_GEeaQ_LENwCNzvw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_eDH5EA-uEd2ng-v1tnpITw"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://XMLmodeling_PROFILES/XMLSchema.profile.uml#_ytRNgEtXEdqCydWod9T-cg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_0J4BAJemEeanwsLL6pP2Sg">
+      <eAnnotations xmi:id="_0J4oEJemEeanwsLL6pP2Sg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.mdmi.uml.profile/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <XSDGeneration:SchemaGen xmi:id="_7goHMI_GEeaQ_LENwCNzvw" base_Package="_7gj1wI_GEeaQ_LENwCNzvw" complexTypeSuffix="" globalElements="true"/>
+  <MDMI:MDMIMapping xmi:id="_-Ktz0JemEeanwsLL6pP2Sg" base_Class="_7iZBwY_GEeaQ_LENwCNzvw">
+    <elements xmi:id="_-Kua4JemEeanwsLL6pP2Sg" businessElement="AllergiesSectionText" modelElement="_7iZBxI_GEeaQ_LENwCNzvw" businessElementId="c3d121c5-eb50-40fe-b72e-a4c342d901e6" modelElementPath="DATA_RECORD.EDIPI" condition=""/>
+  </MDMI:MDMIMapping>
+</xmi:XMI>

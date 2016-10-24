@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:Trace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:trace="http:///www.eclipse.org/m2m/qvt/operational/trace.ecore">
+  <traceRecords>
+    <mappingOperation name="stepOne" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//stepOne"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="../models/problems.uml#_TcqrUJejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="MessageGroup">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t4JeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="createPrimitiveDatatypes" package="MDMILibrary" module="MDMILibrary">
+      <runtimeMappingOperation href="qvto:/module.env#//createPrimitiveDatatypes"/>
+    </mappingOperation>
+    <context>
+      <context kind="INOUT" name="self" type="MessageGroup">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t4JeqEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="stepTwo" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//stepTwo"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="../models/problems.uml#_TcqrUJejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="root" type="Bag">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t45eqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result/>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="stepThree" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//stepThree"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="../models/problems.uml#_UQq7IJejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Bag">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t5JeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAssociations" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAssociations"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQriMJejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_5eqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Bag">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t5ZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQt-dZejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t75eqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQvMkZejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t55eqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQswU5ejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t7peqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQtXa5ejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t85eqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQvMl5ejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t6peqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQsJQZejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t8ZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQwasJejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t95eqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQt-e5ejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t6JeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQt-eJejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t6ZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQvMlJejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t8JeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQvMmpejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t-5eqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQuliJejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t-peqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQvzoZejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t9peqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQtXYpejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t9JeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQvzp5ejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t9ZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQswUJejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t65eqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQuli5ejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t-ZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQtXZZejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t8peqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQulhZejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t-JeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQt-cpejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_JeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQvzpJejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_ZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQtXaJejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t5peqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQswVpejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t7JeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="mapAttributes" package="generateMDMI" module="generateMDMI">
+      <runtimeMappingOperation href="qvto:/module.env#//mapAttributes"/>
+    </mappingOperation>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="../models/problems.uml#_UQulgpejEeanwsLL6pP2Sg"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="path" type="String">
+        <value primitiveValue="Problem" collectionType="String"/>
+      </parameters>
+      <parameters kind="INOUT" name="dictionary" type="MDMIDomainDictionaryReference">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uGZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="ses" type="SemanticElementSet">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t_peqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+      <parameters kind="INOUT" name="theParent" type="SemanticElement">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6uAJeqEeanwsLL6pP2Sg"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="Node">
+        <value>
+          <modelElement href="../map/dodcdrproblems.mdmi#_P-6t7ZeqEeanwsLL6pP2Sg"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+</trace:Trace>
