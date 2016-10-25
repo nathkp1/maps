@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default"
+	xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+	<target name="default">
+		
+		<record name="${basedir}/log/build.log" action="start" append="no"/>
+		
+		<delete file="map/FHIMmap.mdmi"/>
+		<delete file="map/FHIMmap.xmi"/>
+
+	 	 <qvto:transformation
+			uri="platform:/resource/org.mdmi.qvtcda/transforms/WalkAModel.qvto">
+			<in uri="platform:/resource/VPR/model/vpr.uml" />
+	 	 	<out uri="platform:/resource/VPR/map/VPRmap2.mdmi" />
+	 	 	<trace  uri="platform:/resource/VPR/log/cdamap.qvtotrace" ></trace>
+			<configProperty name="semanticRoot" value="AllergyIntolerance" />
+			<configProperty name="syntaxRoot" value="Problem" />
+			<configProperty name="mappingStyle" value="NORMAL" />
+		</qvto:transformation>
+	 	
+	 
+		<delete file="map/VPRmap.xmi"/>
+		 	<copy file="map/VPRmap.mdmi" tofile="map/VPRmap.xmi"/>
+		 		 
+	 	  	<mdmiExport model="platform:/resource/VPR/map/VPRmap.xmi" /> 
+		   	
+			<replace file='map/VPRmap.xmi' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="'/>
+			<replace file='map/VPRmap.xmi' token='&lt;/businessElement>' value='" />'/>
+			<replace file='map/VPRmap.xmi' token='&lt;semanticElement>' value='&lt;semanticElement xmi:idref="'/>
+			<replace file='map/VPRmap.xmi' token='&lt;/semanticElement>' value='" />'/>	
+			<replace file='map/VPRmap.xmi' token='&lt;referenceDatatype>' value='&lt;referenceDatatype xmi:idref="'/>
+			<replace file='map/VPRmap.xmi' token='&lt;/referenceDatatype>' value='" />'/>
+			<replace file='map/VPRmap.xmi' token='&lt;children>' value='&lt;children xmi:idref="'/>
+			<replace file='map/VPRmap.xmi' token='&lt;/children>' value='" />'/>
+			<replace file='map/VPRmap.xmi' token='&lt;datatype>' value='&lt;datatype xmi:idref="'/>
+			<replace file='map/VPRmap.xmi' token='&lt;/datatype>' value='" />'/>
+			<replace file='map/VPRmap.xmi' token='&lt;syntaxNode xmi:type="mdmi:LeafSyntaxTranslator">#' value='&lt;syntaxNode xmi:idref="'/>
+			<replace file='map/VPRmap.xmi' token='&lt;syntaxNode xmi:type="mdmi:Bag">' value='&lt;syntaxNode xmi:idref="'/>
+			<replace file='map/VPRmap.xmi' token='&lt;/syntaxNode>' value='" />'/>
+	  
+
+		 
+  
+	 	
+	</target>
+	
+
+	
+</project>
