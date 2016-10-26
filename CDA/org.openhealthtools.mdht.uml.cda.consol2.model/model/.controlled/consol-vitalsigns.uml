@@ -6,7 +6,7 @@
         <body>couple</body>
       </ownedComment>
     </generalization>
-    <ownedAttribute xmi:id="_2OfUexSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+    <ownedAttribute xmi:id="_2OfUexSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OlbAhSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
@@ -61,7 +61,7 @@
       </ownedComment>
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_bRH8uxVeEeGQCvUGzi1kDQ" name="code" visibility="private" isReadOnly="true">
+    <ownedAttribute xmi:id="_bRH8uxVeEeGQCvUGzi1kDQ" name="code" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_3RkfUB0XEeGYy5bW_e08gQ" name="title" visibility="private" aggregation="composite">
@@ -621,7 +621,7 @@ Vital signs are represented in the same way as other results, but are aggregated
     </ownedComment>
     <generalization xmi:id="_8LnPoAFTEeSmasYc71ZgMQ" general="_bRH8sBVeEeGQCvUGzi1kDQ"/>
     <substitution xmi:id="_6SqUgAFUEeSmasYc71ZgMQ" name="VitalSignsSectionEntriesOptional" client="_8LkzYAFTEeSmasYc71ZgMQ" supplier="_bRH8sBVeEeGQCvUGzi1kDQ" contract="_bRH8sBVeEeGQCvUGzi1kDQ"/>
-    <ownedAttribute xmi:id="_I4risAFVEeSmasYc71ZgMQ" name="code" visibility="private" isReadOnly="true" redefinedProperty="_bRH8uxVeEeGQCvUGzi1kDQ">
+    <ownedAttribute xmi:id="_I4risAFVEeSmasYc71ZgMQ" name="code" visibility="private" redefinedProperty="_bRH8uxVeEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_TrEuQAFVEeSmasYc71ZgMQ" name="vitalSignsOrganizer2" type="_dDupoPV2EeONioZkBKP8eQ" redefinedProperty="_Xf_K0BxYEeG8X6LmnKJ43Q" association="_TrHxkAFVEeSmasYc71ZgMQ">
@@ -664,7 +664,7 @@ Vital signs are represented in the same way as other results, but are aggregated
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oa_xIKgcEeSoILDCw_oFwA" value="NI"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_wYuG4AL0EeSM0Jd2D1FgKw" name="code" visibility="private" isReadOnly="true" redefinedProperty="_I4risAFVEeSmasYc71ZgMQ">
+    <ownedAttribute xmi:id="_wYuG4AL0EeSM0Jd2D1FgKw" name="code" visibility="private" redefinedProperty="_I4risAFVEeSmasYc71ZgMQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_8thgYAL0EeSM0Jd2D1FgKw" name="vitalSignsOrganizer2" type="_dDupoPV2EeONioZkBKP8eQ" redefinedProperty="_TrEuQAFVEeSmasYc71ZgMQ" association="_8tj8oAL0EeSM0Jd2D1FgKw">
@@ -843,6 +843,7 @@ Vital signs are represented in the same way as other results, but are aggregated
   </CDA:EntryRelationship>
   <MDMI:MDMIMapping xmi:id="_62LOwNT3EeWqHOHsDZliBA" base_Class="_bRH8sBVeEeGQCvUGzi1kDQ">
     <elements xmi:id="_62UYsNT3EeWqHOHsDZliBA" businessElement="VitalSignSection" modelElement="_2OfUcxSVEeGGzu7fmW9pXw" businessElementId="1344bbb0-bb05-44df-9d86-b90bd60ac951" modelElementPath="" condition=""/>
+    <elements xmi:id="_A5BiANT4EeWqHOHsDZliBA" businessElement="VitalSignSectionText" modelElement="_2OlbAhSVEeGGzu7fmW9pXw" businessElementId="82e45334-0929-45e2-a9da-048e37a13e0a" modelElementPath="text" condition=""/>
     <elements xmi:id="_DBts0NT4EeWqHOHsDZliBA" businessElement="VitalSignsSectionTitle" modelElement="_5h_p0B0XEeGYy5bW_e08gQ" businessElementId="bed98adb-cb6d-4254-877b-0cb68d3d7e70" modelElementPath="title" condition=""/>
     <elements xmi:id="_IolOsNT4EeWqHOHsDZliBA" businessElement="VitalSignOrganizer" modelElement="_2PD8IBSVEeGGzu7fmW9pXw" businessElementId="7ae54db7-4e6c-4350-9e00-226a4c2f7d9a" modelElementPath="vitalSignsOrganizer" condition=""/>
     <elements xmi:id="_YyyzgNT4EeWqHOHsDZliBA" businessElement="VitalSignBatteryID" modelElement="_2OlbHhSVEeGGzu7fmW9pXw" businessElementId="f224b8aa-6871-4bf4-a697-dfb47526ab6f" modelElementPath="vitalSignsOrganizer.id" condition=""/>
@@ -859,6 +860,5 @@ Vital signs are represented in the same way as other results, but are aggregated
     <elements xmi:id="_pmoXML7KEeWoV-fDNleHag" businessElement="VitalSignResultIntepretationCode" modelElement="_2OxoVBSVEeGGzu7fmW9pXw" businessElementId="60f64b90-2803-465b-ba6d-79e55c7a45c1" modelElementPath="vitalSignsOrganizer.vitalSignObservation.interpretationCode" condition=""/>
     <elements xmi:id="_DwVMsHFAEeaxqa5aLAux1g" businessElement="VitalSignResultValueCoded" modelElement="_2OxoUhSVEeGGzu7fmW9pXw" businessElementId="2fe9f148-7179-451c-ad5f-502cd2169d91" modelElementPath="vitalSignsOrganizer.vitalSignObservation.value.CD" condition=""/>
     <elements xmi:id="_rdaFQHFIEeaxqa5aLAux1g" businessElement="VitalSignResultStartTime" modelElement="_2OxoTRSVEeGGzu7fmW9pXw" businessElementId="a411cc47-098b-408b-9466-210001f6112b" modelElementPath="vitalSignsOrganizer.vitalSignObservation.effectiveTime.low" condition=""/>
-    <elements xmi:id="_kPTgUJI4EeapYs2cMSDxUg" businessElement="VitalSignSectionText" modelElement="_bRH8vRVeEeGQCvUGzi1kDQ" businessElementId="9230a42b-3f41-45aa-91ff-180c0eb4f1c0" modelElementPath="text"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
