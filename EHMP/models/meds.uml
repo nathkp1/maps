@@ -551,5 +551,16 @@
     </profileApplication>
   </uml:Package>
   <XSDGeneration:SchemaGen xmi:id="_0KyCgJCsEeaGc_TLN91agQ" base_Package="_0I3W8JCsEeaGc_TLN91agQ" complexTypeSuffix="" globalElements="true"/>
-  <MDMI:MDMIMapping xmi:id="_E48FkJ4ZEeaxWLxR1RD7zg" base_Class="_0Lvr0JCsEeaGc_TLN91agQ"/>
+  <MDMI:MDMIMapping xmi:id="_E48FkJ4ZEeaxWLxR1RD7zg" base_Class="_0Lvr0JCsEeaGc_TLN91agQ">
+    <elements xmi:id="_U7HU8J9nEeadKsf8VycPtw" businessElement="MedicationAdminstered" modelElement="_deLLYJ4YEea2TrgUTObppA" businessElementId="3a55586d-b8ac-4596-804e-83818f921f91" modelElementPath="data.items"/>
+    <elements xmi:id="_aadSgJ9nEeadKsf8VycPtw" businessElement="MedicationAdministeredMedicationCode" modelElement="_0LxhBpCsEeaGc_TLN91agQ" businessElementId="271b979b-7064-46cd-b0ad-3d43224499fb" modelElementPath="data.items.codes"/>
+    <elements xmi:id="_eVFVAJ9nEeadKsf8VycPtw" businessElement="MedicationAdministeredStatusCode" modelElement="_0L4OtZCsEeaGc_TLN91agQ" businessElementId="333e512f-80c4-48f0-9e65-1426e4138f00" modelElementPath="data.items.medStatus"/>
+    <elements xmi:id="_ijAG8J9nEeadKsf8VycPtw" businessElement="MedicationAdministeredStartDate" modelElement="_0L6q-JCsEeaGc_TLN91agQ" businessElementId="fa8b69c8-07ff-4fbf-b8d7-4b5b1854c642" modelElementPath="data.items.overallStart"/>
+    <elements xmi:id="_lZPUQJ9nEeadKsf8VycPtw" businessElement="MedicationAdministeredEndDate" modelElement="_0L6q-5CsEeaGc_TLN91agQ" businessElementId="dec8c1cf-9186-4aad-960c-4391b13180eb" modelElementPath="data.items.overallStop"/>
+    <elements xmi:id="_pdvEcJ9nEeadKsf8VycPtw" businessElement="MedicationAdministratedDosageNotes" modelElement="_0L6q_pCsEeaGc_TLN91agQ" businessElementId="cfdf21f6-1d98-4c98-b24e-0d4484456365" modelElementPath="data.items.patientInstruction"/>
+    <elements xmi:id="_vLMWgJ9nEeadKsf8VycPtw" businessElement="MedicationAdministeredDosageUnitCode" modelElement="_0L6rBJCsEeaGc_TLN91agQ" businessElementId="0d00c8b8-b802-4d2e-b42f-8b681db9df5c" modelElementPath="data.items.productFormName"/>
+    <elements xmi:id="_2JBEQJ9nEeadKsf8VycPtw" businessElement="MedicationAdministeredNotes" modelElement="_0L8gJJCsEeaGc_TLN91agQ" businessElementId="e8b737cc-12bc-4dcd-a0a5-650654055fab" modelElementPath="data.items.sig"/>
+    <elements xmi:id="_8GKYIJ9nEeadKsf8VycPtw" businessElement="MedicationAdministeredID" modelElement="_0L9HMZCsEeaGc_TLN91agQ" businessElementId="c288c2b4-e001-495d-9cd9-011dcb4c2da5" modelElementPath="data.items.uid"/>
+    <elements xmi:id="_B_LZ8J9oEeadKsf8VycPtw" businessElement="MedicationAdministeredDosageQuantity" modelElement="_0L9HNJCsEeaGc_TLN91agQ" businessElementId="2ae32afb-f8ec-4b06-880b-fc12a4ede424" modelElementPath="data.items.units"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
