@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Model xmi:id="_mAHtEJ9yEeaPFNb3td05CQ" name="EHMP" URI="http://jsonDiscoverer/discovered/Discovered">
     <packagedElement xmi:type="uml:Association" xmi:id="_mAHtc59yEeaPFNb3td05CQ" memberEnd="_mAHtN59yEeaPFNb3td05CQ _mAHtdJ9yEeaPFNb3td05CQ">
       <ownedEnd xmi:id="_mAHtdJ9yEeaPFNb3td05CQ" type="_mAHtNp9yEeaPFNb3td05CQ" association="_mAHtc59yEeaPFNb3td05CQ"/>
@@ -426,6 +426,12 @@
       </eAnnotations>
       <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
     </profileApplication>
+    <profileApplication xmi:id="_5bA4IJ91EeaM49SweakKGA">
+      <eAnnotations xmi:id="_5bD7cJ91EeaM49SweakKGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.mdmi.uml.profile/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
   </uml:Model>
   <Ecore:EPackage xmi:id="_mAIUIJ9yEeaPFNb3td05CQ" base_Package="_mAHtEJ9yEeaPFNb3td05CQ" nsPrefix="discoD"/>
   <Ecore:EClass xmi:id="_mAJiSp9yEeaPFNb3td05CQ" base_Class="_mAHtv59yEeaPFNb3td05CQ">
@@ -533,4 +539,8 @@
   <Ecore:EClass xmi:id="_mAIUJp9yEeaPFNb3td05CQ" base_Class="_mAHtLJ9yEeaPFNb3td05CQ">
     <annotation>coverage totalFound='4'</annotation>
   </Ecore:EClass>
+  <MDMI:MDMIMapping xmi:id="_64PrIJ91EeaM49SweakKGA" base_Class="_mAHtv59yEeaPFNb3td05CQ">
+    <elements xmi:id="_64QSMJ91EeaM49SweakKGA" businessElement="AllergiesSectionText" modelElement="_mAHtwp9yEeaPFNb3td05CQ" businessElementId="c3d121c5-eb50-40fe-b72e-a4c342d901e6" modelElementPath="status"/>
+    <elements xmi:id="_KPHHcJ92EeaD9Z6Y9xT4bw" businessElement="AllergiesSectionText" modelElement="_mAHtw59yEeaPFNb3td05CQ" businessElementId="c3d121c5-eb50-40fe-b72e-a4c342d901e6" modelElementPath="data"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
