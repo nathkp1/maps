@@ -215,5 +215,14 @@
     </profileApplication>
   </uml:Package>
   <XSDGeneration:SchemaGen xmi:id="_Kv22wJekEeanwsLL6pP2Sg" base_Package="_KvfDUJekEeanwsLL6pP2Sg" complexTypeSuffix="" globalElements="true"/>
-  <MDMI:MDMIMapping xmi:id="_ERpL8KUzEeasa9hTvyU3Sg" base_Class="_KwS7opekEeanwsLL6pP2Sg"/>
+  <MDMI:MDMIMapping xmi:id="_ERpL8KUzEeasa9hTvyU3Sg" base_Class="_KwS7opekEeanwsLL6pP2Sg">
+    <elements xmi:id="_fCk0YKXOEeaxOsjuhe-ITg" businessElement="MedicationAdministeredID" modelElement="_KwUw1pekEeanwsLL6pP2Sg" businessElementId="c288c2b4-e001-495d-9cd9-011dcb4c2da5" modelElementPath="DATA_RECORD.EVENT_ID"/>
+    <elements xmi:id="_kZ_lAKXOEeaxOsjuhe-ITg" businessElement="MedicationAdministeredDosageRoute" modelElement="_KwV-9pekEeanwsLL6pP2Sg" businessElementId="8fe79500-d0bf-43f3-a6b3-246b75656043" modelElementPath="DATA_RECORD.ROUTE_METHOD_NCID"/>
+    <elements xmi:id="_pezisKXOEeaxOsjuhe-ITg" businessElement="MedicationAdministeredStartDate" modelElement="_KwX0I5ekEeanwsLL6pP2Sg" businessElementId="fa8b69c8-07ff-4fbf-b8d7-4b5b1854c642" modelElementPath="DATA_RECORD.EVENT_START_TIME"/>
+    <elements xmi:id="_vA55UKXOEeaxOsjuhe-ITg" businessElement="MedicationAdministeredDosageQuantity" modelElement="_KwYbN5ekEeanwsLL6pP2Sg" businessElementId="2ae32afb-f8ec-4b06-880b-fc12a4ede424" modelElementPath="DATA_RECORD.DOSE_UNITS_NCID"/>
+    <elements xmi:id="_yHsEEKXOEeaxOsjuhe-ITg" businessElement="MedicationAdministeredDosageQuantity" modelElement="_KwYbOpekEeanwsLL6pP2Sg" businessElementId="2ae32afb-f8ec-4b06-880b-fc12a4ede424" modelElementPath="DATA_RECORD.QTY_VALUE"/>
+    <elements xmi:id="_1Wuy8KXOEeaxOsjuhe-ITg" businessElement="MedicationAdministeredMedicationCode" modelElement="_KwVX4JekEeanwsLL6pP2Sg" businessElementId="271b979b-7064-46cd-b0ad-3d43224499fb" modelElementPath="DATA_RECORD.PRODUCT_NCID"/>
+    <elements xmi:id="_3nLLkKXOEeaxOsjuhe-ITg" businessElement="MedicationAdministeredContainer" modelElement="_8kU68KUyEea76cdDfx4OOw" businessElementId="3a55586d-b8ac-4596-804e-83818f921f91" modelElementPath="DATA_RECORD"/>
+    <elements xmi:id="_9Sw1YKXOEeaxOsjuhe-ITg" businessElement="MedicationAdministeredDosageRate" modelElement="_KwV-85ekEeanwsLL6pP2Sg" businessElementId="7c16bb80-4d41-4592-994f-b373a6b56b7d" modelElementPath="DATA_RECORD.TIMING_QTY_DISPLAY"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
