@@ -291,6 +291,12 @@ Medication timing is complex. This template requires that there be a substanceAd
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U-RV0DhbEeS1WeMhbm6GZw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U-RV0ThbEeS1WeMhbm6GZw" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_h3h8MKgnEea6iYPp5CGByA" name="effectiveTime" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h3h8MagnEea6iYPp5CGByA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h3h8MqgnEea6iYPp5CGByA" value="*"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_u37zEErsEd6FXKclYGEDCw"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ou3j0G65EeGeVrQbtyMiPg" name="Consumable">
       <ownedComment xmi:id="_Wzk84PEkEeGPm_ynmLKd6Q">
         <body>INLINE</body>
