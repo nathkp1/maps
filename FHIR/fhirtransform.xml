@@ -5,38 +5,70 @@
 		
 	 
 		
-		<delete file="map/fhirmap.mdmi"/>
+		<delete file="map/fhirmapxml.mdmi"/>
+		<delete file="map/fhirmapjson.mdmi"/>
 	 
 	 	 <qvto:transformation
 			uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
 			<in uri="platform:/resource/FHIR/dstu2/FHIR-dstu2.uml" />
-	 	 	<out uri="platform:/resource/FHIR/map/fhirmap.mdmi" />
-	 	 	<trace  uri="platform:/resource/FHIR/log/cdamap.qvtotrace" ></trace>
+	 	 	<out uri="platform:/resource/FHIR/map/fhirmapxml.mdmi" />
 			<configProperty name="semanticRoot" value="AllergyIntolerance" />
 			<configProperty name="syntaxRoot" value="DAF-AllergyIntolerance,DAF-Medication,DAF-Patient,DAF-VitalSigns" />
 			<configProperty name="mappingStyle" value="NORMAL" />
+	 	 	<configProperty name="expressionLanguage" value="XPath" />
 		</qvto:transformation>
 		
-		<delete file="map/fhirmap.xmi"/>
-	 	<copy file="map/fhirmap.mdmi" tofile="map/fhirmap.xmi"/>
-	 		 
- 	  	<mdmiExport model="platform:/resource/FHIR/map/fhirmap.xmi" /> 
-	   	
-		<replace file='map/fhirmap.xmi' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="'/>
-		<replace file='map/fhirmap.xmi' token='&lt;/businessElement>' value='" />'/>
-		<replace file='map/fhirmap.xmi' token='&lt;semanticElement>' value='&lt;semanticElement xmi:idref="'/>
-		<replace file='map/fhirmap.xmi' token='&lt;/semanticElement>' value='" />'/>	
-		<replace file='map/fhirmap.xmi' token='&lt;referenceDatatype>' value='&lt;referenceDatatype xmi:idref="'/>
-		<replace file='map/fhirmap.xmi' token='&lt;/referenceDatatype>' value='" />'/>
-		<replace file='map/fhirmap.xmi' token='&lt;children>#' value='&lt;children xmi:idref="'/>
-		<replace file='map/fhirmap.xmi' token='&lt;/children>' value='" />'/>
-		<replace file='map/fhirmap.xmi' token='&lt;datatype>#' value='&lt;datatype xmi:idref="'/>
-		<replace file='map/fhirmap.xmi' token='&lt;/datatype>' value='" />'/>
-		<replace file='map/fhirmap.xmi' token='&lt;syntaxNode xmi:type="mdmi:LeafSyntaxTranslator">#' value='&lt;syntaxNode xmi:idref="'/>
-		<replace file='map/fhirmap.xmi' token='&lt;syntaxNode xmi:type="mdmi:Bag">#' value='&lt;syntaxNode xmi:idref="'/>
-		<replace file='map/fhirmap.xmi' token='&lt;/syntaxNode>' value='" />'/>
+	 	<qvto:transformation
+				uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
+				<in uri="platform:/resource/FHIR/dstu2/FHIR-dstu2.uml" />
+		 	 	<out uri="platform:/resource/FHIR/map/fhirmapjson.mdmi" />
+				<configProperty name="semanticRoot" value="AllergyIntolerance" />
+				<configProperty name="syntaxRoot" value="DAF-AllergyIntolerance,DAF-Medication,DAF-Patient,DAF-VitalSigns" />
+				<configProperty name="mappingStyle" value="NORMAL" />
+		 	 	<configProperty name="expressionLanguage" value="JSON" />
+		</qvto:transformation>
 		
-	</target>
+		<antcall target="exportMDMI">
+				<param name="mdmimodel" value="fhirmapjson.mdmi" />
+				<param name="xmimodel" value="fhirmapjson.xmi" />
+		</antcall>
+			
+		<antcall target="exportMDMI">
+				<param name="mdmimodel" value="fhirmapxml.mdmi" />
+				<param name="xmimodel" value="fhirmapxml.xmi" />
+		</antcall>
+
+		</target>
+ 	
+		<target name="exportMDMI">
+
+			<delete file="map/${xmimodel}" />
+
+			<copy file="map/${mdmimodel}" tofile="map/${xmimodel}" />
+
+			<mdmiExport model="platform:/resource/FHIR/map/${xmimodel}" />
+
+			<replace file='map/${xmimodel}' token='&lt;relatedSemanticElement>' value='&lt;relatedSemanticElement xmi:idref="' />
+				<replace file='map/${xmimodel}' token='&lt;/relatedSemanticElement>' value='" />' />	
+				<replace file='map/${xmimodel}' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="' />
+				<replace file='map/${xmimodel}' token='&lt;/businessElement>' value='"  >&lt;/businessElement>' />
+				<replace file='map/${xmimodel}' token='&lt;semanticElement>' value='&lt;semanticElement xmi:idref="' />
+				<replace file='map/${xmimodel}' token='&lt;/semanticElement>' value='" />' />	
+				<replace file='map/${xmimodel}' token='&lt;referenceDatatype>' value='&lt;referenceDatatype xmi:idref="' />
+				<replace file='map/${xmimodel}' token='&lt;/referenceDatatype>' value='" />' />
+				<replace file='map/${xmimodel}' token='&lt;children>#' value='&lt;children xmi:idref="' />
+				<replace file='map/${xmimodel}' token='&lt;/children>' value='" />' />
+				<replace file='map/${xmimodel}' token='&lt;datatype>#' value='&lt;datatype xmi:idref="' />
+				<replace file='map/${xmimodel}' token='&lt;/datatype>' value='" />' />
+				<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:LeafSyntaxTranslator">#' value='&lt;syntaxNode xmi:idref="' />
+				<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:Bag">#' value='&lt;syntaxNode xmi:idref="' />
+				<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:Choice">#' value='&lt;syntaxNode xmi:idref="' />
+				<replace file='map/${xmimodel}' token='&lt;/syntaxNode>' value='" />' />
+				<replace file='map/${xmimodel}' token='xmi:idref="#' value='xmi:idref="' />
+
+		</target>
+		
+	
 	
 
 	
