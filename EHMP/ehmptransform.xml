@@ -7,6 +7,8 @@
 			<param name="umlmodel" value="vitals.uml" />
 			<param name="mdmimodel" value="ehmpvitals.mdmi" />
 		</antcall>
+		
+		
 
 		<antcall target="generateMDMI">
 			<param name="umlmodel" value="meds.uml" />
@@ -17,6 +19,11 @@
 				<param name="umlmodel" value="patient.uml" />
 				<param name="mdmimodel" value="ehmppatient.mdmi" />
 			</antcall>
+		
+		<antcall target="generateMDMI">
+					<param name="umlmodel" value="immunizations.uml" />
+					<param name="mdmimodel" value="ehmpimmunizations.mdmi" />
+				</antcall>
 
 		<antcall target="exportMDMI">
 			<param name="mdmimodel" value="ehmpvitals.mdmi" />
@@ -32,6 +39,11 @@
 					<param name="mdmimodel" value="ehmppatient.mdmi" />
 					<param name="xmimodel" value="ehmppatient.xmi" />
 				</antcall>
+		
+		<antcall target="exportMDMI">
+						<param name="mdmimodel" value="ehmpimmunizations.mdmi" />
+						<param name="xmimodel" value="ehmpimmunizations.xmi" />
+					</antcall>
 
 	</target>
 
