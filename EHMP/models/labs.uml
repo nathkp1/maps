@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0fstYLceEeaqD7G7AJYpYg" name="Labs" URI="http://jsonDiscoverer/discovered/Stop">
+  <packagedElement xmi:type="uml:Association" xmi:id="_0fstpbceEeaqD7G7AJYpYg" memberEnd="_0fstobceEeaqD7G7AJYpYg _0fstprceEeaqD7G7AJYpYg">
+    <ownedEnd xmi:id="_0fstprceEeaqD7G7AJYpYg" type="_0fstoLceEeaqD7G7AJYpYg" association="_0fstpbceEeaqD7G7AJYpYg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0fstp7ceEeaqD7G7AJYpYg" memberEnd="_0fstdbceEeaqD7G7AJYpYg _0fstqLceEeaqD7G7AJYpYg">
+    <ownedEnd xmi:id="_0fstqLceEeaqD7G7AJYpYg" type="_0fstZrceEeaqD7G7AJYpYg" association="_0fstp7ceEeaqD7G7AJYpYg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0fstrbceEeaqD7G7AJYpYg" memberEnd="_0fstebceEeaqD7G7AJYpYg _0fstrrceEeaqD7G7AJYpYg">
+    <ownedEnd xmi:id="_0fstrrceEeaqD7G7AJYpYg" type="_0fstZrceEeaqD7G7AJYpYg" association="_0fstrbceEeaqD7G7AJYpYg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0fstr7ceEeaqD7G7AJYpYg" name="Labs">
+    <ownedAttribute xmi:id="_0fstsLceEeaqD7G7AJYpYg" name="apiVersion" visibility="public" isOrdered="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0fstsbceEeaqD7G7AJYpYg" name="data" type="_0fsts7ceEeaqD7G7AJYpYg" isOrdered="true" aggregation="composite" association="_0fstv7ceEeaqD7G7AJYpYg"/>
+    <ownedAttribute xmi:id="_0fstsrceEeaqD7G7AJYpYg" name="status" visibility="public" isOrdered="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_0fsts7ceEeaqD7G7AJYpYg" name="Data">
+      <ownedAttribute xmi:id="_0fsttLceEeaqD7G7AJYpYg" name="updated" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0fsttbceEeaqD7G7AJYpYg" name="totalItems" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0fsttrceEeaqD7G7AJYpYg" name="currentItemCount" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0fstt7ceEeaqD7G7AJYpYg" name="itemsPerPage" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0fstuLceEeaqD7G7AJYpYg" name="startIndex" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0fstubceEeaqD7G7AJYpYg" name="pageIndex" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0fsturceEeaqD7G7AJYpYg" name="totalPages" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0fstu7ceEeaqD7G7AJYpYg" name="items" type="_0fstZrceEeaqD7G7AJYpYg" isOrdered="true" aggregation="composite" association="_0fstvbceEeaqD7G7AJYpYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0fstvLceEeaqD7G7AJYpYg" value="*"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_0fstZrceEeaqD7G7AJYpYg" name="Item">
+        <ownedAttribute xmi:id="_0fstZ7ceEeaqD7G7AJYpYg" name="abnormal" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstaLceEeaqD7G7AJYpYg" name="categoryCode" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstabceEeaqD7G7AJYpYg" name="categoryName" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstarceEeaqD7G7AJYpYg" name="facilityCode" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fsta7ceEeaqD7G7AJYpYg" name="facilityName" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstbLceEeaqD7G7AJYpYg" name="groupName" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstbbceEeaqD7G7AJYpYg" name="groupUid" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstbrceEeaqD7G7AJYpYg" name="kind" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstb7ceEeaqD7G7AJYpYg" name="lastUpdateTime" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstcLceEeaqD7G7AJYpYg" name="lnccodes" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0fstcbceEeaqD7G7AJYpYg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstcrceEeaqD7G7AJYpYg" name="localId" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstc7ceEeaqD7G7AJYpYg" name="micro" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstdLceEeaqD7G7AJYpYg" name="observed" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstdbceEeaqD7G7AJYpYg" name="organisms" type="_0fstoLceEeaqD7G7AJYpYg" isOrdered="true" aggregation="composite" association="_0fstp7ceEeaqD7G7AJYpYg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0fstdrceEeaqD7G7AJYpYg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstd7ceEeaqD7G7AJYpYg" name="pid" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fsteLceEeaqD7G7AJYpYg" name="qualifiedName" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstebceEeaqD7G7AJYpYg" name="results" type="_0fstqbceEeaqD7G7AJYpYg" isOrdered="true" aggregation="composite" association="_0fstrbceEeaqD7G7AJYpYg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0fsterceEeaqD7G7AJYpYg" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fste7ceEeaqD7G7AJYpYg" name="sample" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstfLceEeaqD7G7AJYpYg" name="specimen" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstfbceEeaqD7G7AJYpYg" name="stampTime" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstfrceEeaqD7G7AJYpYg" name="statusCode" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstf7ceEeaqD7G7AJYpYg" name="statusName" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstgLceEeaqD7G7AJYpYg" name="summary" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstgbceEeaqD7G7AJYpYg" name="typeCode" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstgrceEeaqD7G7AJYpYg" name="typeName" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstg7ceEeaqD7G7AJYpYg" name="uid" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fsthLceEeaqD7G7AJYpYg" name="comment" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fsthbceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fsthrceEeaqD7G7AJYpYg" name="displayName" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fsth7ceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstiLceEeaqD7G7AJYpYg" name="displayOrder" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fstibceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstirceEeaqD7G7AJYpYg" name="high" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fsti7ceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstjLceEeaqD7G7AJYpYg" name="interpretationCode" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fstjbceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstjrceEeaqD7G7AJYpYg" name="interpretationName" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fstj7ceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstkLceEeaqD7G7AJYpYg" name="labOrderId" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fstkbceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstkrceEeaqD7G7AJYpYg" name="low" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fstk7ceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstlLceEeaqD7G7AJYpYg" name="result" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fstlbceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstlrceEeaqD7G7AJYpYg" name="resultNumber" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fstl7ceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstmLceEeaqD7G7AJYpYg" name="resulted" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fstmbceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstmrceEeaqD7G7AJYpYg" name="typeId" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fstm7ceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstnLceEeaqD7G7AJYpYg" name="units" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fstnbceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0fstnrceEeaqD7G7AJYpYg" name="orderUid" visibility="public" isOrdered="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fstn7ceEeaqD7G7AJYpYg"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_0fstoLceEeaqD7G7AJYpYg" name="Organism">
+          <ownedAttribute xmi:id="_0fstobceEeaqD7G7AJYpYg" name="drugs" type="_0fstYbceEeaqD7G7AJYpYg" isOrdered="true" aggregation="composite" association="_0fstpbceEeaqD7G7AJYpYg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0fstorceEeaqD7G7AJYpYg" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0fsto7ceEeaqD7G7AJYpYg" name="name" visibility="public" isOrdered="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0fstpLceEeaqD7G7AJYpYg" name="qty" visibility="public" isOrdered="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_0fstYbceEeaqD7G7AJYpYg" name="Drug">
+            <ownedAttribute xmi:id="_0fstYrceEeaqD7G7AJYpYg" name="interp" visibility="public" isOrdered="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0fstY7ceEeaqD7G7AJYpYg" name="name" visibility="public" isOrdered="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0fstZLceEeaqD7G7AJYpYg" name="restrict" visibility="public" isOrdered="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0fstZbceEeaqD7G7AJYpYg" name="result" visibility="public" isOrdered="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_0fstqbceEeaqD7G7AJYpYg" name="Result">
+          <ownedAttribute xmi:id="_0fstqrceEeaqD7G7AJYpYg" name="localTitle" visibility="public" isOrdered="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0fstq7ceEeaqD7G7AJYpYg" name="resultUid" visibility="public" isOrdered="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_0fstrLceEeaqD7G7AJYpYg" name="uid" visibility="public" isOrdered="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0fstvbceEeaqD7G7AJYpYg" memberEnd="_0fstu7ceEeaqD7G7AJYpYg _0fstvrceEeaqD7G7AJYpYg">
+    <ownedEnd xmi:id="_0fstvrceEeaqD7G7AJYpYg" type="_0fsts7ceEeaqD7G7AJYpYg" association="_0fstvbceEeaqD7G7AJYpYg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0fstv7ceEeaqD7G7AJYpYg" memberEnd="_0fstsbceEeaqD7G7AJYpYg _0fstwLceEeaqD7G7AJYpYg">
+    <ownedEnd xmi:id="_0fstwLceEeaqD7G7AJYpYg" type="_0fstr7ceEeaqD7G7AJYpYg" association="_0fstv7ceEeaqD7G7AJYpYg"/>
+  </packagedElement>
+  <profileApplication xmi:id="_4-OuMLceEeaqD7G7AJYpYg">
+    <eAnnotations xmi:id="_4-OuMbceEeaqD7G7AJYpYg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://org.mdmi.uml.profile/1#/"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+  </profileApplication>
+</uml:Package>

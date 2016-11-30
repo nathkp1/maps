@@ -15,6 +15,11 @@
 			</antcall>
 		
 		<antcall target="generateMDMI">
+						<param name="umlmodel" value="labs.uml" />
+						<param name="mdmimodel" value="ehmplabs.mdmi" />
+					</antcall>	
+		
+		<antcall target="generateMDMI">
 						<param name="umlmodel" value="problems.uml" />
 						<param name="mdmimodel" value="ehmpproblems.mdmi" />
 					</antcall>
@@ -44,6 +49,11 @@
 				<param name="mdmimodel" value="ehmpallergies.mdmi" />
 				<param name="xmimodel" value="ehmpallergies.xmi" />
 			</antcall>
+		
+		<antcall target="exportMDMI">
+						<param name="mdmimodel" value="ehmplabs.mdmi" />
+						<param name="xmimodel" value="ehmplabs.xmi" />
+					</antcall>
 
 		<antcall target="exportMDMI">
 					<param name="mdmimodel" value="ehmpproblems.mdmi" />
