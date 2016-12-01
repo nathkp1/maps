@@ -84,11 +84,11 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pNPGMLcUEeaqD7G7AJYpYg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pNPGMbcUEeaqD7G7AJYpYg" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_A2z_kLcVEeaqD7G7AJYpYg" name="products" type="_-vSIB7cTEeaqD7G7AJYpYg">
+          <ownedAttribute xmi:id="_A2z_kLcVEeaqD7G7AJYpYg" name="products" type="_-vSH-7cTEeaqD7G7AJYpYg">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A2z_kbcVEeaqD7G7AJYpYg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A20moLcVEeaqD7G7AJYpYg" value="1"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_DUos4LcVEeaqD7G7AJYpYg" name="reactions" type="_-vSIB7cTEeaqD7G7AJYpYg">
+          <ownedAttribute xmi:id="_DUos4LcVEeaqD7G7AJYpYg" name="reactions" type="_-vSH-7cTEeaqD7G7AJYpYg">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DUos4bcVEeaqD7G7AJYpYg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DUos4rcVEeaqD7G7AJYpYg" value="1"/>
           </ownedAttribute>
@@ -96,7 +96,7 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VGBD0LcVEeaqD7G7AJYpYg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VGBD0bcVEeaqD7G7AJYpYg" value="1"/>
           </ownedAttribute>
-          <nestedClassifier xmi:type="uml:DataType" xmi:id="_-vSIB7cTEeaqD7G7AJYpYg" name="Vuid">
+          <nestedClassifier xmi:type="uml:DataType" xmi:id="_-vSIB7cTEeaqD7G7AJYpYg" name="CodeAndName">
             <ownedAttribute xmi:id="_-vSICLcTEeaqD7G7AJYpYg" name="code" visibility="public" isOrdered="true">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
             </ownedAttribute>
@@ -124,7 +124,7 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
             </ownedAttribute>
           </nestedClassifier>
-          <nestedClassifier xmi:type="uml:DataType" xmi:id="_-vSH7bcTEeaqD7G7AJYpYg" name="Code">
+          <nestedClassifier xmi:type="uml:DataType" xmi:id="_-vSH7bcTEeaqD7G7AJYpYg" name="CodeAndDisplay">
             <ownedAttribute xmi:id="_-vSH7rcTEeaqD7G7AJYpYg" name="code" visibility="public" isOrdered="true">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
             </ownedAttribute>
@@ -135,7 +135,7 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
             </ownedAttribute>
           </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_-vSH-7cTEeaqD7G7AJYpYg" name="Product">
+          <nestedClassifier xmi:type="uml:DataType" xmi:id="_-vSH-7cTEeaqD7G7AJYpYg" name="Vuid">
             <ownedAttribute xmi:id="_-vSH_LcTEeaqD7G7AJYpYg" name="name" visibility="public" isOrdered="true">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
             </ownedAttribute>
@@ -143,17 +143,6 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_-vSH_rcTEeaqD7G7AJYpYg" name="vuid" visibility="public" isOrdered="true">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-            </ownedAttribute>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_-vSIAbcTEeaqD7G7AJYpYg" name="Reaction">
-            <ownedAttribute xmi:id="_-vSIArcTEeaqD7G7AJYpYg" name="name" visibility="public" isOrdered="true">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_-vSIA7cTEeaqD7G7AJYpYg" name="summary" visibility="public" isOrdered="true">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_-vSIBLcTEeaqD7G7AJYpYg" name="vuid" visibility="public" isOrdered="true">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
             </ownedAttribute>
           </nestedClassifier>
@@ -182,7 +171,7 @@
     <elements xmi:id="_g4-icLc_EeaxJo-nKTfTeA" businessElement="AllergyObservationID" modelElement="_-vSH57cTEeaqD7G7AJYpYg" businessElementId="e16a6146-42c0-4a28-a320-2cd664638f83" modelElementPath="data.items.uid" condition=""/>
     <elements xmi:id="_jBql4LdCEea3yY5dFGLl_g" businessElement="AllergyObservationRepresentedOrganizationID" modelElement="_-vSH1rcTEeaqD7G7AJYpYg" businessElementId="7646425b-b746-48cf-9284-b3e46cfc381e" modelElementPath="data.items.facilityCode" condition=""/>
     <elements xmi:id="_lwaEELdCEea3yY5dFGLl_g" businessElement="AllergyObservationRepresentedOrganizationName" modelElement="_-vSH17cTEeaqD7G7AJYpYg" businessElementId="7c26e68a-2b34-4c38-ad63-1b7e3d4eb530" modelElementPath="data.items.facilityName" condition=""/>
-    <elements xmi:id="_zjFJwLdCEea3yY5dFGLl_g" businessElement="AllergyObservationAllergenCode" modelElement="_pNOfILcUEeaqD7G7AJYpYg" businessElementId="a14fdf6b-cab0-434c-9e67-827e6261cb72" modelElementPath="data.items.codes"/>
-    <elements xmi:id="_GAfgQLdDEeaYAKGppBQCmQ" businessElement="AllergyObservationRecordedDate" modelElement="_-vSH1bcTEeaqD7G7AJYpYg" businessElementId="0b504e33-731b-4bda-a538-e1cda3fbd404" modelElementPath="data.items.entered"/>
+    <elements xmi:id="_zjFJwLdCEea3yY5dFGLl_g" businessElement="AllergyObservationAllergenCode" modelElement="_pNOfILcUEeaqD7G7AJYpYg" businessElementId="a14fdf6b-cab0-434c-9e67-827e6261cb72" modelElementPath="data.items.codes" condition=""/>
+    <elements xmi:id="_GAfgQLdDEeaYAKGppBQCmQ" businessElement="AllergyObservationRecordedDate" modelElement="_-vSH1bcTEeaqD7G7AJYpYg" businessElementId="0b504e33-731b-4bda-a538-e1cda3fbd404" modelElementPath="data.items.entered" condition=""/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
