@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default" xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+
+
+	<target name="default">
+		<antcall target="generateMDMI">
+			<param name="umlmodel" value="vitals.uml" />
+			<param name="mdmimodel" value="vlervitals.mdmi" />
+		</antcall>
+		
+		 
+
+		<antcall target="exportMDMI">
+			<param name="mdmimodel" value="vlervitals.mdmi" />
+			<param name="xmimodel" value="vlervitals.xmi" />
+		</antcall>
+		
+	 
+		<antcall target="generateMDMI">
+			<param name="umlmodel" value="meds.uml" />
+			<param name="mdmimodel" value="vlermeds.mdmi" />
+		</antcall>
+		
+		 
+
+		<antcall target="exportMDMI">
+			<param name="mdmimodel" value="vlermeds.mdmi" />
+			<param name="xmimodel" value="vlermeds.xmi" />
+		</antcall>
+		 
+		 
+
+	</target>
+
+
+	<target name="generateMDMI">
+
+	 
+		<delete file="map/${mdmimodel}" />
+
+		<qvto:transformation uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/vler2mdmi2.qvto">
+			<in uri="platform:/resource/VLER/models/${umlmodel}" />
+			<out uri="platform:/resource/VLER/map/${mdmimodel}" />
+			<trace uri="platform:/resource/VLER/log/VLER.qvtotrace">
+			</trace>
+		</qvto:transformation>
+
+
+
+	</target>
+
+	<target name="exportMDMI">
+
+		<delete file="map/${xmimodel}" />
+
+		<copy file="map/${mdmimodel}" tofile="map/${xmimodel}" />
+
+		<mdmiExport model="platform:/resource/VLER/map/${xmimodel}" />
+
+		<replace file='map/${xmimodel}' token='&lt;relatedSemanticElement>' value='&lt;relatedSemanticElement xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/relatedSemanticElement>' value='" />' />	
+			<replace file='map/${xmimodel}' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/businessElement>' value='"  >&lt;/businessElement>' />
+			<replace file='map/${xmimodel}' token='&lt;semanticElement>' value='&lt;semanticElement xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/semanticElement>' value='" />' />	
+			<replace file='map/${xmimodel}' token='&lt;referenceDatatype>' value='&lt;referenceDatatype xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/referenceDatatype>' value='" />' />
+			<replace file='map/${xmimodel}' token='&lt;children>#' value='&lt;children xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/children>' value='" />' />
+			<replace file='map/${xmimodel}' token='&lt;datatype>#' value='&lt;datatype xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/datatype>' value='" />' />
+			<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:LeafSyntaxTranslator">#' value='&lt;syntaxNode xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:Bag">#' value='&lt;syntaxNode xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:Choice">#' value='&lt;syntaxNode xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/syntaxNode>' value='" />' />
+			<replace file='map/${xmimodel}' token='xmi:idref="#' value='xmi:idref="' />
+
+	</target>
+ 
+</project>
