@@ -75,15 +75,15 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2DNR8BSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2DNR7xSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2DNR5RSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2DNR6BSVEeGGzu7fmW9pXw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2DNR5xSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_2DNR9xSVEeGGzu7fmW9pXw" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2DNR-hSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2DNR-RSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2DNR5RSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2DNR6BSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2DNR5xSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2DNR6xSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" type="_OB2hAJBlEeSSfIVHL_x3Xw" aggregation="composite">
       <ownedComment xmi:id="_SCfsAMa9EeGp28IjMvW3Ag">
@@ -14732,14 +14732,13 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <elements xmi:id="_igYIcKgcEeWmhfczEQjYUg" businessElement="DocumentTime" modelElement="_2DNR6xSVEeGGzu7fmW9pXw" businessElementId="02d57129-9f7a-432f-b520-34452bec6e4b" modelElementPath="effectiveTime" condition=""/>
     <elements xmi:id="_z6AGsKgcEeWmhfczEQjYUg" businessElement="DocumentTypeID" modelElement="_2DNR-xSVEeGGzu7fmW9pXw" businessElementId="2017f144-f571-4f90-b1ec-7c966548b984" modelElementPath="typeId" condition=""/>
     <elements xmi:id="_9GVTYKgcEeWmhfczEQjYUg" businessElement="ClientHomeAddress" modelElement="_tsTDwCylEeGMXrZ0DiQwGg" businessElementId="eef49a28-a96e-40a7-b328-981c5addd245" modelElementPath="recordTarget.patientRole.addr" condition=""/>
-    <elements xmi:id="_7slcwKgdEeWmhfczEQjYUg" businessElement="ClientHomePhone" modelElement="_tsU48CylEeGMXrZ0DiQwGg" businessElementId="cfb8b147-38a5-4272-87c6-f1fa4cb97457" modelElementPath="recordTarget.patientRole.telecom" condition=""/>
-    <elements xmi:id="__F7XIKgdEeWmhfczEQjYUg" businessElement="ClientBusinessAddress" modelElement="_tsTDwCylEeGMXrZ0DiQwGg" businessElementId="80563ab5-3e1b-4640-a0ee-516e354993b0" modelElementPath="recordTarget.patientRole.addr" condition=""/>
-    <elements xmi:id="_Ddd_IKgeEeWmhfczEQjYUg" businessElement="ClientMobilePhone" modelElement="_tsU48CylEeGMXrZ0DiQwGg" businessElementId="0100d17c-dddd-4209-8fa4-81ab49624782" modelElementPath="recordTarget.patientRole.telecom" condition=""/>
+    <elements xmi:id="_7slcwKgdEeWmhfczEQjYUg" businessElement="ClientHomePhone" modelElement="_tsU48CylEeGMXrZ0DiQwGg" businessElementId="cfb8b147-38a5-4272-87c6-f1fa4cb97457" modelElementPath="recordTarget.patientRole.telecom" condition="use = &quot;H&quot;"/>
+    <elements xmi:id="__F7XIKgdEeWmhfczEQjYUg" businessElement="ClientBusinessAddress" modelElement="_tsTDwCylEeGMXrZ0DiQwGg" businessElementId="80563ab5-3e1b-4640-a0ee-516e354993b0" modelElementPath="recordTarget.patientRole.addr" condition="use = &quot;WP&quot;"/>
+    <elements xmi:id="_Ddd_IKgeEeWmhfczEQjYUg" businessElement="ClientMobilePhone" modelElement="_tsU48CylEeGMXrZ0DiQwGg" businessElementId="0100d17c-dddd-4209-8fa4-81ab49624782" modelElementPath="recordTarget.patientRole.telecom" condition="use = &quot;C&quot;"/>
     <elements xmi:id="_DAhAkKgiEeWmhfczEQjYUg" businessElement="ClientAdministrationGenderCode" modelElement="_7OrqsCylEeGMXrZ0DiQwGg" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="recordTarget.patientRole.patient.administrativeGenderCode" condition=""/>
     <elements xmi:id="_GdlkYKgiEeWmhfczEQjYUg" businessElement="ClientDateOfBirth" modelElement="_7Os40CylEeGMXrZ0DiQwGg" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="recordTarget.patientRole.patient.birthTime" condition=""/>
     <elements xmi:id="_La2voKgiEeWmhfczEQjYUg" businessElement="ClientEthnicityCode" modelElement="_7Os41CylEeGMXrZ0DiQwGg" businessElementId="b29dc139-8a2b-473d-820b-0331b7ae0aa3" modelElementPath="recordTarget.patientRole.patient.ethnicGroupCode" condition=""/>
     <elements xmi:id="_QPimoKgiEeWmhfczEQjYUg" businessElement="ClientMaritalStatus" modelElement="_7Otf4SylEeGMXrZ0DiQwGg" businessElementId="6cf44ff0-2cfa-493b-98a6-44f35acd195c" modelElementPath="recordTarget.patientRole.patient.maritalStatusCode" condition=""/>
-    <elements xmi:id="_XaNdkKgiEeWmhfczEQjYUg" businessElement="ClientName" modelElement="_7OuG8SylEeGMXrZ0DiQwGg" businessElementId="b8cff71f-9f24-48d4-a33c-69743c5cdf0a" modelElementPath="recordTarget.patientRole.patient.name" condition=""/>
     <elements xmi:id="_kdOA4KgiEeWmhfczEQjYUg" businessElement="ClientRace" modelElement="_7OuuACylEeGMXrZ0DiQwGg" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="recordTarget.patientRole.patient.raceCode" condition=""/>
     <elements xmi:id="_nlOToKgiEeWmhfczEQjYUg" businessElement="ClientReligousAffliationCode" modelElement="_7OvVECylEeGMXrZ0DiQwGg" businessElementId="907a4b6c-e002-4046-973b-0395d0415de9" modelElementPath="recordTarget.patientRole.patient.religiousAffiliationCode" condition=""/>
     <elements xmi:id="_tfZzEKgiEeWmhfczEQjYUg" businessElement="GuardianAddress" modelElement="_Cmzu0CymEeGMXrZ0DiQwGg" businessElementId="af5149a1-d90e-4922-af02-ce8d9fa008b3" modelElementPath="recordTarget.patientRole.patient.guardian.addr" condition=""/>
@@ -14753,7 +14752,6 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <elements xmi:id="_0UqIwKgkEeWmhfczEQjYUg" businessElement="AuthorTelecom" modelElement="_93iG0SymEeGMXrZ0DiQwGg" businessElementId="4dbf6b62-4deb-4834-a9b8-8acfc5db8bec" modelElementPath="author.assignedAuthor.telecom" condition=""/>
     <elements xmi:id="_414RMKgkEeWmhfczEQjYUg" businessElement="AuthorName" modelElement="_DF0fYOxvEeG7k4bbVdXbXw" businessElementId="e6bcac02-6863-4203-9c44-8a9215549c06" modelElementPath="author.assignedAuthor.assignedPerson.name" condition=""/>
     <elements xmi:id="_BDrZEKglEeWmhfczEQjYUg" businessElement="DataEntererEntityID" modelElement="_NItK0CynEeGMXrZ0DiQwGg" businessElementId="6249660d-0b62-43fa-b28f-2098a25fd002" modelElementPath="dataEnterer.assignedEntity.id" condition=""/>
-    <elements xmi:id="_FPf5QKglEeWmhfczEQjYUg" businessElement="DataEntererEntityAddress" modelElement="_NItK0CynEeGMXrZ0DiQwGg" businessElementId="22e86867-2279-4dcd-9225-b4b85661d638" modelElementPath="xxxxdataEnterer.assignedEntity.addr" condition=""/>
     <elements xmi:id="_J19HAKglEeWmhfczEQjYUg" businessElement="DataEntererEntityTelecom" modelElement="_NIvABCynEeGMXrZ0DiQwGg" businessElementId="0ef74fc9-38a0-42e2-a9d6-5265aeccbba3" modelElementPath="dataEnterer.assignedEntity.telecom" condition=""/>
     <elements xmi:id="_M9GeIKglEeWmhfczEQjYUg" businessElement="DataEntererAssignPersonName" modelElement="_YggfUOxvEeG7k4bbVdXbXw" businessElementId="46a9bddc-4152-4fa2-9f5b-36a7a708ad28" modelElementPath="dataEnterer.assignedEntity.assignedPerson.name" condition=""/>
     <elements xmi:id="_UUvaEKglEeWmhfczEQjYUg" businessElement="CustodianOrganizationAddress" modelElement="_2zRkcCynEeGMXrZ0DiQwGg" businessElementId="21c0890f-4fec-4a68-89fe-0cbbaae6f311" modelElementPath="custodian.assignedCustodian.representedCustodianOrganization.addr" condition=""/>
@@ -14801,8 +14799,6 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <elements xmi:id="_I_-j4Nr_EeWHrYMqjUvBVA" businessElement="PatientBirthPlace" modelElement="_bs30UCymEeGMXrZ0DiQwGg" businessElementId="943fd90c-b08d-4244-a841-cc0c12847d03" modelElementPath="recordTarget.patientRole.patient.birthplace.place.addr" condition=""/>
     <elements xmi:id="_vibBENsiEeWHrYMqjUvBVA" businessElement="DocumentLegalAuthenicatorEntityId" modelElement="_nlqjyjVYEeGIw7CntkyPQw" businessElementId="2b292ab7-974f-422b-9a7a-3f7ad59b1663" modelElementPath="legalAuthenticator.assignedEntity.id" condition=""/>
     <elements xmi:id="_0WwjsNsrEeWHrYMqjUvBVA" businessElement="DocumentPerformerTypeCode" modelElement="_NMTVQOxxEeG7k4bbVdXbXw" businessElementId="c8b4790b-fd5e-48d1-8d12-b264e069f17c" modelElementPath="documentationOf.serviceEvent.performer.functionCode" condition=""/>
-    <elements xmi:id="_3cC5oNsrEeWHrYMqjUvBVA" businessElement="DocumentServiceEventStartDate" modelElement="__z2GYOxwEeG7k4bbVdXbXw" businessElementId="2dac2106-9090-492e-9a52-b1b6c8e3eb56" modelElementPath="xxxdocumentationOf.serviceEvent.effectiveTime.low" condition=""/>
-    <elements xmi:id="_5fRVoNsrEeWHrYMqjUvBVA" businessElement="DocumentServiceEventEndDate" modelElement="__z2GYOxwEeG7k4bbVdXbXw" businessElementId="2447b10f-b892-42a1-91ef-fc3ee7294b86" modelElementPath="xxxxdocumentationOf.serviceEvent.effectiveTime.high" condition=""/>
     <elements xmi:id="_dWPY8NssEeWHrYMqjUvBVA" businessElement="DocumentServiceEventPerformers" businessElementId="e22da9fe-f5f6-4cec-9289-a932e1970966" modelElementPath="documentationOf.serviceEvent.performer" condition="">
       <modelElement xmi:type="uml:Association" href="../consol.uml#_IT_igOxxEeG7k4bbVdXbXw"/>
     </elements>
@@ -14836,13 +14832,14 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <elements xmi:id="_zznuQAfJEeaK9_A69QIpvw" businessElement="PatientGuardianName" modelElement="_RBsv8OxlEeG7k4bbVdXbXw" businessElementId="4aebddab-a5d7-441f-baa9-982c2a220936" modelElementPath="recordTarget.patientRole.patient.guardian.guardianPerson.name" condition=""/>
     <elements xmi:id="_46rHoAfJEeaK9_A69QIpvw" businessElement="PatientGuardianTelecom" modelElement="_Cm088CymEeGMXrZ0DiQwGg" businessElementId="c8abf2ed-250b-46cb-afdd-b26ba4e4d237" modelElementPath="recordTarget.patientRole.patient.guardian.telecom" condition=""/>
     <elements xmi:id="_9ZsQoAfJEeaK9_A69QIpvw" businessElement="PatientGuardianAddress" modelElement="_Cmzu0CymEeGMXrZ0DiQwGg" businessElementId="8c8a0f59-be44-4803-9abe-e17ee2d8469c" modelElementPath="recordTarget.patientRole.patient.guardian.addr" condition=""/>
-    <elements xmi:id="_RBrj4AfKEeaK9_A69QIpvw" businessElement="PatientGuardians" modelElement="_2jzoQCyrEeGMXrZ0DiQwGg" businessElementId="851b862a-54c8-4ee8-b537-1f155ea500a5" modelElementPath="xxxxrecordTarget.patientRole.patient.guardian" condition=""/>
     <elements xmi:id="_MkhmoAfLEeaK9_A69QIpvw" businessElement="PatientGuardianRelationshipCode" modelElement="_Cm0V4CymEeGMXrZ0DiQwGg" businessElementId="bdae1635-a376-470d-ae11-35646459d9db" modelElementPath="recordTarget.patientRole.patient.guardian.code" condition=""/>
     <elements xmi:id="_4DZxwIs5EeaaFv5F03b58A" businessElement="GuardianContainer" modelElement="_2jzoQCyrEeGMXrZ0DiQwGg" businessElementId="38f8f0cc-d217-4560-9004-b905135af4c0" modelElementPath="recordTarget.patientRole.patient.guardian" condition=""/>
     <elements xmi:id="__XJFIIs5EeaaFv5F03b58A" businessElement="DocumentAuthenticatorContainer" modelElement="_2D0VeBSVEeGGzu7fmW9pXw" businessElementId="fed06ffc-d5c5-4c94-991b-7282d620ca73" modelElementPath="authenticator" condition=""/>
     <elements xmi:id="_7BWacIwGEea41c79TE7dLw" businessElement="DocumentDataEntererAssignPersonName" modelElement="_NItK0CynEeGMXrZ0DiQwGg" businessElementId="46a9bddc-4152-4fa2-9f5b-36a7a708ad28" modelElementPath="dataEnterer.assignedEntity.addr" condition=""/>
     <elements xmi:id="_R73xQIwOEeaNiOYKjWaQiQ" businessElement="DocumentDataEntererEntityAddress" modelElement="_NItK0CynEeGMXrZ0DiQwGg" businessElementId="19815eb8-ac6e-40c9-a5cb-b27382c71463" modelElementPath="dataEnterer.assignedEntity.addr" condition=""/>
-    <elements xmi:id="_mQ8b0J4IEea5Bo27aurpRw" businessElement="PatientID" modelElement="_2DNR7RSVEeGGzu7fmW9pXw" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="id"/>
+    <elements xmi:id="_VNZUcLvGEeaw4OfQV0K4cQ" businessElement="PatientID" modelElement="_tsUR4CylEeGMXrZ0DiQwGg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="recordTarget.patientRole.id" condition=""/>
+    <elements xmi:id="_uVrngLvGEeaw4OfQV0K4cQ" businessElement="PatientLegalName" modelElement="_7OuG8SylEeGMXrZ0DiQwGg" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="recordTarget.patientRole.patient.name"/>
+    <elements xmi:id="_iM2VALvoEea56vi0XT323g" businessElement="PatientContainer" modelElement="_2D3_0BSVEeGGzu7fmW9pXw" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="recordTarget"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_82uX0KghEeWmhfczEQjYUg" base_Class="_jPhi4CylEeGMXrZ0DiQwGg">
     <elements xmi:id="_82uX0aghEeWmhfczEQjYUg" businessElement="ClientID" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="RecordTarget.patientRole.id">
