@@ -1,0 +1,57 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="main">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DATA_RECORD" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="EDIPI"/>
+              <xs:element type="xs:string" name="SITEID"/>
+              <xs:element type="xs:string" name="MONIKER"/>
+              <xs:element type="xs:string" name="SOURCESYSTEM"/>
+              <xs:element type="xs:string" name="FETCHEDFROM"/>
+              <xs:element type="xs:string" name="FETCHEDAT"/>
+              <xs:element type="xs:string" name="FETCHEDWITH"/>
+              <xs:element type="xs:string" name="EVENT_START_GMTIME"/>
+              <xs:element type="xs:string" name="EVENT_ID"/>
+              <xs:element type="xs:string" name="OBSERVATION_ID"/>
+              <xs:element type="xs:string" name="TEST_NCID"/>
+              <xs:element type="xs:string" name="TEST_STATUS_NCID"/>
+              <xs:element type="xs:string" name="ORDER_NUMBER"/>
+              <xs:element type="xs:string" name="FILLER_NUMBER"/>
+              <xs:element type="xs:string" name="OBSERVATION_NCID"/>
+              <xs:element type="xs:string" name="RESULT_STATUS_NCID"/>
+              <xs:element type="xs:string" name="UNITS_NCID" minOccurs="0"/>
+              <xs:element type="xs:string" name="ABNORMAL_FLAG_NCID" minOccurs="0"/>
+              <xs:element type="xs:string" name="REFERENCES_RANGE" minOccurs="0"/>
+              <xs:element type="xs:string" name="RESULT_TEXT"/>
+              <xs:element type="xs:string" name="COLLECTION_START_GMTIME"/>
+              <xs:element type="xs:string" name="VERIFIED_TIME"/>
+              <xs:element type="xs:string" name="SPECIMEN_NCID"/>
+              <xs:element type="xs:string" name="SPECIMEN_ID"/>
+              <xs:element type="xs:string" name="SPECIMEN_DESCRIPTION_ID"/>
+              <xs:element type="xs:string" name="PROVIDER"/>
+              <xs:element type="xs:string" name="PRIORITY"/>
+              <xs:element type="xs:string" name="SPECIMEN"/>
+              <xs:element type="xs:string" name="DATE_ORDERED"/>
+              <xs:element type="xs:string" name="COLLECT_SAMPLE"/>
+              <xs:element type="xs:string" name="ENTERED_GMTIME"/>
+              <xs:element type="xs:string" name="EDIT_VERSION"/>
+              <xs:element type="xs:string" name="UNIT_NUMBER"/>
+              <xs:element type="xs:string" name="ORDER_SYSTEM_NCID"/>
+              <xs:element type="xs:string" name="FILLER_SYSTEM_NCID"/>
+              <xs:element type="xs:string" name="RESULT_RECEIVED_GMTIME"/>
+              <xs:element type="xs:string" name="TEST_COMMENT" minOccurs="0"/>
+              <xs:element type="xs:string" name="OBSERVATION_RESULT_TIME"/>
+              <xs:element type="xs:string" name="FACILITY_NCID"/>
+              <xs:element type="xs:string" name="FACILITY_NAME"/>
+              <xs:element type="xs:string" name="DMIS_ID"/>
+              <xs:element type="xs:string" name="OBSERVATION_COMMENT_DATA" minOccurs="0"/>
+              <xs:element type="xs:string" name="OBSERVATION_COMMENT_SORT_ID" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KY9vQMCtEeaQNKWeybkdkA" name="labs">
+  <packageImport xmi:id="_KZFEAsCtEeaQNKWeybkdkA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzIoEtXEdqhPYJq3sEkGA"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KZmBYcCtEeaQNKWeybkdkA" name="Main">
+    <ownedAttribute xmi:id="_KZmBYsCtEeaQNKWeybkdkA" name="DATA_RECORD" type="_KZmBY8CtEeaQNKWeybkdkA" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZt9NsCtEeaQNKWeybkdkA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZt9NcCtEeaQNKWeybkdkA" value="*"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_KZmBY8CtEeaQNKWeybkdkA" name="DATA_RECORD" visibility="private">
+      <ownedAttribute xmi:id="_KZmocMCtEeaQNKWeybkdkA" name="EDIPI">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZmocsCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZmoccCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZmoc8CtEeaQNKWeybkdkA" name="SITEID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZmodcCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZmodMCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZmodsCtEeaQNKWeybkdkA" name="MONIKER">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZmoeMCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZmod8CtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZmoecCtEeaQNKWeybkdkA" name="SOURCESYSTEM">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZnPgcCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZnPgMCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZnPgsCtEeaQNKWeybkdkA" name="FETCHEDFROM">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZnPhMCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZnPg8CtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZnPhcCtEeaQNKWeybkdkA" name="FETCHEDAT">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZnPh8CtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZnPhsCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZnPiMCtEeaQNKWeybkdkA" name="FETCHEDWITH">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZnPisCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZnPicCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZnPi8CtEeaQNKWeybkdkA" name="EVENT_START_GMTIME">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZn2kMCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZnPjMCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZn2kcCtEeaQNKWeybkdkA" name="EVENT_ID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZn2k8CtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZn2ksCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZn2lMCtEeaQNKWeybkdkA" name="OBSERVATION_ID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZn2lsCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZn2lcCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZn2l8CtEeaQNKWeybkdkA" name="TEST_NCID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZn2mcCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZn2mMCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZn2msCtEeaQNKWeybkdkA" name="TEST_STATUS_NCID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZodocCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZodoMCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZodosCtEeaQNKWeybkdkA" name="ORDER_NUMBER">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZodpMCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZodo8CtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZodpcCtEeaQNKWeybkdkA" name="FILLER_NUMBER">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZodp8CtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZodpsCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZodqMCtEeaQNKWeybkdkA" name="OBSERVATION_NCID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZodqsCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZodqcCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZodq8CtEeaQNKWeybkdkA" name="RESULT_STATUS_NCID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZpEsMCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZodrMCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZpEscCtEeaQNKWeybkdkA" name="UNITS_NCID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZpEs8CtEeaQNKWeybkdkA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZpEssCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZpEtMCtEeaQNKWeybkdkA" name="ABNORMAL_FLAG_NCID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZpEtsCtEeaQNKWeybkdkA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZpEtcCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZpEt8CtEeaQNKWeybkdkA" name="REFERENCES_RANGE">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZpEucCtEeaQNKWeybkdkA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZpEuMCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZpEusCtEeaQNKWeybkdkA" name="RESULT_TEXT">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZprwMCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZpEu8CtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZprwcCtEeaQNKWeybkdkA" name="COLLECTION_START_GMTIME">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZprw8CtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZprwsCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZqS0MCtEeaQNKWeybkdkA" name="VERIFIED_TIME">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZqS0sCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZqS0cCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZqS08CtEeaQNKWeybkdkA" name="SPECIMEN_NCID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZqS1cCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZqS1MCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZqS1sCtEeaQNKWeybkdkA" name="SPECIMEN_ID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZqS2MCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZqS18CtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZqS2cCtEeaQNKWeybkdkA" name="SPECIMEN_DESCRIPTION_ID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZq54MCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZqS2sCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZq54cCtEeaQNKWeybkdkA" name="PROVIDER">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZq548CtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZq54sCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZq55MCtEeaQNKWeybkdkA" name="PRIORITY">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZq55sCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZq55cCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZq558CtEeaQNKWeybkdkA" name="SPECIMEN">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZq56cCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZq56MCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZrg8MCtEeaQNKWeybkdkA" name="DATE_ORDERED">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZrg8sCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZrg8cCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZrg88CtEeaQNKWeybkdkA" name="COLLECT_SAMPLE">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZrg9cCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZrg9MCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZrg9sCtEeaQNKWeybkdkA" name="ENTERED_GMTIME">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZsIAcCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZsIAMCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZsIAsCtEeaQNKWeybkdkA" name="EDIT_VERSION">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZsIBMCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZsIA8CtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZsIBcCtEeaQNKWeybkdkA" name="UNIT_NUMBER">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZsIB8CtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZsIBsCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZsICMCtEeaQNKWeybkdkA" name="ORDER_SYSTEM_NCID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZsvEMCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZsICcCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZsvEcCtEeaQNKWeybkdkA" name="FILLER_SYSTEM_NCID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZsvE8CtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZsvEsCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZsvFMCtEeaQNKWeybkdkA" name="RESULT_RECEIVED_GMTIME">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZsvFsCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZsvFcCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZsvF8CtEeaQNKWeybkdkA" name="TEST_COMMENT">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZsvGcCtEeaQNKWeybkdkA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZsvGMCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZsvGsCtEeaQNKWeybkdkA" name="OBSERVATION_RESULT_TIME">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZtWIcCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZtWIMCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZtWIsCtEeaQNKWeybkdkA" name="FACILITY_NCID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZtWJMCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZtWI8CtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZtWJcCtEeaQNKWeybkdkA" name="FACILITY_NAME">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZtWJ8CtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZtWJsCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZtWKMCtEeaQNKWeybkdkA" name="DMIS_ID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZtWKsCtEeaQNKWeybkdkA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZtWKcCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZtWK8CtEeaQNKWeybkdkA" name="OBSERVATION_COMMENT_DATA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZt9McCtEeaQNKWeybkdkA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZt9MMCtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KZt9MsCtEeaQNKWeybkdkA" name="OBSERVATION_COMMENT_SORT_ID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZt9NMCtEeaQNKWeybkdkA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KZt9M8CtEeaQNKWeybkdkA" value="1"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </packagedElement>
+</uml:Package>
