@@ -1,0 +1,40 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="main">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DATA_RECORD" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="EDIPI"/>
+              <xs:element type="xs:string" name="SITEID"/>
+              <xs:element type="xs:string" name="MONIKER"/>
+              <xs:element type="xs:string" name="DMIS_ID" minOccurs="0"/>
+              <xs:element type="xs:string" name="CDRSITE" minOccurs="0"/>
+              <xs:element type="xs:string" name="EXEMPTION_CODE"/>
+              <xs:element type="xs:string" name="EXEMPTION_DESCRIPTION"/>
+              <xs:element type="xs:string" name="EXEMPTIONEXPIRATIONDATE"/>
+              <xs:element type="xs:string" name="VACC_DATE"/>
+              <xs:element type="xs:string" name="VACCINESERIES"/>
+              <xs:element type="xs:string" name="VACCINE_DOSAGE"/>
+              <xs:element type="xs:string" name="ADMINISTRATION_ROUTE"/>
+              <xs:element type="xs:string" name="BODY_SITE"/>
+              <xs:element type="xs:string" name="NBRINSERIES"/>
+              <xs:element type="xs:string" name="PROVIDERID"/>
+              <xs:element type="xs:string" name="PROVIDERNAME"/>
+              <xs:element type="xs:string" name="VACCINECVXCODE"/>
+              <xs:element type="xs:string" name="VACCINENAME"/>
+              <xs:element type="xs:string" name="MANUFACTURERCODE"/>
+              <xs:element type="xs:string" name="MANUFACTURERNAME"/>
+              <xs:element type="xs:string" name="LOT_NUMBER_TEXT"/>
+              <xs:element type="xs:string" name="SOURCESYSTEM"/>
+              <xs:element type="xs:string" name="FETCHEDAT"/>
+              <xs:element type="xs:string" name="FETCHEDWITH"/>
+              <xs:element type="xs:string" name="FACILITY_NCID"/>
+              <xs:element type="xs:string" name="FACILITY_NAME"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

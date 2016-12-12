@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KY9vQMCtEeaQNKWeybkdkA" name="labs">
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KY9vQMCtEeaQNKWeybkdkA" name="labs">
   <packageImport xmi:id="_KZFEAsCtEeaQNKWeybkdkA">
     <importedPackage xmi:type="uml:Model" href="pathmap://XMLmodeling_LIBRARIES/XSDDataTypes.library.uml#_3RzIoEtXEdqhPYJq3sEkGA"/>
   </packageImport>
@@ -226,4 +226,10 @@
       </ownedAttribute>
     </nestedClassifier>
   </packagedElement>
+  <profileApplication xmi:id="_Zoxr4MCuEeaDucWz_sVCGg">
+    <eAnnotations xmi:id="_Zoxr4cCuEeaDucWz_sVCGg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://org.mdmi.uml.profile/1#/"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+  </profileApplication>
 </uml:Package>
