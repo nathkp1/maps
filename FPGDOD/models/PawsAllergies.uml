@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_Q_CUkMkiEeaDTMy5EN3__g" name="PawsAllergies" URI="platform:/resource/AATest1/PawsAllergies.xsd">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q_CUkckiEeaDTMy5EN3__g" name="AliveResponseType">
+      <ownedAttribute xmi:id="_Q_CUkskiEeaDTMy5EN3__g" name="aliveResult" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q_CUk8kiEeaDTMy5EN3__g" name="AliveType"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q_CUlMkiEeaDTMy5EN3__g" name="Allergy">
+      <ownedAttribute xmi:id="_Q_CUlckiEeaDTMy5EN3__g" name="unitNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUlskiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUl8kiEeaDTMy5EN3__g" name="id" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUmMkiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUmckiEeaDTMy5EN3__g" name="allergen" type="_Q_CUqskiEeaDTMy5EN3__g" isOrdered="true"  >
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUmskiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUm8kiEeaDTMy5EN3__g" name="reactions" type="_Q_CUuckiEeaDTMy5EN3__g" isOrdered="true"  >
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUnMkiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUnckiEeaDTMy5EN3__g" name="dateOnset" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUnskiEeaDTMy5EN3__g" name="infoSource" type="_Q_CUqskiEeaDTMy5EN3__g" isOrdered="true"  >
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUn8kiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUoMkiEeaDTMy5EN3__g" name="clinician" type="_Q_CUqskiEeaDTMy5EN3__g" isOrdered="true"  >
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUockiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUoskiEeaDTMy5EN3__g" name="comments" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUo8kiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUpMkiEeaDTMy5EN3__g" name="origin" type="_Q_CUqskiEeaDTMy5EN3__g" isOrdered="true"  >
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUpckiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUpskiEeaDTMy5EN3__g" name="facility" type="_Q_CUqskiEeaDTMy5EN3__g" isOrdered="true"  >
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUp8kiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUqMkiEeaDTMy5EN3__g" name="allergyType" type="_Q_CUqskiEeaDTMy5EN3__g" isOrdered="true"  >
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUqckiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_Q_CUqskiEeaDTMy5EN3__g" name="ConceptValue">
+      <ownedAttribute xmi:id="_Q_CUq8kiEeaDTMy5EN3__g" name="context" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUrMkiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUrckiEeaDTMy5EN3__g" name="domain" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUrskiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUr8kiEeaDTMy5EN3__g" name="nCID" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUsMkiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUsckiEeaDTMy5EN3__g" name="relationship" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUsskiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUs8kiEeaDTMy5EN3__g" name="representation" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUtMkiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CUtckiEeaDTMy5EN3__g" name="status" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUtskiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_CUt8kiEeaDTMy5EN3__g" memberEnd="_Q_CUmckiEeaDTMy5EN3__g _Q_CUuMkiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_CUuMkiEeaDTMy5EN3__g" type="_Q_CUlMkiEeaDTMy5EN3__g" association="_Q_CUt8kiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q_CUuckiEeaDTMy5EN3__g" name="ArrayOfConceptValue">
+      <ownedAttribute xmi:id="_Q_CUuskiEeaDTMy5EN3__g" name="conceptValue" type="_Q_CUqskiEeaDTMy5EN3__g" isOrdered="true"  >
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUu8kiEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q_CUvMkiEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_CUvckiEeaDTMy5EN3__g" memberEnd="_Q_CUuskiEeaDTMy5EN3__g _Q_CUvskiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_CUvskiEeaDTMy5EN3__g" type="_Q_CUuckiEeaDTMy5EN3__g" association="_Q_CUvckiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_CUv8kiEeaDTMy5EN3__g" memberEnd="_Q_CUm8kiEeaDTMy5EN3__g _Q_CUwMkiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_CUwMkiEeaDTMy5EN3__g" type="_Q_CUlMkiEeaDTMy5EN3__g" association="_Q_CUv8kiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_CUwckiEeaDTMy5EN3__g" memberEnd="_Q_CUnskiEeaDTMy5EN3__g _Q_CUwskiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_CUwskiEeaDTMy5EN3__g" type="_Q_CUlMkiEeaDTMy5EN3__g" association="_Q_CUwckiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_CUw8kiEeaDTMy5EN3__g" memberEnd="_Q_CUoMkiEeaDTMy5EN3__g _Q_CUxMkiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_CUxMkiEeaDTMy5EN3__g" type="_Q_CUlMkiEeaDTMy5EN3__g" association="_Q_CUw8kiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_CUxckiEeaDTMy5EN3__g" memberEnd="_Q_CUpMkiEeaDTMy5EN3__g _Q_CUxskiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_CUxskiEeaDTMy5EN3__g" type="_Q_CUlMkiEeaDTMy5EN3__g" association="_Q_CUxckiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_CUx8kiEeaDTMy5EN3__g" memberEnd="_Q_CUpskiEeaDTMy5EN3__g _Q_CUyMkiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_CUyMkiEeaDTMy5EN3__g" type="_Q_CUlMkiEeaDTMy5EN3__g" association="_Q_CUx8kiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_CUyckiEeaDTMy5EN3__g" memberEnd="_Q_CUqMkiEeaDTMy5EN3__g _Q_CUyskiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_CUyskiEeaDTMy5EN3__g" type="_Q_CUlMkiEeaDTMy5EN3__g" association="_Q_CUyckiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q_CUy8kiEeaDTMy5EN3__g" name="ArrayOfAllergy">
+      <ownedAttribute xmi:id="_Q_CUzMkiEeaDTMy5EN3__g" name="allergy" type="_Q_CUlMkiEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_Q_CUz8kiEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CUzckiEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q_CUzskiEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_CUz8kiEeaDTMy5EN3__g" memberEnd="_Q_CUzMkiEeaDTMy5EN3__g _Q_CU0MkiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_CU0MkiEeaDTMy5EN3__g" type="_Q_CUy8kiEeaDTMy5EN3__g" association="_Q_CUz8kiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q_CU0ckiEeaDTMy5EN3__g" name="DocumentRoot">
+      <ownedAttribute xmi:id="_Q_CU0skiEeaDTMy5EN3__g" name="mixed" visibility="public" isOrdered="true" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFeatureMapEntry"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CU08kiEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q_CU1MkiEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CU1ckiEeaDTMy5EN3__g" name="xMLNSPrefixMap" isOrdered="true" aggregation="composite" association="_Q_C7rskiEeaDTMy5EN3__g">
+        <type xmi:type="uml:Class" href="ecore.uml#_RAg8CckiEeaDTMy5EN3__g"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CU1skiEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q_CU18kiEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CU2MkiEeaDTMy5EN3__g" name="xSISchemaLocation" isOrdered="true" aggregation="composite" association="_Q_C7sMkiEeaDTMy5EN3__g">
+        <type xmi:type="uml:Class" href="ecore.uml#_RAg8CckiEeaDTMy5EN3__g"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CU2ckiEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q_CU2skiEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CU28kiEeaDTMy5EN3__g" name="alive" type="_Q_CUk8kiEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_Q_C7sskiEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CU3MkiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CU3ckiEeaDTMy5EN3__g" name="aliveResponse" type="_Q_CUkckiEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_Q_C7tMkiEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CU3skiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_CU38kiEeaDTMy5EN3__g" name="arrayOfAllergy" type="_Q_CUy8kiEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_Q_C7tskiEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_CU4MkiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_C7oMkiEeaDTMy5EN3__g" name="boolean" visibility="public" isOrdered="true" isUnique="false" isDerived="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7ockiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_C7oskiEeaDTMy5EN3__g" name="fetchAllergies" type="_Q_C7uMkiEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_Q_C7v8kiEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7o8kiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_C7pMkiEeaDTMy5EN3__g" name="fetchAllergiesResponse" type="_Q_C7wckiEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_Q_C7xskiEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7pckiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_C7pskiEeaDTMy5EN3__g" name="sessionTokenHeader" type="_Q_C7yMkiEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_Q_C7zskiEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7p8kiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_C7qMkiEeaDTMy5EN3__g" name="string" visibility="public" isOrdered="true" isUnique="false" isDerived="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7qckiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_C7qskiEeaDTMy5EN3__g" name="version" type="_Q_C70MkiEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_Q_C70ckiEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7q8kiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_C7rMkiEeaDTMy5EN3__g" name="versionResponse" type="_Q_C708kiEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_Q_C71skiEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7rckiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_C7rskiEeaDTMy5EN3__g" memberEnd="_Q_CU1ckiEeaDTMy5EN3__g _Q_C7r8kiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_C7r8kiEeaDTMy5EN3__g" type="_Q_CU0ckiEeaDTMy5EN3__g" association="_Q_C7rskiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_C7sMkiEeaDTMy5EN3__g" memberEnd="_Q_CU2MkiEeaDTMy5EN3__g _Q_C7sckiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_C7sckiEeaDTMy5EN3__g" type="_Q_CU0ckiEeaDTMy5EN3__g" association="_Q_C7sMkiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_C7sskiEeaDTMy5EN3__g" memberEnd="_Q_CU28kiEeaDTMy5EN3__g _Q_C7s8kiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_C7s8kiEeaDTMy5EN3__g" type="_Q_CU0ckiEeaDTMy5EN3__g" association="_Q_C7sskiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_C7tMkiEeaDTMy5EN3__g" memberEnd="_Q_CU3ckiEeaDTMy5EN3__g _Q_C7tckiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_C7tckiEeaDTMy5EN3__g" type="_Q_CU0ckiEeaDTMy5EN3__g" association="_Q_C7tMkiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_C7tskiEeaDTMy5EN3__g" memberEnd="_Q_CU38kiEeaDTMy5EN3__g _Q_C7t8kiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_C7t8kiEeaDTMy5EN3__g" type="_Q_CU0ckiEeaDTMy5EN3__g" association="_Q_C7tskiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q_C7uMkiEeaDTMy5EN3__g" name="FetchAllergiesType">
+      <ownedAttribute xmi:id="_Q_C7uckiEeaDTMy5EN3__g" name="application" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7uskiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_C7u8kiEeaDTMy5EN3__g" name="username" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7vMkiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_C7vckiEeaDTMy5EN3__g" name="unitnumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7vskiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_C7v8kiEeaDTMy5EN3__g" memberEnd="_Q_C7oskiEeaDTMy5EN3__g _Q_C7wMkiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_C7wMkiEeaDTMy5EN3__g" type="_Q_CU0ckiEeaDTMy5EN3__g" association="_Q_C7v8kiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q_C7wckiEeaDTMy5EN3__g" name="FetchAllergiesResponseType">
+      <ownedAttribute xmi:id="_Q_C7wskiEeaDTMy5EN3__g" name="fetchAllergiesResult" type="_Q_CUy8kiEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_Q_C7xMkiEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7w8kiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_C7xMkiEeaDTMy5EN3__g" memberEnd="_Q_C7wskiEeaDTMy5EN3__g _Q_C7xckiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_C7xckiEeaDTMy5EN3__g" type="_Q_C7wckiEeaDTMy5EN3__g" association="_Q_C7xMkiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_C7xskiEeaDTMy5EN3__g" memberEnd="_Q_C7pMkiEeaDTMy5EN3__g _Q_C7x8kiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_C7x8kiEeaDTMy5EN3__g" type="_Q_CU0ckiEeaDTMy5EN3__g" association="_Q_C7xskiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q_C7yMkiEeaDTMy5EN3__g" name="SessionTokenHeader">
+      <ownedAttribute xmi:id="_Q_C7yckiEeaDTMy5EN3__g" name="token" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7yskiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Q_C7y8kiEeaDTMy5EN3__g" name="anyAttribute" visibility="public" isOrdered="true" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFeatureMapEntry"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C7zMkiEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q_C7zckiEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_C7zskiEeaDTMy5EN3__g" memberEnd="_Q_C7pskiEeaDTMy5EN3__g _Q_C7z8kiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_C7z8kiEeaDTMy5EN3__g" type="_Q_CU0ckiEeaDTMy5EN3__g" association="_Q_C7zskiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q_C70MkiEeaDTMy5EN3__g" name="VersionType"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_C70ckiEeaDTMy5EN3__g" memberEnd="_Q_C7qskiEeaDTMy5EN3__g _Q_C70skiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_C70skiEeaDTMy5EN3__g" type="_Q_CU0ckiEeaDTMy5EN3__g" association="_Q_C70ckiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q_C708kiEeaDTMy5EN3__g" name="VersionResponseType">
+      <ownedAttribute xmi:id="_Q_C71MkiEeaDTMy5EN3__g" name="versionResult" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_C71ckiEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q_C71skiEeaDTMy5EN3__g" memberEnd="_Q_C7rMkiEeaDTMy5EN3__g _Q_C718kiEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_Q_C718kiEeaDTMy5EN3__g" type="_Q_CU0ckiEeaDTMy5EN3__g" association="_Q_C71skiEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <profileApplication xmi:id="_Q_C72MkiEeaDTMy5EN3__g">
+      <eAnnotations xmi:id="_Q_C72ckiEeaDTMy5EN3__g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_yCFM0MkkEeaFUtNq0hBrOA">
+      <eAnnotations xmi:id="_yCKsYMkkEeaFUtNq0hBrOA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.mdmi.uml.profile/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <Ecore:EPackage xmi:id="_Q_C72skiEeaDTMy5EN3__g" base_Package="_Q_CUkMkiEeaDTMy5EN3__g" nsPrefix="PawsAllergies"/>
+  <Ecore:EClass xmi:id="_Q_C728kiEeaDTMy5EN3__g" xmlName="AliveResponse_._type" base_Class="_Q_CUkckiEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_Q_C73MkiEeaDTMy5EN3__g" xmlName="Alive_._type" base_Class="_Q_CUk8kiEeaDTMy5EN3__g" xmlContentKind="Empty"/>
+  <Ecore:EClass xmi:id="_Q_C73ckiEeaDTMy5EN3__g" base_Class="_Q_CUlMkiEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_Q_C73skiEeaDTMy5EN3__g" xmlName="Allergen" xmlFeatureKind="Element" base_Property="_Q_CUmckiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_C738kiEeaDTMy5EN3__g" xmlName="Reactions" xmlFeatureKind="Element" base_Property="_Q_CUm8kiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_C74MkiEeaDTMy5EN3__g" xmlName="InfoSource" xmlFeatureKind="Element" base_Property="_Q_CUnskiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_C74ckiEeaDTMy5EN3__g" xmlName="Clinician" xmlFeatureKind="Element" base_Property="_Q_CUoMkiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_C74skiEeaDTMy5EN3__g" xmlName="Origin" xmlFeatureKind="Element" base_Property="_Q_CUpMkiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_C748kiEeaDTMy5EN3__g" xmlName="Facility" xmlFeatureKind="Element" base_Property="_Q_CUpskiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_C75MkiEeaDTMy5EN3__g" xmlName="AllergyType" xmlFeatureKind="Element" base_Property="_Q_CUqMkiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  
+  <Ecore:EClass xmi:id="_Q_DisMkiEeaDTMy5EN3__g" base_Class="_Q_CUuckiEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_Q_DisckiEeaDTMy5EN3__g" xmlName="ConceptValue" xmlFeatureKind="Element" base_Property="_Q_CUuskiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_Q_DisskiEeaDTMy5EN3__g" base_Class="_Q_CUy8kiEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_Q_Dis8kiEeaDTMy5EN3__g" xmlName="Allergy" xmlFeatureKind="Element" base_Property="_Q_CUzMkiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_Q_DitMkiEeaDTMy5EN3__g" xmlName="" base_Class="_Q_CU0ckiEeaDTMy5EN3__g" xmlContentKind="Mixed"/>
+  <Ecore:EReference xmi:id="_Q_DitckiEeaDTMy5EN3__g" xmlName="xmlns:prefix" isTransient="true" xmlFeatureKind="Attribute" base_Property="_Q_CU1ckiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_DitskiEeaDTMy5EN3__g" xmlName="xsi:schemaLocation" isTransient="true" xmlFeatureKind="Attribute" base_Property="_Q_CU2MkiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_Dit8kiEeaDTMy5EN3__g" xmlName="Alive" isTransient="true" isVolatile="true" xmlFeatureKind="Element" base_Property="_Q_CU28kiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_DiuMkiEeaDTMy5EN3__g" xmlName="AliveResponse" isTransient="true" isVolatile="true" xmlFeatureKind="Element" base_Property="_Q_CU3ckiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_DiuckiEeaDTMy5EN3__g" xmlName="ArrayOfAllergy" isTransient="true" isVolatile="true" xmlFeatureKind="Element" base_Property="_Q_CU38kiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_DiuskiEeaDTMy5EN3__g" xmlName="FetchAllergies" isTransient="true" isVolatile="true" xmlFeatureKind="Element" base_Property="_Q_C7oskiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_Diu8kiEeaDTMy5EN3__g" xmlName="FetchAllergiesResponse" isTransient="true" isVolatile="true" xmlFeatureKind="Element" base_Property="_Q_C7pMkiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_DivMkiEeaDTMy5EN3__g" isTransient="true" isVolatile="true" xmlFeatureKind="Element" base_Property="_Q_C7pskiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_DivckiEeaDTMy5EN3__g" xmlName="Version" isTransient="true" isVolatile="true" xmlFeatureKind="Element" base_Property="_Q_C7qskiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Q_DivskiEeaDTMy5EN3__g" xmlName="VersionResponse" isTransient="true" isVolatile="true" xmlFeatureKind="Element" base_Property="_Q_C7rMkiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_Q_EJwMkiEeaDTMy5EN3__g" xmlName="FetchAllergies_._type" base_Class="_Q_C7uMkiEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_Q_EJwckiEeaDTMy5EN3__g" xmlName="FetchAllergiesResponse_._type" base_Class="_Q_C7wckiEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_Q_EJwskiEeaDTMy5EN3__g" xmlName="FetchAllergiesResult" xmlFeatureKind="Element" base_Property="_Q_C7wskiEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_Q_EJw8kiEeaDTMy5EN3__g" base_Class="_Q_C7yMkiEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_Q_EJxMkiEeaDTMy5EN3__g" xmlName="Version_._type" base_Class="_Q_C70MkiEeaDTMy5EN3__g" xmlContentKind="Empty"/>
+  <Ecore:EClass xmi:id="_Q_EJxckiEeaDTMy5EN3__g" xmlName="VersionResponse_._type" base_Class="_Q_C708kiEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <MDMI:MDMIMapping xmi:id="_THyCYMklEeaFUtNq0hBrOA" base_Class="_Q_CUlMkiEeaDTMy5EN3__g">
+    <elements xmi:id="_THzQgMklEeaFUtNq0hBrOA" businessElement="AllergyObservationAllergenCode" modelElement="_Q_CUt8kiEeaDTMy5EN3__g" businessElementId="a14fdf6b-cab0-434c-9e67-827e6261cb72" modelElementPath="allergen"/>
+  </MDMI:MDMIMapping>
+</xmi:XMI>

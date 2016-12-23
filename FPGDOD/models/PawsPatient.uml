@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_FbrJoMkjEeaDTMy5EN3__g" name="paws" URI="http://paws.tatrc.org/">
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrJockjEeaDTMy5EN3__g" name="Address">
+      <ownedAttribute xmi:id="_FbrJoskjEeaDTMy5EN3__g" name="addressType" type="_FbrJtMkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrJwckjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJo8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJpMkjEeaDTMy5EN3__g" name="city" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJpckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJpskjEeaDTMy5EN3__g" name="county" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJp8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJqMkjEeaDTMy5EN3__g" name="state" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJqckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJqskjEeaDTMy5EN3__g" name="street1" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJq8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJrMkjEeaDTMy5EN3__g" name="street2" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJrckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJrskjEeaDTMy5EN3__g" name="zip" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJr8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJsMkjEeaDTMy5EN3__g" name="country" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJsckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJsskjEeaDTMy5EN3__g" name="address" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJs8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrJtMkjEeaDTMy5EN3__g" name="ConceptValue">
+      <ownedAttribute xmi:id="_FbrJtckjEeaDTMy5EN3__g" name="context" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJtskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJt8kjEeaDTMy5EN3__g" name="domain" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJuMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJuckjEeaDTMy5EN3__g" name="nCID" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJuskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJu8kjEeaDTMy5EN3__g" name="relationship" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJvMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJvckjEeaDTMy5EN3__g" name="representation" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJvskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJv8kjEeaDTMy5EN3__g" name="status" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJwMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrJwckjEeaDTMy5EN3__g" memberEnd="_FbrJoskjEeaDTMy5EN3__g _FbrJwskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrJwskjEeaDTMy5EN3__g" type="_FbrJockjEeaDTMy5EN3__g" association="_FbrJwckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrJw8kjEeaDTMy5EN3__g" name="AliveResponseType">
+      <ownedAttribute xmi:id="_FbrJxMkjEeaDTMy5EN3__g" name="aliveResult" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrJxckjEeaDTMy5EN3__g" name="AliveType"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrJxskjEeaDTMy5EN3__g" name="ArrayOfAddress">
+      <ownedAttribute xmi:id="_FbrJx8kjEeaDTMy5EN3__g" name="address" type="_FbrJockjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrJyskjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJyMkjEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FbrJyckjEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrJyskjEeaDTMy5EN3__g" memberEnd="_FbrJx8kjEeaDTMy5EN3__g _FbrJy8kjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrJy8kjEeaDTMy5EN3__g" type="_FbrJxskjEeaDTMy5EN3__g" association="_FbrJyskjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrJzMkjEeaDTMy5EN3__g" name="ArrayOfGenericData">
+      <ownedAttribute xmi:id="_FbrJzckjEeaDTMy5EN3__g" name="genericData" type="_FbrJ0MkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrJ18kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJzskjEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FbrJz8kjEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrJ0MkjEeaDTMy5EN3__g" name="GenericData">
+      <ownedAttribute xmi:id="_FbrJ0ckjEeaDTMy5EN3__g" name="name" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ0skjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ08kjEeaDTMy5EN3__g" name="value" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ1MkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ1ckjEeaDTMy5EN3__g" name="nCID" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ1skjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrJ18kjEeaDTMy5EN3__g" memberEnd="_FbrJzckjEeaDTMy5EN3__g _FbrJ2MkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrJ2MkjEeaDTMy5EN3__g" type="_FbrJzMkjEeaDTMy5EN3__g" association="_FbrJ18kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrJ2ckjEeaDTMy5EN3__g" name="ArrayOfPatient">
+      <ownedAttribute xmi:id="_FbrJ2skjEeaDTMy5EN3__g" name="patient" type="_FbrJ3ckjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKQ8kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ28kjEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FbrJ3MkjEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrJ3ckjEeaDTMy5EN3__g" name="Patient">
+      <ownedAttribute xmi:id="_FbrJ3skjEeaDTMy5EN3__g" name="unitNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ38kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ4MkjEeaDTMy5EN3__g" name="dEERSId" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ4ckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ4skjEeaDTMy5EN3__g" name="name" type="_FbrKDckjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKHskjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ48kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ5MkjEeaDTMy5EN3__g" name="sSN" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ5ckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ5skjEeaDTMy5EN3__g" name="fMP" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ58kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ6MkjEeaDTMy5EN3__g" name="sponsorSSN" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ6ckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ6skjEeaDTMy5EN3__g" name="dateOfBirth" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ68kjEeaDTMy5EN3__g" name="gender" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ7MkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ7ckjEeaDTMy5EN3__g" name="telecoms" type="_FbrKIMkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKLckjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ7skjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ78kjEeaDTMy5EN3__g" name="addresses" type="_FbrJxskjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKL8kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ8MkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ8ckjEeaDTMy5EN3__g" name="race" type="_FbrJtMkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKMckjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ8skjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ88kjEeaDTMy5EN3__g" name="sponsorStatus" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ9MkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ9ckjEeaDTMy5EN3__g" name="bRACPharmacyEligibilty" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ9skjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ98kjEeaDTMy5EN3__g" name="rank" type="_FbrJtMkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKM8kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ-MkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ-ckjEeaDTMy5EN3__g" name="paygrade" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ-skjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ-8kjEeaDTMy5EN3__g" name="branch" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ_MkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ_ckjEeaDTMy5EN3__g" name="triCareStatus" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrJ_skjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrJ_8kjEeaDTMy5EN3__g" name="careAuthorizationPhone" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKAMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKAckjEeaDTMy5EN3__g" name="pCMLocation" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKAskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKA8kjEeaDTMy5EN3__g" name="medicare" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKBMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKBckjEeaDTMy5EN3__g" name="maritalStatus" type="_FbrJtMkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKNckjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKBskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKB8kjEeaDTMy5EN3__g" name="religion" type="_FbrJtMkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKN8kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKCMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKCckjEeaDTMy5EN3__g" name="directCare" type="_FbrKOckjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKP8kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKCskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKC8kjEeaDTMy5EN3__g" name="genericDatas" type="_FbrJzMkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKQckjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKDMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKDckjEeaDTMy5EN3__g" name="Name">
+      <ownedAttribute xmi:id="_FbrKDskjEeaDTMy5EN3__g" name="fullName" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKD8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKEMkjEeaDTMy5EN3__g" name="firstName" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKEckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKEskjEeaDTMy5EN3__g" name="firstName2" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKE8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKFMkjEeaDTMy5EN3__g" name="middleName" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKFckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKFskjEeaDTMy5EN3__g" name="middleName2" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKF8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKGMkjEeaDTMy5EN3__g" name="lastName" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKGckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKGskjEeaDTMy5EN3__g" name="lastName2" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKG8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKHMkjEeaDTMy5EN3__g" name="suffix" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKHckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKHskjEeaDTMy5EN3__g" memberEnd="_FbrJ4skjEeaDTMy5EN3__g _FbrKH8kjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKH8kjEeaDTMy5EN3__g" type="_FbrJ3ckjEeaDTMy5EN3__g" association="_FbrKHskjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKIMkjEeaDTMy5EN3__g" name="ArrayOfTelecom">
+      <ownedAttribute xmi:id="_FbrKIckjEeaDTMy5EN3__g" name="telecom" type="_FbrKJMkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKK8kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKIskjEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FbrKI8kjEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKJMkjEeaDTMy5EN3__g" name="Telecom">
+      <ownedAttribute xmi:id="_FbrKJckjEeaDTMy5EN3__g" name="telecomType" type="_FbrJtMkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKKckjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKJskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKJ8kjEeaDTMy5EN3__g" name="value" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKKMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKKckjEeaDTMy5EN3__g" memberEnd="_FbrKJckjEeaDTMy5EN3__g _FbrKKskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKKskjEeaDTMy5EN3__g" type="_FbrKJMkjEeaDTMy5EN3__g" association="_FbrKKckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKK8kjEeaDTMy5EN3__g" memberEnd="_FbrKIckjEeaDTMy5EN3__g _FbrKLMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKLMkjEeaDTMy5EN3__g" type="_FbrKIMkjEeaDTMy5EN3__g" association="_FbrKK8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKLckjEeaDTMy5EN3__g" memberEnd="_FbrJ7ckjEeaDTMy5EN3__g _FbrKLskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKLskjEeaDTMy5EN3__g" type="_FbrJ3ckjEeaDTMy5EN3__g" association="_FbrKLckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKL8kjEeaDTMy5EN3__g" memberEnd="_FbrJ78kjEeaDTMy5EN3__g _FbrKMMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKMMkjEeaDTMy5EN3__g" type="_FbrJ3ckjEeaDTMy5EN3__g" association="_FbrKL8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKMckjEeaDTMy5EN3__g" memberEnd="_FbrJ8ckjEeaDTMy5EN3__g _FbrKMskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKMskjEeaDTMy5EN3__g" type="_FbrJ3ckjEeaDTMy5EN3__g" association="_FbrKMckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKM8kjEeaDTMy5EN3__g" memberEnd="_FbrJ98kjEeaDTMy5EN3__g _FbrKNMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKNMkjEeaDTMy5EN3__g" type="_FbrJ3ckjEeaDTMy5EN3__g" association="_FbrKM8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKNckjEeaDTMy5EN3__g" memberEnd="_FbrKBckjEeaDTMy5EN3__g _FbrKNskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKNskjEeaDTMy5EN3__g" type="_FbrJ3ckjEeaDTMy5EN3__g" association="_FbrKNckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKN8kjEeaDTMy5EN3__g" memberEnd="_FbrKB8kjEeaDTMy5EN3__g _FbrKOMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKOMkjEeaDTMy5EN3__g" type="_FbrJ3ckjEeaDTMy5EN3__g" association="_FbrKN8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKOckjEeaDTMy5EN3__g" name="DirectCare">
+      <ownedAttribute xmi:id="_FbrKOskjEeaDTMy5EN3__g" name="eligible" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKO8kjEeaDTMy5EN3__g" name="startDate" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKPMkjEeaDTMy5EN3__g" name="endDate" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKPckjEeaDTMy5EN3__g" name="endReason" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKPskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKP8kjEeaDTMy5EN3__g" memberEnd="_FbrKCckjEeaDTMy5EN3__g _FbrKQMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKQMkjEeaDTMy5EN3__g" type="_FbrJ3ckjEeaDTMy5EN3__g" association="_FbrKP8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKQckjEeaDTMy5EN3__g" memberEnd="_FbrKC8kjEeaDTMy5EN3__g _FbrKQskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKQskjEeaDTMy5EN3__g" type="_FbrJ3ckjEeaDTMy5EN3__g" association="_FbrKQckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKQ8kjEeaDTMy5EN3__g" memberEnd="_FbrJ2skjEeaDTMy5EN3__g _FbrKRMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKRMkjEeaDTMy5EN3__g" type="_FbrJ2ckjEeaDTMy5EN3__g" association="_FbrKQ8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKRckjEeaDTMy5EN3__g" name="DocumentRoot">
+      <ownedAttribute xmi:id="_FbrKRskjEeaDTMy5EN3__g" name="mixed" visibility="public" isOrdered="true" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFeatureMapEntry"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKR8kjEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FbrKSMkjEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKSckjEeaDTMy5EN3__g" name="xMLNSPrefixMap" isOrdered="true" aggregation="composite" association="_FbrKa8kjEeaDTMy5EN3__g">
+        <type xmi:type="uml:Class" href="ecore.uml#_FcttiMkjEeaDTMy5EN3__g"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKSskjEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FbrKS8kjEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKTMkjEeaDTMy5EN3__g" name="xSISchemaLocation" isOrdered="true" aggregation="composite" association="_FbrKbckjEeaDTMy5EN3__g">
+        <type xmi:type="uml:Class" href="ecore.uml#_FcttiMkjEeaDTMy5EN3__g"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKTckjEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FbrKTskjEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKT8kjEeaDTMy5EN3__g" name="alive" type="_FbrJxckjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKb8kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKUMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKUckjEeaDTMy5EN3__g" name="aliveResponse" type="_FbrJw8kjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKcckjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKUskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKU8kjEeaDTMy5EN3__g" name="arrayOfPatient" type="_FbrJ2ckjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKc8kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKVMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKVckjEeaDTMy5EN3__g" name="boolean" visibility="public" isOrdered="true" isUnique="false" isDerived="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKVskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKV8kjEeaDTMy5EN3__g" name="fetchPatient" type="_FbrKdckjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKfMkjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKWMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKWckjEeaDTMy5EN3__g" name="fetchPatientResponse" type="_FbrKfskjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKg8kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKWskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKW8kjEeaDTMy5EN3__g" name="fetchPatients" type="_FbrKhckjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKmskjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKXMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKXckjEeaDTMy5EN3__g" name="fetchPatientsByDeersID" type="_FbrKnMkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKo8kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKXskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKX8kjEeaDTMy5EN3__g" name="fetchPatientsByDeersIDResponse" type="_FbrKpckjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKqskjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKYMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKYckjEeaDTMy5EN3__g" name="fetchPatientsResponse" type="_FbrKrMkjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKsckjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKYskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKY8kjEeaDTMy5EN3__g" name="sessionTokenHeader" type="_FbrKs8kjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKuckjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKZMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKZckjEeaDTMy5EN3__g" name="string" visibility="public" isOrdered="true" isUnique="false" isDerived="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKZskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKZ8kjEeaDTMy5EN3__g" name="version" type="_FbrKu8kjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKvMkjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKaMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKackjEeaDTMy5EN3__g" name="versionResponse" type="_FbrKvskjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" isDerived="true" association="_FbrKwckjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKaskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKa8kjEeaDTMy5EN3__g" memberEnd="_FbrKSckjEeaDTMy5EN3__g _FbrKbMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKbMkjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKa8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKbckjEeaDTMy5EN3__g" memberEnd="_FbrKTMkjEeaDTMy5EN3__g _FbrKbskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKbskjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKbckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKb8kjEeaDTMy5EN3__g" memberEnd="_FbrKT8kjEeaDTMy5EN3__g _FbrKcMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKcMkjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKb8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKcckjEeaDTMy5EN3__g" memberEnd="_FbrKUckjEeaDTMy5EN3__g _FbrKcskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKcskjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKcckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKc8kjEeaDTMy5EN3__g" memberEnd="_FbrKU8kjEeaDTMy5EN3__g _FbrKdMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKdMkjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKc8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKdckjEeaDTMy5EN3__g" name="FetchPatientType">
+      <ownedAttribute xmi:id="_FbrKdskjEeaDTMy5EN3__g" name="application" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKd8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKeMkjEeaDTMy5EN3__g" name="username" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKeckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKeskjEeaDTMy5EN3__g" name="unitnumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKe8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKfMkjEeaDTMy5EN3__g" memberEnd="_FbrKV8kjEeaDTMy5EN3__g _FbrKfckjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKfckjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKfMkjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKfskjEeaDTMy5EN3__g" name="FetchPatientResponseType">
+      <ownedAttribute xmi:id="_FbrKf8kjEeaDTMy5EN3__g" name="fetchPatientResult" type="_FbrJ2ckjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKgckjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKgMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKgckjEeaDTMy5EN3__g" memberEnd="_FbrKf8kjEeaDTMy5EN3__g _FbrKgskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKgskjEeaDTMy5EN3__g" type="_FbrKfskjEeaDTMy5EN3__g" association="_FbrKgckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKg8kjEeaDTMy5EN3__g" memberEnd="_FbrKWckjEeaDTMy5EN3__g _FbrKhMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKhMkjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKg8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKhckjEeaDTMy5EN3__g" name="FetchPatientsType">
+      <ownedAttribute xmi:id="_FbrKhskjEeaDTMy5EN3__g" name="application" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKh8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKiMkjEeaDTMy5EN3__g" name="username" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKickjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKiskjEeaDTMy5EN3__g" name="lastname" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKi8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKjMkjEeaDTMy5EN3__g" name="firstname" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKjckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKjskjEeaDTMy5EN3__g" name="dob" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKj8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKkMkjEeaDTMy5EN3__g" name="uic" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKkckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKkskjEeaDTMy5EN3__g" name="ssn" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKk8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKlMkjEeaDTMy5EN3__g" name="fmp" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKlckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKlskjEeaDTMy5EN3__g" name="sponsorssn" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKl8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKmMkjEeaDTMy5EN3__g" name="sex" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKmckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKmskjEeaDTMy5EN3__g" memberEnd="_FbrKW8kjEeaDTMy5EN3__g _FbrKm8kjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKm8kjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKmskjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKnMkjEeaDTMy5EN3__g" name="FetchPatientsByDeersIDType">
+      <ownedAttribute xmi:id="_FbrKnckjEeaDTMy5EN3__g" name="application" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKnskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKn8kjEeaDTMy5EN3__g" name="username" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKoMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKockjEeaDTMy5EN3__g" name="deersid" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKoskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKo8kjEeaDTMy5EN3__g" memberEnd="_FbrKXckjEeaDTMy5EN3__g _FbrKpMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKpMkjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKo8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKpckjEeaDTMy5EN3__g" name="FetchPatientsByDeersIDResponseType">
+      <ownedAttribute xmi:id="_FbrKpskjEeaDTMy5EN3__g" name="fetchPatientsByDeersIDResult" type="_FbrJ2ckjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKqMkjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKp8kjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKqMkjEeaDTMy5EN3__g" memberEnd="_FbrKpskjEeaDTMy5EN3__g _FbrKqckjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKqckjEeaDTMy5EN3__g" type="_FbrKpckjEeaDTMy5EN3__g" association="_FbrKqMkjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKqskjEeaDTMy5EN3__g" memberEnd="_FbrKX8kjEeaDTMy5EN3__g _FbrKq8kjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKq8kjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKqskjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKrMkjEeaDTMy5EN3__g" name="FetchPatientsResponseType">
+      <ownedAttribute xmi:id="_FbrKrckjEeaDTMy5EN3__g" name="fetchPatientsResult" type="_FbrJ2ckjEeaDTMy5EN3__g" isOrdered="true" aggregation="composite" association="_FbrKr8kjEeaDTMy5EN3__g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKrskjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKr8kjEeaDTMy5EN3__g" memberEnd="_FbrKrckjEeaDTMy5EN3__g _FbrKsMkjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKsMkjEeaDTMy5EN3__g" type="_FbrKrMkjEeaDTMy5EN3__g" association="_FbrKr8kjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKsckjEeaDTMy5EN3__g" memberEnd="_FbrKYckjEeaDTMy5EN3__g _FbrKsskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKsskjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKsckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKs8kjEeaDTMy5EN3__g" name="SessionTokenHeader">
+      <ownedAttribute xmi:id="_FbrKtMkjEeaDTMy5EN3__g" name="token" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKtckjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FbrKtskjEeaDTMy5EN3__g" name="anyAttribute" visibility="public" isOrdered="true" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFeatureMapEntry"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKt8kjEeaDTMy5EN3__g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FbrKuMkjEeaDTMy5EN3__g" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKuckjEeaDTMy5EN3__g" memberEnd="_FbrKY8kjEeaDTMy5EN3__g _FbrKuskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKuskjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKuckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKu8kjEeaDTMy5EN3__g" name="VersionType"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKvMkjEeaDTMy5EN3__g" memberEnd="_FbrKZ8kjEeaDTMy5EN3__g _FbrKvckjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKvckjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKvMkjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FbrKvskjEeaDTMy5EN3__g" name="VersionResponseType">
+      <ownedAttribute xmi:id="_FbrKv8kjEeaDTMy5EN3__g" name="versionResult" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FbrKwMkjEeaDTMy5EN3__g"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FbrKwckjEeaDTMy5EN3__g" memberEnd="_FbrKackjEeaDTMy5EN3__g _FbrKwskjEeaDTMy5EN3__g">
+      <ownedEnd xmi:id="_FbrKwskjEeaDTMy5EN3__g" type="_FbrKRckjEeaDTMy5EN3__g" association="_FbrKwckjEeaDTMy5EN3__g"/>
+    </packagedElement>
+    <profileApplication xmi:id="_FbrKw8kjEeaDTMy5EN3__g">
+      <eAnnotations xmi:id="_FbrKxMkjEeaDTMy5EN3__g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_1XcmIMkkEeaFUtNq0hBrOA">
+      <eAnnotations xmi:id="_1XcmIckkEeaFUtNq0hBrOA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.mdmi.uml.profile/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <Ecore:EPackage xmi:id="_FbrKxckjEeaDTMy5EN3__g" base_Package="_FbrJoMkjEeaDTMy5EN3__g" nsPrefix="paws"/>
+  <Ecore:EClass xmi:id="_FbrKxskjEeaDTMy5EN3__g" base_Class="_FbrJockjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_FbrKx8kjEeaDTMy5EN3__g" xmlName="AddressType" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrJoskjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_FbrKyMkjEeaDTMy5EN3__g" base_Class="_FbrJtMkjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_FbrKyckjEeaDTMy5EN3__g" xmlName="AliveResponse_._type" base_Class="_FbrJw8kjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_FbrKyskjEeaDTMy5EN3__g" xmlName="Alive_._type" base_Class="_FbrJxckjEeaDTMy5EN3__g" xmlContentKind="Empty"/>
+  <Ecore:EClass xmi:id="_FbrKy8kjEeaDTMy5EN3__g" base_Class="_FbrJxskjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_FbrKzMkjEeaDTMy5EN3__g" xmlName="Address" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrJx8kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_FbrwsMkjEeaDTMy5EN3__g" base_Class="_FbrJzMkjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_FbrwsckjEeaDTMy5EN3__g" xmlName="GenericData" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrJzckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_FbrwsskjEeaDTMy5EN3__g" base_Class="_FbrJ0MkjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_Fbrws8kjEeaDTMy5EN3__g" base_Class="_FbrJ2ckjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_FbrwtMkjEeaDTMy5EN3__g" xmlName="Patient" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrJ2skjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_FbrwtckjEeaDTMy5EN3__g" base_Class="_FbrJ3ckjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_FbrwtskjEeaDTMy5EN3__g" xmlName="Name" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrJ4skjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Fbrwt8kjEeaDTMy5EN3__g" xmlName="Telecoms" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrJ7ckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbrwuMkjEeaDTMy5EN3__g" xmlName="Addresses" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrJ78kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbrwuckjEeaDTMy5EN3__g" xmlName="Race" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrJ8ckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbrwuskjEeaDTMy5EN3__g" xmlName="Rank" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrJ98kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_Fbrwu8kjEeaDTMy5EN3__g" xmlName="MaritalStatus" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKBckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbrwvMkjEeaDTMy5EN3__g" xmlName="Religion" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKB8kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbrwvckjEeaDTMy5EN3__g" xmlName="DirectCare" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKCckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbrwvskjEeaDTMy5EN3__g" xmlName="GenericDatas" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKC8kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_Fbrwv8kjEeaDTMy5EN3__g" base_Class="_FbrKDckjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_FbrwwMkjEeaDTMy5EN3__g" base_Class="_FbrKIMkjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_FbrwwckjEeaDTMy5EN3__g" xmlName="Telecom" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKIckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_FbrwwskjEeaDTMy5EN3__g" base_Class="_FbrKJMkjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_FbsXwMkjEeaDTMy5EN3__g" xmlName="TelecomType" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKJckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_FbsXwckjEeaDTMy5EN3__g" base_Class="_FbrKOckjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_FbsXwskjEeaDTMy5EN3__g" xmlName="" base_Class="_FbrKRckjEeaDTMy5EN3__g" xmlContentKind="Mixed"/>
+  <Ecore:EReference xmi:id="_FbsXw8kjEeaDTMy5EN3__g" xmlName="xmlns:prefix" isTransient="true" xmlFeatureKind="Attribute" base_Property="_FbrKSckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXxMkjEeaDTMy5EN3__g" xmlName="xsi:schemaLocation" isTransient="true" xmlFeatureKind="Attribute" base_Property="_FbrKTMkjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXxckjEeaDTMy5EN3__g" xmlName="Alive" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKT8kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXxskjEeaDTMy5EN3__g" xmlName="AliveResponse" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKUckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXx8kjEeaDTMy5EN3__g" xmlName="ArrayOfPatient" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKU8kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXyMkjEeaDTMy5EN3__g" xmlName="FetchPatient" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKV8kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXyckjEeaDTMy5EN3__g" xmlName="FetchPatientResponse" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKWckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXyskjEeaDTMy5EN3__g" xmlName="FetchPatients" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKW8kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXy8kjEeaDTMy5EN3__g" xmlName="FetchPatientsByDeersID" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKXckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXzMkjEeaDTMy5EN3__g" xmlName="FetchPatientsByDeersIDResponse" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKX8kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXzckjEeaDTMy5EN3__g" xmlName="FetchPatientsResponse" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKYckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXzskjEeaDTMy5EN3__g" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKY8kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsXz8kjEeaDTMy5EN3__g" xmlName="Version" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKZ8kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_FbsX0MkjEeaDTMy5EN3__g" xmlName="VersionResponse" isTransient="true" isVolatile="true" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKackjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_FbsX0ckjEeaDTMy5EN3__g" xmlName="FetchPatient_._type" base_Class="_FbrKdckjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_FbsX0skjEeaDTMy5EN3__g" xmlName="FetchPatientResponse_._type" base_Class="_FbrKfskjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_FbsX08kjEeaDTMy5EN3__g" xmlName="FetchPatientResult" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKf8kjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_Fbs-0MkjEeaDTMy5EN3__g" xmlName="FetchPatients_._type" base_Class="_FbrKhckjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_Fbs-0ckjEeaDTMy5EN3__g" xmlName="FetchPatientsByDeersID_._type" base_Class="_FbrKnMkjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_Fbs-0skjEeaDTMy5EN3__g" xmlName="FetchPatientsByDeersIDResponse_._type" base_Class="_FbrKpckjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_Fbs-08kjEeaDTMy5EN3__g" xmlName="FetchPatientsByDeersIDResult" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKpskjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_Fbs-1MkjEeaDTMy5EN3__g" xmlName="FetchPatientsResponse_._type" base_Class="_FbrKrMkjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_Fbs-1ckjEeaDTMy5EN3__g" xmlName="FetchPatientsResult" xmlNamespace="http://paws.tatrc.org/" xmlFeatureKind="Element" base_Property="_FbrKrckjEeaDTMy5EN3__g" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_Fbs-1skjEeaDTMy5EN3__g" xmlName="sessionTokenHeader" base_Class="_FbrKs8kjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_Fbs-18kjEeaDTMy5EN3__g" xmlName="Version_._type" base_Class="_FbrKu8kjEeaDTMy5EN3__g" xmlContentKind="Empty"/>
+  <Ecore:EClass xmi:id="_Fbs-2MkjEeaDTMy5EN3__g" xmlName="VersionResponse_._type" base_Class="_FbrKvskjEeaDTMy5EN3__g" xmlContentKind="ElementOnly"/>
+  <MDMI:MDMIMapping xmi:id="_WU3pcMklEeaFUtNq0hBrOA" base_Class="_FbrJ3ckjEeaDTMy5EN3__g">
+    <elements xmi:id="_WU4QgMklEeaFUtNq0hBrOA" businessElement="PatientDateOfBirth" modelElement="_FbrJ6skjEeaDTMy5EN3__g" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="dateOfBirth"/>
+  </MDMI:MDMIMapping>
+</xmi:XMI>

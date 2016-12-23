@@ -3,6 +3,22 @@
 
 
 	<target name="default">
+		
+		<antcall target="generateMDMI">
+					<param name="umlmodel" value="PawsAllergies.uml" />
+					<param name="mdmimodel" value="PawsAllergies.mdmi" />
+				</antcall>
+		
+		<antcall target="generateMDMI">
+							<param name="umlmodel" value="PawsPatient.uml" />
+							<param name="mdmimodel" value="PawsPatient.mdmi" />
+						</antcall>
+		
+		<antcall target="generateMDMI">
+					<param name="umlmodel" value="vitals.uml" />
+					<param name="mdmimodel" value="dodcdrvitals.mdmi" />
+				</antcall>
+		
 		<antcall target="generateMDMI">
 			<param name="umlmodel" value="vitals.uml" />
 			<param name="mdmimodel" value="dodcdrvitals.mdmi" />
@@ -24,6 +40,20 @@
 			<param name="mdmimodel" value="dodcdrvitals.mdmi" />
 			<param name="xmimodel" value="dodcdrvitals.xmi" />
 		</antcall>
+		
+		 
+			
+		<antcall target="exportMDMI">
+					<param name="mdmimodel" value="PawsAllergies.mdmi" />
+					<param name="xmimodel" value="PawsAllergies.xmi" />
+				</antcall>
+		
+		<antcall target="exportMDMI">
+					<param name="mdmimodel" value="PawsPatient.mdmi" />
+					<param name="xmimodel" value="PawsPatient.xmi" />
+				</antcall>
+		
+		
 		
 		<antcall target="exportMDMI">
 				<param name="mdmimodel" value="dodcdrmeds.mdmi" />
