@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Model xmi:id="_EOGP8OYyEeat0tMANlRreA" name="Patient" URI="http://jsonDiscoverer/discovered/Discovered">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGP8eYyEeat0tMANlRreA" name="StatusList">
+      <ownedAttribute xmi:id="_EOGP8uYyEeat0tMANlRreA" name="partner" type="_EOGP9eYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGP-eYyEeat0tMANlRreA"/>
+      <ownedAttribute xmi:id="_EOGP8-YyEeat0tMANlRreA" name="partnerStatus" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGP9OYyEeat0tMANlRreA" name="receivedCount" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGP9eYyEeat0tMANlRreA" name="Partner">
+      <ownedAttribute xmi:id="_EOGP9uYyEeat0tMANlRreA" name="partnerName" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGP9-YyEeat0tMANlRreA" name="partnerIdentifier" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGP-OYyEeat0tMANlRreA" name="partnerType" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOGP-eYyEeat0tMANlRreA" memberEnd="_EOGP8uYyEeat0tMANlRreA _EOGP-uYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOGP-uYyEeat0tMANlRreA" type="_EOGP8eYyEeat0tMANlRreA" association="_EOGP-eYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGP--YyEeat0tMANlRreA" name="RecordId">
+      <ownedAttribute xmi:id="_EOGP_OYyEeat0tMANlRreA" name="id" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGP_eYyEeat0tMANlRreA" name="assigningAuthority" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGP_uYyEeat0tMANlRreA" name="Rank">
+      <ownedAttribute xmi:id="_EOGP_-YyEeat0tMANlRreA" name="display" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQAOYyEeat0tMANlRreA" name="code" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQAeYyEeat0tMANlRreA" name="system" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQAuYyEeat0tMANlRreA" name="primary" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGQA-YyEeat0tMANlRreA" name="Demographic">
+      <ownedAttribute xmi:id="_EOGQBOYyEeat0tMANlRreA" name="addresses" type="_EOGQHeYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGQJOYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQBeYyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQBuYyEeat0tMANlRreA" name="birthDate" type="_EOGQJuYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGQKOYyEeat0tMANlRreA"/>
+      <ownedAttribute xmi:id="_EOGQB-YyEeat0tMANlRreA" name="emergencyContacts" type="_EOGQKuYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGQRuYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQCOYyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQCeYyEeat0tMANlRreA" name="fmp" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQCuYyEeat0tMANlRreA" name="maritalStatus" type="_EOGQSOYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGQTeYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQC-YyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQDOYyEeat0tMANlRreA" name="name" type="_EOGQL-YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGQT-YyEeat0tMANlRreA"/>
+      <ownedAttribute xmi:id="_EOGQDeYyEeat0tMANlRreA" name="patientCategory" type="_EOGQUeYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGQVuYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQDuYyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQD-YyEeat0tMANlRreA" name="patientId" type="_EOGQWOYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3AOYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQEOYyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQEeYyEeat0tMANlRreA" name="telecoms" type="_EOGQOeYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3AuYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQEuYyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQE-YyEeat0tMANlRreA" name="race" type="_EOG3BOYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3CeYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQFOYyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQFeYyEeat0tMANlRreA" name="sex" type="_EOG3C-YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3EOYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQFuYyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQF-YyEeat0tMANlRreA" name="sponsor" type="_EOG3EuYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3G-YyEeat0tMANlRreA"/>
+      <ownedAttribute xmi:id="_EOGQGOYyEeat0tMANlRreA" name="facility" type="_EOG3HeYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3JeYyEeat0tMANlRreA"/>
+      <ownedAttribute xmi:id="_EOGQGeYyEeat0tMANlRreA" name="recordId" type="_EOGP--YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3J-YyEeat0tMANlRreA"/>
+      <ownedAttribute xmi:id="_EOGQGuYyEeat0tMANlRreA" name="dataDomain" type="_EOG3KeYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3LuYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQG-YyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQHOYyEeat0tMANlRreA" name="repository" type="_EOG3MOYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3NuYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGQHeYyEeat0tMANlRreA" name="Addresse">
+      <ownedAttribute xmi:id="_EOGQHuYyEeat0tMANlRreA" name="city" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQH-YyEeat0tMANlRreA" name="type" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQIOYyEeat0tMANlRreA" name="postalCode" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQIeYyEeat0tMANlRreA" name="state" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQIuYyEeat0tMANlRreA" name="street" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQI-YyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOGQJOYyEeat0tMANlRreA" memberEnd="_EOGQBOYyEeat0tMANlRreA _EOGQJeYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOGQJeYyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOGQJOYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGQJuYyEeat0tMANlRreA" name="BirthDate">
+      <ownedAttribute xmi:id="_EOGQJ-YyEeat0tMANlRreA" name="start" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOGQKOYyEeat0tMANlRreA" memberEnd="_EOGQBuYyEeat0tMANlRreA _EOGQKeYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOGQKeYyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOGQKOYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGQKuYyEeat0tMANlRreA" name="EmergencyContact">
+      <ownedAttribute xmi:id="_EOGQK-YyEeat0tMANlRreA" name="name" type="_EOGQL-YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGQN-YyEeat0tMANlRreA"/>
+      <ownedAttribute xmi:id="_EOGQLOYyEeat0tMANlRreA" name="telecoms" type="_EOGQOeYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGQPeYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQLeYyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQLuYyEeat0tMANlRreA" name="relationship" type="_EOGQP-YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGQROYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGQL-YyEeat0tMANlRreA" name="Name">
+      <ownedAttribute xmi:id="_EOGQMOYyEeat0tMANlRreA" name="raw" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQMeYyEeat0tMANlRreA" name="first" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EOGQMuYyEeat0tMANlRreA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQM-YyEeat0tMANlRreA" name="last" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EOGQNOYyEeat0tMANlRreA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQNeYyEeat0tMANlRreA" name="middle" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EOGQNuYyEeat0tMANlRreA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOGQN-YyEeat0tMANlRreA" memberEnd="_EOGQK-YyEeat0tMANlRreA _EOGQOOYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOGQOOYyEeat0tMANlRreA" type="_EOGQKuYyEeat0tMANlRreA" association="_EOGQN-YyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGQOeYyEeat0tMANlRreA" name="Telecom">
+      <ownedAttribute xmi:id="_EOGQOuYyEeat0tMANlRreA" name="useType" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQO-YyEeat0tMANlRreA" name="uriPrefix" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQPOYyEeat0tMANlRreA" name="value" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOGQPeYyEeat0tMANlRreA" memberEnd="_EOGQLOYyEeat0tMANlRreA _EOGQPuYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOGQPuYyEeat0tMANlRreA" type="_EOGQKuYyEeat0tMANlRreA" association="_EOGQPeYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGQP-YyEeat0tMANlRreA" name="Relationship">
+      <ownedAttribute xmi:id="_EOGQQOYyEeat0tMANlRreA" name="display" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQQeYyEeat0tMANlRreA" name="code" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQQuYyEeat0tMANlRreA" name="system" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQQ-YyEeat0tMANlRreA" name="primary" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOGQROYyEeat0tMANlRreA" memberEnd="_EOGQLuYyEeat0tMANlRreA _EOGQReYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOGQReYyEeat0tMANlRreA" type="_EOGQKuYyEeat0tMANlRreA" association="_EOGQROYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOGQRuYyEeat0tMANlRreA" memberEnd="_EOGQB-YyEeat0tMANlRreA _EOGQR-YyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOGQR-YyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOGQRuYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGQSOYyEeat0tMANlRreA" name="MaritalStatu">
+      <ownedAttribute xmi:id="_EOGQSeYyEeat0tMANlRreA" name="display" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQSuYyEeat0tMANlRreA" name="code" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQS-YyEeat0tMANlRreA" name="system" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQTOYyEeat0tMANlRreA" name="primary" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOGQTeYyEeat0tMANlRreA" memberEnd="_EOGQCuYyEeat0tMANlRreA _EOGQTuYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOGQTuYyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOGQTeYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOGQT-YyEeat0tMANlRreA" memberEnd="_EOGQDOYyEeat0tMANlRreA _EOGQUOYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOGQUOYyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOGQT-YyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGQUeYyEeat0tMANlRreA" name="PatientCategory">
+      <ownedAttribute xmi:id="_EOGQUuYyEeat0tMANlRreA" name="display" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQU-YyEeat0tMANlRreA" name="code" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQVOYyEeat0tMANlRreA" name="system" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQVeYyEeat0tMANlRreA" name="primary" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOGQVuYyEeat0tMANlRreA" memberEnd="_EOGQDeYyEeat0tMANlRreA _EOGQV-YyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOGQV-YyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOGQVuYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOGQWOYyEeat0tMANlRreA" name="PatientId">
+      <ownedAttribute xmi:id="_EOGQWeYyEeat0tMANlRreA" name="id" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQWuYyEeat0tMANlRreA" name="assigningAuthority" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3AOYyEeat0tMANlRreA" memberEnd="_EOGQD-YyEeat0tMANlRreA _EOG3AeYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3AeYyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOG3AOYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3AuYyEeat0tMANlRreA" memberEnd="_EOGQEeYyEeat0tMANlRreA _EOG3A-YyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3A-YyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOG3AuYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOG3BOYyEeat0tMANlRreA" name="Race">
+      <ownedAttribute xmi:id="_EOG3BeYyEeat0tMANlRreA" name="display" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3BuYyEeat0tMANlRreA" name="code" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3B-YyEeat0tMANlRreA" name="system" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3COYyEeat0tMANlRreA" name="primary" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3CeYyEeat0tMANlRreA" memberEnd="_EOGQE-YyEeat0tMANlRreA _EOG3CuYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3CuYyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOG3CeYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOG3C-YyEeat0tMANlRreA" name="Sex">
+      <ownedAttribute xmi:id="_EOG3DOYyEeat0tMANlRreA" name="display" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3DeYyEeat0tMANlRreA" name="code" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3DuYyEeat0tMANlRreA" name="system" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3D-YyEeat0tMANlRreA" name="primary" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3EOYyEeat0tMANlRreA" memberEnd="_EOGQFeYyEeat0tMANlRreA _EOG3EeYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3EeYyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOG3EOYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOG3EuYyEeat0tMANlRreA" name="Sponsor">
+      <ownedAttribute xmi:id="_EOG3E-YyEeat0tMANlRreA" name="name" type="_EOGQL-YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3F-YyEeat0tMANlRreA"/>
+      <ownedAttribute xmi:id="_EOG3FOYyEeat0tMANlRreA" name="rank" type="_EOGP_uYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3GeYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOG3FeYyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3FuYyEeat0tMANlRreA" name="ssn" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3F-YyEeat0tMANlRreA" memberEnd="_EOG3E-YyEeat0tMANlRreA _EOG3GOYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3GOYyEeat0tMANlRreA" type="_EOG3EuYyEeat0tMANlRreA" association="_EOG3F-YyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3GeYyEeat0tMANlRreA" memberEnd="_EOG3FOYyEeat0tMANlRreA _EOG3GuYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3GuYyEeat0tMANlRreA" type="_EOG3EuYyEeat0tMANlRreA" association="_EOG3GeYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3G-YyEeat0tMANlRreA" memberEnd="_EOGQF-YyEeat0tMANlRreA _EOG3HOYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3HOYyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOG3G-YyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOG3HeYyEeat0tMANlRreA" name="Facility">
+      <ownedAttribute xmi:id="_EOG3HuYyEeat0tMANlRreA" name="name" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3H-YyEeat0tMANlRreA" name="ids" type="_EOG3IeYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3I-YyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOG3IOYyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOG3IeYyEeat0tMANlRreA" name="Id">
+      <ownedAttribute xmi:id="_EOG3IuYyEeat0tMANlRreA" name="assigningAuthority" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3I-YyEeat0tMANlRreA" memberEnd="_EOG3H-YyEeat0tMANlRreA _EOG3JOYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3JOYyEeat0tMANlRreA" type="_EOG3HeYyEeat0tMANlRreA" association="_EOG3I-YyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3JeYyEeat0tMANlRreA" memberEnd="_EOGQGOYyEeat0tMANlRreA _EOG3JuYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3JuYyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOG3JeYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3J-YyEeat0tMANlRreA" memberEnd="_EOGQGeYyEeat0tMANlRreA _EOG3KOYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3KOYyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOG3J-YyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOG3KeYyEeat0tMANlRreA" name="DataDomain">
+      <ownedAttribute xmi:id="_EOG3KuYyEeat0tMANlRreA" name="code" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3K-YyEeat0tMANlRreA" name="system" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3LOYyEeat0tMANlRreA" name="codeSystemName" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3LeYyEeat0tMANlRreA" name="primary" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3LuYyEeat0tMANlRreA" memberEnd="_EOGQGuYyEeat0tMANlRreA _EOG3L-YyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3L-YyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOG3LuYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOG3MOYyEeat0tMANlRreA" name="Repository">
+      <ownedAttribute xmi:id="_EOG3MeYyEeat0tMANlRreA" name="name" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EOG3MuYyEeat0tMANlRreA" name="ids" type="_EOG3IeYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3NOYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOG3M-YyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3NOYyEeat0tMANlRreA" memberEnd="_EOG3MuYyEeat0tMANlRreA _EOG3NeYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3NeYyEeat0tMANlRreA" type="_EOG3MOYyEeat0tMANlRreA" association="_EOG3NOYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3NuYyEeat0tMANlRreA" memberEnd="_EOGQHOYyEeat0tMANlRreA _EOG3N-YyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3N-YyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOG3NuYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOG3OOYyEeat0tMANlRreA" name="Discovered">
+      <ownedAttribute xmi:id="_EOG3OeYyEeat0tMANlRreA" name="statusList" type="_EOGP8eYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3POYyEeat0tMANlRreA"/>
+      <ownedAttribute xmi:id="_EOG3OuYyEeat0tMANlRreA" name="dataList" type="_EOG3PuYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3Q-YyEeat0tMANlRreA"/>
+      <ownedAttribute xmi:id="_EOG3O-YyEeat0tMANlRreA" name="queryComplete" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3POYyEeat0tMANlRreA" memberEnd="_EOG3OeYyEeat0tMANlRreA _EOG3PeYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3PeYyEeat0tMANlRreA" type="_EOG3OOYyEeat0tMANlRreA" association="_EOG3POYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOG3PuYyEeat0tMANlRreA" name="DataList">
+      <ownedAttribute xmi:id="_EOG3P-YyEeat0tMANlRreA" name="demographics" type="_EOGQA-YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3QeYyEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOG3QOYyEeat0tMANlRreA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3QeYyEeat0tMANlRreA" memberEnd="_EOG3P-YyEeat0tMANlRreA _EOG3QuYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3QuYyEeat0tMANlRreA" type="_EOG3PuYyEeat0tMANlRreA" association="_EOG3QeYyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EOG3Q-YyEeat0tMANlRreA" memberEnd="_EOG3OuYyEeat0tMANlRreA _EOG3ROYyEeat0tMANlRreA">
+      <ownedEnd xmi:id="_EOG3ROYyEeat0tMANlRreA" type="_EOG3OOYyEeat0tMANlRreA" association="_EOG3Q-YyEeat0tMANlRreA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_EOG3ReYyEeat0tMANlRreA">
+      <eAnnotations xmi:id="_EOG3RuYyEeat0tMANlRreA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_K1rygOYzEeaRN-Hp9u_FCA">
+      <eAnnotations xmi:id="_K1rygeYzEeaRN-Hp9u_FCA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.mdmi.uml.profile/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Model>
+  <Ecore:EPackage xmi:id="_EOG3R-YyEeat0tMANlRreA" base_Package="_EOGP8OYyEeat0tMANlRreA" nsPrefix="discoD"/>
+  <Ecore:EClass xmi:id="_EOG3SOYyEeat0tMANlRreA" base_Class="_EOGP8eYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EReference xmi:id="_EOG3SeYyEeat0tMANlRreA" base_Property="_EOGP8uYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EClass xmi:id="_EOG3SuYyEeat0tMANlRreA" base_Class="_EOGP9eYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOG3S-YyEeat0tMANlRreA" base_Class="_EOGP--YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOG3TOYyEeat0tMANlRreA" base_Class="_EOGP_uYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOG3TeYyEeat0tMANlRreA" base_Class="_EOGQA-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EReference xmi:id="_EOG3TuYyEeat0tMANlRreA" base_Property="_EOGQBOYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3T-YyEeat0tMANlRreA" base_Property="_EOGQBuYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3UOYyEeat0tMANlRreA" base_Property="_EOGQB-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3UeYyEeat0tMANlRreA" base_Property="_EOGQCuYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3UuYyEeat0tMANlRreA" base_Property="_EOGQDOYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3U-YyEeat0tMANlRreA" base_Property="_EOGQDeYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3VOYyEeat0tMANlRreA" base_Property="_EOGQD-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3VeYyEeat0tMANlRreA" base_Property="_EOGQEeYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3VuYyEeat0tMANlRreA" base_Property="_EOGQE-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3V-YyEeat0tMANlRreA" base_Property="_EOGQFeYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3WOYyEeat0tMANlRreA" base_Property="_EOGQF-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3WeYyEeat0tMANlRreA" base_Property="_EOGQGOYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3WuYyEeat0tMANlRreA" base_Property="_EOGQGeYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3W-YyEeat0tMANlRreA" base_Property="_EOGQGuYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3XOYyEeat0tMANlRreA" base_Property="_EOGQHOYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EClass xmi:id="_EOG3XeYyEeat0tMANlRreA" base_Class="_EOGQHeYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOG3XuYyEeat0tMANlRreA" base_Class="_EOGQJuYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOG3X-YyEeat0tMANlRreA" base_Class="_EOGQKuYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EReference xmi:id="_EOG3YOYyEeat0tMANlRreA" base_Property="_EOGQK-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3YeYyEeat0tMANlRreA" base_Property="_EOGQLOYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOG3YuYyEeat0tMANlRreA" base_Property="_EOGQLuYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EClass xmi:id="_EOG3Y-YyEeat0tMANlRreA" base_Class="_EOGQL-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='6'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOHeEOYyEeat0tMANlRreA" base_Class="_EOGQOeYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='4'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOHeEeYyEeat0tMANlRreA" base_Class="_EOGQP-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOHeEuYyEeat0tMANlRreA" base_Class="_EOGQSOYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOHeE-YyEeat0tMANlRreA" base_Class="_EOGQUeYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOHeFOYyEeat0tMANlRreA" base_Class="_EOGQWOYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='6'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOHeFeYyEeat0tMANlRreA" base_Class="_EOG3BOYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='4'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOHeFuYyEeat0tMANlRreA" base_Class="_EOG3C-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOHeF-YyEeat0tMANlRreA" base_Class="_EOG3EuYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EReference xmi:id="_EOHeGOYyEeat0tMANlRreA" base_Property="_EOG3E-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOHeGeYyEeat0tMANlRreA" base_Property="_EOG3FOYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EClass xmi:id="_EOHeGuYyEeat0tMANlRreA" base_Class="_EOG3HeYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EReference xmi:id="_EOHeG-YyEeat0tMANlRreA" base_Property="_EOG3H-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EClass xmi:id="_EOHeHOYyEeat0tMANlRreA" base_Class="_EOG3IeYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='4'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOHeHeYyEeat0tMANlRreA" base_Class="_EOG3KeYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_EOHeHuYyEeat0tMANlRreA" base_Class="_EOG3MOYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EReference xmi:id="_EOHeH-YyEeat0tMANlRreA" base_Property="_EOG3MuYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EClass xmi:id="_EOHeIOYyEeat0tMANlRreA" base_Class="_EOG3OOYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='1'</annotation>
+  </Ecore:EClass>
+  <Ecore:EReference xmi:id="_EOHeIeYyEeat0tMANlRreA" base_Property="_EOG3OeYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='1' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EReference xmi:id="_EOHeIuYyEeat0tMANlRreA" base_Property="_EOG3OuYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='1' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+  <Ecore:EClass xmi:id="_EOHeI-YyEeat0tMANlRreA" base_Class="_EOG3PuYyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EReference xmi:id="_EOHeJOYyEeat0tMANlRreA" base_Property="_EOG3P-YyEeat0tMANlRreA">
+    <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
+  </Ecore:EReference>
+</xmi:XMI>
