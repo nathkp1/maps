@@ -3,84 +3,107 @@
 
 
 	<target name="default">
+	 
 		<antcall target="generateMDMI">
 			<param name="umlmodel" value="vitals.uml" />
 			<param name="mdmimodel" value="ehmpvitals.mdmi" />
+			<param name="messageModel" value="Vitals" />
 		</antcall>
-		
-		
+
+
 		<antcall target="generateMDMI">
-				<param name="umlmodel" value="allergies.uml" />
-				<param name="mdmimodel" value="ehmpallergies.mdmi" />
-			</antcall>
-		
-		<antcall target="generateMDMI">
-						<param name="umlmodel" value="labs.uml" />
-						<param name="mdmimodel" value="ehmplabs.mdmi" />
-					</antcall>	
-		
-		<antcall target="generateMDMI">
-						<param name="umlmodel" value="problems.uml" />
-						<param name="mdmimodel" value="ehmpproblems.mdmi" />
-					</antcall>
-		
+			<param name="umlmodel" value="allergies.uml" />
+			<param name="mdmimodel" value="ehmpallergies.mdmi" />
+			<param name="messageModel" value="Allergies" />
+		</antcall>
+
+	
+
+	
+
 
 		<antcall target="generateMDMI">
 			<param name="umlmodel" value="meds.uml" />
 			<param name="mdmimodel" value="ehmpmeds.mdmi" />
+			<param name="messageModel" value="Meds" />
+		</antcall>
+ 
+		<antcall target="generateMDMI">
+			<param name="umlmodel" value="patient.uml" />
+			<param name="mdmimodel" value="ehmppatient.mdmi" />
+			<param name="messageModel" value="Patient" />
 		</antcall>
 		
 		<antcall target="generateMDMI">
-				<param name="umlmodel" value="patient.uml" />
-				<param name="mdmimodel" value="ehmppatient.mdmi" />
+				<param name="umlmodel" value="problems.uml" />
+				<param name="mdmimodel" value="ehmpproblems.mdmi" />
+				<param name="messageModel" value="Problems" />
 			</antcall>
+		<antcall target="generateMDMI">
+				<param name="umlmodel" value="labs.uml" />
+				<param name="mdmimodel" value="ehmplabs.mdmi" />
+				<param name="messageModel" value="Labs" />
+			</antcall>
+	 
 		
 		<antcall target="generateMDMI">
-					<param name="umlmodel" value="immunizations.uml" />
-					<param name="mdmimodel" value="ehmpimmunizations.mdmi" />
-				</antcall>
+			<param name="umlmodel" value="immunizations.uml" />
+			<param name="mdmimodel" value="ehmpimmunizations.mdmi" />
+			<param name="messageModel" value="Immunization" />
+		</antcall>
 
 		<antcall target="exportMDMI">
 			<param name="mdmimodel" value="ehmpvitals.mdmi" />
 			<param name="xmimodel" value="ehmpvitals.xmi" />
+			 
 		</antcall>
-		
-		<antcall target="exportMDMI">
-				<param name="mdmimodel" value="ehmpallergies.mdmi" />
-				<param name="xmimodel" value="ehmpallergies.xmi" />
-			</antcall>
-		
-		<antcall target="exportMDMI">
-						<param name="mdmimodel" value="ehmplabs.mdmi" />
-						<param name="xmimodel" value="ehmplabs.xmi" />
-					</antcall>
 
 		<antcall target="exportMDMI">
-					<param name="mdmimodel" value="ehmpproblems.mdmi" />
-					<param name="xmimodel" value="ehmpproblems.xmi" />
-				</antcall>
+			<param name="mdmimodel" value="ehmpallergies.mdmi" />
+			<param name="xmimodel" value="ehmpallergies.xmi" />
+			 
+		</antcall>
+
+	
+
+	
 
 		<antcall target="exportMDMI">
 			<param name="mdmimodel" value="ehmpmeds.mdmi" />
 			<param name="xmimodel" value="ehmpmeds.xmi" />
+		 
+		</antcall> 
+
+		<antcall target="exportMDMI">
+			<param name="mdmimodel" value="ehmppatient.mdmi" />
+			<param name="xmimodel" value="ehmppatient.xmi" />
+			 
 		</antcall>
 		
 		<antcall target="exportMDMI">
-					<param name="mdmimodel" value="ehmppatient.mdmi" />
-					<param name="xmimodel" value="ehmppatient.xmi" />
-				</antcall>
-		
+				<param name="mdmimodel" value="ehmpproblems.mdmi" />
+				<param name="xmimodel" value="ehmpproblems.xmi" />
+				<param name="messageModel" value="Vitals" />
+			</antcall>
 		<antcall target="exportMDMI">
-						<param name="mdmimodel" value="ehmpimmunizations.mdmi" />
-						<param name="xmimodel" value="ehmpimmunizations.xmi" />
-					</antcall>
-
+				<param name="mdmimodel" value="ehmplabs.mdmi" />
+				<param name="xmimodel" value="ehmplabs.xmi" />
+				 
+			</antcall>
+		 
+		<antcall target="exportMDMI">
+			<param name="mdmimodel" value="ehmpimmunizations.mdmi" />
+			<param name="xmimodel" value="ehmpimmunizations.xmi" />
+		 
+		</antcall>
+ 
+		
 	</target>
 
 
 	<target name="generateMDMI">
 
-	 
+
 
 
 		<delete file="map/${mdmimodel}" />
@@ -89,7 +112,10 @@
 			<in uri="platform:/resource/EHMP/models/${umlmodel}" />
 			<out uri="platform:/resource/EHMP/map/${mdmimodel}" />
 			<trace uri="platform:/resource/EHMP/log/ehmpmeds.qvtotrace">
+			
 			</trace>
+			<configProperty name="messageGroup" value="EHMP" />
+			<configProperty name="messageModel" value="${messageModel}" />
 		</qvto:transformation>
 
 
@@ -122,6 +148,6 @@
 			<replace file='map/${xmimodel}' token='&lt;/syntaxNode>' value='" />' />
 			<replace file='map/${xmimodel}' token='xmi:idref="#' value='xmi:idref="' />
 
-	</target>
- 
-</project>
+																	</target>
+
+																</project>
