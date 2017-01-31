@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
-  <uml:Package xmi:id="_mAHtEJ9yEeaPFNb3td05CQ" name="EHMP" URI="http://jsonDiscoverer/discovered/Discovered">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_mAHtEJ9yEeaPFNb3td05CQ" name="Patient" URI="http://jsonDiscoverer/discovered/Discovered">
     <packagedElement xmi:type="uml:Association" xmi:id="_mAHtep9yEeaPFNb3td05CQ" memberEnd="_mAHtPZ9yEeaPFNb3td05CQ _mAHte59yEeaPFNb3td05CQ">
       <ownedEnd xmi:id="_mAHte59yEeaPFNb3td05CQ" type="_mAHtNp9yEeaPFNb3td05CQ" association="_mAHtep9yEeaPFNb3td05CQ"/>
     </packagedElement>
@@ -424,6 +424,12 @@
       </eAnnotations>
       <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
+    <profileApplication xmi:id="_-kzTcN9SEeadaI6XTNX7Ng">
+      <eAnnotations xmi:id="_-k290N9SEeadaI6XTNX7Ng" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
   </uml:Package>
   <Ecore:EPackage xmi:id="_mAIUIJ9yEeaPFNb3td05CQ" base_Package="_mAHtEJ9yEeaPFNb3td05CQ" nsPrefix="discoD"/>
   <Ecore:EClass xmi:id="_mAJiSp9yEeaPFNb3td05CQ" base_Class="_mAHtv59yEeaPFNb3td05CQ">
@@ -518,21 +524,22 @@
   </Ecore:EClass>
   <MDMI:MDMIMapping xmi:id="_64PrIJ91EeaM49SweakKGA" base_Class="_mAHtv59yEeaPFNb3td05CQ">
     <elements xmi:id="_800d0J97EeaMaqw0BF32KQ" businessElement="PatientDateOfBirth" modelElement="_mAHtO59yEeaPFNb3td05CQ" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="data.items.birthDate" condition=""/>
-    <elements xmi:id="_AvDewJ98EeaMaqw0BF32KQ" businessElement="PatientAdministrationGenderCode" modelElement="_mAHtRp9yEeaPFNb3td05CQ" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="data.items.genderCode" condition="rollup.code"/>
-    <elements xmi:id="_F3FIgJ98EeaMaqw0BF32KQ" businessElement="PatientName" modelElement="_mAHtSJ9yEeaPFNb3td05CQ" businessElementId="b8cff71f-9f24-48d4-a33c-69743c5cdf0a" modelElementPath="data.items.givenNames" condition="rollup.given"/>
+    <elements xmi:id="_AvDewJ98EeaMaqw0BF32KQ" businessElement="PatientAdministrationGenderCode" modelElement="_mAHtRp9yEeaPFNb3td05CQ" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="data.items.genderCode" condition="ROLLUP:code"/>
+    <elements xmi:id="_F3FIgJ98EeaMaqw0BF32KQ" businessElement="PatientName" modelElement="_mAHtSJ9yEeaPFNb3td05CQ" businessElementId="b8cff71f-9f24-48d4-a33c-69743c5cdf0a" modelElementPath="data.items.givenNames" condition="ROLLUP:given"/>
     <elements xmi:id="_Iati4J98EeaMaqw0BF32KQ" businessElement="PatientID" modelElement="_mAHtSp9yEeaPFNb3td05CQ" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="data.items.icn" condition=""/>
-    <elements xmi:id="_MaRvwJ98EeaMaqw0BF32KQ" businessElement="PatientMaritalStatus" modelElement="_mAHtUJ9yEeaPFNb3td05CQ" businessElementId="6cf44ff0-2cfa-493b-98a6-44f35acd195c" modelElementPath="data.items.maritalStatusCode" condition="rollup.code"/>
+    <elements xmi:id="_MaRvwJ98EeaMaqw0BF32KQ" businessElement="PatientMaritalStatus" modelElement="_mAHtUJ9yEeaPFNb3td05CQ" businessElementId="6cf44ff0-2cfa-493b-98a6-44f35acd195c" modelElementPath="data.items.maritalStatusCode" condition="ROLLUP:code"/>
     <elements xmi:id="_WAe1AJ98EeaMaqw0BF32KQ" businessElement="PatientID" modelElement="_mAHtVJ9yEeaPFNb3td05CQ" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="data.items.pid" condition=""/>
-    <elements xmi:id="_ZmKiQJ98EeaMaqw0BF32KQ" businessElement="PatientReligousAffliationCode" modelElement="_mAHtVZ9yEeaPFNb3td05CQ" businessElementId="907a4b6c-e002-4046-973b-0395d0415de9" modelElementPath="data.items.religionCode" condition="rollup.code"/>
+    <elements xmi:id="_ZmKiQJ98EeaMaqw0BF32KQ" businessElement="PatientReligousAffliationCode" modelElement="_mAHtVZ9yEeaPFNb3td05CQ" businessElementId="907a4b6c-e002-4046-973b-0395d0415de9" modelElementPath="data.items.religionCode" condition="ROLLUP:code"/>
     <elements xmi:id="_hD5fIJ98EeaMaqw0BF32KQ" businessElement="PatientID" modelElement="_mAHtXJ9yEeaPFNb3td05CQ" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="data.items.ssn" condition=""/>
     <elements xmi:id="_n2EWgJ98EeaMaqw0BF32KQ" businessElement="PatientHomeAddress" modelElement="_mAHtbZ9yEeaPFNb3td05CQ" businessElementId="eef49a28-a96e-40a7-b328-981c5addd245" modelElementPath="data.items.address.city" condition="use = 'H'"/>
     <elements xmi:id="_Bw6u8J99EeaMaqw0BF32KQ" businessElement="PatientHomePhone" modelElement="_mAHtL59yEeaPFNb3td05CQ" businessElementId="cfb8b147-38a5-4272-87c6-f1fa4cb97457" modelElementPath="data.items.telecom.value" condition="use = 'H'"/>
     <elements xmi:id="_Fb4k0J99EeaMaqw0BF32KQ" businessElement="PatientMobilePhone" modelElement="_mAHtL59yEeaPFNb3td05CQ" businessElementId="18f6d14d-5c8c-49be-9f93-c1f1a3480e98" modelElementPath="data.items.telecom.value" condition="use = 'M'"/>
-    <elements xmi:id="_x4zKQJ99EeaMaqw0BF32KQ" businessElement="PatientName" modelElement="_mAHtRJ9yEeaPFNb3td05CQ" businessElementId="b8cff71f-9f24-48d4-a33c-69743c5cdf0a" modelElementPath="data.items.familyName" condition="rollup.family"/>
+    <elements xmi:id="_x4zKQJ99EeaMaqw0BF32KQ" businessElement="PatientName" modelElement="_mAHtRJ9yEeaPFNb3td05CQ" businessElementId="b8cff71f-9f24-48d4-a33c-69743c5cdf0a" modelElementPath="data.items.familyName" condition="ROLLUP:family"/>
     <elements xmi:id="_o0YG8J9-EeaGhOlcLfSkpQ" businessElement="PatientContacts" modelElement="_mAHtep9yEeaPFNb3td05CQ" businessElementId="c7bc1392-0fc3-4f60-a450-e10b2fc0129e" modelElementPath="data.items.contact" condition=""/>
     <elements xmi:id="_V3hxUKajEeaKralA1cXDmA" businessElement="PatientContainer" modelElement="_mAHtvZ9yEeaPFNb3td05CQ" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="data.items" condition=""/>
-    <elements xmi:id="_MnlagKakEeaKralA1cXDmA" businessElement="PatientAdministrationGenderCode" modelElement="_mAHtR59yEeaPFNb3td05CQ" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="data.items.genderName" condition="rollup.displayName"/>
-    <elements xmi:id="_ZmgIAKakEeaKralA1cXDmA" businessElement="PatientReligousAffliationCode" modelElement="_mAHtVp9yEeaPFNb3td05CQ" businessElementId="907a4b6c-e002-4046-973b-0395d0415de9" modelElementPath="data.items.religionName" condition="rollup.displayName"/>
+    <elements xmi:id="_MnlagKakEeaKralA1cXDmA" businessElement="PatientAdministrationGenderCode" modelElement="_mAHtR59yEeaPFNb3td05CQ" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="data.items.genderName" condition="ROLLUP:displayName"/>
+    <elements xmi:id="_ZmgIAKakEeaKralA1cXDmA" businessElement="PatientReligousAffliationCode" modelElement="_mAHtVp9yEeaPFNb3td05CQ" businessElementId="907a4b6c-e002-4046-973b-0395d0415de9" modelElementPath="data.items.religionName" condition="ROLLUP:displayName"/>
     <elements xmi:id="_iO1OULNeEeab8N_OAoIXPQ" businessElement="PatientBusinessPhone" modelElement="_mAHtX59yEeaPFNb3td05CQ" businessElementId="bed984cb-1569-4c78-8709-94908f611219" modelElementPath="data.items.telecom" condition="use = 'WP'"/>
   </MDMI:MDMIMapping>
+  <term:CodeSystemConstraint xmi:id="_CUkJwN9TEeadaI6XTNX7Ng" identifier="VAVistA" name="VA VistA" base_Property="_mAHtVZ9yEeaPFNb3td05CQ"/>
 </xmi:XMI>

@@ -142,10 +142,10 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PqUocrcbEeaqD7G7AJYpYg" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_WA4h4LcbEeaqD7G7AJYpYg" name="comments" type="_8pHBhrcaEeaqD7G7AJYpYg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WA4h4bcbEeaqD7G7AJYpYg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WA4h4rcbEeaqD7G7AJYpYg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zh28gM4REeaSmLSIxYHj0g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zh1HUM4REeaSmLSIxYHj0g" value="*"/>
           </ownedAttribute>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_8pHBhrcaEeaqD7G7AJYpYg" name="Comment">
+          <nestedClassifier xmi:type="uml:DataType" xmi:id="_8pHBhrcaEeaqD7G7AJYpYg" name="Comment">
             <ownedAttribute xmi:id="_8pHBh7caEeaqD7G7AJYpYg" name="comment" visibility="public" isOrdered="true">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
             </ownedAttribute>
@@ -190,20 +190,20 @@
     </profileApplication>
   </uml:Package>
   <MDMI:MDMIMapping xmi:id="_oZyf0LiwEeaYU48ldTWPHw" base_Class="_8pHBjrcaEeaqD7G7AJYpYg">
-    <elements xmi:id="_oZzG4LiwEeaYU48ldTWPHw" businessElement="ProblemConcernCollection" modelElement="_8pHBmLcaEeaqD7G7AJYpYg" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath="data.items"/>
-    <elements xmi:id="_v_r6MLiwEeaYU48ldTWPHw" businessElement="ProblemConcernSeverityCode" modelElement="_8pHBUrcaEeaqD7G7AJYpYg" businessElementId="3da9e241-9af8-43bd-a0d4-674b9b7e464e" modelElementPath="data.items.acuityCode"/>
-    <elements xmi:id="_zUQpULiwEeaYU48ldTWPHw" businessElement="ProblemConcernSeverityCode" modelElement="_8pHBU7caEeaqD7G7AJYpYg" businessElementId="3da9e241-9af8-43bd-a0d4-674b9b7e464e" modelElementPath="data.items.acuityName"/>
-    <elements xmi:id="_5P0o0LiwEeaYU48ldTWPHw" businessElement="ProblemConcernRecordedDate" modelElement="_8pHBWLcaEeaqD7G7AJYpYg" businessElementId="1e9e2a0b-ba99-4c0e-beae-3a527d6490c1" modelElementPath="data.items.entered"/>
-    <elements xmi:id="_-ZOLkLiwEeaYU48ldTWPHw" businessElement="ProblemConcernNotes" modelElement="_8pHBY7caEeaqD7G7AJYpYg" businessElementId="c3d9a923-8c9c-4611-b8bf-a8e7456c2bba" modelElementPath="data.items.problemText"/>
-    <elements xmi:id="_DEXFALixEeaYU48ldTWPHw" businessElement="ProblemConcernOnsetDateTime" modelElement="_8pHBYbcaEeaqD7G7AJYpYg" businessElementId="9ff65a76-3d51-47c9-b2f0-518080214f3c" modelElementPath="data.items.onset"/>
-    <elements xmi:id="_IC4NcLixEeaYU48ldTWPHw" businessElement="ProblemConcernAbateDate" modelElement="_8pHBZ7caEeaqD7G7AJYpYg" businessElementId="a0ccad8e-2179-4eba-9a88-e5b96d6e0c6f" modelElementPath="data.items.removed"/>
-    <elements xmi:id="_M6sQ8LixEeaYU48ldTWPHw" businessElement="ProblemConcernStatus" modelElement="_8pHBa7caEeaqD7G7AJYpYg" businessElementId="dcb24f5a-3e8f-43a4-8a00-e219ecbf87b9" modelElementPath="data.items.statusCode"/>
-    <elements xmi:id="_Q3AVgLixEeaYU48ldTWPHw" businessElement="ProblemConcernStatus" modelElement="_8pHBbLcaEeaqD7G7AJYpYg" businessElementId="dcb24f5a-3e8f-43a4-8a00-e219ecbf87b9" modelElementPath="data.items.statusDisplayName"/>
-    <elements xmi:id="_UtI5kLixEeaYU48ldTWPHw" businessElement="ProblemConcernCode" modelElement="_8pHBc7caEeaqD7G7AJYpYg" businessElementId="5e566e5b-f7f8-4458-8002-04dd59b3a1d6" modelElementPath="data.items.snomedCode"/>
-    <elements xmi:id="_bJEbMLixEeaYU48ldTWPHw" businessElement="ProblemConcernCode" modelElement="_8pHBcrcaEeaqD7G7AJYpYg" businessElementId="5e566e5b-f7f8-4458-8002-04dd59b3a1d6" modelElementPath="data.items.standardizedDescription"/>
-    <elements xmi:id="_mWt_YLixEeaYU48ldTWPHw" businessElement="ProblemConcernObservationSiteCode" modelElement="_8pHBercaEeaqD7G7AJYpYg" businessElementId="28c26ff2-ffb3-448f-aa51-1a904ed6caa5" modelElementPath="data.items.locationUid"/>
-    <elements xmi:id="_sJX6gLixEeaYU48ldTWPHw" businessElement="ProblemConcernObservationSiteCode" modelElement="_8pHBeLcaEeaqD7G7AJYpYg" businessElementId="28c26ff2-ffb3-448f-aa51-1a904ed6caa5" modelElementPath="data.items.locationName"/>
-    <elements xmi:id="_xNmpYLixEeaYU48ldTWPHw" businessElement="ProblemConcernObservationSiteCode" modelElement="_8pHBercaEeaqD7G7AJYpYg" businessElementId="28c26ff2-ffb3-448f-aa51-1a904ed6caa5" modelElementPath="data.items.locationUid"/>
-    <elements xmi:id="_315MALixEeaYU48ldTWPHw" businessElement="ProblemConcernCode" modelElement="_PqUocLcbEeaqD7G7AJYpYg" businessElementId="5e566e5b-f7f8-4458-8002-04dd59b3a1d6" modelElementPath="data.items.codes"/>
+    <elements xmi:id="_oZzG4LiwEeaYU48ldTWPHw" businessElement="ProblemConcernCollection" modelElement="_8pHBmLcaEeaqD7G7AJYpYg" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath="data.items" condition=""/>
+    <elements xmi:id="_v_r6MLiwEeaYU48ldTWPHw" businessElement="ProblemConcernSeverityCode" modelElement="_8pHBUrcaEeaqD7G7AJYpYg" businessElementId="3da9e241-9af8-43bd-a0d4-674b9b7e464e" modelElementPath="data.items.acuityCode" condition="ROLLUP:code"/>
+    <elements xmi:id="_zUQpULiwEeaYU48ldTWPHw" businessElement="ProblemConcernSeverityCode" modelElement="_8pHBU7caEeaqD7G7AJYpYg" businessElementId="3da9e241-9af8-43bd-a0d4-674b9b7e464e" modelElementPath="data.items.acuityName" condition="ROLLUP:displayName"/>
+    <elements xmi:id="_5P0o0LiwEeaYU48ldTWPHw" businessElement="ProblemConcernRecordedDate" modelElement="_8pHBWLcaEeaqD7G7AJYpYg" businessElementId="1e9e2a0b-ba99-4c0e-beae-3a527d6490c1" modelElementPath="data.items.entered" condition=""/>
+    <elements xmi:id="_-ZOLkLiwEeaYU48ldTWPHw" businessElement="ProblemConcernNotes" modelElement="_8pHBY7caEeaqD7G7AJYpYg" businessElementId="c3d9a923-8c9c-4611-b8bf-a8e7456c2bba" modelElementPath="data.items.problemText" condition=""/>
+    <elements xmi:id="_DEXFALixEeaYU48ldTWPHw" businessElement="ProblemConcernOnsetDateTime" modelElement="_8pHBYbcaEeaqD7G7AJYpYg" businessElementId="9ff65a76-3d51-47c9-b2f0-518080214f3c" modelElementPath="data.items.onset" condition=""/>
+    <elements xmi:id="_IC4NcLixEeaYU48ldTWPHw" businessElement="ProblemConcernAbateDate" modelElement="_8pHBZ7caEeaqD7G7AJYpYg" businessElementId="a0ccad8e-2179-4eba-9a88-e5b96d6e0c6f" modelElementPath="data.items.removed" condition=""/>
+    <elements xmi:id="_M6sQ8LixEeaYU48ldTWPHw" businessElement="ProblemConcernStatus" modelElement="_8pHBa7caEeaqD7G7AJYpYg" businessElementId="dcb24f5a-3e8f-43a4-8a00-e219ecbf87b9" modelElementPath="data.items.statusCode" condition="ROLLUP:code"/>
+    <elements xmi:id="_Q3AVgLixEeaYU48ldTWPHw" businessElement="ProblemConcernStatus" modelElement="_8pHBbLcaEeaqD7G7AJYpYg" businessElementId="dcb24f5a-3e8f-43a4-8a00-e219ecbf87b9" modelElementPath="data.items.statusDisplayName" condition="ROLLUP:displayName"/>
+    <elements xmi:id="_UtI5kLixEeaYU48ldTWPHw" businessElement="ProblemConcernCode" modelElement="_8pHBc7caEeaqD7G7AJYpYg" businessElementId="5e566e5b-f7f8-4458-8002-04dd59b3a1d6" modelElementPath="data.items.snomedCode" condition=""/>
+    <elements xmi:id="_bJEbMLixEeaYU48ldTWPHw" businessElement="ProblemConcernCode" modelElement="_8pHBcrcaEeaqD7G7AJYpYg" businessElementId="5e566e5b-f7f8-4458-8002-04dd59b3a1d6" modelElementPath="data.items.standardizedDescription" condition=""/>
+    <elements xmi:id="_mWt_YLixEeaYU48ldTWPHw" businessElement="ProblemConcernObservationSiteCode" modelElement="_8pHBercaEeaqD7G7AJYpYg" businessElementId="28c26ff2-ffb3-448f-aa51-1a904ed6caa5" modelElementPath="data.items.locationUid" condition="ROLLUP:code"/>
+    <elements xmi:id="_sJX6gLixEeaYU48ldTWPHw" businessElement="ProblemConcernObservationSiteCode" modelElement="_8pHBeLcaEeaqD7G7AJYpYg" businessElementId="28c26ff2-ffb3-448f-aa51-1a904ed6caa5" modelElementPath="data.items.locationName" condition="ROLLUP:displayName"/>
+    <elements xmi:id="_315MALixEeaYU48ldTWPHw" businessElement="ProblemConcernCode" modelElement="_PqUocLcbEeaqD7G7AJYpYg" businessElementId="5e566e5b-f7f8-4458-8002-04dd59b3a1d6" modelElementPath="data.items.codes" condition=""/>
+    <elements xmi:id="_xa5ZYM34Eea1VM2MOmZuRQ" businessElement="ProblemConcernId" modelElement="_8pHBb7caEeaqD7G7AJYpYg" businessElementId="c313e009-5743-4dcd-ba20-9aa262b2205d" modelElementPath="data.items.uid" condition=""/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
