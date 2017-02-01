@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
-  <uml:Model xmi:id="_KICUQOYxEeat0tMANlRreA" name="Allergies" URI="http://jsonDiscoverer/discovered/Discovered">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_KICUQOYxEeat0tMANlRreA" name="Allergies" URI="http://jsonDiscoverer/discovered/Discovered">
     <packagedElement xmi:type="uml:Class" xmi:id="_KICUQeYxEeat0tMANlRreA" name="OnsetDate">
       <ownedAttribute xmi:id="_KIC7UOYxEeat0tMANlRreA" name="start" visibility="public" isOrdered="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
@@ -126,12 +126,6 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KIC7hOYxEeat0tMANlRreA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_KIC7heYxEeat0tMANlRreA" name="reaction" type="_KIC7fOYxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_KIC7h-YxEeat0tMANlRreA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KIC7huYxEeat0tMANlRreA" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_KIC7h-YxEeat0tMANlRreA" memberEnd="_KIC7heYxEeat0tMANlRreA _KIC7iOYxEeat0tMANlRreA">
-      <ownedEnd xmi:id="_KIC7iOYxEeat0tMANlRreA" type="_KIC7fOYxEeat0tMANlRreA" association="_KIC7h-YxEeat0tMANlRreA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_KIC7ieYxEeat0tMANlRreA" name="DataDomain">
       <ownedAttribute xmi:id="_KIC7iuYxEeat0tMANlRreA" name="code" visibility="public" isOrdered="true">
@@ -240,7 +234,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_KIC7xOYxEeat0tMANlRreA" memberEnd="_KIC7nuYxEeat0tMANlRreA _KIC7xeYxEeat0tMANlRreA">
       <ownedEnd xmi:id="_KIC7xeYxEeat0tMANlRreA" type="_KIC7jeYxEeat0tMANlRreA" association="_KIC7xOYxEeat0tMANlRreA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_KIC7xuYxEeat0tMANlRreA" name="Discovered">
+    <packagedElement xmi:type="uml:Class" xmi:id="_KIC7xuYxEeat0tMANlRreA" name="Root">
       <ownedAttribute xmi:id="_KIC7x-YxEeat0tMANlRreA" name="statusList" type="_KIC7V-YxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_KIC7y-YxEeat0tMANlRreA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KIC7yOYxEeat0tMANlRreA" value="*"/>
       </ownedAttribute>
@@ -275,7 +269,7 @@
       </eAnnotations>
       <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
-  </uml:Model>
+  </uml:Package>
   <Ecore:EPackage xmi:id="_KIC71uYxEeat0tMANlRreA" base_Package="_KICUQOYxEeat0tMANlRreA" nsPrefix="discoD"/>
   <Ecore:EClass xmi:id="_KIC71-YxEeat0tMANlRreA" base_Class="_KICUQeYxEeat0tMANlRreA">
     <annotation>coverage totalFound='2'</annotation>
@@ -319,9 +313,6 @@
   <Ecore:EClass xmi:id="_KIDiZuYxEeat0tMANlRreA" base_Class="_KIC7fOYxEeat0tMANlRreA">
     <annotation>coverage totalFound='4'</annotation>
   </Ecore:EClass>
-  <Ecore:EReference xmi:id="_KIDiZ-YxEeat0tMANlRreA" base_Property="_KIC7heYxEeat0tMANlRreA">
-    <annotation>coverage totalFound='2' ratioTotalFound='0.5'</annotation>
-  </Ecore:EReference>
   <Ecore:EClass xmi:id="_KIDiaOYxEeat0tMANlRreA" base_Class="_KIC7ieYxEeat0tMANlRreA">
     <annotation>coverage totalFound='2'</annotation>
   </Ecore:EClass>
@@ -391,4 +382,14 @@
   <Ecore:EReference xmi:id="_KIEJdeYxEeat0tMANlRreA" base_Property="_KIC7zuYxEeat0tMANlRreA">
     <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
   </Ecore:EReference>
+  <MDMI:MDMIMapping xmi:id="_kHx_gOi9EeaH5NkzFj7Img" base_Class="_KIC7xuYxEeat0tMANlRreA">
+    <elements xmi:id="_kHx_gei9EeaH5NkzFj7Img" businessElement="AllergyConcernContainer" modelElement="_KIC70OYxEeat0tMANlRreA" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath="dataList.allergies"/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIDatatype xmi:id="_bIs78OjOEeacmL_vF_BoUQ" base_Class="_KIC7UuYxEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_dG2DoOjOEeacmL_vF_BoUQ" base_Class="_KIC7ieYxEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_gJkNwOjOEeacmL_vF_BoUQ" base_Class="_KIC7aeYxEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_iqui8OjOEeacmL_vF_BoUQ" base_Class="_KIC7fOYxEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_kN_sgOjOEeacmL_vF_BoUQ" base_Class="_KIC7YuYxEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_l9c38OjOEeacmL_vF_BoUQ" base_Class="_KIC7veYxEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_noT3QOjOEeacmL_vF_BoUQ" base_Class="_KIC7buYxEeat0tMANlRreA"/>
 </xmi:XMI>

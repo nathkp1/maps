@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="DES Transformation" default="default" xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+
+
+	<target name="default">
+
+		<antcall target="generateMDMI">
+			<param name="umlmodel" value="allergies.uml" />
+			<param name="mdmimodel" value="desallergies.mdmi" />
+			<param name="messageModel" value="Allergies" />
+		</antcall>
+
+		<antcall target="generateMDMI">
+			<param name="umlmodel" value="immunizations.uml" />
+			<param name="mdmimodel" value="desimmunizations.mdmi" />
+			<param name="messageModel" value="Immunizations" />
+		</antcall>
+
+		<antcall target="generateMDMI">
+			<param name="umlmodel" value="meds.uml" />
+			<param name="mdmimodel" value="desmeds.mdmi" />
+			<param name="messageModel" value="Medications" />
+		</antcall>
+
+		<antcall target="generateMDMI">
+			<param name="umlmodel" value="patient.uml" />
+			<param name="mdmimodel" value="despatient.mdmi" />
+			<param name="messageModel" value="Patient" />
+		</antcall>
+
+		<antcall target="generateMDMI">
+			<param name="umlmodel" value="problems.uml" />
+			<param name="mdmimodel" value="desproblems.mdmi" />
+			<param name="messageModel" value="Problems" />
+		</antcall>
+
+
+		<antcall target="generateMDMI">
+			<param name="umlmodel" value="vitals.uml" />
+			<param name="mdmimodel" value="desvitals.mdmi" />
+			<param name="messageModel" value="Vitals" />
+		</antcall>
+
+
+
+		<antcall target="exportMDMI">
+			<param name="mdmimodel" value="desallergies.mdmi" />
+			<param name="xmimodel" value="desallergies.xmi" />
+
+		</antcall>
+
+		<antcall target="exportMDMI">
+			<param name="mdmimodel" value="desimmunizations.mdmi" />
+			<param name="xmimodel" value="desimmunizations.xmi" />
+
+		</antcall>
+
+		<antcall target="exportMDMI">
+			<param name="mdmimodel" value="desmeds.mdmi" />
+			<param name="xmimodel" value="desmeds.xmi" />
+
+		</antcall>
+
+		<antcall target="exportMDMI">
+			<param name="mdmimodel" value="despatient.mdmi" />
+			<param name="xmimodel" value="despatient.xmi" />
+
+		</antcall>
+
+		<antcall target="exportMDMI">
+			<param name="mdmimodel" value="desproblems.mdmi" />
+			<param name="xmimodel" value="desproblems.xmi" />
+
+		</antcall>
+
+		<antcall target="exportMDMI">
+			<param name="mdmimodel" value="desvitals.mdmi" />
+			<param name="xmimodel" value="desvitals.xmi" />
+
+		</antcall>
+
+
+
+
+	</target>
+
+
+	<target name="generateMDMI">
+
+
+
+
+		<delete file="map/${mdmimodel}" />
+
+		<qvto:transformation uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/ehmp2mdmi.qvto">
+			<in uri="platform:/resource/DES/models/${umlmodel}" />
+			<out uri="platform:/resource/DES/map/${mdmimodel}" />
+			<trace uri="platform:/resource/DES/log/ehmpmeds.qvtotrace">
+
+			</trace>
+			<configProperty name="messageGroup" value="DES" />
+			<configProperty name="messageModel" value="${messageModel}" />
+		</qvto:transformation>
+
+
+
+	</target>
+
+	<target name="exportMDMI">
+
+		<delete file="map/${xmimodel}" />
+
+		<copy file="map/${mdmimodel}" tofile="map/${xmimodel}" />
+
+		<mdmiExport model="platform:/resource/DES/map/${xmimodel}" />
+
+		<replace file='map/${xmimodel}' token='&lt;relatedSemanticElement>' value='&lt;relatedSemanticElement xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/relatedSemanticElement>' value='" />' />	
+			<replace file='map/${xmimodel}' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/businessElement>' value='"  >&lt;/businessElement>' />
+			<replace file='map/${xmimodel}' token='&lt;semanticElement>' value='&lt;semanticElement xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/semanticElement>' value='" />' />	
+			<replace file='map/${xmimodel}' token='&lt;referenceDatatype>' value='&lt;referenceDatatype xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/referenceDatatype>' value='" />' />
+			<replace file='map/${xmimodel}' token='&lt;children>#' value='&lt;children xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/children>' value='" />' />
+			<replace file='map/${xmimodel}' token='&lt;datatype>#' value='&lt;datatype xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/datatype>' value='" />' />
+			<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:LeafSyntaxTranslator">#' value='&lt;syntaxNode xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:Bag">#' value='&lt;syntaxNode xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:Choice">#' value='&lt;syntaxNode xmi:idref="' />
+			<replace file='map/${xmimodel}' token='&lt;/syntaxNode>' value='" />' />
+			<replace file='map/${xmimodel}' token='xmi:idref="#' value='xmi:idref="' />
+
+																	</target>
+
+																</project>

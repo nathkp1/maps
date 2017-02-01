@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
-  <uml:Model xmi:id="_T2lAsOYyEeat0tMANlRreA" name="Problems" URI="http://jsonDiscoverer/discovered/Discovered">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_T2lAsOYyEeat0tMANlRreA" name="Problems" URI="http://jsonDiscoverer/discovered/Discovered">
     <packagedElement xmi:type="uml:Class" xmi:id="_T2lAseYyEeat0tMANlRreA" name="OnsetDate">
       <ownedAttribute xmi:id="_T2lAsuYyEeat0tMANlRreA" name="start" visibility="public" isOrdered="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
@@ -261,7 +261,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_T2lBNeYyEeat0tMANlRreA" memberEnd="_T2lBB-YyEeat0tMANlRreA _T2lBNuYyEeat0tMANlRreA">
       <ownedEnd xmi:id="_T2lBNuYyEeat0tMANlRreA" type="_T2lA5-YyEeat0tMANlRreA" association="_T2lBNeYyEeat0tMANlRreA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_T2lBN-YyEeat0tMANlRreA" name="Discovered">
+    <packagedElement xmi:type="uml:Class" xmi:id="_T2lBN-YyEeat0tMANlRreA" name="Root">
       <ownedAttribute xmi:id="_T2lBOOYyEeat0tMANlRreA" name="statusList" type="_T2lAtOYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_T2lBPOYyEeat0tMANlRreA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T2lBOeYyEeat0tMANlRreA" value="*"/>
       </ownedAttribute>
@@ -296,7 +296,7 @@
       </eAnnotations>
       <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
-  </uml:Model>
+  </uml:Package>
   <Ecore:EPackage xmi:id="_T2lBR-YyEeat0tMANlRreA" base_Package="_T2lAsOYyEeat0tMANlRreA" nsPrefix="discoD"/>
   <Ecore:EClass xmi:id="_T2lBSOYyEeat0tMANlRreA" base_Class="_T2lAseYyEeat0tMANlRreA">
     <annotation>coverage totalFound='2'</annotation>
@@ -421,4 +421,10 @@
   <Ecore:EReference xmi:id="_T2lnxuYyEeat0tMANlRreA" base_Property="_T2lBP-YyEeat0tMANlRreA">
     <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
   </Ecore:EReference>
+  <MDMI:MDMIDatatype xmi:id="_tvlsoOjQEeacmL_vF_BoUQ" base_Class="_T2lBJOYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_vWNsMOjQEeacmL_vF_BoUQ" base_Class="_T2lA2-YyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_xW_4MOjQEeacmL_vF_BoUQ" base_Class="_T2lAyOYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_z996cOjQEeacmL_vF_BoUQ" base_Class="_T2lAweYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_1q9AsOjQEeacmL_vF_BoUQ" base_Class="_T2lA3-YyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_2-JG4OjQEeacmL_vF_BoUQ" base_Class="_T2lA2OYyEeat0tMANlRreA"/>
 </xmi:XMI>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
-  <uml:Model xmi:id="_EOGP8OYyEeat0tMANlRreA" name="Patient" URI="http://jsonDiscoverer/discovered/Discovered">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_EOGP8OYyEeat0tMANlRreA" name="Patient" URI="http://jsonDiscoverer/discovered/Discovered">
     <packagedElement xmi:type="uml:Class" xmi:id="_EOGP8eYyEeat0tMANlRreA" name="StatusList">
       <ownedAttribute xmi:id="_EOGP8uYyEeat0tMANlRreA" name="partner" type="_EOGP9eYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGP-eYyEeat0tMANlRreA"/>
       <ownedAttribute xmi:id="_EOGP8-YyEeat0tMANlRreA" name="partnerStatus" visibility="public" isOrdered="true">
@@ -330,7 +330,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_EOG3NuYyEeat0tMANlRreA" memberEnd="_EOGQHOYyEeat0tMANlRreA _EOG3N-YyEeat0tMANlRreA">
       <ownedEnd xmi:id="_EOG3N-YyEeat0tMANlRreA" type="_EOGQA-YyEeat0tMANlRreA" association="_EOG3NuYyEeat0tMANlRreA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_EOG3OOYyEeat0tMANlRreA" name="Discovered">
+    <packagedElement xmi:type="uml:Class" xmi:id="_EOG3OOYyEeat0tMANlRreA" name="Root">
       <ownedAttribute xmi:id="_EOG3OeYyEeat0tMANlRreA" name="statusList" type="_EOGP8eYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3POYyEeat0tMANlRreA"/>
       <ownedAttribute xmi:id="_EOG3OuYyEeat0tMANlRreA" name="dataList" type="_EOG3PuYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3Q-YyEeat0tMANlRreA"/>
       <ownedAttribute xmi:id="_EOG3O-YyEeat0tMANlRreA" name="queryComplete" visibility="public" isOrdered="true">
@@ -363,7 +363,7 @@
       </eAnnotations>
       <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
-  </uml:Model>
+  </uml:Package>
   <Ecore:EPackage xmi:id="_EOG3R-YyEeat0tMANlRreA" base_Package="_EOGP8OYyEeat0tMANlRreA" nsPrefix="discoD"/>
   <Ecore:EClass xmi:id="_EOG3SOYyEeat0tMANlRreA" base_Class="_EOGP8eYyEeat0tMANlRreA">
     <annotation>coverage totalFound='2'</annotation>
@@ -512,4 +512,18 @@
   <Ecore:EReference xmi:id="_EOHeJOYyEeat0tMANlRreA" base_Property="_EOG3P-YyEeat0tMANlRreA">
     <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
   </Ecore:EReference>
+  <MDMI:MDMIDatatype xmi:id="_QaZ7UOjQEeacmL_vF_BoUQ" base_Class="_EOGQHeYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_Rnv4MOjQEeacmL_vF_BoUQ" base_Class="_EOGQJuYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_TTbW4OjQEeacmL_vF_BoUQ" base_Class="_EOG3KeYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_VhXOEOjQEeacmL_vF_BoUQ" base_Class="_EOG3IeYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_WweFgOjQEeacmL_vF_BoUQ" base_Class="_EOGQSOYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_YH39UOjQEeacmL_vF_BoUQ" base_Class="_EOGQL-YyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_aidJYOjQEeacmL_vF_BoUQ" base_Class="_EOGQUeYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_b0CtEOjQEeacmL_vF_BoUQ" base_Class="_EOGQWOYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_c80TAOjQEeacmL_vF_BoUQ" base_Class="_EOG3BOYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_eOQFsOjQEeacmL_vF_BoUQ" base_Class="_EOGP_uYyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_gQC-UOjQEeacmL_vF_BoUQ" base_Class="_EOGP--YyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_iD790OjQEeacmL_vF_BoUQ" base_Class="_EOGQP-YyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_j0QE4OjQEeacmL_vF_BoUQ" base_Class="_EOG3C-YyEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_nUyzcOjQEeacmL_vF_BoUQ" base_Class="_EOGQOeYyEeat0tMANlRreA"/>
 </xmi:XMI>
