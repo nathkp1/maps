@@ -57,6 +57,7 @@
       <ownedAttribute xmi:id="_EOGQCeYyEeat0tMANlRreA" name="fmp" visibility="public" isOrdered="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_EOGQGeYyEeat0tMANlRreA" name="recordId" type="_EOGP--YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3J-YyEeat0tMANlRreA"/>
       <ownedAttribute xmi:id="_EOGQCuYyEeat0tMANlRreA" name="maritalStatus" type="_EOGQSOYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOGQTeYyEeat0tMANlRreA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQC-YyEeat0tMANlRreA" value="*"/>
       </ownedAttribute>
@@ -78,7 +79,6 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_EOGQF-YyEeat0tMANlRreA" name="sponsor" type="_EOG3EuYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3G-YyEeat0tMANlRreA"/>
       <ownedAttribute xmi:id="_EOGQGOYyEeat0tMANlRreA" name="facility" type="_EOG3HeYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3JeYyEeat0tMANlRreA"/>
-      <ownedAttribute xmi:id="_EOGQGeYyEeat0tMANlRreA" name="recordId" type="_EOGP--YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3J-YyEeat0tMANlRreA"/>
       <ownedAttribute xmi:id="_EOGQGuYyEeat0tMANlRreA" name="dataDomain" type="_EOG3KeYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_EOG3LuYyEeat0tMANlRreA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EOGQG-YyEeat0tMANlRreA" value="*"/>
       </ownedAttribute>
@@ -526,4 +526,20 @@
   <MDMI:MDMIDatatype xmi:id="_iD790OjQEeacmL_vF_BoUQ" base_Class="_EOGQP-YyEeat0tMANlRreA"/>
   <MDMI:MDMIDatatype xmi:id="_j0QE4OjQEeacmL_vF_BoUQ" base_Class="_EOG3C-YyEeat0tMANlRreA"/>
   <MDMI:MDMIDatatype xmi:id="_nUyzcOjQEeacmL_vF_BoUQ" base_Class="_EOGQOeYyEeat0tMANlRreA"/>
+  <MDMI:MDMIMapping xmi:id="_XIYTIOloEeaRE4G1h3HldA" base_Class="_EOGQHeYyEeat0tMANlRreA">
+    <elements xmi:id="_XIdysOloEeaRE4G1h3HldA" businessElement="PatientHomeAddress" modelElement="_EOGQHeYyEeat0tMANlRreA" businessElementId="eef49a28-a96e-40a7-b328-981c5addd245" modelElementPath=""/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_aPkGgOloEeaRE4G1h3HldA" base_Class="_EOGQJuYyEeat0tMANlRreA">
+    <elements xmi:id="_aPkGgeloEeaRE4G1h3HldA" businessElement="PatientBirthDateTime" modelElement="_EOGQJuYyEeat0tMANlRreA" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath=""/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_z5kmkOloEeaRE4G1h3HldA" base_Class="_EOG3OOYyEeat0tMANlRreA">
+    <elements xmi:id="_z5l0sOloEeaRE4G1h3HldA" businessElement="PatientHomeAddress" modelElement="_EOGQJOYyEeat0tMANlRreA" businessElementId="eef49a28-a96e-40a7-b328-981c5addd245" modelElementPath="dataList.demographics.addresses" condition="type = &quot;H&quot;"/>
+    <elements xmi:id="_6KtT0OlwEeaRE4G1h3HldA" businessElement="PatientBirthDateTime" modelElement="_EOGQKOYyEeat0tMANlRreA" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="dataList.demographics.birthDate" condition=""/>
+    <elements xmi:id="_D69s8OlxEeaRE4G1h3HldA" businessElement="PatientMaritalStatusCode" modelElement="_EOGQTeYyEeat0tMANlRreA" businessElementId="6cf44ff0-2cfa-493b-98a6-44f35acd195c" modelElementPath="dataList.demographics.maritalStatus" condition=""/>
+    <elements xmi:id="_HcJ7wOlxEeaRE4G1h3HldA" businessElement="PatientCommonName" modelElement="_EOGQT-YyEeat0tMANlRreA" businessElementId="b8cff71f-9f24-48d4-a33c-69743c5cdf0a" modelElementPath="dataList.demographics.name" condition=""/>
+    <elements xmi:id="_K2n3gOlxEeaRE4G1h3HldA" businessElement="PatientID" modelElement="_EOG3AOYyEeat0tMANlRreA" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="dataList.demographics.patientId" condition=""/>
+    <elements xmi:id="_O9rMcOlxEeaRE4G1h3HldA" businessElement="PatientHomePhoneContact" modelElement="_EOG3AuYyEeat0tMANlRreA" businessElementId="cfb8b147-38a5-4272-87c6-f1fa4cb97457" modelElementPath="dataList.demographics.telecoms" condition="useType = &quot;HP&quot;"/>
+    <elements xmi:id="_SKvlYOlxEeaRE4G1h3HldA" businessElement="PatientRaceCode" modelElement="_EOG3CeYyEeat0tMANlRreA" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="dataList.demographics.race" condition=""/>
+    <elements xmi:id="_VAgRkOlxEeaRE4G1h3HldA" businessElement="PatientAdministrationGenderCode" modelElement="_EOG3EOYyEeat0tMANlRreA" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="dataList.demographics.sex" condition=""/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
