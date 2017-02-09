@@ -1595,44 +1595,12 @@ This information should be included in an Immunization Activity when available. 
     <elements xmi:id="_m2eJ4PaHEeWR3O8RhFiEKg" businessElement="ImmunizationAdministeredDrugVehicleCode" businessElementId="24a096e4-7598-4d8d-a748-5a5ed18b733b" modelElementPath="immunization.drugVehicle.playingEntity.code" condition="@moodCode = &quot;EVN&quot; ">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
     </elements>
-    <elements xmi:id="_d832gPaIEeWR3O8RhFiEKg" businessElement="ImmunizationsRefused" modelElement="_2L89wBSVEeGGzu7fmW9pXw" businessElementId="8adfac96-3e66-47e8-b30e-7a887539915a" modelElementPath="immunization" condition="@moodCode = &quot;EVN&quot; "/>
     <elements xmi:id="_3i_VEPaIEeWR3O8RhFiEKg" businessElement="ImmunizationRefusalReason" modelElement="_DruzARVOEeGbmN_W114JUw" businessElementId="5f3f7f86-618a-45d3-a87e-5bec8984ba5e" modelElementPath="immunization.immunizationRefusalReason.code" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;"/>
     <elements xmi:id="_KWwxcA4UEeainK9fzwK_ug" businessElement="ImmunizationSectionTitle" modelElement="_2L-y8BSVEeGGzu7fmW9pXw" businessElementId="af9eee71-4aa0-466d-bfc5-506da513e04f" modelElementPath="title" condition=""/>
     <elements xmi:id="_NjqLQA4UEeainK9fzwK_ug" businessElement="ImmunizationSectionText" modelElement="_2L_aABSVEeGGzu7fmW9pXw" businessElementId="bbd982c0-34dc-4f50-926f-551853736d37" modelElementPath="text" condition=""/>
     <elements xmi:id="_za7rEEj8EeaNzqE6hZ7e_g" businessElement="Immunization" modelElement="_2L89wBSVEeGGzu7fmW9pXw" businessElementId="7af1b775-e58c-4067-b971-3c743533b308" modelElementPath="immunization" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_U2N5oEj-EeaNzqE6hZ7e_g" businessElement="ImmunizationDoseQuantity" modelElement="_2MHV1BSVEeGGzu7fmW9pXw" businessElementId="05682b48-bebd-4f36-b03f-117ffca5d799" modelElementPath="xxximmunization.doseQuantity" condition=""/>
     <elements xmi:id="_9RqvkEkQEeaaevjM2ZsaYQ" businessElement="ImmunizationAdministeredDrugVehicleQuantity" businessElementId="81c5c16f-4b8f-4870-a098-43ca3ae7224a" modelElementPath="immunization.drugVehicle.playingEntity.quantity" condition="@moodCode = &quot;EVN&quot;">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_LhvikErhEd6FXKclYGEDCw"/>
     </elements>
-    <elements xmi:id="_MsVt0EkREeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedNotes" modelElement="_b0iNUBqkEeGo461UQq-B1g" businessElementId="52f0679d-f068-4fa8-b35e-8b2931f5a094" modelElementPath="immunization.text" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;"/>
-    <elements xmi:id="_m_-ZsEkREeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedDate" modelElement="_2MEShRSVEeGGzu7fmW9pXw" businessElementId="75e9ee9f-c10a-4c62-872e-b817661f5ea8" modelElementPath="immunization.effectiveTime" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;"/>
-    <elements xmi:id="_qCiy0EkREeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedSeriesNumber" modelElement="_s20CkBqkEeGo461UQq-B1g" businessElementId="ebd318b8-e937-46cd-b211-845f4d8b4ce4" modelElementPath="immunization.repeatNumber" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;"/>
-    <elements xmi:id="_sSbx0EkREeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedRouteCode" modelElement="_2ME5kRSVEeGGzu7fmW9pXw" businessElementId="a3b0450f-33b5-4efb-a9b2-295b94951148" modelElementPath="immunization.routeCode" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;"/>
-    <elements xmi:id="_u2ZjYEkREeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedApproachSite" modelElement="_2MHV0BSVEeGGzu7fmW9pXw" businessElementId="5b15701b-e8ea-405e-ac99-15a88e6251a0" modelElementPath="immunization.approachSiteCode" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;"/>
-    <elements xmi:id="_80TosEkREeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedAdminUnitCode" modelElement="_ESwTIBqmEeGo461UQq-B1g" businessElementId="2e733dce-51b7-45ea-91d1-25bf3b6cae5b" modelElementPath="immunization.administrationUnitCode" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;"/>
-    <elements xmi:id="_HMin0EkSEeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedManufacturerName" businessElementId="5ba1ccd8-81be-4226-a802-b5c514e7410c" modelElementPath="immunization.consumable.immunizationMedicationInformation.manufacturerOrganization.name" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_OJ9F4EkSEeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedMedicationCode" modelElement="_xgWAcEX8EeG6e5lG0YsSyQ" businessElementId="ab246c37-bc86-437a-b377-15d7274583c4" modelElementPath="immunization.consumable.immunizationMedicationInformation.manufacturedMaterial.code" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;"/>
-    <elements xmi:id="_S4ht0EkSEeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedMedicationCode" modelElement="_xgWAcEX8EeG6e5lG0YsSyQ" businessElementId="ab246c37-bc86-437a-b377-15d7274583c4" modelElementPath="immunization.consumable.immunizationMedicationInformation.manufacturedMaterial.code" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;"/>
-    <elements xmi:id="_Y6TDAEkSEeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedEntityAddress" businessElementId="09c3383c-d60f-4f2b-be34-6c406e40c637" modelElementPath="immunization.performer.assignedEntity.addr" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_eai_gEkSEeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedEntityBOrganizationPhone" businessElementId="a0ee4ae0-7fbf-4ac5-9598-09c79e425505" modelElementPath="immunization.performer.assignedEntity.telecom" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_il93EEkSEeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedEntityId" businessElementId="6170ed26-52e5-444a-9cf5-a87ad91de8e3" modelElementPath="immunization.performer.assignedEntity.id" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_nYB34EkSEeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedPerformerName" businessElementId="c82b91c1-9229-44fc-870c-3914d90098cf" modelElementPath="immunization.performer.assignedEntity.assignedPerson.name" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_wGjuQEkSEeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedDrugVehicleCode" businessElementId="8408f68d-c4a2-405b-a171-d3a86693913a" modelElementPath="immunization.drugVehicle.playingEntity.code" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_y8mHQEkSEeaaevjM2ZsaYQ" businessElement="ImmunizationRefusedDrugVehicleQuantity" businessElementId="3faff311-2053-4a9d-99f6-7b9b656593ce" modelElementPath="immunization.drugVehicle.playingEntity.quantity" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_LhvikErhEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_J-k1IEkTEeaJb5zvgbG3Dw" businessElement="ImmunizationRefusedDoseQuantity" modelElement="_2MHV1BSVEeGGzu7fmW9pXw" businessElementId="cadc51e3-62bf-4d0b-8213-d0ebcda72837" modelElementPath="immunization.doseQuantity" condition="@moodCode = &quot;EVN&quot; and negativeIND = &quot;TRUE&quot;"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>

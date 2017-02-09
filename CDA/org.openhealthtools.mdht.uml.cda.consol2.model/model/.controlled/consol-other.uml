@@ -3475,16 +3475,6 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_zd_d4ME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemID" businessElementId="8d9f9cfe-f865-4c97-a67b-5ff15b16a9c6" modelElementPath="cognitiveStatusProblemObservation.id" condition="(not(@negationIND) or negationIND = &quot;false&quot;) ">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueSuZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_Wz-ekME9EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveNotAProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="10b6c301-2ab1-461e-87da-aa1c8a72a603" modelElementPath="cognitiveStatusProblemObservation" condition="(not(@negationIND) or negationIND = &quot;false&quot;) "/>
-    <elements xmi:id="_e1A80ME9EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveNotAProblemId" businessElementId="a3af6e96-5677-4d3c-b825-19d7a7765a26" modelElementPath="cognitiveStatusProblemObservation.id" condition="@negationInd = &quot;true&quot;">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueSuZcEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_nEwlcME9EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveNotAProblemText" businessElementId="8936cec4-2a7a-4a4d-a7b5-1a22fa5a5bcf" modelElementPath="cognitiveStatusProblemObservation.text" condition="@negationInd = &quot;true&quot;">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PQOZcEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_Xr1MQMFAEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveNotAProblemStartDate" businessElementId="39c38f53-0d76-4b80-82c6-672cf62c3e22" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.low" condition="@negationInd = &quot;true&quot;">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
-    </elements>
     <elements xmi:id="_bOhP4MFAEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemEndDate" businessElementId="edc05113-203e-409f-8e5f-14ae95b89956" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.⁬high" condition="(not(@negationIND) or negationIND = &quot;false&quot;) ">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
     </elements>
@@ -3504,12 +3494,6 @@ Instructions are information or directions to the patient. Use the Instructions 
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_nlsDoEofEd6c3qsAxlFHaQ"/>
     </elements>
     <elements xmi:id="_NXdSwMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusProblemObservationText" modelElement="_5lm5Q-bjEeGINOJ_SD9_dA" businessElementId="4db1369c-dfc2-48a6-84b1-21543dd98c2c" modelElementPath="functionalStatusProblemObservation.text" condition="(not(@negationIND) or negationIND = &quot;false&quot;) "/>
-    <elements xmi:id="_ziqCgMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationId" modelElement="_5lm5MebjEeGINOJ_SD9_dA" businessElementId="899b9ded-2f4f-4dc2-80cd-2d277831acb5" modelElementPath="functionalStatusProblemObservation.id" condition="@negationInd = &quot;true&quot;"/>
-    <elements xmi:id="_3IoqsMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationText" modelElement="_5lm5Q-bjEeGINOJ_SD9_dA" businessElementId="dd4d7181-6b06-4312-aacd-fe8994e9f3d4" modelElementPath="functionalStatusProblemObservation.text" condition="@negationInd = &quot;true&quot;"/>
-    <elements xmi:id="_5m-VYMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationStartDate" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="b48ed957-196b-4170-824c-fd73edd85876" modelElementPath="xxxfunctionalStatusProblemObservation.effectiveTime.low" condition="@negationInd = &quot;true&quot;"/>
-    <elements xmi:id="_7cGrAMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationEndDate" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="ebc0bac1-da5c-4743-85cf-5c0ff7c57f4f" modelElementPath="xxxfunctionalStatusProblemObservation.effectiveTime.high" condition="@negationInd = &quot;true&quot;"/>
-    <elements xmi:id="_9XFxAMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationValue" modelElement="_5lm5R-bjEeGINOJ_SD9_dA" businessElementId="5d6f8330-8a73-41ea-8edc-145ce13f9eb6" modelElementPath="functionalStatusProblemObservation.value" condition="@negationInd = &quot;true&quot;"/>
-    <elements xmi:id="_-_eEEMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationMethodCode" modelElement="_5lm5NebjEeGINOJ_SD9_dA" businessElementId="50a44c50-b723-4990-9c48-650e32108984" modelElementPath="functionalStatusProblemObservation.methodCode" condition="@negationInd = &quot;true&quot;"/>
     <elements xmi:id="_CjwYQMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationId" businessElementId="e5013c68-aae5-48a1-afd2-f3f6ef38ab4f" modelElementPath="cognitiveStatusProblemObservation.id" condition="(not(@negationIND) or negationIND = &quot;false&quot;) ">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueSuZcEeGINOJ_SD9_dA"/>
     </elements>
@@ -3529,25 +3513,6 @@ Instructions are information or directions to the patient. Use the Instructions 
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PROZcEeGINOJ_SD9_dA"/>
     </elements>
     <elements xmi:id="_DnYjAMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="0a9229a4-8d9b-423b-b98d-05974304bc29" modelElementPath="cognitiveStatusProblemObservation" condition="(not(@negationIND) or negationIND = &quot;false&quot;) "/>
-    <elements xmi:id="_PLgtgMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="10b6c301-2ab1-461e-87da-aa1c8a72a603" modelElementPath="cognitiveStatusProblemObservation" condition="@negationInd = &quot;true&quot;"/>
-    <elements xmi:id="_zLzr8MUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationId" businessElementId="c552c008-e9d7-4df0-9fbc-e249b657339e" modelElementPath="cognitiveStatusProblemObservation.id" condition="@negationInd = &quot;true&quot;">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueSuZcEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_1k5DMMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationText" businessElementId="90bbbc0e-54ad-4ccb-9a68-73c019c43480" modelElementPath="cognitiveStatusProblemObservation.text" condition="@negationInd = &quot;true&quot;">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PQOZcEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_3kVycMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationStartTime" businessElementId="98cb9193-4c22-4d53-9429-6e7b12a180f6" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.low" condition="@negationInd = &quot;true&quot;">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_6JDK4MUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationEndTime" businessElementId="91dbb12a-9cbd-4454-92ce-40259e634802" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.high" condition="@negationInd = &quot;true&quot;">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_8DmzEMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationMethodCode" businessElementId="27df59b4-754b-4edf-9b6b-9798f25ff228" modelElementPath="cognitiveStatusProblemObservation.methodCode" condition="@negationInd = &quot;true&quot;">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueTuZcEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_91rNoMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationValue" businessElementId="e8fde44a-be02-417c-b2ff-caf3139fd41b" modelElementPath="cognitiveStatusProblemObservation.value" condition="@negationInd = &quot;true&quot;">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PROZcEeGINOJ_SD9_dA"/>
-    </elements>
     <elements xmi:id="_a0mv4OYzEeW5Oax7LpOkcw" businessElement="FunctionalStatusResultsObservationEffectiveTime" modelElement="_nm5IhebxEeGINOJ_SD9_dA" businessElementId="a3b0717c-11c8-4822-94a9-6e0d967bce70" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.effectiveTime" condition=""/>
     <elements xmi:id="_BVSTYHCMEeaDT6eyVw56Qg" businessElement="FunctionalStatusResultsObservationValueCoded" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="71415e1f-33a7-46d5-bdb7-e8303cfb4442" modelElementPath="functionalStatusResultObservation.value.cd" condition=""/>
     <elements xmi:id="_F_c8cHCMEeaDT6eyVw56Qg" businessElement="FunctionalStatusResultsObservationValueQuantity" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="83248efa-9390-414c-bda3-0a5d45049040" modelElementPath="functionalStatusResultObservation.value.pq" condition=""/>
