@@ -523,8 +523,8 @@
     <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
   </Ecore:EReference>
   <MDMI:MDMIDatatype xmi:id="_5-ItIOjQEeacmL_vF_BoUQ" base_Class="_6aImh-YyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
-  <MDMI:MDMIDatatype xmi:id="_7IOhsOjQEeacmL_vF_BoUQ" base_Class="_6aImJeYyEeat0tMANlRreA" mdmiDatatype="InstanceIdentifier"/>
-  <MDMI:MDMIDatatype xmi:id="_8R4RYOjQEeacmL_vF_BoUQ" base_Class="_6aImnOYyEeat0tMANlRreA" mdmiDatatype="InstanceIdentifier"/>
+  <MDMI:MDMIDatatype xmi:id="_7IOhsOjQEeacmL_vF_BoUQ" base_Class="_6aImJeYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_8R4RYOjQEeacmL_vF_BoUQ" base_Class="_6aImnOYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
   <MDMI:MDMIDatatype xmi:id="_-Vd5wOjQEeacmL_vF_BoUQ" base_Class="_6aImNOYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
   <MDMI:MDMIDatatype xmi:id="__df40OjQEeacmL_vF_BoUQ" base_Class="_6aImQuYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
   <MDMI:MDMIDatatype xmi:id="_A4OxcOjREeacmL_vF_BoUQ" base_Class="_6aImO-YyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
@@ -532,9 +532,16 @@
     <elements xmi:id="_Y9WIgembEeaRE4G1h3HldA" businessElement="VitalSignResultContainer" modelElement="_6aImtuYyEeat0tMANlRreA" businessElementId="e6195bbe-badf-4ff2-8609-a01dffade5ae" modelElementPath="dataList.vitals.results"/>
     <elements xmi:id="_bb7q0OmbEeaRE4G1h3HldA" businessElement="VitalSignResultID" modelElement="_6aImG-YyEeat0tMANlRreA" businessElementId="33891793-d4c1-44e6-b7ed-26da889b0b48" modelElementPath="dataList.vitals.results.uniqueId"/>
     <elements xmi:id="_fPmwwOmbEeaRE4G1h3HldA" businessElement="VitalSignResultAuthorPersonName" modelElement="_6aImKuYyEeat0tMANlRreA" businessElementId="68f1ae15-f341-426c-963a-4aeaf154fab2" modelElementPath="dataList.vitals.results.enteredBy"/>
-    <elements xmi:id="_or66MOmbEeaRE4G1h3HldA" businessElement="VitalSignResultStartDateTime" modelElement="_6aImWuYyEeat0tMANlRreA" businessElementId="a411cc47-098b-408b-9466-210001f6112b" modelElementPath="dataList.vitals.results.startTime"/>
     <elements xmi:id="_uatB8OmbEeaRE4G1h3HldA" businessElement="VitalSignOrganizerContainer" modelElement="_6aImwuYyEeat0tMANlRreA" businessElementId="7ae54db7-4e6c-4350-9e00-226a4c2f7d9a" modelElementPath="dataList.vitals"/>
-    <elements xmi:id="_zAe6QOmbEeaRE4G1h3HldA" businessElement="AllergyConcernID" modelElement="_6aImn-YyEeat0tMANlRreA" businessElementId="c48d4e8b-fde6-455f-895a-f47f180d6e60" modelElementPath="dataList.vitals.recordId"/>
+    <elements xmi:id="_Mj3fkO8bEeaeKZa00d6aGg" businessElement="VitalSignResultTypeCode" modelElement="_6aImY-YyEeat0tMANlRreA" businessElementId="1b8d3c96-5161-4ce2-a8a6-1a694febef6f" modelElementPath="dataList.vitals.results.test.type"/>
+    <elements xmi:id="_RE-6UO8bEeaeKZa00d6aGg" businessElement="VitalSignResultValueCode" modelElement="_6aImZ-YyEeat0tMANlRreA" businessElementId="2fe9f148-7179-451c-ad5f-502cd2169d91" modelElementPath="dataList.vitals.results.test.value"/>
+    <elements xmi:id="_U2xJ4O8bEeaeKZa00d6aGg" businessElement="VitalSignResultUnitMeasure" modelElement="_6aImZeYyEeat0tMANlRreA" businessElementId="2b45bfcd-b0d0-49c6-b8a5-f376297c8e36" modelElementPath="dataList.vitals.results.test.units"/>
+    <elements xmi:id="_F6ka4O8cEeaeKZa00d6aGg" businessElement="VitalSignOrganizerID" modelElement="_6aImn-YyEeat0tMANlRreA" businessElementId="f224b8aa-6871-4bf4-a697-dfb47526ab6f" modelElementPath="dataList.vitals.recordId"/>
+    <elements xmi:id="_2uqmgO8dEeahs72TE3Go3g" businessElement="VitalSignOrganizerNotes" modelElement="_6aImheYyEeat0tMANlRreA" businessElementId="b62700a5-cf94-4d15-a20e-bd5d4269e061" modelElementPath="dataList.vitals.comment"/>
+    <elements xmi:id="_6oBdsO8dEeahs72TE3Go3g" businessElement="VitalSignOrganizerDataEntererPerson" modelElement="_6aImIuYyEeat0tMANlRreA" businessElementId="33202b18-dc05-4425-8f0f-ca08ed5f941d" modelElementPath="dataList.vitals.enteredBy.name"/>
+    <elements xmi:id="_-fA9YO8dEeahs72TE3Go3g" businessElement="VitalSignOrganizerRecordedStartDate" modelElement="_6aImkOYyEeat0tMANlRreA" businessElementId="5e2f62de-df7a-4af3-935b-34f0af5dcc9d" modelElementPath="dataList.vitals.enteredDate.start"/>
+    <elements xmi:id="_B6zu0O8eEeahs72TE3Go3g" businessElement="VitalSignOrganizerEndTime" modelElement="_6aImkeYyEeat0tMANlRreA" businessElementId="a3989074-0c96-48d3-bb88-047aa13e97b2" modelElementPath="dataList.vitals.enteredDate.end"/>
+    <elements xmi:id="_yY1ZQO8eEeahs72TE3Go3g" businessElement="VitalSignResultStartDateTime" modelElement="_6aImWOYyEeat0tMANlRreA" businessElementId="a411cc47-098b-408b-9466-210001f6112b" modelElementPath="dataList.vitals.results.startTime.start"/>
+    <elements xmi:id="_2em70O8eEeahs72TE3Go3g" businessElement="VitalSignResultEndDateTime" modelElement="_6aImWeYyEeat0tMANlRreA" businessElementId="00401f6a-6a4e-4f72-9679-f4873bda1b6f" modelElementPath="dataList.vitals.results.startTime.end"/>
   </MDMI:MDMIMapping>
-  <MDMI:MDMIDatatype xmi:id="_ZfNZ0O8JEeazs4k6K5VLIQ" base_Class="_6aImUOYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
 </xmi:XMI>

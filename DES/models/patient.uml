@@ -512,7 +512,21 @@
   <Ecore:EReference xmi:id="_EOHeJOYyEeat0tMANlRreA" base_Property="_EOG3P-YyEeat0tMANlRreA">
     <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
   </Ecore:EReference>
-     <MDMI:MDMIMapping xmi:id="_XIYTIOloEeaRE4G1h3HldA" base_Class="_EOGQHeYyEeat0tMANlRreA">
+  <MDMI:MDMIDatatype xmi:id="_QaZ7UOjQEeacmL_vF_BoUQ" base_Class="_EOGQHeYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_Rnv4MOjQEeacmL_vF_BoUQ" base_Class="_EOGQJuYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_TTbW4OjQEeacmL_vF_BoUQ" base_Class="_EOG3KeYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_VhXOEOjQEeacmL_vF_BoUQ" base_Class="_EOG3IeYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_WweFgOjQEeacmL_vF_BoUQ" base_Class="_EOGQSOYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_YH39UOjQEeacmL_vF_BoUQ" base_Class="_EOGQL-YyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_aidJYOjQEeacmL_vF_BoUQ" base_Class="_EOGQUeYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_b0CtEOjQEeacmL_vF_BoUQ" base_Class="_EOGQWOYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_c80TAOjQEeacmL_vF_BoUQ" base_Class="_EOG3BOYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_eOQFsOjQEeacmL_vF_BoUQ" base_Class="_EOGP_uYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_gQC-UOjQEeacmL_vF_BoUQ" base_Class="_EOGP--YyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_iD790OjQEeacmL_vF_BoUQ" base_Class="_EOGQP-YyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_j0QE4OjQEeacmL_vF_BoUQ" base_Class="_EOG3C-YyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_nUyzcOjQEeacmL_vF_BoUQ" base_Class="_EOGQOeYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIMapping xmi:id="_XIYTIOloEeaRE4G1h3HldA" base_Class="_EOGQHeYyEeat0tMANlRreA">
     <elements xmi:id="_XIdysOloEeaRE4G1h3HldA" businessElement="PatientHomeAddress" modelElement="_EOGQHeYyEeat0tMANlRreA" businessElementId="eef49a28-a96e-40a7-b328-981c5addd245" modelElementPath=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_aPkGgOloEeaRE4G1h3HldA" base_Class="_EOGQJuYyEeat0tMANlRreA">
@@ -527,28 +541,9 @@
     <elements xmi:id="_O9rMcOlxEeaRE4G1h3HldA" businessElement="PatientHomePhoneContact" modelElement="_EOG3AuYyEeat0tMANlRreA" businessElementId="cfb8b147-38a5-4272-87c6-f1fa4cb97457" modelElementPath="dataList.demographics.telecoms" condition="useType = &quot;HP&quot;"/>
     <elements xmi:id="_SKvlYOlxEeaRE4G1h3HldA" businessElement="PatientRaceCode" modelElement="_EOG3CeYyEeat0tMANlRreA" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="dataList.demographics.race" condition=""/>
     <elements xmi:id="_VAgRkOlxEeaRE4G1h3HldA" businessElement="PatientAdministrationGenderCode" modelElement="_EOG3EOYyEeat0tMANlRreA" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="dataList.demographics.sex" condition=""/>
+    <elements xmi:id="_TIFDMO8KEeacr70nhspnHg" businessElement="PatientID" modelElement="_EOG3J-YyEeat0tMANlRreA" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="dataList.demographics.recordId"/>
+    <elements xmi:id="_Y9msIO8KEeacr70nhspnHg" businessElement="PatientEmergencyContactName" modelElement="_EOGQN-YyEeat0tMANlRreA" businessElementId="927af745-0147-48fc-8217-26ab96c0f5e5" modelElementPath="dataList.demographics.emergencyContacts.name"/>
+    <elements xmi:id="_cFcm0O8KEeacr70nhspnHg" businessElement="PatientEmergencyContactHomePhone" modelElement="_EOGQPeYyEeat0tMANlRreA" businessElementId="45036076-f536-4e6e-8b1e-dfcfa723c54b" modelElementPath="dataList.demographics.emergencyContacts.telecoms"/>
+    <elements xmi:id="_gGqZgO8KEeacr70nhspnHg" businessElement="PatientEmergencyContactPersonalRelational" modelElement="_EOGQROYyEeat0tMANlRreA" businessElementId="95746a66-f3cb-4f8c-8154-8586a675df87" modelElementPath="dataList.demographics.emergencyContacts.relationship"/>
   </MDMI:MDMIMapping>
-  
-  
-  
-  
-  
-  
-    <MDMI:MDMIDatatype xmi:id="_QaZ7UOjQEeacmL_vF_BoUQ" base_Class="_EOGQHeYyEeat0tMANlRreA" mdmiDatatype="Address"/>
-  <MDMI:MDMIDatatype xmi:id="_Rnv4MOjQEeacmL_vF_BoUQ" base_Class="_EOGQJuYyEeat0tMANlRreA" mdmiDatatype="DateTime"/>
-  <MDMI:MDMIDatatype xmi:id="_TTbW4OjQEeacmL_vF_BoUQ" base_Class="_EOG3KeYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
-  <MDMI:MDMIDatatype xmi:id="_VhXOEOjQEeacmL_vF_BoUQ" base_Class="_EOG3IeYyEeat0tMANlRreA" mdmiDatatype="InstanceIdentifier"/>
-  <MDMI:MDMIDatatype xmi:id="_WweFgOjQEeacmL_vF_BoUQ" base_Class="_EOGQSOYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
-  <MDMI:MDMIDatatype xmi:id="_YH39UOjQEeacmL_vF_BoUQ" base_Class="_EOGQL-YyEeat0tMANlRreA" mdmiDatatype="PersonName"/>
-  <MDMI:MDMIDatatype xmi:id="_aidJYOjQEeacmL_vF_BoUQ" base_Class="_EOGQUeYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
-  <MDMI:MDMIDatatype xmi:id="_b0CtEOjQEeacmL_vF_BoUQ" base_Class="_EOGQWOYyEeat0tMANlRreA" mdmiDatatype="InstanceIdentifier"/>
-  <MDMI:MDMIDatatype xmi:id="_c80TAOjQEeacmL_vF_BoUQ" base_Class="_EOG3BOYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
-  <MDMI:MDMIDatatype xmi:id="_eOQFsOjQEeacmL_vF_BoUQ" base_Class="_EOGP_uYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
-  <MDMI:MDMIDatatype xmi:id="_gQC-UOjQEeacmL_vF_BoUQ" base_Class="_EOGP--YyEeat0tMANlRreA" mdmiDatatype="InstanceIdentifier"/>
-  <MDMI:MDMIDatatype xmi:id="_iD790OjQEeacmL_vF_BoUQ" base_Class="_EOGQP-YyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
-  <MDMI:MDMIDatatype xmi:id="_j0QE4OjQEeacmL_vF_BoUQ" base_Class="_EOG3C-YyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
-  <MDMI:MDMIDatatype xmi:id="_nUyzcOjQEeacmL_vF_BoUQ" base_Class="_EOGQOeYyEeat0tMANlRreA" mdmiDatatype="Telecom"/>
-  
-  <MDMI:MDMIDatatype xmi:id="_82ySwOyVEea4F4XN_mByoA" base_Class="_EOGP9eYyEeat0tMANlRreA" mdmiDatatype="InstanceIdentifier"/>
-  
 </xmi:XMI>
