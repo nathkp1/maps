@@ -114,9 +114,6 @@
       <ownedAttribute xmi:id="_kzmYKeYxEeat0tMANlRreA" name="lotNumber" visibility="public" isOrdered="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_kzmYNOYxEeat0tMANlRreA" name="siteOfAdministration" type="_kzmYeeYxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_kzmYfOYxEeat0tMANlRreA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kzmYNeYxEeat0tMANlRreA" value="*"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_kzmYKuYxEeat0tMANlRreA" name="manufacturer" type="_kzmYU-YxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_kzmYWOYxEeat0tMANlRreA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kzmYK-YxEeat0tMANlRreA" value="*"/>
       </ownedAttribute>
@@ -134,6 +131,9 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_kzmYM-YxEeat0tMANlRreA" name="seriesInfo" visibility="public" isOrdered="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_kzmYNOYxEeat0tMANlRreA" name="siteOfAdministration" type="_kzmYeeYxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_kzmYfOYxEeat0tMANlRreA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kzmYNeYxEeat0tMANlRreA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kzmYNuYxEeat0tMANlRreA" name="vaccine" type="_kzmYGeYxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_kzmYfuYxEeat0tMANlRreA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kzmYN-YxEeat0tMANlRreA" value="*"/>
@@ -467,17 +467,17 @@
   <Ecore:EReference xmi:id="_kzoNNOYxEeat0tMANlRreA" base_Property="_kzmYkOYxEeat0tMANlRreA">
     <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
   </Ecore:EReference>
-  <MDMI:MDMIDatatype xmi:id="_jj2G0OjPEeacmL_vF_BoUQ" base_Class="_kzmYHuYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_p9a4AOjPEeacmL_vF_BoUQ" base_Class="_kzmYE-YxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_sHdGoOjPEeacmL_vF_BoUQ" base_Class="_kzmYU-YxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_uPqJQOjPEeacmL_vF_BoUQ" base_Class="_kzmYDOYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_xJIQwOjPEeacmL_vF_BoUQ" base_Class="_kzmX8eYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_zZ7OsOjPEeacmL_vF_BoUQ" base_Class="_kzmYcuYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_0spa0OjPEeacmL_vF_BoUQ" base_Class="_kzmYeeYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_2U384OjPEeacmL_vF_BoUQ" base_Class="_kzmYZ-YxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_4DuEUOjPEeacmL_vF_BoUQ" base_Class="_kzmYTOYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_5B5j0OjPEeacmL_vF_BoUQ" base_Class="_kzmYGeYxEeat0tMANlRreA"/>
-  <MDMI:MDMIMapping xmi:id="_TwjlcOmZEeaRE4G1h3HldA" base_Class="_kzmYiOYxEeat0tMANlRreA">
+  <MDMI:MDMIDatatype xmi:id="_jj2G0OjPEeacmL_vF_BoUQ" base_Class="_kzmYHuYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_p9a4AOjPEeacmL_vF_BoUQ" base_Class="_kzmYE-YxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_sHdGoOjPEeacmL_vF_BoUQ" base_Class="_kzmYU-YxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_uPqJQOjPEeacmL_vF_BoUQ" base_Class="_kzmYDOYxEeat0tMANlRreA" mdmiDatatype="CodedElement" />
+  <MDMI:MDMIDatatype xmi:id="_xJIQwOjPEeacmL_vF_BoUQ" base_Class="_kzmX8eYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_zZ7OsOjPEeacmL_vF_BoUQ" base_Class="_kzmYcuYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_0spa0OjPEeacmL_vF_BoUQ" base_Class="_kzmYeeYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_2U384OjPEeacmL_vF_BoUQ" base_Class="_kzmYZ-YxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_4DuEUOjPEeacmL_vF_BoUQ" base_Class="_kzmYTOYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_5B5j0OjPEeacmL_vF_BoUQ" base_Class="_kzmYGeYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+   <MDMI:MDMIMapping xmi:id="_TwjlcOmZEeaRE4G1h3HldA" base_Class="_kzmYiOYxEeat0tMANlRreA">
     <elements xmi:id="_TwkMgOmZEeaRE4G1h3HldA" businessElement="ImmunizationAdministeredContainer" modelElement="_kzmYiOYxEeat0tMANlRreA" businessElementId="7af1b775-e58c-4067-b971-3c743533b308" modelElementPath=""/>
     <elements xmi:id="_XUZfoOmZEeaRE4G1h3HldA" businessElement="ImmunizationAdministeredLotNumber" modelElement="_kzmYKeYxEeat0tMANlRreA" businessElementId="008bb3da-b5b5-4344-bdb0-e36a0a76269b" modelElementPath="dataList.immunizations.lotNumber"/>
     <elements xmi:id="_jfV1cOo8EeaDNOPEaF2U2g" businessElement="ImmunizationRefusedIndicatorFlag" modelElement="_kzmYLOYxEeat0tMANlRreA" businessElementId="acbb8190-4b32-40dc-b678-a2242b3ad0d0" modelElementPath="dataList.immunizations.negationInd"/>

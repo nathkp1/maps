@@ -155,7 +155,7 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_KIC7mOYxEeat0tMANlRreA" name="notedDate" type="_KIC7tOYxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_KIC7t-YxEeat0tMANlRreA"/>
       <ownedAttribute xmi:id="_KIC7meYxEeat0tMANlRreA" name="onsetDate" type="_KICUQeYxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_KIC7ueYxEeat0tMANlRreA"/>
-      <ownedAttribute xmi:id="_KIC7muYxEeat0tMANlRreA" name="reactions" type="_KIC7fOYxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_KIC7u-YxEeat0tMANlRreA">
+      <ownedAttribute xmi:id="_KIC7muYxEeat0tMANlRreA" name="reactions" type="_OCg6AOmYEeaML_Q-O2boLg" isOrdered="true" aggregation="composite" association="_KIC7u-YxEeat0tMANlRreA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KIC7m-YxEeat0tMANlRreA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_KIC7nOYxEeat0tMANlRreA" name="sourceOfInfo" type="_KIC7veYxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_KIC7wuYxEeat0tMANlRreA">
@@ -256,6 +256,15 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_KIC70uYxEeat0tMANlRreA" memberEnd="_KIC7yeYxEeat0tMANlRreA _KIC70-YxEeat0tMANlRreA">
       <ownedEnd xmi:id="_KIC70-YxEeat0tMANlRreA" type="_KIC7xuYxEeat0tMANlRreA" association="_KIC70uYxEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OCg6AOmYEeaML_Q-O2boLg" name="Reactions">
+      <ownedAttribute xmi:id="_P_Q6kOmYEeaML_Q-O2boLg" name="reaction" type="_KIC7fOYxEeat0tMANlRreA" association="_P_SIsOmYEeaML_Q-O2boLg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P_RhoOmYEeaML_Q-O2boLg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P_RhoemYEeaML_Q-O2boLg" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_P_SIsOmYEeaML_Q-O2boLg" memberEnd="_P_Q6kOmYEeaML_Q-O2boLg _P_SIsemYEeaML_Q-O2boLg">
+      <ownedEnd xmi:id="_P_SIsemYEeaML_Q-O2boLg" type="_OCg6AOmYEeaML_Q-O2boLg" association="_P_SIsOmYEeaML_Q-O2boLg"/>
     </packagedElement>
     <profileApplication xmi:id="_KIC71OYxEeat0tMANlRreA">
       <eAnnotations xmi:id="_KIC71eYxEeat0tMANlRreA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -383,23 +392,19 @@
     <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
   </Ecore:EReference>
   <MDMI:MDMIMapping xmi:id="_kHx_gOi9EeaH5NkzFj7Img" base_Class="_KIC7xuYxEeat0tMANlRreA">
-    <elements xmi:id="_kHx_gei9EeaH5NkzFj7Img" businessElement="AllergyConcernContainer" modelElement="_KIC70OYxEeat0tMANlRreA" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath="dataList.allergies"/>
+    <elements xmi:id="_oSWloOmFEeaML_Q-O2boLg" businessElement="AllergyConcernContainer" modelElement="_KIC70OYxEeat0tMANlRreA" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath="dataList.allergies"/>
+    <elements xmi:id="_qgtTkOmFEeaML_Q-O2boLg" businessElement="AllergyConcernID" modelElement="_KIC7ruYxEeat0tMANlRreA" businessElementId="c48d4e8b-fde6-455f-895a-f47f180d6e60" modelElementPath="dataList.allergies.recordId"/>
+    <elements xmi:id="_uerlAOmFEeaML_Q-O2boLg" businessElement="AllergyConcernAllergenCode" modelElement="_KIC7suYxEeat0tMANlRreA" businessElementId="6d660cc5-7ab5-4056-9445-c8435f4b55fa" modelElementPath="dataList.allergies.allergen"/>
+    <elements xmi:id="_1Hnn4OmFEeaML_Q-O2boLg" businessElement="AllergyConcernTypeCode" modelElement="_KIC7xOYxEeat0tMANlRreA" businessElementId="1a1ea320-de3d-482b-b42e-7494962bd5f6" modelElementPath="dataList.allergies.type"/>
+    <elements xmi:id="_9z-UAOmFEeaML_Q-O2boLg" businessElement="AllergyConcernEndDateTime" modelElement="_KIC7UeYxEeat0tMANlRreA" businessElementId="99184840-a095-41b1-b361-ce05425e0352" modelElementPath="dataList.allergies.onsetDate.end"/>
+    <elements xmi:id="_AzSk0OmGEeaML_Q-O2boLg" businessElement="AllergyConcernStartDateTime" modelElement="_KIC7UOYxEeat0tMANlRreA" businessElementId="e7e780ef-09c5-48e9-8b43-75b14e921d35" modelElementPath="dataList.allergies.onsetDate.start"/>
+    <elements xmi:id="_dKjQIOmYEeaML_Q-O2boLg" businessElement="AllergyReactionValueCode" modelElement="_P_SIsOmYEeaML_Q-O2boLg" businessElementId="3f3ed4df-0fbb-44f5-9396-0fd79d033fd3" modelElementPath="dataList.allergies.reactions.reaction"/>
   </MDMI:MDMIMapping>
-  <MDMI:MDMIDatatype xmi:id="_bIs78OjOEeacmL_vF_BoUQ" base_Class="_KIC7UuYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_dG2DoOjOEeacmL_vF_BoUQ" base_Class="_KIC7ieYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_gJkNwOjOEeacmL_vF_BoUQ" base_Class="_KIC7aeYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_iqui8OjOEeacmL_vF_BoUQ" base_Class="_KIC7fOYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_kN_sgOjOEeacmL_vF_BoUQ" base_Class="_KIC7YuYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_l9c38OjOEeacmL_vF_BoUQ" base_Class="_KIC7veYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_noT3QOjOEeacmL_vF_BoUQ" base_Class="_KIC7buYxEeat0tMANlRreA"/>
-  <MDMI:MDMIMapping xmi:id="_CoY4gOl2EeaRE4G1h3HldA" base_Class="_KIC7zeYxEeat0tMANlRreA">
-    <elements xmi:id="_MjPYEOl2EeaRE4G1h3HldA" businessElement="AllergyConcernContainer" modelElement="_KIC70OYxEeat0tMANlRreA" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath="allergies"/>
-    <elements xmi:id="_OjW1sOl2EeaRE4G1h3HldA" businessElement="AllergyConcernNotes" modelElement="_KIC7l-YxEeat0tMANlRreA" businessElementId="309fbbbf-9fc9-4364-ab9c-13a5cd59b1d8" modelElementPath="allergies.comment"/>
-    <elements xmi:id="_XqmHAOl2EeaRE4G1h3HldA" businessElement="AllergyConcernID" modelElement="_KIC7ruYxEeat0tMANlRreA" businessElementId="c48d4e8b-fde6-455f-895a-f47f180d6e60" modelElementPath="allergies.recordId"/>
-    <elements xmi:id="_ahXf0Ol2EeaRE4G1h3HldA" businessElement="AllergyConcernAllergenCode" modelElement="_KIC7suYxEeat0tMANlRreA" businessElementId="6d660cc5-7ab5-4056-9445-c8435f4b55fa" modelElementPath="allergies.allergen"/>
-    <elements xmi:id="_cd2aoOl2EeaRE4G1h3HldA" businessElement="AllergyConcernOnsetDate" modelElement="_KIC7ueYxEeat0tMANlRreA" businessElementId="6dd1c7a1-26b5-459f-94c4-47ccec635fba" modelElementPath="allergies.onsetDate"/>
-    <elements xmi:id="_nHw_oOl2EeaRE4G1h3HldA" businessElement="AllergyReactionContainer" modelElement="_KIC7u-YxEeat0tMANlRreA" businessElementId="e20b3fd4-a386-4d90-aa17-d4e16cb377a9" modelElementPath="allergies.reactions"/>
-    <elements xmi:id="_wEitYOl2EeaRE4G1h3HldA" businessElement="AllergyReactionValueCode" modelElement="_KIC7feYxEeat0tMANlRreA" businessElementId="3f3ed4df-0fbb-44f5-9396-0fd79d033fd3" modelElementPath="allergies.reactions.code"/>
-    <elements xmi:id="_zgGOQOl2EeaRE4G1h3HldA" businessElement="AllergyConcernTypeCode" modelElement="_KIC7xOYxEeat0tMANlRreA" businessElementId="1a1ea320-de3d-482b-b42e-7494962bd5f6" modelElementPath="allergies.type"/>
-  </MDMI:MDMIMapping>
+  <MDMI:MDMIDatatype xmi:id="_bIs78OjOEeacmL_vF_BoUQ" base_Class="_KIC7UuYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_dG2DoOjOEeacmL_vF_BoUQ" base_Class="_KIC7ieYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_gJkNwOjOEeacmL_vF_BoUQ" base_Class="_KIC7aeYxEeat0tMANlRreA" mdmiDatatype="InstanceIdentifier"/>
+  <MDMI:MDMIDatatype xmi:id="_iqui8OjOEeacmL_vF_BoUQ" base_Class="_KIC7fOYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_kN_sgOjOEeacmL_vF_BoUQ" base_Class="_KIC7YuYxEeat0tMANlRreA" mdmiDatatype="InstanceIdentifier"/>
+  <MDMI:MDMIDatatype xmi:id="_l9c38OjOEeacmL_vF_BoUQ" base_Class="_KIC7veYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_noT3QOjOEeacmL_vF_BoUQ" base_Class="_KIC7buYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
 </xmi:XMI>

@@ -76,7 +76,7 @@
       <ownedAttribute xmi:id="_2kME0uYxEeat0tMANlRreA" name="daysSupply" visibility="public" isOrdered="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_2kME0-YxEeat0tMANlRreA" name="drugs" type="_2kMFD-YxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_2kMFGOYxEeat0tMANlRreA">
+      <ownedAttribute xmi:id="_2kME0-YxEeat0tMANlRreA" name="drugs" type="_EAyoQOpaEeazs4k6K5VLIQ" isOrdered="true" aggregation="composite" association="_2kMFGOYxEeat0tMANlRreA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2kME1OYxEeat0tMANlRreA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_2kME1eYxEeat0tMANlRreA" name="fillCost" visibility="public" isOrdered="true">
@@ -190,12 +190,6 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2kMFE-YxEeat0tMANlRreA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_2kMFFOYxEeat0tMANlRreA" name="drug" type="_2kMFD-YxEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_2kMFFuYxEeat0tMANlRreA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2kMFFeYxEeat0tMANlRreA" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_2kMFFuYxEeat0tMANlRreA" memberEnd="_2kMFFOYxEeat0tMANlRreA _2kMFF-YxEeat0tMANlRreA">
-      <ownedEnd xmi:id="_2kMFF-YxEeat0tMANlRreA" type="_2kMFD-YxEeat0tMANlRreA" association="_2kMFFuYxEeat0tMANlRreA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_2kMFGOYxEeat0tMANlRreA" memberEnd="_2kME0-YxEeat0tMANlRreA _2kMFGeYxEeat0tMANlRreA">
       <ownedEnd xmi:id="_2kMFGeYxEeat0tMANlRreA" type="_2kMEy-YxEeat0tMANlRreA" association="_2kMFGOYxEeat0tMANlRreA"/>
@@ -455,6 +449,15 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_2kMFmeYxEeat0tMANlRreA" memberEnd="_2kMFkOYxEeat0tMANlRreA _2kMFmuYxEeat0tMANlRreA">
       <ownedEnd xmi:id="_2kMFmuYxEeat0tMANlRreA" type="_2kMFi-YxEeat0tMANlRreA" association="_2kMFmeYxEeat0tMANlRreA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EAyoQOpaEeazs4k6K5VLIQ" name="Drugs">
+      <ownedAttribute xmi:id="_GksvcOpaEeazs4k6K5VLIQ" name="drug" type="_2kMFD-YxEeat0tMANlRreA" association="_GktWgupaEeazs4k6K5VLIQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GktWgOpaEeazs4k6K5VLIQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GktWgepaEeazs4k6K5VLIQ" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GktWgupaEeazs4k6K5VLIQ" memberEnd="_GksvcOpaEeazs4k6K5VLIQ _Gkt9kOpaEeazs4k6K5VLIQ">
+      <ownedEnd xmi:id="_Gkt9kOpaEeazs4k6K5VLIQ" type="_EAyoQOpaEeazs4k6K5VLIQ" association="_GktWgupaEeazs4k6K5VLIQ"/>
+    </packagedElement>
     <profileApplication xmi:id="_2kMFm-YxEeat0tMANlRreA">
       <eAnnotations xmi:id="_2kMFnOYxEeat0tMANlRreA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
@@ -568,9 +571,6 @@
   <Ecore:EClass xmi:id="_2kNS0eYxEeat0tMANlRreA" base_Class="_2kMFD-YxEeat0tMANlRreA">
     <annotation>coverage totalFound='4'</annotation>
   </Ecore:EClass>
-  <Ecore:EReference xmi:id="_2kNS0uYxEeat0tMANlRreA" base_Property="_2kMFFOYxEeat0tMANlRreA">
-    <annotation>coverage totalFound='2' ratioTotalFound='0.5'</annotation>
-  </Ecore:EReference>
   <Ecore:EClass xmi:id="_2kNS0-YxEeat0tMANlRreA" base_Class="_2kMFHOYxEeat0tMANlRreA">
     <annotation>coverage totalFound='2'</annotation>
   </Ecore:EClass>
@@ -661,13 +661,13 @@
   <Ecore:EReference xmi:id="_2kN57-YxEeat0tMANlRreA" base_Property="_2kMFleYxEeat0tMANlRreA">
     <annotation>coverage totalFound='2' ratioTotalFound='1.0'</annotation>
   </Ecore:EReference>
-  <MDMI:MDMIDatatype xmi:id="_7frN0OjPEeacmL_vF_BoUQ" base_Class="_2kMFYeYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_9DDsIOjPEeacmL_vF_BoUQ" base_Class="_2kME_-YxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_D6I4sOjQEeacmL_vF_BoUQ" base_Class="_2kMFIOYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_E52pQOjQEeacmL_vF_BoUQ" base_Class="_2kMFLuYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_GntSMOjQEeacmL_vF_BoUQ" base_Class="_2kMFS-YxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_Jv5LIOjQEeacmL_vF_BoUQ" base_Class="_2kMFJeYxEeat0tMANlRreA"/>
-  <MDMI:MDMIDatatype xmi:id="_K-2RkOjQEeacmL_vF_BoUQ" base_Class="_2kMExuYxEeat0tMANlRreA"/>
+  <MDMI:MDMIDatatype xmi:id="_7frN0OjPEeacmL_vF_BoUQ" base_Class="_2kMFYeYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_9DDsIOjPEeacmL_vF_BoUQ" base_Class="_2kME_-YxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_D6I4sOjQEeacmL_vF_BoUQ" base_Class="_2kMFIOYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_E52pQOjQEeacmL_vF_BoUQ" base_Class="_2kMFLuYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_GntSMOjQEeacmL_vF_BoUQ" base_Class="_2kMFS-YxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_Jv5LIOjQEeacmL_vF_BoUQ" base_Class="_2kMFJeYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_K-2RkOjQEeacmL_vF_BoUQ" base_Class="_2kMExuYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
   <MDMI:MDMIMapping xmi:id="_2DBMAOo8EeaDNOPEaF2U2g" base_Class="_2kMFi-YxEeat0tMANlRreA">
     <elements xmi:id="_2DDBMOo8EeaDNOPEaF2U2g" businessElement="MedicationDispenseContainer" modelElement="_2kMFl-YxEeat0tMANlRreA" businessElementId="8f57d590-40f5-4478-83d6-3102c431172e" modelElementPath="dataList.medications"/>
     <elements xmi:id="_7zIwgOo8EeaDNOPEaF2U2g" businessElement="MedicationDispenseNotes" modelElement="_2kME0eYxEeat0tMANlRreA" businessElementId="47967c7c-a61c-4787-aec4-a47eb38a0788" modelElementPath="dataList.medications.comment"/>
