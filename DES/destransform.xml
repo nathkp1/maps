@@ -17,6 +17,12 @@
 		</antcall>
 
 		<antcall target="generateMDMI">
+			<param name="umlmodel" value="labs.uml" />
+			<param name="mdmimodel" value="deslabs.mdmi" />
+			<param name="messageModel" value="Labs" />
+		</antcall>
+
+		<antcall target="generateMDMI">
 			<param name="umlmodel" value="meds.uml" />
 			<param name="mdmimodel" value="desmeds.mdmi" />
 			<param name="messageModel" value="Medications" />
@@ -48,6 +54,12 @@
 			<param name="xmimodel" value="desallergies.xmi" />
 
 		</antcall>
+		
+		<antcall target="exportMDMI">
+					<param name="mdmimodel" value="deslabs.mdmi" />
+					<param name="xmimodel" value="deslabs.xmi" />
+
+				</antcall>
 
 		<antcall target="exportMDMI">
 			<param name="mdmimodel" value="desimmunizations.mdmi" />
