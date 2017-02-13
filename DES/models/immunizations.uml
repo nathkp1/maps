@@ -274,11 +274,17 @@
       <ownedEnd xmi:id="_kzmYeOYxEeat0tMANlRreA" type="_kzmYIuYxEeat0tMANlRreA" association="_kzmYd-YxEeat0tMANlRreA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_kzmYeeYxEeat0tMANlRreA" name="SiteOfAdministration">
+      <ownedAttribute xmi:id="_M8ehgPIIEeaHLfxHXzXK3w" name="code" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_kzmYeuYxEeat0tMANlRreA" name="display" visibility="public" isOrdered="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_kzmYe-YxEeat0tMANlRreA" name="primary" visibility="public" isOrdered="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_OcPEEPIIEeaHLfxHXzXK3w" name="system" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_kzmYfOYxEeat0tMANlRreA" memberEnd="_kzmYNOYxEeat0tMANlRreA _kzmYfeYxEeat0tMANlRreA">
@@ -470,7 +476,7 @@
   <MDMI:MDMIDatatype xmi:id="_jj2G0OjPEeacmL_vF_BoUQ" base_Class="_kzmYHuYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
   <MDMI:MDMIDatatype xmi:id="_p9a4AOjPEeacmL_vF_BoUQ" base_Class="_kzmYE-YxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
   <MDMI:MDMIDatatype xmi:id="_sHdGoOjPEeacmL_vF_BoUQ" base_Class="_kzmYU-YxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
-  <MDMI:MDMIDatatype xmi:id="_uPqJQOjPEeacmL_vF_BoUQ" base_Class="_kzmYDOYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
+  <MDMI:MDMIDatatype xmi:id="_uPqJQOjPEeacmL_vF_BoUQ" base_Class="_kzmYDOYxEeat0tMANlRreA" mdmiDatatype="InstanceIdentifier"/>
   <MDMI:MDMIDatatype xmi:id="_xJIQwOjPEeacmL_vF_BoUQ" base_Class="_kzmX8eYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
   <MDMI:MDMIDatatype xmi:id="_zZ7OsOjPEeacmL_vF_BoUQ" base_Class="_kzmYcuYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
   <MDMI:MDMIDatatype xmi:id="_0spa0OjPEeacmL_vF_BoUQ" base_Class="_kzmYeeYxEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
