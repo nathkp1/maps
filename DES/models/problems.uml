@@ -89,11 +89,17 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_T2lA2OYyEeat0tMANlRreA" name="Statu">
+      <ownedAttribute xmi:id="_p_wO4POGEeaI86LAE-NDAw" name="code" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_T2lA2eYyEeat0tMANlRreA" name="display" visibility="public" isOrdered="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_T2lA2uYyEeat0tMANlRreA" name="primary" visibility="public" isOrdered="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_sbss4POGEeaI86LAE-NDAw" name="system" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_T2lA2-YyEeat0tMANlRreA" name="DataDomain">
@@ -129,7 +135,7 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_T2lA5-YyEeat0tMANlRreA" name="Problem">
+    <packagedElement xmi:type="uml:Class" xmi:id="_T2lA5-YyEeat0tMANlRreA" name="Problems">
       <ownedAttribute xmi:id="_T2lA6OYyEeat0tMANlRreA" name="dataDomain" type="_T2lA2-YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_T2lBCuYyEeat0tMANlRreA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T2lA6eYyEeat0tMANlRreA" value="*"/>
       </ownedAttribute>
@@ -137,23 +143,11 @@
       <ownedAttribute xmi:id="_T2lA6-YyEeat0tMANlRreA" name="facility" type="_T2lBDuYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_T2lBFOYyEeat0tMANlRreA"/>
       <ownedAttribute xmi:id="_T2lA7OYyEeat0tMANlRreA" name="repository" type="_T2lAxOYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_T2lBFuYyEeat0tMANlRreA"/>
       <ownedAttribute xmi:id="_T2lA7eYyEeat0tMANlRreA" name="modifiedDate" type="_T2lA5OYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_T2lBGOYyEeat0tMANlRreA"/>
-      <ownedAttribute xmi:id="_T2lA7uYyEeat0tMANlRreA" name="display" visibility="public" isOrdered="true">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T2lA7-YyEeat0tMANlRreA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_T2lA8OYyEeat0tMANlRreA" name="primary" visibility="public" isOrdered="true">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T2lA8eYyEeat0tMANlRreA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_T2lA8uYyEeat0tMANlRreA" name="problem" type="_T2lA5-YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_T2lBGuYyEeat0tMANlRreA">
+      <ownedAttribute xmi:id="_T2lA8uYyEeat0tMANlRreA" name="problem" type="_PynMkPOGEeaI86LAE-NDAw" isOrdered="true" aggregation="composite" association="_T2lBGuYyEeat0tMANlRreA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T2lA8-YyEeat0tMANlRreA" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_T2lA9OYyEeat0tMANlRreA" name="status" type="_T2lA2OYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_T2lBHOYyEeat0tMANlRreA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T2lA9eYyEeat0tMANlRreA" value="*"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_T2lA9uYyEeat0tMANlRreA" name="comment" visibility="public" isOrdered="true">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T2lA9-YyEeat0tMANlRreA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_T2lA-OYyEeat0tMANlRreA" name="onsetDate" type="_T2lAseYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_T2lBHuYyEeat0tMANlRreA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T2lA-eYyEeat0tMANlRreA"/>
@@ -170,10 +164,6 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_T2lBAeYyEeat0tMANlRreA" name="modifiedBy" type="_T2lAz-YyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_T2lBK-YyEeat0tMANlRreA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T2lBAuYyEeat0tMANlRreA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_T2lBA-YyEeat0tMANlRreA" name="negationInd" visibility="public" isOrdered="true">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T2lBBOYyEeat0tMANlRreA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_T2lBBeYyEeat0tMANlRreA" name="provider" type="_T2lBLeYyEeat0tMANlRreA" isOrdered="true" aggregation="composite" association="_T2lBM-YyEeat0tMANlRreA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T2lBBuYyEeat0tMANlRreA"/>
@@ -283,6 +273,20 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_T2lBQ-YyEeat0tMANlRreA" memberEnd="_T2lBOuYyEeat0tMANlRreA _T2lBROYyEeat0tMANlRreA">
       <ownedEnd xmi:id="_T2lBROYyEeat0tMANlRreA" type="_T2lBN-YyEeat0tMANlRreA" association="_T2lBQ-YyEeat0tMANlRreA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PynMkPOGEeaI86LAE-NDAw" name="Problem">
+      <ownedAttribute xmi:id="_fbUm0POGEeaI86LAE-NDAw" name="code" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_g0O6gPOGEeaI86LAE-NDAw" name="display" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_h8rwUPOGEeaI86LAE-NDAw" name="primary" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_i8HNAPOGEeaI86LAE-NDAw" name="system" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
     </packagedElement>
     <profileApplication xmi:id="_T2lBReYyEeat0tMANlRreA">
       <eAnnotations xmi:id="_T2lBRuYyEeat0tMANlRreA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -428,15 +432,16 @@
   <MDMI:MDMIDatatype xmi:id="_1q9AsOjQEeacmL_vF_BoUQ" base_Class="_T2lA3-YyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
   <MDMI:MDMIDatatype xmi:id="_2-JG4OjQEeacmL_vF_BoUQ" base_Class="_T2lA2OYyEeat0tMANlRreA" mdmiDatatype="CodedElement"/>
   <MDMI:MDMIMapping xmi:id="_8z5KsPODEeaTjquN7LEKCg" base_Class="_T2lBN-YyEeat0tMANlRreA">
-    <elements xmi:id="_8z81EPODEeaTjquN7LEKCg" businessElement="ProblemConcernContainer" modelElement="_T2lBQeYyEeat0tMANlRreA" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath="dataList.problems"/>
-    <elements xmi:id="_EQISwPOEEeaTjquN7LEKCg" businessElement="ProblemConcernOnsetDateTime" modelElement="_T2lBHuYyEeat0tMANlRreA" businessElementId="9ff65a76-3d51-47c9-b2f0-518080214f3c" modelElementPath="dataList.problems.onsetDate"/>
-    <elements xmi:id="_Hq_3IPOEEeaTjquN7LEKCg" businessElement="ProblemConcernNotes" modelElement="_T2lA9uYyEeat0tMANlRreA" businessElementId="c3d9a923-8c9c-4611-b8bf-a8e7456c2bba" modelElementPath="dataList.problems.comment"/>
-    <elements xmi:id="_LvN6gPOEEeaTjquN7LEKCg" businessElement="ProblemConcernID" modelElement="_T2lBIuYyEeat0tMANlRreA" businessElementId="c313e009-5743-4dcd-ba20-9aa262b2205d" modelElementPath="dataList.problems.recordId"/>
-    <elements xmi:id="_QI0_EPOEEeaTjquN7LEKCg" businessElement="ProblemConcernAuthorName" modelElement="_T2lBLuYyEeat0tMANlRreA" businessElementId="1be67612-33dd-4030-a503-4b885e36def4" modelElementPath="dataList.problems.provider.name"/>
-    <elements xmi:id="_Ta0UQPOEEeaTjquN7LEKCg" businessElement="ProblemConcernChronicityCode" modelElement="_T2lBKeYyEeat0tMANlRreA" businessElementId="d7eef774-b9ab-4d32-9242-661f7dee4c00" modelElementPath="dataList.problems.chronicity"/>
-    <elements xmi:id="_efGhEPOEEeaTjquN7LEKCg" businessElement="ProblemConcernStatusCode" modelElement="_T2lBHOYyEeat0tMANlRreA" businessElementId="dcb24f5a-3e8f-43a4-8a00-e219ecbf87b9" modelElementPath="dataList.problems.status"/>
-    <elements xmi:id="_iZqSIPOEEeaTjquN7LEKCg" businessElement="ProblemConcernUpdateDate" modelElement="_T2lBGOYyEeat0tMANlRreA" businessElementId="b0abfc42-a8c2-442d-993a-1680fa9b1f8b" modelElementPath="dataList.problems.modifiedDate"/>
-    <elements xmi:id="_st0CgPOEEeaTjquN7LEKCg" businessElement="ProblemConcernRecordedDateTime" modelElement="_T2lBIOYyEeat0tMANlRreA" businessElementId="1e9e2a0b-ba99-4c0e-beae-3a527d6490c1" modelElementPath="dataList.problems.enteredDate"/>
-    <elements xmi:id="_zbtd4POEEeaTjquN7LEKCg" businessElement="ProblemConcernObservationContainer" modelElement="_T2lBGuYyEeat0tMANlRreA" businessElementId="52f0679a-fcd2-42a0-b79e-f719e4c7bb50" modelElementPath="dataList.problems.problem"/>
+    <elements xmi:id="_8z81EPODEeaTjquN7LEKCg" businessElement="ProblemConcernContainer" modelElement="_T2lBQeYyEeat0tMANlRreA" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath="dataList.problems" condition=""/>
+    <elements xmi:id="_EQISwPOEEeaTjquN7LEKCg" businessElement="ProblemConcernOnsetDateTime" modelElement="_T2lBHuYyEeat0tMANlRreA" businessElementId="9ff65a76-3d51-47c9-b2f0-518080214f3c" modelElementPath="dataList.problems.onsetDate" condition=""/>
+    <elements xmi:id="_Hq_3IPOEEeaTjquN7LEKCg" businessElement="ProblemConcernNotes" businessElementId="c3d9a923-8c9c-4611-b8bf-a8e7456c2bba" modelElementPath="dataList.problems.comment" condition=""/>
+    <elements xmi:id="_LvN6gPOEEeaTjquN7LEKCg" businessElement="ProblemConcernID" modelElement="_T2lBIuYyEeat0tMANlRreA" businessElementId="c313e009-5743-4dcd-ba20-9aa262b2205d" modelElementPath="dataList.problems.recordId" condition=""/>
+    <elements xmi:id="_QI0_EPOEEeaTjquN7LEKCg" businessElement="ProblemConcernAuthorName" modelElement="_T2lBLuYyEeat0tMANlRreA" businessElementId="1be67612-33dd-4030-a503-4b885e36def4" modelElementPath="dataList.problems.provider.name" condition=""/>
+    <elements xmi:id="_Ta0UQPOEEeaTjquN7LEKCg" businessElement="ProblemConcernChronicityCode" modelElement="_T2lBKeYyEeat0tMANlRreA" businessElementId="d7eef774-b9ab-4d32-9242-661f7dee4c00" modelElementPath="dataList.problems.chronicity" condition=""/>
+    <elements xmi:id="_efGhEPOEEeaTjquN7LEKCg" businessElement="ProblemConcernStatusCode" modelElement="_T2lBHOYyEeat0tMANlRreA" businessElementId="dcb24f5a-3e8f-43a4-8a00-e219ecbf87b9" modelElementPath="dataList.problems.status" condition=""/>
+    <elements xmi:id="_iZqSIPOEEeaTjquN7LEKCg" businessElement="ProblemConcernUpdateDate" modelElement="_T2lBGOYyEeat0tMANlRreA" businessElementId="b0abfc42-a8c2-442d-993a-1680fa9b1f8b" modelElementPath="dataList.problems.modifiedDate" condition=""/>
+    <elements xmi:id="_st0CgPOEEeaTjquN7LEKCg" businessElement="ProblemConcernRecordedDateTime" modelElement="_T2lBIOYyEeat0tMANlRreA" businessElementId="1e9e2a0b-ba99-4c0e-beae-3a527d6490c1" modelElementPath="dataList.problems.enteredDate" condition=""/>
+    <elements xmi:id="_7-TfIPOGEeaI86LAE-NDAw" businessElement="ProblemConcernContainer" modelElement="_T2lBQeYyEeat0tMANlRreA" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath="dataList.problems"/>
   </MDMI:MDMIMapping>
+  <MDMI:MDMIDatatype xmi:id="_zFK7QPOGEeaI86LAE-NDAw" base_Class="_PynMkPOGEeaI86LAE-NDAw" mdmiDatatype="CodedElement"/>
 </xmi:XMI>
