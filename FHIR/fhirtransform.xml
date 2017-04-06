@@ -7,8 +7,33 @@
 		
 		<delete file="map/fhirmapxml.mdmi"/>
 		<delete file="map/fhirmapjson.mdmi"/>
-	 
-	 	 <qvto:transformation
+		<delete file="map/fhirccdamapxml.mdmi"/>
+	
+		
+		  <qvto:transformation
+					uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
+					<in uri="platform:/resource/FHIR/dstu2/FHIR-dstu2.uml" />
+			 	 	<out uri="platform:/resource/FHIR/map/fhirmapxml.mdmi" />
+					<configProperty name="semanticRoot" value="AllergyIntolerance" />
+					<configProperty name="syntaxRoot" value="DAF-AllergyIntolerance,DAF-Medication,DAF-Patient,DAF-VitalSigns" />
+					<configProperty name="mappingStyle" value="NORMAL" />
+			 	 	<configProperty name="expressionLanguage" value="XPath" />
+				</qvto:transformation>
+		
+		
+		 <qvto:transformation
+								uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
+								<in uri="platform:/resource/FHIR/stu3/FHIR-CCDA.uml" />
+						 	 	<out uri="platform:/resource/FHIR/map/fhirccdamapxml.mdmi" />
+								<configProperty name="semanticRoot" value="xxxx" />
+								<configProperty name="syntaxRoot" value="yyyy" />
+								<configProperty name="mappingStyle" value="NORMAL" />
+						 	 	<configProperty name="expressionLanguage" value="XPath" />
+							</qvto:transformation>
+	 	
+		 <!--	
+		 
+		  <qvto:transformation
 			uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
 			<in uri="platform:/resource/FHIR/dstu2/FHIR-dstu2.uml" />
 	 	 	<out uri="platform:/resource/FHIR/map/fhirmapxml.mdmi" />
@@ -26,17 +51,42 @@
 				<configProperty name="syntaxRoot" value="DAF-AllergyIntolerance,DAF-Medication,DAF-Patient,DAF-VitalSigns" />
 				<configProperty name="mappingStyle" value="NORMAL" />
 		 	 	<configProperty name="expressionLanguage" value="JSON" />
+	 		
+		 	
+	 		
 		</qvto:transformation>
 		
+		
+		 <qvto:transformation
+						uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
+						<in uri="platform:/resource/FHIR/stu3/FHIR-CCDA.uml" />
+				 	 	<out uri="platform:/resource/FHIR/map/fhirccdamapxml.mdmi" />
+						<configProperty name="semanticRoot" value="xxxx" />
+						<configProperty name="syntaxRoot" value="yyyy" />
+						<configProperty name="mappingStyle" value="NORMAL" />
+				 	 	<configProperty name="expressionLanguage" value="XPath" />
+					</qvto:transformation> -->
+		 <!--
 		<antcall target="exportMDMI">
 				<param name="mdmimodel" value="fhirmapjson.mdmi" />
 				<param name="xmimodel" value="fhirmapjson.xmi" />
 		</antcall>
-			
+		
 		<antcall target="exportMDMI">
 				<param name="mdmimodel" value="fhirmapxml.mdmi" />
 				<param name="xmimodel" value="fhirmapxml.xmi" />
 		</antcall>
+		
+			-->
+		
+		<antcall target="exportMDMI">
+						<param name="mdmimodel" value="fhirmapxml.mdmi" />
+						<param name="xmimodel" value="fhirmapxml.xmi" />
+				</antcall>
+		<antcall target="exportMDMI">
+								<param name="mdmimodel" value="fhirccdamapxml.mdmi" />
+								<param name="xmimodel" value="fhirccdamapxml.xmi" />
+						</antcall>
 
 		</target>
  	
