@@ -1,104 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="project" default="default"
-	xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+<project name="project" default="default" xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
 	<target name="default">
-		
-	 
-		
-		<delete file="map/fhirmapxml.mdmi"/>
-		<delete file="map/fhirmapjson.mdmi"/>
-		<delete file="map/fhirccdamapxml.mdmi"/>
-	
-		
-		  <qvto:transformation
-					uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
-					<in uri="platform:/resource/FHIR/dstu2/FHIR-dstu2.uml" />
-			 	 	<out uri="platform:/resource/FHIR/map/fhirmapxml.mdmi" />
-					<configProperty name="semanticRoot" value="AllergyIntolerance" />
-					<configProperty name="syntaxRoot" value="DAF-AllergyIntolerance,DAF-Medication,DAF-Patient,DAF-VitalSigns" />
-					<configProperty name="mappingStyle" value="NORMAL" />
-			 	 	<configProperty name="expressionLanguage" value="XPath" />
-				</qvto:transformation>
-		
-		
-		 <qvto:transformation
-								uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
-								<in uri="platform:/resource/FHIR/stu3/FHIR-CCDA.uml" />
-						 	 	<out uri="platform:/resource/FHIR/map/fhirccdamapxml.mdmi" />
-								<configProperty name="semanticRoot" value="xxxx" />
-								<configProperty name="syntaxRoot" value="yyyy" />
-								<configProperty name="mappingStyle" value="NORMAL" />
-						 	 	<configProperty name="expressionLanguage" value="XPath" />
-							</qvto:transformation>
-	 	
-		 <!--	
-		 
-		  <qvto:transformation
-			uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
+
+
+
+		<delete file="map/fhirmapxml.mdmi" />
+		<delete file="map/fhirmapjson.mdmi" />
+		<delete file="map/fhirccdamapxml.mdmi" />
+
+
+		<echo message="" />
+		<echo message="Transform DSTU2" />
+		<echo message="" /> 
+		<qvto:transformation uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
 			<in uri="platform:/resource/FHIR/dstu2/FHIR-dstu2.uml" />
-	 	 	<out uri="platform:/resource/FHIR/map/fhirmapxml.mdmi" />
-			<configProperty name="semanticRoot" value="AllergyIntolerance" />
-			<configProperty name="syntaxRoot" value="DAF-AllergyIntolerance,DAF-Medication,DAF-Patient,DAF-VitalSigns" />
+			<out uri="platform:/resource/FHIR/map/fhirmapxml.mdmi" />
+			<configProperty name="fhirVersion" value="FHIRDSTU2" />
+			<configProperty name="packageName" value="Profiles" />
 			<configProperty name="mappingStyle" value="NORMAL" />
-	 	 	<configProperty name="expressionLanguage" value="XPath" />
+			<configProperty name="expressionLanguage" value="XPath" />
 		</qvto:transformation>
-		
-	 	<qvto:transformation
-				uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
-				<in uri="platform:/resource/FHIR/dstu2/FHIR-dstu2.uml" />
-		 	 	<out uri="platform:/resource/FHIR/map/fhirmapjson.mdmi" />
-				<configProperty name="semanticRoot" value="AllergyIntolerance" />
-				<configProperty name="syntaxRoot" value="DAF-AllergyIntolerance,DAF-Medication,DAF-Patient,DAF-VitalSigns" />
-				<configProperty name="mappingStyle" value="NORMAL" />
-		 	 	<configProperty name="expressionLanguage" value="JSON" />
-	 		
-		 	
-	 		
+
+		<echo message="" />
+		<echo message="Transform STU3" />
+		<echo message="" />
+		<qvto:transformation uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
+			<in uri="platform:/resource/FHIR/stu3/FHIR-CCDA.uml" />
+			<out uri="platform:/resource/FHIR/map/fhirccdamapxml.mdmi" />
+			<configProperty name="fhirVersion" value="FHIRSTU3" />
+			<configProperty name="packageName" value="Extensions" />
+			<configProperty name="mappingStyle" value="NORMAL" />
+			<configProperty name="expressionLanguage" value="XPath" />
 		</qvto:transformation>
-		
-		
-		 <qvto:transformation
-						uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
-						<in uri="platform:/resource/FHIR/stu3/FHIR-CCDA.uml" />
-				 	 	<out uri="platform:/resource/FHIR/map/fhirccdamapxml.mdmi" />
-						<configProperty name="semanticRoot" value="xxxx" />
-						<configProperty name="syntaxRoot" value="yyyy" />
-						<configProperty name="mappingStyle" value="NORMAL" />
-				 	 	<configProperty name="expressionLanguage" value="XPath" />
-					</qvto:transformation> -->
-		 <!--
+
+
 		<antcall target="exportMDMI">
-				<param name="mdmimodel" value="fhirmapjson.mdmi" />
-				<param name="xmimodel" value="fhirmapjson.xmi" />
+			<param name="mdmimodel" value="fhirmapxml.mdmi" />
+			<param name="xmimodel" value="fhirmapxml.xmi" />
 		</antcall>
-		
+
 		<antcall target="exportMDMI">
-				<param name="mdmimodel" value="fhirmapxml.mdmi" />
-				<param name="xmimodel" value="fhirmapxml.xmi" />
+			<param name="mdmimodel" value="fhirccdamapxml.mdmi" />
+			<param name="xmimodel" value="fhirccdamapxml.xmi" />
 		</antcall>
-		
-			-->
-		
-		<antcall target="exportMDMI">
-						<param name="mdmimodel" value="fhirmapxml.mdmi" />
-						<param name="xmimodel" value="fhirmapxml.xmi" />
-				</antcall>
-		<antcall target="exportMDMI">
-								<param name="mdmimodel" value="fhirccdamapxml.mdmi" />
-								<param name="xmimodel" value="fhirccdamapxml.xmi" />
-						</antcall>
 
-		</target>
- 	
-		<target name="exportMDMI">
+	</target>
 
-			<delete file="map/${xmimodel}" />
+	<target name="exportMDMI">
 
-			<copy file="map/${mdmimodel}" tofile="map/${xmimodel}" />
+		<delete file="map/${xmimodel}" />
 
-			<mdmiExport model="platform:/resource/FHIR/map/${xmimodel}" />
+		<copy file="map/${mdmimodel}" tofile="map/${xmimodel}" />
 
-			<replace file='map/${xmimodel}' token='&lt;relatedSemanticElement>' value='&lt;relatedSemanticElement xmi:idref="' />
+		<mdmiExport model="platform:/resource/FHIR/map/${xmimodel}" />
+
+		<replace file='map/${xmimodel}' token='&lt;relatedSemanticElement>' value='&lt;relatedSemanticElement xmi:idref="' />
 				<replace file='map/${xmimodel}' token='&lt;/relatedSemanticElement>' value='" />' />	
 				<replace file='map/${xmimodel}' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="' />
 				<replace file='map/${xmimodel}' token='&lt;/businessElement>' value='"  >&lt;/businessElement>' />
@@ -115,11 +71,6 @@
 				<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:Choice">#' value='&lt;syntaxNode xmi:idref="' />
 				<replace file='map/${xmimodel}' token='&lt;/syntaxNode>' value='" />' />
 				<replace file='map/${xmimodel}' token='xmi:idref="#' value='xmi:idref="' />
+	</target>
 
-		</target>
-		
-	
-	
-
-	
 </project>
