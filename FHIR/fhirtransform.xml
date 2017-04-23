@@ -9,7 +9,7 @@
 		<delete file="map/fhirccdamapxml.mdmi" />
 
 
-		<echo message="" />
+	<!--	<echo message="" />
 		<echo message="Transform DSTU2" />
 		<echo message="" /> 
 		<qvto:transformation uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
@@ -20,7 +20,7 @@
 			<configProperty name="mappingStyle" value="NORMAL" />
 			<configProperty name="expressionLanguage" value="XPath" />
 		</qvto:transformation>
-
+-->
 		<echo message="" />
 		<echo message="Transform STU3" />
 		<echo message="" />
@@ -33,12 +33,15 @@
 			<configProperty name="expressionLanguage" value="XPath" />
 		</qvto:transformation>
 
+		<transformReport reportPath="${basedir}" />
 
+		<!--
 		<antcall target="exportMDMI">
 			<param name="mdmimodel" value="fhirmapxml.mdmi" />
 			<param name="xmimodel" value="fhirmapxml.xmi" />
 		</antcall>
-
+-->
+		
 		<antcall target="exportMDMI">
 			<param name="mdmimodel" value="fhirccdamapxml.mdmi" />
 			<param name="xmimodel" value="fhirccdamapxml.xmi" />
