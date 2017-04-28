@@ -17,6 +17,7 @@
 			<configProperty name="mappingStyle" value="NORMAL" />
 		</qvto:transformation>
  
+		<transformReport reportPath="${basedir}" />
 		
 		<delete file="map/cdamap.xmi"/>
 	 	<copy file="map/cdamap.mdmi" tofile="map/cdamap.xmi"/>

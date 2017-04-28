@@ -859,6 +859,15 @@ Vital signs are represented in the same way as other results, but are aggregated
     <elements xmi:id="_mvmfsL7KEeWoV-fDNleHag" businessElement="VitalSignResultValue" modelElement="_2OxoUhSVEeGGzu7fmW9pXw" businessElementId="2b45bfcd-b0d0-49c6-b8a5-f376297c8e36" modelElementPath="vitalSignsOrganizer.vitalSignObservation.value.PQ" condition=""/>
     <elements xmi:id="_pmoXML7KEeWoV-fDNleHag" businessElement="VitalSignResultIntepretationCode" modelElement="_2OxoVBSVEeGGzu7fmW9pXw" businessElementId="60f64b90-2803-465b-ba6d-79e55c7a45c1" modelElementPath="vitalSignsOrganizer.vitalSignObservation.interpretationCode" condition=""/>
     <elements xmi:id="_DwVMsHFAEeaxqa5aLAux1g" businessElement="VitalSignResultValueCoded" modelElement="_2OxoUhSVEeGGzu7fmW9pXw" businessElementId="2fe9f148-7179-451c-ad5f-502cd2169d91" modelElementPath="vitalSignsOrganizer.vitalSignObservation.value.CD" condition=""/>
-    <elements xmi:id="_rdaFQHFIEeaxqa5aLAux1g" businessElement="VitalSignResultStartTime" modelElement="_2OxoTRSVEeGGzu7fmW9pXw" businessElementId="a411cc47-098b-408b-9466-210001f6112b" modelElementPath="vitalSignsOrganizer.vitalSignObservation.effectiveTime.low" condition=""/>
+    <elements xmi:id="_Qkm70CW7EeewYNa79DjK5A" businessElement="VitalSignOrganizerEndTime" modelElement="_2OlbEhSVEeGGzu7fmW9pXw" businessElementId="a3989074-0c96-48d3-bb88-047aa13e97b2" modelElementPath="vitalSignsOrganizer.effectiveTime.high" condition=""/>
+    <elements xmi:id="_TChIsCW7EeewYNa79DjK5A" businessElement="VitalSignOrganizerStartTime" modelElement="_2OlbEhSVEeGGzu7fmW9pXw" businessElementId="7886c093-f505-477d-8bdf-8b693f0ecf8a" modelElementPath="vitalSignsOrganizer.effectiveTime.low" condition=""/>
+    <elements xmi:id="_GZHiwCW8EeewYNa79DjK5A" businessElement="VitalSignResultNotes" modelElement="_21P6QB0YEeGYy5bW_e08gQ" businessElementId="494287c0-35a5-4ad7-9be6-aa57f44b912d" modelElementPath="vitalSignsOrganizer.vitalSignObservation.text" condition=""/>
+    <elements xmi:id="_r0FIYCW8EeewYNa79DjK5A" businessElement="VitalSignResultAuthorPersonName" businessElementId="68f1ae15-f341-426c-963a-4aeaf154fab2" modelElementPath="vitalSignsOrganizer.vitalSignObservation.author.assignedAuthor.assignedPerson.name">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_znR-8CW8EeewYNa79DjK5A" businessElement="VitalSignResultAuthorCellPhone" businessElementId="0ceb2f1a-765b-4770-943c-b4d684689b19" modelElementPath="vitalSignsOrganizer.vitalSignObservation.author.assignedAuthor.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_EGRg8CW9EeewYNa79DjK5A" businessElement="VitalSignResultStatusCode" modelElement="_2OxoSxSVEeGGzu7fmW9pXw" businessElementId="d18fd5d8-935f-4260-99a3-f26a4ceca740" modelElementPath="vitalSignsOrganizer.vitalSignObservation.statusCode"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
