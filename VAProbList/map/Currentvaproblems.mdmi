@@ -52,71 +52,83 @@
         </root>
       </syntaxModel>
       <elementSet xmi:id="_TH6NpDW-EeeE3scvSXPbJQ">
-        <semanticElements xmi:id="_TH6NpTW-EeeE3scvSXPbJQ" name="DIAGNOSIS" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NdDW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NpTW-EeeE3scvSXPbJQ" name="DIAGNOSIS" description="This is the ICD coded diagnosis of the narrative entered describing this problem." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NdDW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_nSZIwDXJEeeMgMe_IDsfxA" name="To_ProblemConcernValueCode" businessElement="_TH6O_TW-EeeE3scvSXPbJQ" rule="&#xD;&#xA;var source = value.value();&#xD;&#xA;var target = To_ProblemConcernValueCode.getValue();&#xD;&#xA;target.setValue(source.getValue());"/>
           <toMdmi xmi:id="_m23qYDXJEeeMgMe_IDsfxA" name="From_ProblemConcernValueCode" businessElement="_TH6O_TW-EeeE3scvSXPbJQ" rule="&#xD;&#xA;var source = From_ProblemConcernValueCode.getValue();&#xD;&#xA;var target = value.getXValue();&#xD;&#xA;target.setValue(source.getValue());"/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NpjW-EeeE3scvSXPbJQ" name="PATIENT NAME" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NdTW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NpjW-EeeE3scvSXPbJQ" name="PATIENT NAME" description="This is the patient for whom this problem has been observed and recorded." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NdTW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_-HWHQDXJEeeMgMe_IDsfxA" name="To_PatientLanguagePreferenceFlag" businessElement="_TH6PjTW-EeeE3scvSXPbJQ"/>
           <toMdmi xmi:id="_-HWuUDXJEeeMgMe_IDsfxA" name="From_PatientLanguagePreferenceFlag" businessElement="_TH6PjTW-EeeE3scvSXPbJQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NpzW-EeeE3scvSXPbJQ" name="DATE LAST MODIFIED" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NdjW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NpzW-EeeE3scvSXPbJQ" name="DATE LAST MODIFIED" description="This is the last date/time this problem was changed." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NdjW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_DMe1EDXKEeeMgMe_IDsfxA" name="To_ProblemConcernUpdateDate" businessElement="_TH6PCjW-EeeE3scvSXPbJQ"/>
           <toMdmi xmi:id="_DMe1ETXKEeeMgMe_IDsfxA" name="From_ProblemConcernUpdateDate" businessElement="_TH6PCjW-EeeE3scvSXPbJQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NqDW-EeeE3scvSXPbJQ" name="CLASS" elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NdzW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NqTW-EeeE3scvSXPbJQ" name="PROVIDER NARRATIVE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NeDW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NqDW-EeeE3scvSXPbJQ" name="CLASS" description="This flag is used by the IHS Problem List to indicate if this problem is documented for historical purposes." elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NdzW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NqTW-EeeE3scvSXPbJQ" name="PROVIDER NARRATIVE" description="This contains the actual text used by the provider to describe this problem." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NeDW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_I9PSwDXKEeeMgMe_IDsfxA" name="To_ProblemConcernNotes" businessElement="_TH6OkjW-EeeE3scvSXPbJQ"/>
           <toMdmi xmi:id="_I9PSwTXKEeeMgMe_IDsfxA" name="From_ProblemConcernNotes" businessElement="_TH6OkjW-EeeE3scvSXPbJQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NqjW-EeeE3scvSXPbJQ" name="FACILITY" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NeTW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NqzW-EeeE3scvSXPbJQ" name="NMBR" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NejW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NqjW-EeeE3scvSXPbJQ" name="FACILITY" description="This is the facility at which this problem was originally observed and documented." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NeTW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NqzW-EeeE3scvSXPbJQ" name="NMBR" description="This is a number which, together with the Patient (#.02) and Facility (#.06) fields, serves as a unique identifier for this problem.  Up to 2 decimal places may be used to indicate that a problem is a result of, or related to, another problem. " datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NejW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_rhFHkDZJEeeIINduyYfTVw" name="To_ProblemConcernID" businessElement="_TH6OkTW-EeeE3scvSXPbJQ" rule=""/>
           <toMdmi xmi:id="_rhHj0DZJEeeIINduyYfTVw" name="From_ProblemConcernID" businessElement="_TH6OkTW-EeeE3scvSXPbJQ" rule=""/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NrDW-EeeE3scvSXPbJQ" name="DATE ENTERED" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NezW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NrDW-EeeE3scvSXPbJQ" name="DATE ENTERED" description="This is the date this problem was entered into this file.  " datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NezW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_0pt88DXOEeeMgMe_IDsfxA" name="To_ProblemConcernObservationDateRecorded" businessElement="_TH6PNDW-EeeE3scvSXPbJQ"/>
           <toMdmi xmi:id="_0pt88TXOEeeMgMe_IDsfxA" name="From_ProblemConcernObservationDateRecorded" businessElement="_TH6PNDW-EeeE3scvSXPbJQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NrTW-EeeE3scvSXPbJQ" name="STATUS" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NfDW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NrTW-EeeE3scvSXPbJQ" name="STATUS" description="This is the current activity status of this problem, whether active or inactive; if more detail is needed, a notation may be filed with this problem." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NfDW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_vkxmgDZJEeeIINduyYfTVw" name="To_ProcedureOrderedPhysicalContainer" businessElement="_TH6OkzW-EeeE3scvSXPbJQ" rule=""/>
           <toMdmi xmi:id="_vkxmgTZJEeeIINduyYfTVw" name="From_ProcedureOrderedPhysicalContainer" businessElement="_TH6OkzW-EeeE3scvSXPbJQ" rule=""/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NrjW-EeeE3scvSXPbJQ" name="DATE OF ONSET" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NfTW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NrjW-EeeE3scvSXPbJQ" name="DATE OF ONSET" description="This is the approximate date this problem appeared, as precisely as known." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NfTW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_0zPPcDZJEeeIINduyYfTVw" name="To_ProblemConcernOnsetDateTime" businessElement="_TH6O_zW-EeeE3scvSXPbJQ" rule=""/>
           <toMdmi xmi:id="_0zPPcTZJEeeIINduyYfTVw" name="From_ProblemConcernOnsetDateTime" businessElement="_TH6O_zW-EeeE3scvSXPbJQ" rule=""/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NrzW-EeeE3scvSXPbJQ" name="PROBLEM" elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NfjW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NsDW-EeeE3scvSXPbJQ" name="CONDITION" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NfzW-EeeE3scvSXPbJQ">
-          <fromMdmi xmi:id="_1B_lcDvhEeelg95kgmavwA" name="To_ProblemConcernAbateDateTime" businessElement="_TH6PDjW-EeeE3scvSXPbJQ"/>
-          <toMdmi xmi:id="_1CAMgDvhEeelg95kgmavwA" name="From_ProblemConcernAbateDateTime" businessElement="_TH6PDjW-EeeE3scvSXPbJQ"/>
-        </semanticElements>
+        <semanticElements xmi:id="_TH6NrzW-EeeE3scvSXPbJQ" name="PROBLEM" description="This field contains the standardized text stored in the Clinical Lexicon for this problem." elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NfjW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NsDW-EeeE3scvSXPbJQ" name="CONDITION" description="This reflects the current condition of this entry, whether transcribed by a clerk from the paper chart, entered or verified by a provider,  or marked as removed from the patient's list." elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NfzW-EeeE3scvSXPbJQ"/>
         <semanticElements xmi:id="_TH6NsTW-EeeE3scvSXPbJQ" name="ENTERED BY" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NgDW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_NEArsDZKEeeIINduyYfTVw" name="To_ProblemConcernDataEnterer" businessElement="_HTok8F0MEeeJ9vvMUGstfg" rule=""/>
           <toMdmi xmi:id="_NEArsTZKEeeIINduyYfTVw" name="From_ProblemConcernDataEnterer" description="" businessElement="_HTok8F0MEeeJ9vvMUGstfg" rule=""/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NsjW-EeeE3scvSXPbJQ" name="RECORDING PROVIDER" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NgTW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NsjW-EeeE3scvSXPbJQ" name="RECORDING PROVIDER" description="This is the provider who first recorded this problem, either on the paper chart or online." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NgTW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_XgJ6cDZKEeeIINduyYfTVw" name="To_ProblemConcernAuthorName" businessElement="_TH6PFTW-EeeE3scvSXPbJQ" rule=""/>
           <toMdmi xmi:id="_XgJ6cTZKEeeIINduyYfTVw" name="From_ProblemConcernAuthorName" businessElement="_TH6PFTW-EeeE3scvSXPbJQ" rule=""/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NszW-EeeE3scvSXPbJQ" name="RESPONSIBLE PROVIDER" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw"/>
-        <semanticElements xmi:id="_TH6NtDW-EeeE3scvSXPbJQ" name="SERVICE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NgzW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NtTW-EeeE3scvSXPbJQ" name="DATE RESOLVED" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NhDW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NszW-EeeE3scvSXPbJQ" name="RESPONSIBLE PROVIDER" description="This is the service primarily involved in the treatment of this problem; the DHCP Problem List defaults this field to the service defined in File #200 for the Recording Provider of this problem, upon entry of the problem.  It may later be used to categorize problems for screening and sorting.  " datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw"/>
+        <semanticElements xmi:id="_TH6NtDW-EeeE3scvSXPbJQ" name="SERVICE" description="This is the service primarily involved in the  treatment of this problem; the DHCP Problem List defaults this field to the service defined in File #200 for the Recording Provider of this  problem, upon entry of the problem.  It may later be used to categorize problems for  screening and sorting.  " elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NgzW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NtTW-EeeE3scvSXPbJQ" name="DATE RESOLVED" description="This is the date this problem was resolved or inactivated, as precisely as known." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NhDW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_mJIWADZKEeeIINduyYfTVw" name="To_ProblemConcernAbateDateTime" businessElement="_TH6PCDW-EeeE3scvSXPbJQ" rule=""/>
           <toMdmi xmi:id="_mJIWATZKEeeIINduyYfTVw" name="From_ProblemConcernAbateDateTime" businessElement="_TH6PCDW-EeeE3scvSXPbJQ" rule=""/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NtjW-EeeE3scvSXPbJQ" name="CLINIC" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NhTW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NtzW-EeeE3scvSXPbJQ" name="DATE RECORDED" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NhjW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NtjW-EeeE3scvSXPbJQ" name="CLINIC" description="This is the clinic in which this patient is being seen for this problem.  The problem list may be screened based on this value, to change one's view of the list.  " datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NhTW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NtzW-EeeE3scvSXPbJQ" name="DATE RECORDED" description="This is the date this problem was originally recorded, either online or in the paper chart; it may be the same as, or earlier than, the Date Entered" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NhjW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_sR8uYDZKEeeIINduyYfTVw" name="To_ProblemConcernRecordDateTime" businessElement="_TH6PCzW-EeeE3scvSXPbJQ" rule=""/>
           <toMdmi xmi:id="_sR8uYTZKEeeIINduyYfTVw" name="From_ProblemConcernRecordDateTime" businessElement="_TH6PCzW-EeeE3scvSXPbJQ" rule=""/>
         </semanticElements>
         <semanticElements xmi:id="_TH6NuDW-EeeE3scvSXPbJQ" name="PRIORITY" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NhzW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NuTW-EeeE3scvSXPbJQ" name="SERVICE CONNECTED" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NiDW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NujW-EeeE3scvSXPbJQ" name="AGENT ORANGE EXPOSURE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NiTW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NuzW-EeeE3scvSXPbJQ" name="IONIZING RADIATION EXPOSURE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NijW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NvDW-EeeE3scvSXPbJQ" name="PERSIAN GULF EXPOSURE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NizW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NvTW-EeeE3scvSXPbJQ" name="HEAD AND/OR NECK CANCER" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NjDW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NvjW-EeeE3scvSXPbJQ" name="MILITARY SEXUAL TRAUMA" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NjTW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NuTW-EeeE3scvSXPbJQ" name="SERVICE CONNECTED" description="If the patient has service connection on file in the DHCP Patient file #2, this problem specifically may be flagged as being service connected. " elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NiDW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NujW-EeeE3scvSXPbJQ" name="AGENT ORANGE EXPOSURE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NiTW-EeeE3scvSXPbJQ">
+          <fromMdmi xmi:id="_y0x0sGA4EeeLBsfZLfTijA" name="To_ProblemConcernEvidenceValueCode" businessElement="_Vc9sAWF-EeeE4_XRRrznhQ"/>
+          <toMdmi xmi:id="_0kwkkGA4EeeLBsfZLfTijA" name="From_ProblemConcernEvidenceValueCode" businessElement="_Vc9sAWF-EeeE4_XRRrznhQ"/>
+        </semanticElements>
+        <semanticElements xmi:id="_TH6NuzW-EeeE3scvSXPbJQ" name="IONIZING RADIATION EXPOSURE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NijW-EeeE3scvSXPbJQ">
+          <fromMdmi xmi:id="_ARPfsGF_EeeE4_XRRrznhQ" name="To_ProblemConcernEvidenceValueCode" businessElement="_Vc9sAWF-EeeE4_XRRrznhQ"/>
+          <toMdmi xmi:id="_BDCJAGF_EeeE4_XRRrznhQ" name="From_ProblemConcernEvidenceValueCode" businessElement="_Vc9sAWF-EeeE4_XRRrznhQ"/>
+        </semanticElements>
+        <semanticElements xmi:id="_TH6NvDW-EeeE3scvSXPbJQ" name="PERSIAN GULF EXPOSURE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NizW-EeeE3scvSXPbJQ">
+          <fromMdmi xmi:id="_PDKb4GF_EeeE4_XRRrznhQ" name="To_ProblemConcernEvidenceValueCode" businessElement="_Vc9sAWF-EeeE4_XRRrznhQ"/>
+          <toMdmi xmi:id="_Py7E4GF_EeeE4_XRRrznhQ" name="From_ProblemConcernEvidenceValueCode" businessElement="_Vc9sAWF-EeeE4_XRRrznhQ"/>
+        </semanticElements>
+        <semanticElements xmi:id="_TH6NvTW-EeeE3scvSXPbJQ" name="HEAD AND/OR NECK CANCER" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NjDW-EeeE3scvSXPbJQ">
+          <fromMdmi xmi:id="_jS8u8GF_EeeE4_XRRrznhQ" name="To_ProblemConcernEvidenceValueCode" businessElement="_Vc9sAWF-EeeE4_XRRrznhQ"/>
+          <toMdmi xmi:id="_kuVH0GF_EeeE4_XRRrznhQ" name="From_ProblemConcernEvidenceValueCode" businessElement="_Vc9sAWF-EeeE4_XRRrznhQ"/>
+        </semanticElements>
+        <semanticElements xmi:id="_TH6NvjW-EeeE3scvSXPbJQ" name="MILITARY SEXUAL TRAUMA" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NjTW-EeeE3scvSXPbJQ">
+          <fromMdmi xmi:id="_lnwqMGF_EeeE4_XRRrznhQ" name="To_ProblemConcernEvidenceValueCode" businessElement="_Vc9sAWF-EeeE4_XRRrznhQ"/>
+          <toMdmi xmi:id="_mOAK0GF_EeeE4_XRRrznhQ" name="From_ProblemConcernEvidenceValueCode" businessElement="_Vc9sAWF-EeeE4_XRRrznhQ"/>
+        </semanticElements>
         <semanticElements xmi:id="_TH6NvzW-EeeE3scvSXPbJQ" name="COMBAT VETERAN" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NjjW-EeeE3scvSXPbJQ"/>
         <semanticElements xmi:id="_TH6NwDW-EeeE3scvSXPbJQ" name="SHIPBOARD HAZARD &amp; DEFENSE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NjzW-EeeE3scvSXPbJQ"/>
         <semanticElements xmi:id="_TH6NwTW-EeeE3scvSXPbJQ" name="NOTE FACILITY" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NkDW-EeeE3scvSXPbJQ"/>
@@ -125,33 +137,35 @@
           <toMdmi xmi:id="_61nzMTZKEeeIINduyYfTVw" name="From_ProblemConcernNotes" businessElement="_TH6OkjW-EeeE3scvSXPbJQ" rule=""/>
         </semanticElements>
         <semanticElements xmi:id="_TH6NxDW-EeeE3scvSXPbJQ" name="NOTE NMBR" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NkzW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NxTW-EeeE3scvSXPbJQ" name="NOTE NARRATIVE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NlDW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NxzW-EeeE3scvSXPbJQ" name="DATE NOTE ADDED" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NljW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NxTW-EeeE3scvSXPbJQ" name="NOTE NARRATIVE" description="Additional comments may be entered here to further describe this problem.  " datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NlDW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NxzW-EeeE3scvSXPbJQ" name="DATE NOTE ADDED" description="This is the date this note was entered into this file." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NljW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_M1zw4F0IEeeX9po2fDYmqQ"/>
           <toMdmi xmi:id="_N9z6wF0IEeeX9po2fDYmqQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NyDW-EeeE3scvSXPbJQ" name="AUTHOR" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NlzW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NyDW-EeeE3scvSXPbJQ" name="AUTHOR" description="This is the provider who authored the text of this note." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NlzW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_LjxykDZLEeeIINduyYfTVw" name="To_ProblemConcernAuthorName" businessElement="_TH6PFTW-EeeE3scvSXPbJQ" rule=""/>
           <toMdmi xmi:id="_LjyZoDZLEeeIINduyYfTVw" name="From_ProblemConcernAuthorName" businessElement="_TH6PFTW-EeeE3scvSXPbJQ" rule=""/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6NyTW-EeeE3scvSXPbJQ" name="SNOMED CT CONCEPT CODE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NmDW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NyTW-EeeE3scvSXPbJQ" name="SNOMED CT CONCEPT CODE" description="A clinical idea to which a unique ConceptID has been assigned in SNOMED CT. Each Concept is represented by a row in the Concepts Table." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NmDW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_K_nrUF0IEeeX9po2fDYmqQ" name="To_ProblemConcernValueCode" businessElement="_TH6O_TW-EeeE3scvSXPbJQ"/>
           <toMdmi xmi:id="_LuN2sF0IEeeX9po2fDYmqQ" name="From_ProblemConcernValueCode" businessElement="_TH6O_TW-EeeE3scvSXPbJQ"/>
         </semanticElements>
         <semanticElements xmi:id="_TH6NyjW-EeeE3scvSXPbJQ" name="SNOMED CT DESIGNATION CODE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NmTW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NyzW-EeeE3scvSXPbJQ" name="VHAT CONCEPT VUID (FUTURE)" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NmjW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NzDW-EeeE3scvSXPbJQ" name="VHAT DESIGNATION VUID (FUTURE)" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NmzW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NzTW-EeeE3scvSXPbJQ" name="SNOMED CT-TO-ICD MAP STATUS" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NnDW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NzjW-EeeE3scvSXPbJQ" name="UNIQUE NEW TERM REQUESTED" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NnTW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6NzzW-EeeE3scvSXPbJQ" name="UNIQUE TERM REQUEST COMMENT" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NnjW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6N0DW-EeeE3scvSXPbJQ" name="DATE OF INTEREST" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NnzW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6N0TW-EeeE3scvSXPbJQ" name="CODING SYSTEM" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NoDW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_TH6N0jW-EeeE3scvSXPbJQ" name="CODE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NoTW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6NyzW-EeeE3scvSXPbJQ" name="VHAT CONCEPT VUID (FUTURE)" description="This field is being implemented to allow a more rapidly extensible vocabulary for VA, while international normative standard coding systems continue to evolve more slowly." elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NmjW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NzDW-EeeE3scvSXPbJQ" name="VHAT DESIGNATION VUID (FUTURE)" description="A Unique ID (VUID) for the VHAT Designation.  A unique meaningless integer assigned to a corresponding designation VHA wide.  VHAT Concept/Designation Code pairs function in a manner identical to that of SNOMED CT Concept/Designation Codes " elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NmzW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NzTW-EeeE3scvSXPbJQ" name="SNOMED CT-TO-ICD MAP STATUS" description="this Set of Codes type field is set to PENDING when an unmapped Clinical Finding is selected as a patient's problem. It is updated programmatically to COMPLETE when NTRT deploys a new SNOMED CT to ICD mapping for the problem in question.   NOTE: THIS FIELD SHOULD NEVER BE UPDATED BY AN  END USER." elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NnDW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NzjW-EeeE3scvSXPbJQ" name="UNIQUE NEW TERM REQUESTED" description="Indicates whether the user requested a new term during the process of entering a freetext problem. It should only be populated  automatically by program code." elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NnTW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6NzzW-EeeE3scvSXPbJQ" name="UNIQUE TERM REQUEST COMMENT" description="Please provide clarification of the new term request. For example, if the requested term is an acronym or abbreviation, the comment field accommodates the fully specified name, etc." elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NnjW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6N0DW-EeeE3scvSXPbJQ" name="DATE OF INTEREST" description="This is the date when the DIAGNOSIS (#.01) and CODING SYSTEM (#80202) fields were filed or modified. This allows proper resolution of the code, irrespective of code set versions, etc." elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NnzW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_TH6N0TW-EeeE3scvSXPbJQ" name="CODING SYSTEM" description="This identifies the Coding System to which the Code belongs. It corresponds to the Coding System Abbreviation in the ICD Coding Systems  File, to optimize internal/external API call  for resolving codes, independent of their codeset version, and to facilitate transition from ICD-9-CM to ICD-10-CM." elementType="NORMAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NoDW-EeeE3scvSXPbJQ">
+          <toMdmi xmi:id="_vahS0GGBEeerhfVUB8YOlA" name="From_ProblemConcernValueCode" businessElement="_TH6O_TW-EeeE3scvSXPbJQ" rule="&#xD;&#xA;var source = From_ProblemConcernValueCode.getValue();&#xD;&#xA;var target = value.getXValue();&#xD;&#xA;target.setValue(source.getValue());"/>
+        </semanticElements>
+        <semanticElements xmi:id="_TH6N0jW-EeeE3scvSXPbJQ" name="CODE" description="This is the code in the target coding system to which the problem is mapped." datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NoTW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_epZYkDZLEeeIINduyYfTVw" name="To_ProblemConcernObservationValueCode" businessElement="_TH6OlDW-EeeE3scvSXPbJQ"/>
           <toMdmi xmi:id="_epZYkTZLEeeIINduyYfTVw" name="From_ProblemConcernObservationValueCode" businessElement="_TH6OlDW-EeeE3scvSXPbJQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_TH6N1DW-EeeE3scvSXPbJQ" name="CODE DATE" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NozW-EeeE3scvSXPbJQ"/>
-        <semanticElements xmi:id="_6xGYMDZNEeeIINduyYfTVw" name="Container" description="Container" datatype="_TH6QFDW-EeeE3scvSXPbJQ" children="_TH6NpTW-EeeE3scvSXPbJQ _TH6NpjW-EeeE3scvSXPbJQ _TH6N1DW-EeeE3scvSXPbJQ _TH6N0TW-EeeE3scvSXPbJQ _TH6N0jW-EeeE3scvSXPbJQ _TH6N0DW-EeeE3scvSXPbJQ _TH6NzzW-EeeE3scvSXPbJQ _TH6NzjW-EeeE3scvSXPbJQ _TH6NzTW-EeeE3scvSXPbJQ _TH6NzDW-EeeE3scvSXPbJQ _TH6NyzW-EeeE3scvSXPbJQ _TH6NyjW-EeeE3scvSXPbJQ _TH6NyTW-EeeE3scvSXPbJQ _TH6NyDW-EeeE3scvSXPbJQ _TH6NxzW-EeeE3scvSXPbJQ _TH6NxTW-EeeE3scvSXPbJQ _TH6NqjW-EeeE3scvSXPbJQ _TH6NpzW-EeeE3scvSXPbJQ _TH6NszW-EeeE3scvSXPbJQ _TH6NsjW-EeeE3scvSXPbJQ _TH6NqDW-EeeE3scvSXPbJQ _TH6NqTW-EeeE3scvSXPbJQ _TH6NqzW-EeeE3scvSXPbJQ _TH6NrDW-EeeE3scvSXPbJQ _TH6NrTW-EeeE3scvSXPbJQ _TH6NrjW-EeeE3scvSXPbJQ _TH6NrzW-EeeE3scvSXPbJQ _TH6NsDW-EeeE3scvSXPbJQ _TH6NsTW-EeeE3scvSXPbJQ _TH6NtDW-EeeE3scvSXPbJQ _TH6NtTW-EeeE3scvSXPbJQ _TH6NtzW-EeeE3scvSXPbJQ _TH6NtjW-EeeE3scvSXPbJQ _TH6NuDW-EeeE3scvSXPbJQ _TH6NuTW-EeeE3scvSXPbJQ _TH6NujW-EeeE3scvSXPbJQ _TH6NuzW-EeeE3scvSXPbJQ _TH6NvDW-EeeE3scvSXPbJQ _TH6NvTW-EeeE3scvSXPbJQ _TH6NvjW-EeeE3scvSXPbJQ _TH6NvzW-EeeE3scvSXPbJQ _TH6NwDW-EeeE3scvSXPbJQ _TH6NwTW-EeeE3scvSXPbJQ _TH6NwzW-EeeE3scvSXPbJQ _TH6NxDW-EeeE3scvSXPbJQ" syntaxNode="_TH6NczW-EeeE3scvSXPbJQ">
+        <semanticElements xmi:id="_TH6N1DW-EeeE3scvSXPbJQ" name="CODE DATE" description="This is the date when the code and coding system were filed. This allows proper resolution of the code, irrespective of code set versions, etc." elementType="LOCAL" datatype="_IGG--L5WEeaO2LU6tv8w5A" parent="_6xGYMDZNEeeIINduyYfTVw" syntaxNode="_TH6NozW-EeeE3scvSXPbJQ"/>
+        <semanticElements xmi:id="_6xGYMDZNEeeIINduyYfTVw" name="Container" description="The root syntax node for the data elements of the VA Problem List" datatype="_TH6QFDW-EeeE3scvSXPbJQ" children="_TH6NpTW-EeeE3scvSXPbJQ _TH6NpjW-EeeE3scvSXPbJQ _TH6N1DW-EeeE3scvSXPbJQ _TH6N0TW-EeeE3scvSXPbJQ _TH6N0jW-EeeE3scvSXPbJQ _TH6N0DW-EeeE3scvSXPbJQ _TH6NzzW-EeeE3scvSXPbJQ _TH6NzjW-EeeE3scvSXPbJQ _TH6NzTW-EeeE3scvSXPbJQ _TH6NzDW-EeeE3scvSXPbJQ _TH6NyzW-EeeE3scvSXPbJQ _TH6NyjW-EeeE3scvSXPbJQ _TH6NyTW-EeeE3scvSXPbJQ _TH6NyDW-EeeE3scvSXPbJQ _TH6NxzW-EeeE3scvSXPbJQ _TH6NxTW-EeeE3scvSXPbJQ _TH6NqjW-EeeE3scvSXPbJQ _TH6NpzW-EeeE3scvSXPbJQ _TH6NszW-EeeE3scvSXPbJQ _TH6NsjW-EeeE3scvSXPbJQ _TH6NqDW-EeeE3scvSXPbJQ _TH6NqTW-EeeE3scvSXPbJQ _TH6NqzW-EeeE3scvSXPbJQ _TH6NrDW-EeeE3scvSXPbJQ _TH6NrTW-EeeE3scvSXPbJQ _TH6NrjW-EeeE3scvSXPbJQ _TH6NrzW-EeeE3scvSXPbJQ _TH6NsDW-EeeE3scvSXPbJQ _TH6NsTW-EeeE3scvSXPbJQ _TH6NtDW-EeeE3scvSXPbJQ _TH6NtTW-EeeE3scvSXPbJQ _TH6NtzW-EeeE3scvSXPbJQ _TH6NtjW-EeeE3scvSXPbJQ _TH6NuDW-EeeE3scvSXPbJQ _TH6NuTW-EeeE3scvSXPbJQ _TH6NujW-EeeE3scvSXPbJQ _TH6NuzW-EeeE3scvSXPbJQ _TH6NvDW-EeeE3scvSXPbJQ _TH6NvTW-EeeE3scvSXPbJQ _TH6NvjW-EeeE3scvSXPbJQ _TH6NvzW-EeeE3scvSXPbJQ _TH6NwDW-EeeE3scvSXPbJQ _TH6NwTW-EeeE3scvSXPbJQ _TH6NwzW-EeeE3scvSXPbJQ _TH6NxDW-EeeE3scvSXPbJQ" syntaxNode="_TH6NczW-EeeE3scvSXPbJQ">
           <fromMdmi xmi:id="_yO-xwDphEeerAfPzrIS29A" name="To_ProblemConcernContainer" businessElement="_TH6OkDW-EeeE3scvSXPbJQ"/>
           <toMdmi xmi:id="_yO_Y0DphEeerAfPzrIS29A" name="From_ProblemConcernContainer" businessElement="_TH6OkDW-EeeE3scvSXPbJQ"/>
         </semanticElements>
@@ -716,6 +730,9 @@
       <businessElements xmi:id="_lQ428FzMEeeputlbsTaowg" name="ProblemObservationStartTime" description="Date and time that a problem was recorded" reference="ProblemObservationStartTime" uniqueIdentifier="b04c3b2a-71e0-4349-9587-57f460487c97" referenceDatatype="_IGG-9b5WEeaO2LU6tv8w5A" readonly="true"/>
       <businessElements xmi:id="_lQ428VzMEeeputlbsTaowg" name="ProblemObservationCategoryCode" description="Type or category of the problem that was observed" reference="ProblemObservationCategoryCode" uniqueIdentifier="98485eab-20bf-48b7-bd96-aef07c190827" referenceDatatype="_TH6QHDW-EeeE3scvSXPbJQ" readonly="true"/>
       <businessElements xmi:id="_HTok8F0MEeeJ9vvMUGstfg" name="ProblemConcernDataEnterer" description="The person who entered the concern into the electronic healthcare record for the patient" reference="ProblemConcernDataEnterer" uniqueIdentifier="dc050c6a-5f46-4421-a76a-e8674a5e4f34" referenceDatatype="_TH6QKjW-EeeE3scvSXPbJQ" readonly="true"/>
+      <businessElements xmi:id="_Vc9sAGF-EeeE4_XRRrznhQ" name="ProblemConcernOriginalProviderLegalName" description="Name for the provider that first recorded a concern" reference="ProblemConcernOriginalProviderLegalName" uniqueIdentifier="ec1a2ea3-d421-4e30-9a17-0997aa2c158b" referenceDatatype="_TH6QKjW-EeeE3scvSXPbJQ" readonly="true"/>
+      <businessElements xmi:id="_Vc9sAWF-EeeE4_XRRrznhQ" name="ProblemConcernEvidenceValueCode" description="Code for manifestation or symptom that led to the recording of the concern" reference="ProblemConcernEvidenceValueCode" uniqueIdentifier="9d1be033-b9cb-4ec5-b7a3-72ae3e228b45" referenceDatatype="_TH6QHDW-EeeE3scvSXPbJQ" readonly="true"/>
+      <businessElements xmi:id="_Vc9sAmF-EeeE4_XRRrznhQ" name="ProblemConcernSiteCode" description="The code for the body location for the concern" reference="ProblemConcernSiteCode" uniqueIdentifier="776a6d93-3753-4e51-82a2-56acf83809a3" referenceDatatype="_TH6QHDW-EeeE3scvSXPbJQ" readonly="true"/>
     </domainDictionary>
     <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_IGG-875WEeaO2LU6tv8w5A" typeName="Binary" description="Binary" reference="http://www.w3.org/2001/XMLSchema#hexBinary"/>
     <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_IGG-9L5WEeaO2LU6tv8w5A" typeName="Boolean" description="Boolean" reference="http://www.w3.org/2001/XMLSchema#boolean"/>

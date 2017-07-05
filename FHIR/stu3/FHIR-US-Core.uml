@@ -1435,6 +1435,20 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GffD8s3tEeahpd1P9sS4xg" value="1"/>
           <redefinedProperty href="FHIR-Core.uml#_46_m1cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_bzGtkFH6EeeCuJEqfDrLcQ" name="verificationStatus" isOrdered="true">
+          <ownedComment xmi:id="_bzGtkVH6EeeCuJEqfDrLcQ">
+            <body>The verification status to support the clinical status of the condition.</body>
+          </ownedComment>
+          <ownedComment xmi:id="_bzGtklH6EeeCuJEqfDrLcQ">
+            <body>provisional | differential | confirmed | refuted | entered-in-error | unknown</body>
+          </ownedComment>
+          <ownedComment xmi:id="_bzGtk1H6EeeCuJEqfDrLcQ">
+            <body>verificationStatus is not required.  For example, when a patient has abdominal pain in the ED, there is not likely going to be a verification status.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="FHIR-Core.uml#_4aUissFMEea5pdrFDq-m2g"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bzGtlFH6EeeCuJEqfDrLcQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bzGtlVH6EeeCuJEqfDrLcQ" value="1"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_GffrAM3tEeahpd1P9sS4xg" memberEnd="_GffrAc3tEeahpd1P9sS4xg _GffD8M3tEeahpd1P9sS4xg">
         <ownedEnd xmi:id="_GffrAc3tEeahpd1P9sS4xg" type="_GPnb8M3tEeahpd1P9sS4xg" association="_GffrAM3tEeahpd1P9sS4xg">
@@ -3065,6 +3079,41 @@
     </elements>
     <elements xmi:id="_xqtCICBZEeeprpLvR3G9Sw" businessElement="MedicationOrderPrescriberRoleCode" businessElementId="f4359975-ede7-47bb-a8d9-a28a15296db9" modelElementPath="role.code">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4dcILcFMEea5pdrFDq-m2g"/>
+    </elements>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_x_rS4FH5EeeCuJEqfDrLcQ" base_Class="_GPnb8M3tEeahpd1P9sS4xg">
+    <elements xmi:id="_x_yAkFH5EeeCuJEqfDrLcQ" businessElement="ProblemConcernID" businessElementId="c313e009-5743-4dcd-ba20-9aa262b2205d" modelElementPath="identifier">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_465gOcFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_0mMpMFH5EeeCuJEqfDrLcQ" businessElement="ProblemConcernSeverityCode" businessElementId="3da9e241-9af8-43bd-a0d4-674b9b7e464e" modelElementPath="severity">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_468jhsFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_3nLt8FH5EeeCuJEqfDrLcQ" businessElement="ProblemConcernStatusCode" businessElementId="dcb24f5a-3e8f-43a4-8a00-e219ecbf87b9" modelElementPath="clinicalStatus">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_466HRsFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_BezTUFH6EeeCuJEqfDrLcQ" businessElement="ProblemConcernValueCode" businessElementId="5e566e5b-f7f8-4458-8002-04dd59b3a1d6" modelElementPath="code">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_469xqMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_DpYUgFH6EeeCuJEqfDrLcQ" businessElement="ProblemConcernCategoryCode" businessElementId="5bead539-6847-4753-aedf-54942fe0286d" modelElementPath="category">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4678ccFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_O1wtYFH6EeeCuJEqfDrLcQ" businessElement="ProblemConcernOnsetDateTime" businessElementId="9ff65a76-3d51-47c9-b2f0-518080214f3c" modelElementPath="onset[x]">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47A08cFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_Q39OoFH6EeeCuJEqfDrLcQ" businessElement="ProblemConcernAbateDateTime" businessElementId="a0ccad8e-2179-4eba-9a88-e5b96d6e0c6f" modelElementPath="abatement[x]">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47BcAMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_aogisFH6EeeCuJEqfDrLcQ" businessElement="ProblemConcernNotes" businessElementId="c3d9a923-8c9c-4611-b8bf-a8e7456c2bba" modelElementPath="note">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_5EF4dMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_jm-5kFH6EeeCuJEqfDrLcQ" businessElement="ProblemConcernSeverityCode" businessElementId="3da9e241-9af8-43bd-a0d4-674b9b7e464e" modelElementPath="severity">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_468jhsFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_aPP7UGA2EeeLBsfZLfTijA" businessElement="ProblemConcernEvidenceValueCode" businessElementId="9d1be033-b9cb-4ec5-b7a3-72ae3e228b45" modelElementPath="evidence.code">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_5EEqUMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_0Cp4YGF9EeeE4_XRRrznhQ" businessElement="ProblemConcernEvidenceValueCode" businessElementId="9d1be033-b9cb-4ec5-b7a3-72ae3e228b45" modelElementPath="evidence.code">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_5EEqUMFMEea5pdrFDq-m2g"/>
     </elements>
   </MDMI:MDMIMapping>
 </xmi:XMI>
