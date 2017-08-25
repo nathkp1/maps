@@ -376,14 +376,14 @@ Medication timing is complex. This template requires that there be a substanceAd
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2GIpoRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbvhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GJQsBSVEeGGzu7fmW9pXw" base_Property="_2GHbvhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7514</ruleId>
     <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7514</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2GMUABSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbzhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GX6MBSVEeGGzu7fmW9pXw" base_Property="_2GHbzhSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7515</ruleId>
     <ruleId>R2.0=CONF:1098-7515</ruleId>
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2GKe0BSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2GHbwhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7516</ruleId>
@@ -994,8 +994,8 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>R2.0=CONF:1098-7451</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_JbIaABrZEeGo461UQq-B1g" base_Property="_ThIPFBrYEeGo461UQq-B1g">
-    <ruleId>CONF:7455</ruleId>
     <reference href="../consol-vocab.uml#_2Hn3YBSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7455</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_j3aTQBrTEeGo461UQq-B1g" name="MedicationSupplyOrder">
     <ownedRule xmi:id="_iZPioB7lEeGEaLkc3UAsAg" name="instructionInversionInd" constrainedElement="_j3aTQBrTEeGo461UQq-B1g">
@@ -1165,9 +1165,9 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>R2.0=CONF:1098-7496</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_jT_r4B-vEeGKirKJsFylGA" base_Property="_2GkugRSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
     <ruleId>CONF:7497</ruleId>
     <ruleId>R2.0=CONF:1098-7497</ruleId>
-    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
   </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_zcy7cB-vEeGKirKJsFylGA" severity="WARNING" base_Property="_yhVYwB-vEeGKirKJsFylGA">
     <ruleId>CONF:7501</ruleId>
@@ -1226,9 +1226,9 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>R2.0=CONF:1098-8745</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_3ny2cDiAEeGSytqLITd2FA" base_Property="_2HTHQBSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
     <ruleId>CONF:8746</ruleId>
     <ruleId>R2.0=CONF:1098-8746</ruleId>
-    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_61IfsDiBEeGSytqLITd2FA" severity="WARNING" base_Property="_5f05oDiBEeGSytqLITd2FA">
     <ruleId>CONF:15498</ruleId>
@@ -1398,8 +1398,8 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:ConstraintValidation xmi:id="_nkhuYMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_2NJ3tRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_t5o2UMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_iAoXFhVdEeGQCvUGzi1kDQ"/>
   <CDA:ValueSetConstraint xmi:id="_W_OvoNuhEeGaiuMcT06VUQ" base_Property="_Dh74wCANEeGKirKJsFylGA">
-    <ruleId>CONF:7412</ruleId>
     <reference href="../consol-vocab.uml#_uPu0oCXZEeGD8_EQPvfzIQ"/>
+    <ruleId>CONF:7412</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_MB6gQNzPEeG4UqssEkZt3w" severity="WARNING" base_Constraint="_GyKRMEIsEeG4bZAl2IGXmQ"/>
   <CDA:ConstraintValidation xmi:id="_M2SjgNzPEeG4UqssEkZt3w" severity="WARNING" base_Constraint="_WONKoCANEeGKirKJsFylGA"/>
@@ -1948,12 +1948,12 @@ This effectiveTime represents either the medication duration (i.e., the time the
     <ruleId>CONF:1098-7507</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_DyKbsOLTEeOc7-TVP7Wi6w" base_Property="__4L5cOLSEeOc7-TVP7Wi6w">
-    <ruleId>CONF:1098-32360</ruleId>
     <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-32360</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_6PKzw-LYEeOc7-TVP7Wi6w" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w">
-    <ruleId>CONF:1098-7519</ruleId>
     <reference href="../consol-vocab.uml#_maiyYOHKEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-7519</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_N3hTYOLZEeOc7-TVP7Wi6w" severity="INFO" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w"/>
   <uml:Association xmi:id="_OvExAOLaEeOc7-TVP7Wi6w" memberEnd="_OvC70OLaEeOc7-TVP7Wi6w _OvFYEOLaEeOc7-TVP7Wi6w">
@@ -2134,8 +2134,8 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
     <ruleId>CONF:1098-32579</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_MeYOkOXsEeOkFcFJ9uzEEw" base_Property="_MeXngOXsEeOkFcFJ9uzEEw">
-    <ruleId>CONF:1098-7412</ruleId>
     <reference href="../consol-vocab.uml#_0_S4geXsEeOkFcFJ9uzEEw"/>
+    <ruleId>CONF:1098-7412</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_QyMNIOXsEeOkFcFJ9uzEEw" base_Property="_MeXngOXsEeOkFcFJ9uzEEw"/>
   <CDA:PropertyValidation xmi:id="_eEksYOXwEeOkFcFJ9uzEEw" severity="INFO" base_Property="_dVFJIOXwEeOkFcFJ9uzEEw">
@@ -2593,8 +2593,8 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2fqgUzhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw"/>
   <CDA:ValueSetConstraint xmi:id="_7o8uUDhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw">
-    <ruleId>CONF:1098-7369</ruleId>
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-7369</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_qeq-MDhFEeS1WeMhbm6GZw" code="ASSERTION" displayName="Assertion" base_Property="_KDeToDhEEeS1WeMhbm6GZw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
@@ -2645,12 +2645,12 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_nbj6IMLMEeSqg-Exmsy2kg" severity="WARNING" base_Property="_nbjTEMLMEeSqg-Exmsy2kg"/>
   <CDA:ValueSetConstraint xmi:id="_nbkhMMLMEeSqg-Exmsy2kg" base_Property="_nbjTEMLMEeSqg-Exmsy2kg">
-    <ruleId>CONF:1098-7514</ruleId>
     <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-7514</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_smFv8MNpEeSRNKqIviDQAg" base_Property="_smEh0MNpEeSRNKqIviDQAg">
-    <ruleId>CONF:1098-32361</ruleId>
     <reference href="../consol-vocab.uml#_dy62kMNpEeSRNKqIviDQAg"/>
+    <ruleId>CONF:1098-32361</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_33ADgMNpEeSRNKqIviDQAg" base_Property="_smEh0MNpEeSRNKqIviDQAg">
     <ruleId>CONF:1098-7455</ruleId>
@@ -2662,8 +2662,8 @@ This section requires either an entry indicating the subject is not known to be 
     <ruleId>CONF:1098-7432</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_e9LkEMOGEeSRNKqIviDQAg" base_Property="_bgxuoMOGEeSRNKqIviDQAg">
-    <ruleId>CONF:1098-32362</ruleId>
     <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-32362</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Hv6hU8OIEeSRNKqIviDQAg" severity="WARNING" base_Property="_Hv6hUMOIEeSRNKqIviDQAg">
     <ruleId>CONF:1098-7434</ruleId>
@@ -2672,8 +2672,8 @@ This section requires either an entry indicating the subject is not known to be 
     <ruleId>CONF:1098-8749</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_vPRM4MQSEeSt_63yiINGSw" base_Property="_oW6N8MQSEeSt_63yiINGSw">
-    <ruleId>CONF:1098-32363</ruleId>
     <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-32363</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_YauMIMQUEeSt_63yiINGSw" memberEnd="_Yas-AMQUEeSt_63yiINGSw _YauzMMQUEeSt_63yiINGSw">
     <ownedEnd xmi:id="_YauzMMQUEeSt_63yiINGSw" type="_k_C20OaCEeOmzetP5oaH3A" association="_YauMIMQUEeSt_63yiINGSw"/>
@@ -2684,12 +2684,12 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_07H3UMhCEeSU-Km0iFeHDg" severity="INFO" base_Property="_2GHbxhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_JAJr4MhDEeSU-Km0iFeHDg" base_Property="_2GHbxhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7519</ruleId>
     <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7519</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_WpUWIPpdEeS-CfvNxekztA" base_Property="_WDsGYYqvEeOoMZgUoTghIg">
-    <ruleId>CONF:1098-32358</ruleId>
     <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
+    <ruleId>CONF:1098-32358</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_pHwjUA7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_so0iEOZ2EeO97uF_XMEmeg"/>
   <CDA:ConstraintValidation xmi:id="_pldL8A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_cKGQYOZ3EeO97uF_XMEmeg"/>
@@ -2826,8 +2826,8 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <ruleId>CONF:1198-32754</ruleId>
   </CDA:TextValue>
   <CDA:ValueSetConstraint xmi:id="_eS9XoDsBEeWD4MX6K2c_gA" base_Property="_HkAI4DsAEeWD4MX6K2c_gA">
-    <ruleId>CONF:1198-32771</ruleId>
     <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
+    <ruleId>CONF:1198-32771</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_BH7ycDsCEeWD4MX6K2c_gA" code="76662-6" displayName="Instructions Medication" base_Property="_Hj_h0DsAEeWD4MX6K2c_gA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -2968,5 +2968,64 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     </elements>
     <elements xmi:id="_lEdXQNTpEeWqHOHsDZliBA" businessElement="MedicationsDispensed" modelElement="_H7DfghUUEeG6PvUxSTZnaw" businessElementId="b93f09a7-7db8-4a1a-af3e-8ec5cf64533c" modelElementPath="medication.medicationDispense" condition="@classCode = &quot;SPLY&quot; and @moodCode=EVN&quot;"/>
     <elements xmi:id="_yHIjYNTpEeWqHOHsDZliBA" businessElement="MedicationDispenseStatusCode" modelElement="_ThIPFBrYEeGo461UQq-B1g" businessElementId="ee2c991e-57fd-43f5-baaf-57be4acf665b" modelElementPath="medication.medicationDispense.statusCode" condition="@classCode = &quot;SPLY&quot; and @moodCode=EVN&quot;"/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_44wwQIjQEeeQNsptP1LNdA" base_Class="_2KEucBSVEeGGzu7fmW9pXw">
+    <elements xmi:id="_4456MIjQEeeQNsptP1LNdA" businessElement="MedicalEquipmentSectionNotes" modelElement="_2KHKshSVEeGGzu7fmW9pXw" businessElementId="eab8948d-0144-4fe0-8681-5568e442838b" modelElementPath="text"/>
+    <elements xmi:id="_DyFqQIjREeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerContainer" modelElement="_2KHKshSVEeGGzu7fmW9pXw" businessElementId="97a6b92f-cd74-477c-865b-41ae290f5022" modelElementPath="text"/>
+    <elements xmi:id="_LAoUkIjREeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerID" modelElement="_2HTHQhSVEeGGzu7fmW9pXw" businessElementId="8ad4dec9-23f2-4d89-90aa-e7c6fd6133c6" modelElementPath="nonMedicinalSupplyActivity.id"/>
+    <elements xmi:id="_OEzQMIjREeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerStatusCode" modelElement="_2HIvXxSVEeGGzu7fmW9pXw" businessElementId="140a4558-55b7-4cbb-aeac-9cd77d3d6c72" modelElementPath="nonMedicinalSupplyActivity.statusCode"/>
+    <elements xmi:id="_RvW2YIjREeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerStartDateTime" modelElement="_5f05oDiBEeGSytqLITd2FA" businessElementId="e28e81bc-075a-4fd2-a256-1f931f11bba5" modelElementPath="nonMedicinalSupplyActivity.effectiveTime"/>
+    <elements xmi:id="_UykIsIjREeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerEndDateTime" modelElement="_5f05oDiBEeGSytqLITd2FA" businessElementId="2e13b5b2-82f9-4968-b810-07b7080dc706" modelElementPath="nonMedicinalSupplyActivity.effectiveTime"/>
+    <elements xmi:id="_P1fVQIjSEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyProductID" modelElement="_tsW2JDiCEeGSytqLITd2FA" businessElementId="2fe396b2-1237-4720-b02e-965e26b81e23" modelElementPath="nonMedicinalSupplyActivity.productInstance.id"/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_uSLWoIjREeeQNsptP1LNdA" base_Class="_2HIvMBSVEeGGzu7fmW9pXw">
+    <elements xmi:id="_uSLWoYjREeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerTypeCode" businessElementId="5bae7eda-055a-4b46-97ff-528c39a874fe" modelElementPath="code">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_1JZ7sErtEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_y0aywIjREeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyID" businessElementId="8975de2f-dac5-42ae-9bd2-63f6e34c77fb" modelElementPath="id">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_x1NnEErtEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_4z_vkIjREeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyStatusCode" businessElementId="fc563be1-b392-445f-9e26-b8ac64bf7e87" modelElementPath="statusCode">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_42xlUErtEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_9olf8IjREeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyDateTime" businessElementId="5798b3f5-f74a-4274-935f-f82de3094abe" modelElementPath="effectiveTime">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_8voGMErtEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_EOFNQIjSEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyAmountNumber" businessElementId="a53f0f5e-085a-4f4e-a9b5-04ee79bed667" modelElementPath="quantity">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_KwFJMEruEd6FXKclYGEDCw"/>
+    </elements>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_VdnCEIjXEeeQNsptP1LNdA" base_Class="_5OKxwP1bEeO5Hq-yrsJSmg">
+    <elements xmi:id="_VdnCEYjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerContainer" modelElement="_0uxUoP1jEeO5Hq-yrsJSmg" businessElementId="97a6b92f-cd74-477c-865b-41ae290f5022" modelElementPath="medicalEquipmentOrganizer" condition=""/>
+    <elements xmi:id="_XNS3AIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerID" businessElementId="8ad4dec9-23f2-4d89-90aa-e7c6fd6133c6" modelElementPath="medicalEquipmentOrganizer.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_cHpURo0dEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_ZaJJEIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerTypeCode" businessElementId="5bae7eda-055a-4b46-97ff-528c39a874fe" modelElementPath="medicalEquipmentOrganizer.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_cHpUQI0dEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_bV_xwIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerStatusCode" businessElementId="140a4558-55b7-4cbb-aeac-9cd77d3d6c72" modelElementPath="medicalEquipmentOrganizer.statusCode" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_cHp7U40dEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_dfiRIIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerStartDateTime" businessElementId="e28e81bc-075a-4fd2-a256-1f931f11bba5" modelElementPath="medicalEquipmentOrganizer.effectiveTime.low" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_cHpUQ40dEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_fYvOcIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerEndDateTime" businessElementId="2e13b5b2-82f9-4968-b810-07b7080dc706" modelElementPath="medicalEquipmentOrganizer.effectiveTime.high" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_cHpUQ40dEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_qEkfAIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyContainer" businessElementId="bb7ed589-1f8f-4d17-add0-c1fa81cea449" modelElementPath="medicalEquipmentOrganizer.nonMedicinalSupplyActivity2">
+      <modelElement xmi:type="uml:Association" href="consol-other.uml#_k1iUoI0hEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_uiolwIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyID" modelElement="_2HTHQhSVEeGGzu7fmW9pXw" businessElementId="8975de2f-dac5-42ae-9bd2-63f6e34c77fb" modelElementPath="medicalEquipmentOrganizer.nonMedicinalSupplyActivity2.id"/>
+    <elements xmi:id="_zS520IjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyDateTime" modelElement="_5f05oDiBEeGSytqLITd2FA" businessElementId="5798b3f5-f74a-4274-935f-f82de3094abe" modelElementPath="medicalEquipmentOrganizer.nonMedicinalSupplyActivity2.effectiveTime"/>
+    <elements xmi:id="_fyoDMIjZEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyID" modelElement="_iJglcDosEeGSytqLITd2FA" businessElementId="8975de2f-dac5-42ae-9bd2-63f6e34c77fb" modelElementPath="medicalEquipmentOrganizer.nonMedicinalSupplyActivity2.productInstance.scopingEntity.id"/>
+    <elements xmi:id="_SSXtwIjaEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyInstructionValueCode" businessElementId="1cfe20b7-7c62-43d2-8173-20c380d495f6" modelElementPath="nonMedicinalSupplyActivity2.instruction2.code">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
+    </elements>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_32IKYIjXEeeQNsptP1LNdA" base_Class="_k_C20OaCEeOmzetP5oaH3A">
+    <elements xmi:id="_32IxcIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyAmountNumber" modelElement="_2HUVYBSVEeGGzu7fmW9pXw" businessElementId="a53f0f5e-085a-4f4e-a9b5-04ee79bed667" modelElementPath="quantity"/>
+    <elements xmi:id="_-SGvUIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyProductID" modelElement="_tsW2JDiCEeGSytqLITd2FA" businessElementId="2fe396b2-1237-4720-b02e-965e26b81e23" modelElementPath="productInstance.id"/>
+    <elements xmi:id="_B3aCEIjYEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyProductValueCode" modelElement="_SXxyEDosEeGSytqLITd2FA" businessElementId="56257f55-ba56-418c-b2fa-034fcd85c533" modelElementPath="productInstance.playingDevice.code"/>
+    <elements xmi:id="_EblZkIjZEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyProductValueCode" modelElement="_SXxyEDosEeGSytqLITd2FA" businessElementId="56257f55-ba56-418c-b2fa-034fcd85c533" modelElementPath="productInstance.playingDevice.code"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>

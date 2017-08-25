@@ -146,8 +146,8 @@ historical purposes.&#xD;
     <ruleId>CONF:9026, R2.1=CONF:1198-9026</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2IAR4BSVEeGGzu7fmW9pXw" base_Property="_2H_q0BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:9029</ruleId>
     <reference href="../consol-vocab.uml#_2GDxJhSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:9029</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2IBgBBSVEeGGzu7fmW9pXw" base_Property="_2IBgABSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9030, R2.1=CONF:1198-9030</ruleId>
@@ -235,9 +235,9 @@ historical purposes.&#xD;
     <ruleId>CONF:9074</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_2Eyl0BSVEeGGzu7fmW9pXw" base_Property="_2ExXuBSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_MTK-YeJsEeG3cO7ebC3QuA"/>
     <ruleId>CONF:9075</ruleId>
     <ruleId>R2.0=CONF:1098-9075</ruleId>
-    <reference href="../consol-vocab.uml#_MTK-YeJsEeG3cO7ebC3QuA"/>
   </CDA:ValueSetConstraint>
   <CDA:CDATemplate xmi:id="_p4UDcBnbEeGs5a462vYX5Q" base_Class="_2ExXsBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.5">
     <ruleId>CONF:16756</ruleId>
@@ -609,9 +609,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_4oveoCAtEeGetMjKLkqR8g" base_Property="_6-ejQBUyEeGbmN_W114JUw">
     <ruleId>CONF:9043, R2.1=CONF:1198-9043</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_AbDkYCAuEeGetMjKLkqR8g" severity="WARNING" base_Property="_6-UyQBUyEeGbmN_W114JUw">
-    <ruleId>CONF:9045</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_AbDkYCAuEeGetMjKLkqR8g" base_Property="_6-UyQBUyEeGbmN_W114JUw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:9045</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_BxcdoCAwEeGetMjKLkqR8g" severity="WARNING" base_Property="_zGapECAuEeGetMjKLkqR8g">
     <ruleId>CONF:9050</ruleId>
@@ -623,9 +623,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:9049, R2.1=CONF:1198-9049</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_JUSukCAxEeGetMjKLkqR8g" severity="WARNING" base_Property="_zGb3MSAuEeGetMjKLkqR8g">
-    <ruleId>CONF:9058</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_JUSukCAxEeGetMjKLkqR8g" base_Property="_zGb3MSAuEeGetMjKLkqR8g" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:9058</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_99C6wCA2EeG9GZYpu7WBOQ" severity="INFO" base_Association="_H_AaUBUzEeGbmN_W114JUw" typeCode="SUBJ">
     <ruleId>CONF:9059, CONF:9060, CONF:15590, R2.1=CONF:1198-9059, R2.1=CONF:1198-9060, R2.1=CONF:1198-15590</ruleId>
@@ -654,8 +654,8 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:7362</ruleId>
   </CDA:TextValue>
   <CDA:ValueSetConstraint xmi:id="_AiK7MCA9EeG9GZYpu7WBOQ" base_Property="_g9B5cCA8EeG9GZYpu7WBOQ">
-    <ruleId>CONF:7365</ruleId>
     <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7365</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_0SNWsCBCEeG938evaWkvcA" base_Constraint="_sPoAUCBCEeG938evaWkvcA">
     <ruleId>CONF:7618</ruleId>
@@ -893,8 +893,8 @@ The effectiveTime represents the clinically relevant time of the observation. Th
     <ruleId>CONF:1098-29944</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_oKM68Jp1EeOK6dzbL4VoTA" base_Property="_Ja1zBJpnEeOK6dzbL4VoTA">
-    <ruleId>CONF:1098-29947</ruleId>
     <reference href="../consol-vocab.uml#_LH7ekZp1EeOK6dzbL4VoTA"/>
+    <ruleId>CONF:1098-29947</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_9A8D0Jp2EeOK6dzbL4VoTA" severity="INFO">
     <ruleId>CONF:31541</ruleId>
@@ -1134,8 +1134,8 @@ Many systems display the nested Problem Observation with the most recent author 
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_QaoKsOzcEeOnE-G4kptBiw" base_Generalization="_y5C8IezbEeOnE-G4kptBiw"/>
   <CDA:ValueSetConstraint xmi:id="_zYX1E-zeEeOnE-G4kptBiw" base_Property="_zYX1EOzeEeOnE-G4kptBiw">
-    <ruleId>CONF:1198-31525</ruleId>
     <reference href="../consol-vocab.uml#_SZOJNsmlEeSr1c1X9ACWbg"/>
+    <ruleId>CONF:1198-31525</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_9UT5wOzeEeOnE-G4kptBiw" base_Property="_zYX1EOzeEeOnE-G4kptBiw">
     <ruleId>CONF:1198-9029</ruleId>
@@ -1372,9 +1372,9 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   <CDA:AssociationValidation xmi:id="_VckmAPDLEeOKPKE9au0oug" severity="WARNING" base_Association="_UxJqcPDLEeOKPKE9au0oug">
     <ruleId>CONF:1198-31147</ruleId>
   </CDA:AssociationValidation>
-  <CDA:ValueSetConstraint xmi:id="_bZKDwPDMEeOKPKE9au0oug" severity="WARNING" base_Property="_bZJcsPDMEeOKPKE9au0oug">
-    <ruleId>CONF:1198-9058</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_bZKDwPDMEeOKPKE9au0oug" base_Property="_bZJcsPDMEeOKPKE9au0oug" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1198-9058</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_bZL48PDMEeOKPKE9au0oug" base_Property="_bZJcsPDMEeOKPKE9au0oug"/>
   <CDA:PropertyValidation xmi:id="_kTm2QPDMEeOKPKE9au0oug" severity="INFO" base_Property="_hztFUPDMEeOKPKE9au0oug">
@@ -1514,9 +1514,9 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   <CDA:PropertyValidation xmi:id="_W-iCwMEmEeSjB6vMjDsL5Q" base_Property="_Voy-4MEmEeSjB6vMjDsL5Q">
     <ruleId>CONF:1098-9074</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_52axsMm4EeSr1c1X9ACWbg" severity="WARNING" base_Property="_52ZjkMm4EeSr1c1X9ACWbg">
-    <ruleId>CONF:1198-9045</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_52axsMm4EeSr1c1X9ACWbg" base_Property="_52ZjkMm4EeSr1c1X9ACWbg" severity="WARNING">
     <reference href="../consol-vocab.uml#_ngam0Ez2EeWJ65CktI2ODQ"/>
+    <ruleId>CONF:1198-9045</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_52d1AMm4EeSr1c1X9ACWbg" base_Property="_52ZjkMm4EeSr1c1X9ACWbg"/>
   <CDA:CodeSystemConstraint xmi:id="_8NtHQMm6EeSr1c1X9ACWbg" code="completed" displayName="Completed" base_Property="_8NsgMMm6EeSr1c1X9ACWbg">
@@ -1552,34 +1552,29 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   <CDA:ConstraintValidation xmi:id="_ZsFgEBaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_UJBgIMEkEeSjB6vMjDsL5Q"/>
   <CDA:ConstraintValidation xmi:id="_cDQLwBaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_YgU3kMEkEeSjB6vMjDsL5Q"/>
   <CDA:PropertyValidation xmi:id="_3bREgE9oEeWsIc5CMrI4GA" base_Property="_zWj48E9oEeWsIc5CMrI4GA"/>
-  <CDA:ValueSetConstraint xmi:id="_5ALM0E9oEeWsIc5CMrI4GA" severity="WARNING" base_Property="_zWj48E9oEeWsIc5CMrI4GA">
-    <ruleId>CONF:1198-32848</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_5ALM0E9oEeWsIc5CMrI4GA" base_Property="_zWj48E9oEeWsIc5CMrI4GA" severity="WARNING">
     <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
+    <ruleId>CONF:1198-32848</ruleId>
   </CDA:ValueSetConstraint>
   <MDMI:MDMIMapping xmi:id="_J8SSQL7_EeWoV-fDNleHag" base_Class="_2LSPYBSVEeGGzu7fmW9pXw">
     <elements xmi:id="_J8SSQb7_EeWoV-fDNleHag" businessElement="ProblemSection" modelElement="_2LSPYBSVEeGGzu7fmW9pXw" businessElementId="4b655929-8602-4317-9773-3c150b0dc7db" modelElementPath="" condition=""/>
     <elements xmi:id="_OkCggL7_EeWoV-fDNleHag" businessElement="ProblemConcernAct" modelElement="_uvodUyf1EeGO5_JBy9h6BA" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath="problemConcern" condition=""/>
     <elements xmi:id="_RPuDoL7_EeWoV-fDNleHag" businessElement="ProblemConcernId" modelElement="_2H-csxSVEeGGzu7fmW9pXw" businessElementId="c313e009-5743-4dcd-ba20-9aa262b2205d" modelElementPath="problemConcern.id" condition=""/>
     <elements xmi:id="_V4Ze8L7_EeWoV-fDNleHag" businessElement="ProblemConcernStatus" modelElement="_2H_q0BSVEeGGzu7fmW9pXw" businessElementId="dcb24f5a-3e8f-43a4-8a00-e219ecbf87b9" modelElementPath="problemConcern.statusCode" condition=""/>
-    <elements xmi:id="_v0dYUL7_EeWoV-fDNleHag" businessElement="Problem" modelElement="_1CFA0hUzEeGbmN_W114JUw" businessElementId="31a49b96-715d-4fce-b592-b10b8fe3ef1c" modelElementPath="problemConcern.problemObservation" condition="(not(@negationIND) or negationIND = &quot;false&quot;)"/>
-    <elements xmi:id="_43MkIL7_EeWoV-fDNleHag" businessElement="ProblemObservationId" modelElement="_6-ejQBUyEeGbmN_W114JUw" businessElementId="d8d7bfb2-b024-4049-9c87-efc36897e8f7" modelElementPath="problemConcern.problemObservation.id" condition="(not(@negationIND) or negationIND = &quot;false&quot;)"/>
-    <elements xmi:id="_9V3H0L7_EeWoV-fDNleHag" businessElement="ProblemType" modelElement="_6-UyQBUyEeGbmN_W114JUw" businessElementId="71fd64ec-7f9f-4027-a701-f6326b5750f6" modelElementPath="problemConcern.problemObservation.code" condition="(not(@negationIND) or negationIND = &quot;false&quot;)"/>
-    <elements xmi:id="_FQ654L8AEeWoV-fDNleHag" businessElement="ProblemConcernNotes" modelElement="_zGbQJCAuEeGetMjKLkqR8g" businessElementId="c3d9a923-8c9c-4611-b8bf-a8e7456c2bba" modelElementPath="problemConcern.problemObservation.text" condition="(not(@negationIND) or negationIND = &quot;false&quot;)"/>
-    <elements xmi:id="_SJUvsL8AEeWoV-fDNleHag" businessElement="ProblemObservationCode" modelElement="_zGb3MSAuEeGetMjKLkqR8g" businessElementId="90a0b23b-525d-4977-8c5f-d2012dd04da2" modelElementPath="problemConcern.problemObservation.value" condition="(not(@negationIND) or negationIND = &quot;false&quot;)"/>
+    <elements xmi:id="_v0dYUL7_EeWoV-fDNleHag" businessElement="Problem" modelElement="_1CFA0hUzEeGbmN_W114JUw" businessElementId="31a49b96-715d-4fce-b592-b10b8fe3ef1c" modelElementPath="problemConcern.problemObservation" condition=""/>
+    <elements xmi:id="_43MkIL7_EeWoV-fDNleHag" businessElement="ProblemObservationId" modelElement="_6-ejQBUyEeGbmN_W114JUw" businessElementId="d8d7bfb2-b024-4049-9c87-efc36897e8f7" modelElementPath="problemConcern.problemObservation.id" condition=""/>
+    <elements xmi:id="_9V3H0L7_EeWoV-fDNleHag" businessElement="ProblemType" modelElement="_6-UyQBUyEeGbmN_W114JUw" businessElementId="71fd64ec-7f9f-4027-a701-f6326b5750f6" modelElementPath="problemConcern.problemObservation.code" condition=""/>
+    <elements xmi:id="_FQ654L8AEeWoV-fDNleHag" businessElement="ProblemConcernNotes" modelElement="_zGbQJCAuEeGetMjKLkqR8g" businessElementId="c3d9a923-8c9c-4611-b8bf-a8e7456c2bba" modelElementPath="problemConcern.problemObservation.text" condition=""/>
+    <elements xmi:id="_SJUvsL8AEeWoV-fDNleHag" businessElement="ProblemObservationCode" modelElement="_zGb3MSAuEeGetMjKLkqR8g" businessElementId="90a0b23b-525d-4977-8c5f-d2012dd04da2" modelElementPath="problemConcern.problemObservation.value" condition=""/>
     <elements xmi:id="_WwfIEL8AEeWoV-fDNleHag" businessElement="ProblemAgeAtObservation" modelElement="_2EqqCxSVEeGGzu7fmW9pXw" businessElementId="e22b4f96-a35c-47f5-bd8b-a086f49d00fe" modelElementPath="problemConcern.problemObservation.ageObservation.value" condition=""/>
     <elements xmi:id="_eZ2GIL8AEeWoV-fDNleHag" businessElement="ProblemStatusValue" modelElement="_g9B5cCA8EeG9GZYpu7WBOQ" businessElementId="8be01b45-bbc4-44f1-a7e9-78498e4cd063" modelElementPath="problemConcern.problemObservation.problemStatus.value" condition=""/>
     <elements xmi:id="_6-XagMNpEeWkP5CUCbnCrw" businessElement="ProblemSectionText" modelElement="_NSzLQlGkEeG3H6xvuD7Z0Q" businessElementId="d33c1f71-efbd-40f0-9ff9-53e8914a40f9" modelElementPath="text" condition=""/>
     <elements xmi:id="_E28CIMNqEeWkP5CUCbnCrw" businessElement="ProblemSectionTitle" modelElement="_NSzLRlGkEeG3H6xvuD7Z0Q" businessElementId="dbdd2663-65b8-4634-8a26-5a5c4181a299" modelElementPath="title" condition=""/>
-    <elements xmi:id="_1GGCwMNtEeW9tdwyrRMXHg" businessElement="ProblemNotaProblemObservationId" modelElement="_6-ejQBUyEeGbmN_W114JUw" businessElementId="209c023a-d4c0-4efc-8880-ba1ae8e9cd87" modelElementPath="problemConcern.problemObservation.id" condition="@negationInd = &quot;true&quot;"/>
-    <elements xmi:id="_CKIEUMNvEeW9tdwyrRMXHg" businessElement="ProblemNotAProblemObservationCode" modelElement="_6-UyQBUyEeGbmN_W114JUw" businessElementId="ae4cabae-4f2f-46f5-b700-bb56f981578e" modelElementPath="problemConcern.problemObservation.code" condition="@negationInd = &quot;true&quot;"/>
-    <elements xmi:id="_FeR8sMNvEeW9tdwyrRMXHg" businessElement="ProblemNotAProblemObservationText" modelElement="_zGbQJCAuEeGetMjKLkqR8g" businessElementId="44094c74-cb02-4093-8a41-6bd1468fad34" modelElementPath="problemConcern.problemObservation.text" condition="@negationInd = &quot;true&quot;"/>
-    <elements xmi:id="_O7uHgMNvEeW9tdwyrRMXHg" businessElement="ProblemNotAProblemObservationValue" modelElement="_zGb3MSAuEeGetMjKLkqR8g" businessElementId="744fe1b3-2266-4cbd-9905-151fc48e15fe" modelElementPath="problemConcern.problemObservation.value" condition="@negationInd = &quot;true&quot;"/>
     <elements xmi:id="_BX8_gMN6EeW9tdwyrRMXHg" businessElement="ProblemObservationHealthStatusValue" modelElement="_2ExXuBSVEeGGzu7fmW9pXw" businessElementId="264b4b9c-5206-4ae9-989a-3fa12376ed4c" modelElementPath="problemConcern.problemObservation.healthStatusObservation.value" condition=""/>
-    <elements xmi:id="_8niSUOZIEeW5Oax7LpOkcw" businessElement="ProblemObservationEffectiveTime" modelElement="_zGapECAuEeGetMjKLkqR8g" businessElementId="82292864-2151-49f3-ae2a-f82f394046ea" modelElementPath="problemConcern.problemObservation.effectiveTime" condition="(not(@negationIND) or negationIND = &quot;false&quot;)"/>
-    <elements xmi:id="_Nw61IOZJEeW5Oax7LpOkcw" businessElement="ProblemConcernEffectiveTime" modelElement="_2IBgABSVEeGGzu7fmW9pXw" businessElementId="34538e54-c6a1-40ed-a48e-382ae7aff937" modelElementPath="problemConcern.effectiveTime" condition="(not(@negationIND) or negationIND = &quot;false&quot;)"/>
-    <elements xmi:id="_k5MYQOZJEeW5Oax7LpOkcw" businessElement="ProblemNotAProblemObservationEffectiveTime" modelElement="_zGapECAuEeGetMjKLkqR8g" businessElementId="c53e304f-353b-4f8a-98ba-459d1d703a3f" modelElementPath="problemConcern.problemObservation.effectiveTime" condition="(not(@negationIND) or negationIND = &quot;false&quot;)"/>
     <elements xmi:id="_14BRML4vEeai696xr1goog" businessElement="ProblemConcernCode" modelElement="_2H_DwRSVEeGGzu7fmW9pXw" businessElementId="5e566e5b-f7f8-4458-8002-04dd59b3a1d6" modelElementPath="problemConcern.code" condition=""/>
-    <elements xmi:id="_79eMgL4vEeai696xr1goog" businessElement="ProblemConcernDateDiagnosed" modelElement="_2IBgABSVEeGGzu7fmW9pXw" businessElementId="53f6c81b-c222-4012-b66c-3a55445f4f1c" modelElementPath="problemConcern.effectiveTime" condition="rollup.low"/>
-    <elements xmi:id="__4GPAL4vEeai696xr1goog" businessElement="ProblemConcernAbateDate" modelElement="_2IBgABSVEeGGzu7fmW9pXw" businessElementId="a0ccad8e-2179-4eba-9a88-e5b96d6e0c6f" modelElementPath="problemConcern.effectiveTime" condition="rollup.high"/>
+    <elements xmi:id="_79eMgL4vEeai696xr1goog" businessElement="ProblemConcernDateDiagnosed" modelElement="_2IBgABSVEeGGzu7fmW9pXw" businessElementId="53f6c81b-c222-4012-b66c-3a55445f4f1c" modelElementPath="problemConcern.effectiveTime.low" condition=""/>
+    <elements xmi:id="__4GPAL4vEeai696xr1goog" businessElement="ProblemConcernAbateDate" modelElement="_2IBgABSVEeGGzu7fmW9pXw" businessElementId="a0ccad8e-2179-4eba-9a88-e5b96d6e0c6f" modelElementPath="problemConcern.effectiveTime.high" condition=""/>
+    <elements xmi:id="_5go-4IjsEeebaPo8as0fGA" businessElement="ProblemObservationStartTime" modelElement="_zGapECAuEeGetMjKLkqR8g" businessElementId="b04c3b2a-71e0-4349-9587-57f460487c97" modelElementPath="problemConcern.problemObservation.effectiveTime.low" condition=""/>
+    <elements xmi:id="_TS6qIIjtEeebaPo8as0fGA" businessElement="ProblemObservationEndDateTime" modelElement="_zGapECAuEeGetMjKLkqR8g" businessElementId="f8acb2f5-638a-46b0-b4a2-421c07c1e952" modelElementPath="problemConcern.problemObservation.effectiveTime.high" condition=""/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
