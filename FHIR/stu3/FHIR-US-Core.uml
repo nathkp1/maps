@@ -2963,7 +2963,10 @@
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47UW8cFMEea5pdrFDq-m2g"/>
     </elements>
   </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_D0SwINNrEeag-vfi0Fbwcw" base_Class="_F5bJhM3tEeahpd1P9sS4xg"/>
+  <MDMI:MDMIMapping xmi:id="_D0SwINNrEeag-vfi0Fbwcw" base_Class="_F5bJhM3tEeahpd1P9sS4xg">
+    <elements xmi:id="_ZELYsImeEeeVloUyGHi59w" businessElement="CarePlanSectionNotes" modelElement="_F5cXo83tEeahpd1P9sS4xg" businessElementId="27a3dced-791a-4381-95da-93e68b890c66" modelElementPath="text"/>
+    <elements xmi:id="_aannMImeEeeVloUyGHi59w" businessElement="CarePlanSectionContainer" modelElement="_F5bJhM3tEeahpd1P9sS4xg" businessElementId="409d5f35-22f1-4699-8cce-22ce1ae25e6f" modelElementPath=""/>
+  </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_wmZYsNgcEeaP9MutKDaSyQ" base_Class="_AGPC4M3tEeahpd1P9sS4xg">
     <elements xmi:id="_wmb08NgcEeaP9MutKDaSyQ" businessElement="ImmunizationAdministeredId" businessElementId="8c02401f-cd06-41c7-944b-298c0127f188" modelElementPath="identifier">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_5NpdGMFMEea5pdrFDq-m2g"/>
@@ -3180,8 +3183,7 @@
     <elements xmi:id="_0Cp4YGF9EeeE4_XRRrznhQ" businessElement="ProblemConcernEvidenceValueCode" businessElementId="9d1be033-b9cb-4ec5-b7a3-72ae3e228b45" modelElementPath="evidence.code">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_5EEqUMFMEea5pdrFDq-m2g"/>
     </elements>
-     <elements xmi:id="_4B0-MIKvEeeAYJhVEUNjFw" businessElement="ProblemConcernContainer" modelElement="_GPnb8M3tEeahpd1P9sS4xg" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath=""/>
- 
+    <elements xmi:id="_4B0-MIKvEeeAYJhVEUNjFw" businessElement="ProblemConcernContainer" modelElement="_GPnb8M3tEeahpd1P9sS4xg" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_Six84GyBEeeXj9p9i-YUIw" base_Class="_BgbwAM3tEeahpd1P9sS4xg">
     <elements xmi:id="_Si2OUGyBEeeXj9p9i-YUIw" businessElement="ProcedurePerformedID" businessElementId="f23632b4-de3d-4a10-9881-ceff3b0d6a20" modelElementPath="identifier">
