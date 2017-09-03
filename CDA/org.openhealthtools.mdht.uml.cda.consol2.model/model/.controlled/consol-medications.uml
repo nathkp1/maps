@@ -2965,8 +2965,8 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <elements xmi:id="_cAhvENTdEeWqHOHsDZliBA" businessElement="MedicationAdministeredReactionValue" businessElementId="c40e266f-61e8-4fcb-8876-fe5e8d169c5f" modelElementPath="medication.reactionObservation.value" condition="moodCode=&quot;EVN&quot;">
       <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_2FFgwRSVEeGGzu7fmW9pXw"/>
     </elements>
-    <elements xmi:id="_lEdXQNTpEeWqHOHsDZliBA" businessElement="MedicationsDispensed" modelElement="_H7DfghUUEeG6PvUxSTZnaw" businessElementId="b93f09a7-7db8-4a1a-af3e-8ec5cf64533c" modelElementPath="medication.medicationDispense" condition=""/>
     <elements xmi:id="_yHIjYNTpEeWqHOHsDZliBA" businessElement="MedicationDispenseStatusCode" modelElement="_ThIPFBrYEeGo461UQq-B1g" businessElementId="ee2c991e-57fd-43f5-baaf-57be4acf665b" modelElementPath="medication.medicationDispense.statusCode" condition=""/>
+    <elements xmi:id="_RcqKcI9AEeeNuo6J86JnLQ" businessElement="MedicationDispenseContainer" modelElement="_H7DfghUUEeG6PvUxSTZnaw" businessElementId="8f57d590-40f5-4478-83d6-3102c431172e" modelElementPath="medicationActivity.medicationDispense"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_44wwQIjQEeeQNsptP1LNdA" base_Class="_2KEucBSVEeGGzu7fmW9pXw">
     <elements xmi:id="_4456MIjQEeeQNsptP1LNdA" businessElement="MedicalEquipmentSectionNotes" modelElement="_2KHKshSVEeGGzu7fmW9pXw" businessElementId="eab8948d-0144-4fe0-8681-5568e442838b" modelElementPath="text"/>
@@ -3027,4 +3027,5 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <elements xmi:id="_B3aCEIjYEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyProductValueCode" modelElement="_SXxyEDosEeGSytqLITd2FA" businessElementId="56257f55-ba56-418c-b2fa-034fcd85c533" modelElementPath="productInstance.playingDevice.code"/>
     <elements xmi:id="_EblZkIjZEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyProductValueCode" modelElement="_SXxyEDosEeGSytqLITd2FA" businessElementId="56257f55-ba56-418c-b2fa-034fcd85c533" modelElementPath="productInstance.playingDevice.code"/>
   </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_nDZVQI8zEeeNuo6J86JnLQ" base_Class="_P2mp4ALQEeS0YMHMf4rRtQ"/>
 </xmi:XMI>
