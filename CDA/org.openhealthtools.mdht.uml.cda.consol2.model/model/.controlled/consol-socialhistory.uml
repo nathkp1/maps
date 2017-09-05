@@ -136,9 +136,9 @@
   <CDA:PropertyValidation xmi:id="_2JPoABSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8558</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2JPoARSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8896</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_2JPoARSVEeGGzu7fmW9pXw" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2JjKCRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:8896</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_2JRdMBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2JTSYRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2JTSYBSVEeGGzu7fmW9pXw">
@@ -376,9 +376,9 @@
     <ruleId>R2.0=CONF:1098-19118</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_RzEd4OWTEeGKmvzED_He2w" base_Property="_kh-7c-WQEeGKmvzED_He2w">
+    <reference href="../consol-vocab.uml#_EA1dEeWTEeGKmvzED_He2w"/>
     <ruleId>CONF:16563</ruleId>
     <ruleId>R2.0=CONF:1098-16563</ruleId>
-    <reference href="../consol-vocab.uml#_EA1dEeWTEeGKmvzED_He2w"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_UO1VsOWTEeGKmvzED_He2w" base_Property="_kh-7c-WQEeGKmvzED_He2w">
     <ruleId>CONF:16562</ruleId>
@@ -493,8 +493,8 @@ The smoking status value set includes a special code to communicate if the smoki
     <ruleId>CONF:14810</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_Zp9sMOWUEeGKmvzED_He2w" base_Property="_Yz0rNOWQEeGKmvzED_He2w">
-    <ruleId>CONF:14817</ruleId>
     <reference href="../consol-vocab.uml#_bgrWMOWUEeGKmvzED_He2w"/>
+    <ruleId>CONF:14817</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Muzn4OWVEeGKmvzED_He2w" base_Property="_2JL9oBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:14819</ruleId>
@@ -834,9 +834,9 @@ The smoking status value set includes a special code to communicate if the smoki
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-29853</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_2Hzu0I3_EeOB0eBUISUB4Q" severity="WARNING" base_Property="_ci8xVI37EeOB0eBUISUB4Q">
-    <ruleId>CONF:1098-29854</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_2Hzu0I3_EeOB0eBUISUB4Q" base_Property="_ci8xVI37EeOB0eBUISUB4Q" severity="WARNING">
     <reference href="../consol-vocab.uml#_oBBFMI39EeOB0eBUISUB4Q"/>
+    <ruleId>CONF:1098-29854</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_6R3NEI4CEeOB0eBUISUB4Q" memberEnd="_6R2mAI4CEeOB0eBUISUB4Q _6R30II4CEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_6R30II4CEeOB0eBUISUB4Q" type="_T1dcwI37EeOB0eBUISUB4Q" association="_6R3NEI4CEeOB0eBUISUB4Q"/>
@@ -948,8 +948,8 @@ If the patient's current smoking status is unknown, the value element must be po
     <ruleId>CONF:1098-14810</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_zeBjkLm5EeOgPNzo_e4B9A" base_Property="_zeAVcLm5EeOgPNzo_e4B9A">
-    <ruleId>CONF:1098-14817</ruleId>
     <reference href="../consol-vocab.uml#_FHdfcbm6EeOgPNzo_e4B9A"/>
+    <ruleId>CONF:1098-14817</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_jwhMELm9EeOgPNzo_e4B9A" base_Property="_jwglALm9EeOgPNzo_e4B9A">
     <ruleId>CONF:1098-19170</ruleId>
@@ -1226,9 +1226,9 @@ The effectiveTime element is used to describe dates associated with the patient'
   <CDA:PropertyValidation xmi:id="_qyCAYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a low" base_Property="_jfV15u3yEeSQmpVKea6s3Q"/>
   <CDA:PropertyValidation xmi:id="_rGOuwO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a width" base_Property="_jfV16e3yEeSQmpVKea6s3Q"/>
   <CDA:PropertyValidation xmi:id="_F8nwkPmzEeSGHoih4Jm09A" base_Property="_DAqVwPmzEeSGHoih4Jm09A"/>
-  <CDA:ValueSetConstraint xmi:id="_OCGp8PmzEeSGHoih4Jm09A" severity="WARNING" base_Property="_DAqVwPmzEeSGHoih4Jm09A">
-    <ruleId>CONF:1098-28823</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_OCGp8PmzEeSGHoih4Jm09A" base_Property="_DAqVwPmzEeSGHoih4Jm09A" severity="WARNING">
     <reference href="../consol-vocab.uml#_np5CwYnYEeOJGtGyq_dBbA"/>
+    <ruleId>CONF:1098-28823</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_mHAlcPpYEeSE4ZSXS7BkuA" base_Constraint="_lZRVsPpYEeSE4ZSXS7BkuA">
     <ruleId>CONF:1098-32487</ruleId>
@@ -1241,9 +1241,9 @@ The effectiveTime element is used to describe dates associated with the patient'
   <CDA:ConstraintValidation xmi:id="_xOIwUP6JEeSoDZvueq4eYw" severity="WARNING" base_Constraint="_mBQoMP6JEeSoDZvueq4eYw">
     <ruleId>CONF:1098-32433</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ValueSetConstraint xmi:id="_T6z1AE9uEeWsIc5CMrI4GA" severity="WARNING" base_Property="_YzlcoPJhEeO2NaSiicarcg">
-    <ruleId>CONF:1198-8558</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_T6z1AE9uEeWsIc5CMrI4GA" base_Property="_YzlcoPJhEeO2NaSiicarcg" severity="WARNING">
     <reference href="../consol-vocab.uml#_xhC6IU9uEeWsIc5CMrI4GA"/>
+    <ruleId>CONF:1198-8558</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_kE1MkE9uEeWsIc5CMrI4GA" base_Property="_gnWZEE9uEeWsIc5CMrI4GA"/>
   <CDA:CodeSystemConstraint xmi:id="_lnIFwE9uEeWsIc5CMrI4GA" base_Property="_gnWZEE9uEeWsIc5CMrI4GA" severity="WARNING">
@@ -1275,5 +1275,17 @@ The effectiveTime element is used to describe dates associated with the patient'
     <elements xmi:id="_yBVTsL5UEea4GJtzixn8jg" businessElement="SmokingStatusObservationEndDate" modelElement="_Yz0EIeWQEeGKmvzED_He2w" businessElementId="ed08614b-90be-49f5-b896-10f7ee474147" modelElementPath="smokingStatusObservation.effectiveTime.high" condition=""/>
     <elements xmi:id="_1mN6QL5VEeaO2LU6tv8w5A" businessElement="PregnancyObservationEndDate" modelElement="_Yz0EIeWQEeGKmvzED_He2w" businessElementId="f3559d87-0b10-480c-9968-7a5c25a51bba" modelElementPath="smokingStatusObservation.effectiveTime.high" condition=""/>
     <elements xmi:id="_9U5dML5VEeaO2LU6tv8w5A" businessElement="PregnancyObservationStartDate" modelElement="_Yz0EIeWQEeGKmvzED_He2w" businessElementId="64ad36ca-abe3-4169-a3c6-284b47587005" modelElementPath="smokingStatusObservation.effectiveTime.low" condition=""/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_N4HtsJGmEeeme8lojTumow" base_Class="_MlM4IJ2GEeORR8_YW0n_jQ">
+    <elements xmi:id="_N4HtsZGmEeeme8lojTumow" businessElement="NutritionSectionContainer" modelElement="_MlM4IJ2GEeORR8_YW0n_jQ" businessElementId="18b3800c-34bb-4191-b709-612c4e63c16f" modelElementPath=""/>
+    <elements xmi:id="_RFYT4JGmEeeme8lojTumow" businessElement="NutritionSectionNotes" modelElement="_O75pw52GEeORR8_YW0n_jQ" businessElementId="0cf6df79-d88f-4fe3-a8e7-a50157563f44" modelElementPath="text"/>
+    <elements xmi:id="_VoocoJGmEeeme8lojTumow" businessElement="NutritionObservationContainer" modelElement="_Ej1NQJ2HEeORR8_YW0n_jQ" businessElementId="9c398233-e5c8-432d-a439-8404f987e455" modelElementPath="nutritionalStatusObservation"/>
+    <elements xmi:id="_cTMQIJGmEeeme8lojTumow" businessElement="NutritionObservationID" modelElement="_ci8KRI37EeOB0eBUISUB4Q" businessElementId="fdff1a26-baf4-4278-9d69-0c65dfc59500" modelElementPath="nutritionalStatusObservation.id"/>
+    <elements xmi:id="_fXZoAJGmEeeme8lojTumow" businessElement="NutritionObservationValueCode" modelElement="_ci8xVI37EeOB0eBUISUB4Q" businessElementId="e64aaff5-3dd7-4457-8521-c72c6d9bd2bd" modelElementPath="nutritionalStatusObservation.value"/>
+    <elements xmi:id="_hsAu8JGmEeeme8lojTumow" businessElement="NutritionObservationDateTime" modelElement="_ci8KQY37EeOB0eBUISUB4Q" businessElementId="a7307d7b-2e3a-41b4-aad6-e5b191da23e2" modelElementPath="nutritionalStatusObservation.effectiveTime"/>
+    <elements xmi:id="_Gq1yMJGnEeeme8lojTumow" businessElement="NutritionObservationAssessmentID" modelElement="_TlD-cI05EeOB0eBUISUB4Q" businessElementId="11cca95d-a1f9-4ce7-bc2c-976e6cca6530" modelElementPath="nutritionalStatusObservation.nutritionAssessment.id"/>
+    <elements xmi:id="_NWr_IJGnEeeme8lojTumow" businessElement="NutritionObservationAssessmentDateTime" modelElement="_TlDXYo05EeOB0eBUISUB4Q" businessElementId="e04430c6-8d2d-4815-b237-b88dcc7a7c41" modelElementPath="nutritionalStatusObservation.nutritionAssessment.effectiveTime"/>
+    <elements xmi:id="_tNW1wJGnEeeme8lojTumow" businessElement="NutritionObservationAssessmentValueUnitMeasure" modelElement="_TlElg405EeOB0eBUISUB4Q" businessElementId="eead4d3e-10c4-4b08-aebd-f92ccb05cba5" modelElementPath="nutritionalStatusObservation.nutritionAssessment.value"/>
+    <elements xmi:id="_yqB50JGnEeeme8lojTumow" businessElement="NutritionObservationAssessmentValueCode" modelElement="_TlDXYY05EeOB0eBUISUB4Q" businessElementId="12bb398e-deaf-49d8-b181-ba46387829da" modelElementPath="nutritionalStatusObservation.nutritionAssessment.code"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>

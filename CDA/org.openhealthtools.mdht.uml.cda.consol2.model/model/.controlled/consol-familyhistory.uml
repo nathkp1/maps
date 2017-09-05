@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2SC-sBSVEeGGzu7fmW9pXw" name="FamilyHistoryDeathObservation">
     <ownedComment xmi:id="_fqbbcCHkEeGFLIX-2_sWzA">
       <body>This clinical statement records whether the family member is deceased</body>
@@ -400,7 +400,7 @@
   <CDA:PropertyValidation xmi:id="_W_-YIGRSEeOD5bEp3nNX5w" base_Property="_8y9tUCHjEeGFLIX-2_sWzA">
     <ruleId>CONF:8626</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_YvV88IV5EeSRBMdZotACQg" clientDependency="_fqdfgIV6EeSRBMdZotACQg" name="FamilyHistoryObservation2">
+  <uml:Class xmi:id="_YvV88IV5EeSRBMdZotACQg" name="FamilyHistoryObservation2">
     <ownedComment xmi:id="_Kb53EIV6EeSRBMdZotACQg">
       <body>Family History Observations related to a particular family member are contained within a Family History Organizer. The effectiveTime in the Family History Observation is the biologically or clinically relevant time of the observation. The biologically or clinically relevant time is the time at which the observation holds (is effective) for the family member (the subject of the observation).</body>
     </ownedComment>
@@ -434,7 +434,7 @@
   <CDA:PropertyValidation xmi:id="_CJtXUIY-EeS7A_69H25Pzw" base_Property="_2IuDkBSVEeGGzu7fmW9pXw">
     <ruleId>R2.1=CONF:1198-8590</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_6whQEIbpEeSxzopshBnQuw" clientDependency="_9xVDsIevEeSBauRYePLghA" name="FamilyHistoryOrganizer2">
+  <uml:Class xmi:id="_6whQEIbpEeSxzopshBnQuw" name="FamilyHistoryOrganizer2">
     <ownedComment xmi:id="_2ylZ4Ib0EeSxzopshBnQuw">
       <body>The Family History Organizer associates a set of observations with a family member. For example, the Family History Organizer can group a set of observations about the patient's father.</body>
     </ownedComment>
@@ -470,7 +470,7 @@
   <CDA:AssociationValidation xmi:id="_V9PXsIb4EeSxzopshBnQuw" base_Association="_ULPOkIb4EeSxzopshBnQuw">
     <ruleId>CONF:1198-32428, CONF:1198-32429</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_NGivoIevEeSBauRYePLghA" clientDependency="_vQOKsIevEeSBauRYePLghA" name="FamilyHistorySection2">
+  <uml:Class xmi:id="_NGivoIevEeSBauRYePLghA" name="FamilyHistorySection2">
     <ownedComment xmi:id="_q8o1oIevEeSBauRYePLghA">
       <body>This section contains data defining the patient's genetic relatives in terms of possible or relevant health risk factors that have a potential impact on the patient's healthcare risk profile.</body>
     </ownedComment>
@@ -496,7 +496,7 @@
     <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
     <ruleId>CONF:1198-32847</ruleId>
   </CDA:ValueSetConstraint>
- <MDMI:MDMIMapping xmi:id="_4Rh7cMXHEeWCquoDViU_jA" base_Class="_2IWQIxSVEeGGzu7fmW9pXw">
+  <MDMI:MDMIMapping xmi:id="_4Rh7cMXHEeWCquoDViU_jA" base_Class="_2IWQIxSVEeGGzu7fmW9pXw">
     <elements xmi:id="_4RrFYMXHEeWCquoDViU_jA" businessElement="FamilyHistorySection" modelElement="_2IWQIxSVEeGGzu7fmW9pXw" businessElementId="7e48ac01-1752-48d5-99ce-867c8594d01a" modelElementPath="" condition=""/>
     <elements xmi:id="_64v1UMXHEeWCquoDViU_jA" businessElement="FamilyHistorySectionTitle" modelElement="_2IZ6gBSVEeGGzu7fmW9pXw" businessElementId="55362342-d008-4c01-8942-d8f0f3840789" modelElementPath="title" condition=""/>
     <elements xmi:id="_DDgQQMXIEeWCquoDViU_jA" businessElement="FamilyHistorySectionText" modelElement="_2IahkBSVEeGGzu7fmW9pXw" businessElementId="ba3b6032-f091-49c3-8e30-afc09d257502" modelElementPath="text" condition=""/>
@@ -518,5 +518,18 @@
     <elements xmi:id="_0B-qcMXKEeWCquoDViU_jA" businessElement="FamilyHistoryObservationRelatedPartyDeceasedIndicator" businessElementId="c176c614-c8ba-48b5-8b8e-08a74b12f730" modelElementPath="familyHistory.subject.relatedSubject.subject.sDTCDeceasedInd">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_rS5VoAPjEeGdM61FsLhcmQ"/>
     </elements>
+    <elements xmi:id="_YPXnoJGhEeeme8lojTumow" businessElement="FamilyHistorySectionContainer" modelElement="_2IWQIxSVEeGGzu7fmW9pXw" businessElementId="7e48ac01-1752-48d5-99ce-867c8594d01a" modelElementPath=""/>
+    <elements xmi:id="_c-m98JGhEeeme8lojTumow" businessElement="FamilyHistorySectionNotes" modelElement="_2IahkBSVEeGGzu7fmW9pXw" businessElementId="ba3b6032-f091-49c3-8e30-afc09d257502" modelElementPath="text"/>
+    <elements xmi:id="_rPNVwJGhEeeme8lojTumow" businessElement="FamilyHistoryObservationID" modelElement="_2ItcgRSVEeGGzu7fmW9pXw" businessElementId="55c6a966-2c55-467f-9a8a-76ab62e78f02" modelElementPath="familyHistory.familyHistoryObservation.id"/>
+    <elements xmi:id="_vBulIJGhEeeme8lojTumow" businessElement="FamilyHistoryTypeCode" modelElement="_2IpyJhSVEeGGzu7fmW9pXw" businessElementId="e43419a7-deee-45e1-9dbb-3f51282aba1d" modelElementPath="familyHistory.familyHistoryObservation.code"/>
+    <elements xmi:id="_yhMVoJGhEeeme8lojTumow" businessElement="FamilyHistoryDateTime" modelElement="_R-FSICHiEeGFLIX-2_sWzA" businessElementId="1694da9f-ab89-43a3-b6e9-14386e4bb3b9" modelElementPath="familyHistory.familyHistoryObservation.effectiveTime"/>
+    <elements xmi:id="_00nJwJGhEeeme8lojTumow" businessElement="FamilyHistoryValueCode" modelElement="_2IpyJxSVEeGGzu7fmW9pXw" businessElementId="775c3085-4183-4618-ac0d-9e9cb8521660" modelElementPath="familyHistory.familyHistoryObservation.value"/>
+    <elements xmi:id="_5_YlgJGhEeeme8lojTumow" businessElement="FamilyHistoryValueCode" businessElementId="775c3085-4183-4618-ac0d-9e9cb8521660" modelElementPath="familyHistory.familyHistoryObservation.ageObservation.value">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_2EqqCxSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_FJOnwJGiEeeme8lojTumow" businessElement="FamilyHistoryOrganizerRelatedPartyTypeCode" modelElement="_6_OoINc4EeGfQ6frO0B-Jg" businessElementId="dce9f617-fc0d-48d9-9f52-dd9e8140b0e3" modelElementPath="familyHistory.subject.relatedSubject.code"/>
+    <elements xmi:id="_TpjdoJGiEeeme8lojTumow" businessElement="FamilyHistoryOrganizerRelatedPartyAdministrativeGenderCode" modelElement="_QeGkgNc5EeGfQ6frO0B-Jg" businessElementId="9d82c959-fe3f-4c1a-a50a-03856c4b306f" modelElementPath="familyHistory.subject.relatedSubject.subject.administrativeGenderCode"/>
+    <elements xmi:id="_ZDTwkJGiEeeme8lojTumow" businessElement="FamilyHistoryOrganizerRelatedPartyBirthDate" modelElement="_QeGkg9c5EeGfQ6frO0B-Jg" businessElementId="7aae0ee8-a0a8-4a89-89be-fe47d37ccef9" modelElementPath="familyHistory.subject.relatedSubject.subject.birthTime"/>
+    <elements xmi:id="_s4B4QJGiEeeme8lojTumow" businessElement="FamilyHistoryOrganizerRelatedPartyDeceasedFlag" modelElement="_QeHLkNc5EeGfQ6frO0B-Jg" businessElementId="c176c614-c8ba-48b5-8b8e-08a74b12f730" modelElementPath="familyHistory.subject.relatedSubject.subject.sDTCDeceasedInd"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>

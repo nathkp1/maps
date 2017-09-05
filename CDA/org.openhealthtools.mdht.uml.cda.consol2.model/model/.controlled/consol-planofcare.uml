@@ -4593,5 +4593,36 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <elements xmi:id="_mksKcJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="dab076cd-9eec-4474-9ee2-4216a3709410" modelElementPath="plannedEncounter2.priorityPreference.id" condition=""/>
     <elements xmi:id="_xXipAJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityDateTime" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="07633c33-133f-4585-9354-3f06a861abc6" modelElementPath="plannedEncounter2.priorityPreference.effectiveTime" condition=""/>
     <elements xmi:id="_0Lc7EJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="21771c66-64cc-429a-854e-84edd19301c6" modelElementPath="plannedEncounter2.priorityPreference.value" condition=""/>
+    <elements xmi:id="_wWg58JD1EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationID" businessElementId="6f2e5ab3-1a0c-467e-a489-ba2a642664f2" modelElementPath="plannedImmunizationActivity.id">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_roq6MJXFEeOgXcDbh8Igkw"/>
+    </elements>
+    <elements xmi:id="_C2T2EJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationRepeatNumber" businessElementId="22db4a18-0d92-416d-8765-91992a5154e7" modelElementPath="plannedImmunizationActivity.repeatNumber">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_rorhQZXFEeOgXcDbh8Igkw"/>
+    </elements>
+    <elements xmi:id="_EqUxYJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationRouteCode" businessElementId="3a6fe6de-562e-4e53-8b61-50ef0917722f" modelElementPath="plannedImmunizationActivity.routeCode">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_rorhRJXFEeOgXcDbh8Igkw"/>
+    </elements>
+    <elements xmi:id="_JslKUJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationTargetSiteCode" businessElementId="24487e1b-a751-4798-8c1a-28ec1cf5d998" modelElementPath="plannedImmunizationActivity.approachSiteCode">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_romowJXFEeOgXcDbh8Igkw"/>
+    </elements>
+    <elements xmi:id="_e6n1YJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationMedicationValueCode" businessElementId="e7a1316d-ed05-49fa-94e6-7c49ec1e8de3" modelElementPath="plannedImmunizationActivity.consumable.immunizationMedicationInformation2.manufacturedMaterial.code">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_xgWAcEX8EeG6e5lG0YsSyQ"/>
+    </elements>
+    <elements xmi:id="_kYvq8JD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationMedicationLotNumber" businessElementId="db23e124-97d5-47cd-bcdd-18837b6eff3e" modelElementPath="plannedImmunizationActivity.consumable.immunizationMedicationInformation2.manufacturedMaterial.lotNumberText">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_2daj0MKMEeSqg-Exmsy2kg"/>
+    </elements>
+    <elements xmi:id="_AGIYAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPreconditionValueCode" businessElementId="aef808ab-1a78-4806-9bfe-942f295bc8e2" modelElementPath="plannedImmunizationActivity.precondition.preconditionForSubstanceAdministration2.value">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_2fqgUDhEEeS1WeMhbm6GZw"/>
+    </elements>
+    <elements xmi:id="_Ef8Q4JD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="49a2dda0-34ed-4c3b-bc48-b7a54784cd6f" modelElementPath="plannedImmunizationActivity.priorityPreference.id"/>
+    <elements xmi:id="_QOPEAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationReasonID" businessElementId="718c046d-9da8-4925-9238-d57ad6bbc06d" modelElementPath="plannedImmunizationActivity.indication2.id">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_YIhaAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPriorityValueCode" businessElementId="0af390ba-60f2-4506-97ce-3aa73c3e78ff" modelElementPath="plannedImmunizationActivity.indication2.value">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_gpdgUJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationInstructionTypeCode" businessElementId="1c1c708a-6127-486a-986d-6c0ee1700606" modelElementPath="plannedImmunizationActivity.instruction2.code">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
+    </elements>
   </MDMI:MDMIMapping>
 </xmi:XMI>
