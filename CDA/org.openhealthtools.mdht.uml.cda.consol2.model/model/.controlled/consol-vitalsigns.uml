@@ -218,10 +218,10 @@
     <ruleId>CONF:7300</ruleId>
     <ruleId>R2.0=CONF:1098-7300</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2OrhuBSVEeGGzu7fmW9pXw">
+  <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" base_Property="_2OrhuBSVEeGGzu7fmW9pXw" severity="WARNING">
+    <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7301</ruleId>
     <ruleId>R2.0=CONF:1098-7301</ruleId>
-    <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2OxoURSVEeGGzu7fmW9pXw" base_Property="_2OxoTRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7304</ruleId>
@@ -721,8 +721,8 @@ Vital signs are represented in the same way as other results, but are aggregated
     <ruleId>CONF:1098-7307</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_nkHIoM9CEeSJsu9BbhWxmQ" base_Property="_eEbiIM9CEeSJsu9BbhWxmQ">
-    <ruleId>CONF:1098-32886</ruleId>
     <reference href="../consol-vocab.uml#_UnwpwM2JEeSEZ8MJJ3ZzLg"/>
+    <ruleId>CONF:1098-32886</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_fH50gM9GEeSJsu9BbhWxmQ" base_Property="_2OlbERSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_sClFwM9HEeSJsu9BbhWxmQ" base_Property="_2OlbFhSVEeGGzu7fmW9pXw">
@@ -860,8 +860,6 @@ Vital signs are represented in the same way as other results, but are aggregated
     <elements xmi:id="_pmoXML7KEeWoV-fDNleHag" businessElement="VitalSignResultIntepretationCode" modelElement="_2OxoVBSVEeGGzu7fmW9pXw" businessElementId="60f64b90-2803-465b-ba6d-79e55c7a45c1" modelElementPath="vitalSignsOrganizer.vitalSignObservation.interpretationCode" condition=""/>
     <elements xmi:id="_DwVMsHFAEeaxqa5aLAux1g" businessElement="VitalSignResultValueCoded" modelElement="_2OxoUhSVEeGGzu7fmW9pXw" businessElementId="2fe9f148-7179-451c-ad5f-502cd2169d91" modelElementPath="vitalSignsOrganizer.vitalSignObservation.value.CD" condition=""/>
     <elements xmi:id="_Qkm70CW7EeewYNa79DjK5A" businessElement="VitalSignOrganizerEndTime" modelElement="_2OlbEhSVEeGGzu7fmW9pXw" businessElementId="a3989074-0c96-48d3-bb88-047aa13e97b2" modelElementPath="vitalSignsOrganizer.effectiveTime.high" condition=""/>
-    <elements xmi:id="_TChIsCW7EeewYNa79DjK5A" businessElement="VitalSignOrganizerStartTime" modelElement="_2OlbEhSVEeGGzu7fmW9pXw" businessElementId="7886c093-f505-477d-8bdf-8b693f0ecf8a" modelElementPath="vitalSignsOrganizer.effectiveTime.low" condition=""/>
-    <elements xmi:id="_GZHiwCW8EeewYNa79DjK5A" businessElement="VitalSignResultNotes" modelElement="_21P6QB0YEeGYy5bW_e08gQ" businessElementId="494287c0-35a5-4ad7-9be6-aa57f44b912d" modelElementPath="vitalSignsOrganizer.vitalSignObservation.text" condition=""/>
     <elements xmi:id="_r0FIYCW8EeewYNa79DjK5A" businessElement="VitalSignResultAuthorPersonName" businessElementId="68f1ae15-f341-426c-963a-4aeaf154fab2" modelElementPath="vitalSignsOrganizer.vitalSignObservation.author.assignedAuthor.assignedPerson.name">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
     </elements>

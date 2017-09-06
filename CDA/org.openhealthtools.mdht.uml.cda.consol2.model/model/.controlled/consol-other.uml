@@ -702,9 +702,9 @@ Any deviation from normal function displayed by the patient and recorded in the 
     <ruleId>CONF:7481</ruleId>
     <ruleId>R2.0=CONF:1098-7481</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_Bo-kwBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MdMQhUSEeG6PvUxSTZnaw">
-    <ruleId>CONF:16886</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_Bo-kwBq3EeGo461UQq-B1g" base_Property="_2MdMQhUSEeG6PvUxSTZnaw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:16886</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Gb3E8Bq3EeGo461UQq-B1g" code="completed" base_Property="_2MmWMRUSEeG6PvUxSTZnaw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -719,14 +719,14 @@ Any deviation from normal function displayed by the patient and recorded in the 
   <CDA:PropertyValidation xmi:id="_O7wpcBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MmWNRUSEeG6PvUxSTZnaw">
     <ruleId>CONF:7489</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_U4xacBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MmWNRUSEeG6PvUxSTZnaw">
-    <ruleId>CONF:15985</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_U4xacBq3EeGo461UQq-B1g" base_Property="_2MmWNRUSEeG6PvUxSTZnaw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:15985</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" severity="WARNING" base_Property="_2G8h-hSVEeGGzu7fmW9pXw">
+  <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" base_Property="_2G8h-hSVEeGGzu7fmW9pXw" severity="WARNING">
+    <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
     <ruleId>CONF:7394</ruleId>
     <ruleId>R2.0=CONF:1098-7394</ruleId>
-    <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_wN9NcBq4EeGo461UQq-B1g" code="completed" displayName="Completed" base_Property="_2G8h-xSVEeGGzu7fmW9pXw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -759,8 +759,8 @@ Any deviation from normal function displayed by the patient and recorded in the 
     <ruleId>CONF:7761</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_B4zJcB-ZEeGtfPlBCjHWkw" base_Property="_nD_qMB-YEeGtfPlBCjHWkw">
-    <ruleId>CONF:16850</ruleId>
     <reference href="../consol-vocab.uml#_IzJFYR-ZEeGtfPlBCjHWkw"/>
+    <ruleId>CONF:16850</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_bC3lMB-ZEeGtfPlBCjHWkw" severity="INFO" base_Constraint="_U1PlUB-ZEeGtfPlBCjHWkw">
     <ruleId>CONF:7762</ruleId>
@@ -1996,9 +1996,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_5lm5MObjEeGINOJ_SD9_dA" severity="WARNING" base_Property="_5lgylObjEeGINOJ_SD9_dA">
     <ruleId>CONF:14287</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_5lm5SubjEeGINOJ_SD9_dA" severity="WARNING" base_Property="_5lm5R-bjEeGINOJ_SD9_dA">
-    <ruleId>CONF:14291</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_5lm5SubjEeGINOJ_SD9_dA" base_Property="_5lm5R-bjEeGINOJ_SD9_dA" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:14291</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_HLJTEObqEeGINOJ_SD9_dA" base_Property="_5lm5R-bjEeGINOJ_SD9_dA"/>
   <CDA:PropertyValidation xmi:id="_ZM4aMObqEeGINOJ_SD9_dA" severity="INFO" base_Property="_5lm5NebjEeGINOJ_SD9_dA">
@@ -2275,8 +2275,8 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
     <ruleId>CONF:1098-31026</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_pUdB4I0fEeOB0eBUISUB4Q" base_Property="_cHp7U40dEeOB0eBUISUB4Q">
-    <ruleId>CONF:1098-31029</ruleId>
     <reference href="../consol-vocab.uml#_nHn0V_5-EeSoDZvueq4eYw"/>
+    <ruleId>CONF:1098-31029</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2T8XII0fEeOB0eBUISUB4Q" base_Property="_cHpUQ40dEeOB0eBUISUB4Q">
     <ruleId>CONF:1098-32136</ruleId>
@@ -2407,13 +2407,13 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
   <CDA:PropertyValidation xmi:id="_fBuzQJm0EeOLJeQez13EkQ" base_Property="_rBipoJmzEeOLJeQez13EkQ">
     <ruleId>CONF:1098-31389</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_4QZJMJm2EeOLJeQez13EkQ" severity="WARNING" base_Property="_rBjQsJmzEeOLJeQez13EkQ">
-    <ruleId>CONF:1098-28153</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_4QZJMJm2EeOLJeQez13EkQ" base_Property="_rBjQsJmzEeOLJeQez13EkQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_dxy_8Zm1EeOLJeQez13EkQ"/>
+    <ruleId>CONF:1098-28153</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="__ImXIJm2EeOLJeQez13EkQ" severity="WARNING" base_Property="_rBjQspmzEeOLJeQez13EkQ">
-    <ruleId>CONF:1098-28042</ruleId>
+  <CDA:ValueSetConstraint xmi:id="__ImXIJm2EeOLJeQez13EkQ" base_Property="_rBjQspmzEeOLJeQez13EkQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_BciakZm1EeOLJeQez13EkQ"/>
+    <ruleId>CONF:1098-28042</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_KTrEAJpdEeOK6dzbL4VoTA" name="SubstanceAdministeredAct">
     <ownedComment xmi:id="_tU2HwJpdEeOK6dzbL4VoTA">
@@ -2935,9 +2935,9 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ruleId>CONF:1098-32570</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_rCn1IOHoEeO04sHNODkHmQ" base_Generalization="_PrE1MOHoEeO04sHNODkHmQ"/>
-  <CDA:ValueSetConstraint xmi:id="_2HieoOHpEeO04sHNODkHmQ" severity="INFO" base_Property="_2Hh3kOHpEeO04sHNODkHmQ">
-    <ruleId>CONF:1098-31229</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_2HieoOHpEeO04sHNODkHmQ" base_Property="_2Hh3kOHpEeO04sHNODkHmQ" severity="INFO">
     <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
+    <ruleId>CONF:1098-31229</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2HkT0OHpEeO04sHNODkHmQ" base_Property="_2Hh3kOHpEeO04sHNODkHmQ"/>
   <CDA:PropertyValidation xmi:id="_b5JCoOHqEeO04sHNODkHmQ" base_Property="_b5IbkOHqEeO04sHNODkHmQ">
@@ -2946,9 +2946,9 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:PropertyValidation xmi:id="_zCrKAOHqEeO04sHNODkHmQ" severity="INFO" base_Property="_zCqi8OHqEeO04sHNODkHmQ">
     <ruleId>CONF:1098-7488</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_zCsYIOHqEeO04sHNODkHmQ" severity="WARNING" base_Property="_zCqi8OHqEeO04sHNODkHmQ">
-    <ruleId>CONF:1098-7489</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_zCsYIOHqEeO04sHNODkHmQ" base_Property="_zCqi8OHqEeO04sHNODkHmQ" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:1098-7489</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_ZepfsOH2EeO04sHNODkHmQ" base_Constraint="_SA2RYOH2EeO04sHNODkHmQ">
     <ruleId>CONF:1098-7483</ruleId>
@@ -3464,19 +3464,15 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_nMgQYME2EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveResultObservationAuthorName" businessElementId="6d50ded1-ca0d-472e-9bbb-cb0e00cdfbfa" modelElementPath="cognitiveStatusResultOrganizer.cognitiveStatusResultObservation.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
     </elements>
-    <elements xmi:id="_RRGosME5EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservation" modelElement="_rcrWMecQEeGINOJ_SD9_dA" businessElementId="54ebb14a-2bd5-4123-a4a0-e92a6022404f" modelElementPath="functionalStatusProblemObservation" condition="(not(@negationIND) or negationIND = &quot;false&quot;) "/>
-    <elements xmi:id="_gOXSMME5EeWXu9YzgahA6Q" businessElement="FunctionalStatusNotAProblemObservation" modelElement="_rcrWMecQEeGINOJ_SD9_dA" businessElementId="8ac58ef6-814f-49d2-8a4d-83a754e1ebe3" modelElementPath="functionalStatusProblemObservation" condition="@negationInd = &quot;true&quot;"/>
-    <elements xmi:id="_T92tYME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationId" modelElement="_5lm5MebjEeGINOJ_SD9_dA" businessElementId="c65b2314-4171-4e58-9a32-6c2bb9b3d879" modelElementPath="functionalStatusProblemObservation.id" condition="(not(@negationIND) or negationIND = &quot;false&quot;) "/>
-    <elements xmi:id="_p4jDEME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationEndTime" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="7250074d-cde4-42d3-a51a-652c565ae4a4" modelElementPath="xxxfunctionalStatusProblemObservation.effectiveTime.high" condition="(not(@negationIND) or negationIND = &quot;false&quot;) "/>
-    <elements xmi:id="_xSyAAME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationValue" modelElement="_5lm5R-bjEeGINOJ_SD9_dA" businessElementId="3a39e4e1-29a9-488d-92fb-59bd0815b850" modelElementPath="functionalStatusProblemObservation.value" condition="(not(@negationIND) or negationIND = &quot;false&quot;) "/>
-    <elements xmi:id="_4lk4MME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationMethodCode" modelElement="_5lm5NebjEeGINOJ_SD9_dA" businessElementId="18380f9e-f5d8-4855-ba6f-0a255f69eb6d" modelElementPath="functionalStatusProblemObservation.methodCode" condition="(not(@negationIND) or negationIND = &quot;false&quot;) "/>
-    <elements xmi:id="_M23nIME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationStartTime" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="0600362a-d7ee-4a73-b0e1-552de7d48508" modelElementPath="xxxfunctionalStatusProblemObservation.effectiveTime.low" condition="(not(@negationIND) or negationIND = &quot;false&quot;) "/>
-    <elements xmi:id="_lH7-UME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="0a9229a4-8d9b-423b-b98d-05974304bc29" modelElementPath="cognitiveStatusProblemObservation" condition="(not(@negationIND) or negationIND = &quot;false&quot;) negationIND = &quot;false&quot;"/>
-    <elements xmi:id="_zd_d4ME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemID" businessElementId="8d9f9cfe-f865-4c97-a67b-5ff15b16a9c6" modelElementPath="cognitiveStatusProblemObservation.id" condition="(not(@negationIND) or negationIND = &quot;false&quot;) ">
+    <elements xmi:id="_RRGosME5EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservation" modelElement="_rcrWMecQEeGINOJ_SD9_dA" businessElementId="54ebb14a-2bd5-4123-a4a0-e92a6022404f" modelElementPath="functionalStatusProblemObservation" condition=""/>
+    <elements xmi:id="_T92tYME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationId" modelElement="_5lm5MebjEeGINOJ_SD9_dA" businessElementId="c65b2314-4171-4e58-9a32-6c2bb9b3d879" modelElementPath="functionalStatusProblemObservation.id" condition=""/>
+    <elements xmi:id="_p4jDEME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationEndTime" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="7250074d-cde4-42d3-a51a-652c565ae4a4" modelElementPath="xxxfunctionalStatusProblemObservation.effectiveTime.high" condition=""/>
+    <elements xmi:id="_xSyAAME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationValue" modelElement="_5lm5R-bjEeGINOJ_SD9_dA" businessElementId="3a39e4e1-29a9-488d-92fb-59bd0815b850" modelElementPath="functionalStatusProblemObservation.value" condition=""/>
+    <elements xmi:id="_4lk4MME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationMethodCode" modelElement="_5lm5NebjEeGINOJ_SD9_dA" businessElementId="18380f9e-f5d8-4855-ba6f-0a255f69eb6d" modelElementPath="functionalStatusProblemObservation.methodCode" condition=""/>
+    <elements xmi:id="_M23nIME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationStartTime" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="0600362a-d7ee-4a73-b0e1-552de7d48508" modelElementPath="xxxfunctionalStatusProblemObservation.effectiveTime.low" condition=""/>
+    <elements xmi:id="_lH7-UME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="0a9229a4-8d9b-423b-b98d-05974304bc29" modelElementPath="cognitiveStatusProblemObservation" condition=""/>
+    <elements xmi:id="_zd_d4ME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemID" businessElementId="8d9f9cfe-f865-4c97-a67b-5ff15b16a9c6" modelElementPath="cognitiveStatusProblemObservation.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueSuZcEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_bOhP4MFAEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemEndDate" businessElementId="edc05113-203e-409f-8e5f-14ae95b89956" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.⁬high" condition="(not(@negationIND) or negationIND = &quot;false&quot;) ">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
     </elements>
     <elements xmi:id="_g2ZOIMUAEeW9tdwyrRMXHg" businessElement="FunctionalStatusResultObservationAuthorPersonName" businessElementId="c3e6ef3b-5504-44a3-95ac-394c06d04549" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -3493,26 +3489,26 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_ZPe1MMUCEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveResultObservationAuthorFunctionCode" businessElementId="f49516a2-1e16-4b08-b713-0c8062dc5671" modelElementPath="cognitiveStatusResultOrganizer.cognitiveStatusResultObservation.author.functionCode" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_nlsDoEofEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_NXdSwMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusProblemObservationText" modelElement="_5lm5Q-bjEeGINOJ_SD9_dA" businessElementId="4db1369c-dfc2-48a6-84b1-21543dd98c2c" modelElementPath="functionalStatusProblemObservation.text" condition="(not(@negationIND) or negationIND = &quot;false&quot;) "/>
-    <elements xmi:id="_CjwYQMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationId" businessElementId="e5013c68-aae5-48a1-afd2-f3f6ef38ab4f" modelElementPath="cognitiveStatusProblemObservation.id" condition="(not(@negationIND) or negationIND = &quot;false&quot;) ">
+    <elements xmi:id="_NXdSwMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusProblemObservationText" modelElement="_5lm5Q-bjEeGINOJ_SD9_dA" businessElementId="4db1369c-dfc2-48a6-84b1-21543dd98c2c" modelElementPath="functionalStatusProblemObservation.text" condition=""/>
+    <elements xmi:id="_CjwYQMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationId" businessElementId="e5013c68-aae5-48a1-afd2-f3f6ef38ab4f" modelElementPath="cognitiveStatusProblemObservation.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueSuZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_ElC6kMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationText" businessElementId="094e879c-cefd-48b5-bca6-5608d4a83d9e" modelElementPath="cognitiveStatusProblemObservation.text" condition="(not(@negationIND) or negationIND = &quot;false&quot;) ">
+    <elements xmi:id="_ElC6kMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationText" businessElementId="094e879c-cefd-48b5-bca6-5608d4a83d9e" modelElementPath="cognitiveStatusProblemObservation.text" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PQOZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_HCud8MUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationStartDate" businessElementId="72a014ed-a1bc-4f48-81dd-9c48fa25325f" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.low" condition="(not(@negationIND) or negationIND = &quot;false&quot;) ">
+    <elements xmi:id="_HCud8MUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationStartDate" businessElementId="72a014ed-a1bc-4f48-81dd-9c48fa25325f" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.low" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_Izep4MUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationEndDate" businessElementId="a10cf335-ba40-49c5-b460-e1c7cd27d894" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.high" condition="(not(@negationIND) or negationIND = &quot;false&quot;) ">
+    <elements xmi:id="_Izep4MUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationEndDate" businessElementId="a10cf335-ba40-49c5-b460-e1c7cd27d894" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.high" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_LHPcQMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationMethodCode" businessElementId="0a89f929-c8ec-4f66-b620-5ee65c76b6c1" modelElementPath="cognitiveStatusProblemObservation.methodCode" condition="(not(@negationIND) or negationIND = &quot;false&quot;) ">
+    <elements xmi:id="_LHPcQMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationMethodCode" businessElementId="0a89f929-c8ec-4f66-b620-5ee65c76b6c1" modelElementPath="cognitiveStatusProblemObservation.methodCode" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueTuZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_M7zKIMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationValue" businessElementId="294e95e1-85da-44e1-ba3e-75bb3b8f5c88" modelElementPath="cognitiveStatusProblemObservation.value" condition="(not(@negationIND) or negationIND = &quot;false&quot;) ">
+    <elements xmi:id="_M7zKIMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationValue" businessElementId="294e95e1-85da-44e1-ba3e-75bb3b8f5c88" modelElementPath="cognitiveStatusProblemObservation.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PROZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_DnYjAMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="0a9229a4-8d9b-423b-b98d-05974304bc29" modelElementPath="cognitiveStatusProblemObservation" condition="(not(@negationIND) or negationIND = &quot;false&quot;) "/>
+    <elements xmi:id="_DnYjAMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="0a9229a4-8d9b-423b-b98d-05974304bc29" modelElementPath="cognitiveStatusProblemObservation" condition=""/>
     <elements xmi:id="_a0mv4OYzEeW5Oax7LpOkcw" businessElement="FunctionalStatusResultsObservationEffectiveTime" modelElement="_nm5IhebxEeGINOJ_SD9_dA" businessElementId="a3b0717c-11c8-4822-94a9-6e0d967bce70" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.effectiveTime" condition=""/>
     <elements xmi:id="_BVSTYHCMEeaDT6eyVw56Qg" businessElement="FunctionalStatusResultsObservationValueCoded" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="71415e1f-33a7-46d5-bdb7-e8303cfb4442" modelElementPath="functionalStatusResultObservation.value.cd" condition=""/>
     <elements xmi:id="_F_c8cHCMEeaDT6eyVw56Qg" businessElement="FunctionalStatusResultsObservationValueQuantity" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="83248efa-9390-414c-bda3-0a5d45049040" modelElementPath="functionalStatusResultObservation.value.pq" condition=""/>
