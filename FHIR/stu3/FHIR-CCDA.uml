@@ -26760,4 +26760,27 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ShortDescription xmi:id="_8j5vIM3tEeahpd1P9sS4xg" base_Comment="_8j5IHc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8j5vIs3tEeahpd1P9sS4xg" base_Comment="_8j5vIc3tEeahpd1P9sS4xg"/>
   <MDMI:MDMIMapping xmi:id="_en4WMCgUEeeMR4_BVmg6Og" base_Class="_7FPYwc3tEeahpd1P9sS4xg"/>
+  <MDMI:MDMIMapping xmi:id="_qp8VEJZNEeeNSN6YO2XrkQ" base_Class="_7FRN883tEeahpd1P9sS4xg">
+    <elements xmi:id="_qp88IJZNEeeNSN6YO2XrkQ" businessElement="PatientContainer" modelElement="_7LfxwM3tEeahpd1P9sS4xg" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="subject"/>
+    <elements xmi:id="_Tp8tINNeEea_66vskoPvqA" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.identifier"/>
+    <elements xmi:id="_aZE3kNNeEea_66vskoPvqA" businessElement="PatientLegalName" modelElement="_AJekIs3tEeahpd1P9sS4xg" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="subject.name"/>
+    <elements xmi:id="_oPspINNeEea_66vskoPvqA" businessElement="PatientAdministrationGenderCode" modelElement="_AJgZUc3tEeahpd1P9sS4xg" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="subject.gender"/>
+    <elements xmi:id="_qWGU8NNeEea_66vskoPvqA" businessElement="PatientDateOfBirth" modelElement="_BOu8AM3tEeahpd1P9sS4xg" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="subject.birthDate"/>
+    <elements xmi:id="_wI8dUNNeEea_66vskoPvqA" businessElement="PatientHomePhone" businessElementId="cfb8b147-38a5-4272-87c6-f1fa4cb97457" modelElementPath="subject.telecom">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eVgBsFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_zC_MkNNeEea_66vskoPvqA" businessElement="PatientAliveBoolean" businessElementId="16a809dd-a885-43e6-874b-1baf09992299" modelElementPath="subject.deceased[x]">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eXVM8FMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_2eKS8NNeEea_66vskoPvqA" businessElement="PatientHomeAddress" businessElementId="eef49a28-a96e-40a7-b328-981c5addd245" modelElementPath="subject.address">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eX8RsFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_4R-Z8NNeEea_66vskoPvqA" businessElement="PatientMaritalStatus" businessElementId="6cf44ff0-2cfa-493b-98a6-44f35acd195c" modelElementPath="subject.maritalStatus">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eYjWMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_9DaIoNNeEea_66vskoPvqA" businessElement="PatientMultipleBirthIndicator" businessElementId="60db28d7-0529-4dfc-a78b-0b1c3fe6afa0" modelElementPath="subject.multipleBirth[x]">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eZxcsFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_P0uSkNNfEea_66vskoPvqA" businessElement="PatientRace" modelElement="_AJPTkM3tEeahpd1P9sS4xg" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="subject.extension"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>

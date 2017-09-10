@@ -2907,29 +2907,7 @@
   <fhir:ValueSet xmi:id="_Gfec4s3tEeahpd1P9sS4xg" id="us-core-problem" uri="http://hl7.org/fhir/us/core/ValueSet/us-core-problem" version="1.6.0" name="Problem Value Set" publisher="PHIN VADS" base_Enumeration="_Gfec4c3tEeahpd1P9sS4xg"/>
   <fhir:ValueSetMember xmi:id="_Gfec5M3tEeahpd1P9sS4xg" base_EnumerationLiteral="_Gfec483tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_GffD883tEeahpd1P9sS4xg" id="Condition:c.subject" base_Property="_GffD8M3tEeahpd1P9sS4xg" mustSupport="true" isModifier="false" isSummary="false"/>
-  <MDMI:MDMIMapping xmi:id="_Tp0xUNNeEea_66vskoPvqA" base_Class="_AJCfQM3tEeahpd1P9sS4xg">
-    <elements xmi:id="_Tp8tINNeEea_66vskoPvqA" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="identifier"/>
-    <elements xmi:id="_aZE3kNNeEea_66vskoPvqA" businessElement="PatientLegalName" modelElement="_AJekIs3tEeahpd1P9sS4xg" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="name"/>
-    <elements xmi:id="_oPspINNeEea_66vskoPvqA" businessElement="PatientAdministrationGenderCode" modelElement="_AJgZUc3tEeahpd1P9sS4xg" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="gender"/>
-    <elements xmi:id="_qWGU8NNeEea_66vskoPvqA" businessElement="PatientDateOfBirth" modelElement="_BOu8AM3tEeahpd1P9sS4xg" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="birthDate"/>
-    <elements xmi:id="_wI8dUNNeEea_66vskoPvqA" businessElement="PatientHomePhone" businessElementId="cfb8b147-38a5-4272-87c6-f1fa4cb97457" modelElementPath="telecom">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eVgBsFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_zC_MkNNeEea_66vskoPvqA" businessElement="PatientAliveBoolean" businessElementId="16a809dd-a885-43e6-874b-1baf09992299" modelElementPath="deceased[x]">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eXVM8FMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_2eKS8NNeEea_66vskoPvqA" businessElement="PatientHomeAddress" businessElementId="eef49a28-a96e-40a7-b328-981c5addd245" modelElementPath="address">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eX8RsFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_4R-Z8NNeEea_66vskoPvqA" businessElement="PatientMaritalStatus" businessElementId="6cf44ff0-2cfa-493b-98a6-44f35acd195c" modelElementPath="maritalStatus">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eYjWMFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_9DaIoNNeEea_66vskoPvqA" businessElement="PatientMultipleBirthIndicator" businessElementId="60db28d7-0529-4dfc-a78b-0b1c3fe6afa0" modelElementPath="multipleBirth[x]">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eZxcsFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_P0uSkNNfEea_66vskoPvqA" businessElement="PatientRace" modelElement="_AJPTkM3tEeahpd1P9sS4xg" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="extension"/>
-    <elements xmi:id="_OCTZENNnEea-gf-zPrxOmQ" businessElement="PatientContainer" modelElement="_AJCfQM3tEeahpd1P9sS4xg" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath=""/>
-  </MDMI:MDMIMapping>
+ 
   <MDMI:MDMIMapping xmi:id="_cJ6M8NNnEea-gf-zPrxOmQ" base_Class="_B9bOCM3tEeahpd1P9sS4xg">
     <elements xmi:id="_SwS1YNNrEeag-vfi0Fbwcw" businessElement="AllergyConcernContainer" modelElement="_B9bOCM3tEeahpd1P9sS4xg" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath=""/>
     <elements xmi:id="_U780oNNrEeag-vfi0Fbwcw" businessElement="AllergyConcernID" businessElementId="c48d4e8b-fde6-455f-895a-f47f180d6e60" modelElementPath="identifier">
