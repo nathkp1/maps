@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:fhir="http://www.eclipse.org/mdht/schema/profile/fhir/1.0.0" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:fhir="http://www.eclipse.org/mdht/schema/profile/fhir/1.0.0" xmlns:fhirtypes="http://www.eclipse.org/mdht/schema/profile/fhir/types/1.0.0" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Package xmi:id="_fO7eECP_EeW3155CxDza7Q" name="FHIR CCDA">
     <packageImport xmi:id="_5qaTsIcuEeWQR6LmUoLc9w">
       <importedPackage href="FHIR-Core.uml#_fO7eECP_EeW3155CxDza7Q"/>
@@ -21164,7 +21164,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ValueSetMember xmi:id="_8AQ2kM3tEeahpd1P9sS4xg" base_EnumerationLiteral="_8AQPhs3tEeahpd1P9sS4xg" display="Targeted history and physical note"/>
   <fhir:ShortDescription xmi:id="_8AQ2ks3tEeahpd1P9sS4xg" base_Comment="_8AQ2kc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AQ2lM3tEeahpd1P9sS4xg" base_Comment="_8AQ2k83tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8ARdo83tEeahpd1P9sS4xg" id="109345" base_Property="_8ARdoM3tEeahpd1P9sS4xg" label="Allergies and Intolerances Section"/>
+  <fhir:ElementDefinition xmi:id="_8ARdo83tEeahpd1P9sS4xg" id="109345" base_Property="_8ARdoM3tEeahpd1P9sS4xg" label="Allergies and Intolerances Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="48765-2" display="Allergies and adverse reactions"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ElementSlicing xmi:id="_8ARdpM3tEeahpd1P9sS4xg" rules="open" base_Property="_8ARdoM3tEeahpd1P9sS4xg">
     <discriminator>Composition.section.code</discriminator>
   </fhir:ElementSlicing>
@@ -21183,7 +21187,12 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8AT55c3tEeahpd1P9sS4xg" id="112609" base_Property="_8AT54s3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8AT5683tEeahpd1P9sS4xg" base_Comment="_8AT56s3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AT57c3tEeahpd1P9sS4xg" base_Comment="_8AT57M3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8AUg883tEeahpd1P9sS4xg" id="109346" base_Property="_8AUg8M3tEeahpd1P9sS4xg" label="Assessment and Plan Section"/>
+  <fhir:ElementDefinition xmi:id="_8AUg883tEeahpd1P9sS4xg" id="109346" base_Property="_8AUg8M3tEeahpd1P9sS4xg" label="Assessment and Plan Section">
+    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="47420-5" display="Assessment and Plan Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
+ 
   <fhir:ShortDescription xmi:id="_8AUg-c3tEeahpd1P9sS4xg" base_Comment="_8AUg-M3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AVIAM3tEeahpd1P9sS4xg" base_Comment="_8AUg-s3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8AVIAs3tEeahpd1P9sS4xg" base_Comment="_8AVIAc3tEeahpd1P9sS4xg"/>
@@ -21196,7 +21205,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8AWWJM3tEeahpd1P9sS4xg" id="109371" base_Property="_8AWWIc3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8AWWJs3tEeahpd1P9sS4xg" base_Comment="_8AWWJc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AWWKM3tEeahpd1P9sS4xg" base_Comment="_8AWWJ83tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8AW9M83tEeahpd1P9sS4xg" id="109347" base_Property="_8AW9MM3tEeahpd1P9sS4xg" label="Assessment Section"/>
+  <fhir:ElementDefinition xmi:id="_8AW9M83tEeahpd1P9sS4xg" id="109347" base_Property="_8AW9MM3tEeahpd1P9sS4xg" label="Assessment Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="47420-5" display="Assessment and Plan Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8AW9Oc3tEeahpd1P9sS4xg" base_Comment="_8AW9OM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AW9O83tEeahpd1P9sS4xg" base_Comment="_8AW9Os3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8AW9Pc3tEeahpd1P9sS4xg" base_Comment="_8AW9PM3tEeahpd1P9sS4xg"/>
@@ -21209,7 +21222,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8AYya83tEeahpd1P9sS4xg" id="109374" base_Property="_8AYyaM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8AYybc3tEeahpd1P9sS4xg" base_Comment="_8AYybM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AZZcc3tEeahpd1P9sS4xg" base_Comment="_8AZZcM3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8AZZdc3tEeahpd1P9sS4xg" id="109348" base_Property="_8AZZcs3tEeahpd1P9sS4xg" label="Chief Complaint and Reason for Visit Section"/>
+  <fhir:ElementDefinition xmi:id="_8AZZdc3tEeahpd1P9sS4xg" id="109348" base_Property="_8AZZcs3tEeahpd1P9sS4xg" label="Chief Complaint and Reason for Visit Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="46239-0" display="Chief Complaint and Reason for Visit Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8AZZe83tEeahpd1P9sS4xg" base_Comment="_8AZZes3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AaAgc3tEeahpd1P9sS4xg" base_Comment="_8AaAgM3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8AaAg83tEeahpd1P9sS4xg" base_Comment="_8AaAgs3tEeahpd1P9sS4xg"/>
@@ -21222,7 +21239,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8AbOo83tEeahpd1P9sS4xg" id="109377" base_Property="_8AbOoM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8AbOpc3tEeahpd1P9sS4xg" base_Comment="_8AbOpM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AbOp83tEeahpd1P9sS4xg" base_Comment="_8AbOps3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8Ab1sM3tEeahpd1P9sS4xg" id="109349" base_Property="_8AbOqM3tEeahpd1P9sS4xg" label="Chief Complaint Section"/>
+  <fhir:ElementDefinition xmi:id="_8Ab1sM3tEeahpd1P9sS4xg" id="109349" base_Property="_8AbOqM3tEeahpd1P9sS4xg" label="Chief Complaint Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10154-3" display="Chief Complaint Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8Ab1ts3tEeahpd1P9sS4xg" base_Comment="_8Ab1tc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8Ab1uM3tEeahpd1P9sS4xg" base_Comment="_8Ab1t83tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8Ab1us3tEeahpd1P9sS4xg" base_Comment="_8Ab1uc3tEeahpd1P9sS4xg"/>
@@ -21235,7 +21256,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8AdD2M3tEeahpd1P9sS4xg" id="109380" base_Property="_8AdD1c3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8AdD2s3tEeahpd1P9sS4xg" base_Comment="_8AdD2c3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AdD3M3tEeahpd1P9sS4xg" base_Comment="_8AdD283tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8Adq483tEeahpd1P9sS4xg" id="109350" base_Property="_8Adq4M3tEeahpd1P9sS4xg" label="Family History Section"/>
+  <fhir:ElementDefinition xmi:id="_8Adq483tEeahpd1P9sS4xg" id="109350" base_Property="_8Adq4M3tEeahpd1P9sS4xg" label="Family History Section">
+  <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10157-6" display="Family History Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8Adq6c3tEeahpd1P9sS4xg" base_Comment="_8Adq6M3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8Adq683tEeahpd1P9sS4xg" base_Comment="_8Adq6s3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8AeR8M3tEeahpd1P9sS4xg" base_Comment="_8Adq7M3tEeahpd1P9sS4xg"/>
@@ -21251,7 +21276,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8AfgGM3tEeahpd1P9sS4xg" id="112610" base_Property="_8AfgFc3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8AgHIM3tEeahpd1P9sS4xg" base_Comment="_8AfgHc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AgHIs3tEeahpd1P9sS4xg" base_Comment="_8AgHIc3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8AgHJs3tEeahpd1P9sS4xg" id="109351" base_Property="_8AgHI83tEeahpd1P9sS4xg" label="General Status Section"/>
+  <fhir:ElementDefinition xmi:id="_8AgHJs3tEeahpd1P9sS4xg" id="109351" base_Property="_8AgHI83tEeahpd1P9sS4xg" label="General Status Section">
+  <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10157-6" display="General Status Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8AguMM3tEeahpd1P9sS4xg" base_Comment="_8AgHK83tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AguMs3tEeahpd1P9sS4xg" base_Comment="_8AguMc3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8AguNM3tEeahpd1P9sS4xg" base_Comment="_8AguM83tEeahpd1P9sS4xg"/>
@@ -21264,7 +21293,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8Ah8U83tEeahpd1P9sS4xg" id="109386" base_Property="_8Ah8UM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8Ah8Vc3tEeahpd1P9sS4xg" base_Comment="_8Ah8VM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8Ah8V83tEeahpd1P9sS4xg" base_Comment="_8Ah8Vs3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8AijYc3tEeahpd1P9sS4xg" id="109352" base_Property="_8Ah8WM3tEeahpd1P9sS4xg" label="History of Past Illness Section"/>
+  <fhir:ElementDefinition xmi:id="_8AijYc3tEeahpd1P9sS4xg" id="109352" base_Property="_8Ah8WM3tEeahpd1P9sS4xg" label="History of Past Illness Section">
+  <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="11348-0" display="History of Past Illness Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8AijZ83tEeahpd1P9sS4xg" base_Comment="_8AijZs3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8Aijac3tEeahpd1P9sS4xg" base_Comment="_8AijaM3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8Aija83tEeahpd1P9sS4xg" base_Comment="_8Aijas3tEeahpd1P9sS4xg"/>
@@ -21280,7 +21313,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8AkYl83tEeahpd1P9sS4xg" id="112611" base_Property="_8AkYlM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8AkYnc3tEeahpd1P9sS4xg" base_Comment="_8AkYnM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AkYn83tEeahpd1P9sS4xg" base_Comment="_8AkYns3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8Ak_o83tEeahpd1P9sS4xg" id="109353" base_Property="_8Ak_oM3tEeahpd1P9sS4xg" label="History of Present Illness Section"/>
+  <fhir:ElementDefinition xmi:id="_8Ak_o83tEeahpd1P9sS4xg" id="109353" base_Property="_8Ak_oM3tEeahpd1P9sS4xg" label="History of Present Illness Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10164-2" display="History of Present Illness Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8Ak_qc3tEeahpd1P9sS4xg" base_Comment="_8Ak_qM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8Ak_q83tEeahpd1P9sS4xg" base_Comment="_8Ak_qs3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8AlmsM3tEeahpd1P9sS4xg" base_Comment="_8Ak_rM3tEeahpd1P9sS4xg"/>
@@ -21293,7 +21330,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8Am00M3tEeahpd1P9sS4xg" id="109392" base_Property="_8AmNys3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8Am00s3tEeahpd1P9sS4xg" base_Comment="_8Am00c3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8Am01M3tEeahpd1P9sS4xg" base_Comment="_8Am0083tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8Am02M3tEeahpd1P9sS4xg" id="109354" base_Property="_8Am01c3tEeahpd1P9sS4xg" label="Immunizations Section"/>
+  <fhir:ElementDefinition xmi:id="_8Am02M3tEeahpd1P9sS4xg" id="109354" base_Property="_8Am01c3tEeahpd1P9sS4xg" label="Immunizations Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="11369-6" display="Immunizations Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8Anb5c3tEeahpd1P9sS4xg" base_Comment="_8Anb5M3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8Anb583tEeahpd1P9sS4xg" base_Comment="_8Anb5s3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8Anb6c3tEeahpd1P9sS4xg" base_Comment="_8Anb6M3tEeahpd1P9sS4xg"/>
@@ -21309,7 +21350,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8ApRE83tEeahpd1P9sS4xg" id="112612" base_Property="_8ApREM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8ApRGc3tEeahpd1P9sS4xg" base_Comment="_8ApRGM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8ApRG83tEeahpd1P9sS4xg" base_Comment="_8ApRGs3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8Ap4I83tEeahpd1P9sS4xg" id="109355" base_Property="_8Ap4IM3tEeahpd1P9sS4xg" label="Medications Section"/>
+  <fhir:ElementDefinition xmi:id="_8Ap4I83tEeahpd1P9sS4xg" id="109355" base_Property="_8Ap4IM3tEeahpd1P9sS4xg" label="Medications Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10160-0" display="Medications Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8Ap4Kc3tEeahpd1P9sS4xg" base_Comment="_8Ap4KM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8Ap4K83tEeahpd1P9sS4xg" base_Comment="_8Ap4Ks3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8Ap4Lc3tEeahpd1P9sS4xg" base_Comment="_8Ap4LM3tEeahpd1P9sS4xg"/>
@@ -21325,7 +21370,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8ArtVs3tEeahpd1P9sS4xg" id="112613" base_Property="_8ArtU83tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8ArtXM3tEeahpd1P9sS4xg" base_Comment="_8ArtW83tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8ArtXs3tEeahpd1P9sS4xg" base_Comment="_8ArtXc3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8AsUY83tEeahpd1P9sS4xg" id="109356" base_Property="_8AsUYM3tEeahpd1P9sS4xg" label="Physical Exam Section"/>
+  <fhir:ElementDefinition xmi:id="_8AsUY83tEeahpd1P9sS4xg" id="109356" base_Property="_8AsUYM3tEeahpd1P9sS4xg" label="Physical Exam Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10157-6" display="Physical Exam Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8AsUac3tEeahpd1P9sS4xg" base_Comment="_8AsUaM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AsUa83tEeahpd1P9sS4xg" base_Comment="_8AsUas3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8As7cM3tEeahpd1P9sS4xg" base_Comment="_8AsUbM3tEeahpd1P9sS4xg"/>
@@ -21338,7 +21387,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8AuJkc3tEeahpd1P9sS4xg" id="109401" base_Property="_8Atiis3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8AuJk83tEeahpd1P9sS4xg" base_Comment="_8AuJks3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AuJlc3tEeahpd1P9sS4xg" base_Comment="_8AuJlM3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8AuJmc3tEeahpd1P9sS4xg" id="109357" base_Property="_8AuJls3tEeahpd1P9sS4xg" label="Plan of Treatment Section"/>
+  <fhir:ElementDefinition xmi:id="_8AuJmc3tEeahpd1P9sS4xg" id="109357" base_Property="_8AuJls3tEeahpd1P9sS4xg" label="Plan of Treatment Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="18776-5" display="Plan of Treatment Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8Auwpc3tEeahpd1P9sS4xg" base_Comment="_8AuwpM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8Auwp83tEeahpd1P9sS4xg" base_Comment="_8Auwps3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8Auwqc3tEeahpd1P9sS4xg" base_Comment="_8AuwqM3tEeahpd1P9sS4xg"/>
@@ -21351,7 +21404,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8Av-y83tEeahpd1P9sS4xg" id="109404" base_Property="_8Av-yM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8Av-zc3tEeahpd1P9sS4xg" base_Comment="_8Av-zM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8Awl0c3tEeahpd1P9sS4xg" base_Comment="_8Awl0M3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8Awl1c3tEeahpd1P9sS4xg" id="109358" base_Property="_8Awl0s3tEeahpd1P9sS4xg" label="Problem Section"/>
+  <fhir:ElementDefinition xmi:id="_8Awl1c3tEeahpd1P9sS4xg" id="109358" base_Property="_8Awl0s3tEeahpd1P9sS4xg" label="Problem Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="11450-4" display="Problem Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8Awl283tEeahpd1P9sS4xg" base_Comment="_8Awl2s3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AxM4c3tEeahpd1P9sS4xg" base_Comment="_8AxM4M3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8AxM483tEeahpd1P9sS4xg" base_Comment="_8AxM4s3tEeahpd1P9sS4xg"/>
@@ -21367,14 +21424,22 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8AybC83tEeahpd1P9sS4xg" id="112614" base_Property="_8AybCM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8AzCFc3tEeahpd1P9sS4xg" base_Comment="_8AzCFM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AzCF83tEeahpd1P9sS4xg" base_Comment="_8AzCFs3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8AzCG83tEeahpd1P9sS4xg" id="109359" base_Property="_8AzCGM3tEeahpd1P9sS4xg" label="Procedures Section"/>
+  <fhir:ElementDefinition xmi:id="_8AzCG83tEeahpd1P9sS4xg" id="109359" base_Property="_8AzCGM3tEeahpd1P9sS4xg" label="Procedures Section">
+    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="47519-4" display="Procedures Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8AzpJc3tEeahpd1P9sS4xg" base_Comment="_8AzpJM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8AzpJ83tEeahpd1P9sS4xg" base_Comment="_8AzpJs3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8AzpKc3tEeahpd1P9sS4xg" base_Comment="_8AzpKM3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_8A0QM83tEeahpd1P9sS4xg" id="109408" base_Property="_8A0QMM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8A0QNc3tEeahpd1P9sS4xg" base_Comment="_8A0QNM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A0QN83tEeahpd1P9sS4xg" base_Comment="_8A0QNs3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8A0QO83tEeahpd1P9sS4xg" id="109409" base_Property="_8A0QOM3tEeahpd1P9sS4xg" label="History of Procedures"/>
+  <fhir:ElementDefinition xmi:id="_8A0QO83tEeahpd1P9sS4xg" id="109409" base_Property="_8A0QOM3tEeahpd1P9sS4xg" label="History of Procedures">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="47519-4" display="History of Procedures Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8A03Qc3tEeahpd1P9sS4xg" base_Comment="_8A03QM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A03Q83tEeahpd1P9sS4xg" base_Comment="_8A03Qs3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_8A03R83tEeahpd1P9sS4xg" id="109410" base_Property="_8A03RM3tEeahpd1P9sS4xg"/>
@@ -21383,7 +21448,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8A1eU83tEeahpd1P9sS4xg" id="112615" base_Property="_8A1eUM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8A1eWc3tEeahpd1P9sS4xg" base_Comment="_8A1eWM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A1eW83tEeahpd1P9sS4xg" base_Comment="_8A1eWs3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8A2FY83tEeahpd1P9sS4xg" id="109360" base_Property="_8A2FYM3tEeahpd1P9sS4xg" label="Reason for Visit Section"/>
+  <fhir:ElementDefinition xmi:id="_8A2FY83tEeahpd1P9sS4xg" id="109360" base_Property="_8A2FYM3tEeahpd1P9sS4xg" label="Reason for Visit Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="29299-5" display="Reason for Visit Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8A2Fac3tEeahpd1P9sS4xg" base_Comment="_8A2FaM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A2Fa83tEeahpd1P9sS4xg" base_Comment="_8A2Fas3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8A2Fbc3tEeahpd1P9sS4xg" base_Comment="_8A2FbM3tEeahpd1P9sS4xg"/>
@@ -21396,7 +21465,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8A3Ti83tEeahpd1P9sS4xg" id="109413" base_Property="_8A3TiM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8A3Tjc3tEeahpd1P9sS4xg" base_Comment="_8A3TjM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A36kc3tEeahpd1P9sS4xg" base_Comment="_8A36kM3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8A36lc3tEeahpd1P9sS4xg" id="109361" base_Property="_8A36ks3tEeahpd1P9sS4xg" label="Results Section"/>
+  <fhir:ElementDefinition xmi:id="_8A36lc3tEeahpd1P9sS4xg" id="109361" base_Property="_8A36ks3tEeahpd1P9sS4xg" label="Results Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="30954-2" display="Results Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8A4hoM3tEeahpd1P9sS4xg" base_Comment="_8A36ms3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A4hos3tEeahpd1P9sS4xg" base_Comment="_8A4hoc3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8A4hpM3tEeahpd1P9sS4xg" base_Comment="_8A4ho83tEeahpd1P9sS4xg"/>
@@ -21409,7 +21482,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8A5vw83tEeahpd1P9sS4xg" id="109416" base_Property="_8A5vwM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8A5vxc3tEeahpd1P9sS4xg" base_Comment="_8A5vxM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A5vx83tEeahpd1P9sS4xg" base_Comment="_8A5vxs3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8A6W083tEeahpd1P9sS4xg" id="109362" base_Property="_8A6W0M3tEeahpd1P9sS4xg" label="Review of Systems Section"/>
+  <fhir:ElementDefinition xmi:id="_8A6W083tEeahpd1P9sS4xg" id="109362" base_Property="_8A6W0M3tEeahpd1P9sS4xg" label="Review of Systems Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10187-3" display="Review of Systems  Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8A6W2c3tEeahpd1P9sS4xg" base_Comment="_8A6W2M3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A6W283tEeahpd1P9sS4xg" base_Comment="_8A6W2s3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8A6W3c3tEeahpd1P9sS4xg" base_Comment="_8A6W3M3tEeahpd1P9sS4xg"/>
@@ -21422,7 +21499,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8A7k-83tEeahpd1P9sS4xg" id="109419" base_Property="_8A7k-M3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8A7k_c3tEeahpd1P9sS4xg" base_Comment="_8A7k_M3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A8MAc3tEeahpd1P9sS4xg" base_Comment="_8A8MAM3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8A8MBc3tEeahpd1P9sS4xg" id="109363" base_Property="_8A8MAs3tEeahpd1P9sS4xg" label="Social History Section"/>
+  <fhir:ElementDefinition xmi:id="_8A8MBc3tEeahpd1P9sS4xg" id="109363" base_Property="_8A8MAs3tEeahpd1P9sS4xg" label="Social History Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="29762-2" display="Social History Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8A8MC83tEeahpd1P9sS4xg" base_Comment="_8A8MCs3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A8zEc3tEeahpd1P9sS4xg" base_Comment="_8A8zEM3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8A8zE83tEeahpd1P9sS4xg" base_Comment="_8A8zEs3tEeahpd1P9sS4xg"/>
@@ -21438,7 +21519,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8A-oQM3tEeahpd1P9sS4xg" id="112617" base_Property="_8A-BOc3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8A-oRs3tEeahpd1P9sS4xg" base_Comment="_8A-oRc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A-oSM3tEeahpd1P9sS4xg" base_Comment="_8A-oR83tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8A_PUc3tEeahpd1P9sS4xg" id="109364" base_Property="_8A-oSc3tEeahpd1P9sS4xg" label="Vital Signs Section"/>
+  <fhir:ElementDefinition xmi:id="_8A_PUc3tEeahpd1P9sS4xg" id="109364" base_Property="_8A-oSc3tEeahpd1P9sS4xg" label="Vital Signs Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10157-6" display="Vital Signs Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8A_PV83tEeahpd1P9sS4xg" base_Comment="_8A_PVs3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8A_PWc3tEeahpd1P9sS4xg" base_Comment="_8A_PWM3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8A_PW83tEeahpd1P9sS4xg" base_Comment="_8A_PWs3tEeahpd1P9sS4xg"/>
@@ -21454,7 +21539,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8BBEhM3tEeahpd1P9sS4xg" id="112618" base_Property="_8BBEgc3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8BBEis3tEeahpd1P9sS4xg" base_Comment="_8BBEic3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8BBEjM3tEeahpd1P9sS4xg" base_Comment="_8BBEi83tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8BBrk83tEeahpd1P9sS4xg" id="109365" base_Property="_8BBrkM3tEeahpd1P9sS4xg" label="Instructions Section"/>
+  <fhir:ElementDefinition xmi:id="_8BBrk83tEeahpd1P9sS4xg" id="109365" base_Property="_8BBrkM3tEeahpd1P9sS4xg" label="Instructions Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10157-6" display="Instructions Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8BBrmc3tEeahpd1P9sS4xg" base_Comment="_8BBrmM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8BBrm83tEeahpd1P9sS4xg" base_Comment="_8BBrms3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8BCSoc3tEeahpd1P9sS4xg" base_Comment="_8BCSoM3tEeahpd1P9sS4xg"/>
@@ -21474,7 +21563,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8BEu483tEeahpd1P9sS4xg" id="108456" base_Property="_8BEu4M3tEeahpd1P9sS4xg" label="Overall Plan of Care/Advance Care Directives"/>
   <fhir:ShortDescription xmi:id="_8BEu5c3tEeahpd1P9sS4xg" base_Comment="_8BEu5M3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8BEu583tEeahpd1P9sS4xg" base_Comment="_8BEu5s3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8BFV8c3tEeahpd1P9sS4xg" id="108351" base_Property="_8BEu6M3tEeahpd1P9sS4xg" label="Health Concerns Section"/>
+  <fhir:ElementDefinition xmi:id="_8BFV8c3tEeahpd1P9sS4xg" id="108351" base_Property="_8BEu6M3tEeahpd1P9sS4xg" label="Health Concerns Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10157-6" display="Healht Concerns Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ElementSlicing xmi:id="_8BFV8s3tEeahpd1P9sS4xg" rules="open" base_Property="_8BEu6M3tEeahpd1P9sS4xg">
     <discriminator>Composition.section.code</discriminator>
   </fhir:ElementSlicing>
@@ -21490,7 +21583,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8BHLI83tEeahpd1P9sS4xg" id="108380" base_Property="_8BHLIM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8BHLJc3tEeahpd1P9sS4xg" base_Comment="_8BHLJM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8BHLJ83tEeahpd1P9sS4xg" base_Comment="_8BHLJs3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8BHyMM3tEeahpd1P9sS4xg" id="108352" base_Property="_8BHLKM3tEeahpd1P9sS4xg" label="Goals Section"/>
+  <fhir:ElementDefinition xmi:id="_8BHyMM3tEeahpd1P9sS4xg" id="108352" base_Property="_8BHLKM3tEeahpd1P9sS4xg" label="Goals Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10157-6" display="Goals Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8BHyNs3tEeahpd1P9sS4xg" base_Comment="_8BHyNc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8BHyOM3tEeahpd1P9sS4xg" base_Comment="_8BHyN83tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8BHyOs3tEeahpd1P9sS4xg" base_Comment="_8BHyOc3tEeahpd1P9sS4xg"/>
@@ -21503,7 +21600,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8BJAWM3tEeahpd1P9sS4xg" id="108383" base_Property="_8BJAVc3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8BJnYc3tEeahpd1P9sS4xg" base_Comment="_8BJnYM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8BJnY83tEeahpd1P9sS4xg" base_Comment="_8BJnYs3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8BJnZ83tEeahpd1P9sS4xg" id="108353" base_Property="_8BJnZM3tEeahpd1P9sS4xg" label="Interventions Section"/>
+  <fhir:ElementDefinition xmi:id="_8BJnZ83tEeahpd1P9sS4xg" id="108353" base_Property="_8BJnZM3tEeahpd1P9sS4xg" label="Interventions Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10157-6" display="Interventions Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8BKOcc3tEeahpd1P9sS4xg" base_Comment="_8BKOcM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8BKOc83tEeahpd1P9sS4xg" base_Comment="_8BKOcs3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8BKOdc3tEeahpd1P9sS4xg" base_Comment="_8BKOdM3tEeahpd1P9sS4xg"/>
@@ -21516,7 +21617,11 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8BLclc3tEeahpd1P9sS4xg" id="108386" base_Property="_8BLcks3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8BLcl83tEeahpd1P9sS4xg" base_Comment="_8BLcls3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8BLcmc3tEeahpd1P9sS4xg" base_Comment="_8BLcmM3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_8BMDo83tEeahpd1P9sS4xg" id="108372" base_Property="_8BMDoM3tEeahpd1P9sS4xg" label="Health Status Evaluations and Outcomes Section"/>
+  <fhir:ElementDefinition xmi:id="_8BMDo83tEeahpd1P9sS4xg" id="108372" base_Property="_8BMDoM3tEeahpd1P9sS4xg" label="Health Status Evaluations and Outcomes Section">
+   <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10157-6" display="Health Status Evaluations and Outcomes Section"/>
+    </fixed>
+   </fhir:ElementDefinition> 
   <fhir:ShortDescription xmi:id="_8BMDqc3tEeahpd1P9sS4xg" base_Comment="_8BMDqM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8BMDq83tEeahpd1P9sS4xg" base_Comment="_8BMDqs3tEeahpd1P9sS4xg"/>
   <fhir:Comments xmi:id="_8BMDrc3tEeahpd1P9sS4xg" base_Comment="_8BMDrM3tEeahpd1P9sS4xg"/>
@@ -26759,28 +26864,5 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_8j5IGM3tEeahpd1P9sS4xg" id="118937" base_Property="_8j5IFc3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_8j5vIM3tEeahpd1P9sS4xg" base_Comment="_8j5IHc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8j5vIs3tEeahpd1P9sS4xg" base_Comment="_8j5vIc3tEeahpd1P9sS4xg"/>
-  <MDMI:MDMIMapping xmi:id="_en4WMCgUEeeMR4_BVmg6Og" base_Class="_7FPYwc3tEeahpd1P9sS4xg"/>
-  <MDMI:MDMIMapping xmi:id="_qp8VEJZNEeeNSN6YO2XrkQ" base_Class="_7FRN883tEeahpd1P9sS4xg">
-    <elements xmi:id="_qp88IJZNEeeNSN6YO2XrkQ" businessElement="PatientContainer" modelElement="_7LfxwM3tEeahpd1P9sS4xg" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="subject"/>
-    <elements xmi:id="_Tp8tINNeEea_66vskoPvqA" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.identifier"/>
-    <elements xmi:id="_aZE3kNNeEea_66vskoPvqA" businessElement="PatientLegalName" modelElement="_AJekIs3tEeahpd1P9sS4xg" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="subject.name"/>
-    <elements xmi:id="_oPspINNeEea_66vskoPvqA" businessElement="PatientAdministrationGenderCode" modelElement="_AJgZUc3tEeahpd1P9sS4xg" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="subject.gender"/>
-    <elements xmi:id="_qWGU8NNeEea_66vskoPvqA" businessElement="PatientDateOfBirth" modelElement="_BOu8AM3tEeahpd1P9sS4xg" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="subject.birthDate"/>
-    <elements xmi:id="_wI8dUNNeEea_66vskoPvqA" businessElement="PatientHomePhone" businessElementId="cfb8b147-38a5-4272-87c6-f1fa4cb97457" modelElementPath="subject.telecom">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eVgBsFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_zC_MkNNeEea_66vskoPvqA" businessElement="PatientAliveBoolean" businessElementId="16a809dd-a885-43e6-874b-1baf09992299" modelElementPath="subject.deceased[x]">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eXVM8FMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_2eKS8NNeEea_66vskoPvqA" businessElement="PatientHomeAddress" businessElementId="eef49a28-a96e-40a7-b328-981c5addd245" modelElementPath="subject.address">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eX8RsFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_4R-Z8NNeEea_66vskoPvqA" businessElement="PatientMaritalStatus" businessElementId="6cf44ff0-2cfa-493b-98a6-44f35acd195c" modelElementPath="subject.maritalStatus">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eYjWMFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_9DaIoNNeEea_66vskoPvqA" businessElement="PatientMultipleBirthIndicator" businessElementId="60db28d7-0529-4dfc-a78b-0b1c3fe6afa0" modelElementPath="subject.multipleBirth[x]">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eZxcsFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_P0uSkNNfEea_66vskoPvqA" businessElement="PatientRace" modelElement="_AJPTkM3tEeahpd1P9sS4xg" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="subject.extension"/>
-  </MDMI:MDMIMapping>
+   <MDMI:MDMIMapping xmi:id="_en4WMCgUEeeMR4_BVmg6Og" base_Class="_7FPYwc3tEeahpd1P9sS4xg"/>
 </xmi:XMI>
