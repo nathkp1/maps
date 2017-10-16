@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2KlEwBSVEeGGzu7fmW9pXw" name="AdvanceDirectiveObservation">
     <ownedComment xmi:id="_N7l9YCwEEeGs-ue-ukBpXg">
       <body>Advance Directives Observatations assert findings (e.g., &quot;resuscitation status is Full Code&quot;) rather than orders, and should not be considered legal documents. A legal document can be referenced using the reference/externalReference construct.</body>
@@ -245,9 +245,9 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
   <CDA:PropertyValidation xmi:id="_2KtnphSVEeGGzu7fmW9pXw" base_Property="_2KtnoxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8654, R2.1=CONF:1198-8654</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2KmS4BSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2KlE3hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8651</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_2KmS4BSVEeGGzu7fmW9pXw" base_Property="_2KlE3hSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2LHQRxSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:8651</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_2KuOsRSVEeGGzu7fmW9pXw" code="completed" displayName="Completed" base_Property="_2KuOsBSVEeGGzu7fmW9pXw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -692,14 +692,14 @@ The observation/value element contains the detailed patient directive which may 
     <ruleId>CONF:1198-28454</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_DtG-0LFKEeOtlapy2HWYww" severity="WARNING" base_Property="_3ZLE0LFFEeOtlapy2HWYww"/>
-  <CDA:ValueSetConstraint xmi:id="_3tQFILFKEeOtlapy2HWYww" severity="WARNING" base_Property="_3ZLE0LFFEeOtlapy2HWYww">
-    <ruleId>CONF:1198-28429</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_3tQFILFKEeOtlapy2HWYww" base_Property="_3ZLE0LFFEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_I2mywLFLEeOtlapy2HWYww"/>
+    <ruleId>CONF:1198-28429</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__C7_oLFSEeOtlapy2HWYww" severity="WARNING" base_Property="_8ej-YLFSEeOtlapy2HWYww"/>
-  <CDA:ValueSetConstraint xmi:id="_AQ1WILFTEeOtlapy2HWYww" severity="WARNING" base_Property="_8ej-YLFSEeOtlapy2HWYww">
-    <ruleId>CONF:1198-28440</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_AQ1WILFTEeOtlapy2HWYww" base_Property="_8ej-YLFSEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
+    <ruleId>CONF:1198-28440</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_XXVXoLFTEeOtlapy2HWYww" severity="WARNING" base_Property="_XXUwkLFTEeOtlapy2HWYww">
     <ruleId>CONF:1198-8671</ruleId>
@@ -708,14 +708,14 @@ The observation/value element contains the detailed patient directive which may 
     <ruleId>CONF:1198-8673</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_q9r2sLFUEeOtlapy2HWYww" severity="WARNING" base_Property="_iHQBgLFUEeOtlapy2HWYww"/>
-  <CDA:ValueSetConstraint xmi:id="_sOfXQLFUEeOtlapy2HWYww" severity="WARNING" base_Property="_iHQBgLFUEeOtlapy2HWYww">
-    <ruleId>CONF:1198-28444</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_sOfXQLFUEeOtlapy2HWYww" base_Property="_iHQBgLFUEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_I2mywLFLEeOtlapy2HWYww"/>
+    <ruleId>CONF:1198-28444</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_LU9DgLFWEeOtlapy2HWYww" severity="WARNING" base_Property="_EnlzoLFWEeOtlapy2HWYww"/>
-  <CDA:ValueSetConstraint xmi:id="_NuixELFWEeOtlapy2HWYww" severity="WARNING" base_Property="_EnlzoLFWEeOtlapy2HWYww">
-    <ruleId>CONF:1198-28446</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_NuixELFWEeOtlapy2HWYww" base_Property="_EnlzoLFWEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:1198-28446</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_W6N2cLFWEeOtlapy2HWYww" severity="INFO" base_Property="_EnlMkLFWEeOtlapy2HWYww">
     <ruleId>CONF:1198-28451</ruleId>
@@ -908,9 +908,9 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
     <ruleId>CONF:1198-32930</ruleId>
     <ruleId>CONF:1198-32931</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="__p-JYExJEeWJ65CktI2ODQ" severity="WARNING" base_Property="_iRIecLEhEeOtlapy2HWYww">
-    <ruleId>CONF:1198-8651</ruleId>
+  <CDA:ValueSetConstraint xmi:id="__p-JYExJEeWJ65CktI2ODQ" base_Property="_iRIecLEhEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_PDM9OUxKEeWJ65CktI2ODQ"/>
+    <ruleId>CONF:1198-8651</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_RN5dsExLEeWJ65CktI2ODQ" base_Property="_NaJfQExLEeWJ65CktI2ODQ">
     <ruleId>CONF:1198-32842</ruleId>
@@ -948,4 +948,67 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
     <ruleId>CONF:15518</ruleId>
     <base_Property href="consol-medications.uml#_OJAbcUFGEeGorO80f-Cppg"/>
   </CDA:PropertyValidation>
+  <MDMI:MDMIMapping xmi:id="_urZRoLKDEeeYtYU-39Ic6Q" base_Class="_ZFbCkAIPEeS-F85KYVlDyA">
+    <elements xmi:id="_uribkLKDEeeYtYU-39Ic6Q" businessElement="AdvanceDirectivesSectionNotes" modelElement="_VBvEgAIsEeSr1aKUYorURA" businessElementId="effb6e62-fed7-42d9-b571-886b4b6b3ae0" modelElementPath="text"/>
+    <elements xmi:id="_wcFMILKDEeeYtYU-39Ic6Q" businessElement="AdvanceDirectivesSectionContainer" modelElement="_ZFbCkAIPEeS-F85KYVlDyA" businessElementId="3419e565-0cf4-4223-bbb9-3c1855a08e91" modelElementPath=""/>
+    <elements xmi:id="_9jvl8LKDEeeYtYU-39Ic6Q" businessElement="AdvanceDirectiveObservationStartDateTime" modelElement="_3KFfwLEgEeOtlapy2HWYww" businessElementId="b78b7989-d24e-4900-bf25-3962268901df" modelElementPath="advanceDirectiveObservation2.effectiveTime"/>
+    <elements xmi:id="___Ow8LKDEeeYtYU-39Ic6Q" businessElement="AdvanceDirectiveObservationEndDateTime" modelElement="_3KFfwLEgEeOtlapy2HWYww" businessElementId="ed37c059-3d20-478b-9665-6b84b39b28ca" modelElementPath="advanceDirectiveObservation2.effectiveTime"/>
+    <elements xmi:id="_ByW7cLKEEeeYtYU-39Ic6Q" businessElement="AdvanceDirectiveObservationValueCode" modelElement="_AKj3MLEgEeOtlapy2HWYww" businessElementId="e3f3fdca-8dba-4bb0-b0c5-19bd3797dc57" modelElementPath="advanceDirectiveObservation2.value"/>
+    <elements xmi:id="_gqV8QLKEEeeYtYU-39Ic6Q" businessElement="AdvanceDirectiveObservationContainer" modelElement="_ZPLGQKJGEeSOc57SOMra_g" businessElementId="194dc592-ed3b-4a11-8720-550c4b70efcf" modelElementPath="advanceDirectiveObservation2"/>
+    <elements xmi:id="__IB_ALKKEeeyK79YCmlMcA" businessElement="AdvanceDirectiveObservationVerificationSpecialtyCode" modelElement="_EnlzoLFWEeOtlapy2HWYww" businessElementId="bcc543fa-a403-4c81-9eda-486764d273e4" modelElementPath="advanceDirectiveObservation2.verifier.participantRole.code"/>
+    <elements xmi:id="_A-HW4LKLEeeyK79YCmlMcA" businessElement="AdvanceDirectiveObservationVerificationAddress" modelElement="_EnlMkLFWEeOtlapy2HWYww" businessElementId="3ea87291-b3b0-4a0b-904b-e519876c8bc2" modelElementPath="advanceDirectiveObservation2.verifier.participantRole.addr"/>
+    <elements xmi:id="_DUNrkLKLEeeyK79YCmlMcA" businessElement="AdvanceDirectiveObservationVerificationTypeCode" modelElement="_3ZLE0LFFEeOtlapy2HWYww" businessElementId="58e88443-b499-4bf2-ac7b-293277771d7a" modelElementPath="advanceDirectiveObservation2.verifier.participantRole.playingEntity.code"/>
+    <elements xmi:id="_Fbb2wLKLEeeyK79YCmlMcA" businessElement="AdvanceDirectiveObservationVerificationName" modelElement="_3ZLE07FFEeOtlapy2HWYww" businessElementId="dde8079a-c93a-4f5e-a703-4628808beaa1" modelElementPath="advanceDirectiveObservation2.verifier.participantRole.playingEntity.name"/>
+    <elements xmi:id="_Aj_tELKTEeemqJTE4aU4Og" businessElement="AdvanceDirectiveProxyRelationshipCode" modelElement="_8ej-YLFSEeOtlapy2HWYww" businessElementId="c2c2af69-60d0-4f6e-91ec-61b1afe567c0" modelElementPath="advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.code"/>
+    <elements xmi:id="_CavzULKTEeemqJTE4aU4Og" businessElement="AdvanceDirectiveProxyAddress" modelElement="_XXUwkLFTEeOtlapy2HWYww" businessElementId="72ad0169-cfc9-4912-baea-904f1fb5e7e3" modelElementPath="advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.addr"/>
+    <elements xmi:id="_E6gaULKTEeemqJTE4aU4Og" businessElement="AdvanceDirectiveProxyFaxContact" modelElement="_2xJVILE9EeOtlapy2HWYww" businessElementId="5ace03be-0e4f-4c66-85c1-0806066390bf" modelElementPath="advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.telecom"/>
+    <elements xmi:id="_HLp9kLKTEeemqJTE4aU4Og" businessElement="AdvanceDirectiveProxyPagerContact" modelElement="_2xJVILE9EeOtlapy2HWYww" businessElementId="cf020c1c-36e8-460a-8df5-404aa21c9224" modelElementPath="advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.telecom"/>
+    <elements xmi:id="_JSREwLKTEeemqJTE4aU4Og" businessElement="AdvanceDirectiveProxyPhoneContact" modelElement="_2xJVILE9EeOtlapy2HWYww" businessElementId="119e89c1-3d2f-4dbb-b2de-3d7112a8a5f5" modelElementPath="advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.telecom"/>
+    <elements xmi:id="_L2YnULKTEeemqJTE4aU4Og" businessElement="AdvanceDirectiveProxySMSContact" modelElement="_2xJVILE9EeOtlapy2HWYww" businessElementId="5f8fc4e3-8f09-481b-a2db-f01e4708681e" modelElementPath="advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.telecom"/>
+    <elements xmi:id="_OpbWsLKTEeemqJTE4aU4Og" businessElement="AdvanceDirectiveProxyURLContact" modelElement="_2xJVILE9EeOtlapy2HWYww" businessElementId="8e21f9de-0628-4410-8cc8-35cb3bc4f5ce" modelElementPath="advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.telecom"/>
+    <elements xmi:id="_5AAsULKUEeemqJTE4aU4Og" businessElement="AdvanceDirectiveProxyPriorityCode" modelElement="_iHQBgLFUEeOtlapy2HWYww" businessElementId="db2e1f7a-5275-49fa-b4c6-3779855ff10d" modelElementPath="advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.playingEntity.code"/>
+    <elements xmi:id="_7a-S4LKUEeemqJTE4aU4Og" businessElement="AdvanceDirectiveProxyName" modelElement="_iHQBg7FUEeOtlapy2HWYww" businessElementId="6814e528-0080-48f3-a803-250e413c6ecc" modelElementPath="advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.playingEntity.name"/>
+    <elements xmi:id="_-tfMgLKUEeemqJTE4aU4Og" businessElement="AdvanceDirectiveReferenceID" modelElement="_WJKCUCsgEeGQ5rkpDKAt8A" businessElementId="a5a12734-5e78-4b88-ac0e-10e6f20ecdad" modelElementPath="advanceDirectiveObservation2.reference.externalDocument.id"/>
+    <elements xmi:id="_BC9PELKVEeemqJTE4aU4Og" businessElement="AdvanceDirectiveReferenceText" modelElement="_WJKpYCsgEeGQ5rkpDKAt8A" businessElementId="7d0aac21-4374-40f0-bea4-5f497176e6a6" modelElementPath="advanceDirectiveObservation2.reference.externalDocument.text"/>
+    <elements xmi:id="_RP47QLKWEeeEVcSeREKBgg" businessElement="AdvanceDirectiveAuthorTime" businessElementId="989bd1d2-37ad-487e-947c-6ceaa0652aea" modelElementPath="advanceDirectiveObservation2.authorParticipation.time">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_Tk0LQLKWEeeEVcSeREKBgg" businessElement="AdvanceDirectiveAuthorID" businessElementId="bc2a7397-6bbd-4340-bbf2-be2e13af2f45" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.id">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_VnGzILKWEeeEVcSeREKBgg" businessElement="AdvanceDirectiveAuthorSpecialityCode" businessElementId="7aa4c7ed-f802-41e5-85f7-fc9632fcca1c" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.code">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_XRJ6ILKWEeeEVcSeREKBgg" businessElement="AdvanceDirectiveAuthorLegalName" businessElementId="b6727709-c82e-4f91-9bc1-0d3c0e3d7a17" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.assignedPerson.name">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_ZIQlsLKWEeeEVcSeREKBgg" businessElement="AdvanceDirectiveAuthorOrganizationID" businessElementId="50aea91e-5895-4f00-801b-43d1230a5c9b" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.representedOrganization.id">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_bf8OwLKWEeeEVcSeREKBgg" businessElement="AdvanceDirectiveAuthorOrganizationName" businessElementId="eb386bf5-d20b-484b-8c4e-01875d1df31c" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.representedOrganization.name">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_d74FsLKWEeeEVcSeREKBgg" businessElement="AdvanceDirectiveAuthorOrganizationBusinessPhoneContact" businessElementId="11fa13c1-4812-412c-ad2b-91c509c5c0b1" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_gQbiQLKWEeeEVcSeREKBgg" businessElement="AdvanceDirectiveAuthorOrganizationEmailContact" businessElementId="6b81498b-cfac-4e1b-abdc-213bbf179970" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_iJ4-QLKWEeeEVcSeREKBgg" businessElement="AdvanceDirectiveAuthorOrganizationFaxContact" businessElementId="f79d8399-59ab-42f7-80d4-74c9e8be8b60" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_kz2DELKWEeeEVcSeREKBgg" businessElement="AdvanceDirectiveAuthorOrganizationPagerContact" businessElementId="4876d3cf-f1cb-4680-99f0-738b04ed0d32" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_nZ108LKWEeeEVcSeREKBgg" businessElement="AdvanceDirectiveAuthorOrganizationSMSContact" businessElementId="9f7c9118-65cc-4014-a691-debd80b5aa17" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_tHIScLKXEeeyNv_aydr58Q" businessElement="AdvanceDirectiveAuthorOrganizationURLContact" businessElementId="82a56db8-c1d9-43b7-92a7-094ef336215c" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_vhPkcLKXEeeyNv_aydr58Q" businessElement="AdvanceDirectiveAuthorOrganizationAddress" businessElementId="c060b86a-b676-4af2-8766-f3aacc535504" modelElementPath="advanceDirectiveObservation2.authorParticipation.assignedAuthor.representedOrganization.addr">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_WQYuwLKYEeeyNv_aydr58Q" businessElement="AdvanceDirectiveOrganizerID" modelElement="_IBSKpIlGEeOJGtGyq_dBbA" businessElementId="9e07e303-c541-465a-a7fb-8b875951beab" modelElementPath="advanceDirectiveOrganizer.id"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
