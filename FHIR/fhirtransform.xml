@@ -4,9 +4,9 @@
 
 
 
-		<delete file="map/fhirmapxml.mdmi" />
-		<delete file="map/fhirmapjson.mdmi" />
+		 
 		<delete file="map/fhirccdamapxml.mdmi" />
+		<delete file="map/fhirccdamapxml.xmi" />
 
 
 	<!--	<echo message="" />
@@ -32,21 +32,7 @@
 			<configProperty name="mappingStyle" value="NORMAL" />
 			<configProperty name="expressionLanguage" value="XPath" />
 		</qvto:transformation>
-
 		<transformReport reportPath="${basedir}" />
-
-		<!--
-		<antcall target="exportMDMI">
-			<param name="mdmimodel" value="fhirmapxml.mdmi" />
-			<param name="xmimodel" value="fhirmapxml.xmi" />
-		</antcall>
-
-		
-		<antcall target="exportMDMI">
-			<param name="mdmimodel" value="fhirccdamapxml.mdmi" />
-			<param name="xmimodel" value="fhirccdamapxml.xmi" />
-		</antcall>
--->
 	</target>
 
 

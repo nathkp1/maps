@@ -4,6 +4,8 @@
 	<target name="default">
 		
 		<delete file="map/cdamap.mdmi"/>
+		<delete file="map/cdamap.xmi"/>
+			
 	 	 <qvto:transformation
 			uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Cda2Mdmi.qvto">
 			<in uri="platform:/resource/CDA/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml" />
