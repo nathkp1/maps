@@ -49,31 +49,5 @@
 -->
 	</target>
 
-	<target name="exportMDMI">
-
-		<delete file="map/${xmimodel}" />
-
-		<copy file="map/${mdmimodel}" tofile="map/${xmimodel}" />
-
-		<mdmiExport model="platform:/resource/FHIR/map/${xmimodel}" />
-
-		<replace file='map/${xmimodel}' token='&lt;relatedSemanticElement>' value='&lt;relatedSemanticElement xmi:idref="' />
-				<replace file='map/${xmimodel}' token='&lt;/relatedSemanticElement>' value='" />' />	
-				<replace file='map/${xmimodel}' token='&lt;businessElement>' value='&lt;businessElement xmi:idref="' />
-				<replace file='map/${xmimodel}' token='&lt;/businessElement>' value='"  >&lt;/businessElement>' />
-				<replace file='map/${xmimodel}' token='&lt;semanticElement>' value='&lt;semanticElement xmi:idref="' />
-				<replace file='map/${xmimodel}' token='&lt;/semanticElement>' value='" />' />	
-				<replace file='map/${xmimodel}' token='&lt;referenceDatatype>' value='&lt;referenceDatatype xmi:idref="' />
-				<replace file='map/${xmimodel}' token='&lt;/referenceDatatype>' value='" />' />
-				<replace file='map/${xmimodel}' token='&lt;children>#' value='&lt;children xmi:idref="' />
-				<replace file='map/${xmimodel}' token='&lt;/children>' value='" />' />
-				<replace file='map/${xmimodel}' token='&lt;datatype>#' value='&lt;datatype xmi:idref="' />
-				<replace file='map/${xmimodel}' token='&lt;/datatype>' value='" />' />
-				<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:LeafSyntaxTranslator">#' value='&lt;syntaxNode xmi:idref="' />
-				<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:Bag">#' value='&lt;syntaxNode xmi:idref="' />
-				<replace file='map/${xmimodel}' token='&lt;syntaxNode xmi:type="mdmi:Choice">#' value='&lt;syntaxNode xmi:idref="' />
-				<replace file='map/${xmimodel}' token='&lt;/syntaxNode>' value='" />' />
-				<replace file='map/${xmimodel}' token='xmi:idref="#' value='xmi:idref="' />
-	</target>
 
 </project>
