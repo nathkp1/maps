@@ -1600,5 +1600,17 @@ This information should be included in an Immunization Activity when available. 
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_LhvikErhEd6FXKclYGEDCw"/>
     </elements>
     <elements xmi:id="_VZUkcIv3EeeCjYcXn3Ox0Q" businessElement="ImmunizationAdministeredContainer" modelElement="_2L89wBSVEeGGzu7fmW9pXw" businessElementId="7af1b775-e58c-4067-b971-3c743533b308" modelElementPath="immunization" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_RFQFwJZAEeenkKZSPYdVvQ" businessElement="ImmunizationAdministeredPerformerEntityID" businessElementId="61df4ba8-e709-4a8b-bba4-8524eb501fc4" modelElementPath="immunization.performer.assignedEntity.id">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_k1IJsJZAEeenkKZSPYdVvQ" businessElement="ImmunizationAdministeredPerformerEntityAddress" businessElementId="94a243da-c63f-4e5a-9a76-318368c3ab5f" modelElementPath="immunization.performer.assignedEntity.addr">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_tjg2IJZAEeenkKZSPYdVvQ" businessElement="ImmunizationAdministeredPerformerName" businessElementId="248db248-8547-4efc-b533-0f71158a8039" modelElementPath="immunization.performer.assignedEntity.assignedPerson.name">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_4JMbYJZAEeenkKZSPYdVvQ" businessElement="ImmunizationAdministeredPerformerOrganizationTelecom" businessElementId="86572f90-2655-4354-b6d4-123b4180db67" modelElementPath="immunization.performer.assignedEntity.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
+    </elements>
   </MDMI:MDMIMapping>
 </xmi:XMI>
