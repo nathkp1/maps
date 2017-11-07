@@ -3809,5 +3809,27 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_sdj9ML5tEee4saFm6FTmGg" businessElement="PlannedProcedureReasonTypeCode" modelElement="_2Hh3kOHpEeO04sHNODkHmQ" businessElementId="9fdbaabc-63ae-49ab-99f7-51083b9f085f" modelElementPath="plannedInterventionAct.procedureActivityAct2.indication2.code"/>
     <elements xmi:id="_w6gpoL5tEee4saFm6FTmGg" businessElement="PlannedProcedureReasonValueCode" modelElement="_zCqi8OHqEeO04sHNODkHmQ" businessElementId="9d046416-46a8-467b-8d39-4f4d2d0833c6" modelElementPath="plannedInterventionAct.procedureActivityAct2.indication2.value"/>
     <elements xmi:id="_1yS38L5tEee4saFm6FTmGg" businessElement="PlannedProcedureReasonDateTime" modelElement="_2MdMRBUSEeG6PvUxSTZnaw" businessElementId="5c274573-b0a8-4f7d-8378-d635f1765acf" modelElementPath="plannedInterventionAct.procedureActivityAct2.indication2.effectiveTime"/>
+    <elements xmi:id="_PXGNAMQCEeeNiPaRrJTPNQ" businessElement="PlannedMedicationReasonID" modelElement="_b5IbkOHqEeO04sHNODkHmQ" businessElementId="99b2c98d-1a04-42f4-9526-8c672c67aa26" modelElementPath="plannedInterventionAct.medicationActivity2.indication2.id"/>
+    <elements xmi:id="_UPKIIMQCEeeNiPaRrJTPNQ" businessElement="PlannedMedicationReasonTypeCode" modelElement="_2Hh3kOHpEeO04sHNODkHmQ" businessElementId="ebd921c0-2447-44aa-82b0-e8a5a3e0c5ca" modelElementPath="plannedInterventionAct.medicationActivity2.indication2.code"/>
+    <elements xmi:id="_ZfSlAMQCEeeNiPaRrJTPNQ" businessElement="PlannedMedicationReasonValueCode" modelElement="_zCqi8OHqEeO04sHNODkHmQ" businessElementId="00078fad-500a-45b2-8ede-feeecf06370f" modelElementPath="plannedInterventionAct.medicationActivity2.indication2.value"/>
+    <elements xmi:id="_fIC9QMQCEeeNiPaRrJTPNQ" businessElement="PlannedMedicationInstructionValueText" modelElement="_kzRcgMK8EeSqg-Exmsy2kg" businessElementId="98dc3f53-5bfe-4fb7-9e93-94eec86acc3c" modelElementPath="plannedInterventionAct.medicationActivity2.instruction2.text"/>
+    <elements xmi:id="_zfHVUMQIEeeS1ONbnZ0scQ" businessElement="PlannedMedicationAdministrationMonitoringII" businessElementId="1e3cbd4b-acea-4bc2-ad4a-d7ebe2b7ca77" modelElementPath="plannedInterventionAct.medicationActivity2.drugMonitoringAct.id">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_WDrfVIqvEeOoMZgUoTghIg"/>
+    </elements>
+    <elements xmi:id="_5jpqoMQIEeeS1ONbnZ0scQ" businessElement="PlannedMedicationAdministrationMonitoringIDCode" businessElementId="02675497-2d79-411c-b782-0641c3cf7fe4" modelElementPath="plannedInterventionAct.medicationActivity2.drugMonitoringAct.code">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_WDrfUIqvEeOoMZgUoTghIg"/>
+    </elements>
+    <elements xmi:id="_-ZIL0MQIEeeS1ONbnZ0scQ" businessElement="PlannedMedicationAdministrationMonitoringStatusCode" businessElementId="a6270323-5b66-47f6-9f57-9c5705833a02" modelElementPath="plannedInterventionAct.medicationActivity2.drugMonitoringAct.statusCode">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_WDsGYYqvEeOoMZgUoTghIg"/>
+    </elements>
+    <elements xmi:id="_CozRQMQJEeeS1ONbnZ0scQ" businessElement="PlannedMedicationAdministrationMonitoringDateTime" businessElementId="557c7f4a-2c9c-41cd-9ba7-f16a3fa8e1e1" modelElementPath="plannedInterventionAct.medicationActivity2.drugMonitoringAct.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_WDrfUYqvEeOoMZgUoTghIg"/>
+    </elements>
+    <elements xmi:id="_J_o78MQJEeeS1ONbnZ0scQ" businessElement="PlannedMedicationAdministrationMonitoringPersonII" businessElementId="4496f139-4a94-4c9a-812f-dce6c1979020" modelElementPath="plannedInterventionAct.medicationActivity2.drugMonitoringAct.participant.participantRole.id">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_ugF5wIzyEeOoMZgUoTghIg"/>
+    </elements>
+    <elements xmi:id="_Ofw4MMQJEeeS1ONbnZ0scQ" businessElement="PlannedMedicationAdministrationMonitoringPersonName" businessElementId="1e9f1041-454d-4e81-822d-bd6ab5093403" modelElementPath="plannedInterventionAct.medicationActivity2.drugMonitoringAct.participant.participantRole.playingEntity.name">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_nv0DUIzzEeOoMZgUoTghIg"/>
+    </elements>
   </MDMI:MDMIMapping>
 </xmi:XMI>
