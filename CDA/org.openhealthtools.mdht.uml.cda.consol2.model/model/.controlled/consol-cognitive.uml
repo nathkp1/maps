@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_jfoCUOZbEeGINOJ_SD9_dA" name="CognitiveStatusResultOrganizer">
     <ownedComment xmi:id="_67cIUOZiEeGINOJ_SD9_dA">
       <body>This clinical statement identifies a set of cognitive status result observations. It contains information applicable to all of the contained cognitive status result observations. A result organizer may be used to group questions in a Patient Health Questionaire (PHQ). &#xD;
@@ -958,6 +958,7 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" href="consol-socialhistory.uml#_O-O-IInUEeOJGtGyq_dBbA"/>
   </uml:Class>
   <uml:Association xmi:id="_GfC4z-Y_EeGINOJ_SD9_dA" memberEnd="_GfC4zOY_EeGINOJ_SD9_dA _GfC40OY_EeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_GfC40OY_EeGINOJ_SD9_dA" type="__pNCUOY-EeGINOJ_SD9_dA" association="_GfC4z-Y_EeGINOJ_SD9_dA"/>
@@ -1409,7 +1410,7 @@ The Mental Status Section contains observations and evaluations related to a pat
   <CDA:AssociationValidation xmi:id="_7slLEK4hEeORf5eJaKt1KQ" severity="WARNING" base_Association="_6pOQoK4hEeORf5eJaKt1KQ">
     <ruleId>CONF:31435</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_6LYrULkoEeODDJAC5t5vpw" clientDependency="_dfDNQLkpEeODDJAC5t5vpw" name="MentalStatusOrganizer2">
+  <uml:Class xmi:id="_6LYrULkoEeODDJAC5t5vpw" name="MentalStatusOrganizer2">
     <ownedComment xmi:id="_XgdH4LkpEeODDJAC5t5vpw">
       <body>The Mental Status Organizer template may be used to group related Mental Status Observations (e.g., results of mental tests) and associated Assessment Scale Observations into subcategories and/or groupings by time. Subcategories can be things such as Mood and Affect, Behavior, Thought Process, Perception, Cognition, etc.</body>
     </ownedComment>
@@ -1659,4 +1660,48 @@ The Mental Status Section contains observations and evaluations related to a pat
     <ruleId>CONF:1198-32791</ruleId>
     <ruleId>CONF:1198-32792</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_WDcQ0InVEeOJGtGyq_dBbA" templateId="2.16.840.1.113883.10.20.22.4.109">
+    <ruleId>CONF:1098-27892</ruleId>
+    <ruleId>CONF:1098-27893</ruleId>
+    <base_Class href="consol-socialhistory.uml#_O-O-IInUEeOJGtGyq_dBbA"/>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_u8mYMInUEeOJGtGyq_dBbA">
+    <ruleId>CONF:1098-27890</ruleId>
+    <base_Property href="consol-socialhistory.uml#_ZxS4EInUEeOJGtGyq_dBbA"/>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_wXj6UInUEeOJGtGyq_dBbA">
+    <ruleId>CONF:1098-27891</ruleId>
+    <base_Property href="consol-socialhistory.uml#_ZxTfIInUEeOJGtGyq_dBbA"/>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_sNwMUInUEeOJGtGyq_dBbA">
+    <ruleId>CONF:1098-27894</ruleId>
+    <base_Property href="consol-socialhistory.uml#_ZxS4EonUEeOJGtGyq_dBbA"/>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_vpQp4InUEeOJGtGyq_dBbA">
+    <ruleId>CONF:1098-31352</ruleId>
+    <base_Property href="consol-socialhistory.uml#_ZxS4EYnUEeOJGtGyq_dBbA"/>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_o5EdkInWEeOJGtGyq_dBbA" code="75274-1" displayName="Characteristics of residence">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <base_Property href="consol-socialhistory.uml#_ZxS4EYnUEeOJGtGyq_dBbA"/>
+    <ruleId>CONF:1098-31353</ruleId>
+    <ruleId>CONF:1098-31354</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_w54kQInUEeOJGtGyq_dBbA">
+    <ruleId>CONF:1098-27901</ruleId>
+    <base_Property href="consol-socialhistory.uml#_ZxTfIYnUEeOJGtGyq_dBbA"/>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_WGbBcInXEeOJGtGyq_dBbA" code="completed" displayName="Completed">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <base_Property href="consol-socialhistory.uml#_ZxTfIYnUEeOJGtGyq_dBbA"/>
+    <ruleId>CONF:1098-27902</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_F8nwkPmzEeSGHoih4Jm09A">
+    <base_Property href="consol-socialhistory.uml#_DAqVwPmzEeSGHoih4Jm09A"/>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_OCGp8PmzEeSGHoih4Jm09A" severity="WARNING">
+    <reference href="../consol-vocab.uml#_np5CwYnYEeOJGtGyq_dBbA"/>
+    <base_Property href="consol-socialhistory.uml#_DAqVwPmzEeSGHoih4Jm09A"/>
+    <ruleId>CONF:1098-28823</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

@@ -14731,8 +14731,8 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <elements xmi:id="_cWHloKgcEeWmhfczEQjYUg" businessElement="DocumentID" modelElement="_2DNR7RSVEeGGzu7fmW9pXw" businessElementId="17cb9e1f-97d6-4ba9-b43f-b6d906392531" modelElementPath="id" condition=""/>
     <elements xmi:id="_igYIcKgcEeWmhfczEQjYUg" businessElement="DocumentTime" modelElement="_2DNR6xSVEeGGzu7fmW9pXw" businessElementId="02d57129-9f7a-432f-b520-34452bec6e4b" modelElementPath="effectiveTime" condition=""/>
     <elements xmi:id="_z6AGsKgcEeWmhfczEQjYUg" businessElement="DocumentTypeID" modelElement="_2DNR-xSVEeGGzu7fmW9pXw" businessElementId="2017f144-f571-4f90-b1ec-7c966548b984" modelElementPath="typeId" condition=""/>
-    <elements xmi:id="_9GVTYKgcEeWmhfczEQjYUg" businessElement="ClientHomeAddress" modelElement="_tsTDwCylEeGMXrZ0DiQwGg" businessElementId="eef49a28-a96e-40a7-b328-981c5addd245" modelElementPath="recordTarget.patientRole.addr" condition="@use = &quot;HP&quot;"/>
-    <elements xmi:id="_7slcwKgdEeWmhfczEQjYUg" businessElement="ClientHomePhone" modelElement="_tsU48CylEeGMXrZ0DiQwGg" businessElementId="cfb8b147-38a5-4272-87c6-f1fa4cb97457" modelElementPath="recordTarget.patientRole.telecom" condition="@use = &quot;HP&quot;"/>
+    <elements xmi:id="_9GVTYKgcEeWmhfczEQjYUg" businessElement="ClientHomeAddress" modelElement="_tsTDwCylEeGMXrZ0DiQwGg" businessElementId="eef49a28-a96e-40a7-b328-981c5addd245" modelElementPath="recordTarget.patientRole.addr" condition="@use = &quot;H&quot;"/>
+    <elements xmi:id="_7slcwKgdEeWmhfczEQjYUg" businessElement="ClientHomePhone" modelElement="_tsU48CylEeGMXrZ0DiQwGg" businessElementId="cfb8b147-38a5-4272-87c6-f1fa4cb97457" modelElementPath="recordTarget.patientRole.telecom" condition="@use = &quot;H&quot;"/>
     <elements xmi:id="__F7XIKgdEeWmhfczEQjYUg" businessElement="ClientBusinessAddress" modelElement="_tsTDwCylEeGMXrZ0DiQwGg" businessElementId="80563ab5-3e1b-4640-a0ee-516e354993b0" modelElementPath="recordTarget.patientRole.addr" condition="@use = &quot;WP&quot;"/>
     <elements xmi:id="_GdlkYKgiEeWmhfczEQjYUg" businessElement="ClientDateOfBirth" modelElement="_7Os40CylEeGMXrZ0DiQwGg" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="recordTarget.patientRole.patient.birthTime" condition=""/>
     <elements xmi:id="_La2voKgiEeWmhfczEQjYUg" businessElement="ClientEthnicityCode" modelElement="_7Os41CylEeGMXrZ0DiQwGg" businessElementId="b29dc139-8a2b-473d-820b-0331b7ae0aa3" modelElementPath="recordTarget.patientRole.patient.ethnicGroupCode" condition=""/>
@@ -14839,7 +14839,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_QcivsEAMEd6wZe6nFLrjsw"/>
     </elements>
     <elements xmi:id="_kkNDIBu9EeeCX6uixg5P2g" businessElement="PatientEmailContact" modelElement="_tsU48CylEeGMXrZ0DiQwGg" businessElementId="bf759e8d-a00b-4636-bbe4-8c8671835398" modelElementPath="recordTarget.patientRole.telecom" condition="@use = &quot;EMAIL&quot;"/>
-    <elements xmi:id="_qo_3IBu9EeeCX6uixg5P2g" businessElement="PatientLegalName" modelElement="_7OuG8SylEeGMXrZ0DiQwGg" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="recordTarget.patientRole.patient.name" condition="@use = &quot;L&quot;"/>
+    <elements xmi:id="_qo_3IBu9EeeCX6uixg5P2g" businessElement="PatientLegalName" modelElement="_7OuG8SylEeGMXrZ0DiQwGg" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="recordTarget.patientRole.patient.name" condition="@use = &quot;Legal&quot;"/>
     <elements xmi:id="_z7xDABu9EeeCX6uixg5P2g" businessElement="PatientPagerContact" modelElement="_tsU48CylEeGMXrZ0DiQwGg" businessElementId="b6aa217e-dcaf-42b8-9ef6-414c56748b1d" modelElementPath="recordTarget.patientRole.telecom" condition="@use = &quot;Pager&quot;"/>
     <elements xmi:id="_4eHz4Bu9EeeCX6uixg5P2g" businessElement="PatientWorkAddress" modelElement="_tsTDwCylEeGMXrZ0DiQwGg" businessElementId="ca185f80-fe9a-49c2-ae08-d0cb2292dc90" modelElementPath="recordTarget.patientRole.addr" condition="@use = &quot;WP&quot;"/>
     <elements xmi:id="_9ieo0B-SEee2Oclx9GonUQ" businessElement="PatientAdministrationGenderCode" modelElement="_7OrqsCylEeGMXrZ0DiQwGg" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="recordTarget.patientRole.patient.administrativeGenderCode" condition=""/>
@@ -14854,5 +14854,8 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <elements xmi:id="_dcw14KgiEeWmhfczEQjYUg" businessElement="ClientLegalName" businessElementId="1251243a-0fe2-44ba-98ef-b479ad9323e7" modelElementPath="RecordTarget.patientRole.patient.name">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_QcivsEAMEd6wZe6nFLrjsw"/>
     </elements>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_8aPHAMMoEeevu4kOf-DmTw" base_Class="_2jWfwJ5wEeOr4eM3k36wAg">
+    <elements xmi:id="_8aT_gMMoEeevu4kOf-DmTw" businessElement="CarePlanContainer" modelElement="_2jWfwJ5wEeOr4eM3k36wAg" businessElementId="079eb660-1a9a-483d-8c08-f20956a5d649" modelElementPath=""/>
   </MDMI:MDMIMapping>
 </xmi:XMI>

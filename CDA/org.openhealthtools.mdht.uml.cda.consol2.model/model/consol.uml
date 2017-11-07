@@ -1260,7 +1260,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-advancedirectives.uml#_Z8VQYIlFEeOJGtGyq_dBbA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-advancedirectives.uml#_3vzRcIlLEeOJGtGyq_dBbA"/>
-    <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_O-O-IInUEeOJGtGyq_dBbA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-cognitive.uml#_Y_oGkIoAEeOoMZgUoTghIg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-cognitive.uml#_DkUXYIoHEeOoMZgUoTghIg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_H2EzIIqZEeOoMZgUoTghIg"/>
@@ -3201,9 +3200,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-documents.uml#_A7_O8CyqEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_ohHwoCyrEeGMXrZ0DiQwGg">
-    <ruleId>CONF:6394, R2.1=CONF:1198-6394</ruleId>
     <reference href="consol-vocab.uml#_LGTEUDVREeGIw7CntkyPQw"/>
     <base_Property href=".controlled/consol-documents.uml#_7OrqsCylEeGMXrZ0DiQwGg"/>
+    <ruleId>CONF:6394, R2.1=CONF:1198-6394</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_iCncICyrEeGMXrZ0DiQwGg">
     <ruleId>CONF:5298</ruleId>
@@ -3260,23 +3259,23 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-documents.uml#_5K0RUSysEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_S5cLoCytEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5407</ruleId>
     <reference href="consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
     <base_Property href=".controlled/consol-documents.uml#_nLJOcCymEeGMXrZ0DiQwGg"/>
+    <ruleId>CONF:5407</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_pkK3ICytEeGMXrZ0DiQwGg" severity="INFO">
     <ruleId>CONF:5414</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_nLJ1gCymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_jpN7oCytEeGMXrZ0DiQwGg">
-    <ruleId>CONF:9965, R2.1=CONF:1198-9965</ruleId>
     <reference href="consol-vocab.uml#_SLh6QTVUEeGIw7CntkyPQw"/>
     <base_Property href=".controlled/consol-documents.uml#_nLKckSymEeGMXrZ0DiQwGg"/>
+    <ruleId>CONF:9965, R2.1=CONF:1198-9965</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_aVvlICytEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5409, R2.1=CONF:1198-5409</ruleId>
     <reference href="consol-vocab.uml#_2SbZPhSVEeGGzu7fmW9pXw"/>
     <base_Property href=".controlled/consol-documents.uml#_ZGMo0CytEeGMXrZ0DiQwGg"/>
+    <ruleId>CONF:5409, R2.1=CONF:1198-5409</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_-GzDICysEeGMXrZ0DiQwGg">
     <ruleId>CONF:5397, R2.1=CONF:1198-5397</ruleId>
@@ -3948,7 +3947,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:ConstraintValidation xmi:id="_CZoQk-cFEeGINOJ_SD9_dA" severity="WARNING" base_Constraint="_CZoQkOcFEeGINOJ_SD9_dA">
     <ruleId>CONF:14398</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ValueSetConstraint xmi:id="_JaoOIOcFEeGINOJ_SD9_dA" severity="WARNING" base_Property="_z7BHYOcDEeGINOJ_SD9_dA">
+  <CDA:ValueSetConstraint xmi:id="_JaoOIOcFEeGINOJ_SD9_dA" base_Property="_z7BHYOcDEeGINOJ_SD9_dA" severity="WARNING">
     <reference href="consol-vocab.uml#_3NE1YOcAEeGINOJ_SD9_dA"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_KsmMUOcFEeGINOJ_SD9_dA" base_Property="_z7BHYOcDEeGINOJ_SD9_dA">
@@ -3957,9 +3956,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_OJ-5MOcFEeGINOJ_SD9_dA" severity="WARNING" base_Property="_z63Wb-cDEeGINOJ_SD9_dA">
     <ruleId>CONF:14797</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_RVNfEOcFEeGINOJ_SD9_dA" severity="WARNING" base_Property="_z63Wb-cDEeGINOJ_SD9_dA">
-    <ruleId>CONF:14798</ruleId>
+  <CDA:ValueSetConstraint xmi:id="_RVNfEOcFEeGINOJ_SD9_dA" base_Property="_z63Wb-cDEeGINOJ_SD9_dA" severity="WARNING">
     <reference href="consol-vocab.uml#_VwxrcecFEeGINOJ_SD9_dA"/>
+    <ruleId>CONF:14798</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_Bn1KwOcGEeGINOJ_SD9_dA" severity="WARNING" base_Constraint="_1uHKwOcFEeGINOJ_SD9_dA">
     <ruleId>CONF:14799</ruleId>

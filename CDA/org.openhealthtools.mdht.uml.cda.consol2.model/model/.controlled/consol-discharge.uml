@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2Uz-4xSVEeGGzu7fmW9pXw" name="DischargeDietSection">
     <ownedComment xmi:id="_2Uz-5BSVEeGGzu7fmW9pXw" annotatedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
       <body>This section records a narrative description of the expectations for diet, including proposals, goals, and order requests for monitoring, tracking, or improving the dietary control of the patient, used in a discharge from a facility such as an emergency department, hospital, or nursing home.</body>
@@ -827,7 +827,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:ConstraintValidation xmi:id="_3jVusK4qEeORf5eJaKt1KQ" base_Constraint="_vn4UAK4qEeORf5eJaKt1KQ">
     <ruleId>CONF:1098-31429</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_EIeu8MyjEeO93sHu8pHB2g" clientDependency="_bl_s0MykEeO93sHu8pHB2g" name="DischargeMedication2">
+  <uml:Class xmi:id="_EIeu8MyjEeO93sHu8pHB2g" name="DischargeMedication2">
     <ownedComment xmi:id="_QIz30MykEeO93sHu8pHB2g">
       <body>This template represents medications that the patient is intended to take (or stop) after discharge.</body>
     </ownedComment>
@@ -862,7 +862,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:PropertyValidation xmi:id="_2XxsQMyvEeO93sHu8pHB2g" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
     <ruleId>CONF:1098-7691</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" clientDependency="_sVxMAOEMEeOmBMTtnrPqww" name="HospitalDischargeDiagnosis2">
+  <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" name="HospitalDischargeDiagnosis2">
     <ownedComment xmi:id="_ao5hoOEMEeOmBMTtnrPqww">
       <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. It requires at least one Problem Observation entry.</body>
     </ownedComment>
@@ -902,7 +902,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:EntryRelationship xmi:id="_LLxDYPgEEeOYeZoWJF5yyQ" base_Association="_IZP4cPgEEeOYeZoWJF5yyQ" typeCode="SUBJ">
     <ruleId>CONF:1198-7666, CONF:1198-7667, CONF:1198-15536</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_jfuGYPytEeOmn53IDV99zw" clientDependency="_KptZoPyuEeOmn53IDV99zw" name="DischargeDiagnosisSection2">
+  <uml:Class xmi:id="_jfuGYPytEeOmn53IDV99zw" name="DischargeDiagnosisSection2">
     <ownedComment xmi:id="_CsRpAPyuEeOmn53IDV99zw">
       <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. This section includes an optional entry to record patient conditions.</body>
     </ownedComment>
@@ -945,7 +945,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:AssociationValidation xmi:id="_MVLyEPywEeOmn53IDV99zw" severity="WARNING" base_Association="_JZutkPywEeOmn53IDV99zw">
     <ruleId>CONF:1198-7983, CONF:1198-15489</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_HlfBYPyzEeOfAK77IvEBUw" clientDependency="_aFs0QPyzEeOfAK77IvEBUw" name="DischargeMedicationsSectionEntriesOptional2">
+  <uml:Class xmi:id="_HlfBYPyzEeOfAK77IvEBUw" name="DischargeMedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_PlPGMPyzEeOfAK77IvEBUw">
       <body>This section contains the medications the patient is intended to take or stop after discharge. Current, active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list.</body>
     </ownedComment>
@@ -981,7 +981,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:AssociationValidation xmi:id="_oxVFwPy0EeOfAK77IvEBUw" severity="WARNING" base_Association="_nTDw8Py0EeOfAK77IvEBUw">
     <ruleId>CONF:1198-7820, CONF:1198-15490</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_Jt0moAI0EeSRkrs1G7P_XQ" clientDependency="_bZ0uUAI0EeSRkrs1G7P_XQ" name="DischargeMedicationsSection2">
+  <uml:Class xmi:id="_Jt0moAI0EeSRkrs1G7P_XQ" name="DischargeMedicationsSection2">
     <ownedComment xmi:id="_RgJTcAI0EeSRkrs1G7P_XQ">
       <body>This section contains the medications the patient is intended to take or stop after discharge. Current, active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list.</body>
     </ownedComment>
@@ -1138,4 +1138,49 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <ruleId>CONF:1198-32855</ruleId>
     <ruleId>CONF:1198-32856</ruleId>
   </CDA:CodeSystemConstraint>
+  <MDMI:MDMIMapping xmi:id="_4RfeILsTEeejBu7P06QdPQ" base_Class="_EHgh0J2AEeORR8_YW0n_jQ">
+    <elements xmi:id="_4RgFMLsTEeejBu7P06QdPQ" businessElement="HealthOutcomeSectionContainer" modelElement="_EHgh0J2AEeORR8_YW0n_jQ" businessElementId="35a607f7-4c96-4bc8-9791-fac978bd8ca4" modelElementPath=""/>
+    <elements xmi:id="_-uxqoLsTEeejBu7P06QdPQ" businessElement="HealthOutcomeSectionNotes" modelElement="_HeQbMJ2AEeORR8_YW0n_jQ" businessElementId="5444ae28-4b27-4bc0-ae9b-808bb9224eb5" modelElementPath="text"/>
+    <elements xmi:id="_KAMUgLsUEeejBu7P06QdPQ" businessElement="HealthOutcomeObservationID" modelElement="_36udgY55EeOB0eBUISUB4Q" businessElementId="e7e0a919-bcbb-47e2-922a-5f54234b0156" modelElementPath="outcomeObservation.id"/>
+    <elements xmi:id="_Pp5vALsUEeejBu7P06QdPQ" businessElement="HealthOutcomeObservationValueCode" modelElement="_S9vyYP82EeS4jrgU1p4iug" businessElementId="0517d260-3d33-4e1b-bdb7-62390a00d320" modelElementPath="outcomeObservation.value"/>
+    <elements xmi:id="_R5-WYLsjEeeJebzvFLYuNQ" businessElement="HealthOutcomeAuthorDateTime" businessElementId="83dbaa48-9258-451d-a9f2-f886780a8ca2" modelElementPath="outcomeObservation.authorParticipation.time">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_kaWhULsjEeeJebzvFLYuNQ" businessElement="HealthOutcomeAuthorID" businessElementId="68334f05-d87b-4ebd-a222-2c700f56e3f4" modelElementPath="outcomeObservation.authorParticipation.assignedAuthor.id">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_mZZA4LsjEeeJebzvFLYuNQ" businessElement="HealthOutcomeAuthorSpecialityCode" businessElementId="a6444a84-157a-463b-a35d-60e4364a5337" modelElementPath="outcomeObservation.authorParticipation.assignedAuthor.code">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_oWpXwLsjEeeJebzvFLYuNQ" businessElement="HealthOutcomeAuthorName" businessElementId="c39c62a9-7846-477b-a351-c4ca206c5a92" modelElementPath="outcomeObservation.authorParticipation.assignedAuthor.assignedPerson.name">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_ylHW4LsjEeeJebzvFLYuNQ" businessElement="HealthOutcomeOrganizationID" businessElementId="0f3081cd-5590-4224-8e06-cad7d987c808" modelElementPath="outcomeObservation.authorParticipation.assignedAuthor.representedOrganization.id">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_12r1ULsjEeeJebzvFLYuNQ" businessElement="HealthOutcomeOrganizationName" businessElementId="ced901de-bba4-4e99-a2f1-2a8ad22db924" modelElementPath="outcomeObservation.authorParticipation.assignedAuthor.representedOrganization.name">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_4IpQ4LsjEeeJebzvFLYuNQ" businessElement="HealthOutcomeOrganizationBusinessPhoneContact" businessElementId="a121e6eb-8cd3-4f65-9783-11c0cae5d155" modelElementPath="outcomeObservation.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_9eTuALsjEeeJebzvFLYuNQ" businessElement="HealthOutcomeOrganizationEmailAddress" businessElementId="744d8989-0ba6-400e-a9f1-1c818b7cb527" modelElementPath="outcomeObservation.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_Am0-ILskEeeJebzvFLYuNQ" businessElement="HealthOutcomeOrganizationFaxContact" businessElementId="bf34d709-7b2e-4ab8-9d76-66be795704cb" modelElementPath="outcomeObservation.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_HZ3_QLskEeeJebzvFLYuNQ" businessElement="HealthOutcomeOrganizationURLContact" businessElementId="0aec698f-2929-4cb0-b42a-1c28f3636545" modelElementPath="outcomeObservation.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_L7UxMLskEeeJebzvFLYuNQ" businessElement="HealthOutcomeOrganizationAddress" businessElementId="d2e08685-d310-4b35-964f-00d3f6db055d" modelElementPath="outcomeObservation.authorParticipation.assignedAuthor.representedOrganization.addr">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_hlTKULskEeeJebzvFLYuNQ" businessElement="GoalProgressID" businessElementId="391d6171-a379-4b83-b15d-6de5eedea9f6" modelElementPath="outcomeObservation.progressTowardGoalObservation.id">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_7xZNwpmVEeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_j5mvQLskEeeJebzvFLYuNQ" businessElement="GoalProgressValueCode" businessElementId="d7f8955a-0cf2-4e66-ade6-465e456743cd" modelElementPath="outcomeObservation.progressTowardGoalObservation.value">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_7xab5JmVEeOLJeQez13EkQ"/>
+    </elements>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
