@@ -4246,5 +4246,462 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_PZ15sMWcEeemZ5cBuoRGxg" businessElement="NutritionPlanEncounterPriorityValueCode" businessElementId="0c7f3518-79fe-44a0-a780-4f924166c64f" modelElementPath="plannedInterventionAct.plannedEncounter2.priorityPreference.value">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwdZNJmaEeOLJeQez13EkQ"/>
     </elements>
+    <elements xmi:id="_g8sPgMiIEeeL1oknvASixQ" businessElement="NutritionPlanEncounterAuthorContainer" businessElementId="8cb13635-4d18-4108-b0a5-ba0f610216f1" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.authorParticipation">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_vaxzIMagEeSY-qHOFt9wVQ"/>
+    </elements>
+    <elements xmi:id="_j_-aUMiIEeeL1oknvASixQ" businessElement="NutritionPlanEncounterAuthorDateTime" modelElement="_-mD94KrlEeOxqJAXCMXUYg" businessElementId="7a3c5ce6-6b0b-4706-9288-28fb0c64820d" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.authorParticipation.time"/>
+    <elements xmi:id="_oHSN8MiIEeeL1oknvASixQ" businessElement="NutritionPlanEncounterAuthorID" modelElement="_4YImkKrmEeOxqJAXCMXUYg" businessElementId="2c7fba46-a2c0-441e-8bdd-94ce42b8c242" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.authorParticipation.assignedAuthor.id"/>
+    <elements xmi:id="_yYDTIMiIEeeL1oknvASixQ" businessElement="NutritionPlanEncounterAuthorName" modelElement="_fgiTgKrpEeOxqJAXCMXUYg" businessElementId="223296e9-2910-4d55-8c28-eb70db8cbdb4" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.authorParticipation.assignedAuthor.assignedPerson.name"/>
+    <elements xmi:id="_3z7tAMiIEeeL1oknvASixQ" businessElement="NutritionPlanEncounterAuthorOrganizationID" modelElement="_X2VqIKr4EeOxqJAXCMXUYg" businessElementId="81e724ab-5aba-451f-9ec6-bbdbbd254064" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.authorParticipation.assignedAuthor.representedOrganization.id"/>
+    <elements xmi:id="_8ErJcMiIEeeL1oknvASixQ" businessElement="NutritionPlanEncounterAuthorOrganizationName" modelElement="_X2W4QKr4EeOxqJAXCMXUYg" businessElementId="fca64059-23fa-403f-8673-decdae3c7a49" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.authorParticipation.assignedAuthor.representedOrganization.name"/>
+    <elements xmi:id="_AW3XYMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterAuthorOrganizationEmailAddress" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="b94a15a6-ce24-40ca-ab58-676caef3b3a6" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_GPTxcMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterAuthorOrganizationFaxContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="b933fc7c-bffa-4e70-948c-9eb15d26ccb6" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_JhJVoMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterAuthorOrganizationPhoneContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="8e3edf2d-40ba-4d53-9cdd-dd5f12ef7d1d" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_NwoN0MiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterAuthorOrganizationURLContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="32436dd3-6c8d-4fa4-9d6b-433fa1f3b663" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_StB2YMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterAuthorOrganizationAddress" modelElement="_X2UcAKr4EeOxqJAXCMXUYg" businessElementId="62e8e364-c7a3-4243-93be-d379d36c32d2" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.authorParticipation.assignedAuthor.representedOrganization.addr"/>
+    <elements xmi:id="_Wy5fkMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterServiceLocationCode" modelElement="_nD_qMB-YEeGtfPlBCjHWkw" businessElementId="91fbfb1f-2550-414c-a4b1-a24be57d95d5" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.serviceDeliveryLocation.code"/>
+    <elements xmi:id="_amg7IMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterServiceLocationContainer" businessElementId="4e043d20-297f-4e0f-865d-43bef6601617" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.serviceDeliveryLocation">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_2543cOdhEeOqBOMhgDlycQ"/>
+    </elements>
+    <elements xmi:id="_fMirEMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterServiceLocationAddress" modelElement="_nD7_0B-YEeGtfPlBCjHWkw" businessElementId="52c7ef5e-daaf-4b5f-b11c-29ba7c3306a5" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.serviceDeliveryLocation.addr"/>
+    <elements xmi:id="_ivLEUMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterServiceLocationBusinessPhoneContact" modelElement="_nEARQB-YEeGtfPlBCjHWkw" businessElementId="127b161c-1bf8-47b3-af38-2b4c989d5752" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.serviceDeliveryLocation.telecom"/>
+    <elements xmi:id="_mNF8sMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterServiceLocationEmailAddress" modelElement="_nEARQB-YEeGtfPlBCjHWkw" businessElementId="7f24ec1f-9975-4925-95a0-5a4b2c11f706" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.serviceDeliveryLocation.telecom"/>
+    <elements xmi:id="_pcIrkMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterServiceLocationFaxContact" modelElement="_nEARQB-YEeGtfPlBCjHWkw" businessElementId="92c0a149-f9ec-4165-9f09-c0c34e935200" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.serviceDeliveryLocation.telecom"/>
+    <elements xmi:id="_svn1kMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterServiceLocationURLContact" modelElement="_nEARQB-YEeGtfPlBCjHWkw" businessElementId="e169af54-3d2b-4136-9d6e-c961d96c1489" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.serviceDeliveryLocation.telecom"/>
+    <elements xmi:id="_0IA_cMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterPriorityID" businessElementId="5ae6a775-9760-4caf-8292-46de452f1ef4" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.id">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwcyIpmaEeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_7VcPcMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterPriorityDateTime" businessElementId="e0fd36a4-fb59-4da1-b127-e9b2115a34f8" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_CWg-oADcEeWNGdLwd_3YGQ"/>
+    </elements>
+    <elements xmi:id="_-nOJQMiJEeeL1oknvASixQ" businessElement="NutritionPlanEncounterPriorityValueCode" businessElementId="0c7f3518-79fe-44a0-a780-4f924166c64f" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.value">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwdZNJmaEeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_CT4BMMiKEeeL1oknvASixQ" businessElement="NutritionPlanEncounterPriorityAuthorID" modelElement="_-mD94KrlEeOxqJAXCMXUYg" businessElementId="1c96292a-f58b-475d-ae93-409b6a9287a6" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.authorParticipation.time"/>
+    <elements xmi:id="_GM-ZsMiKEeeL1oknvASixQ" businessElement="NutritionPlanEncounterPriorityAuthorID" modelElement="_4YImkKrmEeOxqJAXCMXUYg" businessElementId="1c96292a-f58b-475d-ae93-409b6a9287a6" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.authorParticipation.assignedAuthor.id"/>
+    <elements xmi:id="_ynbhAMiKEee5I6Q1GwwepQ" businessElement="NutritionPlanEncounterPriorityAuthorSpecialtyCode" modelElement="_4YH_gKrmEeOxqJAXCMXUYg" businessElementId="fa0c99a1-4223-4231-8c4a-22ef2fc245d8" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.authorParticipation.assignedAuthor.code"/>
+    <elements xmi:id="_2WNf4MiKEee5I6Q1GwwepQ" businessElement="NutritionPlanEncounterPriorityAuthorName" modelElement="_fgiTgKrpEeOxqJAXCMXUYg" businessElementId="d6f6d84b-f8f3-4e00-ae57-c796bdaf5534" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.authorParticipation.assignedAuthor.assignedPerson.name"/>
+    <elements xmi:id="_8TjoEMiKEee5I6Q1GwwepQ" businessElement="NutritionPlanEncounterPriorityAuthorOrganizationID" modelElement="_X2VqIKr4EeOxqJAXCMXUYg" businessElementId="b5ca909e-36c3-446e-92f6-fec41e4d23a9" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.authorParticipation.assignedAuthor.representedOrganization.id"/>
+    <elements xmi:id="_BG6CUMiLEee5I6Q1GwwepQ" businessElement="NutritionPlanEncounterPriorityAuthorOrganizationName" modelElement="_X2W4QKr4EeOxqJAXCMXUYg" businessElementId="cc04a7b5-5bc7-4447-8031-6d3a46881761" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.authorParticipation.assignedAuthor.representedOrganization.name"/>
+    <elements xmi:id="_FPwuEMiLEee5I6Q1GwwepQ" businessElement="NutritionPlanEncounterPriorityAuthorOrganizationEmailAddress" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="7a422cb1-8d42-4ca8-8a9a-806fa4f9413f" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_JSx3kMiLEee5I6Q1GwwepQ" businessElement="NutritionPlanEncounterPriorityAuthorOrganizationFaxContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="e5bb2d45-373e-42a3-8b02-2718e20e3db7" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_R_HVkMiLEee5I6Q1GwwepQ" businessElement="NutritionPlanEncounterPriorityAuthorOrganizationPhoneContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="be0baf35-6ac6-40f5-b5dd-a5dedfb458c7" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_Yb_5cMiLEee5I6Q1GwwepQ" businessElement="NutritionPlanEncounterPriorityAuthorOrganizationURLContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="23b226a3-bdb6-4d59-b245-50db29047c47" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_gcsZcMiLEee5I6Q1GwwepQ" businessElement="NutritionPlanEncounterPriorityAuthorOrganizationAddress" modelElement="_X2UcAKr4EeOxqJAXCMXUYg" businessElementId="6cb2ffcf-a016-4919-a3d8-4bfc08b29660" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.priorityPreference.authorParticipation.assignedAuthor.representedOrganization.addr"/>
+    <elements xmi:id="_k8toAMiLEee5I6Q1GwwepQ" businessElement="NutritionPlanEncounterReasonID" modelElement="_b5IbkOHqEeO04sHNODkHmQ" businessElementId="f9e68da3-4b7f-4ad2-a42c-63107eadb3e6" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.indication2.id"/>
+    <elements xmi:id="_pKpBAMiLEee5I6Q1GwwepQ" businessElement="NutritionPlanEncounterReasonTypeCode" modelElement="_2Hh3kOHpEeO04sHNODkHmQ" businessElementId="d4ed710f-f1ef-4173-8bc6-1d28065d597f" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.indication2.code"/>
+    <elements xmi:id="_VnKIYMiNEee7Cs3dFxI-zg" businessElement="NutritionPlanEncounterReasonValueCode" modelElement="_zCqi8OHqEeO04sHNODkHmQ" businessElementId="d3c3b1e3-d67f-4df8-9ef3-af092f052e41" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedEncounter2.indication2.value"/>
+    <elements xmi:id="_d9TT8MiNEee7Cs3dFxI-zg" businessElement="NutritionAssessmentContainer" businessElementId="94a68587-c589-45ff-a08f-6515639e319c" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_5WZlwP8qEeS4jrgU1p4iug"/>
+    </elements>
+    <elements xmi:id="_FHrhYMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationContainer" businessElementId="e5680c71-d978-46d5-905c-debef89b9247" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_5WZlwP8qEeS4jrgU1p4iug"/>
+    </elements>
+    <elements xmi:id="_IpYtkMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationDateTime" businessElementId="eb5dd491-420c-49a3-be4a-f3d25fe17092" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_NrQRAOgTEeO-iJTuAv7BKQ"/>
+    </elements>
+    <elements xmi:id="_MQsygMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationRepeatNumber" businessElementId="98550e4f-f7b5-42a5-bd14-9695d52a7196" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.repeatNumber">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_NrQ4FugTEeO-iJTuAv7BKQ"/>
+    </elements>
+    <elements xmi:id="_P7fpQMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationRouteCode" businessElementId="6a0e4f03-40ec-4455-971a-6f8ea9d49aad" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.routeCode">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_NrQ4GegTEeO-iJTuAv7BKQ"/>
+    </elements>
+    <elements xmi:id="_T80wsMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationTargetSiteCode" businessElementId="a74e6fd2-e4c7-4c8f-a584-0e5f53ec6832" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.approachSiteCode">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_NrPC4OgTEeO-iJTuAv7BKQ"/>
+    </elements>
+    <elements xmi:id="_XjVkYMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationDoseUnitMeasure" businessElementId="12241e8c-0e3e-4125-86be-b89ffc5247c9" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.doseQuantity">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_NrPp8OgTEeO-iJTuAv7BKQ"/>
+    </elements>
+    <elements xmi:id="_a_I84MiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationDoseRateUnitMeasure" businessElementId="daa23a69-b0a7-4078-89c8-2a8f1b15a608" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.rateQuantity">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_NrQ4E-gTEeO-iJTuAv7BKQ"/>
+    </elements>
+    <elements xmi:id="_eemGUMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationMaxDoseUnitMeasure" businessElementId="5eb06096-0d37-4ae9-9e0d-480cb4483cdc" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.maxDoseQuantity">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_NrQ4EOgTEeO-iJTuAv7BKQ"/>
+    </elements>
+    <elements xmi:id="_i0OCwMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationDrugFormCode" businessElementId="0d8e2994-5f0e-452f-b7c1-334940cea28a" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.administrationUnitCode">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_NrOb0OgTEeO-iJTuAv7BKQ"/>
+    </elements>
+    <elements xmi:id="_pSYZAMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationValueCode" businessElementId="0c2e31f4-5021-45cb-94c2-62ce32d10abe" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.consumable.medicationInformation2.manufacturedMaterial.code">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_MeXngOXsEeOkFcFJ9uzEEw"/>
+    </elements>
+    <elements xmi:id="_z7fFsMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationManufacturerID" businessElementId="44d91066-e4ed-43b2-8d35-9b42d05a8892" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.consumable.medicationInformation2.manufacturerOrganization.id">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#__aP0AEraEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_5waRsMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationManufacturerName" businessElementId="12f021ee-b72f-4cbc-8efc-72aedd1342ee" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.consumable.medicationInformation2.manufacturerOrganization.name">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_-GZagMiREee1D6WIw2etGA" businessElement="NutritionPlanMedicationPerformerContainer" businessElementId="7db01ed3-d341-47a1-b949-7e45d86fd2cb" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.performer">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_-fUQUOgoEeO-iJTuAv7BKQ"/>
+    </elements>
+    <elements xmi:id="_CI9RAMiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationPerformerDateTime" businessElementId="d8e1aafc-c210-4dbd-b7f6-1aa20cd15c00" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.performer.time">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_80aA4ErfEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_HPUG0MiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationPerformerII" businessElementId="5e68f0ff-d985-47f0-bffb-01d58c58078b" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.performer.assignedEntity.id">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_NFIqsMiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationAuthorDateTime" modelElement="_-mD94KrlEeOxqJAXCMXUYg" businessElementId="1e417bd7-016f-4a8b-a765-59be0b265563" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.authorParticipation.time"/>
+    <elements xmi:id="_QzjdMMiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationAuthorID" modelElement="_4YImkKrmEeOxqJAXCMXUYg" businessElementId="a2f0fcd3-5603-4a9c-bd0c-6103b7baeaac" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.authorParticipation.assignedAuthor.id"/>
+    <elements xmi:id="_UhqGoMiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationAuthorSpecialityCode" modelElement="_4YH_gKrmEeOxqJAXCMXUYg" businessElementId="49d2ee41-35cd-43af-a724-5ca2c3d9cb2f" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.authorParticipation.assignedAuthor.code"/>
+    <elements xmi:id="_YHPtQMiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationAuthorOrganizationID" modelElement="_X2VqIKr4EeOxqJAXCMXUYg" businessElementId="9e08f25d-e53e-4f6a-8568-10979861acc8" modelElementPath="plannedInterventionAct.plannedMedicationActivity2.authorParticipation.assignedAuthor.representedOrganization.id"/>
+    <elements xmi:id="_cvylsMiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationPriorityII" businessElementId="3d93167b-4f2f-49f7-9d4b-83e43727b770" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.PriorityPreference.id">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwcyIpmaEeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_j7hMkMiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationPriorityDateTime" businessElementId="54ad073b-8f87-469d-a2eb-f84076e3ea4c" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.PriorityPreference.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_CWg-oADcEeWNGdLwd_3YGQ"/>
+    </elements>
+    <elements xmi:id="_oGW1UMiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationPriorityValueCode" businessElementId="76eb666d-f140-482e-b100-4a55dc41d94d" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.PriorityPreference.value">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwdZNJmaEeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_r6TBAMiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationPriorityAuthorDateTime" modelElement="_-mD94KrlEeOxqJAXCMXUYg" businessElementId="99ed088b-810e-4a91-9454-8fd8e5822cb4" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.PriorityPreference.authorParticipation.time"/>
+    <elements xmi:id="_zITf0MiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationPriorityAuthorID" modelElement="_4YImkKrmEeOxqJAXCMXUYg" businessElementId="37ad08a8-052f-4674-bd2c-04233fac6daf" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.PriorityPreference.authorParticipation.assignedAuthor.id"/>
+    <elements xmi:id="_5W364MiSEee1D6WIw2etGA" businessElement="NutritionPlanMedicationPriorityAuthorSpecialityCode" modelElement="_4YH_gKrmEeOxqJAXCMXUYg" businessElementId="325ab375-aa5f-4a56-a985-25fd1902a44b" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.PriorityPreference.authorParticipation.assignedAuthor.code"/>
+    <elements xmi:id="_AFGGYMiTEee1D6WIw2etGA" businessElement="NutritionPlanMedicationReasonID" modelElement="_b5IbkOHqEeO04sHNODkHmQ" businessElementId="ddf00678-ebd4-447b-92af-ac523e824c49" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.indication2.id"/>
+    <elements xmi:id="_DtQf4MiTEee1D6WIw2etGA" businessElement="NutritionPlanMedicationReasonTypeCode" modelElement="_2Hh3kOHpEeO04sHNODkHmQ" businessElementId="c0e74dae-b5db-4fb6-8faa-5732ff807aa8" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.indication2.code"/>
+    <elements xmi:id="_HwlLYMiTEee1D6WIw2etGA" businessElement="NutritionPlanMedicationReasonValueCode" modelElement="_zCqi8OHqEeO04sHNODkHmQ" businessElementId="d9cff751-231a-4f92-9caf-6016bf47ad78" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.indication2.value"/>
+    <elements xmi:id="_LzzJMMiTEee1D6WIw2etGA" businessElement="NutritionPlanMedicationInstructionValueText" modelElement="_kzRcgMK8EeSqg-Exmsy2kg" businessElementId="f795cf6d-c498-45f6-b3be-21f494f8c484" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.instruction2.text"/>
+    <elements xmi:id="_SyTzcMiTEee1D6WIw2etGA" businessElement="NutritionPlanMedicationPreconditionNotes" businessElementId="d995e6e1-1d96-4f70-a043-1cb0ad001faf" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.precondition.preconditionForSubstanceAdministration2.text">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_vHbHcDhEEeS1WeMhbm6GZw"/>
+    </elements>
+    <elements xmi:id="_XXX6EMiTEee1D6WIw2etGA" businessElement="NutritionPlanMedicationPreconditionValueCode" businessElementId="a9c72462-26b9-4fab-95b3-22dc977320ee" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedMedicationActivity2.precondition.preconditionForSubstanceAdministration2.value">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_2fqgUDhEEeS1WeMhbm6GZw"/>
+    </elements>
+    <elements xmi:id="_1dcfUMifEeexys9q7iYDYw" businessElement="NutritionPlanSupplyContainer" businessElementId="383a0db5-e38b-4508-a862-4498eaf33e55" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedSupply2">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_KczGAP8rEeS4jrgU1p4iug"/>
+    </elements>
+    <elements xmi:id="_7ZwFsMifEeexys9q7iYDYw" businessElement="NutritionPlanSupplyDateTime" businessElementId="4e2591e8-b763-496e-ac31-f19c624ae2b2" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedSupply2.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_damUYOg3EeO-iJTuAv7BKQ"/>
+    </elements>
+    <elements xmi:id="_MEdvgMigEeexys9q7iYDYw" businessElement="NutritionPlanSupplyProductID" businessElementId="83564cd1-956b-4b7b-8ac7-e9cba18bccbd" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedSupply2.productInstance.id">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_tsW2JDiCEeGSytqLITd2FA"/>
+    </elements>
+    <elements xmi:id="_aVryYMigEeexys9q7iYDYw" businessElement="NutritionPlanSupplyProductValueCode" businessElementId="467e67af-3698-4c62-95a9-03a3105253f5" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedSupply2.productInstance.playingDevice.code">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_SXxyEDosEeGSytqLITd2FA"/>
+    </elements>
+    <elements xmi:id="_hINPEMigEeexys9q7iYDYw" businessElement="NutritionPlanSupplyInstructionValueText" modelElement="_kzRcgMK8EeSqg-Exmsy2kg" businessElementId="75ece53a-2dd1-45f5-b9f1-3d3ef540921f" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedSupply2.instruction2.text"/>
+    <elements xmi:id="_mF-woMigEeexys9q7iYDYw" businessElement="NutritionPlanSupplyPriorityID" businessElementId="d07067fe-ab29-474b-adbc-19bf0f52fef8" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedSupply2.PriorityPreference.id">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwcyIpmaEeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_sFxI0MigEeexys9q7iYDYw" businessElement="NutritionPlanSupplyPriorityDateTime" businessElementId="31715711-1600-4a91-b5da-06bdb32ac708" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedSupply2.PriorityPreference.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_CWg-oADcEeWNGdLwd_3YGQ"/>
+    </elements>
+    <elements xmi:id="_vxRKMMigEeexys9q7iYDYw" businessElement="NutritionPlanSupplyProductValueCode" businessElementId="467e67af-3698-4c62-95a9-03a3105253f5" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedSupply2.PriorityPreference.value">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwdZNJmaEeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_5AKisMigEeexys9q7iYDYw" businessElement="NutritionPlanSupplyPriorityAuthorID" modelElement="_4YImkKrmEeOxqJAXCMXUYg" businessElementId="8bee1ef0-abbb-45a4-a93a-ac797e2eca47" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedSupply2.PriorityPreference.authorParticipation.assignedAuthor.id"/>
+    <elements xmi:id="_ERa0gMihEeexys9q7iYDYw" businessElement="InterventionID" businessElementId="56919961-20a7-4ff3-b786-eea50d622b4a" modelElementPath="interventionAct.id">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_pzn-BJA8EeOZX935IVJfOg"/>
+    </elements>
+    <elements xmi:id="_HpsX4MihEeexys9q7iYDYw" businessElement="InterventionDateTime" businessElementId="7af4603c-e9c1-49fd-8879-3ae6e45562d0" modelElementPath="interventionAct.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_pzn-AZA8EeOZX935IVJfOg"/>
+    </elements>
+    <elements xmi:id="_WyjNYMihEeexys9q7iYDYw" businessElement="AdvanceDirectiveObservationContainer" businessElementId="194dc592-ed3b-4a11-8720-550c4b70efcf" modelElementPath="interventionAct.advanceDirectiveObservation2">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_oQMhADqhEeSyGa6KC25kiw"/>
+    </elements>
+    <elements xmi:id="_fQj7gMihEeexys9q7iYDYw" businessElement="AdvanceDirectiveObservationStartDateTime" businessElementId="b78b7989-d24e-4900-bf25-3962268901df" modelElementPath="interventionAct.advanceDirectiveObservation2.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_3KFfwLEgEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_kg_TUMihEeexys9q7iYDYw" businessElement="AdvanceDirectiveObservationEndDateTime" businessElementId="ed37c059-3d20-478b-9665-6b84b39b28ca" modelElementPath="interventionAct.advanceDirectiveObservation2.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_3KFfwLEgEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_mpZxUMihEeexys9q7iYDYw" businessElement="AdvanceDirectiveObservationValueCode" businessElementId="e3f3fdca-8dba-4bb0-b0c5-19bd3797dc57" modelElementPath="interventionAct.advanceDirectiveObservation2.value">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_AKj3MLEgEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_pKLsAMihEeexys9q7iYDYw" businessElement="AdvanceDirectiveObservationValueNotes" businessElementId="38b98a6a-c66e-46c3-80a7-f468a4feb177" modelElementPath="interventionAct.advanceDirectiveObservation2.value">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_AKj3MLEgEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_vdQzoMihEeexys9q7iYDYw" businessElement="AdvanceDirectiveObservationVerificationDateTime" businessElementId="d3482b61-c5b4-4c03-88a3-c74f7d56f358" modelElementPath="interventionAct.advanceDirectiveObservation2.verifier.time">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_6Mcj8KvbEeS-mulaI3YUlw"/>
+    </elements>
+    <elements xmi:id="_yE3vEMihEeexys9q7iYDYw" businessElement="AdvanceDirectiveObservationVerificationSpecialtyCode" businessElementId="bcc543fa-a403-4c81-9eda-486764d273e4" modelElementPath="interventionAct.advanceDirectiveObservation2.verifier.participantRole.code">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_EnlzoLFWEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_01RaIMihEeexys9q7iYDYw" businessElement="AdvanceDirectiveObservationVerificationAddress" businessElementId="3ea87291-b3b0-4a0b-904b-e519876c8bc2" modelElementPath="interventionAct.advanceDirectiveObservation2.verifier.participantRole.addr">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_EnlMkLFWEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_5fnpYMihEeexys9q7iYDYw" businessElement="AdvanceDirectiveObservationVerificationTypeCode" businessElementId="58e88443-b499-4bf2-ac7b-293277771d7a" modelElementPath="interventionAct.advanceDirectiveObservation2.verifier.participantRole.playingEntity.code">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_3ZLE0LFFEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_-bcqMMihEeexys9q7iYDYw" businessElement="AdvanceDirectiveObservationLegalVerificationName" businessElementId="dde8079a-c93a-4f5e-a703-4628808beaa1" modelElementPath="interventionAct.advanceDirectiveObservation2.verifier.participantRole.playingEntity.name">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_3ZLE07FFEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_4i7FsMijEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxyRelationshipCode" businessElementId="c2c2af69-60d0-4f6e-91ec-61b1afe567c0" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.code">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_8ej-YLFSEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_7Tg-AMijEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxyAddress" businessElementId="72ad0169-cfc9-4912-baea-904f1fb5e7e3" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.addr">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_XXUwkLFTEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_DqgeIMikEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxyFaxContact" businessElementId="5ace03be-0e4f-4c66-85c1-0806066390bf" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_2xJVILE9EeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_G3afAMikEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxyPagerContact" businessElementId="cf020c1c-36e8-460a-8df5-404aa21c9224" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_2xJVILE9EeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_KOlPIMikEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxyPhoneContact" businessElementId="119e89c1-3d2f-4dbb-b2de-3d7112a8a5f5" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_2xJVILE9EeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_O3TtwMikEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxyAddress" businessElementId="72ad0169-cfc9-4912-baea-904f1fb5e7e3" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.addr">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_XXUwkLFTEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_RWUt4MikEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxySMSContact" businessElementId="5f8fc4e3-8f09-481b-a2db-f01e4708681e" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_2xJVILE9EeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_UDISYMikEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxySMSContact" businessElementId="5f8fc4e3-8f09-481b-a2db-f01e4708681e" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_2xJVILE9EeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_We6_YMikEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxyURLContact" businessElementId="8e21f9de-0628-4410-8cc8-35cb3bc4f5ce" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_2xJVILE9EeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_bwEI4MikEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxyLegalName" businessElementId="6814e528-0080-48f3-a803-250e413c6ecc" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.playingEntity.name">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_iHQBg7FUEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_fiClsMikEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxyOtherName" businessElementId="bce0211a-cf6f-4047-a765-198f53ee40fd" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.playingEntity.name">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_iHQBg7FUEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_itRLkMikEee_yNMgArfmLw" businessElement="AdvanceDirectiveProxyPriorityCode" businessElementId="db2e1f7a-5275-49fa-b4c6-3779855ff10d" modelElementPath="interventionAct.advanceDirectiveObservation2.custodian.advanceDirectiveObservationCustodianRole.playingEntity.code">
+      <modelElement xmi:type="uml:Property" href="consol-advancedirectives.uml#_iHQBgLFUEeOtlapy2HWYww"/>
+    </elements>
+    <elements xmi:id="_6167sMimEee_yNMgArfmLw" businessElement="AdvanceDirectiveAuthorID" modelElement="_4YImkKrmEeOxqJAXCMXUYg" businessElementId="bc2a7397-6bbd-4340-bbf2-be2e13af2f45" modelElementPath="interventionAct.advanceDirectiveObservation2.authorParticipation.assignedAuthor.id"/>
+    <elements xmi:id="_9ZBKkMimEee_yNMgArfmLw" businessElement="AdvanceDirectiveAuthorLegalName" modelElement="_fgiTgKrpEeOxqJAXCMXUYg" businessElementId="b6727709-c82e-4f91-9bc1-0d3c0e3d7a17" modelElementPath="interventionAct.advanceDirectiveObservation2.authorParticipation.assignedAuthor.assignedPerson.name"/>
+    <elements xmi:id="__8vEgMimEee_yNMgArfmLw" businessElement="ImmunizationSectionContainer" businessElementId="7c3e5413-220e-4bea-b672-a98ad8c931a8" modelElementPath="interventionAct.immunizationActivity2">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_K3VvoDqsEeSyGa6KC25kiw"/>
+    </elements>
+    <elements xmi:id="_HXe-0MinEee_yNMgArfmLw" businessElement="ImmunizationAdministeredSeriesNumber" businessElementId="d7221aab-8d8d-4785-8764-8e2c7ad4f08c" modelElementPath="interventionAct.immunizationActivity2.repeatNumber">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_CXurcOHKEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_LnrosMinEee_yNMgArfmLw" businessElement="ImmunizationAdministeredDrugFormCode" businessElementId="99510a1c-e542-459a-aadb-11fd22d30ef1" modelElementPath="interventionAct.immunizationActivity2.administrationUnitCode">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_Z9QLQOHKEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_wBZBIMixEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorDateTime" modelElement="_-mD94KrlEeOxqJAXCMXUYg" businessElementId="9a1a3b0f-6bff-465c-95be-636fe8625f24" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.time"/>
+    <elements xmi:id="_5SjqgMixEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorII" modelElement="_4YImkKrmEeOxqJAXCMXUYg" businessElementId="719aa28b-7c47-4131-aa54-f692898f24ba" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.id"/>
+    <elements xmi:id="_EQLOoMiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorSpecialityCode" modelElement="_4YH_gKrmEeOxqJAXCMXUYg" businessElementId="33ff9b9b-ce1a-43c6-a4e4-400ecdb54f4c" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.code"/>
+    <elements xmi:id="_Hlp8sMiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorLegalName" modelElement="_fgiTgKrpEeOxqJAXCMXUYg" businessElementId="e0944f96-4ef2-488f-a20e-a0f7d860493a" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.assignedPerson.name"/>
+    <elements xmi:id="_LZpLsMiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorOtherName" modelElement="_fgiTgKrpEeOxqJAXCMXUYg" businessElementId="6acd94be-90b9-4a77-a40a-4789909e33fb" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.assignedPerson.name"/>
+    <elements xmi:id="_OiaTcMiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorOrganizationID" modelElement="_X2VqIKr4EeOxqJAXCMXUYg" businessElementId="b6df07e5-0fcb-4c24-93a7-5ee22854181a" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.representedOrganization.id"/>
+    <elements xmi:id="_aAm1EMiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorOrganizationName" modelElement="_X2W4QKr4EeOxqJAXCMXUYg" businessElementId="4c8f001e-6b49-488f-ab2b-0001d750ac23" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.representedOrganization.name"/>
+    <elements xmi:id="_c94egMiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorOrganizationEmailAddress" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="201ecf20-42ae-42ea-be90-0802a31454b1" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_g5k4AMiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorOrganizationFaxContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="5853b559-c39d-4c3b-bc5e-412039bae0a8" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_j7yEwMiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorOrganizationPhoneContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="614cbb05-4168-482e-9a14-e45708aab1be" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_nLnd0MiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorOrganizationURLContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="42f8e948-5f2b-4071-9917-4b07b777dbb2" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_qPvWIMiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorOrganizationAddress" modelElement="_X2UcAKr4EeOxqJAXCMXUYg" businessElementId="b94ca1bb-c130-405f-8ef5-e2350d6ade13" modelElementPath="interventionAct.medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.addr"/>
+    <elements xmi:id="_sd-vUMiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministeredDrugVehicleCode" businessElementId="30386915-08e1-48c6-80a7-9ee5c2c4f2d8" modelElementPath="interventionAct.immunizationActivity2.drugVehicle.code">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_ZXk2NRUTEeG6PvUxSTZnaw"/>
+    </elements>
+    <elements xmi:id="_2UGf4MiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministeredProblemCode" modelElement="_b5IbkOHqEeO04sHNODkHmQ" businessElementId="0104e6b0-a549-4c32-b653-83e9b059c69a" modelElementPath="interventionAct.immunizationActivity2.indication2.id"/>
+    <elements xmi:id="_C9nlIMizEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministeredProblemCode" modelElement="_zCqi8OHqEeO04sHNODkHmQ" businessElementId="0104e6b0-a549-4c32-b653-83e9b059c69a" modelElementPath="interventionAct.immunizationActivity2.indication2.value"/>
+    <elements xmi:id="_IpdGkMizEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministeredIndicationIndicationTypeCode" modelElement="_2Hh3kOHpEeO04sHNODkHmQ" businessElementId="f9f38522-7f8f-454f-8a17-468a769bff4b" modelElementPath="interventionAct.immunizationActivity2.indication2.code"/>
+    <elements xmi:id="__eVlYMizEeeTTvcEssHWKg" businessElement="ImmunizationAdministeredInstructionNotes" modelElement="_kzRcgMK8EeSqg-Exmsy2kg" businessElementId="5f9c87d4-ede2-4f78-a59d-58df2c9b5e05" modelElementPath="interventionAct.immunizationActivity2.instruction2.text"/>
+    <elements xmi:id="_GGeXAMi0EeeTTvcEssHWKg" businessElement="ImmunizationAdministeredMedicationSupplyID" businessElementId="8ed179dd-c34d-4f2e-bf3c-26838105fba6" modelElementPath="interventionAct.immunizationActivity2.medicationSupplyOrder2.id">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_z3ymoBrTEeGo461UQq-B1g"/>
+    </elements>
+    <elements xmi:id="_LyYJ4Mi0EeeTTvcEssHWKg" businessElement="ImmunizationAdministeredMedicationSupplyDateTime" businessElementId="da3ef3be-4c56-46d6-a6c3-333c32dfa25d" modelElementPath="interventionAct.immunizationActivity2.medicationSupplyOrder2.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_p1pzUBrTEeGo461UQq-B1g"/>
+    </elements>
+    <elements xmi:id="_Uu4K0Mi0EeeTTvcEssHWKg" businessElement="ImmunizationAdministeredMedicationSupplyRepeatNumer" businessElementId="15ef875c-a5f5-40a2-b123-814a86d7213a" modelElementPath="interventionAct.immunizationActivity2.medicationSupplyOrder2.repeatNumber">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_p1rBcRrTEeGo461UQq-B1g"/>
+    </elements>
+    <elements xmi:id="_aj0k8Mi0EeeTTvcEssHWKg" businessElement="ImmunizationAdministeredMedicationSupplyInstructionNotes" modelElement="_kzRcgMK8EeSqg-Exmsy2kg" businessElementId="5a52bd2d-784f-446f-b44f-55fd0675933a" modelElementPath="interventionAct.immunizationActivity2.medicationSupplyOrder2.instruction2.text"/>
+    <elements xmi:id="_pWsjYMi0EeeTTvcEssHWKg" businessElement="ImmunizationAdministeredMedicationDispenseID" businessElementId="2c2fa83e-ae18-4b25-8a95-97bd25eb09fe" modelElementPath="interventionAct.immunizationActivity2.medicationDispense2.id">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_ThHA8BrYEeGo461UQq-B1g"/>
+    </elements>
+    <elements xmi:id="_yWlPgMi0EeeTTvcEssHWKg" businessElement="ImmunizationAdministeredMedicationDispenseRepeatNumber" businessElementId="5bfb0ae2-affc-483b-8961-9d4260ff9c46" modelElementPath="interventionAct.immunizationActivity2.medicationDispense2.repeatNumber">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_ThIPEBrYEeGo461UQq-B1g"/>
+    </elements>
+    <elements xmi:id="_3ufIUMi0EeeTTvcEssHWKg" businessElement="ImmunizationAdministeredMedicationDispenseStatusCode" businessElementId="26ac6800-d260-40c8-9aaa-66f5fcc759ec" modelElementPath="interventionAct.immunizationActivity2.medicationDispense2.statusCode">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_ThIPFBrYEeGo461UQq-B1g"/>
+    </elements>
+    <elements xmi:id="_3gAyAMi1EeeEgNQvAxhXEA" businessElement="ImmunizationAdministeredMedicationDispenseAmountUnitMeasure" businessElementId="3d033447-a2f3-4d27-b749-eaa83c4a76b7" modelElementPath="interventionAct.immunizationActivity2.medicationDispense2.quantity">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_IQt9EEIwEeG4bZAl2IGXmQ"/>
+    </elements>
+    <elements xmi:id="_908TwMi1EeeEgNQvAxhXEA" businessElement="ImmunizationAdministeredMedicationCode" businessElementId="3aa3f589-ed3c-47f3-97cc-d97775399103" modelElementPath="interventionAct.immunizationActivity2.consumable.immunizationMedicationInformation2.manufacturedMaterial.code">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_sCU5QOHVEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_DQ60QMi2EeeEgNQvAxhXEA" businessElement="ImmunizationAdministeredMedicationLotNumber" businessElementId="008bb3da-b5b5-4344-bdb0-e36a0a76269b" modelElementPath="interventionAct.immunizationActivity2.consumable.immunizationMedicationInformation2.manufacturedMaterial.lotNumberText">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_2daj0MKMEeSqg-Exmsy2kg"/>
+    </elements>
+    <elements xmi:id="_yqgJsMi3EeeEgNQvAxhXEA" businessElement="MedicationAdministeredStatusCode" businessElementId="333e512f-80c4-48f0-9e65-1426e4138f00" modelElementPath="interventionAct.medicationActivity2.statusCode">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#__4L5cOLSEeOc7-TVP7Wi6w"/>
+    </elements>
+    <elements xmi:id="_YnRb4Mi4Eee2pdXYlLF2iw" businessElement="MedicationAdministeredRepeatNumber" businessElementId="22bb8dee-1055-41a2-9e33-6b70028a50e9" modelElementPath="interventionAct.medicationActivity2.repeatNumber">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_5VihQOLREeOc7-TVP7Wi6w"/>
+    </elements>
+    <elements xmi:id="_bm4AkMi4Eee2pdXYlLF2iw" businessElement="MedicationAdministeredRouteCode" businessElementId="8fe79500-d0bf-43f3-a6b3-246b75656043" modelElementPath="interventionAct.medicationActivity2.routeCode">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_nbjTEMLMEeSqg-Exmsy2kg"/>
+    </elements>
+    <elements xmi:id="_eWGm8Mi4Eee2pdXYlLF2iw" businessElement="MedicationAdministeredDosageUnitMeasure" businessElementId="2ae32afb-f8ec-4b06-880b-fc12a4ede424" modelElementPath="interventionAct.medicationActivity2.doseQuantity">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_090HgOLbEeOc7-TVP7Wi6w"/>
+    </elements>
+    <elements xmi:id="_g1bwIMi4Eee2pdXYlLF2iw" businessElement="MedicationAdministeredDrugFormCode" businessElementId="0d00c8b8-b802-4d2e-b42f-8b681db9df5c" modelElementPath="interventionAct.medicationActivity2.administrationUnitCode">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_6PKzwOLYEeOc7-TVP7Wi6w"/>
+    </elements>
+    <elements xmi:id="_af7fQMi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorDateTime" modelElement="_-mD94KrlEeOxqJAXCMXUYg" businessElementId="38fb2ea5-42ca-42b5-aec1-a1da2ff63fff" modelElementPath="interventionAct.medicationActivity2.authorParticipation.time"/>
+    <elements xmi:id="_eDnBYMi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorID" modelElement="_4YImkKrmEeOxqJAXCMXUYg" businessElementId="9e0ccc6b-efb2-442e-b869-f4afa4e349dc" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.id"/>
+    <elements xmi:id="_hfFpwMi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorSpecialityCode" modelElement="_4YH_gKrmEeOxqJAXCMXUYg" businessElementId="81564997-b4b1-442e-b7c0-6d5f7aeeaa88" modelElementPath="interventionAct.medicationActivity2.authorParticipation.assignedAuthor.code"/>
+    <elements xmi:id="_l7wCUMi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorName" modelElement="_fgiTgKrpEeOxqJAXCMXUYg" businessElementId="6a10ad96-8bce-4e33-96ec-0df940137c12" modelElementPath="interventionAct.medicationActivity2.authorParticipation.assignedAuthor.assignedPerson.name"/>
+    <elements xmi:id="_o3NG0Mi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorOtherName" modelElement="_fgiTgKrpEeOxqJAXCMXUYg" businessElementId="cc9a7a2b-9ed5-427b-8bb3-b6d0b1688a79" modelElementPath="interventionAct.medicationActivity2.authorParticipation.assignedAuthor.assignedPerson.name"/>
+    <elements xmi:id="_sPhtgMi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorOrganizationID" modelElement="_X2VqIKr4EeOxqJAXCMXUYg" businessElementId="975b9eb9-0b1f-4c0e-9adf-1c5935159341" modelElementPath="interventionAct.medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.id"/>
+    <elements xmi:id="_vddpIMi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorOrganizationName" modelElement="_X2W4QKr4EeOxqJAXCMXUYg" businessElementId="ade0eb41-ae56-46e7-9eab-f2899ef8aa0e" modelElementPath="interventionAct.medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.name"/>
+    <elements xmi:id="_zwwqUMi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorOrganizationEmailAddress" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="d419665b-8b4c-4e15-b533-07691a43b3b6" modelElementPath="interventionAct.medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_2p9FAMi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorOrganizationFaxContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="a8d004d6-1c04-419d-8055-4cd571c5e760" modelElementPath="interventionAct.medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_52SeIMi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorOrganizationPhoneContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="23b430c4-1a17-44bb-8f63-af4eb8972b1e" modelElementPath="interventionAct.medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="_8zwU0Mi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorOrganizationURLContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="0b039a57-2abb-4dab-8c3f-7ff3b0762c51" modelElementPath="interventionAct.medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
+    <elements xmi:id="__9KVwMi7Eeeds6hS-D3sXA" businessElement="MedicationAdministrationAuthorOrganizationAddress" modelElement="_X2UcAKr4EeOxqJAXCMXUYg" businessElementId="8453fe3a-9128-45a6-abd4-72601f1872b2" modelElementPath="interventionAct.medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.addr"/>
+    <elements xmi:id="_FHFc8Mi8Eeeds6hS-D3sXA" businessElement="MedicationAdministrationReasonID" modelElement="_b5IbkOHqEeO04sHNODkHmQ" businessElementId="a6156128-0fc3-48db-ba69-aabcac18acee" modelElementPath="interventionAct.medicationActivity2.indication2.id"/>
+    <elements xmi:id="_I7IWUMi8Eeeds6hS-D3sXA" businessElement="MedicationAdministrationReasonTypeCode" modelElement="_2Hh3kOHpEeO04sHNODkHmQ" businessElementId="b55fc2ae-25d5-4aa7-9679-cdb85d4e3a55" modelElementPath="interventionAct.medicationActivity2.indication2.code"/>
+    <elements xmi:id="_MOxRUMi8Eeeds6hS-D3sXA" businessElement="MedicationAdministrationReasonValueCode" modelElement="_zCqi8OHqEeO04sHNODkHmQ" businessElementId="cf86d0da-e042-4e63-be1e-f0f0d42a41a5" modelElementPath="interventionAct.medicationActivity2.indication2.value"/>
+    <elements xmi:id="_P7rn8Mi8Eeeds6hS-D3sXA" businessElement="MedicationAdministrationInstructionNotes" modelElement="_kzRcgMK8EeSqg-Exmsy2kg" businessElementId="1db1fac0-1f8c-4428-9c3d-514694978577" modelElementPath="interventionAct.medicationActivity2.instruction2.text"/>
+    <elements xmi:id="_G4UCoMi_Eee0nNVAd1NCUA" businessElement="MedicationAdministrationStatusCode" businessElementId="69a0fd97-92c4-4a6f-b7f9-8e80c43f3bad" modelElementPath="interventionAct.medicationActivity2.medicationSupplyOrder2.statusCode">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_bgxuoMOGEeSRNKqIviDQAg"/>
+    </elements>
+    <elements xmi:id="_PcfqMMi_Eee0nNVAd1NCUA" businessElement="MedicationAdministrationSupplyRepeatNumber" businessElementId="7a77a311-e201-4848-9640-185298f25f17" modelElementPath="interventionAct.medicationActivity2.medicationSupplyOrder2.repeatNumber">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_Hv6hUMOIEeSRNKqIviDQAg"/>
+    </elements>
+    <elements xmi:id="_TiOwgMi_Eee0nNVAd1NCUA" businessElement="MedicationAdministrationSupplyII" businessElementId="0d49dfc8-0f77-4e0e-abfb-4b8e1caee672" modelElementPath="interventionAct.medicationActivity2.medicationSupplyOrder2.id">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_z3ymoBrTEeGo461UQq-B1g"/>
+    </elements>
+    <elements xmi:id="_YKGTgMi_Eee0nNVAd1NCUA" businessElement="MedicationAdministrationSupplyDateTime" businessElementId="f9ef2e75-adc4-435e-94b9-c1c145079e33" modelElementPath="interventionAct.medicationActivity2.medicationSupplyOrder2.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_p1pzUBrTEeGo461UQq-B1g"/>
+    </elements>
+    <elements xmi:id="_dRtGgMi_Eee0nNVAd1NCUA" businessElement="MedicationAdministrationSupplyAmountUnitMeasure" businessElementId="c5cfbcbc-5eef-474b-bbcb-370d1b6b4e1c" modelElementPath="interventionAct.medicationActivity2.medicationSupplyOrder2.quantity">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_p1qaYhrTEeGo461UQq-B1g"/>
+    </elements>
+    <elements xmi:id="_elGgQMk8Eee0nNVAd1NCUA" businessElement="MedicationDispenseContainer" businessElementId="8f57d590-40f5-4478-83d6-3102c431172e" modelElementPath="interventionAct.medicationActivity2.medicationDispense2">
+      <modelElement xmi:type="uml:Association" href="consol-medications.uml#_FAOH4PiYEeOXlK95I8tUew"/>
+    </elements>
+    <elements xmi:id="_jNQXIMk8Eee0nNVAd1NCUA" businessElement="MedicationDispenseStatusCode" businessElementId="b126e3ba-d286-4786-9e84-28cbde2f62fb" modelElementPath="interventionAct.medicationActivity2.medicationDispense2.statusCode">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_smEh0MNpEeSRNKqIviDQAg"/>
+    </elements>
+    <elements xmi:id="_8X-6MMk8Eee0nNVAd1NCUA" businessElement="MedicationDispenseRemainingNumber" businessElementId="923094ec-cfe7-4977-bdab-e20ef37276fe" modelElementPath="interventionAct.medicationActivity2.medicationDispense2.repeatNumber">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_JdTL0MNqEeSRNKqIviDQAg"/>
+    </elements>
+    <elements xmi:id="_ON5PAMlBEee0nNVAd1NCUA" businessElement="MedicationAdministrationMonitoringII" businessElementId="ff99e358-4ce3-4b3d-bb86-1c6ce311c796" modelElementPath="interventionAct.medicationActivity2.drugMonitoringAct.id">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_WDrfVIqvEeOoMZgUoTghIg"/>
+    </elements>
+    <elements xmi:id="_Sq6M4MlBEee0nNVAd1NCUA" businessElement="MedicationAdministrationMonitoringIDCode" businessElementId="9a3867e9-aa28-4784-a641-680fcf85521d" modelElementPath="interventionAct.medicationActivity2.drugMonitoringAct.code">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_WDrfUIqvEeOoMZgUoTghIg"/>
+    </elements>
+    <elements xmi:id="_WVWeUMlBEee0nNVAd1NCUA" businessElement="MedicationAdministrationMonitoringStatusCode" businessElementId="e0339af6-31dc-42de-9b23-2bee89848fbd" modelElementPath="interventionAct.medicationActivity2.drugMonitoringAct.statusCode">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_WDsGYYqvEeOoMZgUoTghIg"/>
+    </elements>
+    <elements xmi:id="_bSjYIMlBEee0nNVAd1NCUA" businessElement="MedicationAdministrationMonitoringDateTime" businessElementId="63ac0059-2507-4a78-acea-e6ee1ffb4af3" modelElementPath="interventionAct.medicationActivity2.drugMonitoringAct.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_WDrfUYqvEeOoMZgUoTghIg"/>
+    </elements>
+    <elements xmi:id="_gn4eEMlBEee0nNVAd1NCUA" businessElement="MedicationAdministrationMonitoringPersonII" businessElementId="71cf49c0-a1ac-4a52-bd54-9cf691500ec7" modelElementPath="interventionAct.medicationActivity2.drugMonitoringAct.participant.participantRole.id">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_ugF5wIzyEeOoMZgUoTghIg"/>
+    </elements>
+    <elements xmi:id="_knpfQMlBEee0nNVAd1NCUA" businessElement="MedicationAdministrationMonitoringPersonName" businessElementId="f8e02eb4-d344-478b-bf06-10b119c8248a" modelElementPath="interventionAct.medicationActivity2.drugMonitoringAct.participant.participantRole.playingEntity.name">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_nv0DUIzzEeOoMZgUoTghIg"/>
+    </elements>
+    <elements xmi:id="_qfHB4MlBEee0nNVAd1NCUA" businessElement="EncounterContainer" businessElementId="3e1aa1cc-1758-4b7c-9471-e51132045e1d" modelElementPath="interventionAct.encounterActivity2">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_POoqkDqtEeSyGa6KC25kiw"/>
+    </elements>
+    <elements xmi:id="_sjhwsMlBEee0nNVAd1NCUA" businessElement="EncounterTypeCode" businessElementId="00b1f01b-476d-4ed2-b451-b1c1001bead8" modelElementPath="interventionAct.encounterActivity2.code">
+      <modelElement xmi:type="uml:Property" href="consol-encounters.uml#_E-OUQK14EeS-n_bBhdNjYg"/>
+    </elements>
+    <elements xmi:id="_uPlC0MlBEee0nNVAd1NCUA" businessElement="EncounterDischargeDispositionCode" businessElementId="83e9af33-e6ba-408b-a9a6-9f3317e87bfe" modelElementPath="interventionAct.encounterActivity2.sDTCDischargeDispositionCode">
+      <modelElement xmi:type="uml:Property" href="consol-encounters.uml#_bj5_IMzFEeO93sHu8pHB2g"/>
+    </elements>
+    <elements xmi:id="_wML5cMlBEee0nNVAd1NCUA" businessElement="EncounterServiceLocationContainer" businessElementId="88204788-db91-4342-8023-8d40cd713a6e" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation">
+      <modelElement xmi:type="uml:Association" href="consol-encounters.uml#_PyBAQK1zEeS-n_bBhdNjYg"/>
+    </elements>
+    <elements xmi:id="_y4UvkMlBEee0nNVAd1NCUA" businessElement="EncounterServiceLocationTypeCode" modelElement="_nD_qMB-YEeGtfPlBCjHWkw" businessElementId="1c11660d-3f8b-4880-9b60-8831f7b4cb11" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.code"/>
+    <elements xmi:id="_1EzOMMlBEee0nNVAd1NCUA" businessElement="EncounterServiceLocationAddress" modelElement="_nD7_0B-YEeGtfPlBCjHWkw" businessElementId="f0a9e685-b6ef-4f7d-b289-1d4cfe407afd" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.addr"/>
+    <elements xmi:id="_3YYaYMlBEee0nNVAd1NCUA" businessElement="EncounterServiceLocationBusinessPhoneContact" modelElement="_nEARQB-YEeGtfPlBCjHWkw" businessElementId="0d2d5872-ff9c-4a64-96b2-dad08860219e" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.telecom"/>
+    <elements xmi:id="_6M5JYMlBEee0nNVAd1NCUA" businessElement="EncounterServiceLocationEmailContact" modelElement="_nEARQB-YEeGtfPlBCjHWkw" businessElementId="48bf2416-82a1-4516-9ee3-2ed711c326fb" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.telecom"/>
+    <elements xmi:id="_9F2TgMlBEee0nNVAd1NCUA" businessElement="EncounterServiceLocationFaxContact" modelElement="_nEARQB-YEeGtfPlBCjHWkw" businessElementId="6f3f76b3-5655-4389-b2d5-f961b0b75a91" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.telecom"/>
+    <elements xmi:id="_AH0PsMlCEee0nNVAd1NCUA" businessElement="EncounterServiceLocationURLContact" modelElement="_nEARQB-YEeGtfPlBCjHWkw" businessElementId="4ea7dcc6-b790-4c8d-b683-6c0952ef1b1e" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.telecom"/>
+    <elements xmi:id="_C5RqsMlCEee0nNVAd1NCUA" businessElement="EncounterReasonContainer" businessElementId="0ee2df62-6740-482f-aff1-fee38670ce8f" modelElementPath="interventionAct.encounterActivity2.indication2">
+      <modelElement xmi:type="uml:Association" href="consol-encounters.uml#_iVYAEPgAEeOYeZoWJF5yyQ"/>
+    </elements>
+    <elements xmi:id="_FlfZUMlCEee0nNVAd1NCUA" businessElement="EncounterReasonII" modelElement="_b5IbkOHqEeO04sHNODkHmQ" businessElementId="171813b0-fe20-47f1-a903-b1f0e1911b34" modelElementPath="interventionAct.encounterActivity2.indication2.id"/>
+    <elements xmi:id="_IlGlEMlCEee0nNVAd1NCUA" businessElement="EncounterReasonTypeCode" modelElement="_2Hh3kOHpEeO04sHNODkHmQ" businessElementId="318f9cc2-7630-4f13-a931-46de9b3cc9fa" modelElementPath="interventionAct.encounterActivity2.indication2.code"/>
+    <elements xmi:id="_M0iZ8MlCEee0nNVAd1NCUA" businessElement="EncounterReasonValueCode" modelElement="_zCqi8OHqEeO04sHNODkHmQ" businessElementId="dc3a1856-7e01-4693-823c-8b2f7252381c" modelElementPath="interventionAct.encounterActivity2.indication2.value"/>
+    <elements xmi:id="_Q1DCAMlCEee0nNVAd1NCUA" businessElement="EncounterParticipantTypeCode" businessElementId="5a8cdcbe-00fa-48ec-b13d-18a6dc854de0" modelElementPath="interventionAct.encounterActivity2.encounterPerformer.encounterPerformerAssignedEntity.code">
+      <modelElement xmi:type="uml:Property" href="consol-encounters.uml#_U9mM8K12EeS-n_bBhdNjYg"/>
+    </elements>
+    <elements xmi:id="_TqOfYMlCEee0nNVAd1NCUA" businessElement="EncounterParticipantII" businessElementId="3c893275-7b3a-4984-89b1-31977b737671" modelElementPath="interventionAct.encounterActivity2.encounterPerformer.encounterPerformerAssignedEntity.id">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_Wbj-kMlCEee0nNVAd1NCUA" businessElement="EncounterParticipantAddress" businessElementId="10eb40c9-8b65-4d80-bd8d-25a3739b85b5" modelElementPath="interventionAct.encounterActivity2.encounterPerformer.encounterPerformerAssignedEntity.addr">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_Znz4IMlCEee0nNVAd1NCUA" businessElement="EncounterParticipantEmailContact" businessElementId="f093f05e-00fd-44c7-a61a-15b4efdd0e14" modelElementPath="interventionAct.encounterActivity2.encounterPerformer.encounterPerformerAssignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_dEG_4MlCEee0nNVAd1NCUA" businessElement="EncounterParticipantFaxContact" businessElementId="9ff8751c-7857-4984-b9fa-d6e41a6378a3" modelElementPath="interventionAct.encounterActivity2.encounterPerformer.encounterPerformerAssignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_grKmIMlCEee0nNVAd1NCUA" businessElement="EncounterPartcipantPhoneContact" businessElementId="f9cbe56e-c4dd-4969-86c9-865e83aa461a" modelElementPath="interventionAct.encounterActivity2.encounterPerformer.encounterPerformerAssignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_kbdA4MlCEee0nNVAd1NCUA" businessElement="EncounterParticipantPagerContact" businessElementId="9161f2fe-7e31-4d89-8f16-3d1300c8be01" modelElementPath="interventionAct.encounterActivity2.encounterPerformer.encounterPerformerAssignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_nwfqEMlCEee0nNVAd1NCUA" businessElement="EncounterParticipantURLContact" businessElementId="bfd5ebdd-1e05-4fa8-9402-32b50bdc5255" modelElementPath="interventionAct.encounterActivity2.encounterPerformer.encounterPerformerAssignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_qptS4MlCEee0nNVAd1NCUA" businessElement="EncounterParticpantSMSContact" businessElementId="d9274735-608d-498b-b588-75082e9308e4" modelElementPath="interventionAct.encounterActivity2.encounterPerformer.encounterPerformerAssignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_YGRiAMlEEeeI2q8XwoqnBQ" businessElement="EncounterDiagnosisDateTime" businessElementId="0b911373-5437-4c3e-972d-a9faf3e279a6" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_LLteYPDEEeOKPKE9au0oug"/>
+    </elements>
+    <elements xmi:id="_biGvsMlEEeeI2q8XwoqnBQ" businessElement="EncounterDiagnosisValueCode" businessElementId="d587b0dd-26fe-4f52-bdd2-804bc0c1a564" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.value">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_bZJcsPDMEeOKPKE9au0oug"/>
+    </elements>
+    <elements xmi:id="_kYOb0MlEEeeI2q8XwoqnBQ" businessElement="EncounterDiagnosisNotes" businessElementId="81001a20-ef5e-4ac4-a11f-c1ce9f0b4a4b" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.text">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_CSKZgMm6EeSr1c1X9ACWbg"/>
+    </elements>
+    <elements xmi:id="_GAE8MMlFEee96OIlxY4k8A" businessElement="EncounterDiagnosisTypeCode" businessElementId="6c46751a-5001-42f2-9b61-20ae7f6c337c" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.code">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_52ZjkMm4EeSr1c1X9ACWbg"/>
+    </elements>
+    <elements xmi:id="_ItlrUMlFEee96OIlxY4k8A" businessElement="EncounterDiagnosisStatusCode" businessElementId="fa242e30-2449-4285-bf9e-2616d70dd74c" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.statusCode">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_8NsgMMm6EeSr1c1X9ACWbg"/>
+    </elements>
+    <elements xmi:id="_X5K5IMlPEeeqX-yAIi6LvQ" businessElement="EncounterDiagnosisPrognosisIDCode" businessElementId="9f138a4e-1df6-459a-bd7d-f42624a0dc75" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.prognosisObservation.code">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_PjKJEJmLEeOeSLwbllPCyw"/>
+    </elements>
+    <elements xmi:id="_cOf6oMlPEeeqX-yAIi6LvQ" businessElement="EncounterDiagnosisPrognosisDateTime" businessElementId="c2549dda-23f8-4df7-8a73-c2dc26f08e5a" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.prognosisObservation.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_PjKJEZmLEeOeSLwbllPCyw"/>
+    </elements>
+    <elements xmi:id="_hVEy4MlPEeeqX-yAIi6LvQ" businessElement="EncounterDiagnosisPrognosisValueCode" businessElementId="69265e27-04e7-4978-85d6-0d8de826bdcd" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.prognosisObservation.value">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_PjKJGJmLEeOeSLwbllPCyw"/>
+    </elements>
+    <elements xmi:id="_lgTdMMlPEeeqX-yAIi6LvQ" businessElement="EncounterDiagnosisPriorityII" businessElementId="31e78d51-9810-4d46-adac-6a9fc62dda05" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.priorityPreference.id">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwcyIpmaEeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_pGnckMlPEeeqX-yAIi6LvQ" businessElement="EncounterDiagnosisPriorityIDCode" businessElementId="46808b77-216b-41fa-b3a2-f269dcb01b91" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.priorityPreference.code">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwcyIZmaEeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_swKWIMlPEeeqX-yAIi6LvQ" businessElement="EncounterDiagnosisPriorityDateTime" businessElementId="acc679ff-7c59-4605-af1a-11bfcffa7d49" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.priorityPreference.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_CWg-oADcEeWNGdLwd_3YGQ"/>
+    </elements>
+    <elements xmi:id="_yCfycMlPEeeqX-yAIi6LvQ" businessElement="EncounterDiagnosisPriorityValueCode" businessElementId="b6cf2f0c-2931-4fa5-a152-838c813bd8bf" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.priorityPreference.value">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwdZNJmaEeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_1f2qIMlPEeeqX-yAIi6LvQ" businessElement="EncounterDiagnosisPriorityAuthorII" modelElement="_4YImkKrmEeOxqJAXCMXUYg" businessElementId="8494bf5d-4b1f-4cbf-b55e-a0f78dfa0e31" modelElementPath="interventionAct.encounterActivity2.encounterDiagnosis2.problemObservation2.priorityPreference.authorParticipation.assignedAuthor.id"/>
+    <elements xmi:id="_ACZmYMlREee_Ja_opdCbiA" businessElement="InterventionInstructionContainer" businessElementId="4cdf8ca4-1251-4ac4-87ca-efd1e50be1e0" modelElementPath="interventionAct.instruction2">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_pt8a8DqtEeSyGa6KC25kiw"/>
+    </elements>
+    <elements xmi:id="_B5GpUMlREee_Ja_opdCbiA" businessElement="InterventionInstructionNotes" modelElement="_kzRcgMK8EeSqg-Exmsy2kg" businessElementId="a26062ee-67f4-4bef-b21b-485e549ca443" modelElementPath="interventionAct.instruction2.text"/>
+    <elements xmi:id="_EeW0UMlREee_Ja_opdCbiA" businessElement="InterventionInstructionTypeCode" modelElement="_2G8h-hSVEeGGzu7fmW9pXw" businessElementId="7f99af75-532f-4227-8808-5a3b3baf2959" modelElementPath="interventionAct.instruction2.code"/>
+    <elements xmi:id="_HVxtYMlREee_Ja_opdCbiA" businessElement="MedicalEquipmentOrderContainer" businessElementId="4fdb2b1c-74dc-4846-a0e5-8dd216167c03" modelElementPath="interventionAct.nonMedicinalSupplyActivity2">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_cMg2QDqtEeSyGa6KC25kiw"/>
+    </elements>
+    <elements xmi:id="_JHHIIMlREee_Ja_opdCbiA" businessElement="MedicalEquipmentOrderStatusCode" businessElementId="be4360f0-8c0d-4a43-ae4a-496407b79c42" modelElementPath="interventionAct.nonMedicinalSupplyActivity2.statusCode">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_oW6N8MQSEeSt_63yiINGSw"/>
+    </elements>
+    <elements xmi:id="_LJGOAMlREee_Ja_opdCbiA" businessElement="MedicalEquipmentOrderInstructionContainer" businessElementId="d786e594-332b-4835-a683-635a38f5ff90" modelElementPath="interventionAct.nonMedicinalSupplyActivity2.instruction2">
+      <modelElement xmi:type="uml:Association" href="consol-medications.uml#_fbtfMOaEEeOmzetP5oaH3A"/>
+    </elements>
+    <elements xmi:id="_i80h4MlREeeCUpijT1ZSXA" businessElement="MedicalEquipmentOrdernstructionNotes" modelElement="_kzRcgMK8EeSqg-Exmsy2kg" businessElementId="d199d034-5bc5-4b80-97f5-3394f9b2c72a" modelElementPath="interventionAct.nonMedicinalSupplyActivity2.instruction2.text"/>
+    <elements xmi:id="_ni7KUMlREeeCUpijT1ZSXA" businessElement="MedicalEquipmentOrderProductID" businessElementId="aeb2c764-c668-48ff-bf79-5788c592d094" modelElementPath="interventionAct.nonMedicinalSupplyActivity2.productInstance.id">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_tsW2JDiCEeGSytqLITd2FA"/>
+    </elements>
+    <elements xmi:id="_qwD0sMlREeeCUpijT1ZSXA" businessElement="MedicalEquipmentOrderProductOrganizationID" businessElementId="21a63840-4028-4ac1-889c-985c3f2d6c1a" modelElementPath="interventionAct.nonMedicinalSupplyActivity2.productInstance.scopingEntity.id">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_iJglcDosEeGSytqLITd2FA"/>
+    </elements>
+    <elements xmi:id="_tvXecMlREeeCUpijT1ZSXA" businessElement="MedicalEquipmentOrderProductValueCode" businessElementId="5bce73fe-2682-4bd3-b3ed-67cc2d09945b" modelElementPath="interventionAct.nonMedicinalSupplyActivity2.productInstance.playingDevice.code">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_SXxyEDosEeGSytqLITd2FA"/>
+    </elements>
   </MDMI:MDMIMapping>
 </xmi:XMI>
