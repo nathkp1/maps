@@ -4745,5 +4745,20 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_3N0TwMrvEeeQQcmJWaDTbw" businessElement="ProcedureMedicationReasonTypeCode" modelElement="_2Hh3kOHpEeO04sHNODkHmQ" businessElementId="080cc269-357d-467c-ac62-54b9480ac25a" modelElementPath="interventionAct.procedureActivityAct2.medicationActivity2.indication2.code"/>
     <elements xmi:id="_6xt4UMrvEeeQQcmJWaDTbw" businessElement="ProcedureMedicationReasonValueCode" modelElement="_zCqi8OHqEeO04sHNODkHmQ" businessElementId="d86bf7d7-262f-4ae4-93ea-4fc951b79f31" modelElementPath="interventionAct.procedureActivityAct2.medicationActivity2.indication2.value"/>
     <elements xmi:id="_-DH-sMrvEeeQQcmJWaDTbw" businessElement="ProcedureMedicationInstructionNotes" modelElement="_kzRcgMK8EeSqg-Exmsy2kg" businessElementId="877cbe61-dc1f-48af-bc1b-b61d6cf1dc91" modelElementPath="interventionAct.procedureActivityAct2.medicationActivity2.instruction2.text"/>
+    <elements xmi:id="_LDvwkMuZEeeai8dhqDFXyw" businessElement="ProcedureMedicationAdministrationSupplyStatusCode" businessElementId="70f2edf8-8189-4b8a-b6d5-c57f08ec7cc5" modelElementPath="interventionAct.procedureActivityAct2.medicationActivity2.medicationSupplyOrder2.statusCode">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_bgxuoMOGEeSRNKqIviDQAg"/>
+    </elements>
+    <elements xmi:id="_OO4P0MuZEeeai8dhqDFXyw" businessElement="ProcedureMedicationAdministrationSupplyRepeatNumber" businessElementId="b165e39a-0065-4d15-b37e-3d34b3845da6" modelElementPath="interventionAct.procedureActivityAct2.medicationActivity2.medicationSupplyOrder2.repeatNumber">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_Hv6hUMOIEeSRNKqIviDQAg"/>
+    </elements>
+    <elements xmi:id="_oFOQ0MubEeeai8dhqDFXyw" businessElement="ProcedureMedicationAdministrationSupplyII" businessElementId="6572b9d9-2205-4351-9ec5-4cea78b1a46b" modelElementPath="interventionAct.procedureActivityAct2.medicationActivity2.medicationSupplyOrder2.id">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_z3ymoBrTEeGo461UQq-B1g"/>
+    </elements>
+    <elements xmi:id="_svH0IMubEeeai8dhqDFXyw" businessElement="ProcedureMedicationAdministrationSupplyAmountUnitMeasure" businessElementId="a5a661d2-0ed1-4210-a5c1-49d85ce6d3a3" modelElementPath="interventionAct.procedureActivityAct2.medicationActivity2.medicationSupplyOrder2.quantity">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_p1qaYhrTEeGo461UQq-B1g"/>
+    </elements>
+    <elements xmi:id="_wRiyAMubEeeai8dhqDFXyw" businessElement="ProcedureMedicationAdministrationSupplyDateTime" businessElementId="16b75dde-f0fe-4368-925b-5a06e71f7f3d" modelElementPath="interventionAct.procedureActivityAct2.medicationActivity2.medicationSupplyOrder2.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_p1pzUBrTEeGo461UQq-B1g"/>
+    </elements>
   </MDMI:MDMIMapping>
 </xmi:XMI>
