@@ -16,6 +16,9 @@
 			<configProperty name="mappingStyle" value="NORMAL" />
 		</qvto:transformation>
 		<transformReport reportPath="${basedir}" />
+		
+		<mdmiSort model="platform:/resource/CDA/map/cdamap.mdmi" />
+		
 
 	</target>
 	
