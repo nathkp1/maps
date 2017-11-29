@@ -2497,8 +2497,6 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_xmn14NE-EeeVI6shA3KNFw" businessElement="AllergyObservationValueCode" modelElement="_3bHDQLkAEeODDJAC5t5vpw" businessElementId="6d660cc5-7ab5-4056-9445-c8435f4b55fa" modelElementPath="allergyConcernAct2.allergyObservation2.value"/>
-    <elements xmi:id="_2Vf_0NE-EeeVI6shA3KNFw" businessElement="AllergyObservationEndDateTime" modelElement="_QjUYoLkTEeODDJAC5t5vpw" businessElementId="94441b66-5843-4b47-9be2-153dea534898" modelElementPath="allergyConcernAct2.allergyObservation2.effectiveTime"/>
-    <elements xmi:id="_4h4X0NE-EeeVI6shA3KNFw" businessElement="AllergyObservationStartDateTime" modelElement="_QjUYoLkTEeODDJAC5t5vpw" businessElementId="4136e7ad-6afe-409b-891a-a985f34c4682" modelElementPath="allergyConcernAct2.allergyObservation2.effectiveTime"/>
     <elements xmi:id="_8XTxQNE-EeeVI6shA3KNFw" businessElement="AllergyObservationRecordedStartDateTime" businessElementId="dd49daea-9019-4236-a1ea-56346b3b3641" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.time">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
@@ -2534,5 +2532,12 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <elements xmi:id="_GECf0NFAEeeVI6shA3KNFw" businessElement="AllergyReactionSeverityNotes" modelElement="_LNTEMM26EeSEZ8MJJ3ZzLg" businessElementId="8ceee36a-8b13-4c6d-a4b0-cc102f6b60c6" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.severityObservation2.text"/>
     <elements xmi:id="_OWhTYNFAEeeVI6shA3KNFw" businessElement="AllergyObservationSeverityNotes" modelElement="_LNTEMM26EeSEZ8MJJ3ZzLg" businessElementId="9f911ed4-85aa-4628-8b89-a02433b67949" modelElementPath="allergyConcernAct2.allergyObservation2.severityObservation2.text"/>
     <elements xmi:id="_Rk1pgNFAEeeVI6shA3KNFw" businessElement="AllergyObservationSeverityValueCode" modelElement="_2FGu6hSVEeGGzu7fmW9pXw" businessElementId="7931e589-0680-4a02-9d29-b8cd923b9dc5" modelElementPath="allergyConcernAct2.allergyObservation2.severityObservation2.value"/>
+    <elements xmi:id="_6EG6UNSFEeeH-pUxfl1XLg" businessElement="AllergyConcernOnsetDate" modelElement="_QjUYoLkTEeODDJAC5t5vpw" businessElementId="6dd1c7a1-26b5-459f-94c4-47ccec635fba" modelElementPath="allergyConcernAct2.allergyObservation2.effectiveTime"/>
+    <elements xmi:id="_IahmQNSGEeeH-pUxfl1XLg" businessElement="AllergyConcernLastKnownOccuranceDateTime" modelElement="_QjUYoLkTEeODDJAC5t5vpw" businessElementId="2e75f6cd-4680-40c3-8430-6c28444638bd" modelElementPath="allergyConcernAct2.allergyObservation2.effectiveTime"/>
+    <elements xmi:id="_rYn18NSIEeeH-pUxfl1XLg" businessElement="AllergyObservationAllergenCode" modelElement="_yZIS8PryEeO3D4OxHxUkag" businessElementId="a14fdf6b-cab0-434c-9e67-827e6261cb72" modelElementPath="allergyConcernAct2.allergyObservation2.participant.participantRole.playingEntity.code"/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_V7q3ENSGEeeH-pUxfl1XLg" base_Class="_uCiIYLNwEeOtlapy2HWYww">
+    <elements xmi:id="_V7t6YNSGEeeH-pUxfl1XLg" businessElement="AllergyConcernStartDateTime" modelElement="_2EPMMBSVEeGGzu7fmW9pXw" businessElementId="e7e780ef-09c5-48e9-8b43-75b14e921d35" modelElementPath="effectiveTime"/>
+    <elements xmi:id="_X0tcUNSGEeeH-pUxfl1XLg" businessElement="AllergyConcernEndDateTime" modelElement="_2EPMMBSVEeGGzu7fmW9pXw" businessElementId="99184840-a095-41b1-b361-ce05425e0352" modelElementPath="effectiveTime"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>

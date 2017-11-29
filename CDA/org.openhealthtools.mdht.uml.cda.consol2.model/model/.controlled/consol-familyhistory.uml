@@ -532,4 +532,22 @@
     <elements xmi:id="_ZDTwkJGiEeeme8lojTumow" businessElement="FamilyHistoryOrganizerRelatedPartyBirthDate" modelElement="_QeGkg9c5EeGfQ6frO0B-Jg" businessElementId="7aae0ee8-a0a8-4a89-89be-fe47d37ccef9" modelElementPath="familyHistory.subject.relatedSubject.subject.birthTime"/>
     <elements xmi:id="_s4B4QJGiEeeme8lojTumow" businessElement="FamilyHistoryOrganizerRelatedPartyDeceasedFlag" modelElement="_QeHLkNc5EeGfQ6frO0B-Jg" businessElementId="c176c614-c8ba-48b5-8b8e-08a74b12f730" modelElementPath="familyHistory.subject.relatedSubject.subject.sDTCDeceasedInd"/>
   </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_9F9GINOSEeevct2YvdjP-Q" base_Class="_NGivoIevEeSBauRYePLghA">
+    <elements xmi:id="_9GAwgNOSEeevct2YvdjP-Q" businessElement="FamilyHistoryOrganizerContainer" modelElement="_iHnOUIeyEeSBauRYePLghA" businessElementId="aef0e0c6-7494-412d-b3ae-04db49eb5fb1" modelElementPath="familyHistoryOrganizer2"/>
+    <elements xmi:id="_DRtdwNOTEeevct2YvdjP-Q" businessElement="FamilyHistoryOrganizerID" modelElement="_0htuAIb1EeSxzopshBnQuw" businessElementId="e745267e-b9ab-47fc-9c2b-a6e63d6f832f" modelElementPath="familyHistoryOrganizer2.id"/>
+    <elements xmi:id="_MkBEsNOVEeeOx-qjLzWGqg" businessElement="FamilyHistorySectionNotes" modelElement="_2IahkBSVEeGGzu7fmW9pXw" businessElementId="ba3b6032-f091-49c3-8e30-afc09d257502" modelElementPath="text"/>
+    <elements xmi:id="_tieCwNOVEeeOx-qjLzWGqg" businessElement="FamilyHistoryObservationTypeCode" modelElement="_ApNKsIY6EeS7A_69H25Pzw" businessElementId="84750be4-ad86-4baf-8ea6-a480423f0e0f" modelElementPath="familyHistoryOrganizer2.familyHistoryObservation2.code"/>
+    <elements xmi:id="_vjyaQNOVEeeOx-qjLzWGqg" businessElement="FamilyHistoryObservationID" modelElement="_2ItcgRSVEeGGzu7fmW9pXw" businessElementId="55c6a966-2c55-467f-9a8a-76ab62e78f02" modelElementPath="familyHistoryOrganizer2.familyHistoryObservation2.id"/>
+    <elements xmi:id="_wjarQNOVEeeOx-qjLzWGqg" businessElement="FamilyHistoryObservationContainer" modelElement="_ULPOkIb4EeSxzopshBnQuw" businessElementId="e67b038a-c632-4106-9e65-72b25ad4b364" modelElementPath="familyHistoryOrganizer2.familyHistoryObservation2"/>
+    <elements xmi:id="_0exGgNOVEeeOx-qjLzWGqg" businessElement="FamilyHistoryDateTime" modelElement="_R-FSICHiEeGFLIX-2_sWzA" businessElementId="1694da9f-ab89-43a3-b6e9-14386e4bb3b9" modelElementPath="familyHistoryOrganizer2.familyHistoryObservation2.effectiveTime"/>
+    <elements xmi:id="_2bvwkNOVEeeOx-qjLzWGqg" businessElement="FamilyHistoryObservationValueCode" modelElement="_2IpyJxSVEeGGzu7fmW9pXw" businessElementId="baeed38e-85ae-47e6-bb5d-29cf99db3ec5" modelElementPath="familyHistoryOrganizer2.familyHistoryObservation2.value"/>
+    <elements xmi:id="_5Kz-4NOVEeeOx-qjLzWGqg" businessElement="FamilyHistoryAgeAtObservationNumber" businessElementId="4b0bf86b-4512-44a4-9473-2c473a106d9f" modelElementPath="familyHistoryOrganizer2.familyHistoryObservation2.ageObservation.value">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_2EqqCxSVEeGGzu7fmW9pXw"/>
+    </elements>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_ZhrN8NOVEeeOx-qjLzWGqg" base_Class="_6whQEIbpEeSxzopshBnQuw">
+    <elements xmi:id="_ZhscENOVEeeOx-qjLzWGqg" businessElement="FamilyHistoryOrganizerRelatedPartyTypeCode" modelElement="_6_OoINc4EeGfQ6frO0B-Jg" businessElementId="dce9f617-fc0d-48d9-9f52-dd9e8140b0e3" modelElementPath="subject.relatedSubject.code"/>
+    <elements xmi:id="_cO_v0NOVEeeOx-qjLzWGqg" businessElement="FamilyHistoryOrganizerRelatedPartyAdministrativeGenderCode" modelElement="_QeGkgNc5EeGfQ6frO0B-Jg" businessElementId="9d82c959-fe3f-4c1a-a50a-03856c4b306f" modelElementPath="subject.relatedSubject.subject.administrativeGenderCode"/>
+    <elements xmi:id="_e3kUkNOVEeeOx-qjLzWGqg" businessElement="FamilyHistoryOrganizerRelatedPartyBirthDate" modelElement="_QeGkg9c5EeGfQ6frO0B-Jg" businessElementId="7aae0ee8-a0a8-4a89-89be-fe47d37ccef9" modelElementPath="subject.relatedSubject.subject.birthTime"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
