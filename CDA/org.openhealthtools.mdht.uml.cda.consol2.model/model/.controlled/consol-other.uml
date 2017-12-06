@@ -3456,9 +3456,7 @@ Instructions are information or directions to the patient. Use the Instructions 
     </elements>
     <elements xmi:id="_NXdSwMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusProblemObservationText" modelElement="_5lm5Q-bjEeGINOJ_SD9_dA" businessElementId="4db1369c-dfc2-48a6-84b1-21543dd98c2c" modelElementPath="functionalStatusProblemObservation.text" condition=""/>
     <elements xmi:id="_a0mv4OYzEeW5Oax7LpOkcw" businessElement="FunctionalStatusResultsObservationEffectiveTime" modelElement="_nm5IhebxEeGINOJ_SD9_dA" businessElementId="a3b0717c-11c8-4822-94a9-6e0d967bce70" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.effectiveTime" condition=""/>
-    <elements xmi:id="_BVSTYHCMEeaDT6eyVw56Qg" businessElement="FunctionalStatusResultsObservationValueCoded" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="71415e1f-33a7-46d5-bdb7-e8303cfb4442" modelElementPath="functionalStatusResultObservation.value.cd" condition=""/>
-    <elements xmi:id="_F_c8cHCMEeaDT6eyVw56Qg" businessElement="FunctionalStatusResultsObservationValueQuantity" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="83248efa-9390-414c-bda3-0a5d45049040" modelElementPath="functionalStatusResultObservation.value.pq" condition=""/>
-    <elements xmi:id="_JTVIAHCMEeaDT6eyVw56Qg" businessElement="FunctionalStatusResultsObservationValueText" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="a72b1478-4390-4f7c-82bf-8d2b105afcb5" modelElementPath="functionalStatusResultObservation.value.st" condition=""/>
+    <elements xmi:id="_BVSTYHCMEeaDT6eyVw56Qg" businessElement="FunctionalStatusResultsObservationValueCoded" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="71415e1f-33a7-46d5-bdb7-e8303cfb4442" modelElementPath="functionalStatusResultObservation.value" condition=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_tUPh8JNJEeekqv8uV9vE_w" base_Class="_YCS1AP1WEeOW-qBXb0kbTA">
     <elements xmi:id="_tUTzYJNJEeekqv8uV9vE_w" businessElement="InterventionSectionContainer" modelElement="_YCS1AP1WEeOW-qBXb0kbTA" businessElementId="849e159b-fbe5-417c-a5f8-33682e11d2cb" modelElementPath=""/>
@@ -4827,5 +4825,8 @@ Instructions are information or directions to the patient. Use the Instructions 
   <MDMI:MDMIMapping xmi:id="_PivwkNOeEeewTvEj3-k7xw" base_Class="_yU2tgOD0EeOmBMTtnrPqww">
     <elements xmi:id="_Piw-sNOeEeewTvEj3-k7xw" businessElement="FunctionalStatusResultOrganizerID" modelElement="_A3Tx8Ob0EeGINOJ_SD9_dA" businessElementId="1f107244-2f1f-4c57-905d-2a3312129659" modelElementPath="id"/>
     <elements xmi:id="_2XryINOkEeeFr58dSfy8-Q" businessElement="FunctionalStatusResultOrganizerID" modelElement="_A3Tx8Ob0EeGINOJ_SD9_dA" businessElementId="1f107244-2f1f-4c57-905d-2a3312129659" modelElementPath="id"/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_iYwusNkMEeewwMY8KIUDtw" base_Class="_3WqogMzSEeO93sHu8pHB2g">
+    <elements xmi:id="_iYyj4NkMEeewwMY8KIUDtw" businessElement="FunctionalStatusObservationValueCode" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="3a39e4e1-29a9-488d-92fb-59bd0815b850" modelElementPath="value"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
