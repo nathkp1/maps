@@ -76,230 +76,6 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LrX8s3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7LvCUM3tEeahpd1P9sS4xg" name="section_slice_pos4" type="_7LvpY83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7LvCVM3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7LvCWs3tEeahpd1P9sS4xg">
-            <body>SHALL contain exactly one [1..1] section (CONF:2219-1051) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7LvCWM3tEeahpd1P9sS4xg">
-            <body>Medications Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7LvpYc3tEeahpd1P9sS4xg">
-            <body>Medications Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7LvCUc3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LvCUs3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7LyFoM3tEeahpd1P9sS4xg" name="section_slice_pos5" type="_7Lysts3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7LyFpM3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7Lysss3tEeahpd1P9sS4xg">
-            <body>SHALL contain exactly one [1..1] section (CONF:2219-1050) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7LyssM3tEeahpd1P9sS4xg">
-            <body>Problem Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7LystM3tEeahpd1P9sS4xg">
-            <body>Problem Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7LyFoc3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LyFos3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7L2XEM3tEeahpd1P9sS4xg" name="section_slice_pos6" type="_7L2-I83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L2XFM3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7L2XGs3tEeahpd1P9sS4xg">
-            <body>SHOULD contain zero or one [0..1] section (CONF:2219-1052) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7L2XGM3tEeahpd1P9sS4xg">
-            <body>Procedures Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7L2-Ic3tEeahpd1P9sS4xg">
-            <body>Procedures Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7L2XEc3tEeahpd1P9sS4xg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L2XEs3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7L5aYs3tEeahpd1P9sS4xg" name="section_slice_pos7" type="_7L6Bec3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L5aZs3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7L6Bdc3tEeahpd1P9sS4xg">
-            <body>SHALL contain exactly one [1..1] section (CONF:2219-1053) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7L6Bc83tEeahpd1P9sS4xg">
-            <body>Results Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7L6Bd83tEeahpd1P9sS4xg">
-            <body>Results Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7L5aY83tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L5aZM3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7L8dt83tEeahpd1P9sS4xg" name="section_slice_pos8" type="_7L9Ey83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L9Ewc3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7L9Ex83tEeahpd1P9sS4xg">
-            <body>MAY contain zero or one [0..1] section (CONF:2219-1054) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7L9Exc3tEeahpd1P9sS4xg">
-            <body>Advance Directives Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7L9Eyc3tEeahpd1P9sS4xg">
-            <body>Advance Directives Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7L8duM3tEeahpd1P9sS4xg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L8duc3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7L_hAs3tEeahpd1P9sS4xg" name="section_slice_pos9" type="_7MAIFc3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L_hBs3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7MAIEc3tEeahpd1P9sS4xg">
-            <body>MAY contain zero or one [0..1] section (CONF:2219-1055) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7L_hCs3tEeahpd1P9sS4xg">
-            <body>Encounters Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MAIE83tEeahpd1P9sS4xg">
-            <body>Encounters Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7L_hA83tEeahpd1P9sS4xg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L_hBM3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7MB9Rc3tEeahpd1P9sS4xg" name="section_slice_pos10" type="_7MCkW83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MCkUc3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7MCkV83tEeahpd1P9sS4xg">
-            <body>MAY contain zero or one [0..1] section (CONF:2219-1056) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MCkVc3tEeahpd1P9sS4xg">
-            <body>Family History Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MCkWc3tEeahpd1P9sS4xg">
-            <body>Family History Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MB9Rs3tEeahpd1P9sS4xg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MB9R83tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7MFAkM3tEeahpd1P9sS4xg" name="section_slice_pos11" type="_7MFnoM3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MFAlM3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7MFAms3tEeahpd1P9sS4xg">
-            <body>MAY contain zero or one [0..1] section (CONF:2219-1057) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MFAmM3tEeahpd1P9sS4xg">
-            <body>Functional Status Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MFAnM3tEeahpd1P9sS4xg">
-            <body>Functional Status Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MFAkc3tEeahpd1P9sS4xg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MFAks3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7MHc0M3tEeahpd1P9sS4xg" name="section_slice_pos12" type="_7MID5M3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MHc1M3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7MID4M3tEeahpd1P9sS4xg">
-            <body>MAY contain zero or one [0..1] section (CONF:2219-1058) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MHc2M3tEeahpd1P9sS4xg">
-            <body>Immunizations Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MID4s3tEeahpd1P9sS4xg">
-            <body>Immunizations Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MHc0c3tEeahpd1P9sS4xg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MHc0s3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7MKgI83tEeahpd1P9sS4xg" name="section_slice_pos13" type="_7MLHOs3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MLHMM3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7MLHNs3tEeahpd1P9sS4xg">
-            <body>MAY contain zero or one [0..1] section (CONF:2219-1060) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MLHNM3tEeahpd1P9sS4xg">
-            <body>Nutrition Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MLHOM3tEeahpd1P9sS4xg">
-            <body>Nutrition Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MKgJM3tEeahpd1P9sS4xg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MKgJc3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7MNjcM3tEeahpd1P9sS4xg" name="section_slice_pos14" type="_7MNjfs3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MNjdM3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7MNjes3tEeahpd1P9sS4xg">
-            <body>MAY contain zero or one [0..1] section (CONF:2219-1061) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MNjeM3tEeahpd1P9sS4xg">
-            <body>Mental Status Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MNjfM3tEeahpd1P9sS4xg">
-            <body>Mental Status Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MNjcc3tEeahpd1P9sS4xg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MNjcs3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7MP_sM3tEeahpd1P9sS4xg" name="section_slice_pos15" type="_7MQmwc3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MP_tM3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7MP_us3tEeahpd1P9sS4xg">
-            <body>SHALL contain exactly one [1..1] section (CONF:2219-1062) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MP_uM3tEeahpd1P9sS4xg">
-            <body>Vital Signs Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MP_vM3tEeahpd1P9sS4xg">
-            <body>Vital Signs Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MP_sc3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MP_ss3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7MSb-c3tEeahpd1P9sS4xg" name="section_slice_pos16" type="_7MTqEc3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MTDA83tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7MTDCc3tEeahpd1P9sS4xg">
-            <body>SHALL contain exactly one [1..1] section (CONF:2219-1063) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MTDB83tEeahpd1P9sS4xg">
-            <body>Social History Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MTDC83tEeahpd1P9sS4xg">
-            <body>Social History Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MTDAM3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MTDAc3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7MWGUM3tEeahpd1P9sS4xg" name="section_slice_pos17" type="_7MWtZM3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MWGVM3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7MWtYM3tEeahpd1P9sS4xg">
-            <body>SHOULD contain zero or one [0..1] section (CONF:2219-1064) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MWGWM3tEeahpd1P9sS4xg">
-            <body>Plan of Treatment Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MWtYs3tEeahpd1P9sS4xg">
-            <body>Plan of Treatment Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MWGUc3tEeahpd1P9sS4xg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MWGUs3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7MYiks3tEeahpd1P9sS4xg" name="section_slice_pos18" type="_7MZJps3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MYils3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7MZJos3tEeahpd1P9sS4xg">
-            <body>MAY contain zero or one [0..1] section (CONF:2219-1065) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MZJoM3tEeahpd1P9sS4xg">
-            <body>Payers Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7MZJpM3tEeahpd1P9sS4xg">
-            <body>Payers Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MYik83tEeahpd1P9sS4xg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MYilM3tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_7Ma-1c3tEeahpd1P9sS4xg" name="section_slice_pos19" type="_7Mbl683tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7Mbl4c3tEeahpd1P9sS4xg">
-          <ownedComment xmi:id="_7Mbl583tEeahpd1P9sS4xg">
-            <body>MAY contain zero or one [0..1] section (CONF:2219-1059) such that it</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7Mbl5c3tEeahpd1P9sS4xg">
-            <body>Medical Equipment Section</body>
-          </ownedComment>
-          <ownedComment xmi:id="_7Mbl6c3tEeahpd1P9sS4xg">
-            <body>Medical Equipment Section</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Ma-1s3tEeahpd1P9sS4xg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Ma-183tEeahpd1P9sS4xg" value="1"/>
-          <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
-        </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_7LoUrs3tEeahpd1P9sS4xg" name="Event-1">
           <generalization xmi:id="_7LoUr83tEeahpd1P9sS4xg">
             <general xmi:type="uml:Class" href="FHIR-Core.uml#_5FUAdMFMEea5pdrFDq-m2g"/>
@@ -1778,22 +1554,10 @@ The authorization consent is used for referring to consents that are documented 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LubRM3tEeahpd1P9sS4xg" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7LvCVM3tEeahpd1P9sS4xg" memberEnd="_7LvCVc3tEeahpd1P9sS4xg _7LvCUM3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7LvCVc3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7LvCVM3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7LvCVs3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LvCV83tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_7Lxelc3tEeahpd1P9sS4xg" memberEnd="_7Lxels3tEeahpd1P9sS4xg _7Lxekc3tEeahpd1P9sS4xg">
         <ownedEnd xmi:id="_7Lxels3tEeahpd1P9sS4xg" type="_7LvpY83tEeahpd1P9sS4xg" association="_7Lxelc3tEeahpd1P9sS4xg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Lxel83tEeahpd1P9sS4xg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LxemM3tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7LyFpM3tEeahpd1P9sS4xg" memberEnd="_7LyFpc3tEeahpd1P9sS4xg _7LyFoM3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7LyFpc3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7LyFpM3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7LyFps3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LyFp83tEeahpd1P9sS4xg" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_7L1wBM3tEeahpd1P9sS4xg" memberEnd="_7L1wBc3tEeahpd1P9sS4xg _7L1wAM3tEeahpd1P9sS4xg">
@@ -1802,22 +1566,10 @@ The authorization consent is used for referring to consents that are documented 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L1wB83tEeahpd1P9sS4xg" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7L2XFM3tEeahpd1P9sS4xg" memberEnd="_7L2XFc3tEeahpd1P9sS4xg _7L2XEM3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7L2XFc3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7L2XFM3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7L2XFs3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L2XF83tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_7L4zV83tEeahpd1P9sS4xg" memberEnd="_7L4zWM3tEeahpd1P9sS4xg _7L4zU83tEeahpd1P9sS4xg">
         <ownedEnd xmi:id="_7L4zWM3tEeahpd1P9sS4xg" type="_7L2-I83tEeahpd1P9sS4xg" association="_7L4zV83tEeahpd1P9sS4xg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7L4zWc3tEeahpd1P9sS4xg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L4zWs3tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7L5aZs3tEeahpd1P9sS4xg" memberEnd="_7L6BcM3tEeahpd1P9sS4xg _7L5aYs3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7L6BcM3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7L5aZs3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7L6Bcc3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L6Bcs3tEeahpd1P9sS4xg" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_7L72qs3tEeahpd1P9sS4xg" memberEnd="_7L8dsM3tEeahpd1P9sS4xg _7L72ps3tEeahpd1P9sS4xg">
@@ -1826,58 +1578,10 @@ The authorization consent is used for referring to consents that are documented 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L8dss3tEeahpd1P9sS4xg" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7L9Ewc3tEeahpd1P9sS4xg" memberEnd="_7L9Ews3tEeahpd1P9sS4xg _7L8dt83tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7L9Ews3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7L9Ewc3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7L9Ew83tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L9ExM3tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7L_hBs3tEeahpd1P9sS4xg" memberEnd="_7L_hB83tEeahpd1P9sS4xg _7L_hAs3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7L_hB83tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7L_hBs3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7L_hCM3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L_hCc3tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7MCkUc3tEeahpd1P9sS4xg" memberEnd="_7MCkUs3tEeahpd1P9sS4xg _7MB9Rc3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7MCkUs3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7MCkUc3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MCkU83tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MCkVM3tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7MFAlM3tEeahpd1P9sS4xg" memberEnd="_7MFAlc3tEeahpd1P9sS4xg _7MFAkM3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7MFAlc3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7MFAlM3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MFAls3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MFAl83tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7MHc1M3tEeahpd1P9sS4xg" memberEnd="_7MHc1c3tEeahpd1P9sS4xg _7MHc0M3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7MHc1c3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7MHc1M3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MHc1s3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MHc183tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_7MJ5Fc3tEeahpd1P9sS4xg" memberEnd="_7MJ5Fs3tEeahpd1P9sS4xg _7MJ5Ec3tEeahpd1P9sS4xg">
         <ownedEnd xmi:id="_7MJ5Fs3tEeahpd1P9sS4xg" type="_7MID5M3tEeahpd1P9sS4xg" association="_7MJ5Fc3tEeahpd1P9sS4xg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MJ5F83tEeahpd1P9sS4xg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MJ5GM3tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7MLHMM3tEeahpd1P9sS4xg" memberEnd="_7MLHMc3tEeahpd1P9sS4xg _7MKgI83tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7MLHMc3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7MLHMM3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MLHMs3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MLHM83tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7MNjdM3tEeahpd1P9sS4xg" memberEnd="_7MNjdc3tEeahpd1P9sS4xg _7MNjcM3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7MNjdc3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7MNjdM3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MNjds3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MNjd83tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7MP_tM3tEeahpd1P9sS4xg" memberEnd="_7MP_tc3tEeahpd1P9sS4xg _7MP_sM3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7MP_tc3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7MP_tM3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MP_ts3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MP_t83tEeahpd1P9sS4xg" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_7MSb8c3tEeahpd1P9sS4xg" memberEnd="_7MSb8s3tEeahpd1P9sS4xg _7MR06M3tEeahpd1P9sS4xg">
@@ -1886,34 +1590,10 @@ The authorization consent is used for referring to consents that are documented 
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MSb9M3tEeahpd1P9sS4xg" value="1"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7MTDA83tEeahpd1P9sS4xg" memberEnd="_7MTDBM3tEeahpd1P9sS4xg _7MSb-c3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7MTDBM3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7MTDA83tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MTDBc3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MTDBs3tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_7MVfRs3tEeahpd1P9sS4xg" memberEnd="_7MVfR83tEeahpd1P9sS4xg _7MVfQs3tEeahpd1P9sS4xg">
         <ownedEnd xmi:id="_7MVfR83tEeahpd1P9sS4xg" type="_7MTqEc3tEeahpd1P9sS4xg" association="_7MVfRs3tEeahpd1P9sS4xg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MVfSM3tEeahpd1P9sS4xg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MVfSc3tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7MWGVM3tEeahpd1P9sS4xg" memberEnd="_7MWGVc3tEeahpd1P9sS4xg _7MWGUM3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7MWGVc3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7MWGVM3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MWGVs3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MWGV83tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7MYils3tEeahpd1P9sS4xg" memberEnd="_7MYil83tEeahpd1P9sS4xg _7MYiks3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7MYil83tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7MYils3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7MYimM3tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MYimc3tEeahpd1P9sS4xg" value="1"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_7Mbl4c3tEeahpd1P9sS4xg" memberEnd="_7Mbl4s3tEeahpd1P9sS4xg _7Ma-1c3tEeahpd1P9sS4xg">
-        <ownedEnd xmi:id="_7Mbl4s3tEeahpd1P9sS4xg" type="_7FPYwc3tEeahpd1P9sS4xg" association="_7Mbl4c3tEeahpd1P9sS4xg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Mbl483tEeahpd1P9sS4xg" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Mbl5M3tEeahpd1P9sS4xg" value="1"/>
         </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7MdbGM3tEeahpd1P9sS4xg" name="CCDA-on-FHIR-Discharge-Summary">
@@ -18764,14 +18444,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   </fhir:ElementSlicing>
   <fhir:ShortDescription xmi:id="_7LubRs3tEeahpd1P9sS4xg" base_Comment="_7LubRc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7LubSM3tEeahpd1P9sS4xg" base_Comment="_7LubR83tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7LvCU83tEeahpd1P9sS4xg" id="103819" base_Property="_7LvCUM3tEeahpd1P9sS4xg" label="MedicationsSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10160-0" display="History of medication use"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7LvCWc3tEeahpd1P9sS4xg" base_Comment="_7LvCWM3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7LvpYM3tEeahpd1P9sS4xg" base_Comment="_7LvCWs3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7LvpYs3tEeahpd1P9sS4xg" base_Comment="_7LvpYc3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7LwQcs3tEeahpd1P9sS4xg" id="103841" base_Property="_7LvpZc3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7LwQdM3tEeahpd1P9sS4xg" base_Comment="_7LwQc83tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7LwQds3tEeahpd1P9sS4xg" base_Comment="_7LwQdc3tEeahpd1P9sS4xg"/>
@@ -18784,14 +18456,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7LxelM3tEeahpd1P9sS4xg" id="111602" base_Property="_7Lxekc3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7Lxems3tEeahpd1P9sS4xg" base_Comment="_7Lxemc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7LxenM3tEeahpd1P9sS4xg" base_Comment="_7Lxem83tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7LyFo83tEeahpd1P9sS4xg" id="103818" base_Property="_7LyFoM3tEeahpd1P9sS4xg" label="ProblemSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="11450-4" display="Problem lists"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7Lyssc3tEeahpd1P9sS4xg" base_Comment="_7LyssM3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7Lyss83tEeahpd1P9sS4xg" base_Comment="_7Lysss3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7Lystc3tEeahpd1P9sS4xg" base_Comment="_7LystM3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7Lz60s3tEeahpd1P9sS4xg" id="103837" base_Property="_7LzTwM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7Lz61M3tEeahpd1P9sS4xg" base_Comment="_7Lz6083tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7Lz61s3tEeahpd1P9sS4xg" base_Comment="_7Lz61c3tEeahpd1P9sS4xg"/>
@@ -18804,14 +18468,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7L1wA83tEeahpd1P9sS4xg" id="111469" base_Property="_7L1wAM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7L1wCc3tEeahpd1P9sS4xg" base_Comment="_7L1wCM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7L1wC83tEeahpd1P9sS4xg" base_Comment="_7L1wCs3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7L2XE83tEeahpd1P9sS4xg" id="103820" base_Property="_7L2XEM3tEeahpd1P9sS4xg" label="ProceduresSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="47519-4" display="History of procedures"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7L2XGc3tEeahpd1P9sS4xg" base_Comment="_7L2XGM3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7L2-IM3tEeahpd1P9sS4xg" base_Comment="_7L2XGs3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7L2-Is3tEeahpd1P9sS4xg" base_Comment="_7L2-Ic3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7L3lMs3tEeahpd1P9sS4xg" id="103844" base_Property="_7L2-Jc3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7L3lNM3tEeahpd1P9sS4xg" base_Comment="_7L3lM83tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7L3lNs3tEeahpd1P9sS4xg" base_Comment="_7L3lNc3tEeahpd1P9sS4xg"/>
@@ -18824,14 +18480,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7L4zVs3tEeahpd1P9sS4xg" id="111625" base_Property="_7L4zU83tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7L4zXM3tEeahpd1P9sS4xg" base_Comment="_7L4zW83tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7L5aYc3tEeahpd1P9sS4xg" base_Comment="_7L5aYM3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7L5aZc3tEeahpd1P9sS4xg" id="103821" base_Property="_7L5aYs3tEeahpd1P9sS4xg" label="ResultsSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="30954-2" display="Relevant diagnostic tests and laboratory data"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7L6BdM3tEeahpd1P9sS4xg" base_Comment="_7L6Bc83tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7L6Bds3tEeahpd1P9sS4xg" base_Comment="_7L6Bdc3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7L6BeM3tEeahpd1P9sS4xg" base_Comment="_7L6Bd83tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7L6og83tEeahpd1P9sS4xg" id="103847" base_Property="_7L6ogM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7L6ohc3tEeahpd1P9sS4xg" base_Comment="_7L6ohM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7L6oh83tEeahpd1P9sS4xg" base_Comment="_7L6ohs3tEeahpd1P9sS4xg"/>
@@ -18844,14 +18492,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7L72qc3tEeahpd1P9sS4xg" id="111492" base_Property="_7L72ps3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7L8dtM3tEeahpd1P9sS4xg" base_Comment="_7L8ds83tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7L8dts3tEeahpd1P9sS4xg" base_Comment="_7L8dtc3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7L9EwM3tEeahpd1P9sS4xg" id="103822" base_Property="_7L8dt83tEeahpd1P9sS4xg" label="Advance DirectivesSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="42348-3" display="Advance directives"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7L9Exs3tEeahpd1P9sS4xg" base_Comment="_7L9Exc3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7L9EyM3tEeahpd1P9sS4xg" base_Comment="_7L9Ex83tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7L9Eys3tEeahpd1P9sS4xg" base_Comment="_7L9Eyc3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7L9r083tEeahpd1P9sS4xg" id="103850" base_Property="_7L9r0M3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7L-S4M3tEeahpd1P9sS4xg" base_Comment="_7L9r1M3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7L-S4s3tEeahpd1P9sS4xg" base_Comment="_7L-S4c3tEeahpd1P9sS4xg"/>
@@ -18861,14 +18501,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7L-5983tEeahpd1P9sS4xg" id="103852" base_Property="_7L-59M3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7L-5-c3tEeahpd1P9sS4xg" base_Comment="_7L-5-M3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7L_hAc3tEeahpd1P9sS4xg" base_Comment="_7L_hAM3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7L_hBc3tEeahpd1P9sS4xg" id="103823" base_Property="_7L_hAs3tEeahpd1P9sS4xg" label="EncountersSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="46240-8" display="Encounters"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7MAIEM3tEeahpd1P9sS4xg" base_Comment="_7L_hCs3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7MAIEs3tEeahpd1P9sS4xg" base_Comment="_7MAIEc3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7MAIFM3tEeahpd1P9sS4xg" base_Comment="_7MAIE83tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7MAvI83tEeahpd1P9sS4xg" id="103853" base_Property="_7MAvIM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MAvJc3tEeahpd1P9sS4xg" base_Comment="_7MAvJM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MAvJ83tEeahpd1P9sS4xg" base_Comment="_7MAvJs3tEeahpd1P9sS4xg"/>
@@ -18878,14 +18510,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7MB9QM3tEeahpd1P9sS4xg" id="103855" base_Property="_7MBWOM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MB9Qs3tEeahpd1P9sS4xg" base_Comment="_7MB9Qc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MB9RM3tEeahpd1P9sS4xg" base_Comment="_7MB9Q83tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7MCkUM3tEeahpd1P9sS4xg" id="103824" base_Property="_7MB9Rc3tEeahpd1P9sS4xg" label="Family HistorySection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10157-6" display="History of family member diseases"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7MCkVs3tEeahpd1P9sS4xg" base_Comment="_7MCkVc3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7MCkWM3tEeahpd1P9sS4xg" base_Comment="_7MCkV83tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7MCkWs3tEeahpd1P9sS4xg" base_Comment="_7MCkWc3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7MDLY83tEeahpd1P9sS4xg" id="103856" base_Property="_7MDLYM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MDLZc3tEeahpd1P9sS4xg" base_Comment="_7MDLZM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MDycM3tEeahpd1P9sS4xg" base_Comment="_7MDLZs3tEeahpd1P9sS4xg"/>
@@ -18895,14 +18519,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7MEZg83tEeahpd1P9sS4xg" id="103858" base_Property="_7MEZgM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MEZhc3tEeahpd1P9sS4xg" base_Comment="_7MEZhM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MEZh83tEeahpd1P9sS4xg" base_Comment="_7MEZhs3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7MFAk83tEeahpd1P9sS4xg" id="103825" base_Property="_7MFAkM3tEeahpd1P9sS4xg" label="Functional StatusSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="47420-5" display="Functional status assessment"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7MFAmc3tEeahpd1P9sS4xg" base_Comment="_7MFAmM3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7MFAm83tEeahpd1P9sS4xg" base_Comment="_7MFAms3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7MFAnc3tEeahpd1P9sS4xg" base_Comment="_7MFAnM3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7MFnpc3tEeahpd1P9sS4xg" id="103859" base_Property="_7MFnos3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MGOsc3tEeahpd1P9sS4xg" base_Comment="_7MGOsM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MGOs83tEeahpd1P9sS4xg" base_Comment="_7MGOss3tEeahpd1P9sS4xg"/>
@@ -18912,14 +18528,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7MG1xs3tEeahpd1P9sS4xg" id="103861" base_Property="_7MG1w83tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MG1yM3tEeahpd1P9sS4xg" base_Comment="_7MG1x83tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MG1ys3tEeahpd1P9sS4xg" base_Comment="_7MG1yc3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7MHc083tEeahpd1P9sS4xg" id="103826" base_Property="_7MHc0M3tEeahpd1P9sS4xg" label="ImmunizationsSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="11369-6" display="History of immunization"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7MHc2c3tEeahpd1P9sS4xg" base_Comment="_7MHc2M3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7MID4c3tEeahpd1P9sS4xg" base_Comment="_7MID4M3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7MID483tEeahpd1P9sS4xg" base_Comment="_7MID4s3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7MIq883tEeahpd1P9sS4xg" id="103862" base_Property="_7MIq8M3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MIq9c3tEeahpd1P9sS4xg" base_Comment="_7MIq9M3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MIq983tEeahpd1P9sS4xg" base_Comment="_7MIq9s3tEeahpd1P9sS4xg"/>
@@ -18932,14 +18540,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7MJ5FM3tEeahpd1P9sS4xg" id="112085" base_Property="_7MJ5Ec3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MKgIM3tEeahpd1P9sS4xg" base_Comment="_7MJ5Gc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MKgIs3tEeahpd1P9sS4xg" base_Comment="_7MKgIc3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7MKgJs3tEeahpd1P9sS4xg" id="103828" base_Property="_7MKgI83tEeahpd1P9sS4xg" label="NutritionSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="61144-2" display="Diet and nutrition"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7MLHNc3tEeahpd1P9sS4xg" base_Comment="_7MLHNM3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7MLHN83tEeahpd1P9sS4xg" base_Comment="_7MLHNs3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7MLHOc3tEeahpd1P9sS4xg" base_Comment="_7MLHOM3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7MLuQ83tEeahpd1P9sS4xg" id="103868" base_Property="_7MLuQM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MLuRc3tEeahpd1P9sS4xg" base_Comment="_7MLuRM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MLuR83tEeahpd1P9sS4xg" base_Comment="_7MLuRs3tEeahpd1P9sS4xg"/>
@@ -18949,14 +18549,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7MM8Yc3tEeahpd1P9sS4xg" id="103870" base_Property="_7MMVWM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MM8Y83tEeahpd1P9sS4xg" base_Comment="_7MM8Ys3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MM8Zc3tEeahpd1P9sS4xg" base_Comment="_7MM8ZM3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7MNjc83tEeahpd1P9sS4xg" id="103829" base_Property="_7MNjcM3tEeahpd1P9sS4xg" label="Mental StatusSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="10190-7" display="Mental status"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7MNjec3tEeahpd1P9sS4xg" base_Comment="_7MNjeM3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7MNje83tEeahpd1P9sS4xg" base_Comment="_7MNjes3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7MNjfc3tEeahpd1P9sS4xg" base_Comment="_7MNjfM3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7MOKg83tEeahpd1P9sS4xg" id="103871" base_Property="_7MOKgM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MOKhc3tEeahpd1P9sS4xg" base_Comment="_7MOKhM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MOxkc3tEeahpd1P9sS4xg" base_Comment="_7MOxkM3tEeahpd1P9sS4xg"/>
@@ -18966,14 +18558,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7MPYo83tEeahpd1P9sS4xg" id="103873" base_Property="_7MPYoM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MPYpc3tEeahpd1P9sS4xg" base_Comment="_7MPYpM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MPYp83tEeahpd1P9sS4xg" base_Comment="_7MPYps3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7MP_s83tEeahpd1P9sS4xg" id="103830" base_Property="_7MP_sM3tEeahpd1P9sS4xg" label="Vital SignsSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="8716-3" display="Vital signs"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7MP_uc3tEeahpd1P9sS4xg" base_Comment="_7MP_uM3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7MP_u83tEeahpd1P9sS4xg" base_Comment="_7MP_us3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7MQmwM3tEeahpd1P9sS4xg" base_Comment="_7MP_vM3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7MQmxs3tEeahpd1P9sS4xg" id="103874" base_Property="_7MQmw83tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MRN0c3tEeahpd1P9sS4xg" base_Comment="_7MRN0M3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MRN083tEeahpd1P9sS4xg" base_Comment="_7MRN0s3tEeahpd1P9sS4xg"/>
@@ -18986,14 +18570,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7MSb8M3tEeahpd1P9sS4xg" id="111573" base_Property="_7MR06M3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MSb9s3tEeahpd1P9sS4xg" base_Comment="_7MSb9c3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MSb-M3tEeahpd1P9sS4xg" base_Comment="_7MSb983tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7MTDAs3tEeahpd1P9sS4xg" id="103831" base_Property="_7MSb-c3tEeahpd1P9sS4xg" label="Social HistorySection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="29762-2" display="Social history"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7MTDCM3tEeahpd1P9sS4xg" base_Comment="_7MTDB83tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7MTDCs3tEeahpd1P9sS4xg" base_Comment="_7MTDCc3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7MTqEM3tEeahpd1P9sS4xg" base_Comment="_7MTDC83tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7MURIc3tEeahpd1P9sS4xg" id="103878" base_Property="_7MTqE83tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MURI83tEeahpd1P9sS4xg" base_Comment="_7MURIs3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MURJc3tEeahpd1P9sS4xg" base_Comment="_7MURJM3tEeahpd1P9sS4xg"/>
@@ -19006,14 +18582,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7MVfRc3tEeahpd1P9sS4xg" id="112587" base_Property="_7MVfQs3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MVfS83tEeahpd1P9sS4xg" base_Comment="_7MVfSs3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MVfTc3tEeahpd1P9sS4xg" base_Comment="_7MVfTM3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7MWGU83tEeahpd1P9sS4xg" id="103832" base_Property="_7MWGUM3tEeahpd1P9sS4xg" label="Plan of TreatmentSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="18776-5" display="Plan of treatment"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7MWGWc3tEeahpd1P9sS4xg" base_Comment="_7MWGWM3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7MWtYc3tEeahpd1P9sS4xg" base_Comment="_7MWtYM3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7MWtY83tEeahpd1P9sS4xg" base_Comment="_7MWtYs3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7MXUc83tEeahpd1P9sS4xg" id="103881" base_Property="_7MXUcM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MXUdc3tEeahpd1P9sS4xg" base_Comment="_7MXUdM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MXUd83tEeahpd1P9sS4xg" base_Comment="_7MXUds3tEeahpd1P9sS4xg"/>
@@ -19023,14 +18591,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7MX7iM3tEeahpd1P9sS4xg" id="103883" base_Property="_7MX7hc3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MX7is3tEeahpd1P9sS4xg" base_Comment="_7MX7ic3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MYikc3tEeahpd1P9sS4xg" base_Comment="_7MYikM3tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7MYilc3tEeahpd1P9sS4xg" id="103833" base_Property="_7MYiks3tEeahpd1P9sS4xg" label="PayersSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="48768-6" display="Payers"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7MZJoc3tEeahpd1P9sS4xg" base_Comment="_7MZJoM3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7MZJo83tEeahpd1P9sS4xg" base_Comment="_7MZJos3tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7MZJpc3tEeahpd1P9sS4xg" base_Comment="_7MZJpM3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7MZws83tEeahpd1P9sS4xg" id="103884" base_Property="_7MZwsM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7MZwtc3tEeahpd1P9sS4xg" base_Comment="_7MZwtM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MZwt83tEeahpd1P9sS4xg" base_Comment="_7MZwts3tEeahpd1P9sS4xg"/>
@@ -19040,14 +18600,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ElementDefinition xmi:id="_7Ma-0M3tEeahpd1P9sS4xg" id="103886" base_Property="_7MaXyM3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7Ma-0s3tEeahpd1P9sS4xg" base_Comment="_7Ma-0c3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7Ma-1M3tEeahpd1P9sS4xg" base_Comment="_7Ma-083tEeahpd1P9sS4xg"/>
-  <fhir:ElementDefinition xmi:id="_7Mbl4M3tEeahpd1P9sS4xg" id="103827" base_Property="_7Ma-1c3tEeahpd1P9sS4xg" label="Medical EquipmentSection">
-    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
-      <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="urn:oid:2.16.840.1.113883.6.1" code="46264-8" display="Medical equipment"/>
-    </fixed>
-  </fhir:ElementDefinition>
-  <fhir:ShortDescription xmi:id="_7Mbl5s3tEeahpd1P9sS4xg" base_Comment="_7Mbl5c3tEeahpd1P9sS4xg"/>
-  <fhir:Definition xmi:id="_7Mbl6M3tEeahpd1P9sS4xg" base_Comment="_7Mbl583tEeahpd1P9sS4xg"/>
-  <fhir:Comments xmi:id="_7Mbl6s3tEeahpd1P9sS4xg" base_Comment="_7Mbl6c3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7McM883tEeahpd1P9sS4xg" id="103865" base_Property="_7McM8M3tEeahpd1P9sS4xg"/>
   <fhir:ShortDescription xmi:id="_7McM9c3tEeahpd1P9sS4xg" base_Comment="_7McM9M3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7Mc0AM3tEeahpd1P9sS4xg" base_Comment="_7McM9s3tEeahpd1P9sS4xg"/>
@@ -27460,56 +27012,5 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ShortDescription xmi:id="_8j5vIM3tEeahpd1P9sS4xg" base_Comment="_8j5IHc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8j5vIs3tEeahpd1P9sS4xg" base_Comment="_8j5vIc3tEeahpd1P9sS4xg"/>
   <MDMI:MDMIMapping xmi:id="_en4WMCgUEeeMR4_BVmg6Og" base_Class="_7FPYwc3tEeahpd1P9sS4xg"/>
-  <MDMI:MDMIMapping xmi:id="_evNoUOETEeeSrJFhFrSqfg" base_Class="_7FXUmM3tEeahpd1P9sS4xg">
-    <elements xmi:id="_evQroOETEeeSrJFhFrSqfg" businessElement="DocumentInformationRecipientContainer" modelElement="_7FXUmM3tEeahpd1P9sS4xg" businessElementId="c23536d9-1f87-4d95-9fd8-179c22b9db21" modelElementPath=""/>
-    <elements xmi:id="_qOOCQOETEeeSrJFhFrSqfg" businessElement="DocumentInformationRecipientProviderName" businessElementId="ed94e9d1-c8d1-4824-8523-5673bd609d2e" modelElementPath="valueReference.name">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmEd8M3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_jwFZ0OEWEeeN0-c1wf3ehA" businessElement="DocumentInformationRecipientProviderII" businessElementId="cb0c1ff1-164c-4c8b-9bbb-5ec235e0b878" modelElementPath="valueReference.identifier">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmCowM3tEeahpd1P9sS4xg"/>
-    </elements>
-  </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_33UfwOEUEeeSrJFhFrSqfg" base_Class="_7FVfZM3tEeahpd1P9sS4xg">
-    <elements xmi:id="_33VG0OEUEeeSrJFhFrSqfg" businessElement="DocumentInformantII" businessElementId="45e52bc8-17b3-46da-9c3f-bcd7148fe501" modelElementPath="valueReference.identifier">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmCowM3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_5ShScOEUEeeSrJFhFrSqfg" businessElement="DocumentInformantPersonName" businessElementId="7b2d3700-6cc7-49a9-af2c-cde5464af9b5" modelElementPath="valueReference.name">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmEd8M3tEeahpd1P9sS4xg"/>
-    </elements>
-  </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_NPAusOEYEeeN0-c1wf3ehA" base_Class="_7FRN883tEeahpd1P9sS4xg">
-    <elements xmi:id="_NPCj4OEYEeeN0-c1wf3ehA" businessElement="DocumentCustodianOrganizationID" businessElementId="c2248529-5f7c-4c58-833b-46f53e300145" modelElementPath="custodian.identifier">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZI1NM3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_PyVnEOEYEeeN0-c1wf3ehA" businessElement="DocumentCustodianOrganizationName" businessElementId="04a10feb-5ab3-4e83-9bf3-d1c158426d0a" modelElementPath="custodian.name">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZLRdM3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_RMf38OEYEeeN0-c1wf3ehA" businessElement="DocumentCustodianOrganizationBusinessPhone" businessElementId="f763e869-574b-458c-bbfe-fd4542492b86" modelElementPath="custodian.telecom">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_ScoqIOEYEeeN0-c1wf3ehA" businessElement="DocumentCustodianOrganizationEmailContact" businessElementId="60751121-a001-4c8a-b237-7dcaf1450ef1" modelElementPath="custodian.telecom">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_UCxhgOEYEeeN0-c1wf3ehA" businessElement="DocumentCustodianOrganizationFaxContact" businessElementId="68218c07-eb6e-4f71-a5ac-3810e0238c30" modelElementPath="custodian.telecom">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_VZn_sOEYEeeN0-c1wf3ehA" businessElement="DocumentCustodianOrganizationPagerContact" businessElementId="98a4db18-97e4-4c80-98a5-efa57aff868d" modelElementPath="custodian.telecom">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_W6TIQOEYEeeN0-c1wf3ehA" businessElement="DocumentCustodianOrganizationSMSContact" businessElementId="f391917d-8286-410e-a322-ac2749a66a99" modelElementPath="custodian.telecom">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_YflEAOEYEeeN0-c1wf3ehA" businessElement="DocumentCustodianOrganizationURLContact" businessElementId="1d1b15ee-a1d0-4d1b-bce7-1b36c7694944" modelElementPath="custodian.telecom">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_gXhQoOEYEeeN0-c1wf3ehA" businessElement="DocumentCustodianOrganizationBusinessAddress" businessElementId="21c0890f-4fec-4a68-89fe-0cbbaae6f311" modelElementPath="custodian.address">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZMfkM3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_pdbsQOEYEeeN0-c1wf3ehA" businessElement="DocumentLegalAuthenticatorPersonID" businessElementId="4fef6d53-8f06-41df-a314-73b83014030a" modelElementPath="attester_slice_pos16.party.identifier">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmCowM3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_q7atMOEYEeeN0-c1wf3ehA" businessElement="DocumentLegalAuthenticatorPersonName" businessElementId="24d9bf2d-849f-4890-b7b6-c074dc3fbce9" modelElementPath="attester_slice_pos16.party.name">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmEd8M3tEeahpd1P9sS4xg"/>
-    </elements>
-  </MDMI:MDMIMapping>
+ 
 </xmi:XMI>
