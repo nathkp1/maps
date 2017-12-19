@@ -27012,5 +27012,26 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ShortDescription xmi:id="_8j5vIM3tEeahpd1P9sS4xg" base_Comment="_8j5IHc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8j5vIs3tEeahpd1P9sS4xg" base_Comment="_8j5vIc3tEeahpd1P9sS4xg"/>
   <MDMI:MDMIMapping xmi:id="_en4WMCgUEeeMR4_BVmg6Og" base_Class="_7FPYwc3tEeahpd1P9sS4xg"/>
- 
+  <MDMI:MDMIMapping xmi:id="_Y5WA0OJ2EeeapbPRlzNegQ" base_Class="_7FZw1c3tEeahpd1P9sS4xg">
+    <elements xmi:id="_Y5X2AOJ2EeeapbPRlzNegQ" businessElement="DocumentAuthorID" businessElementId="6ce0a799-fced-485b-ad83-5ab049b51097" modelElementPath="valueReference.identifier">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4kXPiMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_ajAtUOJ2EeeapbPRlzNegQ" businessElement="DocumentAuthorName" businessElementId="e6bcac02-6863-4203-9c44-8a9215549c06" modelElementPath="valueReference.name">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4kZrxsFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_buOjQOJ2EeeapbPRlzNegQ" businessElement="DocumentAuthorBusinessPhoneContact" businessElementId="4dbf6b62-4deb-4834-a9b8-8acfc5db8bec" modelElementPath="valueReference.telecom">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4kaS1cFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_gqjTUOJ2EeeapbPRlzNegQ" businessElement="DocumentAuthorBusinessAddress" businessElementId="ecb9af68-f098-48e7-b941-4542104a7ae5" modelElementPath="valueReference.address">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4kcIBMFMEea5pdrFDq-m2g"/>
+    </elements>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_N_ee0OJ3EeeapbPRlzNegQ" base_Class="_7FVfZM3tEeahpd1P9sS4xg">
+    <elements xmi:id="_N_fF4OJ3EeeapbPRlzNegQ" businessElement="DocumentInformantII" businessElementId="45e52bc8-17b3-46da-9c3f-bcd7148fe501" modelElementPath="valueReference.identifier">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmCowM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_PfccwOJ3EeeapbPRlzNegQ" businessElement="DocumentInformantPersonName" businessElementId="7b2d3700-6cc7-49a9-af2c-cde5464af9b5" modelElementPath="valueReference.name">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmEd8M3tEeahpd1P9sS4xg"/>
+    </elements>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
