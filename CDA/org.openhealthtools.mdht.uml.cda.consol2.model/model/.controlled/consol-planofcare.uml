@@ -4501,9 +4501,6 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_LNOfgJC7EeeyTtReSNa24w" businessElement="PlannedEncounterTypeCode" modelElement="__Mm_wOdaEeOqBOMhgDlycQ" businessElementId="97544e2e-aa8b-45b1-a686-58b4690df909" modelElementPath="plannedEncounter2.code" condition=""/>
-    <elements xmi:id="_R2AxYJC7EeeyTtReSNa24w" businessElement="PlannedEncounterProviderName" businessElementId="194914c9-29bb-403b-a293-1cb2dea5b2e1" modelElementPath="plannedEncounter2.performer.assignedEntity.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
-    </elements>
     <elements xmi:id="_WCCF4JC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorSpecialityCode" businessElementId="a9f81916-cfb5-44e5-8da7-e749e8340eb7" modelElementPath="plannedEncounter2.authorParticipation.assignedAuthor.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
@@ -4690,6 +4687,36 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </elements>
     <elements xmi:id="_NVJqMOW-EeefYpeaFpZmtQ" businessElement="PlannedProcedureCoveragePolicyID" businessElementId="17b7cb82-cf6b-415f-8e61-60a37077669e" modelElementPath="plannedObservation2.plannedCoverage.entryRelationship.act.id">
       <modelElement xmi:type="uml:Property" href="consol-payers.uml#_QZIIMo9NEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_KRvc8OZVEeeoMLOBeVaj7g" businessElement="PlannedEncounterParticipantPersonName" businessElementId="039e5182-3912-4c3b-8236-91a33bd14b54" modelElementPath="plannedEncounter2.performer.assignedEntity.assignedPerson.name">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_Q00IYOZVEeeoMLOBeVaj7g" businessElement="PlannedEncounterParticipantII" businessElementId="feea9cb0-be7e-46e8-922f-34a168430dca" modelElementPath="plannedEncounter2.performer.assignedEntity.id">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_9E4IIOZWEee25afaIvgLjg" businessElement="PlannedEncounterParticipantSpecialtyCode" businessElementId="78e8a060-8fdf-4ead-ae7c-2635ad63bdac" modelElementPath="plannedEncounter2.performer.assignedEntity.code">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_CD_GcOZXEee25afaIvgLjg" businessElement="PlannedEncounterParticipantAddress" businessElementId="1b492ab5-ca3f-4afc-b2b2-2076a5cc60e3" modelElementPath="plannedEncounter2.performer.assignedEntity.addr">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_EUfJcOZXEee25afaIvgLjg" businessElement="PlannedEncounterParticipantEmailContact" businessElementId="81e0d4ae-404e-4da0-a66e-27380c1580db" modelElementPath="plannedEncounter2.performer.assignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_HJSMUOZXEee25afaIvgLjg" businessElement="PlannedEncounterParticipantEmailContact" businessElementId="81e0d4ae-404e-4da0-a66e-27380c1580db" modelElementPath="plannedEncounter2.performer.assignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_JlZCYOZXEee25afaIvgLjg" businessElement="PlannedEncounterParticipantFaxContact" businessElementId="6fdce179-d0bd-4f08-b314-bbe51102afdf" modelElementPath="plannedEncounter2.performer.assignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_MQHjQOZXEee25afaIvgLjg" businessElement="PlannedEncounterParticipantPagerContact" businessElementId="2f9c8eb3-b92c-4486-9f71-cc0cba406a82" modelElementPath="plannedEncounter2.performer.assignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_P0zK8OZXEee25afaIvgLjg" businessElement="PlannedEncounterParticipantURLContact" businessElementId="a8970d6f-3238-497e-9ac2-0141876b5b24" modelElementPath="plannedEncounter2.performer.assignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_So5DMOZXEee25afaIvgLjg" businessElement="PlannedEncounterParticpantSMSContact" businessElementId="f33e880f-7132-4245-9a3a-180071560730" modelElementPath="plannedEncounter2.performer.assignedEntity.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
     </elements>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_26_JoJMQEeeSquiwsvVy0A" base_Class="_YPOXoJ14EeORR8_YW0n_jQ">
