@@ -62,7 +62,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LoUos3tEeahpd1P9sS4xg" value="1"/>
           <redefinedProperty href="FHIR-Core.uml#_5FUngMFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7LrX8M3tEeahpd1P9sS4xg" name="section_slice_pos3" type="_7Lr_Bs3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7LrX9c3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7LrX8M3tEeahpd1P9sS4xg" name="allergies" type="_7Lr_Bs3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7LrX9c3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7Lr_As3tEeahpd1P9sS4xg">
             <body>SHALL contain exactly one [1..1] section (CONF:2219-1049) such that it</body>
           </ownedComment>
@@ -76,7 +76,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LrX8s3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7LvCUM3tEeahpd1P9sS4xg" name="section_slice_pos4" type="_7LvpY83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7LvCVM3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7LvCUM3tEeahpd1P9sS4xg" name="medications" type="_7LvpY83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7LvCVM3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7LvCWs3tEeahpd1P9sS4xg">
             <body>SHALL contain exactly one [1..1] section (CONF:2219-1051) such that it</body>
           </ownedComment>
@@ -90,7 +90,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LvCUs3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7LyFoM3tEeahpd1P9sS4xg" name="section_slice_pos5" type="_7Lysts3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7LyFpM3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7LyFoM3tEeahpd1P9sS4xg" name="problems" type="_7Lysts3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7LyFpM3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7Lysss3tEeahpd1P9sS4xg">
             <body>SHALL contain exactly one [1..1] section (CONF:2219-1050) such that it</body>
           </ownedComment>
@@ -104,7 +104,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LyFos3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7L2XEM3tEeahpd1P9sS4xg" name="section_slice_pos6" type="_7L2-I83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L2XFM3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7L2XEM3tEeahpd1P9sS4xg" name="procedures" type="_7L2-I83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L2XFM3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7L2XGs3tEeahpd1P9sS4xg">
             <body>SHOULD contain zero or one [0..1] section (CONF:2219-1052) such that it</body>
           </ownedComment>
@@ -118,7 +118,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L2XEs3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7L5aYs3tEeahpd1P9sS4xg" name="section_slice_pos7" type="_7L6Bec3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L5aZs3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7L5aYs3tEeahpd1P9sS4xg" name="results" type="_7L6Bec3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L5aZs3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7L6Bdc3tEeahpd1P9sS4xg">
             <body>SHALL contain exactly one [1..1] section (CONF:2219-1053) such that it</body>
           </ownedComment>
@@ -132,7 +132,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L5aZM3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7L8dt83tEeahpd1P9sS4xg" name="section_slice_pos8" type="_7L9Ey83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L9Ewc3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7L8dt83tEeahpd1P9sS4xg" name="advancedDirectives" type="_7L9Ey83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L9Ewc3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7L9Ex83tEeahpd1P9sS4xg">
             <body>MAY contain zero or one [0..1] section (CONF:2219-1054) such that it</body>
           </ownedComment>
@@ -146,7 +146,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L8duc3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7L_hAs3tEeahpd1P9sS4xg" name="section_slice_pos9" type="_7MAIFc3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L_hBs3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7L_hAs3tEeahpd1P9sS4xg" name="encounters" type="_7MAIFc3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7L_hBs3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7MAIEc3tEeahpd1P9sS4xg">
             <body>MAY contain zero or one [0..1] section (CONF:2219-1055) such that it</body>
           </ownedComment>
@@ -160,7 +160,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7L_hBM3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7MB9Rc3tEeahpd1P9sS4xg" name="section_slice_pos10" type="_7MCkW83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MCkUc3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7MB9Rc3tEeahpd1P9sS4xg" name="familyHistory" type="_7MCkW83tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MCkUc3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7MCkV83tEeahpd1P9sS4xg">
             <body>MAY contain zero or one [0..1] section (CONF:2219-1056) such that it</body>
           </ownedComment>
@@ -174,7 +174,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MB9R83tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7MFAkM3tEeahpd1P9sS4xg" name="section_slice_pos11" type="_7MFnoM3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MFAlM3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7MFAkM3tEeahpd1P9sS4xg" name="functionalStatus" type="_7MFnoM3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MFAlM3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7MFAms3tEeahpd1P9sS4xg">
             <body>MAY contain zero or one [0..1] section (CONF:2219-1057) such that it</body>
           </ownedComment>
@@ -188,7 +188,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MFAks3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7MHc0M3tEeahpd1P9sS4xg" name="section_slice_pos12" type="_7MID5M3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MHc1M3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7MHc0M3tEeahpd1P9sS4xg" name="immunizations" type="_7MID5M3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MHc1M3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7MID4M3tEeahpd1P9sS4xg">
             <body>MAY contain zero or one [0..1] section (CONF:2219-1058) such that it</body>
           </ownedComment>
@@ -202,7 +202,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MHc0s3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7MKgI83tEeahpd1P9sS4xg" name="section_slice_pos13" type="_7MLHOs3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MLHMM3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7MKgI83tEeahpd1P9sS4xg" name="nutrition" type="_7MLHOs3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MLHMM3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7MLHNs3tEeahpd1P9sS4xg">
             <body>MAY contain zero or one [0..1] section (CONF:2219-1060) such that it</body>
           </ownedComment>
@@ -216,7 +216,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MKgJc3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7MNjcM3tEeahpd1P9sS4xg" name="section_slice_pos14" type="_7MNjfs3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MNjdM3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7MNjcM3tEeahpd1P9sS4xg" name="mentalStatus" type="_7MNjfs3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MNjdM3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7MNjes3tEeahpd1P9sS4xg">
             <body>MAY contain zero or one [0..1] section (CONF:2219-1061) such that it</body>
           </ownedComment>
@@ -230,7 +230,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MNjcs3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7MP_sM3tEeahpd1P9sS4xg" name="section_slice_pos15" type="_7MQmwc3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MP_tM3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7MP_sM3tEeahpd1P9sS4xg" name="vitalSigns" type="_7MQmwc3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MP_tM3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7MP_us3tEeahpd1P9sS4xg">
             <body>SHALL contain exactly one [1..1] section (CONF:2219-1062) such that it</body>
           </ownedComment>
@@ -244,7 +244,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MP_ss3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7MSb-c3tEeahpd1P9sS4xg" name="section_slice_pos16" type="_7MTqEc3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MTDA83tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7MSb-c3tEeahpd1P9sS4xg" name="socialHistory" type="_7MTqEc3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MTDA83tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7MTDCc3tEeahpd1P9sS4xg">
             <body>SHALL contain exactly one [1..1] section (CONF:2219-1063) such that it</body>
           </ownedComment>
@@ -258,7 +258,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MTDAc3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7MWGUM3tEeahpd1P9sS4xg" name="section_slice_pos17" type="_7MWtZM3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MWGVM3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7MWGUM3tEeahpd1P9sS4xg" name="planOfTreatment" type="_7MWtZM3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MWGVM3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7MWtYM3tEeahpd1P9sS4xg">
             <body>SHOULD contain zero or one [0..1] section (CONF:2219-1064) such that it</body>
           </ownedComment>
@@ -272,7 +272,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MWGUs3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7MYiks3tEeahpd1P9sS4xg" name="section_slice_pos18" type="_7MZJps3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MYils3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7MYiks3tEeahpd1P9sS4xg" name="payers" type="_7MZJps3tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7MYils3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7MZJos3tEeahpd1P9sS4xg">
             <body>MAY contain zero or one [0..1] section (CONF:2219-1065) such that it</body>
           </ownedComment>
@@ -286,7 +286,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7MYilM3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_5FXq0cFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7Ma-1c3tEeahpd1P9sS4xg" name="section_slice_pos19" type="_7Mbl683tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7Mbl4c3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_7Ma-1c3tEeahpd1P9sS4xg" name="medicalEquipment" type="_7Mbl683tEeahpd1P9sS4xg" isOrdered="true" aggregation="composite" association="_7Mbl4c3tEeahpd1P9sS4xg">
           <ownedComment xmi:id="_7Mbl583tEeahpd1P9sS4xg">
             <body>MAY contain zero or one [0..1] section (CONF:2219-1059) such that it</body>
           </ownedComment>
@@ -27460,6 +27460,17 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ShortDescription xmi:id="_8j5vIM3tEeahpd1P9sS4xg" base_Comment="_8j5IHc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8j5vIs3tEeahpd1P9sS4xg" base_Comment="_8j5vIc3tEeahpd1P9sS4xg"/>
   <MDMI:MDMIMapping xmi:id="_en4WMCgUEeeMR4_BVmg6Og" base_Class="_7FPYwc3tEeahpd1P9sS4xg">
-    <elements xmi:id="_TaHMUOZ5EeeOSLXV3OKJWw" businessElement="PatientContainer" modelElement="_7LfxwM3tEeahpd1P9sS4xg" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="subject"/>
+    <elements xmi:id="_TaHMUOZ5EeeOSLXV3OKJWw" businessElement="PatientContainer" modelElement="_7LfxwM3tEeahpd1P9sS4xg" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="subject" condition=""/>
+    <elements xmi:id="_xa620OckEeeL_I9T85C26Q" businessElement="AllergySectionContainer" modelElement="_7LrX9c3tEeahpd1P9sS4xg" businessElementId="a2df7ff3-1a9b-4e83-8b14-3a3d9e92970b" modelElementPath="section_slice_pos3" condition=""/>
+    <elements xmi:id="_0Y6pQOc1EeeRfYnha8AF3g" businessElement="MedicationSectionContainer" modelElement="_7LvCVM3tEeahpd1P9sS4xg" businessElementId="66b674e8-01c3-4eeb-8677-ef4c2636b555" modelElementPath="medications"/>
+    <elements xmi:id="_11U84Oc1EeeRfYnha8AF3g" businessElement="ProblemSectionContainer" modelElement="_7LyFpM3tEeahpd1P9sS4xg" businessElementId="4b655929-8602-4317-9773-3c150b0dc7db" modelElementPath="problems"/>
+    <elements xmi:id="_7lRiQOc1EeeRfYnha8AF3g" businessElement="ResultsSectionContainer" modelElement="_7L5aZs3tEeahpd1P9sS4xg" businessElementId="5b518a6c-921a-4e90-bfda-db113112c8d1" modelElementPath="results"/>
+    <elements xmi:id="_91FowOc1EeeRfYnha8AF3g" businessElement="AdvanceDirectivesSectionContainer" modelElement="_7L9Ewc3tEeahpd1P9sS4xg" businessElementId="3419e565-0cf4-4223-bbb9-3c1855a08e91" modelElementPath="advancedDirectives"/>
+    <elements xmi:id="__K6zQOc1EeeRfYnha8AF3g" businessElement="EncounterSectionContainer" modelElement="_7L_hBs3tEeahpd1P9sS4xg" businessElementId="649d9d71-423c-4821-b148-7a7ff2c465c8" modelElementPath="encounters"/>
+    <elements xmi:id="_AdICAOc2EeeRfYnha8AF3g" businessElement="FamilyHistorySectionContainer" modelElement="_7MCkUc3tEeahpd1P9sS4xg" businessElementId="7e48ac01-1752-48d5-99ce-867c8594d01a" modelElementPath="familyHistory"/>
+    <elements xmi:id="_B_a7MOc2EeeRfYnha8AF3g" businessElement="FunctionalStatusSectionContainer" modelElement="_7MFAlM3tEeahpd1P9sS4xg" businessElementId="fd766bc7-febf-42ea-be92-2261b10a0e05" modelElementPath="functionalStatus"/>
+    <elements xmi:id="_DZa0AOc2EeeRfYnha8AF3g" businessElement="ImmunizationSectionContainer" modelElement="_7MHc1M3tEeahpd1P9sS4xg" businessElementId="7c3e5413-220e-4bea-b672-a98ad8c931a8" modelElementPath="immunizations"/>
+    <elements xmi:id="_Ewhw4Oc2EeeRfYnha8AF3g" businessElement="NutritionSectionContainer" modelElement="_7MLHMM3tEeahpd1P9sS4xg" businessElementId="18b3800c-34bb-4191-b709-612c4e63c16f" modelElementPath="nutrition"/>
+    <elements xmi:id="_Hp9cIOc2EeeRfYnha8AF3g" businessElement="VitalSignSectionContainer" modelElement="_7MP_tM3tEeahpd1P9sS4xg" businessElementId="1344bbb0-bb05-44df-9d86-b90bd60ac951" modelElementPath="vitalSigns"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
