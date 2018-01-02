@@ -869,90 +869,92 @@ Vital signs are represented in the same way as other results, but are aggregated
     <elements xmi:id="_EGRg8CW9EeewYNa79DjK5A" businessElement="VitalSignResultStatusCode" modelElement="_2OxoSxSVEeGGzu7fmW9pXw" businessElementId="d18fd5d8-935f-4260-99a3-f26a4ceca740" modelElementPath="vitalSignsOrganizer.vitalSignObservation.statusCode"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_Mf3YoNxVEeeO4LK-aeYv1g" base_Class="_D3010ALzEeSM0Jd2D1FgKw">
-    <elements xmi:id="_Mf4mwNxVEeeO4LK-aeYv1g" businessElement="VitalSignSectionNotes" modelElement="_TishUAL1EeSM0Jd2D1FgKw" businessElementId="9230a42b-3f41-45aa-91ff-180c0eb4f1c0" modelElementPath="text"/>
-    <elements xmi:id="_-CWwwNxVEeeO4LK-aeYv1g" businessElement="VitalSignOrganizerContainer" modelElement="_8tj8oAL0EeSM0Jd2D1FgKw" businessElementId="7ae54db7-4e6c-4350-9e00-226a4c2f7d9a" modelElementPath="vitalSignsOrganizer2"/>
-    <elements xmi:id="_exGM8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerStartDateTime" modelElement="_yESK8PV5EeONioZkBKP8eQ" businessElementId="5e2f62de-df7a-4af3-935b-34f0af5dcc9d" modelElementPath="vitalSignsOrganizer2.effectiveTime"/>
-    <elements xmi:id="_jdse8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerEndDateTime" modelElement="_yESK8PV5EeONioZkBKP8eQ" businessElementId="9d64af06-9329-4ea2-99b5-cdb2b4d8712b" modelElementPath="vitalSignsOrganizer2.effectiveTime"/>
-    <elements xmi:id="_lOdR8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorDateTime" businessElementId="797bb20a-7a57-4cf0-9b34-ebf996ef549a" modelElementPath="vitalSignsOrganizer2.authorParticipation.time">
+    <elements xmi:id="_Mf4mwNxVEeeO4LK-aeYv1g" businessElement="VitalSignSectionNotes" modelElement="_TishUAL1EeSM0Jd2D1FgKw" businessElementId="9230a42b-3f41-45aa-91ff-180c0eb4f1c0" modelElementPath="text" condition=""/>
+    <elements xmi:id="_-CWwwNxVEeeO4LK-aeYv1g" businessElement="VitalSignOrganizerContainer" modelElement="_8tj8oAL0EeSM0Jd2D1FgKw" businessElementId="7ae54db7-4e6c-4350-9e00-226a4c2f7d9a" modelElementPath="vitalSignsOrganizer2" condition=""/>
+    <elements xmi:id="_exGM8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerStartDateTime" modelElement="_yESK8PV5EeONioZkBKP8eQ" businessElementId="5e2f62de-df7a-4af3-935b-34f0af5dcc9d" modelElementPath="vitalSignsOrganizer2.effectiveTime.low" condition=""/>
+    <elements xmi:id="_jdse8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerEndDateTime" modelElement="_yESK8PV5EeONioZkBKP8eQ" businessElementId="9d64af06-9329-4ea2-99b5-cdb2b4d8712b" modelElementPath="vitalSignsOrganizer2.effectiveTime.high" condition=""/>
+    <elements xmi:id="_lOdR8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorDateTime" businessElementId="797bb20a-7a57-4cf0-9b34-ebf996ef549a" modelElementPath="vitalSignsOrganizer2.authorParticipation.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_nPy3kNxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorID" businessElementId="2c25c158-834f-45e3-9844-17a1814f675e" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.id">
+    <elements xmi:id="_nPy3kNxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorID" businessElementId="2c25c158-834f-45e3-9844-17a1814f675e" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_pqvQANxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorSpecialityCode" businessElementId="56e170fc-c2b9-488b-9461-e370a449ad33" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.code">
+    <elements xmi:id="_pqvQANxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorSpecialityCode" businessElementId="56e170fc-c2b9-488b-9461-e370a449ad33" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_sLZ18NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorName" businessElementId="6df9a517-4cc1-4799-a0cf-cf7afc38994b" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.assignedPerson.name">
+    <elements xmi:id="_sLZ18NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorName" businessElementId="6df9a517-4cc1-4799-a0cf-cf7afc38994b" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_vKuGwNxYEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationID" businessElementId="0741504f-0188-431b-87ea-7a668b79334c" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.id">
+    <elements xmi:id="_vKuGwNxYEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationID" businessElementId="0741504f-0188-431b-87ea-7a668b79334c" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_xxIvYNxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationName" businessElementId="18db0d6a-11a3-48b3-ac12-46669fa916c3" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.name">
+    <elements xmi:id="_xxIvYNxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationName" businessElementId="18db0d6a-11a3-48b3-ac12-46669fa916c3" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_z1Wp4NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationEmailContact" businessElementId="f27f7da1-d069-4c13-af64-5b4aef492251" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_z1Wp4NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationEmailContact" businessElementId="f27f7da1-d069-4c13-af64-5b4aef492251" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_14vd8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationFaxContact" businessElementId="905c5471-44aa-4465-8ee2-6cfcb0afb75f" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_14vd8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationFaxContact" businessElementId="905c5471-44aa-4465-8ee2-6cfcb0afb75f" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_4LotoNxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationPhoneContact" businessElementId="48f9fe01-cff9-4cb1-ab1e-6c6364b6d90c" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_4LotoNxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationPhoneContact" businessElementId="48f9fe01-cff9-4cb1-ab1e-6c6364b6d90c" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_6UZw8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationSMSContact" businessElementId="52da395c-0e0e-43a7-b8ca-0e163c941131" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_6UZw8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationSMSContact" businessElementId="52da395c-0e0e-43a7-b8ca-0e163c941131" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_8qYJ0NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationURLContact" businessElementId="0c529565-9c14-44de-b36b-fd0e281a52d8" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_8qYJ0NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationURLContact" businessElementId="0c529565-9c14-44de-b36b-fd0e281a52d8" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_-4ZgkNxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationAddress" businessElementId="9a3a7fc4-efa3-4f5d-a2d9-56caf21cd224" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.addr">
+    <elements xmi:id="_-4ZgkNxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorOrganizationAddress" businessElementId="9a3a7fc4-efa3-4f5d-a2d9-56caf21cd224" modelElementPath="vitalSignsOrganizer2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_o_SCwNxZEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorDateTime" modelElement="_7j7RkM84EeSJsu9BbhWxmQ" businessElementId="797bb20a-7a57-4cf0-9b34-ebf996ef549a" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.effectiveTime"/>
-    <elements xmi:id="_wUumUNxZEeeIY8GGH27Wow" businessElement="VitalSignResultUnitMeasure" modelElement="_qsjuoPM4EeOUvapeh9bVvQ" businessElementId="2b45bfcd-b0d0-49c6-b8a5-f376297c8e36" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.value"/>
-    <elements xmi:id="_09lAwNxZEeeIY8GGH27Wow" businessElement="VitalSignResultNotes" modelElement="_Z4Sn8M85EeSJsu9BbhWxmQ" businessElementId="494287c0-35a5-4ad7-9be6-aa57f44b912d" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.text"/>
-    <elements xmi:id="_3XZX0NxZEeeIY8GGH27Wow" businessElement="VitalSignResultIntepretationCode" modelElement="_eEbiIM9CEeSJsu9BbhWxmQ" businessElementId="60f64b90-2803-465b-ba6d-79e55c7a45c1" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.interpretationCode"/>
-    <elements xmi:id="__Hq2MNxZEeeIY8GGH27Wow" businessElement="VitalSignResultTypeCode" modelElement="_2OrhuBSVEeGGzu7fmW9pXw" businessElementId="1b8d3c96-5161-4ce2-a8a6-1a694febef6f" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.code"/>
-    <elements xmi:id="_Eb3TsNxaEeeIY8GGH27Wow" businessElement="VitalSignResultID" modelElement="_2OxoRxSVEeGGzu7fmW9pXw" businessElementId="33891793-d4c1-44e6-b7ed-26da889b0b48" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.id"/>
-    <elements xmi:id="_JanFoNxaEeeIY8GGH27Wow" businessElement="VitalSignResultMethodCode" modelElement="_2OxoWRSVEeGGzu7fmW9pXw" businessElementId="35f6befa-94c3-4821-8d5a-233bdba159fe" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.methodCode"/>
-    <elements xmi:id="_PX6KgNxaEeeIY8GGH27Wow" businessElement="VitalSignResultBodyLocationCode" modelElement="_2OxoXhSVEeGGzu7fmW9pXw" businessElementId="5ee55172-b766-4e84-bd39-03ddc21970c0" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.targetSiteCode"/>
-    <elements xmi:id="_TtIeUNxaEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorDateTime" businessElementId="ece951fa-92a5-47a0-8475-44ebd914c847" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.time">
+    <elements xmi:id="_o_SCwNxZEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorDateTime" modelElement="_7j7RkM84EeSJsu9BbhWxmQ" businessElementId="797bb20a-7a57-4cf0-9b34-ebf996ef549a" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.effectiveTime" condition=""/>
+    <elements xmi:id="_wUumUNxZEeeIY8GGH27Wow" businessElement="VitalSignResultUnitMeasure" modelElement="_qsjuoPM4EeOUvapeh9bVvQ" businessElementId="2b45bfcd-b0d0-49c6-b8a5-f376297c8e36" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.value" condition=""/>
+    <elements xmi:id="_09lAwNxZEeeIY8GGH27Wow" businessElement="VitalSignResultNotes" modelElement="_Z4Sn8M85EeSJsu9BbhWxmQ" businessElementId="494287c0-35a5-4ad7-9be6-aa57f44b912d" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.text" condition=""/>
+    <elements xmi:id="_3XZX0NxZEeeIY8GGH27Wow" businessElement="VitalSignResultIntepretationCode" modelElement="_eEbiIM9CEeSJsu9BbhWxmQ" businessElementId="60f64b90-2803-465b-ba6d-79e55c7a45c1" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.interpretationCode" condition=""/>
+    <elements xmi:id="__Hq2MNxZEeeIY8GGH27Wow" businessElement="VitalSignResultTypeCode" modelElement="_2OrhuBSVEeGGzu7fmW9pXw" businessElementId="1b8d3c96-5161-4ce2-a8a6-1a694febef6f" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.code" condition=""/>
+    <elements xmi:id="_Eb3TsNxaEeeIY8GGH27Wow" businessElement="VitalSignResultID" modelElement="_2OxoRxSVEeGGzu7fmW9pXw" businessElementId="33891793-d4c1-44e6-b7ed-26da889b0b48" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.id" condition=""/>
+    <elements xmi:id="_JanFoNxaEeeIY8GGH27Wow" businessElement="VitalSignResultMethodCode" modelElement="_2OxoWRSVEeGGzu7fmW9pXw" businessElementId="35f6befa-94c3-4821-8d5a-233bdba159fe" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.methodCode" condition=""/>
+    <elements xmi:id="_PX6KgNxaEeeIY8GGH27Wow" businessElement="VitalSignResultBodyLocationCode" modelElement="_2OxoXhSVEeGGzu7fmW9pXw" businessElementId="5ee55172-b766-4e84-bd39-03ddc21970c0" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.targetSiteCode" condition=""/>
+    <elements xmi:id="_TtIeUNxaEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorDateTime" businessElementId="ece951fa-92a5-47a0-8475-44ebd914c847" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_Vqx2wNxaEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorID" businessElementId="d390d831-262a-4354-a415-9fe0d7e2c887" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.id">
+    <elements xmi:id="_Vqx2wNxaEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorID" businessElementId="d390d831-262a-4354-a415-9fe0d7e2c887" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_armsUNxaEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorSpecialtyCode" businessElementId="5642ac73-add3-4a20-9358-cd655735da1e" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.code">
+    <elements xmi:id="_armsUNxaEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorSpecialtyCode" businessElementId="5642ac73-add3-4a20-9358-cd655735da1e" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_66VoMNxbEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorName" businessElementId="68731508-c47a-48ff-b827-3f9365c0985f" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.assignedPerson.name">
+    <elements xmi:id="_66VoMNxbEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorName" businessElementId="68731508-c47a-48ff-b827-3f9365c0985f" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_IAUnANxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationID" businessElementId="0741504f-0188-431b-87ea-7a668b79334c" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.id">
+    <elements xmi:id="_IAUnANxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationID" businessElementId="0741504f-0188-431b-87ea-7a668b79334c" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_K0ILYNxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationName" businessElementId="2cbd5f31-bd39-4859-80e2-0daa6e147ea4" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.name">
+    <elements xmi:id="_K0ILYNxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationName" businessElementId="2cbd5f31-bd39-4859-80e2-0daa6e147ea4" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_NydkwNxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationEmailContact" businessElementId="82651722-67f0-46c9-a88b-2dd49c846b74" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_NydkwNxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationEmailContact" businessElementId="82651722-67f0-46c9-a88b-2dd49c846b74" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_RMmwYNxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationFaxContact" businessElementId="b457e50b-b8d9-4e74-878c-5c60af481fa0" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_RMmwYNxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationFaxContact" businessElementId="b457e50b-b8d9-4e74-878c-5c60af481fa0" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_T4xbsNxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationPhoneContact" businessElementId="8b4bc492-ec96-434e-8018-319bf77346e0" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_T4xbsNxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationPhoneContact" businessElementId="8b4bc492-ec96-434e-8018-319bf77346e0" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_WsjK4NxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationSMSContact" businessElementId="963bd36a-f5c7-4525-b6a7-6a1831508dd3" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_WsjK4NxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationSMSContact" businessElementId="963bd36a-f5c7-4525-b6a7-6a1831508dd3" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_ZQvl8NxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationURLContact" businessElementId="c36df38b-fc2e-4f01-888a-a324a65bed90" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_ZQvl8NxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationURLContact" businessElementId="c36df38b-fc2e-4f01-888a-a324a65bed90" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_d2m90NxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationAddress" businessElementId="c1231b94-4470-4c68-bdae-81ef454d598a" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.addr">
+    <elements xmi:id="_d2m90NxcEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorOrganizationAddress" businessElementId="c1231b94-4470-4c68-bdae-81ef454d598a" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_yNZ2EOWXEeelGI6qH-aZIg" businessElement="VitalSignOrganizerIDCode" modelElement="_74bwIPV6EeONioZkBKP8eQ" businessElementId="98bda06f-8145-4655-a817-90cc08050a53" modelElementPath="vitalSignsOrganizer2.code"/>
+    <elements xmi:id="_yNZ2EOWXEeelGI6qH-aZIg" businessElement="VitalSignOrganizerIDCode" modelElement="_74bwIPV6EeONioZkBKP8eQ" businessElementId="98bda06f-8145-4655-a817-90cc08050a53" modelElementPath="vitalSignsOrganizer2.code" condition=""/>
+    <elements xmi:id="_Cocp4O5kEeesTO21tnDzKg" businessElement="VitalSignSectionContainer" modelElement="_D3010ALzEeSM0Jd2D1FgKw" businessElementId="1344bbb0-bb05-44df-9d86-b90bd60ac951" modelElementPath=""/>
+    <elements xmi:id="_R-zI0O5kEeesTO21tnDzKg" businessElement="VitalSignResultContainer" modelElement="_cqZm0PV6EeONioZkBKP8eQ" businessElementId="e6195bbe-badf-4ff2-8609-a01dffade5ae" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
