@@ -33,7 +33,13 @@
 			<configProperty name="expressionLanguage" value="XPath" />
 		</qvto:transformation>
 		<transformReport reportPath="${basedir}" />
+		
+		<echo message="Start Sort"/>
+			<mdmiSort model="platform:/resource/FHIR/map/fhirccdamapxml.mdmi" />
+			<echo message="End Sort"/>
+			
 	</target>
 
+	
 
 </project>
