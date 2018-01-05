@@ -19074,7 +19074,7 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ShortDescription xmi:id="_7MXUdc3tEeahpd1P9sS4xg" base_Comment="_7MXUdM3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_7MXUd83tEeahpd1P9sS4xg" base_Comment="_7MXUds3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_7MX7gM3tEeahpd1P9sS4xg" id="103882" base_Property="_7MXUeM3tEeahpd1P9sS4xg" label="Plan of treatment">
-     <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
+    <fixed xmi:type="fhirtypes:CodeableConcept" xmi:id="_lmdJIMFOEeaNCoznY2JI5Q">
       <coding xmi:id="_lmdJIcFOEeaNCoznY2JI5Q" system="http://loinc.org" code="18776-5" display="Plan of treatment"/>
     </fixed>
   </fhir:ElementDefinition>
@@ -27528,7 +27528,6 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ShortDescription xmi:id="_8j5vIM3tEeahpd1P9sS4xg" base_Comment="_8j5IHc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8j5vIs3tEeahpd1P9sS4xg" base_Comment="_8j5vIc3tEeahpd1P9sS4xg"/>
   <MDMI:MDMIMapping xmi:id="_en4WMCgUEeeMR4_BVmg6Og" base_Class="_7FPYwc3tEeahpd1P9sS4xg">
-    <elements xmi:id="_TaHMUOZ5EeeOSLXV3OKJWw" businessElement="PatientContainer" modelElement="_7LfxwM3tEeahpd1P9sS4xg" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="subject" condition=""/>
     <elements xmi:id="_xa620OckEeeL_I9T85C26Q" businessElement="AllergySectionContainer" modelElement="_7LrX9c3tEeahpd1P9sS4xg" businessElementId="a2df7ff3-1a9b-4e83-8b14-3a3d9e92970b" modelElementPath="allergies" condition=""/>
     <elements xmi:id="_0Y6pQOc1EeeRfYnha8AF3g" businessElement="MedicationSectionContainer" modelElement="_7LvCVM3tEeahpd1P9sS4xg" businessElementId="66b674e8-01c3-4eeb-8677-ef4c2636b555" modelElementPath="medications" condition=""/>
     <elements xmi:id="_11U84Oc1EeeRfYnha8AF3g" businessElement="ProblemSectionContainer" modelElement="_7LyFpM3tEeahpd1P9sS4xg" businessElementId="4b655929-8602-4317-9773-3c150b0dc7db" modelElementPath="problems" condition=""/>
@@ -27540,6 +27539,8 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
     <elements xmi:id="_DZa0AOc2EeeRfYnha8AF3g" businessElement="ImmunizationSectionContainer" modelElement="_7MHc1M3tEeahpd1P9sS4xg" businessElementId="7c3e5413-220e-4bea-b672-a98ad8c931a8" modelElementPath="immunizations" condition=""/>
     <elements xmi:id="_Ewhw4Oc2EeeRfYnha8AF3g" businessElement="NutritionSectionContainer" modelElement="_7MLHMM3tEeahpd1P9sS4xg" businessElementId="18b3800c-34bb-4191-b709-612c4e63c16f" modelElementPath="nutrition" condition=""/>
     <elements xmi:id="_Hp9cIOc2EeeRfYnha8AF3g" businessElement="VitalSignSectionContainer" modelElement="_7MP_tM3tEeahpd1P9sS4xg" businessElementId="1344bbb0-bb05-44df-9d86-b90bd60ac951" modelElementPath="vitalSigns" condition=""/>
+    <elements xmi:id="_9Ga9sPIyEeeC3LsfcKoOyw" businessElement="ProcedureSection" modelElement="_7L2XFM3tEeahpd1P9sS4xg" businessElementId="b7a63343-ca32-4394-88a2-0f4cd2c2aad6" modelElementPath="procedures"/>
+    <elements xmi:id="_KCS-QPIzEeeC3LsfcKoOyw" businessElement="SocialHistorySection" modelElement="_7MTDA83tEeahpd1P9sS4xg" businessElementId="0d98de46-d0bf-4b4b-8336-7d8c4f20b9e2" modelElementPath="socialHistory"/>
+    <elements xmi:id="_aHjKkPIzEeekvM4lxDLwvg" businessElement="MentalStatusSection" modelElement="_7MNjdM3tEeahpd1P9sS4xg" businessElementId="48cc9c65-e6b5-46d9-bf9a-fa290a0c589f" modelElementPath="mentalStatus"/>
   </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_Hfc4APF4EeepI9eMsUph4g" base_Class="_7FRN883tEeahpd1P9sS4xg"/>
 </xmi:XMI>

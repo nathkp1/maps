@@ -698,7 +698,8 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CSW8Ms3tEeahpd1P9sS4xg" value="1"/>
           <redefinedProperty href="FHIR-Core.uml#_4-KPkcFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_CSYKUM3tEeahpd1P9sS4xg" name="subject" type="_AJCfQM3tEeahpd1P9sS4xg" isOrdered="true" association="_CSYKVM3tEeahpd1P9sS4xg">
+        <ownedAttribute xmi:id="_CSYKUM3tEeahpd1P9sS4xg" name="subject" isOrdered="true" association="_CSYKVM3tEeahpd1P9sS4xg">
+          <type xmi:type="uml:Class" href="FHIR-Core.uml#_4lCk_MFMEea5pdrFDq-m2g"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CSYKUc3tEeahpd1P9sS4xg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CSYKUs3tEeahpd1P9sS4xg" value="1"/>
           <redefinedProperty href="FHIR-Core.uml#_4-K2o8FMEea5pdrFDq-m2g"/>
@@ -3702,5 +3703,8 @@
     <elements xmi:id="_nN6vsPGKEeenocUhY5YPvw" businessElement="PatientAddress" businessElementId="ab55f2c5-eaea-4de5-a358-6a9037ebf762" modelElementPath="address">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eX8RsFMEea5pdrFDq-m2g"/>
     </elements>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_SZ860PI1EeekvM4lxDLwvg" base_Class="_CIz-qM3tEeahpd1P9sS4xg">
+    <elements xmi:id="_SZ-wAPI1EeekvM4lxDLwvg" businessElement="PatientID" modelElement="_CSYKVM3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
