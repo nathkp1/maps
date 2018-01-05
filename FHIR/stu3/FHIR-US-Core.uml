@@ -2952,9 +2952,6 @@
     <elements xmi:id="_kqXbgNUHEeeH-pUxfl1XLg" businessElement="AllergyObservationSeverityValueCode" businessElementId="7931e589-0680-4a02-9d29-b8cd923b9dc5" modelElementPath="criticality" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47QFgMFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_EqYIIOA8Eee9mIM0yL66Xw" businessElement="AllergyReactionContainer" businessElementId="e20b3fd4-a386-4d90-aa17-d4e16cb377a9" modelElementPath="reaction" condition="">
-      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_47VlFcFMEea5pdrFDq-m2g"/>
-    </elements>
     <elements xmi:id="_IJLKQOA8Eee9mIM0yL66Xw" businessElement="AllergyReactionNotes" businessElementId="d0dd472b-e8a8-484f-bfd8-c751f974eabd" modelElementPath="reaction.note.text" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47adl8FMEea5pdrFDq-m2g"/>
     </elements>
@@ -2975,6 +2972,9 @@
     </elements>
     <elements xmi:id="_MgXH8PGKEeenocUhY5YPvw" businessElement="AllergyReactionStartDateTime" businessElementId="1e185357-131d-44d2-885b-828a6f216432" modelElementPath="reaction.onset" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47YoasFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_IZv0oPJKEeeua7szbIh57w" businessElement="AllergyObservationContainer" businessElementId="f2b74432-5fb6-473b-b995-c4d839eacd75" modelElementPath="reaction">
+      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_47VlFcFMEea5pdrFDq-m2g"/>
     </elements>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_D0SwINNrEeag-vfi0Fbwcw" base_Class="_F5bJhM3tEeahpd1P9sS4xg">
@@ -3610,9 +3610,6 @@
     </elements>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="__GDV4J09EeeRldxvRZ_uPA" base_Class="_AJCfQM3tEeahpd1P9sS4xg">
-    <elements xmi:id="__GPjIJ09EeeRldxvRZ_uPA" businessElement="PatientRaceCode" modelElement="_AJPTkM3tEeahpd1P9sS4xg" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="extension" condition=""/>
-    <elements xmi:id="_BJ9uYJ0-EeeRldxvRZ_uPA" businessElement="PatientEthnicityCode" modelElement="_AJX2cM3tEeahpd1P9sS4xg" businessElementId="b29dc139-8a2b-473d-820b-0331b7ae0aa3" modelElementPath="extension" condition=""/>
-    <elements xmi:id="_DhGk4J0-EeeRldxvRZ_uPA" businessElement="PatientBirthSexCode" modelElement="_AJbg0M3tEeahpd1P9sS4xg" businessElementId="cc13e769-ad20-44ca-9a66-be2600bfdad9" modelElementPath="extension" condition=""/>
     <elements xmi:id="_tcS50J1REeeRldxvRZ_uPA" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="identifier" condition=""/>
     <elements xmi:id="_vIHicJ1REeeRldxvRZ_uPA" businessElement="PatientLegalName" modelElement="_AJekIs3tEeahpd1P9sS4xg" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="name" condition=""/>
     <elements xmi:id="_wo5YsJ1REeeRldxvRZ_uPA" businessElement="PatientAdministrationGenderCode" modelElement="_AJgZUc3tEeahpd1P9sS4xg" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="gender" condition=""/>
