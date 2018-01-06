@@ -1236,7 +1236,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
       <ownedComment xmi:id="_YroBsLkBEeODDJAC5t5vpw">
         <body>Note: The consumable participant points to the precise allergen or substance of intolerance. Because the consumable and the reaction are more clinically relevant than a categorization of the allergy/adverse event type, many systems will simply assign a fixed value here (e.g. &quot;allergy to substance&quot;).</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Kgc-oPr7EeO3D4OxHxUkag" name="statusCode" visibility="private" redefinedProperty="_2EoNwxSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
@@ -2544,7 +2544,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <elements xmi:id="_NYqsMPDKEee3Lobqorygow" businessElement="AllergyConcernAuthorDateTime" businessElementId="df5ae0f7-96ea-4237-a132-5af7e945b405" modelElementPath="allergyConcernAct2.authorParticipation.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_jZzO0PDPEee3Lobqorygow" businessElement="AllergyObservationValueCode" modelElement="_3bHDQLkAEeODDJAC5t5vpw" businessElementId="6d660cc5-7ab5-4056-9445-c8435f4b55fa" modelElementPath="allergyConcernAct2.allergyObservation2.value" condition=""/>
+    <elements xmi:id="_a-JCQPJdEeeua7szbIh57w" businessElement="AllergyObservationValueCode" modelElement="_3bHDQLkAEeODDJAC5t5vpw" businessElementId="6c1c8bf7-156e-4567-83da-f9ee9df642ad" modelElementPath="allergyConcernAct2.allergyObservation2.value.CD" condition=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_V7q3ENSGEeeH-pUxfl1XLg" base_Class="_uCiIYLNwEeOtlapy2HWYww">
     <elements xmi:id="_V7t6YNSGEeeH-pUxfl1XLg" businessElement="AllergyConcernStartDateTime" modelElement="_2EPMMBSVEeGGzu7fmW9pXw" businessElementId="e7e780ef-09c5-48e9-8b43-75b14e921d35" modelElementPath="effectiveTime.low" condition=""/>
