@@ -2922,9 +2922,6 @@
     <elements xmi:id="_ifhuYNNrEeag-vfi0Fbwcw" businessElement="AllergyConcernOnsetDate" businessElementId="6dd1c7a1-26b5-459f-94c4-47ccec635fba" modelElementPath="onsetDateTime" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47R6vMFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_bzSDYNNsEeaMIrr4hhibBw" businessElement="AllergyConcernTypeCode" businessElementId="1a1ea320-de3d-482b-b42e-7494962bd5f6" modelElementPath="type" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47OQUcFMEea5pdrFDq-m2g"/>
-    </elements>
     <elements xmi:id="_0_cJsHiHEeeIv4NgAOUoAw" businessElement="AllergyConcernLastKnownOccuranceDateTime" businessElementId="2e75f6cd-4680-40c3-8430-6c28444638bd" modelElementPath="lastOccurrence" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47UW8cFMEea5pdrFDq-m2g"/>
     </elements>
@@ -2975,6 +2972,18 @@
     </elements>
     <elements xmi:id="_IZv0oPJKEeeua7szbIh57w" businessElement="AllergyObservationContainer" businessElementId="f2b74432-5fb6-473b-b995-c4d839eacd75" modelElementPath="reaction">
       <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_47VlFcFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_ZpCQIPSEEeeCr4sW4znF_Q" businessElement="AllergyObservationValueCode" businessElementId="6c1c8bf7-156e-4567-83da-f9ee9df642ad" modelElementPath="type">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47OQUcFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_1YNs8PSEEeeCr4sW4znF_Q" businessElement="AllergyReactionContainer" businessElementId="e20b3fd4-a386-4d90-aa17-d4e16cb377a9" modelElementPath="reaction">
+      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_47VlFcFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_wGTVIPSJEee0KeCOClIZwQ" businessElement="PatientContainer" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="patient">
+      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_47R6tMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_DOBskPSNEeeZYJaP5fnpMw" businessElement="AllergyManifestationContainer" businessElementId="88d3b143-c30e-4cac-9e0a-93619c0b07be" modelElementPath="reaction.manifestation">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47XaRcFMEea5pdrFDq-m2g"/>
     </elements>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_D0SwINNrEeag-vfi0Fbwcw" base_Class="_F5bJhM3tEeahpd1P9sS4xg">
