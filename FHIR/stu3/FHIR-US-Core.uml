@@ -3142,25 +3142,35 @@
     </elements>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_x_rS4FH5EeeCuJEqfDrLcQ" base_Class="_GPnb8M3tEeahpd1P9sS4xg">
-    <elements xmi:id="_EaSBAOAYEeery9ynvkJ1NQ" businessElement="ImmunizationAdministeredReasonTypeCode" modelElement="_GfcAoM3tEeahpd1P9sS4xg" businessElementId="6ea75411-0c3d-4c77-8ce2-d74df5909000" modelElementPath="category" condition=""/>
-    <elements xmi:id="_UeqDkOAYEeery9ynvkJ1NQ" businessElement="ImmunizationAdministeredReasonII" businessElementId="85c45474-1369-480c-9e0e-1c71fa37adcd" modelElementPath="identifier" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_465gOcFMEea5pdrFDq-m2g"/>
-    </elements>
     <elements xmi:id="_PemdQOWuEee0wLCx43pkrw" businessElement="ProblemObservationValueCode" modelElement="_Gfd10M3tEeahpd1P9sS4xg" businessElementId="90a0b23b-525d-4977-8c5f-d2012dd04da2" modelElementPath="code" condition=""/>
     <elements xmi:id="_-BfQsOWuEeer-K67prB3IQ" businessElement="ProblemObservationOnsetDateTime" businessElementId="b04c3b2a-71e0-4349-9587-57f460487c97" modelElementPath="onsetDateTime" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47A08cFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_WgWW0OWwEeer-K67prB3IQ" businessElement="ProblemObservationPriorityValueCode" businessElementId="dd199fdb-afa7-4c23-b6dd-086a079b47f8" modelElementPath="severity">
+    <elements xmi:id="_WgWW0OWwEeer-K67prB3IQ" businessElement="ProblemObservationPriorityValueCode" businessElementId="dd199fdb-afa7-4c23-b6dd-086a079b47f8" modelElementPath="severity" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_468jhsFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_cMGYsOWwEeer-K67prB3IQ" businessElement="ProblemObservationContainer" modelElement="_GPnb8M3tEeahpd1P9sS4xg" businessElementId="52f0679a-fcd2-42a0-b79e-f719e4c7bb50" modelElementPath=""/>
-    <elements xmi:id="_f0ifAOWwEeer-K67prB3IQ" businessElement="ProblemObservationCategoryCode" modelElement="_GfcAoM3tEeahpd1P9sS4xg" businessElementId="98485eab-20bf-48b7-bd96-aef07c190827" modelElementPath="category"/>
-    <elements xmi:id="_HwHAMOWxEeer-K67prB3IQ" businessElement="ProblemConditionStatusCode" modelElement="_GPoDBc3tEeahpd1P9sS4xg" businessElementId="370ad6cd-c83f-48bd-b31c-7e290fee361b" modelElementPath="clinicalStatus"/>
-    <elements xmi:id="_Sx8V8OWxEeer-K67prB3IQ" businessElement="ProblemConditionContainer" modelElement="_GPnb8M3tEeahpd1P9sS4xg" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath=""/>
-    <elements xmi:id="_ieyM0OWyEeer-K67prB3IQ" businessElement="ProblemObservationID" businessElementId="d8d7bfb2-b024-4049-9c87-efc36897e8f7" modelElementPath="evidence.detail.id">
+    <elements xmi:id="_f0ifAOWwEeer-K67prB3IQ" businessElement="ProblemObservationCategoryCode" modelElement="_GfcAoM3tEeahpd1P9sS4xg" businessElementId="98485eab-20bf-48b7-bd96-aef07c190827" modelElementPath="category" condition=""/>
+    <elements xmi:id="_HwHAMOWxEeer-K67prB3IQ" businessElement="ProblemConditionStatusCode" modelElement="_GPoDBc3tEeahpd1P9sS4xg" businessElementId="370ad6cd-c83f-48bd-b31c-7e290fee361b" modelElementPath="clinicalStatus" condition=""/>
+    <elements xmi:id="_Sx8V8OWxEeer-K67prB3IQ" businessElement="ProblemConditionContainer" modelElement="_GPnb8M3tEeahpd1P9sS4xg" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath="" condition=""/>
+    <elements xmi:id="_ieyM0OWyEeer-K67prB3IQ" businessElement="ProblemObservationID" businessElementId="d8d7bfb2-b024-4049-9c87-efc36897e8f7" modelElementPath="evidence.detail.id" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_q7xAMOWyEeer-K67prB3IQ" businessElement="ProblemConditionAuthorID" businessElementId="628bc74e-3fbd-4178-8694-18e7bbdf091d" modelElementPath="asserter.id">
+    <elements xmi:id="_0VNA4PS9Eeetvel6rp6PQw" businessElement="ProblemConditionID" businessElementId="f25c86b1-9a42-45b8-9965-6246b78472ff" modelElementPath="identifier" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_465gOcFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_89iIoPS9Eeetvel6rp6PQw" businessElement="ProblemConditionStartTime" businessElementId="6415a267-564c-400e-8952-aa956c71809f" modelElementPath="assertedDate" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47BcC8FMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_OUemUPS-Eeetvel6rp6PQw" businessElement="ProblemObservationAbateDateTime" businessElementId="f8acb2f5-638a-46b0-b4a2-421c07c1e952" modelElementPath="abatementDateTime" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47BcAMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_nNfuUPS-Eeetvel6rp6PQw" businessElement="ProblemObservationCategoryCode" businessElementId="98485eab-20bf-48b7-bd96-aef07c190827" modelElementPath="category">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4678ccFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_s6-1kPS-Eeetvel6rp6PQw" businessElement="PatientID" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.id">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_zsoIgPS-Eeetvel6rp6PQw" businessElement="ProblemConditionAuthorID" businessElementId="628bc74e-3fbd-4178-8694-18e7bbdf091d" modelElementPath="asserter.id">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
     </elements>
   </MDMI:MDMIMapping>
