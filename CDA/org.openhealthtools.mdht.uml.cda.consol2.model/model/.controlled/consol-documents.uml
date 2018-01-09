@@ -15105,7 +15105,6 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <elements xmi:id="_dUqSEPAKEeeb4LOy3tLKyQ" businessElement="DocumentDataEntererContainer" modelElement="_t9tI0BwVEeSMr-NWzQuDBw" businessElementId="bb20adbc-e669-415f-baea-909bafa47a88" modelElementPath="dataEnterer" condition=""/>
     <elements xmi:id="_9OvCAPAKEeeb4LOy3tLKyQ" businessElement="DocumentAuthorContainer" modelElement="_cXXu0BwWEeSMr-NWzQuDBw" businessElementId="38e02314-1ad3-4af5-89cb-3b0b17f7760b" modelElementPath="author" condition=""/>
     <elements xmi:id="_C2zBQPAMEeeb4LOy3tLKyQ" businessElement="DocumentInformationRecipientContainer" modelElement="_98nxsBwXEeSMr-NWzQuDBw" businessElementId="c23536d9-1f87-4d95-9fd8-179c22b9db21" modelElementPath="informationRecipient" condition=""/>
-    <elements xmi:id="_GIHBAPAMEeeb4LOy3tLKyQ" businessElement="DocumentInformantContainer" modelElement="_BrtVwBwcEeSMr-NWzQuDBw" businessElementId="21f774e5-6510-4179-89de-621095c502d8" modelElementPath="informant" condition=""/>
     <elements xmi:id="_OeBjEPAMEeeb4LOy3tLKyQ" businessElement="DocumentNonProviderParticipantContainer" modelElement="_qsl8YBwgEeSMr-NWzQuDBw" businessElementId="bcdb49ad-4b87-44a8-ab2a-4b0aafa92078" modelElementPath="supportParticipant" condition=""/>
     <elements xmi:id="_R-KB8PAMEeeb4LOy3tLKyQ" businessElement="DocumentServiceEventContainer" modelElement="_KZ1fUBwjEeSMr-NWzQuDBw" businessElementId="4c4b4eb7-ae0d-4b52-8f2a-8ce0e0ebe9c4" modelElementPath="documentationOf" condition=""/>
     <elements xmi:id="_uP9OMPANEeefBvVUv-KCHA" businessElement="DocumentLegalAuthenticatorContainer" modelElement="_62QBMBwYEeSMr-NWzQuDBw" businessElementId="99677bea-4fa1-4a70-aaea-d5fd5c18586d" modelElementPath="legalAuthenticator" condition=""/>
@@ -15115,5 +15114,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
       <modelElement xmi:type="uml:Association" href="pathmap://CDA_MODEL/cda.uml#_EsyYEEcfEd6besF9iFIJkQ"/>
     </elements>
     <elements xmi:id="_9XSZcPMdEeeoOOwuJw7SLA" businessElement="PatientHomePhoneContact" modelElement="_tsU48CylEeGMXrZ0DiQwGg" businessElementId="cfb8b147-38a5-4272-87c6-f1fa4cb97457" modelElementPath="recordTarget.patientRole.telecom" condition="@use='HP' and starts-with(@value, 'tel:')"/>
+    <elements xmi:id="_EQOpcPTaEeeaisKH6rAX4A" businessElement="DocumentID" modelElement="_2DNR7RSVEeGGzu7fmW9pXw" businessElementId="17cb9e1f-97d6-4ba9-b43f-b6d906392531" modelElementPath="id"/>
+    <elements xmi:id="_GKD44PTaEeeaisKH6rAX4A" businessElement="DocumentTypeCode" modelElement="_2DNR5RSVEeGGzu7fmW9pXw" businessElementId="db98a4bb-4fc0-43cd-b3f2-c860653ea76e" modelElementPath="code"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
