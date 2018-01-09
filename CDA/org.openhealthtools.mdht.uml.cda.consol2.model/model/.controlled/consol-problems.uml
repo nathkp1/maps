@@ -2199,116 +2199,113 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_ry52gLsTEeejBu7P06QdPQ" businessElement="GeneralWellnessValueCode" modelElement="_2ExXuBSVEeGGzu7fmW9pXw" businessElementId="b8f337b9-6f9a-40fb-ac8a-127d2d08a1bd" modelElementPath="value"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_9Wjq0M3oEeeqSZE4BTrNiw" base_Class="_IXrA4ALVEeSyydFGYJajGA">
-    <elements xmi:id="_9WnVMM3oEeeqSZE4BTrNiw" businessElement="ProblemConditionContainer" modelElement="_v5IuEALXEeSyydFGYJajGA" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath="problemConcernAct2"/>
-    <elements xmi:id="_AcVwAM3pEeeqSZE4BTrNiw" businessElement="ProblemConditionStatusCode" modelElement="_zYX1EOzeEeOnE-G4kptBiw" businessElementId="370ad6cd-c83f-48bd-b31c-7e290fee361b" modelElementPath="problemConcernAct2.statusCode"/>
-    <elements xmi:id="_hNza8M3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorDateTime" businessElementId="aa71e06c-cc8c-43b9-9613-9b21fe604de5" modelElementPath="problemConcernAct2.authorParticipation.time">
+    <elements xmi:id="_9WnVMM3oEeeqSZE4BTrNiw" businessElement="ProblemConditionContainer" modelElement="_v5IuEALXEeSyydFGYJajGA" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath="problemConcernAct2" condition=""/>
+    <elements xmi:id="_AcVwAM3pEeeqSZE4BTrNiw" businessElement="ProblemConditionStatusCode" modelElement="_zYX1EOzeEeOnE-G4kptBiw" businessElementId="370ad6cd-c83f-48bd-b31c-7e290fee361b" modelElementPath="problemConcernAct2.statusCode" condition=""/>
+    <elements xmi:id="_hNza8M3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorDateTime" businessElementId="aa71e06c-cc8c-43b9-9613-9b21fe604de5" modelElementPath="problemConcernAct2.authorParticipation.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_jmBPgM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorID" businessElementId="628bc74e-3fbd-4178-8694-18e7bbdf091d" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.id">
+    <elements xmi:id="_jmBPgM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorID" businessElementId="628bc74e-3fbd-4178-8694-18e7bbdf091d" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_leplEM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorSpecialityCode" businessElementId="4e5543e1-5bf7-4ec4-b45c-e497628b12c6" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.code">
+    <elements xmi:id="_leplEM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorSpecialityCode" businessElementId="4e5543e1-5bf7-4ec4-b45c-e497628b12c6" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_n3V6wM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorName" businessElementId="b3e56a97-c9a7-4ff1-8349-2029dc69a112" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.assignedPerson.name">
+    <elements xmi:id="_n3V6wM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorName" businessElementId="b3e56a97-c9a7-4ff1-8349-2029dc69a112" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_syj3kM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorBusinessPhoneContact" businessElementId="1cee7365-04f5-4c56-98b2-cea3d2505a45" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_syj3kM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorBusinessPhoneContact" businessElementId="1cee7365-04f5-4c56-98b2-cea3d2505a45" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_vwKRIM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorEmailContact" businessElementId="2b2fc0b9-8f1d-4280-b239-56c713afdb50" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_vwKRIM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorEmailContact" businessElementId="2b2fc0b9-8f1d-4280-b239-56c713afdb50" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_yGhrkM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorFaxContact" businessElementId="cda5b7ad-9088-4d7a-99b4-c4cb9522f7e9" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_yGhrkM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorFaxContact" businessElementId="cda5b7ad-9088-4d7a-99b4-c4cb9522f7e9" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_0rMnwM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorPagerContact" businessElementId="ad90c961-a4e0-4486-ac12-5caa08f67113" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_0rMnwM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorPagerContact" businessElementId="ad90c961-a4e0-4486-ac12-5caa08f67113" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_2qdJwM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorURLContact" businessElementId="6c8d5c1f-605e-4cc9-a4b9-52a3a941c0a6" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_2qdJwM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorURLContact" businessElementId="6c8d5c1f-605e-4cc9-a4b9-52a3a941c0a6" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_5XILYM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorBusinessAddress" businessElementId="d83c61b2-50cb-4ee4-9c66-16ee01a13cfb" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.addr">
+    <elements xmi:id="_5XILYM3pEeeNdanU6Ci9vA" businessElement="ProblemConditionAuthorBusinessAddress" businessElementId="d83c61b2-50cb-4ee4-9c66-16ee01a13cfb" modelElementPath="problemConcernAct2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_8rh7YM3pEeeNdanU6Ci9vA" businessElement="ProblemObservationContainer" modelElement="_wOP0IPifEeOXlK95I8tUew" businessElementId="52f0679a-fcd2-42a0-b79e-f719e4c7bb50" modelElementPath="problemConcernAct2.problemObservation2"/>
-    <elements xmi:id="__0kv8M3pEeeNdanU6Ci9vA" businessElement="ProblemObservationStartTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="b04c3b2a-71e0-4349-9587-57f460487c97" modelElementPath="problemConcernAct2.problemObservation2.effectiveTime"/>
-    <elements xmi:id="_BwN9QM3qEeeNdanU6Ci9vA" businessElement="ProblemObservationEndDateTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="f8acb2f5-638a-46b0-b4a2-421c07c1e952" modelElementPath="problemConcernAct2.problemObservation2.effectiveTime"/>
-    <elements xmi:id="_L9uTEM3qEeeNdanU6Ci9vA" businessElement="ProblemObservationValueCode" modelElement="_bZJcsPDMEeOKPKE9au0oug" businessElementId="90a0b23b-525d-4977-8c5f-d2012dd04da2" modelElementPath="problemConcernAct2.problemObservation2.value"/>
-    <elements xmi:id="_XZDt8M3qEeeNdanU6Ci9vA" businessElement="ProblemObservationCategoryCode" modelElement="_52ZjkMm4EeSr1c1X9ACWbg" businessElementId="98485eab-20bf-48b7-bd96-aef07c190827" modelElementPath="problemConcernAct2.problemObservation2.code"/>
-    <elements xmi:id="_scgSkM3qEeeNdanU6Ci9vA" businessElement="ProblemObservationStatusValueCode" modelElement="_8NsgMMm6EeSr1c1X9ACWbg" businessElementId="b967d93f-06f7-4b04-ab27-6184ea4d65e4" modelElementPath="problemConcernAct2.problemObservation2.statusCode"/>
-    <elements xmi:id="_5DJioM3tEeexKKbrRw21Mw" businessElement="ProblemObservationAuthorDateTime" businessElementId="d567644e-5484-4759-afe0-9a0ac0d356b2" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.time">
+    <elements xmi:id="_8rh7YM3pEeeNdanU6Ci9vA" businessElement="ProblemObservationContainer" modelElement="_wOP0IPifEeOXlK95I8tUew" businessElementId="52f0679a-fcd2-42a0-b79e-f719e4c7bb50" modelElementPath="problemConcernAct2.problemObservation2" condition=""/>
+    <elements xmi:id="_XZDt8M3qEeeNdanU6Ci9vA" businessElement="ProblemObservationCategoryCode" modelElement="_52ZjkMm4EeSr1c1X9ACWbg" businessElementId="98485eab-20bf-48b7-bd96-aef07c190827" modelElementPath="problemConcernAct2.problemObservation2.code" condition=""/>
+    <elements xmi:id="_scgSkM3qEeeNdanU6Ci9vA" businessElement="ProblemObservationStatusValueCode" modelElement="_8NsgMMm6EeSr1c1X9ACWbg" businessElementId="b967d93f-06f7-4b04-ab27-6184ea4d65e4" modelElementPath="problemConcernAct2.problemObservation2.statusCode" condition=""/>
+    <elements xmi:id="_5DJioM3tEeexKKbrRw21Mw" businessElement="ProblemObservationAuthorDateTime" businessElementId="d567644e-5484-4759-afe0-9a0ac0d356b2" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_8Q54EM3tEeexKKbrRw21Mw" businessElement="ProblemObservationAuthorII" businessElementId="21b0632e-891a-4e0c-b313-c4fd70729cc3" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.id">
+    <elements xmi:id="_8Q54EM3tEeexKKbrRw21Mw" businessElement="ProblemObservationAuthorII" businessElementId="21b0632e-891a-4e0c-b313-c4fd70729cc3" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_V5c_kM3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorSpecialtyCode" businessElementId="670f013c-c86f-4db3-9fdc-06bfb5684a9e" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.code">
+    <elements xmi:id="_V5c_kM3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorSpecialtyCode" businessElementId="670f013c-c86f-4db3-9fdc-06bfb5684a9e" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_ZAdz0M3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorLegalName" businessElementId="56af479e-2641-4f57-ae54-af94e627c48f" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.assignedPerson.name">
+    <elements xmi:id="_ZAdz0M3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorLegalName" businessElementId="56af479e-2641-4f57-ae54-af94e627c48f" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_dQcbQM3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorOtherName" businessElementId="90d0bcdd-845e-4b06-891f-04295693a7b3" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.assignedPerson.name">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_gqmN8M3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorOrganizationII" businessElementId="d5daa288-706f-41e0-8d5b-2e6fdcf09d9a" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.id">
+    <elements xmi:id="_gqmN8M3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorOrganizationII" businessElementId="d5daa288-706f-41e0-8d5b-2e6fdcf09d9a" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_kkMVsM3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorOrganizationName" businessElementId="c485a547-c6ff-46ad-9268-80c600010472" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.name">
+    <elements xmi:id="_kkMVsM3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorOrganizationName" businessElementId="c485a547-c6ff-46ad-9268-80c600010472" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_orIV4M3uEeeif6yto2VSrA" businessElement="ProblemConditionAuthorBusinessPhoneContact" businessElementId="1cee7365-04f5-4c56-98b2-cea3d2505a45" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_s-yjcM3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorEmailContact" businessElementId="c31fc9f7-74ba-44b3-8cb5-1441ed207710" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_s-yjcM3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorEmailContact" businessElementId="c31fc9f7-74ba-44b3-8cb5-1441ed207710" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_63SkUM3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorFaxContact" businessElementId="885b5de0-898d-43fd-9b93-cd5d27cba4df" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_63SkUM3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorFaxContact" businessElementId="885b5de0-898d-43fd-9b93-cd5d27cba4df" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_-qcF0M3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorPagerContact" businessElementId="7e211cef-c47c-471a-b988-e3df48fd7ec3" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_-qcF0M3uEeeif6yto2VSrA" businessElement="ProblemObservationAuthorPagerContact" businessElementId="7e211cef-c47c-471a-b988-e3df48fd7ec3" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_Ce2yoM3vEeeif6yto2VSrA" businessElement="ProblemObservationAuthorSMSContact" businessElementId="a358bcb0-e4c3-45c8-a038-f67aaa3ec679" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_Ce2yoM3vEeeif6yto2VSrA" businessElement="ProblemObservationAuthorSMSContact" businessElementId="a358bcb0-e4c3-45c8-a038-f67aaa3ec679" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+    <elements xmi:id="_F1EggM3vEeeif6yto2VSrA" businessElement="ProblemObservationAuthorURLContact" businessElementId="937e5a94-4f71-4866-8156-17d16ed61433" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_F1EggM3vEeeif6yto2VSrA" businessElement="ProblemObservationAuthorURLContact" businessElementId="937e5a94-4f71-4866-8156-17d16ed61433" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_IyhwIM3vEeeif6yto2VSrA" businessElement="ProblemObservationAuthorOrganizationAddress" businessElementId="c95eefc1-d216-46ec-aebb-a9fb00df9190" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.addr">
+    <elements xmi:id="_IyhwIM3vEeeif6yto2VSrA" businessElement="ProblemObservationAuthorOrganizationAddress" businessElementId="c95eefc1-d216-46ec-aebb-a9fb00df9190" modelElementPath="problemConcernAct2.problemObservation2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_QIOLUM3vEeeif6yto2VSrA" businessElement="ProblemObservationPrognosisDateTime" modelElement="_PjKJEZmLEeOeSLwbllPCyw" businessElementId="e9b136e0-f209-466b-af1c-6ec7f7f9366f" modelElementPath="problemConcernAct2.problemObservation2.prognosisObservation.effectiveTime"/>
-    <elements xmi:id="_S7DfUM3vEeeif6yto2VSrA" businessElement="ProblemObservationPrognosisValueCode" modelElement="_PjKJGJmLEeOeSLwbllPCyw" businessElementId="fd5524e1-f865-4d1a-a4c5-aec267a05981" modelElementPath="problemConcernAct2.problemObservation2.prognosisObservation.value"/>
-    <elements xmi:id="_V1WGMM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityID" businessElementId="661ec825-195e-486b-9e21-4520e1ba19bf" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.id">
+    <elements xmi:id="_QIOLUM3vEeeif6yto2VSrA" businessElement="ProblemObservationPrognosisDateTime" modelElement="_PjKJEZmLEeOeSLwbllPCyw" businessElementId="e9b136e0-f209-466b-af1c-6ec7f7f9366f" modelElementPath="problemConcernAct2.problemObservation2.prognosisObservation.effectiveTime" condition=""/>
+    <elements xmi:id="_S7DfUM3vEeeif6yto2VSrA" businessElement="ProblemObservationPrognosisValueCode" modelElement="_PjKJGJmLEeOeSLwbllPCyw" businessElementId="fd5524e1-f865-4d1a-a4c5-aec267a05981" modelElementPath="problemConcernAct2.problemObservation2.prognosisObservation.value" condition=""/>
+    <elements xmi:id="_V1WGMM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityID" businessElementId="661ec825-195e-486b-9e21-4520e1ba19bf" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwcyIpmaEeOLJeQez13EkQ"/>
     </elements>
-    <elements xmi:id="_c7CWgM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityDateTime" businessElementId="fdbd1dca-7119-499c-9b2c-f7b357f3bf94" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.effectiveTime">
+    <elements xmi:id="_c7CWgM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityDateTime" businessElementId="fdbd1dca-7119-499c-9b2c-f7b357f3bf94" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_CWg-oADcEeWNGdLwd_3YGQ"/>
     </elements>
-    <elements xmi:id="_hg8KoM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityValueCode" businessElementId="dd199fdb-afa7-4c23-b6dd-086a079b47f8" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.value">
+    <elements xmi:id="_hg8KoM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityValueCode" businessElementId="dd199fdb-afa7-4c23-b6dd-086a079b47f8" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwdZNJmaEeOLJeQez13EkQ"/>
     </elements>
-    <elements xmi:id="_mEZHsM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityAuthorDateTime" businessElementId="dea7ca47-d0fa-42c3-9990-4fde35b9c81f" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.authorParticipation.time">
+    <elements xmi:id="_mEZHsM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityAuthorDateTime" businessElementId="dea7ca47-d0fa-42c3-9990-4fde35b9c81f" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.authorParticipation.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_rAspoM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityAuthorID" businessElementId="e1927435-865d-4cbf-92db-df51bd2b6e2f" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.authorParticipation.assignedAuthor.id">
+    <elements xmi:id="_rAspoM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityAuthorID" businessElementId="e1927435-865d-4cbf-92db-df51bd2b6e2f" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.authorParticipation.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_wVC4IM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityAuthorName" businessElementId="b3b8a274-b954-4853-8f3f-218340787bfb" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.authorParticipation.assignedAuthor.assignedPerson.name">
+    <elements xmi:id="_wVC4IM3vEeeif6yto2VSrA" businessElement="ProblemObservationPriorityAuthorName" businessElementId="b3b8a274-b954-4853-8f3f-218340787bfb" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_zYJcwM3vEeeif6yto2VSrA" businessElement="ProblemConditionPriorityID" businessElementId="b02a3db3-c63a-41a8-a558-1ccbd7b99e86" modelElementPath="problemConcernAct2.priorityPreference.id">
+    <elements xmi:id="_zYJcwM3vEeeif6yto2VSrA" businessElement="ProblemConditionPriorityID" businessElementId="b02a3db3-c63a-41a8-a558-1ccbd7b99e86" modelElementPath="problemConcernAct2.priorityPreference.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwcyIpmaEeOLJeQez13EkQ"/>
     </elements>
-    <elements xmi:id="_2QN2EM3vEeeif6yto2VSrA" businessElement="ProblemConditionPriorityDateTime" businessElementId="924f0dc7-6b0c-466c-a4be-dc54b34012d2" modelElementPath="problemConcernAct2.priorityPreference.effectiveTime">
+    <elements xmi:id="_2QN2EM3vEeeif6yto2VSrA" businessElement="ProblemConditionPriorityDateTime" businessElementId="924f0dc7-6b0c-466c-a4be-dc54b34012d2" modelElementPath="problemConcernAct2.priorityPreference.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_CWg-oADcEeWNGdLwd_3YGQ"/>
     </elements>
-    <elements xmi:id="_8jd80M3vEeeif6yto2VSrA" businessElement="ProblemConditionPriorityCode" businessElementId="a7e39052-37d4-480f-89e4-bbea3999b841" modelElementPath="problemConcernAct2.priorityPreference.value">
+    <elements xmi:id="_8jd80M3vEeeif6yto2VSrA" businessElement="ProblemConditionPriorityCode" businessElementId="a7e39052-37d4-480f-89e4-bbea3999b841" modelElementPath="problemConcernAct2.priorityPreference.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwdZNJmaEeOLJeQez13EkQ"/>
     </elements>
-    <elements xmi:id="_qVfkEOw5EeeZT-QKtwCoyw" businessElement="ProblemSectionContainer" modelElement="_IXrA4ALVEeSyydFGYJajGA" businessElementId="4b655929-8602-4317-9773-3c150b0dc7db" modelElementPath=""/>
+    <elements xmi:id="_qVfkEOw5EeeZT-QKtwCoyw" businessElement="ProblemSectionContainer" modelElement="_IXrA4ALVEeSyydFGYJajGA" businessElementId="4b655929-8602-4317-9773-3c150b0dc7db" modelElementPath="" condition=""/>
+    <elements xmi:id="_A7zq4PVUEeeXFvpo0DYmrg" businessElement="ProblemObservationID" modelElement="_6-ejQBUyEeGbmN_W114JUw" businessElementId="d8d7bfb2-b024-4049-9c87-efc36897e8f7" modelElementPath="problemConcernAct2.problemObservation2.id" condition=""/>
+    <elements xmi:id="_dHBjcPVUEeeXFvpo0DYmrg" businessElement="ProblemObservationValueCode" modelElement="_bZJcsPDMEeOKPKE9au0oug" businessElementId="90a0b23b-525d-4977-8c5f-d2012dd04da2" modelElementPath="problemConcernAct2.problemObservation2.value" condition=""/>
+    <elements xmi:id="__HDOEPVmEeeXFvpo0DYmrg" businessElement="ProblemObservationAbateDateTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="f8acb2f5-638a-46b0-b4a2-421c07c1e952" modelElementPath="problemConcernAct2.problemObservation2.effectiveTime.high" condition=""/>
+    <elements xmi:id="_HX3NsPVnEeeXFvpo0DYmrg" businessElement="ProblemObservationOnsetDateTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="b04c3b2a-71e0-4349-9587-57f460487c97" modelElementPath="problemConcernAct2.problemObservation2.effectiveTime.low" condition=""/>
+    <elements xmi:id="_SgIioPVnEeeXFvpo0DYmrg" businessElement="ProblemConditionDateDiagnosed" modelElement="_EZInYOzfEeOnE-G4kptBiw" businessElementId="53f6c81b-c222-4012-b66c-3a55445f4f1c" modelElementPath="problemConcernAct2.effectiveTime.low" condition=""/>
+    <elements xmi:id="__u7CMPVtEeeL94BOUYdcKA" businessElement="ProblemObservationPriorityContainer" modelElement="_5Y9xUPDKEeOKPKE9au0oug" businessElementId="47c128fa-a243-4eeb-aa98-31259812e466" modelElementPath="problemConcernAct2.problemObservation2.priorityPreference"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_xMMA8OWoEee0wLCx43pkrw" base_Class="_y5C8IOzbEeOnE-G4kptBiw">
     <elements xmi:id="_xMNPEOWoEee0wLCx43pkrw" businessElement="ProblemConditionID" modelElement="_2H-csxSVEeGGzu7fmW9pXw" businessElementId="f25c86b1-9a42-45b8-9965-6246b78472ff" modelElementPath="id"/>

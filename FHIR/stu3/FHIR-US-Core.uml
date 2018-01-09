@@ -3149,9 +3149,6 @@
     <elements xmi:id="_f0ifAOWwEeer-K67prB3IQ" businessElement="ProblemObservationCategoryCode" modelElement="_GfcAoM3tEeahpd1P9sS4xg" businessElementId="98485eab-20bf-48b7-bd96-aef07c190827" modelElementPath="category" condition=""/>
     <elements xmi:id="_HwHAMOWxEeer-K67prB3IQ" businessElement="ProblemConditionStatusCode" modelElement="_GPoDBc3tEeahpd1P9sS4xg" businessElementId="370ad6cd-c83f-48bd-b31c-7e290fee361b" modelElementPath="clinicalStatus" condition=""/>
     <elements xmi:id="_Sx8V8OWxEeer-K67prB3IQ" businessElement="ProblemConditionContainer" modelElement="_GPnb8M3tEeahpd1P9sS4xg" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath="" condition=""/>
-    <elements xmi:id="_ieyM0OWyEeer-K67prB3IQ" businessElement="ProblemObservationID" businessElementId="d8d7bfb2-b024-4049-9c87-efc36897e8f7" modelElementPath="evidence.detail.id" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
-    </elements>
     <elements xmi:id="_0VNA4PS9Eeetvel6rp6PQw" businessElement="ProblemConditionID" businessElementId="f25c86b1-9a42-45b8-9965-6246b78472ff" modelElementPath="identifier" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_465gOcFMEea5pdrFDq-m2g"/>
     </elements>
@@ -3160,9 +3157,6 @@
     </elements>
     <elements xmi:id="_OUemUPS-Eeetvel6rp6PQw" businessElement="ProblemObservationAbateDateTime" businessElementId="f8acb2f5-638a-46b0-b4a2-421c07c1e952" modelElementPath="abatementDateTime" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47BcAMFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_nNfuUPS-Eeetvel6rp6PQw" businessElement="ProblemObservationCategoryCode" businessElementId="98485eab-20bf-48b7-bd96-aef07c190827" modelElementPath="category">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4678ccFMEea5pdrFDq-m2g"/>
     </elements>
     <elements xmi:id="_s6-1kPS-Eeetvel6rp6PQw" businessElement="PatientID" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.id">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
@@ -3333,6 +3327,7 @@
     <elements xmi:id="_hNYY8OAYEeery9ynvkJ1NQ" businessElement="ImmunizationAdministeredDrugVehicleCode" businessElementId="30386915-08e1-48c6-80a7-9ee5c2c4f2d8" modelElementPath="product.ingredient.itemCodeableConcept" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4o-pwcFMEea5pdrFDq-m2g"/>
     </elements>
+    <elements xmi:id="_jJBYkPVIEeeXFvpo0DYmrg" businessElement="MedicationAdministrationContainer" modelElement="_CSUf8M3tEeahpd1P9sS4xg" businessElementId="3a55586d-b8ac-4596-804e-83818f921f91" modelElementPath=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_BYwGgHI3EeeQjfEQMRKssg" base_Class="_BZIOIc3tEeahpd1P9sS4xg">
     <elements xmi:id="_BYwtkHI3EeeQjfEQMRKssg" businessElement="DocumentProviderOrganziationID" modelElement="_BZI1NM3tEeahpd1P9sS4xg" businessElementId="85715124-7505-41f8-9efe-682652180b3e" modelElementPath="identifier"/>
@@ -3426,6 +3421,7 @@
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4_8_WMFMEea5pdrFDq-m2g"/>
     </elements>
     <elements xmi:id="_xbEFANVCEeexKMg3HYPFIQ" businessElement="MedicationAdministrationSupplyValueCode" modelElement="_GPk_sM3tEeahpd1P9sS4xg" businessElementId="cddff5ee-b795-4c0b-bab4-080d8958b6dc" modelElementPath="medicationCodeableConcept" condition=""/>
+    <elements xmi:id="_lLXq0PVIEeeXFvpo0DYmrg" businessElement="MedicationAdministrationContainer" modelElement="_GJ6cmc3tEeahpd1P9sS4xg" businessElementId="3a55586d-b8ac-4596-804e-83818f921f91" modelElementPath=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_kJp5UHh8Eee0aPDRSjo7RQ" base_Class="_F-aXMs3tEeahpd1P9sS4xg">
     <elements xmi:id="_0RLWgHh8Eee0aPDRSjo7RQ" businessElement="ResultOrganizerIssuedDateTime" modelElement="_GJ5OcM3tEeahpd1P9sS4xg" businessElementId="e2f3948c-a23a-44f0-97c6-3afe1ea85625" modelElementPath="issued" condition=""/>
@@ -3709,6 +3705,7 @@
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_SZ860PI1EeekvM4lxDLwvg" base_Class="_CIz-qM3tEeahpd1P9sS4xg">
     <elements xmi:id="_SZ-wAPI1EeekvM4lxDLwvg" businessElement="PatientID" modelElement="_CSYKVM3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject"/>
+    <elements xmi:id="_m5ic0PVIEeeXFvpo0DYmrg" businessElement="MedicationAdministrationContainer" modelElement="_CIz-qM3tEeahpd1P9sS4xg" businessElementId="3a55586d-b8ac-4596-804e-83818f921f91" modelElementPath=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_eUeMEPSmEeeORoO2yBIgDQ" base_Class="_BmFsEc3tEeahpd1P9sS4xg">
     <elements xmi:id="_eUgBQPSmEeeORoO2yBIgDQ" businessElement="ResultObservationStatusCode" modelElement="_BmJWdM3tEeahpd1P9sS4xg" businessElementId="e1cc3c00-7ec5-4727-a982-b05e6c6c76d1" modelElementPath="status" condition=""/>
