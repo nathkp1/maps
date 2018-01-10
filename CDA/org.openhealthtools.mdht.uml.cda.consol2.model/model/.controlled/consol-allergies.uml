@@ -1236,7 +1236,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
       <ownedComment xmi:id="_YroBsLkBEeODDJAC5t5vpw">
         <body>Note: The consumable participant points to the precise allergen or substance of intolerance. Because the consumable and the reaction are more clinically relevant than a categorization of the allergy/adverse event type, many systems will simply assign a fixed value here (e.g. &quot;allergy to substance&quot;).</body>
       </ownedComment>
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Kgc-oPr7EeO3D4OxHxUkag" name="statusCode" visibility="private" redefinedProperty="_2EoNwxSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
@@ -2436,45 +2436,90 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:ConstraintValidation xmi:id="_ligw8BaWEeWPafwaDwpzXw" severity="INFO" base_Constraint="_SS-tcM26EeSEZ8MJJ3ZzLg"/>
   <CDA:ConstraintValidation xmi:id="_mFgwUBaWEeWPafwaDwpzXw" severity="INFO" base_Constraint="_Tnvg8M26EeSEZ8MJJ3ZzLg"/>
   <MDMI:MDMIMapping xmi:id="_PJdHIKWXEeW6KNciAYqeJQ" base_Class="_2LMIwBSVEeGGzu7fmW9pXw">
-    <elements xmi:id="_OtC1wKf5EeWmhfczEQjYUg" businessElement="AllergiesSectionTitle" modelElement="_2LPMEBSVEeGGzu7fmW9pXw" businessElementId="9b187c47-58cf-4e9d-8f63-d40eae8cfc15" modelElementPath="title" condition=""/>
+    <elements xmi:id="_N1zJ0ImgEeezQpAw8EINxw" businessElement="AllergySectionContainer" modelElement="_2LMIwBSVEeGGzu7fmW9pXw" businessElementId="a2df7ff3-1a9b-4e83-8b14-3a3d9e92970b" modelElementPath="" condition=""/>
     <elements xmi:id="_XrpIcKf5EeWmhfczEQjYUg" businessElement="AllergyConcernContainer" modelElement="_2LNW4RSVEeGGzu7fmW9pXw" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath="allergyProblemAct" condition=""/>
-    <elements xmi:id="_h494EKf5EeWmhfczEQjYUg" businessElement="AllergyConcernStartDate" modelElement="_2EPMMBSVEeGGzu7fmW9pXw" businessElementId="e7e780ef-09c5-48e9-8b43-75b14e921d35" modelElementPath="allergyProblemAct.effectiveTime.low" condition=""/>
-    <elements xmi:id="_q_6OcKf5EeWmhfczEQjYUg" businessElement="AllergyConcernEndDate" modelElement="_2EPMMBSVEeGGzu7fmW9pXw" businessElementId="99184840-a095-41b1-b361-ce05425e0352" modelElementPath="allergyProblemAct.effectiveTime.high" condition=""/>
     <elements xmi:id="_u7JU8Kf5EeWmhfczEQjYUg" businessElement="AllergyObservationContainer" modelElement="_2F6nMBSVEeGGzu7fmW9pXw" businessElementId="f2b74432-5fb6-473b-b995-c4d839eacd75" modelElementPath="allergyProblemAct.allergyObservation" condition=""/>
-    <elements xmi:id="_167xkKf5EeWmhfczEQjYUg" businessElement="AllergyObservationID" modelElement="_2EnmsBSVEeGGzu7fmW9pXw" businessElementId="e16a6146-42c0-4a28-a320-2cd664638f83" modelElementPath="allergyProblemAct.allergyObservation.id" condition=""/>
-    <elements xmi:id="_AjcBUKf6EeWmhfczEQjYUg" businessElement="AllergyObservationStartDate" modelElement="_2Epb4BSVEeGGzu7fmW9pXw" businessElementId="4a48d496-e9e2-4262-b095-d0ca09570233" modelElementPath="allergyProblemAct.allergyObservation.effectiveTime.low" condition=""/>
-    <elements xmi:id="_D4Oy4Kf6EeWmhfczEQjYUg" businessElement="AllergyObservationEndDate" modelElement="_2Epb4BSVEeGGzu7fmW9pXw" businessElementId="The ending time for the specific AllergyObservation." modelElementPath="allergyProblemAct.allergyObservation.effectiveTime.high" condition=""/>
-    <elements xmi:id="_LyIHUKf6EeWmhfczEQjYUg" businessElement="AllergyObservationAllergyTypeCode" modelElement="_2EaLdhSVEeGGzu7fmW9pXw" businessElementId="39c7c1a7-46c6-45ac-ab76-00a19b198b88" modelElementPath="allergyProblemAct.allergyObservation.value" condition=""/>
-    <elements xmi:id="_aRG5YKf6EeWmhfczEQjYUg" businessElement="AllergyReactionID" modelElement="_2FBPUBSVEeGGzu7fmW9pXw" businessElementId="634ccc25-1115-4030-8e6c-535de4c546b8" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.id" condition=""/>
-    <elements xmi:id="_u_Lq8Kf6EeWmhfczEQjYUg" businessElement="AllergyReactionCode" modelElement="_2FBPVRSVEeGGzu7fmW9pXw" businessElementId="e9ba8941-e2ec-47f2-a176-ba97ba6d5e87" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.code" condition=""/>
-    <elements xmi:id="_X6hnEKf7EeWmhfczEQjYUg" businessElement="AllergyReactionNotes" modelElement="_2FDEgBSVEeGGzu7fmW9pXw" businessElementId="d0dd472b-e8a8-484f-bfd8-c751f974eabd" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.text" condition=""/>
-    <elements xmi:id="_epDIAKgQEeWmhfczEQjYUg" businessElement="AllergyReactionValue" modelElement="_2FFgwRSVEeGGzu7fmW9pXw" businessElementId="3f3ed4df-0fbb-44f5-9396-0fd79d033fd3" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.value" condition=""/>
-    <elements xmi:id="_sgRWgKgQEeWmhfczEQjYUg" businessElement="AllergySeverityNotes" modelElement="_2FGu5xSVEeGGzu7fmW9pXw" businessElementId="9f911ed4-85aa-4628-8b89-a02433b67949" modelElementPath="allergyProblemAct.allergyObservation.severityObservation.text" condition=""/>
     <elements xmi:id="_fS_yAKgSEeWmhfczEQjYUg" businessElement="AllergyReactionSeverityIntepretationCode" modelElement="_2FRuChSVEeGGzu7fmW9pXw" businessElementId="1ca83872-3f5c-4347-90f2-6ad9ac91967c" modelElementPath="allergyProblemAct.allergyObservation.allergyStatusObservation.value" condition=""/>
-    <elements xmi:id="_2wEgcKgSEeWmhfczEQjYUg" businessElement="AllergySeverityValue" modelElement="_2FGu6hSVEeGGzu7fmW9pXw" businessElementId="7931e589-0680-4a02-9d29-b8cd923b9dc5" modelElementPath="allergyProblemAct.allergyObservation.severityObservation.value" condition=""/>
-    <elements xmi:id="_LLuWMKgcEeWmhfczEQjYUg" businessElement="AllergyReactionContainer" modelElement="_2Ej8URSVEeGGzu7fmW9pXw" businessElementId="e20b3fd4-a386-4d90-aa17-d4e16cb377a9" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation" condition=""/>
-    <elements xmi:id="_ZSX8QMMBEeWmlcrklXzfkQ" businessElement="AllergyReactionStartDate" modelElement="_2FE5sBSVEeGGzu7fmW9pXw" businessElementId="e85ca1fd-08bf-4643-9fb1-16222f165381" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.effectiveTime.low" condition=""/>
-    <elements xmi:id="_c_H60MMBEeWmlcrklXzfkQ" businessElement="AllergyReactionEndDate" modelElement="_2FE5sBSVEeGGzu7fmW9pXw" businessElementId="ff2a6096-22d6-4435-acf1-e51d3d5dfe01" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.effectiveTime.high" condition=""/>
-    <elements xmi:id="_3DX6YND4EeW2rZiJ1yjDkg" businessElement="AllergiesSectionText" modelElement="_2LPzIBSVEeGGzu7fmW9pXw" businessElementId="c3d121c5-eb50-40fe-b72e-a4c342d901e6" modelElementPath="text" condition=""/>
-    <elements xmi:id="_WZgOwNEEEeW2rZiJ1yjDkg" businessElement="AllergyConcernStatusCode" modelElement="_2ENXABSVEeGGzu7fmW9pXw" businessElementId="988bb2a3-323e-4005-b2c3-ac20263e68b0" modelElementPath="allergyProblemAct.statusCode" condition=""/>
+    <elements xmi:id="_D4Oy4Kf6EeWmhfczEQjYUg" businessElement="AllergyObservationEndDate" modelElement="_2Epb4BSVEeGGzu7fmW9pXw" businessElementId="The ending time for the specific AllergyObservation." modelElementPath="allergyProblemAct.allergyObservation.effectiveTime.high" condition=""/>
+    <elements xmi:id="_AjcBUKf6EeWmhfczEQjYUg" businessElement="AllergyObservationStartDate" modelElement="_2Epb4BSVEeGGzu7fmW9pXw" businessElementId="4a48d496-e9e2-4262-b095-d0ca09570233" modelElementPath="allergyProblemAct.allergyObservation.effectiveTime.low" condition=""/>
+    <elements xmi:id="_167xkKf5EeWmhfczEQjYUg" businessElement="AllergyObservationID" modelElement="_2EnmsBSVEeGGzu7fmW9pXw" businessElementId="e16a6146-42c0-4a28-a320-2cd664638f83" modelElementPath="allergyProblemAct.allergyObservation.id" condition=""/>
     <elements xmi:id="_iGpgcNEGEeW2rZiJ1yjDkg" businessElement="AllergyObservationAllergenCode" businessElementId="a14fdf6b-cab0-434c-9e67-827e6261cb72" modelElementPath="allergyProblemAct.allergyObservation.participant.participantRole.playingEntity.code" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_LhvikErhEd6FXKclYGEDCw"/>
     </elements>
+    <elements xmi:id="_LLuWMKgcEeWmhfczEQjYUg" businessElement="AllergyReactionContainer" modelElement="_2Ej8URSVEeGGzu7fmW9pXw" businessElementId="e20b3fd4-a386-4d90-aa17-d4e16cb377a9" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation" condition=""/>
+    <elements xmi:id="_u_Lq8Kf6EeWmhfczEQjYUg" businessElement="AllergyReactionCode" modelElement="_2FBPVRSVEeGGzu7fmW9pXw" businessElementId="e9ba8941-e2ec-47f2-a176-ba97ba6d5e87" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.code" condition=""/>
+    <elements xmi:id="_c_H60MMBEeWmlcrklXzfkQ" businessElement="AllergyReactionEndDate" modelElement="_2FE5sBSVEeGGzu7fmW9pXw" businessElementId="ff2a6096-22d6-4435-acf1-e51d3d5dfe01" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.effectiveTime.high" condition=""/>
+    <elements xmi:id="_ZSX8QMMBEeWmlcrklXzfkQ" businessElement="AllergyReactionStartDate" modelElement="_2FE5sBSVEeGGzu7fmW9pXw" businessElementId="e85ca1fd-08bf-4643-9fb1-16222f165381" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.effectiveTime.low" condition=""/>
+    <elements xmi:id="_aRG5YKf6EeWmhfczEQjYUg" businessElement="AllergyReactionID" modelElement="_2FBPUBSVEeGGzu7fmW9pXw" businessElementId="634ccc25-1115-4030-8e6c-535de4c546b8" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.id" condition=""/>
     <elements xmi:id="_pDao0NEHEeW2rZiJ1yjDkg" businessElement="AllergyObservationSeverityNotes" modelElement="_2FGu5xSVEeGGzu7fmW9pXw" businessElementId="6f6ab638-a748-4e85-9143-598489c1e3d0" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.severityObservation.text" condition=""/>
-    <elements xmi:id="_Rp7GUNstEeWHrYMqjUvBVA" businessElement="AllergyConcernID" modelElement="_2EMv8BSVEeGGzu7fmW9pXw" businessElementId="c48d4e8b-fde6-455f-895a-f47f180d6e60" modelElementPath="allergyProblemAct.id" condition=""/>
+    <elements xmi:id="_X6hnEKf7EeWmhfczEQjYUg" businessElement="AllergyReactionNotes" modelElement="_2FDEgBSVEeGGzu7fmW9pXw" businessElementId="d0dd472b-e8a8-484f-bfd8-c751f974eabd" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.text" condition=""/>
+    <elements xmi:id="_epDIAKgQEeWmhfczEQjYUg" businessElement="AllergyReactionValue" modelElement="_2FFgwRSVEeGGzu7fmW9pXw" businessElementId="3f3ed4df-0fbb-44f5-9396-0fd79d033fd3" modelElementPath="allergyProblemAct.allergyObservation.reactionObservation.value" condition=""/>
+    <elements xmi:id="_sgRWgKgQEeWmhfczEQjYUg" businessElement="AllergySeverityNotes" modelElement="_2FGu5xSVEeGGzu7fmW9pXw" businessElementId="9f911ed4-85aa-4628-8b89-a02433b67949" modelElementPath="allergyProblemAct.allergyObservation.severityObservation.text" condition=""/>
+    <elements xmi:id="_2wEgcKgSEeWmhfczEQjYUg" businessElement="AllergySeverityValue" modelElement="_2FGu6hSVEeGGzu7fmW9pXw" businessElementId="7931e589-0680-4a02-9d29-b8cd923b9dc5" modelElementPath="allergyProblemAct.allergyObservation.severityObservation.value" condition=""/>
+    <elements xmi:id="_LyIHUKf6EeWmhfczEQjYUg" businessElement="AllergyObservationAllergyTypeCode" modelElement="_2EaLdhSVEeGGzu7fmW9pXw" businessElementId="39c7c1a7-46c6-45ac-ab76-00a19b198b88" modelElementPath="allergyProblemAct.allergyObservation.value" condition=""/>
     <elements xmi:id="_KMZ54PHsEeWWC9NUI_yCiA" businessElement="AllergyConcernAdverseEventType" modelElement="_2EMv9BSVEeGGzu7fmW9pXw" businessElementId="3c608742-af05-440b-a08b-7d9e42a72f18" modelElementPath="allergyProblemAct.code" condition=""/>
-    <elements xmi:id="_N1zJ0ImgEeezQpAw8EINxw" businessElement="AllergySectionContainer" modelElement="_2LMIwBSVEeGGzu7fmW9pXw" businessElementId="a2df7ff3-1a9b-4e83-8b14-3a3d9e92970b" modelElementPath="" condition=""/>
+    <elements xmi:id="_q_6OcKf5EeWmhfczEQjYUg" businessElement="AllergyConcernEndDate" modelElement="_2EPMMBSVEeGGzu7fmW9pXw" businessElementId="99184840-a095-41b1-b361-ce05425e0352" modelElementPath="allergyProblemAct.effectiveTime.high" condition=""/>
+    <elements xmi:id="_h494EKf5EeWmhfczEQjYUg" businessElement="AllergyConcernStartDate" modelElement="_2EPMMBSVEeGGzu7fmW9pXw" businessElementId="e7e780ef-09c5-48e9-8b43-75b14e921d35" modelElementPath="allergyProblemAct.effectiveTime.low" condition=""/>
+    <elements xmi:id="_Rp7GUNstEeWHrYMqjUvBVA" businessElement="AllergyConcernID" modelElement="_2EMv8BSVEeGGzu7fmW9pXw" businessElementId="c48d4e8b-fde6-455f-895a-f47f180d6e60" modelElementPath="allergyProblemAct.id" condition=""/>
+    <elements xmi:id="_WZgOwNEEEeW2rZiJ1yjDkg" businessElement="AllergyConcernStatusCode" modelElement="_2ENXABSVEeGGzu7fmW9pXw" businessElementId="988bb2a3-323e-4005-b2c3-ac20263e68b0" modelElementPath="allergyProblemAct.statusCode" condition=""/>
+    <elements xmi:id="_3DX6YND4EeW2rZiJ1yjDkg" businessElement="AllergiesSectionText" modelElement="_2LPzIBSVEeGGzu7fmW9pXw" businessElementId="c3d121c5-eb50-40fe-b72e-a4c342d901e6" modelElementPath="text" condition=""/>
+    <elements xmi:id="_OtC1wKf5EeWmhfczEQjYUg" businessElement="AllergiesSectionTitle" modelElement="_2LPMEBSVEeGGzu7fmW9pXw" businessElementId="9b187c47-58cf-4e9d-8f63-d40eae8cfc15" modelElementPath="title" condition=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_kqVYEMoLEee0JqRZRxfFbA" base_Class="_EONPMAInEeSr1aKUYorURA">
     <elements xmi:id="_kqXNQMoLEee0JqRZRxfFbA" businessElement="AllergySectionContainer" modelElement="_EONPMAInEeSr1aKUYorURA" businessElementId="a2df7ff3-1a9b-4e83-8b14-3a3d9e92970b" modelElementPath="" condition=""/>
-    <elements xmi:id="_KGFA0MoMEeewXL2F0PSkQg" businessElement="AllergySectionIDCode" modelElement="_ENCVEAIoEeSr1aKUYorURA" businessElementId="62c224fc-1a37-4638-b155-fb420d5909f2" modelElementPath="code" condition=""/>
-    <elements xmi:id="_M4hTQMoMEeewXL2F0PSkQg" businessElement="AllergySectionNotes" modelElement="_I_9QgAIzEeScubSeRE1upQ" businessElementId="c3d121c5-eb50-40fe-b72e-a4c342d901e6" modelElementPath="text" condition=""/>
     <elements xmi:id="_cgNZ0MoMEeewXL2F0PSkQg" businessElement="AllergyConcernContainer" modelElement="_kAF3AAIoEeSr1aKUYorURA" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath="allergyConcernAct2" condition=""/>
+    <elements xmi:id="_GxsYEO1wEeedpI01H1hO1w" businessElement="AllergyObservationContainer" modelElement="_K9gkwPffEeO297ryy8ptVg" businessElementId="f2b74432-5fb6-473b-b995-c4d839eacd75" modelElementPath="allergyConcernAct2.allergyObservation2" condition=""/>
+    <elements xmi:id="_Cwm3cPDBEee9lP8sXPmlTg" businessElement="AllergyObservationAuthorContainer" modelElement="_Gwg5QLj8EeODDJAC5t5vpw" businessElementId="da02ca9c-fcf6-4218-b347-ddac27e76897" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation" condition=""/>
+    <elements xmi:id="_XW8AcNE_EeeVI6shA3KNFw" businessElement="AllergyObservationAuthorLegalName" businessElementId="bd77aa8a-027d-44f0-86ca-7dc618c10dc8" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    </elements>
+    
+    <elements xmi:id="_l2DVYNE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationID" businessElementId="7646425b-b746-48cf-9284-b3e46cfc381e" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_okkxINE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationName" businessElementId="7c26e68a-2b34-4c38-ad63-1b7e3d4eb530" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.name" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_aFyzYNE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationBusinessPhoneContact" businessElementId="9b547d28-c1b1-4a9a-a739-c6c8e550da9e" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_dBg9oNE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationEmailContact" businessElementId="933620a9-8a5f-412c-a6da-21e039ce632c" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_gJUcENE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationFaxContact" businessElementId="9d9ae9e3-0d40-4dc3-b0fa-93ca4974aa79" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_i9FkMNE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationURLContact" businessElementId="721d91a4-6752-4878-a9df-5f790655ec8a" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_OTDGQPDJEee3Lobqorygow" businessElement="AllergyObservationAuthorDateTime" businessElementId="57bcc253-6579-40f2-a3eb-e87c3d13dadf" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.time" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_NX-XYPDEEeejcdidP0Rktg" businessElement="AllergyConcernOnsetDate" modelElement="_QjUYoLkTEeODDJAC5t5vpw" businessElementId="6dd1c7a1-26b5-459f-94c4-47ccec635fba" modelElementPath="allergyConcernAct2.allergyObservation2.effectiveTime.low" condition=""/>
+    <elements xmi:id="_wzeFgPR7EeeCr4sW4znF_Q" businessElement="AllergyObservationID" modelElement="_2EnmsBSVEeGGzu7fmW9pXw" businessElementId="e16a6146-42c0-4a28-a320-2cd664638f83" modelElementPath="allergyConcernAct2.allergyObservation2.id"/>
+    <elements xmi:id="_HRbXQPDBEee9lP8sXPmlTg" businessElement="AllergySubstanceContainer" modelElement="_EB7dAPrwEeO3D4OxHxUkag" businessElementId="cd6a09b7-3210-4cee-9a09-21b3137a87d6" modelElementPath="allergyConcernAct2.allergyObservation2.participant" condition=""/>
+    <elements xmi:id="_rYn18NSIEeeH-pUxfl1XLg" businessElement="AllergyObservationAllergenCode" modelElement="_yZIS8PryEeO3D4OxHxUkag" businessElementId="a14fdf6b-cab0-434c-9e67-827e6261cb72" modelElementPath="allergyConcernAct2.allergyObservation2.participant.participantRole.playingEntity.code" condition=""/>
+    <elements xmi:id="_zI5rgNE_EeeVI6shA3KNFw" businessElement="AllergyReactionContainer" modelElement="_c0oBMPfoEeO297ryy8ptVg" businessElementId="e20b3fd4-a386-4d90-aa17-d4e16cb377a9" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2" condition=""/>
+    <elements xmi:id="_5nUwAPDGEeep7I3iRIit_Q" businessElement="AllergyReactionEndDateTime" modelElement="_2FE5sBSVEeGGzu7fmW9pXw" businessElementId="17c9f007-e127-422c-8b1d-0eb90276e6d3" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.effectiveTime.high" condition=""/>
+    <elements xmi:id="_8ajsoPDGEeep7I3iRIit_Q" businessElement="AllergyReactionStartDateTime" modelElement="_2FE5sBSVEeGGzu7fmW9pXw" businessElementId="1e185357-131d-44d2-885b-828a6f216432" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.effectiveTime.low" condition=""/>
+    <elements xmi:id="_tu3EsNE_EeeVI6shA3KNFw" businessElement="AllergyReactionID" modelElement="_B1Q8sMzcEeSLqosJ4F90vA" businessElementId="634ccc25-1115-4030-8e6c-535de4c546b8" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.id" condition=""/>
+    <elements xmi:id="_GECf0NFAEeeVI6shA3KNFw" businessElement="AllergyReactionSeverityNotes" modelElement="_LNTEMM26EeSEZ8MJJ3ZzLg" businessElementId="8ceee36a-8b13-4c6d-a4b0-cc102f6b60c6" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.severityObservation2.text" condition=""/>
+    <elements xmi:id="_CvuPYNFAEeeVI6shA3KNFw" businessElement="AllergyReactionSeverityValueCode" modelElement="_2FGu6hSVEeGGzu7fmW9pXw" businessElementId="283543ab-c176-4c4d-a215-3824512632d3" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.severityObservation2.value.CD" condition=""/>
+    <elements xmi:id="_-l2P8NE_EeeVI6shA3KNFw" businessElement="AllergyReactionNotes" modelElement="_c7bRsMzcEeSLqosJ4F90vA" businessElementId="d0dd472b-e8a8-484f-bfd8-c751f974eabd" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.text" condition=""/>
+    <elements xmi:id="_606U8NE_EeeVI6shA3KNFw" businessElement="AllergyReactionValueCode" modelElement="_2FFgwRSVEeGGzu7fmW9pXw" businessElementId="3f3ed4df-0fbb-44f5-9396-0fd79d033fd3" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.value.CD" condition=""/>
+    <elements xmi:id="_FUvoIPDBEee9lP8sXPmlTg" businessElement="AllergyObservationSeverityContainer" modelElement="_5r6gIPfpEeO297ryy8ptVg" businessElementId="280435d2-7273-4054-b8d5-e50c1e46a1b7" modelElementPath="allergyConcernAct2.allergyObservation2.severityObservation2" condition=""/>
+    <elements xmi:id="_OWhTYNFAEeeVI6shA3KNFw" businessElement="AllergyObservationSeverityNotes" modelElement="_LNTEMM26EeSEZ8MJJ3ZzLg" businessElementId="9f911ed4-85aa-4628-8b89-a02433b67949" modelElementPath="allergyConcernAct2.allergyObservation2.severityObservation2.text" condition=""/>
+    <elements xmi:id="_Rk1pgNFAEeeVI6shA3KNFw" businessElement="AllergyObservationSeverityValueCode" modelElement="_2FGu6hSVEeGGzu7fmW9pXw" businessElementId="7931e589-0680-4a02-9d29-b8cd923b9dc5" modelElementPath="allergyConcernAct2.allergyObservation2.severityObservation2.value.CD" condition=""/>
+    <elements xmi:id="_a-JCQPJdEeeua7szbIh57w" businessElement="AllergyObservationValueCode" modelElement="_3bHDQLkAEeODDJAC5t5vpw" businessElementId="6c1c8bf7-156e-4567-83da-f9ee9df642ad" modelElementPath="allergyConcernAct2.allergyObservation2.value.CD" condition=""/>
+    <elements xmi:id="_BHiA0PDBEee9lP8sXPmlTg" businessElement="AllergyConcernAuthorContainer" modelElement="_lUnZMLN0EeOtlapy2HWYww" businessElementId="1d39f697-1c54-4ac1-b161-ce057e24099c" modelElementPath="allergyConcernAct2.authorParticipation" condition=""/>
+    <elements xmi:id="_edtEQNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorLegalName" businessElementId="6f7d3b86-d7d3-47ba-9186-7466c37b4273" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    </elements>
     <elements xmi:id="_aPae4NE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorID" businessElementId="7b54e096-b6c1-4f24-80ed-24b35f468902" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_edtEQNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorLegalName" businessElementId="6f7d3b86-d7d3-47ba-9186-7466c37b4273" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    <elements xmi:id="_t1cDQNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationAddress" businessElementId="78d5339d-7cd2-4b0d-b872-d648db096fd3" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_g_wxUNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationEmailContact" businessElementId="81106549-a93c-4283-91b1-b0859a75c9d7" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="@use=111">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
@@ -2494,62 +2539,15 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <elements xmi:id="_rjnxoNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationURLContact" businessElementId="50a80e44-1f73-40a0-8af5-d838129ce9ec" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="@use=333">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_t1cDQNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationAddress" businessElementId="78d5339d-7cd2-4b0d-b872-d648db096fd3" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_UvGbgNE_EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorID" businessElementId="7b54e096-b6c1-4f24-80ed-24b35f468902" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_XW8AcNE_EeeVI6shA3KNFw" businessElement="AllergyObservationAuthorLegalName" businessElementId="bd77aa8a-027d-44f0-86ca-7dc618c10dc8" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_aFyzYNE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationBusinessPhoneContact" businessElementId="9b547d28-c1b1-4a9a-a739-c6c8e550da9e" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_dBg9oNE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationEmailContact" businessElementId="933620a9-8a5f-412c-a6da-21e039ce632c" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_gJUcENE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationFaxContact" businessElementId="9d9ae9e3-0d40-4dc3-b0fa-93ca4974aa79" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_i9FkMNE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationURLContact" businessElementId="721d91a4-6752-4878-a9df-5f790655ec8a" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_l2DVYNE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationID" businessElementId="7646425b-b746-48cf-9284-b3e46cfc381e" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_okkxINE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationName" businessElementId="7c26e68a-2b34-4c38-ad63-1b7e3d4eb530" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_tu3EsNE_EeeVI6shA3KNFw" businessElement="AllergyReactionID" modelElement="_B1Q8sMzcEeSLqosJ4F90vA" businessElementId="634ccc25-1115-4030-8e6c-535de4c546b8" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.id" condition=""/>
-    <elements xmi:id="_zI5rgNE_EeeVI6shA3KNFw" businessElement="AllergyReactionContainer" modelElement="_c0oBMPfoEeO297ryy8ptVg" businessElementId="e20b3fd4-a386-4d90-aa17-d4e16cb377a9" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2" condition=""/>
-    <elements xmi:id="_606U8NE_EeeVI6shA3KNFw" businessElement="AllergyReactionValueCode" modelElement="_2FFgwRSVEeGGzu7fmW9pXw" businessElementId="3f3ed4df-0fbb-44f5-9396-0fd79d033fd3" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.value.CD" condition=""/>
-    <elements xmi:id="_-l2P8NE_EeeVI6shA3KNFw" businessElement="AllergyReactionNotes" modelElement="_c7bRsMzcEeSLqosJ4F90vA" businessElementId="d0dd472b-e8a8-484f-bfd8-c751f974eabd" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.text" condition=""/>
-    <elements xmi:id="_CvuPYNFAEeeVI6shA3KNFw" businessElement="AllergyReactionSeverityValueCode" modelElement="_2FGu6hSVEeGGzu7fmW9pXw" businessElementId="283543ab-c176-4c4d-a215-3824512632d3" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.severityObservation2.value" condition=""/>
-    <elements xmi:id="_GECf0NFAEeeVI6shA3KNFw" businessElement="AllergyReactionSeverityNotes" modelElement="_LNTEMM26EeSEZ8MJJ3ZzLg" businessElementId="8ceee36a-8b13-4c6d-a4b0-cc102f6b60c6" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.severityObservation2.text" condition=""/>
-    <elements xmi:id="_OWhTYNFAEeeVI6shA3KNFw" businessElement="AllergyObservationSeverityNotes" modelElement="_LNTEMM26EeSEZ8MJJ3ZzLg" businessElementId="9f911ed4-85aa-4628-8b89-a02433b67949" modelElementPath="allergyConcernAct2.allergyObservation2.severityObservation2.text" condition=""/>
-    <elements xmi:id="_Rk1pgNFAEeeVI6shA3KNFw" businessElement="AllergyObservationSeverityValueCode" modelElement="_2FGu6hSVEeGGzu7fmW9pXw" businessElementId="7931e589-0680-4a02-9d29-b8cd923b9dc5" modelElementPath="allergyConcernAct2.allergyObservation2.severityObservation2.value.CD" condition=""/>
-    <elements xmi:id="_rYn18NSIEeeH-pUxfl1XLg" businessElement="AllergyObservationAllergenCode" modelElement="_yZIS8PryEeO3D4OxHxUkag" businessElementId="a14fdf6b-cab0-434c-9e67-827e6261cb72" modelElementPath="allergyConcernAct2.allergyObservation2.participant.participantRole.playingEntity.code" condition=""/>
-    <elements xmi:id="_GxsYEO1wEeedpI01H1hO1w" businessElement="AllergyObservationContainer" modelElement="_K9gkwPffEeO297ryy8ptVg" businessElementId="f2b74432-5fb6-473b-b995-c4d839eacd75" modelElementPath="allergyConcernAct2.allergyObservation2" condition=""/>
-    <elements xmi:id="_BHiA0PDBEee9lP8sXPmlTg" businessElement="AllergyConcernAuthorContainer" modelElement="_lUnZMLN0EeOtlapy2HWYww" businessElementId="1d39f697-1c54-4ac1-b161-ce057e24099c" modelElementPath="allergyConcernAct2.authorParticipation" condition=""/>
-    <elements xmi:id="_Cwm3cPDBEee9lP8sXPmlTg" businessElement="AllergyObservationAuthorContainer" modelElement="_Gwg5QLj8EeODDJAC5t5vpw" businessElementId="da02ca9c-fcf6-4218-b347-ddac27e76897" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation" condition=""/>
-    <elements xmi:id="_FUvoIPDBEee9lP8sXPmlTg" businessElement="AllergyObservationSeverityContainer" modelElement="_5r6gIPfpEeO297ryy8ptVg" businessElementId="280435d2-7273-4054-b8d5-e50c1e46a1b7" modelElementPath="allergyConcernAct2.allergyObservation2.severityObservation2" condition=""/>
-    <elements xmi:id="_HRbXQPDBEee9lP8sXPmlTg" businessElement="AllergySubstanceContainer" modelElement="_EB7dAPrwEeO3D4OxHxUkag" businessElementId="cd6a09b7-3210-4cee-9a09-21b3137a87d6" modelElementPath="allergyConcernAct2.allergyObservation2.participant" condition=""/>
-    <elements xmi:id="_NX-XYPDEEeejcdidP0Rktg" businessElement="AllergyConcernOnsetDate" modelElement="_QjUYoLkTEeODDJAC5t5vpw" businessElementId="6dd1c7a1-26b5-459f-94c4-47ccec635fba" modelElementPath="allergyConcernAct2.allergyObservation2.effectiveTime.low" condition=""/>
-    <elements xmi:id="_5nUwAPDGEeep7I3iRIit_Q" businessElement="AllergyReactionEndDateTime" modelElement="_2FE5sBSVEeGGzu7fmW9pXw" businessElementId="17c9f007-e127-422c-8b1d-0eb90276e6d3" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.effectiveTime.high" condition=""/>
-    <elements xmi:id="_8ajsoPDGEeep7I3iRIit_Q" businessElement="AllergyReactionStartDateTime" modelElement="_2FE5sBSVEeGGzu7fmW9pXw" businessElementId="1e185357-131d-44d2-885b-828a6f216432" modelElementPath="allergyConcernAct2.allergyObservation2.reactionObservation2.effectiveTime.low" condition=""/>
-    <elements xmi:id="_OTDGQPDJEee3Lobqorygow" businessElement="AllergyObservationAuthorDateTime" businessElementId="57bcc253-6579-40f2-a3eb-e87c3d13dadf" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.time" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
-    </elements>
     <elements xmi:id="_NYqsMPDKEee3Lobqorygow" businessElement="AllergyConcernAuthorDateTime" businessElementId="df5ae0f7-96ea-4237-a132-5af7e945b405" modelElementPath="allergyConcernAct2.authorParticipation.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_a-JCQPJdEeeua7szbIh57w" businessElement="AllergyObservationValueCode" modelElement="_3bHDQLkAEeODDJAC5t5vpw" businessElementId="6c1c8bf7-156e-4567-83da-f9ee9df642ad" modelElementPath="allergyConcernAct2.allergyObservation2.value.CD" condition=""/>
-    <elements xmi:id="_wzeFgPR7EeeCr4sW4znF_Q" businessElement="AllergyObservationID" modelElement="_2EnmsBSVEeGGzu7fmW9pXw" businessElementId="e16a6146-42c0-4a28-a320-2cd664638f83" modelElementPath="allergyConcernAct2.allergyObservation2.id"/>
+    <elements xmi:id="_KGFA0MoMEeewXL2F0PSkQg" businessElement="AllergySectionIDCode" modelElement="_ENCVEAIoEeSr1aKUYorURA" businessElementId="62c224fc-1a37-4638-b155-fb420d5909f2" modelElementPath="code" condition=""/>
+    <elements xmi:id="_M4hTQMoMEeewXL2F0PSkQg" businessElement="AllergySectionNotes" modelElement="_I_9QgAIzEeScubSeRE1upQ" businessElementId="c3d121c5-eb50-40fe-b72e-a4c342d901e6" modelElementPath="text" condition=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_V7q3ENSGEeeH-pUxfl1XLg" base_Class="_uCiIYLNwEeOtlapy2HWYww">
-    <elements xmi:id="_V7t6YNSGEeeH-pUxfl1XLg" businessElement="AllergyConcernStartDateTime" modelElement="_2EPMMBSVEeGGzu7fmW9pXw" businessElementId="e7e780ef-09c5-48e9-8b43-75b14e921d35" modelElementPath="effectiveTime.low" condition=""/>
     <elements xmi:id="_X0tcUNSGEeeH-pUxfl1XLg" businessElement="AllergyConcernEndDateTime" modelElement="_2EPMMBSVEeGGzu7fmW9pXw" businessElementId="99184840-a095-41b1-b361-ce05425e0352" modelElementPath="effectiveTime.high" condition=""/>
+    <elements xmi:id="_V7t6YNSGEeeH-pUxfl1XLg" businessElement="AllergyConcernStartDateTime" modelElement="_2EPMMBSVEeGGzu7fmW9pXw" businessElementId="e7e780ef-09c5-48e9-8b43-75b14e921d35" modelElementPath="effectiveTime.low" condition=""/>
     <elements xmi:id="_bc8pUPR6EeeCr4sW4znF_Q" businessElement="AllergyConcernID" modelElement="_2EMv8BSVEeGGzu7fmW9pXw" businessElementId="c48d4e8b-fde6-455f-895a-f47f180d6e60" modelElementPath="id"/>
     <elements xmi:id="_NSApEPSEEeeCr4sW4znF_Q" businessElement="AllergyConcernStatusCode" modelElement="_2ENXABSVEeGGzu7fmW9pXw" businessElementId="988bb2a3-323e-4005-b2c3-ac20263e68b0" modelElementPath="statusCode"/>
   </MDMI:MDMIMapping>
