@@ -1215,10 +1215,11 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     </ownedRule>
     <generalization xmi:id="_uVNS4Lj5EeODDJAC5t5vpw" general="_2EaLUBSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_Oapv4Lj7EeODDJAC5t5vpw" name="AllergyObservation" client="_uVJogLj5EeODDJAC5t5vpw" supplier="_2EaLUBSVEeGGzu7fmW9pXw" contract="_2EaLUBSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="_GwfEELj8EeODDJAC5t5vpw" name="authorParticipation" redefinedProperty="_FQD_EDJDEeG6R8Pb5FT2Ow" association="_Gwg5QLj8EeODDJAC5t5vpw">
+    <ownedAttribute xmi:id="_GwfEELj8EeODDJAC5t5vpw" name="author" association="_Gwg5QLj8EeODDJAC5t5vpw">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e7soEeG2Eee7xrSdyolseA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e7soEOG2Eee7xrSdyolseA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Xu9-cLj8EeODDJAC5t5vpw" name="negationInd" visibility="private">
       <ownedComment xmi:id="_h08I4Lj8EeODDJAC5t5vpw">
@@ -2473,7 +2474,6 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <elements xmi:id="_XW8AcNE_EeeVI6shA3KNFw" businessElement="AllergyObservationAuthorLegalName" businessElementId="bd77aa8a-027d-44f0-86ca-7dc618c10dc8" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    
     <elements xmi:id="_l2DVYNE_EeeVI6shA3KNFw" businessElement="AllergyObservationOrganizationID" businessElementId="7646425b-b746-48cf-9284-b3e46cfc381e" modelElementPath="allergyConcernAct2.allergyObservation2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
     </elements>
@@ -2542,7 +2542,6 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <elements xmi:id="_NYqsMPDKEee3Lobqorygow" businessElement="AllergyConcernAuthorDateTime" businessElementId="df5ae0f7-96ea-4237-a132-5af7e945b405" modelElementPath="allergyConcernAct2.authorParticipation.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_KGFA0MoMEeewXL2F0PSkQg" businessElement="AllergySectionIDCode" modelElement="_ENCVEAIoEeSr1aKUYorURA" businessElementId="62c224fc-1a37-4638-b155-fb420d5909f2" modelElementPath="code" condition=""/>
     <elements xmi:id="_M4hTQMoMEeewXL2F0PSkQg" businessElement="AllergySectionNotes" modelElement="_I_9QgAIzEeScubSeRE1upQ" businessElementId="c3d121c5-eb50-40fe-b72e-a4c342d901e6" modelElementPath="text" condition=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_V7q3ENSGEeeH-pUxfl1XLg" base_Class="_uCiIYLNwEeOtlapy2HWYww">
