@@ -1550,10 +1550,11 @@ For example, an observation outcome of a blood oxygen saturation level of 95% is
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z0O9AJmbEeOLJeQez13EkQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_gjupMK73EeORf5eJaKt1KQ" name="authorParticipation" association="_gjweYK73EeORf5eJaKt1KQ">
+    <ownedAttribute xmi:id="_gjupMK73EeORf5eJaKt1KQ" name="author" association="_gjweYK73EeORf5eJaKt1KQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gjvQQK73EeORf5eJaKt1KQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gjvQQa73EeORf5eJaKt1KQ" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_1f3zEJmaEeOLJeQez13EkQ" base_Class="_ncafYJmaEeOLJeQez13EkQ" templateId="2.16.840.1.113883.10.20.22.4.143">
@@ -4405,14 +4406,14 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   </CDA:PropertyValidation>
   <MDMI:MDMIMapping xmi:id="_mjjOEMXYEeWCquoDViU_jA" base_Class="_2NP-QxSVEeGGzu7fmW9pXw">
     <elements xmi:id="_mjjOEcXYEeWCquoDViU_jA" businessElement="CarePlanSection" modelElement="_2NP-QxSVEeGGzu7fmW9pXw" businessElementId="409d5f35-22f1-4699-8cce-22ce1ae25e6f" modelElementPath=""/>
-    <elements xmi:id="_vjvcMMXYEeWCquoDViU_jA" businessElement="CarePlanSectionTitle" modelElement="_jNy_oOMzEeGfv4R-kzpM0g" businessElementId="7ba0c0ed-1011-4ff1-95d5-855c2a366d38" modelElementPath="title"/>
-    <elements xmi:id="_xWl54MXYEeWCquoDViU_jA" businessElement="CarePlanSectionText" modelElement="_2NWE4BSVEeGGzu7fmW9pXw" businessElementId="27a3dced-791a-4381-95da-93e68b890c66" modelElementPath="text"/>
     <elements xmi:id="_LJ7qMMXbEeWCquoDViU_jA" businessElement="CarePlanGoals" modelElement="_2NiSJBSVEeGGzu7fmW9pXw" businessElementId="2c6b9512-41f4-48e5-9471-25d4478a92f7" modelElementPath="planOfCareActivityObservation"/>
     <elements xmi:id="_OyxZIMXbEeWCquoDViU_jA" businessElement="CarePlanGoalId" modelElement="_2NcLlhSVEeGGzu7fmW9pXw" businessElementId="ede04232-d0ec-4879-adea-4f7e08ac7917" modelElementPath="planOfCareActivityObservation.id"/>
+    <elements xmi:id="_xWl54MXYEeWCquoDViU_jA" businessElement="CarePlanSectionText" modelElement="_2NWE4BSVEeGGzu7fmW9pXw" businessElementId="27a3dced-791a-4381-95da-93e68b890c66" modelElementPath="text"/>
+    <elements xmi:id="_vjvcMMXYEeWCquoDViU_jA" businessElement="CarePlanSectionTitle" modelElement="_jNy_oOMzEeGfv4R-kzpM0g" businessElementId="7ba0c0ed-1011-4ff1-95d5-855c2a366d38" modelElementPath="title"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_VG2mUMXbEeWCquoDViU_jA" base_Class="_2NcLjhSVEeGGzu7fmW9pXw">
-    <elements xmi:id="_VG2mUcXbEeWCquoDViU_jA" businessElement="CarePlanGoalText" businessElementId="00680582-6493-45db-83df-dbeb792a095b" modelElementPath="text">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
+    <elements xmi:id="_vdMn8MXbEeWCquoDViU_jA" businessElement="CarePlanGoalCategory" businessElementId="1144675a-815b-4390-8151-3d78cc9f5b4a" modelElementPath="code">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </elements>
     <elements xmi:id="_Yrw3gMXbEeWCquoDViU_jA" businessElement="CarePlanGoalStartDate" businessElementId="7d2bbc8f-02d9-49a8-b532-f6cb591fb129" modelElementPath="effectiveTime">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
@@ -4420,23 +4421,23 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <elements xmi:id="_awbd8MXbEeWCquoDViU_jA" businessElement="CarePlanGoalEndDate" businessElementId="4d06738f-109a-4e50-8d22-68ddebdbbc32" modelElementPath="effectiveTime">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_dMpBsMXbEeWCquoDViU_jA" businessElement="CarePlanGoalPriorityCode" businessElementId="a3f5c0f3-684f-47d8-8209-c0d5e4e9eb65" modelElementPath="priorityCode">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_h3baIEo8Ed6c3qsAxlFHaQ"/>
-    </elements>
     <elements xmi:id="_gGlDQMXbEeWCquoDViU_jA" businessElement="CarePlanGoalEndDate" businessElementId="4d06738f-109a-4e50-8d22-68ddebdbbc32" modelElementPath="effectiveTime">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_iS_QcMXbEeWCquoDViU_jA" businessElement="CarePlanGoalPriorityCode" businessElementId="a3f5c0f3-684f-47d8-8209-c0d5e4e9eb65" modelElementPath="priorityCode">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_h3baIEo8Ed6c3qsAxlFHaQ"/>
+    <elements xmi:id="_W1SsAMYFEeW7-umL47rx8A" businessElement="CarePlanGoalId" businessElementId="ede04232-d0ec-4879-adea-4f7e08ac7917" modelElementPath="id">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </elements>
     <elements xmi:id="_mpA1gMXbEeWCquoDViU_jA" businessElement="CarePlanGoalIntpretationCode" businessElementId="fe7d0ef8-f755-46e8-b8c4-a5b7704bda67" modelElementPath="interpretationCode">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_zHXmAEo-Ed6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_vdMn8MXbEeWCquoDViU_jA" businessElement="CarePlanGoalCategory" businessElementId="1144675a-815b-4390-8151-3d78cc9f5b4a" modelElementPath="code">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+    <elements xmi:id="_dMpBsMXbEeWCquoDViU_jA" businessElement="CarePlanGoalPriorityCode" businessElementId="a3f5c0f3-684f-47d8-8209-c0d5e4e9eb65" modelElementPath="priorityCode">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_h3baIEo8Ed6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_W1SsAMYFEeW7-umL47rx8A" businessElement="CarePlanGoalId" businessElementId="ede04232-d0ec-4879-adea-4f7e08ac7917" modelElementPath="id">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+    <elements xmi:id="_iS_QcMXbEeWCquoDViU_jA" businessElement="CarePlanGoalPriorityCode" businessElementId="a3f5c0f3-684f-47d8-8209-c0d5e4e9eb65" modelElementPath="priorityCode">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_h3baIEo8Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_VG2mUcXbEeWCquoDViU_jA" businessElement="CarePlanGoalText" businessElementId="00680582-6493-45db-83df-dbeb792a095b" modelElementPath="text">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
     </elements>
     <elements xmi:id="_hZbZIMYFEeW7-umL47rx8A" businessElement="CarePlanGoalText" businessElementId="00680582-6493-45db-83df-dbeb792a095b" modelElementPath="text">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
@@ -4444,68 +4445,17 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_fgdxgI9CEeeNuo6J86JnLQ" base_Class="_bwml0P4yEeO_Yb9cO8w3bA">
     <elements xmi:id="_fgdxgY9CEeeNuo6J86JnLQ" businessElement="PlannedTreatmentSection" modelElement="_bwml0P4yEeO_Yb9cO8w3bA" businessElementId="528dfaa6-b754-4fb7-91d9-d6827c7fe561" modelElementPath="" condition=""/>
-    <elements xmi:id="_qHCZ0JBOEeeUP_iWlufZpQ" businessElement="PlannedProcedureDateTime" modelElement="_jf710OeFEeOqBOMhgDlycQ" businessElementId="f51164bf-e788-49b2-b9c8-e90acbdccbe0" modelElementPath="plannedProcedure2.effectiveTime" condition=""/>
-    <elements xmi:id="_vMmlcJBOEeeUP_iWlufZpQ" businessElement="PlannedProcedureTargetSiteCode" modelElement="_jf9D8-eFEeOqBOMhgDlycQ" businessElementId="fda98fa8-924d-4168-bc54-cd1effdaee63" modelElementPath="plannedProcedure2.targetSiteCode" condition=""/>
-    <elements xmi:id="_yCaU8JBOEeeUP_iWlufZpQ" businessElement="PlannedProcedureMethodCode" modelElement="_jf8c4OeFEeOqBOMhgDlycQ" businessElementId="04f41798-5d31-4e14-9bf1-3503a722c78f" modelElementPath="plannedProcedure2.methodCode" condition=""/>
-    <elements xmi:id="_C5JBgJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedureCoverageID" businessElementId="a1ba88c6-2794-4a81-9c98-bdc0b9ba9349" modelElementPath="plannedProcedure2.plannedCoverage.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-payers.uml#_XfFCwY9DEeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_LqUjQJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedureCoverageTypeCode" businessElementId="12a1f08b-5d2f-49ae-ba73-d85cee69b727" modelElementPath="plannedProcedure2.plannedCoverage.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-payers.uml#_XfFCwI9DEeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_cSf2cJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="549d4724-90fb-4a38-b09e-0ba8bf3dce12" modelElementPath="plannedProcedure2.PriorityPreference.id" condition=""/>
-    <elements xmi:id="_jhiQAJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityDateTime" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="92ecf199-3a4a-4741-ab2e-a14eb4f16754" modelElementPath="plannedProcedure2.PriorityPreference.effectiveTime" condition=""/>
-    <elements xmi:id="_mnOOkJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="c58f54b2-042a-4507-a47f-459dc4d50836" modelElementPath="plannedProcedure2.PriorityPreference.value" condition=""/>
-    <elements xmi:id="_vI1qUJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorID" businessElementId="b066b14f-fbbe-4882-92f2-a4eeab67a719" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_wrPbwJBQEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorName" businessElementId="4c73c8bd-b469-48d6-8395-8397e8ff77f3" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
+    <elements xmi:id="_Zsj24JC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorName" businessElementId="b21237d4-1c4c-4ed7-9659-e8f5ca29d7f4" modelElementPath="plannedEncounter2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_1E_DMJBQEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationID" businessElementId="3878ba43-408b-409a-b9c8-ec03b1420ff8" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_8hWHEJBQEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorSpecialityCode" businessElementId="13bfe9b4-a5e3-451c-a41c-93093b95486f" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="__vgFIJBQEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationName" businessElementId="55bb2437-cc42-43aa-b91b-0b6971a4e646" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_FMFpoJBREeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationBusinessPhoneContact" businessElementId="7faa90eb-6db9-40ea-86dd-9632748a12bf" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_JP_j8JBREeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationEmailAddress" businessElementId="fa2a7b56-1d1f-4547-b7a2-0d5540d842aa" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_QateMJBREeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationURLContact" businessElementId="0bcb4f84-66d3-4f46-b237-0a95035cb7ab" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_USF_cJBREeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationAddress" businessElementId="2f08d14b-d560-46e0-8c9d-22daf2e87e79" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_QFJBYJBSEeeUP_iWlufZpQ" businessElement="PlannedProcedureReasonTypeCode" businessElementId="9fdbaabc-63ae-49ab-99f7-51083b9f085f" modelElementPath="plannedProcedure2.indication2.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2Hh3kOHpEeO04sHNODkHmQ"/>
-    </elements>
-    <elements xmi:id="_ThGK4JBSEeeUP_iWlufZpQ" businessElement="PlannedProcedureReasonValueCode" businessElementId="9d046416-46a8-467b-8d39-4f4d2d0833c6" modelElementPath="plannedProcedure2.indication2.value" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
-    </elements>
-    <elements xmi:id="_WzRGQJBSEeeUP_iWlufZpQ" businessElement="PlannedProcedureReasonID" businessElementId="dd4a18a4-1e32-409e-9667-3b1249ab3a8e" modelElementPath="plannedProcedure2.indication2.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
-    </elements>
-    <elements xmi:id="_7mtY4JBSEeeUP_iWlufZpQ" businessElement="PlannedProcedurePerformerName" modelElement="_eviAcOgKEeO-iJTuAv7BKQ" businessElementId="9abfc5ec-fa2b-428b-b2a2-46b1a8a85cb9" modelElementPath="plannedProcedure2.performer" condition=""/>
-    <elements xmi:id="_TXBzcJBTEeeUP_iWlufZpQ" businessElement="PlannedProcedurePerformerName" businessElementId="9abfc5ec-fa2b-428b-b2a2-46b1a8a85cb9" modelElementPath="plannedProcedure2.performer.assignedEntity.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_91__sJC6EeeyTtReSNa24w" businessElement="PlannedEncounterDateTime" modelElement="_7kC2QOddEeOqBOMhgDlycQ" businessElementId="f6009473-f6f8-4319-b7ad-86baac32584b" modelElementPath="plannedEncounter2.effectiveTime" condition=""/>
-    <elements xmi:id="_HTQkUJC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorID" businessElementId="1de47981-f967-4156-987e-8019088fdda2" modelElementPath="plannedEncounter2.authorParticipation.assignedAuthor.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_LNOfgJC7EeeyTtReSNa24w" businessElement="PlannedEncounterTypeCode" modelElement="__Mm_wOdaEeOqBOMhgDlycQ" businessElementId="97544e2e-aa8b-45b1-a686-58b4690df909" modelElementPath="plannedEncounter2.code" condition=""/>
     <elements xmi:id="_WCCF4JC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorSpecialityCode" businessElementId="a9f81916-cfb5-44e5-8da7-e749e8340eb7" modelElementPath="plannedEncounter2.authorParticipation.assignedAuthor.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_Zsj24JC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorName" businessElementId="b21237d4-1c4c-4ed7-9659-e8f5ca29d7f4" modelElementPath="plannedEncounter2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    <elements xmi:id="_HTQkUJC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorID" businessElementId="1de47981-f967-4156-987e-8019088fdda2" modelElementPath="plannedEncounter2.authorParticipation.assignedAuthor.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_46jj8JC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorOrganizationAddress" businessElementId="7cda535d-a729-43aa-a20c-4c4d646331e3" modelElementPath="plannedEncounter2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_gGZt0JC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorOrganizationID" businessElementId="e92005ea-1b06-4926-889f-6241d9164441" modelElementPath="plannedEncounter2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
@@ -4525,180 +4475,19 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <elements xmi:id="_1UpNMJC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorOrganizationURLContact" businessElementId="abcba585-205d-427e-bc32-b342cee419ac" modelElementPath="plannedEncounter2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_46jj8JC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorOrganizationAddress" businessElementId="7cda535d-a729-43aa-a20c-4c4d646331e3" modelElementPath="plannedEncounter2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_LZT-QJC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationCode" businessElementId="45c25475-9a69-40da-9aec-706606c39306" modelElementPath="plannedEncounter2.serviceDeliveryLocation.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nD_qMB-YEeGtfPlBCjHWkw"/>
-    </elements>
-    <elements xmi:id="_PrY3cJC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationAddress" businessElementId="3f3043ad-ed0b-4ef9-b429-2e2a32428a4c" modelElementPath="plannedEncounter2.serviceDeliveryLocation.addr" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nD7_0B-YEeGtfPlBCjHWkw"/>
-    </elements>
-    <elements xmi:id="_TefVoJC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationBusinessPhoneContact" businessElementId="d66a7482-39e0-4d21-b70a-ff3b7b8b5d99" modelElementPath="plannedEncounter2.serviceDeliveryLocation.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
-    </elements>
-    <elements xmi:id="_Wcy50JC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationEmailAddress" businessElementId="97715580-c008-4073-b1ac-acc565daed6a" modelElementPath="plannedEncounter2.serviceDeliveryLocation.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
-    </elements>
-    <elements xmi:id="_ZWRoYJC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationFaxContact" businessElementId="ddc1f160-5f6f-4852-8f82-02fda7b5a55e" modelElementPath="plannedEncounter2.serviceDeliveryLocation.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
-    </elements>
-    <elements xmi:id="_mksKcJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="dab076cd-9eec-4474-9ee2-4216a3709410" modelElementPath="plannedEncounter2.priorityPreference.id" condition=""/>
-    <elements xmi:id="_xXipAJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityDateTime" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="07633c33-133f-4585-9354-3f06a861abc6" modelElementPath="plannedEncounter2.priorityPreference.effectiveTime" condition=""/>
-    <elements xmi:id="_0Lc7EJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="21771c66-64cc-429a-854e-84edd19301c6" modelElementPath="plannedEncounter2.priorityPreference.value" condition=""/>
-    <elements xmi:id="_wWg58JD1EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationID" businessElementId="6f2e5ab3-1a0c-467e-a489-ba2a642664f2" modelElementPath="plannedImmunizationActivity.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_roq6MJXFEeOgXcDbh8Igkw"/>
-    </elements>
-    <elements xmi:id="_C2T2EJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationRepeatNumber" businessElementId="22db4a18-0d92-416d-8765-91992a5154e7" modelElementPath="plannedImmunizationActivity.repeatNumber" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_rorhQZXFEeOgXcDbh8Igkw"/>
-    </elements>
-    <elements xmi:id="_EqUxYJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationRouteCode" businessElementId="3a6fe6de-562e-4e53-8b61-50ef0917722f" modelElementPath="plannedImmunizationActivity.routeCode" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_rorhRJXFEeOgXcDbh8Igkw"/>
-    </elements>
-    <elements xmi:id="_JslKUJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationTargetSiteCode" businessElementId="24487e1b-a751-4798-8c1a-28ec1cf5d998" modelElementPath="plannedImmunizationActivity.approachSiteCode" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_romowJXFEeOgXcDbh8Igkw"/>
-    </elements>
-    <elements xmi:id="_e6n1YJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationMedicationValueCode" businessElementId="e7a1316d-ed05-49fa-94e6-7c49ec1e8de3" modelElementPath="plannedImmunizationActivity.consumable.immunizationMedicationInformation2.manufacturedMaterial.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_xgWAcEX8EeG6e5lG0YsSyQ"/>
-    </elements>
-    <elements xmi:id="_kYvq8JD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationMedicationLotNumber" businessElementId="db23e124-97d5-47cd-bcdd-18837b6eff3e" modelElementPath="plannedImmunizationActivity.consumable.immunizationMedicationInformation2.manufacturedMaterial.lotNumberText" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_2daj0MKMEeSqg-Exmsy2kg"/>
-    </elements>
-    <elements xmi:id="_AGIYAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPreconditionValueCode" businessElementId="aef808ab-1a78-4806-9bfe-942f295bc8e2" modelElementPath="plannedImmunizationActivity.precondition.preconditionForSubstanceAdministration2.value" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_2fqgUDhEEeS1WeMhbm6GZw"/>
-    </elements>
-    <elements xmi:id="_Ef8Q4JD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="49a2dda0-34ed-4c3b-bc48-b7a54784cd6f" modelElementPath="plannedImmunizationActivity.priorityPreference.id" condition=""/>
-    <elements xmi:id="_QOPEAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationReasonID" businessElementId="718c046d-9da8-4925-9238-d57ad6bbc06d" modelElementPath="plannedImmunizationActivity.indication2.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
-    </elements>
-    <elements xmi:id="_YIhaAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPriorityValueCode" businessElementId="0af390ba-60f2-4506-97ce-3aa73c3e78ff" modelElementPath="plannedImmunizationActivity.indication2.value" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
-    </elements>
-    <elements xmi:id="_gpdgUJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationInstructionTypeCode" businessElementId="1c1c708a-6127-486a-986d-6c0ee1700606" modelElementPath="plannedImmunizationActivity.instruction2.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
-    </elements>
-    <elements xmi:id="_n22oQOWzEeer-K67prB3IQ" businessElement="PlannedProcedureContainer" modelElement="_UYbMcP40EeO_Yb9cO8w3bA" businessElementId="d4dc260a-a3b7-40cc-8c5b-d07c0d3d7928" modelElementPath="plannedObservation2" condition=""/>
-    <elements xmi:id="_z5QYQOW1Eeer-K67prB3IQ" businessElement="PlannedProcedureTypeCode" modelElement="_-xcLEOd4EeOqBOMhgDlycQ" businessElementId="3ad5172d-1983-459c-b6df-739dbf4fa530" modelElementPath="plannedObservation2.code" condition=""/>
-    <elements xmi:id="_4cbBcOW1Eeer-K67prB3IQ" businessElement="PlannedProcedureDateTime" modelElement="_ziMZgOd6EeOqBOMhgDlycQ" businessElementId="f51164bf-e788-49b2-b9c8-e90acbdccbe0" modelElementPath="plannedObservation2.effectiveTime" condition=""/>
-    <elements xmi:id="_AKI7EOW2Eeer-K67prB3IQ" businessElement="PlannedProcedureValueCode" modelElement="_TTgPAOd7EeOqBOMhgDlycQ" businessElementId="c2a9e364-0b01-41a1-a74b-3e7757ed59fb" modelElementPath="plannedObservation2.value.CD" condition=""/>
-    <elements xmi:id="_FNL-MOW2Eeer-K67prB3IQ" businessElement="PlannedProcedureMethodCode" modelElement="_96GMAOd7EeOqBOMhgDlycQ" businessElementId="04f41798-5d31-4e14-9bf1-3503a722c78f" modelElementPath="plannedObservation2.methodCode"/>
-    <elements xmi:id="_HYf_MOW2Eeer-K67prB3IQ" businessElement="PlannedProcedureTargetSiteCode" modelElement="_ZRSmoOd8EeOqBOMhgDlycQ" businessElementId="fda98fa8-924d-4168-bc54-cd1effdaee63" modelElementPath="plannedObservation2.targetSiteCode"/>
-    <elements xmi:id="_VnoQAOW5EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerID" businessElementId="efeec853-923f-4cf4-a46e-cc0ced11a674" modelElementPath="plannedObservation2.performer.assignedEntity.id">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_Z35yYOW5EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerName" businessElementId="9abfc5ec-fa2b-428b-b2a2-46b1a8a85cb9" modelElementPath="plannedObservation2.performer.assignedEntity.assignedPerson.name">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_dIjq0OW5EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerOrganizationBusinessPhoneContact" businessElementId="225f9beb-1a59-4504-8a6d-4b484865841a" modelElementPath="plannedObservation2.performer.assignedEntity.representedOrganization.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_hAV0sOW5EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerOrganizationEmailAddress" businessElementId="c7dfe645-5f77-4a09-a0f6-670fcb52b391" modelElementPath="plannedObservation2.performer.assignedEntity.representedOrganization.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_kPcN8OW5EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerOrganizationFaxContact" businessElementId="93b02983-304a-4307-8aba-9fccb0af7fd6" modelElementPath="plannedObservation2.performer.assignedEntity.representedOrganization.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_JCTRwOW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerOrganizationURLContact" businessElementId="b67bbe23-80a7-4b8c-926c-c702605ab1c0" modelElementPath="plannedObservation2.performer.assignedEntity.representedOrganization.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_QODt0OW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerOrganizationAddress" businessElementId="be97fe5f-847c-4f78-8e77-c3170f75b881" modelElementPath="plannedObservation2.performer.assignedEntity.representedOrganization.addr">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_OC77sErbEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_TPF14OW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerSpecialityCode" businessElementId="4a4309eb-6e16-4a23-a950-169a0de5fdc0" modelElementPath="plannedObservation2.performer.assignedEntity.code">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_V5qlwOW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorDateTime" businessElementId="f7311e3e-480f-4c41-b806-6f18c8755e5f" modelElementPath="plannedObservation2.authorParticipation.time">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_YEYw4OW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorID" businessElementId="b066b14f-fbbe-4882-92f2-a4eeab67a719" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.id">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_ZxzU8OW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorSpecialityCode" businessElementId="13bfe9b4-a5e3-451c-a41c-93093b95486f" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.code">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_ceQUIOW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorName" businessElementId="4c73c8bd-b469-48d6-8395-8397e8ff77f3" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.assignedPerson.name">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_UAXsYOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorOrganizationBusinessPhoneContact" businessElementId="7faa90eb-6db9-40ea-86dd-9632748a12bf" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_WK2m8OW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorOrganizationEmailAddress" businessElementId="fa2a7b56-1d1f-4547-b7a2-0d5540d842aa" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_aASAYOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorOrganizationFaxContact" businessElementId="09411dbe-1b5b-49fd-ad88-dc3afebb3487" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_cj_TQOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorOrganizationURLContact" businessElementId="0bcb4f84-66d3-4f46-b237-0a95035cb7ab" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_e6B9kOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorOrganizationAddress" businessElementId="2f08d14b-d560-46e0-8c9d-22daf2e87e79" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.representedOrganization.addr">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_jQb9IOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="549d4724-90fb-4a38-b09e-0ba8bf3dce12" modelElementPath="plannedObservation2.PriorityPreference.id"/>
-    <elements xmi:id="_mSicMOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="c58f54b2-042a-4507-a47f-459dc4d50836" modelElementPath="plannedObservation2.PriorityPreference.value"/>
-    <elements xmi:id="_o-fsIOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePriorityDateTime" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="92ecf199-3a4a-4741-ab2e-a14eb4f16754" modelElementPath="plannedObservation2.PriorityPreference.effectiveTime"/>
-    <elements xmi:id="_FwMgcOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorDateTime" businessElementId="50f627d3-7e54-4b05-b489-603fcb386a3e" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.time">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_I2YOQOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorID" businessElementId="e00a5cba-74cd-4487-9e0a-39bb94ff0265" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.id">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_L8VSkOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorSpecialityCode" businessElementId="3c7059de-bc84-4023-9da5-7479dbb3b34a" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.code">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_PMpz0OW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorName" businessElementId="8fafaa7d-412c-42e5-a264-24b9ff054b5f" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.assignedPerson.name">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_T2GEIOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureAuthorOrganizationBusinessPhoneContact" businessElementId="7faa90eb-6db9-40ea-86dd-9632748a12bf" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.representedOrganization.telecom">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_XZtU0OW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorOrganizationAddress" businessElementId="503d8caf-4640-418c-9ec9-05bdadb55ad5" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.representedOrganization.addr">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_baPyEOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorOrganizationID" businessElementId="6eca9fd4-18e1-47f5-8052-f64b5ab7172a" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.representedOrganization.id">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_eKlywOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureAuthorOrganizationName" businessElementId="55bb2437-cc42-43aa-b91b-0b6971a4e646" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.representedOrganization.name">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_iVKVwOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureReasonID" businessElementId="dd4a18a4-1e32-409e-9667-3b1249ab3a8e" modelElementPath="plannedObservation2.indication2.id">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
-    </elements>
-    <elements xmi:id="_kG284OW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureReasonTypeCode" businessElementId="9fdbaabc-63ae-49ab-99f7-51083b9f085f" modelElementPath="plannedObservation2.indication2.code">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2Hh3kOHpEeO04sHNODkHmQ"/>
-    </elements>
-    <elements xmi:id="_nffFkOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureReasonValueCode" businessElementId="9d046416-46a8-467b-8d39-4f4d2d0833c6" modelElementPath="plannedObservation2.indication2.value">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
-    </elements>
-    <elements xmi:id="_p0mi0OW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureReasonDateTime" businessElementId="5c274573-b0a8-4f7d-8378-d635f1765acf" modelElementPath="plannedObservation2.indication2.effectiveTime">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2MdMRBUSEeG6PvUxSTZnaw"/>
-    </elements>
-    <elements xmi:id="_uM7N8OW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureInstructionValueText" businessElementId="f24ef0db-02a5-4623-b62a-be2ffcc582cc" modelElementPath="plannedObservation2.instruction2.text">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_kzRcgMK8EeSqg-Exmsy2kg"/>
-    </elements>
-    <elements xmi:id="_w3IxcOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureInstructionTypeCode" businessElementId="7e9f8239-1d49-4b15-b740-0dbcfb9eef1e" modelElementPath="plannedObservation2.instruction2.code">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
-    </elements>
-    <elements xmi:id="_3Zj8oOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureCoverageID" businessElementId="a1ba88c6-2794-4a81-9c98-bdc0b9ba9349" modelElementPath="plannedObservation2.plannedCoverage.id">
-      <modelElement xmi:type="uml:Property" href="consol-payers.uml#_XfFCwY9DEeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_Kl7q4OW-EeefYpeaFpZmtQ" businessElement="PlannedProcedureCoverageTypeCode" businessElementId="12a1f08b-5d2f-49ae-ba73-d85cee69b727" modelElementPath="plannedObservation2.plannedCoverage.entryRelationship.act.code">
-      <modelElement xmi:type="uml:Property" href="consol-payers.uml#_QZIIMY9NEeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_NVJqMOW-EeefYpeaFpZmtQ" businessElement="PlannedProcedureCoveragePolicyID" businessElementId="17b7cb82-cf6b-415f-8e61-60a37077669e" modelElementPath="plannedObservation2.plannedCoverage.entryRelationship.act.id">
-      <modelElement xmi:type="uml:Property" href="consol-payers.uml#_QZIIMo9NEeOB0eBUISUB4Q"/>
+    <elements xmi:id="_LNOfgJC7EeeyTtReSNa24w" businessElement="PlannedEncounterTypeCode" modelElement="__Mm_wOdaEeOqBOMhgDlycQ" businessElementId="97544e2e-aa8b-45b1-a686-58b4690df909" modelElementPath="plannedEncounter2.code" condition=""/>
+    <elements xmi:id="_91__sJC6EeeyTtReSNa24w" businessElement="PlannedEncounterDateTime" modelElement="_7kC2QOddEeOqBOMhgDlycQ" businessElementId="f6009473-f6f8-4319-b7ad-86baac32584b" modelElementPath="plannedEncounter2.effectiveTime" condition=""/>
+    <elements xmi:id="_CD_GcOZXEee25afaIvgLjg" businessElement="PlannedEncounterParticipantAddress" businessElementId="1b492ab5-ca3f-4afc-b2b2-2076a5cc60e3" modelElementPath="plannedEncounter2.performer.assignedEntity.addr">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
     </elements>
     <elements xmi:id="_KRvc8OZVEeeoMLOBeVaj7g" businessElement="PlannedEncounterParticipantPersonName" businessElementId="039e5182-3912-4c3b-8236-91a33bd14b54" modelElementPath="plannedEncounter2.performer.assignedEntity.assignedPerson.name">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
     </elements>
-    <elements xmi:id="_Q00IYOZVEeeoMLOBeVaj7g" businessElement="PlannedEncounterParticipantII" businessElementId="feea9cb0-be7e-46e8-922f-34a168430dca" modelElementPath="plannedEncounter2.performer.assignedEntity.id">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
-    </elements>
     <elements xmi:id="_9E4IIOZWEee25afaIvgLjg" businessElement="PlannedEncounterParticipantSpecialtyCode" businessElementId="78e8a060-8fdf-4ead-ae7c-2635ad63bdac" modelElementPath="plannedEncounter2.performer.assignedEntity.code">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_CD_GcOZXEee25afaIvgLjg" businessElement="PlannedEncounterParticipantAddress" businessElementId="1b492ab5-ca3f-4afc-b2b2-2076a5cc60e3" modelElementPath="plannedEncounter2.performer.assignedEntity.addr">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
+    <elements xmi:id="_Q00IYOZVEeeoMLOBeVaj7g" businessElement="PlannedEncounterParticipantII" businessElementId="feea9cb0-be7e-46e8-922f-34a168430dca" modelElementPath="plannedEncounter2.performer.assignedEntity.id">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
     </elements>
     <elements xmi:id="_EUfJcOZXEee25afaIvgLjg" businessElement="PlannedEncounterParticipantEmailContact" businessElementId="81e0d4ae-404e-4da0-a66e-27380c1580db" modelElementPath="plannedEncounter2.performer.assignedEntity.telecom">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
@@ -4718,26 +4507,233 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <elements xmi:id="_So5DMOZXEee25afaIvgLjg" businessElement="PlannedEncounterParticpantSMSContact" businessElementId="f33e880f-7132-4245-9a3a-180071560730" modelElementPath="plannedEncounter2.performer.assignedEntity.telecom">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
     </elements>
+    <elements xmi:id="_xXipAJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityDateTime" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="07633c33-133f-4585-9354-3f06a861abc6" modelElementPath="plannedEncounter2.priorityPreference.effectiveTime" condition=""/>
+    <elements xmi:id="_mksKcJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="dab076cd-9eec-4474-9ee2-4216a3709410" modelElementPath="plannedEncounter2.priorityPreference.id" condition=""/>
+    <elements xmi:id="_0Lc7EJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="21771c66-64cc-429a-854e-84edd19301c6" modelElementPath="plannedEncounter2.priorityPreference.value" condition=""/>
+    <elements xmi:id="_PrY3cJC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationAddress" businessElementId="3f3043ad-ed0b-4ef9-b429-2e2a32428a4c" modelElementPath="plannedEncounter2.serviceDeliveryLocation.addr" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nD7_0B-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_LZT-QJC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationCode" businessElementId="45c25475-9a69-40da-9aec-706606c39306" modelElementPath="plannedEncounter2.serviceDeliveryLocation.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nD_qMB-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_TefVoJC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationBusinessPhoneContact" businessElementId="d66a7482-39e0-4d21-b70a-ff3b7b8b5d99" modelElementPath="plannedEncounter2.serviceDeliveryLocation.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_Wcy50JC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationEmailAddress" businessElementId="97715580-c008-4073-b1ac-acc565daed6a" modelElementPath="plannedEncounter2.serviceDeliveryLocation.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_ZWRoYJC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationFaxContact" businessElementId="ddc1f160-5f6f-4852-8f82-02fda7b5a55e" modelElementPath="plannedEncounter2.serviceDeliveryLocation.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_JslKUJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationTargetSiteCode" businessElementId="24487e1b-a751-4798-8c1a-28ec1cf5d998" modelElementPath="plannedImmunizationActivity.approachSiteCode" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_romowJXFEeOgXcDbh8Igkw"/>
+    </elements>
+    <elements xmi:id="_e6n1YJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationMedicationValueCode" businessElementId="e7a1316d-ed05-49fa-94e6-7c49ec1e8de3" modelElementPath="plannedImmunizationActivity.consumable.immunizationMedicationInformation2.manufacturedMaterial.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_xgWAcEX8EeG6e5lG0YsSyQ"/>
+    </elements>
+    <elements xmi:id="_kYvq8JD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationMedicationLotNumber" businessElementId="db23e124-97d5-47cd-bcdd-18837b6eff3e" modelElementPath="plannedImmunizationActivity.consumable.immunizationMedicationInformation2.manufacturedMaterial.lotNumberText" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_2daj0MKMEeSqg-Exmsy2kg"/>
+    </elements>
+    <elements xmi:id="_wWg58JD1EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationID" businessElementId="6f2e5ab3-1a0c-467e-a489-ba2a642664f2" modelElementPath="plannedImmunizationActivity.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_roq6MJXFEeOgXcDbh8Igkw"/>
+    </elements>
+    <elements xmi:id="_QOPEAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationReasonID" businessElementId="718c046d-9da8-4925-9238-d57ad6bbc06d" modelElementPath="plannedImmunizationActivity.indication2.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_YIhaAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPriorityValueCode" businessElementId="0af390ba-60f2-4506-97ce-3aa73c3e78ff" modelElementPath="plannedImmunizationActivity.indication2.value" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_gpdgUJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationInstructionTypeCode" businessElementId="1c1c708a-6127-486a-986d-6c0ee1700606" modelElementPath="plannedImmunizationActivity.instruction2.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_AGIYAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPreconditionValueCode" businessElementId="aef808ab-1a78-4806-9bfe-942f295bc8e2" modelElementPath="plannedImmunizationActivity.precondition.preconditionForSubstanceAdministration2.value" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_2fqgUDhEEeS1WeMhbm6GZw"/>
+    </elements>
+    <elements xmi:id="_Ef8Q4JD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="49a2dda0-34ed-4c3b-bc48-b7a54784cd6f" modelElementPath="plannedImmunizationActivity.priorityPreference.id" condition=""/>
+    <elements xmi:id="_C2T2EJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationRepeatNumber" businessElementId="22db4a18-0d92-416d-8765-91992a5154e7" modelElementPath="plannedImmunizationActivity.repeatNumber" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_rorhQZXFEeOgXcDbh8Igkw"/>
+    </elements>
+    <elements xmi:id="_EqUxYJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationRouteCode" businessElementId="3a6fe6de-562e-4e53-8b61-50ef0917722f" modelElementPath="plannedImmunizationActivity.routeCode" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_rorhRJXFEeOgXcDbh8Igkw"/>
+    </elements>
+    <elements xmi:id="_n22oQOWzEeer-K67prB3IQ" businessElement="PlannedProcedureContainer" modelElement="_UYbMcP40EeO_Yb9cO8w3bA" businessElementId="d4dc260a-a3b7-40cc-8c5b-d07c0d3d7928" modelElementPath="plannedObservation2" condition=""/>
+    <elements xmi:id="_PMpz0OW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorName" businessElementId="8fafaa7d-412c-42e5-a264-24b9ff054b5f" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.assignedPerson.name">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_L8VSkOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorSpecialityCode" businessElementId="3c7059de-bc84-4023-9da5-7479dbb3b34a" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.code">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_I2YOQOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorID" businessElementId="e00a5cba-74cd-4487-9e0a-39bb94ff0265" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.id">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_XZtU0OW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorOrganizationAddress" businessElementId="503d8caf-4640-418c-9ec9-05bdadb55ad5" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.representedOrganization.addr">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_baPyEOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorOrganizationID" businessElementId="6eca9fd4-18e1-47f5-8052-f64b5ab7172a" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.representedOrganization.id">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_eKlywOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureAuthorOrganizationName" businessElementId="55bb2437-cc42-43aa-b91b-0b6971a4e646" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.representedOrganization.name">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_T2GEIOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureAuthorOrganizationBusinessPhoneContact" businessElementId="7faa90eb-6db9-40ea-86dd-9632748a12bf" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_FwMgcOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedurePriorityAuthorDateTime" businessElementId="50f627d3-7e54-4b05-b489-603fcb386a3e" modelElementPath="plannedObservation2.PriorityPreference.authorParticipation.time">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_o-fsIOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePriorityDateTime" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="92ecf199-3a4a-4741-ab2e-a14eb4f16754" modelElementPath="plannedObservation2.PriorityPreference.effectiveTime"/>
+    <elements xmi:id="_jQb9IOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="549d4724-90fb-4a38-b09e-0ba8bf3dce12" modelElementPath="plannedObservation2.PriorityPreference.id"/>
+    <elements xmi:id="_mSicMOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="c58f54b2-042a-4507-a47f-459dc4d50836" modelElementPath="plannedObservation2.PriorityPreference.value"/>
+    <elements xmi:id="_ceQUIOW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorName" businessElementId="4c73c8bd-b469-48d6-8395-8397e8ff77f3" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.assignedPerson.name">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_ZxzU8OW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorSpecialityCode" businessElementId="13bfe9b4-a5e3-451c-a41c-93093b95486f" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.code">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_YEYw4OW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorID" businessElementId="b066b14f-fbbe-4882-92f2-a4eeab67a719" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.id">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_e6B9kOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorOrganizationAddress" businessElementId="2f08d14b-d560-46e0-8c9d-22daf2e87e79" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.representedOrganization.addr">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_UAXsYOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorOrganizationBusinessPhoneContact" businessElementId="7faa90eb-6db9-40ea-86dd-9632748a12bf" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_WK2m8OW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorOrganizationEmailAddress" businessElementId="fa2a7b56-1d1f-4547-b7a2-0d5540d842aa" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_aASAYOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorOrganizationFaxContact" businessElementId="09411dbe-1b5b-49fd-ad88-dc3afebb3487" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_cj_TQOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorOrganizationURLContact" businessElementId="0bcb4f84-66d3-4f46-b237-0a95035cb7ab" modelElementPath="plannedObservation2.authorParticipation.assignedAuthor.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_V5qlwOW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorDateTime" businessElementId="f7311e3e-480f-4c41-b806-6f18c8755e5f" modelElementPath="plannedObservation2.authorParticipation.time">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_z5QYQOW1Eeer-K67prB3IQ" businessElement="PlannedProcedureTypeCode" modelElement="_-xcLEOd4EeOqBOMhgDlycQ" businessElementId="3ad5172d-1983-459c-b6df-739dbf4fa530" modelElementPath="plannedObservation2.code" condition=""/>
+    <elements xmi:id="_4cbBcOW1Eeer-K67prB3IQ" businessElement="PlannedProcedureDateTime" modelElement="_ziMZgOd6EeOqBOMhgDlycQ" businessElementId="f51164bf-e788-49b2-b9c8-e90acbdccbe0" modelElementPath="plannedObservation2.effectiveTime" condition=""/>
+    <elements xmi:id="_kG284OW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureReasonTypeCode" businessElementId="9fdbaabc-63ae-49ab-99f7-51083b9f085f" modelElementPath="plannedObservation2.indication2.code">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2Hh3kOHpEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_p0mi0OW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureReasonDateTime" businessElementId="5c274573-b0a8-4f7d-8378-d635f1765acf" modelElementPath="plannedObservation2.indication2.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2MdMRBUSEeG6PvUxSTZnaw"/>
+    </elements>
+    <elements xmi:id="_iVKVwOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureReasonID" businessElementId="dd4a18a4-1e32-409e-9667-3b1249ab3a8e" modelElementPath="plannedObservation2.indication2.id">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_nffFkOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureReasonValueCode" businessElementId="9d046416-46a8-467b-8d39-4f4d2d0833c6" modelElementPath="plannedObservation2.indication2.value">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_w3IxcOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureInstructionTypeCode" businessElementId="7e9f8239-1d49-4b15-b740-0dbcfb9eef1e" modelElementPath="plannedObservation2.instruction2.code">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_uM7N8OW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureInstructionValueText" businessElementId="f24ef0db-02a5-4623-b62a-be2ffcc582cc" modelElementPath="plannedObservation2.instruction2.text">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_kzRcgMK8EeSqg-Exmsy2kg"/>
+    </elements>
+    <elements xmi:id="_FNL-MOW2Eeer-K67prB3IQ" businessElement="PlannedProcedureMethodCode" modelElement="_96GMAOd7EeOqBOMhgDlycQ" businessElementId="04f41798-5d31-4e14-9bf1-3503a722c78f" modelElementPath="plannedObservation2.methodCode"/>
+    <elements xmi:id="_Z35yYOW5EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerName" businessElementId="9abfc5ec-fa2b-428b-b2a2-46b1a8a85cb9" modelElementPath="plannedObservation2.performer.assignedEntity.assignedPerson.name">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_TPF14OW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerSpecialityCode" businessElementId="4a4309eb-6e16-4a23-a950-169a0de5fdc0" modelElementPath="plannedObservation2.performer.assignedEntity.code">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_VnoQAOW5EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerID" businessElementId="efeec853-923f-4cf4-a46e-cc0ced11a674" modelElementPath="plannedObservation2.performer.assignedEntity.id">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_QODt0OW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerOrganizationAddress" businessElementId="be97fe5f-847c-4f78-8e77-c3170f75b881" modelElementPath="plannedObservation2.performer.assignedEntity.representedOrganization.addr">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_OC77sErbEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_dIjq0OW5EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerOrganizationBusinessPhoneContact" businessElementId="225f9beb-1a59-4504-8a6d-4b484865841a" modelElementPath="plannedObservation2.performer.assignedEntity.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_hAV0sOW5EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerOrganizationEmailAddress" businessElementId="c7dfe645-5f77-4a09-a0f6-670fcb52b391" modelElementPath="plannedObservation2.performer.assignedEntity.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_kPcN8OW5EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerOrganizationFaxContact" businessElementId="93b02983-304a-4307-8aba-9fccb0af7fd6" modelElementPath="plannedObservation2.performer.assignedEntity.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_JCTRwOW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePerformerOrganizationURLContact" businessElementId="b67bbe23-80a7-4b8c-926c-c702605ab1c0" modelElementPath="plannedObservation2.performer.assignedEntity.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_Kl7q4OW-EeefYpeaFpZmtQ" businessElement="PlannedProcedureCoverageTypeCode" businessElementId="12a1f08b-5d2f-49ae-ba73-d85cee69b727" modelElementPath="plannedObservation2.plannedCoverage.entryRelationship.act.code">
+      <modelElement xmi:type="uml:Property" href="consol-payers.uml#_QZIIMY9NEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_NVJqMOW-EeefYpeaFpZmtQ" businessElement="PlannedProcedureCoveragePolicyID" businessElementId="17b7cb82-cf6b-415f-8e61-60a37077669e" modelElementPath="plannedObservation2.plannedCoverage.entryRelationship.act.id">
+      <modelElement xmi:type="uml:Property" href="consol-payers.uml#_QZIIMo9NEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_3Zj8oOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureCoverageID" businessElementId="a1ba88c6-2794-4a81-9c98-bdc0b9ba9349" modelElementPath="plannedObservation2.plannedCoverage.id">
+      <modelElement xmi:type="uml:Property" href="consol-payers.uml#_XfFCwY9DEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_HYf_MOW2Eeer-K67prB3IQ" businessElement="PlannedProcedureTargetSiteCode" modelElement="_ZRSmoOd8EeOqBOMhgDlycQ" businessElementId="fda98fa8-924d-4168-bc54-cd1effdaee63" modelElementPath="plannedObservation2.targetSiteCode"/>
+    <elements xmi:id="_AKI7EOW2Eeer-K67prB3IQ" businessElement="PlannedProcedureValueCode" modelElement="_TTgPAOd7EeOqBOMhgDlycQ" businessElementId="c2a9e364-0b01-41a1-a74b-3e7757ed59fb" modelElementPath="plannedObservation2.value.CD" condition=""/>
+    <elements xmi:id="_jhiQAJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityDateTime" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="92ecf199-3a4a-4741-ab2e-a14eb4f16754" modelElementPath="plannedProcedure2.PriorityPreference.effectiveTime" condition=""/>
+    <elements xmi:id="_cSf2cJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="549d4724-90fb-4a38-b09e-0ba8bf3dce12" modelElementPath="plannedProcedure2.PriorityPreference.id" condition=""/>
+    <elements xmi:id="_mnOOkJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="c58f54b2-042a-4507-a47f-459dc4d50836" modelElementPath="plannedProcedure2.PriorityPreference.value" condition=""/>
+    <elements xmi:id="_wrPbwJBQEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorName" businessElementId="4c73c8bd-b469-48d6-8395-8397e8ff77f3" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_8hWHEJBQEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorSpecialityCode" businessElementId="13bfe9b4-a5e3-451c-a41c-93093b95486f" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_vI1qUJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorID" businessElementId="b066b14f-fbbe-4882-92f2-a4eeab67a719" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_USF_cJBREeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationAddress" businessElementId="2f08d14b-d560-46e0-8c9d-22daf2e87e79" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_1E_DMJBQEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationID" businessElementId="3878ba43-408b-409a-b9c8-ec03b1420ff8" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="__vgFIJBQEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationName" businessElementId="55bb2437-cc42-43aa-b91b-0b6971a4e646" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.name" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_FMFpoJBREeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationBusinessPhoneContact" businessElementId="7faa90eb-6db9-40ea-86dd-9632748a12bf" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_JP_j8JBREeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationEmailAddress" businessElementId="fa2a7b56-1d1f-4547-b7a2-0d5540d842aa" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_QateMJBREeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorOrganizationURLContact" businessElementId="0bcb4f84-66d3-4f46-b237-0a95035cb7ab" modelElementPath="plannedProcedure2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_qHCZ0JBOEeeUP_iWlufZpQ" businessElement="PlannedProcedureDateTime" modelElement="_jf710OeFEeOqBOMhgDlycQ" businessElementId="f51164bf-e788-49b2-b9c8-e90acbdccbe0" modelElementPath="plannedProcedure2.effectiveTime" condition=""/>
+    <elements xmi:id="_QFJBYJBSEeeUP_iWlufZpQ" businessElement="PlannedProcedureReasonTypeCode" businessElementId="9fdbaabc-63ae-49ab-99f7-51083b9f085f" modelElementPath="plannedProcedure2.indication2.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2Hh3kOHpEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_WzRGQJBSEeeUP_iWlufZpQ" businessElement="PlannedProcedureReasonID" businessElementId="dd4a18a4-1e32-409e-9667-3b1249ab3a8e" modelElementPath="plannedProcedure2.indication2.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_ThGK4JBSEeeUP_iWlufZpQ" businessElement="PlannedProcedureReasonValueCode" businessElementId="9d046416-46a8-467b-8d39-4f4d2d0833c6" modelElementPath="plannedProcedure2.indication2.value" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_yCaU8JBOEeeUP_iWlufZpQ" businessElement="PlannedProcedureMethodCode" modelElement="_jf8c4OeFEeOqBOMhgDlycQ" businessElementId="04f41798-5d31-4e14-9bf1-3503a722c78f" modelElementPath="plannedProcedure2.methodCode" condition=""/>
+    <elements xmi:id="_7mtY4JBSEeeUP_iWlufZpQ" businessElement="PlannedProcedurePerformerName" modelElement="_eviAcOgKEeO-iJTuAv7BKQ" businessElementId="9abfc5ec-fa2b-428b-b2a2-46b1a8a85cb9" modelElementPath="plannedProcedure2.performer" condition=""/>
+    <elements xmi:id="_TXBzcJBTEeeUP_iWlufZpQ" businessElement="PlannedProcedurePerformerName" businessElementId="9abfc5ec-fa2b-428b-b2a2-46b1a8a85cb9" modelElementPath="plannedProcedure2.performer.assignedEntity.assignedPerson.name" condition="">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_LqUjQJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedureCoverageTypeCode" businessElementId="12a1f08b-5d2f-49ae-ba73-d85cee69b727" modelElementPath="plannedProcedure2.plannedCoverage.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-payers.uml#_XfFCwI9DEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_C5JBgJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedureCoverageID" businessElementId="a1ba88c6-2794-4a81-9c98-bdc0b9ba9349" modelElementPath="plannedProcedure2.plannedCoverage.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-payers.uml#_XfFCwY9DEeOB0eBUISUB4Q"/>
+    </elements>
+    <elements xmi:id="_vMmlcJBOEeeUP_iWlufZpQ" businessElement="PlannedProcedureTargetSiteCode" modelElement="_jf9D8-eFEeOqBOMhgDlycQ" businessElementId="fda98fa8-924d-4168-bc54-cd1effdaee63" modelElementPath="plannedProcedure2.targetSiteCode" condition=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_26_JoJMQEeeSquiwsvVy0A" base_Class="_YPOXoJ14EeORR8_YW0n_jQ">
     <elements xmi:id="_27AXwJMQEeeSquiwsvVy0A" businessElement="GoalSectionContainer" modelElement="_YPOXoJ14EeORR8_YW0n_jQ" businessElementId="cac21d83-43b5-4e47-a040-0b741f0b0091" modelElementPath=""/>
-    <elements xmi:id="_4wSeYJMQEeeSquiwsvVy0A" businessElement="GoalObservationAuthorID" modelElement="_dPt2AJ14EeORR8_YW0n_jQ" businessElementId="b33ceb87-4603-4bb9-97a9-9bbb32b960b7" modelElementPath="text"/>
-    <elements xmi:id="_7Rt5UJMQEeeSquiwsvVy0A" businessElement="GoalSectionNotes" modelElement="_dPt2AJ14EeORR8_YW0n_jQ" businessElementId="6850c5d3-00e8-4268-8a1c-3d5f9b3d650c" modelElementPath="text"/>
     <elements xmi:id="_-Rv70JMQEeeSquiwsvVy0A" businessElement="GoalObservationContainer" modelElement="_WQbdwJ16EeORR8_YW0n_jQ" businessElementId="f60663c9-013b-4695-bcbb-7471c865e1f8" modelElementPath="goalObservation"/>
-    <elements xmi:id="_LTc3kJMREeeSquiwsvVy0A" businessElement="GoalObservationID" modelElement="_Qh8wcPp3EeS-CfvNxekztA" businessElementId="01b26209-7321-4e22-bd9d-59aac407aa86" modelElementPath="goalObservation.id"/>
-    <elements xmi:id="_QxX40JMREeeSquiwsvVy0A" businessElement="GoalObservationDateTime" modelElement="_MFUXoPp4EeS-CfvNxekztA" businessElementId="df8a2e93-aa14-4ad2-ac9d-60c2fdf74d43" modelElementPath="goalObservation.effectiveTime"/>
-    <elements xmi:id="_UfHV4JMREeeSquiwsvVy0A" businessElement="GoalObservationValueCode" modelElement="_MFUXpvp4EeS-CfvNxekztA" businessElementId="3738c6a3-9051-4f2d-ab2f-1a6741382b57" modelElementPath="goalObservation.value"/>
-    <elements xmi:id="_bmNUYJMREeeSquiwsvVy0A" businessElement="GoalObservationAuthorID" businessElementId="b33ceb87-4603-4bb9-97a9-9bbb32b960b7" modelElementPath="goalObservation.authorParticipation.time">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_dv_rYJMREeeSquiwsvVy0A" businessElement="GoalObservationAuthorID" businessElementId="b33ceb87-4603-4bb9-97a9-9bbb32b960b7" modelElementPath="goalObservation.authorParticipation.assignedAuthor.id">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    <elements xmi:id="_lP2IIJMREeeSquiwsvVy0A" businessElement="GoalObservationAuthorLegalName" businessElementId="187a4cad-705a-4ffd-a103-a7ae07aa61e0" modelElementPath="goalObservation.authorParticipation.assignedAuthor.assignedPerson.name">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_hwd3MJMREeeSquiwsvVy0A" businessElement="GoalObservationAuthorSpecialtyCode" businessElementId="cde7c772-d602-499d-a3b8-fa05cedbc9b6" modelElementPath="goalObservation.authorParticipation.assignedAuthor.code">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_lP2IIJMREeeSquiwsvVy0A" businessElement="GoalObservationAuthorLegalName" businessElementId="187a4cad-705a-4ffd-a103-a7ae07aa61e0" modelElementPath="goalObservation.authorParticipation.assignedAuthor.assignedPerson.name">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    <elements xmi:id="_dv_rYJMREeeSquiwsvVy0A" businessElement="GoalObservationAuthorID" businessElementId="b33ceb87-4603-4bb9-97a9-9bbb32b960b7" modelElementPath="goalObservation.authorParticipation.assignedAuthor.id">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_BZeFQJMSEeeSquiwsvVy0A" businessElement="GoalObservationAuthorOrganizationAddress" businessElementId="d6228d26-c5bb-40a9-94ea-86c8b4151f20" modelElementPath="goalObservation.authorParticipation.assignedAuthor.representedOrganization.addr">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_pg5toJMREeeSquiwsvVy0A" businessElement="GoalObservationAuthorOrganizationID" businessElementId="6b8cae24-aef2-49ab-a849-06e942853bcb" modelElementPath="goalObservation.authorParticipation.assignedAuthor.representedOrganization.id">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
@@ -4757,23 +4753,22 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <elements xmi:id="_56GJoJMREeeSquiwsvVy0A" businessElement="GoalObservationAuthorOrganizationURLContact" businessElementId="fdad62cb-d39c-47a1-b82c-72252e95b507" modelElementPath="goalObservation.authorParticipation.assignedAuthor.representedOrganization.telecom">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_BZeFQJMSEeeSquiwsvVy0A" businessElement="GoalObservationAuthorOrganizationAddress" businessElementId="d6228d26-c5bb-40a9-94ea-86c8b4151f20" modelElementPath="goalObservation.authorParticipation.assignedAuthor.representedOrganization.addr">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_K8AygJMSEeeSquiwsvVy0A" businessElement="GoalObservationPriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="6fa55e1f-6a60-4891-a164-4f3e0349ffad" modelElementPath="goalObservation.priorityPreference.id"/>
-    <elements xmi:id="_OVa-UJMSEeeSquiwsvVy0A" businessElement="GoalObservationPriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="0bc51be1-6da9-41f6-a81a-7694e6f9f8eb" modelElementPath="goalObservation.priorityPreference.value"/>
-    <elements xmi:id="_RW5LQJMSEeeSquiwsvVy0A" businessElement="GoalObservationPriorityID" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="6fa55e1f-6a60-4891-a164-4f3e0349ffad" modelElementPath="goalObservation.priorityPreference.effectiveTime"/>
-    <elements xmi:id="_vD-U8NEoEeer_bA1QxohHA" businessElement="GoalObservationPriorityAuthorDateTime" businessElementId="5d6d36a6-53cd-4427-9ff2-580982fb5b72" modelElementPath="goalObservation.priorityPreference.authorParticipation.time">
+    <elements xmi:id="_bmNUYJMREeeSquiwsvVy0A" businessElement="GoalObservationAuthorID" businessElementId="b33ceb87-4603-4bb9-97a9-9bbb32b960b7" modelElementPath="goalObservation.authorParticipation.time">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_y9pVMNEoEeer_bA1QxohHA" businessElement="GoalObservationPriorityAuthorID" businessElementId="167d15cf-d00f-48b2-a325-efd6c6ac7bf0" modelElementPath="goalObservation.priorityPreference.authorParticipation.assignedAuthor.id">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    <elements xmi:id="_QxX40JMREeeSquiwsvVy0A" businessElement="GoalObservationDateTime" modelElement="_MFUXoPp4EeS-CfvNxekztA" businessElementId="df8a2e93-aa14-4ad2-ac9d-60c2fdf74d43" modelElementPath="goalObservation.effectiveTime"/>
+    <elements xmi:id="_LTc3kJMREeeSquiwsvVy0A" businessElement="GoalObservationID" modelElement="_Qh8wcPp3EeS-CfvNxekztA" businessElementId="01b26209-7321-4e22-bd9d-59aac407aa86" modelElementPath="goalObservation.id"/>
+    <elements xmi:id="_3_NKkNEoEeer_bA1QxohHA" businessElement="GoalObservationPriorityAuthorLegalName" businessElementId="a6c04cf9-2563-45a6-a947-cbd7845dff4c" modelElementPath="goalObservation.priorityPreference.authorParticipation.assignedAuthor.assignedPerson.name">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_1KiDgNEoEeer_bA1QxohHA" businessElement="GoalObservationPriorityAuthorSpecialtyCode" businessElementId="9fce74e1-98c4-4fbf-8a6a-d3ed34791a72" modelElementPath="goalObservation.priorityPreference.authorParticipation.assignedAuthor.code">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_3_NKkNEoEeer_bA1QxohHA" businessElement="GoalObservationPriorityAuthorLegalName" businessElementId="a6c04cf9-2563-45a6-a947-cbd7845dff4c" modelElementPath="goalObservation.priorityPreference.authorParticipation.assignedAuthor.assignedPerson.name">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    <elements xmi:id="_y9pVMNEoEeer_bA1QxohHA" businessElement="GoalObservationPriorityAuthorID" businessElementId="167d15cf-d00f-48b2-a325-efd6c6ac7bf0" modelElementPath="goalObservation.priorityPreference.authorParticipation.assignedAuthor.id">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_LI6mYNEpEeer_bA1QxohHA" businessElement="GoalObservationAuthorOrganizationAddress" businessElementId="d6228d26-c5bb-40a9-94ea-86c8b4151f20" modelElementPath="goalObservation.priorityPreference.authorParticipation.assignedAuthor.representedOrganization.addr">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_6ymfQNEoEeer_bA1QxohHA" businessElement="GoalObservationAuthorOrganizationBusinessPhoneContact" businessElementId="51e1303f-e46b-452e-8fd2-b29226e45322" modelElementPath="goalObservation.priorityPreference.authorParticipation.assignedAuthor.representedOrganization.telecom">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
@@ -4787,9 +4782,14 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <elements xmi:id="_HtY6sNEpEeer_bA1QxohHA" businessElement="GoalObservationPriorityAuthorOrganizationURLContact" businessElementId="1f95a645-155f-459c-b7c2-0dcebe18499d" modelElementPath="goalObservation.priorityPreference.authorParticipation.assignedAuthor.representedOrganization.telecom">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_LI6mYNEpEeer_bA1QxohHA" businessElement="GoalObservationAuthorOrganizationAddress" businessElementId="d6228d26-c5bb-40a9-94ea-86c8b4151f20" modelElementPath="goalObservation.priorityPreference.authorParticipation.assignedAuthor.representedOrganization.addr">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
+    <elements xmi:id="_vD-U8NEoEeer_bA1QxohHA" businessElement="GoalObservationPriorityAuthorDateTime" businessElementId="5d6d36a6-53cd-4427-9ff2-580982fb5b72" modelElementPath="goalObservation.priorityPreference.authorParticipation.time">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
+    <elements xmi:id="_RW5LQJMSEeeSquiwsvVy0A" businessElement="GoalObservationPriorityID" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="6fa55e1f-6a60-4891-a164-4f3e0349ffad" modelElementPath="goalObservation.priorityPreference.effectiveTime"/>
+    <elements xmi:id="_K8AygJMSEeeSquiwsvVy0A" businessElement="GoalObservationPriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="6fa55e1f-6a60-4891-a164-4f3e0349ffad" modelElementPath="goalObservation.priorityPreference.id"/>
+    <elements xmi:id="_OVa-UJMSEeeSquiwsvVy0A" businessElement="GoalObservationPriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="0bc51be1-6da9-41f6-a81a-7694e6f9f8eb" modelElementPath="goalObservation.priorityPreference.value"/>
+    <elements xmi:id="_UfHV4JMREeeSquiwsvVy0A" businessElement="GoalObservationValueCode" modelElement="_MFUXpvp4EeS-CfvNxekztA" businessElementId="3738c6a3-9051-4f2d-ab2f-1a6741382b57" modelElementPath="goalObservation.value"/>
+    <elements xmi:id="_4wSeYJMQEeeSquiwsvVy0A" businessElement="GoalObservationAuthorID" modelElement="_dPt2AJ14EeORR8_YW0n_jQ" businessElementId="b33ceb87-4603-4bb9-97a9-9bbb32b960b7" modelElementPath="text"/>
+    <elements xmi:id="_7Rt5UJMQEeeSquiwsvVy0A" businessElement="GoalSectionNotes" modelElement="_dPt2AJ14EeORR8_YW0n_jQ" businessElementId="6850c5d3-00e8-4268-8a1c-3d5f9b3d650c" modelElementPath="text"/>
   </MDMI:MDMIMapping>
- 
 </xmi:XMI>
