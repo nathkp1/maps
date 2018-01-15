@@ -2917,7 +2917,7 @@
   <fhir:ValueSetMember xmi:id="_Gfec5M3tEeahpd1P9sS4xg" base_EnumerationLiteral="_Gfec483tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_GffD883tEeahpd1P9sS4xg" id="Condition:c.subject" base_Property="_GffD8M3tEeahpd1P9sS4xg" mustSupport="true" isModifier="false" isSummary="false"/>
   <MDMI:MDMIMapping xmi:id="_cJ6M8NNnEea-gf-zPrxOmQ" base_Class="_B9bOCM3tEeahpd1P9sS4xg">
-    <elements xmi:id="_SwS1YNNrEeag-vfi0Fbwcw" businessElement="AllergyConcernContainer" modelElement="_B9bOCM3tEeahpd1P9sS4xg" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath="" condition=""/>
+    <elements xmi:id="_oxZwcPn1EeepEf0NNtiTiQ" businessElement="AllergyConcernContainer" modelElement="_B9bOCM3tEeahpd1P9sS4xg" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath=""/>
     <elements xmi:id="_RkOJkPFtEeepI9eMsUph4g" businessElement="AllergyConcernStartDateTime" businessElementId="e7e780ef-09c5-48e9-8b43-75b14e921d35" modelElementPath="assertedDate" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47ShyMFMEea5pdrFDq-m2g"/>
     </elements>
@@ -2957,7 +2957,7 @@
     <elements xmi:id="_IJLKQOA8Eee9mIM0yL66Xw" businessElement="AllergyReactionNotes" businessElementId="d0dd472b-e8a8-484f-bfd8-c751f974eabd" modelElementPath="reaction.note.text" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47adl8FMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_SG2CsPTUEeeaisKH6rAX4A" businessElement="AllergyReactionStartDateTime" businessElementId="1e185357-131d-44d2-885b-828a6f216432" modelElementPath="reaction.onset">
+    <elements xmi:id="_SG2CsPTUEeeaisKH6rAX4A" businessElement="AllergyReactionStartDateTime" businessElementId="1e185357-131d-44d2-885b-828a6f216432" modelElementPath="reaction.onset" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47YoasFMEea5pdrFDq-m2g"/>
     </elements>
     <elements xmi:id="_I5NBsNUHEeeH-pUxfl1XLg" businessElement="AllergyReactionSeverityValueCode" businessElementId="283543ab-c176-4c4d-a215-3824512632d3" modelElementPath="reaction.severity" condition="">
@@ -3583,8 +3583,10 @@
     </elements>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_SZ860PI1EeekvM4lxDLwvg" base_Class="_CIz-qM3tEeahpd1P9sS4xg">
-    <elements xmi:id="_m5ic0PVIEeeXFvpo0DYmrg" businessElement="MedicationAdministrationContainer" modelElement="_CIz-qM3tEeahpd1P9sS4xg" businessElementId="3a55586d-b8ac-4596-804e-83818f921f91" modelElementPath=""/>
-    <elements xmi:id="_SZ-wAPI1EeekvM4lxDLwvg" businessElement="PatientID" modelElement="_CSYKVM3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject"/>
+    <elements xmi:id="_m5ic0PVIEeeXFvpo0DYmrg" businessElement="MedicationAdministrationContainer" modelElement="_CIz-qM3tEeahpd1P9sS4xg" businessElementId="3a55586d-b8ac-4596-804e-83818f921f91" modelElementPath="" condition=""/>
+    <elements xmi:id="_Zfb5UPmUEeen_9pAI0YX0Q" businessElement="MedicationDispenseStartDateTime" modelElement="_CSYKWM3tEeahpd1P9sS4xg" businessElementId="adc55ed8-92da-4da3-a38e-dc3af0f24d3c" modelElementPath="effectiveDateTime" condition=""/>
+    <elements xmi:id="_IM6ooPmUEeen_9pAI0YX0Q" businessElement="MedicationAdministrationDrugValueCode" modelElement="_CSW8MM3tEeahpd1P9sS4xg" businessElementId="271b979b-7064-46cd-b0ad-3d43224499fb" modelElementPath="medicationCodeableConcept" condition=""/>
+    <elements xmi:id="_SZ-wAPI1EeekvM4lxDLwvg" businessElement="PatientID" modelElement="_CSYKVM3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject" condition=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_eUeMEPSmEeeORoO2yBIgDQ" base_Class="_BmFsEc3tEeahpd1P9sS4xg">
     <elements xmi:id="_u_EPMPSoEeeFNZwvHWvcGQ" businessElement="ResultObservationContainer" modelElement="_BmFsEc3tEeahpd1P9sS4xg" businessElementId="04efdee4-2132-490a-99c4-0f635300879a" modelElementPath="" condition=""/>
