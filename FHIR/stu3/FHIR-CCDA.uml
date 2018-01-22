@@ -27547,6 +27547,14 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
     <elements xmi:id="_C4D7IPiUEeeb-vdDOk6Uvw" businessElement="PatientContainer" modelElement="_7LfxwM3tEeahpd1P9sS4xg" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="subject"/>
     <elements xmi:id="_Hp9cIOc2EeeRfYnha8AF3g" businessElement="VitalSignSectionContainer" modelElement="_7MP_tM3tEeahpd1P9sS4xg" businessElementId="1344bbb0-bb05-44df-9d86-b90bd60ac951" modelElementPath="vitalSigns" condition=""/>
   </MDMI:MDMIMapping>
- 
-   
+  <MDMI:MDMIMapping xmi:id="_tCktsP62EeeDL5Qe2AxTNQ" base_Class="_7FTDJM3tEeahpd1P9sS4xg">
+    <elements xmi:id="_2VWA4P93EeeEPap6rGENcg" businessElement="DocumentDataEntererContainer" modelElement="_7FTDJM3tEeahpd1P9sS4xg" businessElementId="bb20adbc-e669-415f-baea-909bafa47a88" modelElementPath=""/>
+    <elements xmi:id="_tCnJ8P62EeeDL5Qe2AxTNQ" businessElement="DocumentDataEntererII" businessElementId="6249660d-0b62-43fa-b28f-2098a25fd002" modelElementPath="valueReference.identifier">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmCowM3tEeahpd1P9sS4xg"/>
+    </elements>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_tBaCQP91EeeEPap6rGENcg" base_Class="_7FRN883tEeahpd1P9sS4xg">
+    <elements xmi:id="_Qu91cP93EeeEPap6rGENcg" businessElement="DocumentDataEntererContainer" modelElement="_7FU4UM3tEeahpd1P9sS4xg" businessElementId="bb20adbc-e669-415f-baea-909bafa47a88" modelElementPath="extension_slice_pos2"/>
+    <elements xmi:id="_N2cwMP93EeeEPap6rGENcg" businessElement="PatientContainer" modelElement="_7LfxwM3tEeahpd1P9sS4xg" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="subject"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
