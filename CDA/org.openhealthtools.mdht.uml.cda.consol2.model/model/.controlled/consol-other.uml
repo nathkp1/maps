@@ -3749,7 +3749,6 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_eWGm8Mi4Eee2pdXYlLF2iw" businessElement="MedicationAdministeredDosageUnitMeasure" businessElementId="2ae32afb-f8ec-4b06-880b-fc12a4ede424" modelElementPath="interventionAct.medicationActivity2.doseQuantity">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_090HgOLbEeOc7-TVP7Wi6w"/>
     </elements>
-     
     <elements xmi:id="_bSjYIMlBEee0nNVAd1NCUA" businessElement="MedicationAdministrationMonitoringDateTime" businessElementId="63ac0059-2507-4a78-acea-e6ee1ffb4af3" modelElementPath="interventionAct.medicationActivity2.drugMonitoringAct.effectiveTime">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_WDrfUYqvEeOoMZgUoTghIg"/>
     </elements>
@@ -4490,6 +4489,20 @@ Instructions are information or directions to the patient. Use the Instructions 
     </elements>
     <elements xmi:id="_aVryYMigEeexys9q7iYDYw" businessElement="NutritionPlanSupplyProductValueCode" businessElementId="467e67af-3698-4c62-95a9-03a3105253f5" modelElementPath="plannedInterventionAct.nutritionRecommendation.plannedSupply2.productInstance.playingDevice.code">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_SXxyEDosEeGSytqLITd2FA"/>
+    </elements>
+    <elements xmi:id="_7Bi08ALSEei9IteqhqJMOQ" businessElement="PlannedProcedureContainer" businessElementId="d4dc260a-a3b7-40cc-8c5b-d07c0d3d7928" modelElementPath="plannedInterventionAct.plannedAct2">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#__iT-cOLbEeS505YV9ux2XA"/>
+    </elements>
+    <elements xmi:id="_RFo-QALTEei9IteqhqJMOQ" businessElement="PlannedProcedureAuthorName" modelElement="_fgiTgKrpEeOxqJAXCMXUYg" businessElementId="4c73c8bd-b469-48d6-8395-8397e8ff77f3" modelElementPath="plannedInterventionAct.plannedAct2.authorParticipation.assignedAuthor.assignedPerson.name"/>
+    <elements xmi:id="_NpaH8ALTEei9IteqhqJMOQ" businessElement="PlannedProcedureAuthorSpecialityCode" modelElement="_4YH_gKrmEeOxqJAXCMXUYg" businessElementId="13bfe9b4-a5e3-451c-a41c-93093b95486f" modelElementPath="plannedInterventionAct.plannedAct2.authorParticipation.assignedAuthor.code"/>
+    <elements xmi:id="_Lhy7MALTEei9IteqhqJMOQ" businessElement="PlannedProcedureAuthorID" modelElement="_4YImkKrmEeOxqJAXCMXUYg" businessElementId="b066b14f-fbbe-4882-92f2-a4eeab67a719" modelElementPath="plannedInterventionAct.plannedAct2.authorParticipation.assignedAuthor.id"/>
+    <elements xmi:id="_ebng4ALTEei9IteqhqJMOQ" businessElement="PlannedProcedureAuthorOrganizationID" modelElement="_X2VqIKr4EeOxqJAXCMXUYg" businessElementId="3878ba43-408b-409a-b9c8-ec03b1420ff8" modelElementPath="plannedInterventionAct.plannedAct2.authorParticipation.assignedAuthor.representedOrganization.id"/>
+    <elements xmi:id="_JcZ8AALTEei9IteqhqJMOQ" businessElement="PlannedProcedureAuthorDateTime" modelElement="_-mD94KrlEeOxqJAXCMXUYg" businessElementId="f7311e3e-480f-4c41-b806-6f18c8755e5f" modelElementPath="plannedInterventionAct.plannedAct2.authorParticipation.time"/>
+    <elements xmi:id="_-h-OwALSEei9IteqhqJMOQ" businessElement="PlannedProcedureTypeCode" businessElementId="3ad5172d-1983-459c-b6df-739dbf4fa530" modelElementPath="plannedInterventionAct.plannedAct2.code">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#__uLNEOacEeOmzetP5oaH3A"/>
+    </elements>
+    <elements xmi:id="_DelSsALTEei9IteqhqJMOQ" businessElement="PlannedProcedureDateTime" businessElementId="f51164bf-e788-49b2-b9c8-e90acbdccbe0" modelElementPath="plannedInterventionAct.plannedAct2.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_dBBxMOafEeOmzetP5oaH3A"/>
     </elements>
     <elements xmi:id="_vQmW4MVPEeevgMdDXX7bKg" businessElement="PlannedEncounterContainer" businessElementId="ea87b0bc-a8c2-4039-ae2a-4dc7c5cfdac0" modelElementPath="plannedInterventionAct.plannedEncounter2">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_CQSnoOLcEeS505YV9ux2XA"/>
