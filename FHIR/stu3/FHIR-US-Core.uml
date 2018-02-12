@@ -3095,6 +3095,24 @@
     <elements xmi:id="_Y1BWsALREei9IteqhqJMOQ" businessElement="RiskConcernOnsetDateTime" businessElementId="de5b906e-7576-4da6-8787-bf6f568a75e3" modelElementPath="addresses.onsetDateTime" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47A08cFMEea5pdrFDq-m2g"/>
     </elements>
+    <elements xmi:id="_B0aEUALdEeiS3IoEUj9KXQ" businessElement="DocumentNonProviderParticipantContainer" businessElementId="bcdb49ad-4b87-44a8-ab2a-4b0aafa92078" modelElementPath="careTeam">
+      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_49gvUcFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_Yk9D8ALdEeiS3IoEUj9KXQ" businessElement="DocumentServiceEventPractitionerContainer" businessElementId="503535eb-e96e-4609-948e-e7ba5ada37ca" modelElementPath="careTeam.participant">
+      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_49eTEMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_KP6RAALdEeiS3IoEUj9KXQ" businessElement="DocumentNonProviderParticipantID" businessElementId="7f17420e-9e5b-4079-9535-b89153518b17" modelElementPath="careTeam.participant.member.id">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_PRQD8ALdEeiS3IoEUj9KXQ" businessElement="DocumentNonProviderParticipantFunctionCode" businessElementId="cdaa625f-e3ea-4de5-abd6-81fc166d7a40" modelElementPath="careTeam.participant.role">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_49eTGMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_boBzYALdEeiS3IoEUj9KXQ" businessElement="DocumentServiceEventPractitionerII" businessElementId="a294d280-db36-423a-8f36-371a11af4de6" modelElementPath="careTeam.participant.role">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_49eTGMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_gmqQkALdEeiS3IoEUj9KXQ" businessElement="PatientID" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="careTeam.subject">
+      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_49cd6cFMEea5pdrFDq-m2g"/>
+    </elements>
     <elements xmi:id="_yOrf4ALMEeigApQ0viKTUQ" businessElement="DocumentTypeCode" businessElementId="db98a4bb-4fc0-43cd-b3f2-c860653ea76e" modelElementPath="category" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_49VJJ8FMEea5pdrFDq-m2g"/>
     </elements>
@@ -3659,9 +3677,6 @@
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4di11MFMEea5pdrFDq-m2g"/>
     </elements>
     <elements xmi:id="_3p-yUHyCEeeKts1EILROhQ" businessElement="EncounterServiceLocationName" modelElement="_B3lEsM3tEeahpd1P9sS4xg" businessElementId="ac18271b-8b02-4840-964f-d38605ec510b" modelElementPath="name"/>
-    <elements xmi:id="_FmnsUHyDEeeKts1EILROhQ" businessElement="EncounterServiceLocationName" businessElementId="ac18271b-8b02-4840-964f-d38605ec510b" modelElementPath="name">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4dhnssFMEea5pdrFDq-m2g"/>
-    </elements>
     <elements xmi:id="_VK3dUHyDEeeKts1EILROhQ" businessElement="EncounterServiceLocationTypeCode" businessElementId="1c11660d-3f8b-4880-9b60-8831f7b4cb11" modelElementPath="physicalType">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4dlSFMFMEea5pdrFDq-m2g"/>
     </elements>
