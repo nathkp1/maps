@@ -2996,6 +2996,21 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_hw98UBAqEeiJhJvJkcsGRg" businessElement="RiskSelfCareValueCode" businessElementId="ad4893d4-58da-4232-8c93-77bacb24fcd0" modelElementPath="riskConcernAct.selfCareActivities.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_rBjQspmzEeOLJeQez13EkQ"/>
     </elements>
+    <elements xmi:id="_u8D_QBKIEeiDZvGcjBf9jw" businessElement="RiskSensoryStatusContainer" businessElementId="fe4978cf-7f5d-4edc-b562-d989f37dfd0f" modelElementPath="riskConcernAct.sensoryStatus">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_YOD_EOOjEeS_XOr-dz_KWA"/>
+    </elements>
+    <elements xmi:id="_xUf2QBKIEeiDZvGcjBf9jw" businessElement="RiskSensoryStatusTypeCode" businessElementId="dbe233f5-6f63-489f-90a5-c8c9ddd72248" modelElementPath="riskConcernAct.sensoryStatus.code">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_wSfzoZm4EeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_1bQ3UBKIEeiDZvGcjBf9jw" businessElement="RiskSensoryStatusStartDateTime" businessElementId="8f216e29-b2aa-4583-85af-588484f2d705" modelElementPath="riskConcernAct.sensoryStatus.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_wSfzopm4EeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_3WPWQBKIEeiDZvGcjBf9jw" businessElement="RiskSensoryStatusEndDateTime" businessElementId="d42df9d2-a7c8-46ca-9d5d-39dfe81bd2cc" modelElementPath="riskConcernAct.sensoryStatus.effectiveTime">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_wSfzopm4EeOLJeQez13EkQ"/>
+    </elements>
+    <elements xmi:id="_5Ym2oBKIEeiDZvGcjBf9jw" businessElement="RiskSensoryStatusValueCode" businessElementId="a2918a3d-6078-436e-bbc5-4db097186b98" modelElementPath="riskConcernAct.sensoryStatus.value">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_wSgasJm4EeOLJeQez13EkQ"/>
+    </elements>
     <elements xmi:id="_qHhssBAsEeiUas9Ltl9Q3g" businessElement="RiskSmokingStatusObservationContainer" businessElementId="6367be59-ddf5-4ee5-b16f-adaae95ff8f4" modelElementPath="riskConcernAct.smokingStatusMeaningfulUse2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_EGP_QOOCEeS_XOr-dz_KWA"/>
     </elements>
