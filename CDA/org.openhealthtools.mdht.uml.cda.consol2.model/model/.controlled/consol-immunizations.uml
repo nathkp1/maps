@@ -1733,38 +1733,38 @@ This information should be included in an Immunization Activity when available. 
     <elements xmi:id="_fSgQYBDbEeiXXot8IWSpPw" businessElement="ImmunizationSectionTitleText" modelElement="_4abv0QLOEeSIPYXg7AgJzw" businessElementId="0450032c-974c-4eb6-83f2-81c7450e0b2a" modelElementPath="title"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_9egqYNw1EeemI_lDWG8DRg" base_Class="_zI6vcOE7EeOTq9XEMvvkWw">
-    <elements xmi:id="_GPcnUBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerContainer" modelElement="_CtfWwRqsEeGo461UQq-B1g" businessElementId="e9033e48-c998-4423-b870-4c88db0e6391" modelElementPath="performer"/>
-    <elements xmi:id="_NXXsQBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerAddress" businessElementId="f756957d-6e78-432e-82d6-b1e285b55fe4" modelElementPath="performer.assignedEntity.addr">
+    <elements xmi:id="_GPcnUBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerContainer" modelElement="_CtfWwRqsEeGo461UQq-B1g" businessElementId="e9033e48-c998-4423-b870-4c88db0e6391" modelElementPath="performer" condition=""/>
+    <elements xmi:id="_NXXsQBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerAddress" businessElementId="f756957d-6e78-432e-82d6-b1e285b55fe4" modelElementPath="performer.assignedEntity.addr" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_jfidQBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerName" businessElementId="248db248-8547-4efc-b533-0f71158a8039" modelElementPath="performer.assignedEntity.assignedPerson.name">
+    <elements xmi:id="_jfidQBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerName" businessElementId="248db248-8547-4efc-b533-0f71158a8039" modelElementPath="performer.assignedEntity.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
     </elements>
-    <elements xmi:id="_JmA6gBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerID" businessElementId="52c37284-c4db-4b69-afc5-8b56205e9233" modelElementPath="performer.assignedEntity.id">
+    <elements xmi:id="_JmA6gBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerID" businessElementId="52c37284-c4db-4b69-afc5-8b56205e9233" modelElementPath="performer.assignedEntity.id" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_mQC2ABD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerOrganizationID" businessElementId="413b2175-fe66-4a7f-8f38-e9f1ed1b14a9" modelElementPath="performer.assignedEntity.representedOrganization.id">
+    <elements xmi:id="_mQC2ABD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerOrganizationID" businessElementId="413b2175-fe66-4a7f-8f38-e9f1ed1b14a9" modelElementPath="performer.assignedEntity.representedOrganization.id" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#__aP0AEraEd6FXKclYGEDCw"/>
     </elements>
-    <elements xmi:id="_Qwb50BD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerEmailContact" businessElementId="524b3003-169e-4b67-99f8-71fb894cd588" modelElementPath="performer.assignedEntity.telecom">
+    <elements xmi:id="_Qwb50BD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerEmailContact" businessElementId="524b3003-169e-4b67-99f8-71fb894cd588" modelElementPath="performer.assignedEntity.telecom" condition="(starts-with(@value, 'mailto:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_UWnWUBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerFaxContact" businessElementId="28e52fdf-71b8-405f-9e11-c156acf20202" modelElementPath="performer.assignedEntity.telecom">
+    <elements xmi:id="_UWnWUBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerFaxContact" businessElementId="28e52fdf-71b8-405f-9e11-c156acf20202" modelElementPath="performer.assignedEntity.telecom" condition="(starts-with(@value, 'fax:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_XjSGoBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerPagerContact" businessElementId="f73b9449-4c34-4705-b923-948a6a1d711b" modelElementPath="performer.assignedEntity.telecom">
+    <elements xmi:id="_XjSGoBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerPagerContact" businessElementId="f73b9449-4c34-4705-b923-948a6a1d711b" modelElementPath="performer.assignedEntity.telecom" condition="(not(true))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_alG44BD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerPhoneContact" businessElementId="98c364be-5d3a-43fa-8ac7-cb2c78cf052e" modelElementPath="performer.assignedEntity.telecom">
+    <elements xmi:id="_alG44BD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerPhoneContact" businessElementId="98c364be-5d3a-43fa-8ac7-cb2c78cf052e" modelElementPath="performer.assignedEntity.telecom" condition="(starts-with(@value, 'tel:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_dwkvUBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerSMSContact" businessElementId="53aa51c7-58af-4c73-830c-6148679e2a48" modelElementPath="performer.assignedEntity.telecom">
+    <elements xmi:id="_dwkvUBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerSMSContact" businessElementId="53aa51c7-58af-4c73-830c-6148679e2a48" modelElementPath="performer.assignedEntity.telecom" condition="(starts-with(@value, 'sms:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_gqBosBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerURLContact" businessElementId="0ba6fbf0-5d2a-495e-96b3-895d6529555f" modelElementPath="performer.assignedEntity.telecom">
+    <elements xmi:id="_gqBosBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerURLContact" businessElementId="0ba6fbf0-5d2a-495e-96b3-895d6529555f" modelElementPath="performer.assignedEntity.telecom" condition="(starts-with(@value, 'http:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_9eifkNw1EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredRouteCode" modelElement="_2ME5kRSVEeGGzu7fmW9pXw" businessElementId="095148b4-9810-4c0c-bca9-d4c5c748fa47" modelElementPath="routeCode"/>
-    <elements xmi:id="_D0c4wNw2EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredRouteCode" modelElement="_2ME5kRSVEeGGzu7fmW9pXw" businessElementId="095148b4-9810-4c0c-bca9-d4c5c748fa47" modelElementPath="routeCode"/>
+    <elements xmi:id="_9eifkNw1EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredRouteCode" modelElement="_2ME5kRSVEeGGzu7fmW9pXw" businessElementId="095148b4-9810-4c0c-bca9-d4c5c748fa47" modelElementPath="routeCode" condition=""/>
+    <elements xmi:id="_D0c4wNw2EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredRouteCode" modelElement="_2ME5kRSVEeGGzu7fmW9pXw" businessElementId="095148b4-9810-4c0c-bca9-d4c5c748fa47" modelElementPath="routeCode" condition=""/>
   </MDMI:MDMIMapping>
 </xmi:XMI>

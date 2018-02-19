@@ -2527,13 +2527,13 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <elements xmi:id="_jUiQUNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationFaxContact" businessElementId="c1a4c938-655b-4e7f-a27e-5e0dd2788c4d" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'fax:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_liOP4NE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationPagerContact" businessElementId="1cf3fc2c-b36d-4cd3-bfc7-ea2e06684515" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'tel:'))">
+    <elements xmi:id="_liOP4NE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationPagerContact" businessElementId="1cf3fc2c-b36d-4cd3-bfc7-ea2e06684515" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(not(true))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_nqdHsNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationPhoneContact" businessElementId="9e36fa9a-410d-482d-bc31-985a51bde578" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'tel:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_pjaNYNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationSMSContact" businessElementId="bad47270-37ff-485e-8e97-73c21225edb3" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'mailto:'))">
+    <elements xmi:id="_pjaNYNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationSMSContact" businessElementId="bad47270-37ff-485e-8e97-73c21225edb3" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'sms:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_rjnxoNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationURLContact" businessElementId="50a80e44-1f73-40a0-8af5-d838129ce9ec" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'http:'))">
