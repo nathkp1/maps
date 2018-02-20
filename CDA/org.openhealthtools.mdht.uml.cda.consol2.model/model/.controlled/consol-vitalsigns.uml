@@ -156,6 +156,7 @@
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_srxI0R0YEeGYy5bW_e08gQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_srxI0B0YEeGYy5bW_e08gQ" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_zHXmAEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OxoWRSVEeGGzu7fmW9pXw" name="methodCode" visibility="private">
       <ownedComment xmi:id="_2OxoWhSVEeGGzu7fmW9pXw">
@@ -164,6 +165,7 @@
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OxoXBSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OxoWxSVEeGGzu7fmW9pXw" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1jr3cEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OxoXhSVEeGGzu7fmW9pXw" name="targetSiteCode" visibility="private">
       <ownedComment xmi:id="_2OxoXxSVEeGGzu7fmW9pXw">
@@ -172,6 +174,7 @@
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uq350R0YEeGYy5bW_e08gQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uq350B0YEeGYy5bW_e08gQ" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_21P6QB0YEeGYy5bW_e08gQ" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
@@ -457,7 +460,9 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
         <body>true</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="__ze6gPM3EeOUvapeh9bVvQ" general="_2OrhsRSVEeGGzu7fmW9pXw"/>
+    <generalization xmi:id="__ze6gPM3EeOUvapeh9bVvQ">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
     <substitution xmi:id="_agM0wPM4EeOUvapeh9bVvQ" name="VitalSignObservation" client="__zeTcPM3EeOUvapeh9bVvQ" supplier="_2OrhsRSVEeGGzu7fmW9pXw" contract="_2OrhsRSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_7j7RkM84EeSJsu9BbhWxmQ" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_2OxoTRSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_CrGvoM85EeSJsu9BbhWxmQ"/>
@@ -466,10 +471,11 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7j7Rks84EeSJsu9BbhWxmQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qsjuoPM4EeOUvapeh9bVvQ" name="value" visibility="private" type="_vvXhMPM4EeOUvapeh9bVvQ" redefinedProperty="_2OxoUhSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="_tt9NoPM5EeOUvapeh9bVvQ" name="authorParticipation" association="_tt_C0PM5EeOUvapeh9bVvQ">
+    <ownedAttribute xmi:id="_tt9NoPM5EeOUvapeh9bVvQ" name="author" association="_tt_C0PM5EeOUvapeh9bVvQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tt90sPM5EeOUvapeh9bVvQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tt90sfM5EeOUvapeh9bVvQ" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_0--kMPM5EeOUvapeh9bVvQ" name="author" visibility="private" aggregation="composite" redefinedProperty="_JNJhQOJvEeG3cO7ebC3QuA">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
@@ -554,10 +560,11 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B0gksE9zEeWsIc5CMrI4GA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B0f9oE9zEeWsIc5CMrI4GA" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_QGDgAPV7EeONioZkBKP8eQ" name="authorParticipation" association="_QGEuIPV7EeONioZkBKP8eQ">
+    <ownedAttribute xmi:id="_QGDgAPV7EeONioZkBKP8eQ" name="author" association="_QGEuIPV7EeONioZkBKP8eQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QGEHEPV7EeONioZkBKP8eQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QGEHEfV7EeONioZkBKP8eQ" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_-ZxmoUxoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_cqXxoPV6EeONioZkBKP8eQ" name="vitalSignObservation2" type="__zeTcPM3EeOUvapeh9bVvQ" redefinedProperty="_2OlbGBSVEeGGzu7fmW9pXw" association="_cqZm0PV6EeONioZkBKP8eQ">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g1rUcfV6EeONioZkBKP8eQ" value="1"/>
@@ -909,11 +916,11 @@ Vital signs are represented in the same way as other results, but are aggregated
     <elements xmi:id="_lOdR8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorDateTime" businessElementId="797bb20a-7a57-4cf0-9b34-ebf996ef549a" modelElementPath="vitalSignsOrganizer2.authorParticipation.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_yNZ2EOWXEeelGI6qH-aZIg" businessElement="VitalSignOrganizerIDCode" modelElement="_74bwIPV6EeONioZkBKP8eQ" businessElementId="98bda06f-8145-4655-a817-90cc08050a53" modelElementPath="vitalSignsOrganizer2.code" condition=""/>
     <elements xmi:id="_jdse8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerEndDateTime" modelElement="_yESK8PV5EeONioZkBKP8eQ" businessElementId="9d64af06-9329-4ea2-99b5-cdb2b4d8712b" modelElementPath="vitalSignsOrganizer2.effectiveTime.high" condition=""/>
     <elements xmi:id="_exGM8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerStartDateTime" modelElement="_yESK8PV5EeONioZkBKP8eQ" businessElementId="5e2f62de-df7a-4af3-935b-34f0af5dcc9d" modelElementPath="vitalSignsOrganizer2.effectiveTime.low" condition=""/>
     <elements xmi:id="_R-zI0O5kEeesTO21tnDzKg" businessElement="VitalSignResultContainer" modelElement="_cqZm0PV6EeONioZkBKP8eQ" businessElementId="e6195bbe-badf-4ff2-8609-a01dffade5ae" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2" condition=""/>
     <elements xmi:id="_Zin6QBWuEei3OOpgVB9waw" businessElement="VitalSignResultAuthorContainer" modelElement="_tt_C0PM5EeOUvapeh9bVvQ" businessElementId="b80e70da-c00f-4b81-b5c5-05b21f8ad1bd" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation" condition=""/>
+    <elements xmi:id="_OkM14BZTEeiait7YOW80tQ" businessElement="VitalSignObservationAuthorContainer" modelElement="_tt_C0PM5EeOUvapeh9bVvQ" businessElementId="e8533563-1e93-4b2b-a30a-b2b7ef63a240" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation"/>
     <elements xmi:id="_66VoMNxbEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorName" businessElementId="68731508-c47a-48ff-b827-3f9365c0985f" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
