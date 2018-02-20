@@ -198,7 +198,7 @@
       <generalization xmi:id="_c8MnAG65EeGeVrQbtyMiPg">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_gRI5MEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_efdJgG65EeGeVrQbtyMiPg" name="immunizationMedicationInformation" type="_daTqABVOEeGbmN_W114JUw" aggregation="composite" association="_efdwkG65EeGeVrQbtyMiPg">
+      <ownedAttribute xmi:id="_efdJgG65EeGeVrQbtyMiPg" name="manufacturedProduct" type="_daTqABVOEeGbmN_W114JUw" aggregation="composite" association="_efdwkG65EeGeVrQbtyMiPg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f-FDoW65EeGeVrQbtyMiPg" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f-FDoG65EeGeVrQbtyMiPg" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_MvGqcEoZEd6c3qsAxlFHaQ"/>
@@ -997,10 +997,11 @@ This information should be included in an Immunization Activity when available. 
     </ownedRule>
     <generalization xmi:id="_zI_A4OE7EeOTq9XEMvvkWw" general="_2MAoIBSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_uJQiEOE8EeOTq9XEMvvkWw" name="ImmunizationActivity" client="_zI6vcOE7EeOTq9XEMvvkWw" supplier="_2MAoIBSVEeGGzu7fmW9pXw" contract="_2MAoIBSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="_OFdJwOG9EeO04sHNODkHmQ" name="authorParticipation" association="_OFgNEOG9EeO04sHNODkHmQ">
+    <ownedAttribute xmi:id="_OFdJwOG9EeO04sHNODkHmQ" name="author" association="_OFgNEOG9EeO04sHNODkHmQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OFe-8OG9EeO04sHNODkHmQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OFfmAOG9EeO04sHNODkHmQ" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_8iacYUxoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_3izGEOHFEeO04sHNODkHmQ" name="code" visibility="private" aggregation="composite" redefinedProperty="_2MAoJBSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_4ZNwsOHFEeO04sHNODkHmQ">
@@ -1081,10 +1082,13 @@ This information should be included in an Immunization Activity when available. 
       <ownedComment xmi:id="_dCZZYPiWEeOXlK95I8tUew">
         <body>INLINE</body>
       </ownedComment>
-      <generalization xmi:id="_BpmFYPgLEeOYeZoWJF5yyQ" general="_VboYkG65EeGeVrQbtyMiPg"/>
-      <ownedAttribute xmi:id="_Vqyi0PgLEeOYeZoWJF5yyQ" name="immunizationMedicationInformation2" type="_Rx8LIOHUEeO04sHNODkHmQ" redefinedProperty="_efdJgG65EeGeVrQbtyMiPg" association="_Vq0YAPgLEeOYeZoWJF5yyQ">
+      <generalization xmi:id="_BpmFYPgLEeOYeZoWJF5yyQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_gRI5MEcEEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_Vqyi0PgLEeOYeZoWJF5yyQ" name="immunizationMedicationInformation" type="_Rx8LIOHUEeO04sHNODkHmQ" association="_Vq0YAPgLEeOYeZoWJF5yyQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fqYYcPgLEeOYeZoWJF5yyQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fqXxYPgLEeOYeZoWJF5yyQ" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_MvGqcEoZEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_Psw9gD3NEeSyGa6KC25kiw" name="Precondition">
@@ -1553,81 +1557,6 @@ This information should be included in an Immunization Activity when available. 
     <elements xmi:id="_sjj7ML7yEeWoV-fDNleHag" businessElement="ImmunizationRouteCode" modelElement="_2ME5kRSVEeGGzu7fmW9pXw" businessElementId="095148b4-9810-4c0c-bca9-d4c5c748fa47" modelElementPath="immunizationActivity.routeCode" condition="@negationInd = &quot;false&quot; and @moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_DMvukL7zEeWoV-fDNleHag" businessElement="ImmunizationFreeText" modelElement="_b0iNUBqkEeGo461UQq-B1g" businessElementId="d6c181df-ddf8-446d-8699-841de280d5ee" modelElementPath="immunizationActivity.text" condition="@negationInd = &quot;false&quot; and @moodCode = &quot;EVN&quot;"/>
   </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_NVfOgPZ9EeW4gpa7B26MSA" base_Class="_2L7voBSVEeGGzu7fmW9pXw">
-    <elements xmi:id="_NVo_gPZ9EeW4gpa7B26MSA" businessElement="ImmunizationSection" modelElement="_2L7voBSVEeGGzu7fmW9pXw" businessElementId="7c3e5413-220e-4bea-b672-a98ad8c931a8" modelElementPath="" condition=""/>
-    <elements xmi:id="_VZUkcIv3EeeCjYcXn3Ox0Q" businessElement="ImmunizationAdministeredContainer" modelElement="_2L89wBSVEeGGzu7fmW9pXw" businessElementId="7af1b775-e58c-4067-b971-3c743533b308" modelElementPath="immunization" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_cvJOMPZ_EeW4gpa7B26MSA" businessElement="ImmunizationAdministeredUnitCode" modelElement="_ESwTIBqmEeGo461UQq-B1g" businessElementId="525e972e-0367-454b-8dc5-315d3e775c00" modelElementPath="immunization.administrationUnitCode" condition="@moodCode = &quot;EVN&quot; "/>
-    <elements xmi:id="_F9A6MPZ_EeW4gpa7B26MSA" businessElement="ImmunizationAdministeredApproachSite" modelElement="_2MHV0BSVEeGGzu7fmW9pXw" businessElementId="b0bc5ca7-db55-4414-8987-fe86dcfc09ae" modelElementPath="immunization.approachSiteCode" condition="@moodCode = &quot;EVN&quot; "/>
-    <elements xmi:id="_lbu8IPaFEeWR3O8RhFiEKg" businessElement="ImmunizationAdministratedMedicationCode" businessElementId="b76bf967-1e38-401a-a224-ea10f60d1f30" modelElementPath="immunization.consumable.immunizationMedicationInformation.manufacturedMaterial.code" condition="@moodCode = &quot;EVN&quot; ">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_qgWpsEo6Ed6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_EicK4PaFEeWR3O8RhFiEKg" businessElement="ImmunizationAdministeredLotNumber" modelElement="_xgWngEX8EeG6e5lG0YsSyQ" businessElementId="b54a842b-82d9-4c34-b56e-79819a9bfd4a" modelElementPath="immunization.consumable.immunizationMedicationInformation.manufacturedMaterial.lotNumberText" condition="@moodCode = &quot;EVN&quot; "/>
-    <elements xmi:id="_UZ9AsPaGEeWR3O8RhFiEKg" businessElement="ImmunizationAdministeredMedicationText" businessElementId="33c2b0f3-5c9c-41de-807e-8f9f1e45f4ad" modelElementPath="immunization.consumable.immunizationMedicationInformation.manufacturedMaterial.name" condition="@moodCode = &quot;EVN&quot; ">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_tYhwsEo6Ed6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_wOXNsPaEEeWR3O8RhFiEKg" businessElement="ImmunizationAdministeredManufactureName" businessElementId="9f66fcc7-36a1-432d-93c8-750ba25d0e8f" modelElementPath="immunization.consumable.immunizationMedicationInformation.manufacturerOrganization.name" condition="@moodCode = &quot;EVN&quot; ">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_ltV4QPZ_EeW4gpa7B26MSA" businessElement="ImmunizationAdministeredDoseQuantity" modelElement="_2MHV1BSVEeGGzu7fmW9pXw" businessElementId="e03ddd8b-f757-477f-bbaf-5bbd032efcc4" modelElementPath="immunization.doseQuantity" condition="@moodCode = &quot;EVN&quot; "/>
-    <elements xmi:id="_m2eJ4PaHEeWR3O8RhFiEKg" businessElement="ImmunizationAdministeredDrugVehicleCode" businessElementId="24a096e4-7598-4d8d-a748-5a5ed18b733b" modelElementPath="immunization.drugVehicle.playingEntity.code" condition="@moodCode = &quot;EVN&quot; ">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_9RqvkEkQEeaaevjM2ZsaYQ" businessElement="ImmunizationAdministeredDrugVehicleQuantity" businessElementId="81c5c16f-4b8f-4870-a098-43ca3ae7224a" modelElementPath="immunization.drugVehicle.playingEntity.quantity" condition="@moodCode = &quot;EVN&quot;">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_LhvikErhEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_0Pg9sPZ-EeW4gpa7B26MSA" businessElement="ImmunizationAdministrationDate" modelElement="_2MEShRSVEeGGzu7fmW9pXw" businessElementId="f8adcada-f905-4a80-bec8-ae7d53378a3a" modelElementPath="immunization.effectiveTime" condition="@moodCode = &quot;EVN&quot; "/>
-    <elements xmi:id="_3i_VEPaIEeWR3O8RhFiEKg" businessElement="ImmunizationRefusalReason" modelElement="_DruzARVOEeGbmN_W114JUw" businessElementId="5f3f7f86-618a-45d3-a87e-5bec8984ba5e" modelElementPath="immunization.immunizationRefusalReason.code" condition="@moodCode = &quot;EVN&quot; "/>
-    <elements xmi:id="_RUaTcPaDEeWR3O8RhFiEKg" businessElement="ImmunizationAdministeredProblemCode" businessElementId="a7249161-ddbf-4a3f-8369-c5496960ed3d" modelElementPath="immunization.indication.code" condition="@moodCode = &quot;EVN&quot; ">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2MdMQhUSEeG6PvUxSTZnaw"/>
-    </elements>
-    <elements xmi:id="_N7G1UPaDEeWR3O8RhFiEKg" businessElement="ImmunizationAdministeredProblemDateRange" businessElementId="d460053a-53a3-4a9a-90a3-ab80aa5bb69f" modelElementPath="immunization.indication.effectiveTime" condition="@moodCode = &quot;EVN&quot; ">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2MdMRBUSEeG6PvUxSTZnaw"/>
-    </elements>
-    <elements xmi:id="_T8Uw4PaDEeWR3O8RhFiEKg" businessElement="ImmunizationAdministeredId" businessElementId="cd36d2ec-e0da-4221-bcda-a2ea51bd463e" modelElementPath="immunization.indication.id" condition="@moodCode = &quot;EVN&quot; ">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2MdMSBUSEeG6PvUxSTZnaw"/>
-    </elements>
-    <elements xmi:id="_Gjw0UPaDEeWR3O8RhFiEKg" businessElement="ImmunizationAdministeredProblemValue" businessElementId="8a38f13a-66c3-48ac-9b69-52306efcab92" modelElementPath="immunization.indication.value" condition="@moodCode = &quot;EVN&quot; ">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2MmWNRUSEeG6PvUxSTZnaw"/>
-    </elements>
-    <elements xmi:id="_MLkUMNOwEeeLhZ5Sk1pagA" businessElement="ImmunizationAdministeredInstructionTypeCode" businessElementId="cdc87062-24f4-430c-bcab-034dda3f0f85" modelElementPath="immunization.instructions.code">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
-    </elements>
-    <elements xmi:id="_rcMKEPaCEeWR3O8RhFiEKg" businessElement="ImmunizationAdministeredPatientInstructions" businessElementId="f0df0825-32c4-463d-a3c2-61450a7e3c91" modelElementPath="immunization.instructions.text" condition="@moodCode = &quot;EVN&quot; ">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8iABSVEeGGzu7fmW9pXw"/>
-    </elements>
-    <elements xmi:id="_OgKNANOwEeeLhZ5Sk1pagA" businessElement="ImmunizationAdministeredInstructionNotes" businessElementId="5f9c87d4-ede2-4f78-a59d-58df2c9b5e05" modelElementPath="immunization.instructions.text">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8iABSVEeGGzu7fmW9pXw"/>
-    </elements>
-    <elements xmi:id="_et21kNOuEee7m_6BwXFfMA" businessElement="ImmunizationAdministeredPerformerEntityAddress" businessElementId="94a243da-c63f-4e5a-9a76-318368c3ab5f" modelElementPath="immunization.performer.assignedEntity.addr">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_hmJ8QPaGEeWR3O8RhFiEKg" businessElement="ImmunizationAdministeredPerformerName" businessElementId="6513ce68-8e0f-478e-a3dc-3812eaaa3b24" modelElementPath="immunization.performer.assignedEntity.assignedPerson.name" condition="@moodCode = &quot;EVN&quot; ">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_VTtPUNOuEee7m_6BwXFfMA" businessElement="ImmunizationAdministeredPerformerEntityID" businessElementId="61df4ba8-e709-4a8b-bba4-8524eb501fc4" modelElementPath="immunization.performer.assignedEntity.id">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_QxSXkNOvEeeL2pAheBwvAg" businessElement="ImmunizationAdministeredPerformerEntityAddress" businessElementId="94a243da-c63f-4e5a-9a76-318368c3ab5f" modelElementPath="immunization.performer.assignedEntity.representedOrganization.addr">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_OC77sErbEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_u1njUNOuEee7m_6BwXFfMA" businessElement="ImmunizationAdministeredPerformerEntityID" businessElementId="61df4ba8-e709-4a8b-bba4-8524eb501fc4" modelElementPath="immunization.performer.assignedEntity.representedOrganization.id">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#__aP0AEraEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_KW_NoNOvEeeL2pAheBwvAg" businessElement="ImmunizationAdministeredPerformerEntityName" businessElementId="39825b2c-bdcc-4fe1-a5c2-4ee8420569b8" modelElementPath="immunization.performer.assignedEntity.representedOrganization.name">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_Nxe-kNOvEeeL2pAheBwvAg" businessElement="ImmunizationAdministeredPerformerOrganizationTelecom" businessElementId="86572f90-2655-4354-b6d4-123b4180db67" modelElementPath="immunization.performer.assignedEntity.representedOrganization.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_oNWO0NOuEee7m_6BwXFfMA" businessElement="ImmunizationAdministeredPerformerOrganizationTelecom" businessElementId="86572f90-2655-4354-b6d4-123b4180db67" modelElementPath="immunization.performer.assignedEntity.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_mXuckPaAEeW4gpa7B26MSA" businessElement="ImmunizationAdministeredSeriesNumber" modelElement="_s20CkBqkEeGo461UQq-B1g" businessElementId="1b6b2f9c-d0e1-4482-9960-3b366d71eda8" modelElementPath="immunization.repeatNumber" condition="@moodCode = &quot;EVN&quot; "/>
-    <elements xmi:id="_8V7EIPZ-EeW4gpa7B26MSA" businessElement="ImmunizationAdministeredRouteCode" modelElement="_2ME5kRSVEeGGzu7fmW9pXw" businessElementId="68c27e6e-d655-4b72-957c-2fe6b1176dba" modelElementPath="immunization.routeCode" condition="@moodCode = &quot;EVN&quot; "/>
-    <elements xmi:id="_xa-uoPaAEeW4gpa7B26MSA" businessElement="ImmunizationAdministeredFreeText" modelElement="_b0iNUBqkEeGo461UQq-B1g" businessElementId="a60ab983-6bea-4d25-bd84-2b66fc3c3996" modelElementPath="immunization.text" condition="@moodCode = &quot;EVN&quot; "/>
-    <elements xmi:id="_yrFzAPZ9EeW4gpa7B26MSA" businessElement="ImmunizationSectionText" modelElement="_2L_aABSVEeGGzu7fmW9pXw" businessElementId="bbd982c0-34dc-4f50-926f-551853736d37" modelElementPath="text" condition=""/>
-    <elements xmi:id="_wJeK0PZ9EeW4gpa7B26MSA" businessElement="ImmunizationSectionTitle" modelElement="_2L-y8BSVEeGGzu7fmW9pXw" businessElementId="af9eee71-4aa0-466d-bfc5-506da513e04f" modelElementPath="title" condition=""/>
-  </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_Jx7iUNO7EeeoYJvStoz5mA" base_Class="_14bikALNEeSIPYXg7AgJzw">
     <elements xmi:id="_QFXpcPAOEeefBvVUv-KCHA" businessElement="ImmunizationSectionContainer" modelElement="_14bikALNEeSIPYXg7AgJzw" businessElementId="7c3e5413-220e-4bea-b672-a98ad8c931a8" modelElementPath="" condition=""/>
     <elements xmi:id="_zunlANwyEeet7fdkqoLuJA" businessElement="ImmunizationAdministeredContainer" modelElement="_fikeYALOEeSIPYXg7AgJzw" businessElementId="7af1b775-e58c-4067-b971-3c743533b308" modelElementPath="immunizationActivity2" condition=""/>
@@ -1665,13 +1594,8 @@ This information should be included in an Immunization Activity when available. 
     <elements xmi:id="_1eTkgNwzEeeutJYfvJ60dA" businessElement="ImmunizationAdministrationAuthorDateTime" businessElementId="9a1a3b0f-6bff-465c-95be-636fe8625f24" modelElementPath="immunizationActivity2.authorParticipation.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_nIYVkBDdEeiJ9NOOMW5NNw" businessElement="ImmunizationAdministeredMedicationContainer" modelElement="_3ZCbkPgKEeOYeZoWJF5yyQ" businessElementId="71db208d-4740-47b1-9892-749b1b36190e" modelElementPath="immunizationActivity2.consumable"/>
-    <elements xmi:id="_R5lncNw2EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredMedicationCode" modelElement="_sCU5QOHVEeO04sHNODkHmQ" businessElementId="3aa3f589-ed3c-47f3-97cc-d97775399103" modelElementPath="immunizationActivity2.consumable.immunizationMedicationInformation2.manufacturedMaterial.code" condition=""/>
-    <elements xmi:id="_V8zlQNw2EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredMedicationLotNumber" modelElement="_2daj0MKMEeSqg-Exmsy2kg" businessElementId="008bb3da-b5b5-4344-bdb0-e36a0a76269b" modelElementPath="immunizationActivity2.consumable.immunizationMedicationInformation2.manufacturedMaterial.lotNumberText" condition=""/>
-    <elements xmi:id="_fg_RQNw2EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredMedicationManufacturerName" businessElementId="03ac755e-307d-4660-9791-734edc659bb1" modelElementPath="immunizationActivity2.consumable.immunizationMedicationInformation2.manufacturerOrganization.name" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_kmvKIBDbEeiXXot8IWSpPw" businessElement="ImmunizationAdministeredDrugVehicleContainer" businessElementId="98907c42-5de2-469f-990c-5c1f89e2c5f9" modelElementPath="immunizationActivity2.drugVehicle">
+    <elements xmi:id="_eL0o4BWAEeiuPIUoWVHJMA" businessElement="ImmunizationAdministeredMedicationCode" modelElement="_sCU5QOHVEeO04sHNODkHmQ" businessElementId="3aa3f589-ed3c-47f3-97cc-d97775399103" modelElementPath="immunizationActivity2.consumable.manufacturedProduct.manufacturedMaterial.code" condition=""/>
+    <elements xmi:id="_kmvKIBDbEeiXXot8IWSpPw" businessElement="ImmunizationAdministeredDrugVehicleContainer" businessElementId="98907c42-5de2-469f-990c-5c1f89e2c5f9" modelElementPath="immunizationActivity2.drugVehicle" condition="">
       <modelElement xmi:type="uml:Association" href="../consol.uml#_xbTX0OHPEeO04sHNODkHmQ"/>
     </elements>
     <elements xmi:id="_bPVgwNw0EeeutJYfvJ60dA" businessElement="ImmunizationAdministeredDrugVehicleCode" businessElementId="30386915-08e1-48c6-80a7-9ee5c2c4f2d8" modelElementPath="immunizationActivity2.drugVehicle.playingEntity.code" condition="">
@@ -1680,91 +1604,56 @@ This information should be included in an Immunization Activity when available. 
     <elements xmi:id="_d-PXANw0EeeutJYfvJ60dA" businessElement="ImmunizationAdministeredDrugVehicleName" businessElementId="87887ce1-e023-4599-a5f2-edb83ce017da" modelElementPath="immunizationActivity2.drugVehicle.playingEntity.name" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
     </elements>
-    <elements xmi:id="_jAa_gBDOEei7bPDqfdB9-w" businessElement="ImmunizationAdministrationCourseContainer" modelElement="_X5kN8MHyEeST26B_nQ4gxA" businessElementId="bf2671e5-5b90-4bd6-b4a4-a878824136ce" modelElementPath="immunizationActivity2.entryRelationshipForSubAdminAct"/>
-    <elements xmi:id="_gwoHIBDOEei7bPDqfdB9-w" businessElement="ImmunizationAdministrationCourseNumber" modelElement="_pBEhc8HyEeST26B_nQ4gxA" businessElementId="5d862a33-03ff-409d-aae1-bfd788d2fa84" modelElementPath="immunizationActivity2.entryRelationshipForSubAdminAct.sequenceNumber"/>
-    <elements xmi:id="_lhfOEBDOEei7bPDqfdB9-w" businessElement="ImmunizationAdministrationCourseDateTime" businessElementId="a56f6f98-9b13-4c0c-8902-e3f04a1db2a0" modelElementPath="immunizationActivity2.entryRelationshipForSubAdminAct.substanceAdministeredAct.effectiveTime">
+    <elements xmi:id="_jAa_gBDOEei7bPDqfdB9-w" businessElement="ImmunizationAdministrationCourseContainer" modelElement="_X5kN8MHyEeST26B_nQ4gxA" businessElementId="bf2671e5-5b90-4bd6-b4a4-a878824136ce" modelElementPath="immunizationActivity2.entryRelationshipForSubAdminAct" condition="(@typeCode='COMP')"/>
+    <elements xmi:id="_gwoHIBDOEei7bPDqfdB9-w" businessElement="ImmunizationAdministrationCourseNumber" modelElement="_pBEhc8HyEeST26B_nQ4gxA" businessElementId="5d862a33-03ff-409d-aae1-bfd788d2fa84" modelElementPath="immunizationActivity2.entryRelationshipForSubAdminAct.sequenceNumber" condition=""/>
+    <elements xmi:id="_lhfOEBDOEei7bPDqfdB9-w" businessElement="ImmunizationAdministrationCourseDateTime" businessElementId="a56f6f98-9b13-4c0c-8902-e3f04a1db2a0" modelElementPath="immunizationActivity2.entryRelationshipForSubAdminAct.substanceAdministeredAct.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_bywKAZpdEeOK6dzbL4VoTA"/>
     </elements>
-    <elements xmi:id="_pINxQBDbEeiXXot8IWSpPw" businessElement="ImmunizationAdministeredReasonContainer" modelElement="_XyKGsPgFEeOYeZoWJF5yyQ" businessElementId="bbc9c3bc-f1c7-4edd-85a9-1f0eeea52b61" modelElementPath="immunizationActivity2.indication2"/>
+    <elements xmi:id="_pINxQBDbEeiXXot8IWSpPw" businessElement="ImmunizationAdministeredReasonContainer" modelElement="_XyKGsPgFEeOYeZoWJF5yyQ" businessElementId="bbc9c3bc-f1c7-4edd-85a9-1f0eeea52b61" modelElementPath="immunizationActivity2.indication2" condition=""/>
     <elements xmi:id="_e1U6kNw1EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredReasonTypeCode" businessElementId="6ea75411-0c3d-4c77-8ce2-d74df5909000" modelElementPath="immunizationActivity2.indication2.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_2Hh3kOHpEeO04sHNODkHmQ"/>
     </elements>
     <elements xmi:id="_cm4GANw1EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredReasonII" businessElementId="85c45474-1369-480c-9e0e-1c71fa37adcd" modelElementPath="immunizationActivity2.indication2.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
     </elements>
-    <elements xmi:id="_gwxTkNw1EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredReasonValueCode" businessElementId="0104e6b0-a549-4c32-b653-83e9b059c69a" modelElementPath="immunizationActivity2.indication2.value" condition="">
+    <elements xmi:id="_gwxTkNw1EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredReasonValueCode" businessElementId="0104e6b0-a549-4c32-b653-83e9b059c69a" modelElementPath="immunizationActivity2.indication2.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
     </elements>
-    <elements xmi:id="_r-nWoBDbEeiXXot8IWSpPw" businessElement="ImmunizationAdministeredInstructionContainer" modelElement="_3Fk-8PgIEeOYeZoWJF5yyQ" businessElementId="63c21ab4-25b0-4529-b96b-db58dfca61fc" modelElementPath="immunizationActivity2.instruction2"/>
+    <elements xmi:id="_r-nWoBDbEeiXXot8IWSpPw" businessElement="ImmunizationAdministeredInstructionContainer" modelElement="_3Fk-8PgIEeOYeZoWJF5yyQ" businessElementId="63c21ab4-25b0-4529-b96b-db58dfca61fc" modelElementPath="immunizationActivity2.instruction2" condition=""/>
     <elements xmi:id="_jV2fcNw1EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredInstructionNotes" businessElementId="5f9c87d4-ede2-4f78-a59d-58df2c9b5e05" modelElementPath="immunizationActivity2.instruction2.text" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_kzRcgMK8EeSqg-Exmsy2kg"/>
     </elements>
-    <elements xmi:id="__8JmoBDcEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationDispenseContainer" modelElement="_I4uX0PgGEeOYeZoWJF5yyQ" businessElementId="5f3a75a7-2833-42ed-b73a-13469e7d3bb5" modelElementPath="immunizationActivity2.medicationDispense2"/>
-    <elements xmi:id="_LdWY8BDdEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationDispenseID" businessElementId="2c2fa83e-ae18-4b25-8a95-97bd25eb09fe" modelElementPath="immunizationActivity2.medicationDispense2.id">
+    <elements xmi:id="__8JmoBDcEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationDispenseContainer" modelElement="_I4uX0PgGEeOYeZoWJF5yyQ" businessElementId="5f3a75a7-2833-42ed-b73a-13469e7d3bb5" modelElementPath="immunizationActivity2.medicationDispense2" condition=""/>
+    <elements xmi:id="_LdWY8BDdEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationDispenseID" businessElementId="2c2fa83e-ae18-4b25-8a95-97bd25eb09fe" modelElementPath="immunizationActivity2.medicationDispense2.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_ThHA8BrYEeGo461UQq-B1g"/>
     </elements>
-    <elements xmi:id="_IvbaIBDdEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationDispenseAmountUnitMeasure" businessElementId="3d033447-a2f3-4d27-b749-eaa83c4a76b7" modelElementPath="immunizationActivity2.medicationDispense2.quantity">
+    <elements xmi:id="_IvbaIBDdEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationDispenseAmountUnitMeasure" businessElementId="3d033447-a2f3-4d27-b749-eaa83c4a76b7" modelElementPath="immunizationActivity2.medicationDispense2.quantity" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_IQt9EEIwEeG4bZAl2IGXmQ"/>
     </elements>
-    <elements xmi:id="_EwrsoBDdEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationDispenseRepeatNumber" businessElementId="5bfb0ae2-affc-483b-8961-9d4260ff9c46" modelElementPath="immunizationActivity2.medicationDispense2.repeatNumber">
+    <elements xmi:id="_EwrsoBDdEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationDispenseRepeatNumber" businessElementId="5bfb0ae2-affc-483b-8961-9d4260ff9c46" modelElementPath="immunizationActivity2.medicationDispense2.repeatNumber" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_JdTL0MNqEeSRNKqIviDQAg"/>
     </elements>
-    <elements xmi:id="_CZ1KABDdEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationDispenseStatusCode" businessElementId="26ac6800-d260-40c8-9aaa-66f5fcc759ec" modelElementPath="immunizationActivity2.medicationDispense2.statusCode">
+    <elements xmi:id="_CZ1KABDdEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationDispenseStatusCode" businessElementId="26ac6800-d260-40c8-9aaa-66f5fcc759ec" modelElementPath="immunizationActivity2.medicationDispense2.statusCode" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_smEh0MNpEeSRNKqIviDQAg"/>
     </elements>
-    <elements xmi:id="_wJOV4BDbEeiXXot8IWSpPw" businessElement="ImmunizationAdministeredMedicationSupplyContainer" modelElement="_1hcaEPgFEeOYeZoWJF5yyQ" businessElementId="044de3f9-bc3a-4942-804b-eefe0b6f96af" modelElementPath="immunizationActivity2.medicationSupplyOrder2"/>
-    <elements xmi:id="_eIPAMBDcEeiC2uWgqq8XwQ" businessElement="ImmunizationAdministeredMedicationSupplyDateTime" businessElementId="da3ef3be-4c56-46d6-a6c3-333c32dfa25d" modelElementPath="immunizationActivity2.medicationSupplyOrder2.effectiveTime">
+    <elements xmi:id="_wJOV4BDbEeiXXot8IWSpPw" businessElement="ImmunizationAdministeredMedicationSupplyContainer" modelElement="_1hcaEPgFEeOYeZoWJF5yyQ" businessElementId="044de3f9-bc3a-4942-804b-eefe0b6f96af" modelElementPath="immunizationActivity2.medicationSupplyOrder2" condition=""/>
+    <elements xmi:id="_eIPAMBDcEeiC2uWgqq8XwQ" businessElement="ImmunizationAdministeredMedicationSupplyDateTime" businessElementId="da3ef3be-4c56-46d6-a6c3-333c32dfa25d" modelElementPath="immunizationActivity2.medicationSupplyOrder2.effectiveTime.low" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_p1pzUBrTEeGo461UQq-B1g"/>
     </elements>
-    <elements xmi:id="_ZplDkBDcEeiC2uWgqq8XwQ" businessElement="ImmunizationAdministeredMedicationSupplyID" businessElementId="8ed179dd-c34d-4f2e-bf3c-26838105fba6" modelElementPath="immunizationActivity2.medicationSupplyOrder2.id">
+    <elements xmi:id="_ZplDkBDcEeiC2uWgqq8XwQ" businessElement="ImmunizationAdministeredMedicationSupplyID" businessElementId="8ed179dd-c34d-4f2e-bf3c-26838105fba6" modelElementPath="immunizationActivity2.medicationSupplyOrder2.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_z3ymoBrTEeGo461UQq-B1g"/>
     </elements>
-    <elements xmi:id="_5cYG0BDcEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationSupplyQuantityUnitMeasure" businessElementId="40ffc0c5-30dc-482b-8b42-21dcb86b8467" modelElementPath="immunizationActivity2.medicationSupplyOrder2.quantity">
+    <elements xmi:id="_5cYG0BDcEeizJOEmsZCSdQ" businessElement="ImmunizationAdministeredMedicationSupplyQuantityUnitMeasure" businessElementId="40ffc0c5-30dc-482b-8b42-21dcb86b8467" modelElementPath="immunizationActivity2.medicationSupplyOrder2.quantity" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_p1qaYhrTEeGo461UQq-B1g"/>
     </elements>
-    <elements xmi:id="_W7TfcBDcEeiC2uWgqq8XwQ" businessElement="ImmunizationAdministeredMedicationSupplyRepeatNumer" businessElementId="15ef875c-a5f5-40a2-b123-814a86d7213a" modelElementPath="immunizationActivity2.medicationSupplyOrder2.repeatNumber">
+    <elements xmi:id="_W7TfcBDcEeiC2uWgqq8XwQ" businessElement="ImmunizationAdministeredMedicationSupplyRepeatNumer" businessElementId="15ef875c-a5f5-40a2-b123-814a86d7213a" modelElementPath="immunizationActivity2.medicationSupplyOrder2.repeatNumber" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_Hv6hUMOIEeSRNKqIviDQAg"/>
     </elements>
-    <elements xmi:id="_Ts-iQBDcEeiC2uWgqq8XwQ" businessElement="ImmunizationAdministeredMedicationSupplyStatusCode" businessElementId="c2bdb957-2271-4778-83b5-a36b59dcf146" modelElementPath="immunizationActivity2.medicationSupplyOrder2.statusCode">
+    <elements xmi:id="_Ts-iQBDcEeiC2uWgqq8XwQ" businessElement="ImmunizationAdministeredMedicationSupplyStatusCode" businessElementId="c2bdb957-2271-4778-83b5-a36b59dcf146" modelElementPath="immunizationActivity2.medicationSupplyOrder2.statusCode" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_bgxuoMOGEeSRNKqIviDQAg"/>
     </elements>
     <elements xmi:id="_wLIasNwzEeeutJYfvJ60dA" businessElement="ImmunizationAdministeredRepeatUnitMeasure" modelElement="_CXurcOHKEeO04sHNODkHmQ" businessElementId="f4f2d9dd-70de-420e-8981-9bb2d18b704f" modelElementPath="immunizationActivity2.repeatNumber" condition=""/>
     <elements xmi:id="_yCYFoNwyEeet7fdkqoLuJA" businessElement="ImmunizationSectionNotes" modelElement="_4abIwALOEeSIPYXg7AgJzw" businessElementId="2dffde33-5f9f-42ea-82c0-0adf78bff617" modelElementPath="text" condition=""/>
-    <elements xmi:id="_fSgQYBDbEeiXXot8IWSpPw" businessElement="ImmunizationSectionTitleText" modelElement="_4abv0QLOEeSIPYXg7AgJzw" businessElementId="0450032c-974c-4eb6-83f2-81c7450e0b2a" modelElementPath="title"/>
-  </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_9egqYNw1EeemI_lDWG8DRg" base_Class="_zI6vcOE7EeOTq9XEMvvkWw">
-    <elements xmi:id="_GPcnUBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerContainer" modelElement="_CtfWwRqsEeGo461UQq-B1g" businessElementId="e9033e48-c998-4423-b870-4c88db0e6391" modelElementPath="performer" condition=""/>
-    <elements xmi:id="_NXXsQBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerAddress" businessElementId="f756957d-6e78-432e-82d6-b1e285b55fe4" modelElementPath="performer.assignedEntity.addr" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_jfidQBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerName" businessElementId="248db248-8547-4efc-b533-0f71158a8039" modelElementPath="performer.assignedEntity.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_JmA6gBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerID" businessElementId="52c37284-c4db-4b69-afc5-8b56205e9233" modelElementPath="performer.assignedEntity.id" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_mQC2ABD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerOrganizationID" businessElementId="413b2175-fe66-4a7f-8f38-e9f1ed1b14a9" modelElementPath="performer.assignedEntity.representedOrganization.id" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#__aP0AEraEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_Qwb50BD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerEmailContact" businessElementId="524b3003-169e-4b67-99f8-71fb894cd588" modelElementPath="performer.assignedEntity.telecom" condition="(starts-with(@value, 'mailto:'))">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_UWnWUBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerFaxContact" businessElementId="28e52fdf-71b8-405f-9e11-c156acf20202" modelElementPath="performer.assignedEntity.telecom" condition="(starts-with(@value, 'fax:'))">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_XjSGoBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerPagerContact" businessElementId="f73b9449-4c34-4705-b923-948a6a1d711b" modelElementPath="performer.assignedEntity.telecom" condition="(not(true))">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_alG44BD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerPhoneContact" businessElementId="98c364be-5d3a-43fa-8ac7-cb2c78cf052e" modelElementPath="performer.assignedEntity.telecom" condition="(starts-with(@value, 'tel:'))">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_dwkvUBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerSMSContact" businessElementId="53aa51c7-58af-4c73-830c-6148679e2a48" modelElementPath="performer.assignedEntity.telecom" condition="(starts-with(@value, 'sms:'))">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_gqBosBD2EeiWNanfLerEWA" businessElement="ImmunizationAdministeredPerformerURLContact" businessElementId="0ba6fbf0-5d2a-495e-96b3-895d6529555f" modelElementPath="performer.assignedEntity.telecom" condition="(starts-with(@value, 'http:'))">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_9eifkNw1EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredRouteCode" modelElement="_2ME5kRSVEeGGzu7fmW9pXw" businessElementId="095148b4-9810-4c0c-bca9-d4c5c748fa47" modelElementPath="routeCode" condition=""/>
-    <elements xmi:id="_D0c4wNw2EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredRouteCode" modelElement="_2ME5kRSVEeGGzu7fmW9pXw" businessElementId="095148b4-9810-4c0c-bca9-d4c5c748fa47" modelElementPath="routeCode" condition=""/>
+    <elements xmi:id="_fSgQYBDbEeiXXot8IWSpPw" businessElement="ImmunizationSectionTitleText" modelElement="_4abv0QLOEeSIPYXg7AgJzw" businessElementId="0450032c-974c-4eb6-83f2-81c7450e0b2a" modelElementPath="title" condition=""/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
