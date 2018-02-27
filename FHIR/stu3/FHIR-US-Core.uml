@@ -908,13 +908,14 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CsWwls3tEeahpd1P9sS4xg" value="1"/>
           <redefinedProperty href="FHIR-Core.uml#_47ogAsFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_CsXXos3tEeahpd1P9sS4xg" name="valueQuantity" type="_DYO_I83tEeahpd1P9sS4xg" isOrdered="true">
+        <ownedAttribute xmi:id="_CsXXos3tEeahpd1P9sS4xg" name="value[x]" isOrdered="true">
           <ownedComment xmi:id="_DYOYEM3tEeahpd1P9sS4xg">
             <body>Vital Sign Value recorded with UCUM</body>
           </ownedComment>
           <ownedComment xmi:id="_DYO_Ic3tEeahpd1P9sS4xg">
             <body>9. SHALL contain exactly one [1..1] value with @xsi:type=&quot;PQ&quot; (CONF:7305).</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="FHIR-Core.uml#_4aEEAcFMEea5pdrFDq-m2g"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CsXXo83tEeahpd1P9sS4xg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CsXXpM3tEeahpd1P9sS4xg" value="1"/>
           <redefinedProperty href="FHIR-Core.uml#_47puLcFMEea5pdrFDq-m2g"/>
@@ -985,7 +986,8 @@
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_Fh6odM3tEeahpd1P9sS4xg" value="has-member"/>
             <redefinedProperty href="FHIR-Core.uml#_49N0ZcFMEea5pdrFDq-m2g"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_Fh6odc3tEeahpd1P9sS4xg" name="target" type="_CXMY4M3tEeahpd1P9sS4xg" isOrdered="true" association="_Fh7Pgc3tEeahpd1P9sS4xg">
+          <ownedAttribute xmi:id="_Fh6odc3tEeahpd1P9sS4xg" name="target" isOrdered="true" association="_Fh7Pgc3tEeahpd1P9sS4xg">
+            <type xmi:type="uml:Class" href="FHIR-Core.uml#_4lCk_MFMEea5pdrFDq-m2g"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fh6ods3tEeahpd1P9sS4xg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fh6od83tEeahpd1P9sS4xg" value="1"/>
             <redefinedProperty href="FHIR-Core.uml#_5DTOQMFMEea5pdrFDq-m2g"/>
@@ -3787,4 +3789,8 @@
     </elements>
   </MDMI:MDMIMapping>
   <fhir:ElementDefinition xmi:id="_BOvjE83tEeahpd1P9sS4xg" id="Patient:uscorepatient.animal" base_Property="_BOvjEM3tEeahpd1P9sS4xg" mustSupport="false" isModifier="false" isSummary="false"/>
+  <fhir:TypeChoice xmi:id="_fZY_cBs3EeiSNcn0VljeCg" base_Property="_CsXXos3tEeahpd1P9sS4xg">
+    <types xmi:type="uml:Class" href="FHIR-Core.uml#_4a1gFMFMEea5pdrFDq-m2g"/>
+    <types xmi:type="uml:Class" href="FHIR-Core.uml#_4ckleMFMEea5pdrFDq-m2g"/>
+  </fhir:TypeChoice>
 </xmi:XMI>
