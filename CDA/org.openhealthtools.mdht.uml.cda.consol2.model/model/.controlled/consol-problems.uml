@@ -3317,7 +3317,6 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_kM2qsBEAEeiWNanfLerEWA" businessElement="ProblemConditionAuthorDateTime" businessElementId="aa71e06c-cc8c-43b9-9613-9b21fe604de5" modelElementPath="problemConcernAct2.author.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_SgIioPVnEeeXFvpo0DYmrg" businessElement="ProblemConditionDateDiagnosed" modelElement="_EZInYOzfEeOnE-G4kptBiw" businessElementId="53f6c81b-c222-4012-b66c-3a55445f4f1c" modelElementPath="problemConcernAct2.effectiveTime.low" condition=""/>
     <elements xmi:id="_FPh20PlaEeeQHKhSbaB4zg" businessElement="ProblemConditionPriorityContainer" modelElement="_mgnKkO0BEeOnE-G4kptBiw" businessElementId="2019d4fe-bbb0-4927-a34a-e224dcbfa9f5" modelElementPath="problemConcernAct2.priorityPreference" condition=""/>
     <elements xmi:id="_2QN2EM3vEeeif6yto2VSrA" businessElement="ProblemConditionPriorityDateTime" businessElementId="924f0dc7-6b0c-466c-a4be-dc54b34012d2" modelElementPath="problemConcernAct2.priorityPreference.effectiveTime.low" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_CWg-oADcEeWNGdLwd_3YGQ"/>
@@ -3325,7 +3324,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_le8xMPlFEeeGz4YohFN3Uw" businessElement="ProblemConditionPriorityID" businessElementId="b02a3db3-c63a-41a8-a558-1ccbd7b99e86" modelElementPath="problemConcernAct2.priorityPreference.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwcyIpmaEeOLJeQez13EkQ"/>
     </elements>
-    <elements xmi:id="_ze74MBEBEeiWNanfLerEWA" businessElement="ProblemConditionPriorityCode" businessElementId="a7e39052-37d4-480f-89e4-bbea3999b841" modelElementPath="problemConcernAct2.priorityPreference.value" condition="">
+    <elements xmi:id="_ze74MBEBEeiWNanfLerEWA" businessElement="ProblemConditionPriorityCode" businessElementId="a7e39052-37d4-480f-89e4-bbea3999b841" modelElementPath="problemConcernAct2.priorityPreference.value.cd" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwdZNJmaEeOLJeQez13EkQ"/>
     </elements>
     <elements xmi:id="_8rh7YM3pEeeNdanU6Ci9vA" businessElement="ProblemObservationContainer" modelElement="_wOP0IPifEeOXlK95I8tUew" businessElementId="52f0679a-fcd2-42a0-b79e-f719e4c7bb50" modelElementPath="problemConcernAct2.problemObservation2" condition=""/>
@@ -3397,5 +3396,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_hXPsIBDXEeiUsoouH77Mww" businessElement="ProblemSectionNotes" modelElement="_szXagALYEeSyydFGYJajGA" businessElementId="d33c1f71-efbd-40f0-9ff9-53e8914a40f9" modelElementPath="text" condition=""/>
     <elements xmi:id="_AywQwBDYEeiZ84ZP9SDlmQ" businessElement="ProblemSectionTitleText" modelElement="_szXahALYEeSyydFGYJajGA" businessElementId="bd9919bb-d1a9-4200-acf8-a5e4ed443f8d" modelElementPath="title" condition=""/>
   </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_xMMA8OWoEee0wLCx43pkrw" base_Class="_y5C8IOzbEeOnE-G4kptBiw"/>
+  <MDMI:MDMIMapping xmi:id="_xMMA8OWoEee0wLCx43pkrw" base_Class="_y5C8IOzbEeOnE-G4kptBiw">
+    <elements xmi:id="_PJ9SgBsuEeiD3MKLcuVxkA" businessElement="ProblemConditionOnsetDateTime" modelElement="_2IBgABSVEeGGzu7fmW9pXw" businessElementId="9ff65a76-3d51-47c9-b2f0-518080214f3c" modelElementPath="effectiveTime"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
