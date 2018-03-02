@@ -27556,5 +27556,35 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <MDMI:MDMIMapping xmi:id="_tBaCQP91EeeEPap6rGENcg" base_Class="_7FRN883tEeahpd1P9sS4xg">
     <elements xmi:id="_Qu91cP93EeeEPap6rGENcg" businessElement="DocumentDataEntererContainer" modelElement="_7FU4UM3tEeahpd1P9sS4xg" businessElementId="bb20adbc-e669-415f-baea-909bafa47a88" modelElementPath="extension_slice_pos2"/>
     <elements xmi:id="_N2cwMP93EeeEPap6rGENcg" businessElement="PatientContainer" modelElement="_7LfxwM3tEeahpd1P9sS4xg" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="subject"/>
+    <elements xmi:id="_od0vEBzREei1f-r-Miwadw" businessElement="PatientBirthDateTime" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="subject.birthDate">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BOu8AM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_tLD6QBzREei1f-r-Miwadw" businessElement="PatientLanguageContainer" businessElementId="800fb398-f49c-47da-8187-2d285dd58866" modelElementPath="subject.communication">
+      <modelElement xmi:type="uml:Association" href="FHIR-US-Core.uml#_BOwKJM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_sCK_kBzREei1f-r-Miwadw" businessElement="PatientLanguageCode" businessElementId="e2229d9e-f294-4005-b4c3-86e397b892fb" modelElementPath="subject.communication.language">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BOx_UM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_uzIEQBzREei1f-r-Miwadw" businessElement="PatientLanguagePreferenceFlag" businessElementId="b230a553-9ca0-43d8-abf0-c5d633a567bf" modelElementPath="subject.communication.preferred">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4kTlIsFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_dkuekBzREei1f-r-Miwadw" businessElement="PatientRaceCode" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="subject.extension">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJPTkM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_fHIsgBzREei1f-r-Miwadw" businessElement="PatientEthnicityCode" businessElementId="b29dc139-8a2b-473d-820b-0331b7ae0aa3" modelElementPath="subject.extension">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJX2cM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_hNulkBzREei1f-r-Miwadw" businessElement="PatientAdministrationGenderCode" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="subject.extension">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJbg0M3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_nEBqkBzREei1f-r-Miwadw" businessElement="PatientAdministrationGenderCode" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="subject.gender">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJgZUc3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_jE9M8BzREei1f-r-Miwadw" businessElement="PatientID" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.identifier">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJcu8M3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_kXw4oBzREei1f-r-Miwadw" businessElement="PatientName" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="subject.name">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJekIs3tEeahpd1P9sS4xg"/>
+    </elements>
   </MDMI:MDMIMapping>
 </xmi:XMI>
