@@ -2347,6 +2347,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I_9QggIzEeScubSeRE1upQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I_9QgQIzEeScubSeRE1upQ" value="1"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" href="consol-other.uml#_ctJgAPylEeOc0tW1-DpN-Q"/>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_LXPHYAInEeSr1aKUYorURA" base_Class="_EONPMAInEeSr1aKUYorURA" templateId="2.16.840.1.113883.10.20.22.2.6.1" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7527, CONF:1198-10379, CONF:1198-32545</ruleId>
@@ -2556,4 +2557,30 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>R2.0=CONF:1098-7335</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_D_FQgOM-EeeHSPFt8MMbpw" base_Property="_D_A_EOM-EeeHSPFt8MMbpw"/>
+  <CDA:CDATemplate xmi:id="_h9zhUPylEeOc0tW1-DpN-Q" templateId="2.16.840.1.113883.10.20.22.2.43" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-9930, CONF:1198-10391, CONF:1198-32563</ruleId>
+    <base_Class href="consol-other.uml#_ctJgAPylEeOc0tW1-DpN-Q"/>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_w8AmAPylEeOc0tW1-DpN-Q">
+    <base_Generalization href="consol-other.uml#_ctL8QPylEeOc0tW1-DpN-Q"/>
+  </CDA:ConformsTo>
+  <CDA:CodeSystemConstraint xmi:id="_4hbNUPynEeOc0tW1-DpN-Q" code="46241-6" displayName="Hospital Admission diagnosis">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <base_Property href="consol-other.uml#_4hamQPynEeOc0tW1-DpN-Q"/>
+    <ruleId>CONF:1198-15480, CONF:1198-30865</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_4hdpkPynEeOc0tW1-DpN-Q">
+    <ruleId>CONF:1198-15479</ruleId>
+    <base_Property href="consol-other.uml#_4hamQPynEeOc0tW1-DpN-Q"/>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_UB1AUEH3EeWCWce3kO1aHQ">
+    <ruleId>CONF:1198-32749</ruleId>
+    <base_Property href="consol-other.uml#_QFJvYEH3EeWCWce3kO1aHQ"/>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2eH1YEH3EeWCWce3kO1aHQ" code="42347-5" displayName="Admission Diagnosis">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <base_Property href="consol-other.uml#_QFJvYEH3EeWCWce3kO1aHQ"/>
+    <ruleId>CONF:1198-32750</ruleId>
+    <ruleId>CONF:1198-32751</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
