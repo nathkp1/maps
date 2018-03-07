@@ -2621,6 +2621,25 @@ The common notion of &quot;procedure&quot; is broader than that specified by the
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ZnMkMnLEeSr1c1X9ACWbg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ZmlgMnLEeSr1c1X9ACWbg" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_DpAXYCCKEeiLj5dIQmPgjA" name="id1" visibility="private" aggregation="composite" subsettedProperty="_hPwGkBg4EeGs5a462vYX5Q">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DpAXYSCKEeiLj5dIQmPgjA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DpAXYiCKEeiLj5dIQmPgjA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_DpF28CCKEeiLj5dIQmPgjA" name="code" visibility="private" aggregation="composite" redefinedProperty="_hPmVkhg4EeGs5a462vYX5Q">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_DpHFECCKEeiLj5dIQmPgjA" name="priorityCode" visibility="private" aggregation="composite" redefinedProperty="_hPwGlhg4EeGs5a462vYX5Q">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DpHFESCKEeiLj5dIQmPgjA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DpHFEiCKEeiLj5dIQmPgjA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Q5PsQCF4EeiUrLoLdSW0dQ" name="serviceDeliveryLocation1" subsettedProperty="_Oyk-sBxsEeGXP8PxDYviDg">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q5PsQSF4EeiUrLoLdSW0dQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q5PsQiF4EeiUrLoLdSW0dQ" value="*"/>
+      <association href="../consol.uml#_Q5TWoCF4EeiUrLoLdSW0dQ"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_chMe8MnKEeSr1c1X9ACWbg" name="ProcedureActPerformer">
       <ownedComment xmi:id="_f_yswMnKEeSr1c1X9ACWbg">
         <body>INLINE</body>
@@ -2941,6 +2960,12 @@ This template can be used with a contained Product Instance template to represen
       <type xmi:type="uml:Class" href="consol-allergies.uml#_U3yosPDxEeOKPKE9au0oug"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FfL8oMzPEeSLqosJ4F90vA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FfL8oczPEeSLqosJ4F90vA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4VJEUCF3Eei-kceakmf0YA" name="serviceDeliveryLocation1" subsettedProperty="_2OTHNhSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4VJEUSF3Eei-kceakmf0YA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4VJEUiF3Eei-kceakmf0YA" value="*"/>
+      <association href="../consol.uml#_4VJrYCF3Eei-kceakmf0YA"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ZJi5IPDuEeOKPKE9au0oug" name="ProcedureSpecimen">
       <ownedComment xmi:id="_dOQrwPDuEeOKPKE9au0oug">
@@ -3617,76 +3642,270 @@ This template can be used with a contained Product Instance template to represen
   <CDA:ConstraintValidation xmi:id="_KBl24BUHEeWCiY8iFDNBKA" severity="INFO" base_Constraint="_ykBmYPvZEeOes-3T-2HryA"/>
   <MDMI:MDMIMapping xmi:id="_Wv4U0L7kEeWoV-fDNleHag" base_Class="_2OAzQRSVEeGGzu7fmW9pXw">
     <elements xmi:id="_Wv4U0b7kEeWoV-fDNleHag" businessElement="ProcedureSection" modelElement="_2OAzQRSVEeGGzu7fmW9pXw" businessElementId="b7a63343-ca32-4394-88a2-0f4cd2c2aad6" modelElementPath="" condition=""/>
-    <elements xmi:id="_Z8cXcL7kEeWoV-fDNleHag" businessElement="ProcedureSectiontitle" modelElement="_2OAzTRSVEeGGzu7fmW9pXw" businessElementId="b53ae5e0-c044-4695-a3af-7de38f13695c" modelElementPath="title" condition=""/>
-    <elements xmi:id="_BtG-sMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysical" modelElement="_CM7hMOVsEeGpoIKFyl7L7w" businessElementId="80f6bd11-1243-4afb-8914-af7c3544eb73" modelElementPath="procedureActivityProcedure" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_Dp8e0MXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalId" modelElement="_2OTHJhSVEeGGzu7fmW9pXw" businessElementId="5816cae0-adad-4f89-8a0b-055ba7843cc5" modelElementPath="procedureActivityProcedure.id" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_Fl84gMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalCode" modelElement="_2OTHKhSVEeGGzu7fmW9pXw" businessElementId="e63ad412-d1d8-424a-9ae1-19338c1238b0" modelElementPath="procedureActivityProcedure.code" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_LGtLUMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalStatusCode" modelElement="_2OG6CBSVEeGGzu7fmW9pXw" businessElementId="960724e7-1dc8-4e92-be32-640d1b4763d5" modelElementPath="procedureActivityProcedure.statusCode" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_Nj_GEMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalStartDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="1d26f6c8-4b8c-469b-af3d-e7afaa826f84" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.low" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_PLzYcMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalEndDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="8ce18fa2-ef45-4778-bc5a-455248b5d610" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.high" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_RKM-0MXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalPriorityCode" modelElement="_ozsKlBrUEeGxIZCGAXKxsQ" businessElementId="6aa203f6-6fd1-49dd-a4e3-9085abcd6ef6" modelElementPath="procedureActivityProcedure.priorityCode" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_TFkfUMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalMethodCode" modelElement="_ozsKkBrUEeGxIZCGAXKxsQ" businessElementId="ff055858-7834-4213-8605-b23d80f39be0" modelElementPath="procedureActivityProcedure.methodCode" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_U7llwMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalTargetSite" modelElement="_ozsKmBrUEeGxIZCGAXKxsQ" businessElementId="2ace2e94-939d-4406-8ca5-bae0b53040aa" modelElementPath="procedureActivityProcedure.targetSiteCode" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_LJQTkMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysical" modelElement="_CM7hMOVsEeGpoIKFyl7L7w" businessElementId="3fe9f1d2-f666-4313-931b-88a0bb41789b" modelElementPath="procedureActivityProcedure" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_MxxJgMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalId" modelElement="_2OTHJhSVEeGGzu7fmW9pXw" businessElementId="f23632b4-de3d-4a10-9881-ceff3b0d6a20" modelElementPath="procedureActivityProcedure.id" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_OgiYcMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalCode" modelElement="_2OTHKhSVEeGGzu7fmW9pXw" businessElementId="0932b27b-b833-4525-9f3a-ee99a88261a7" modelElementPath="procedureActivityProcedure.code" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_QRWOwMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalStatusCode" modelElement="_2OG6CBSVEeGGzu7fmW9pXw" businessElementId="9c40c0fe-59b2-4c50-90c0-decc9d04d39d" modelElementPath="procedureActivityProcedure.statusCode" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_R41J8MXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalStartDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="412327c9-e3ff-4f3c-b629-99a11918404f" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.low" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_TSfEgMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalEndDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="c6b67a5b-5214-4a51-87e8-69a4a4a8f6d5" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.high" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_VBnf0MXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalPriorityCode" modelElement="_ozsKlBrUEeGxIZCGAXKxsQ" businessElementId="f587acbd-3be7-416c-86e2-5072e0c038f8" modelElementPath="procedureActivityProcedure.priorityCode" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_W4dFoMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalMethodCode" modelElement="_ozsKkBrUEeGxIZCGAXKxsQ" businessElementId="c1bf56e5-c17a-46b8-9646-6adf0d3e40ca" modelElementPath="procedureActivityProcedure.methodCode" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_Y8-iIMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalTargetSite" modelElement="_ozsKmBrUEeGxIZCGAXKxsQ" businessElementId="dbe0f0a1-50b8-4d9d-9118-2f3bed08cca5" modelElementPath="procedureActivityProcedure.targetSiteCode" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_qvAZUMXBEeWCquoDViU_jA" businessElement="ProcedureSectionText" modelElement="_7eV1s1GkEeG3H6xvuD7Z0Q" businessElementId="c086fc0b-4874-416d-be81-3cebab335d5f" modelElementPath="text" condition=""/>
-    <elements xmi:id="_X9ciUMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrdered" modelElement="_Dy1vEOVsEeGpoIKFyl7L7w" businessElementId="663ac6f8-2837-44fe-bee8-dd9108aa6dfd" modelElementPath="procedureActivityObservation" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_Z0aD8MXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedId" modelElement="_NMUNdhg4EeGs5a462vYX5Q" businessElementId="07d3f57f-4ba2-41e6-84cd-e70d0fb87797" modelElementPath="procedureActivityObservation.id" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_bNv1cMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedCode" modelElement="_NMUNcBg4EeGs5a462vYX5Q" businessElementId="6b2799df-b0ec-45bd-9c02-03aa1ab27973" modelElementPath="procedureActivityObservation.code" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_dBrRMMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedStatusCode" modelElement="_NMUNhBg4EeGs5a462vYX5Q" businessElementId="7f77591b-c8f7-493b-8bfd-2f68fb55d705" modelElementPath="procedureActivityObservation.statusCode" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_k4ifwMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedStartDate" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="f08d6cb6-a225-4cb3-9ede-90091559123f" modelElementPath="xxxprocedureActivityObservation.effectiveTime.low" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_mTfa0MXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedEndDate" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="d3729d9d-4ada-4896-accb-418d597657af" modelElementPath="procedureActivityObservation.effectiveTime.high" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_2KwOcMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedPriorityCode" modelElement="_NMUNgBg4EeGs5a462vYX5Q" businessElementId="9275d867-188f-4771-9fc9-190133689a74" modelElementPath="procedureActivityObservation.priorityCode" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_4AqnMMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedMethodCode" modelElement="_NMUNehg4EeGs5a462vYX5Q" businessElementId="ec7aa9b9-61f6-43ef-9f7c-b4e871875a1e" modelElementPath="procedureActivityObservation.methodCode" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_5wiCUMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedTargetSite" modelElement="_NMUNiBg4EeGs5a462vYX5Q" businessElementId="69872550-0077-4001-9fe3-a2231cd6f0db" modelElementPath="procedureActivityObservation.targetSiteCode" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_k8VIsMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformation" modelElement="_Dy1vEOVsEeGpoIKFyl7L7w" businessElementId="df2bdb55-aa14-460e-b60d-097e100aa902" modelElementPath="procedureActivityObservation" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_mgEMUMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationId" modelElement="_NMUNdhg4EeGs5a462vYX5Q" businessElementId="d8453f83-4317-42b9-8b31-c66a49636797" modelElementPath="procedureActivityObservation.id" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_oHHpsMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationCode" modelElement="_NMUNcBg4EeGs5a462vYX5Q" businessElementId="408b342d-1cd8-4f98-9aa5-40508da56bf7" modelElementPath="procedureActivityObservation.code" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_qmyKEMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationStatusCode" modelElement="_NMUNhBg4EeGs5a462vYX5Q" businessElementId="a5844077-e227-4586-8149-279caceed9b2" modelElementPath="procedureActivityObservation.statusCode" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_sF8PsMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationStartDate" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="1acd4b97-aa48-430a-9308-515da73e8530" modelElementPath="xxxprocedureActivityObservation.effectiveTime.low" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_tgpTIMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationEndTime" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="e7131c27-c05c-4853-aaf9-2d9affee79f5" modelElementPath="xxxprocedureActivityObservation.effectiveTime.high" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_u7I7MMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationPriorityCode" modelElement="_NMUNgBg4EeGs5a462vYX5Q" businessElementId="e6ed0a7b-e75b-40b4-a5f2-8e20f83129b9" modelElementPath="procedureActivityObservation.priorityCode" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_wiy1gMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationMethodCode" modelElement="_NMUNehg4EeGs5a462vYX5Q" businessElementId="7eb848de-837d-46ee-8d9b-85e422a31385" modelElementPath="procedureActivityObservation.methodCode" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_yOb38MXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationTargetSite" modelElement="_NMUNiBg4EeGs5a462vYX5Q" businessElementId="a1eb6d4f-5c51-4f99-923a-661678822ea5" modelElementPath="procedureActivityObservation.targetSiteCode" condition="@moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_f-2soMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOther" modelElement="_FzYqguVsEeGpoIKFyl7L7w" businessElementId="c1dff64b-dd0a-441b-ac6b-5b68dbf01426" modelElementPath="procedureActivityAct" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_iKVswMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherId" modelElement="_hPwGkBg4EeGs5a462vYX5Q" businessElementId="6fa1de87-ffbc-4173-ae6d-e6356db9558d" modelElementPath="procedureActivityAct.id" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_jp-TgMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherCode" modelElement="_hPmVkhg4EeGs5a462vYX5Q" businessElementId="e15ba4dd-dccd-4ab1-a6ee-549d68ea791d" modelElementPath="procedureActivityAct.code" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_0WEdYMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherStatusCode" modelElement="_hPwGmhg4EeGs5a462vYX5Q" businessElementId="a4431aa1-04af-4ae1-8a28-da884c117769" modelElementPath="procedureActivityAct.statusCode" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_2HG9MMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherStartDate" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="c71613b3-ab25-4954-ba08-20ce3d9d77da" modelElementPath="xxxprocedureActivityAct.effectiveTime.low" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_3h110MXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherEndDate" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="59975f16-9464-493a-9916-9626b528adec" modelElementPath="xxxprocedureActivityAct.effectiveTime.high" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_74oP4MXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherPriorityCode" modelElement="_hPwGlhg4EeGs5a462vYX5Q" businessElementId="8ebc92e7-78df-4352-932b-4c930080e2a5" modelElementPath="procedureActivityAct.priorityCode" condition="@moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_6ZVx8MXGEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOther" modelElement="_FzYqguVsEeGpoIKFyl7L7w" businessElementId="add5cedb-4744-4543-acd5-2f7a8c890f63" modelElementPath="procedureActivityAct" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_8ErSYMXGEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherId" modelElement="_hPwGkBg4EeGs5a462vYX5Q" businessElementId="4b813b99-0ed2-4f70-8842-81e0cb12d389" modelElementPath="procedureActivityAct.id" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_jp-TgMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherCode" modelElement="_hPmVkhg4EeGs5a462vYX5Q" businessElementId="e15ba4dd-dccd-4ab1-a6ee-549d68ea791d" modelElementPath="procedureActivityAct.code" condition="@moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_9p0EMMXGEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherCode" modelElement="_hPmVkhg4EeGs5a462vYX5Q" businessElementId="3343d8f6-218f-4d73-8aa7-ea373846e272" modelElementPath="procedureActivityAct.code" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="__uJTcMXGEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherStatusCode" modelElement="_hPwGmhg4EeGs5a462vYX5Q" businessElementId="f3bf5eed-2f89-4193-b04f-047e2982a09a" modelElementPath="procedureActivityAct.statusCode" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_BXa-YMXHEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherStartTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="4e853986-9f61-4c60-a68b-e87f7fdca443" modelElementPath="xxxprocedureActivityAct.effectiveTime.low" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_CkX5sMXHEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherEndTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="43765df6-65d9-4202-971e-54db6a39ecbd" modelElementPath="xxxprocedureActivityAct.effectiveTime.hign" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_EEwuYMXHEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherPriorityCode" modelElement="_hPwGlhg4EeGs5a462vYX5Q" businessElementId="05a50c5d-7bfa-4169-8ec8-4f2bf69f1fdc" modelElementPath="procedureActivityAct.priorityCode" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_PIv4kObqEeW5Oax7LpOkcw" businessElement="ProcedureOrderedPhysicalEffectiveTime" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="0436bc7a-cb75-4c24-be4e-42bf3dca1536" modelElementPath="procedureActivityProcedure.effectiveTime" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_rFPXoOb1EeW5Oax7LpOkcw" businessElement="ProcedurePerformedPhysicalEffectiveTime" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="398efc17-f453-46bd-b9f4-72c45842f82d" modelElementPath="procedureActivityProcedure.effectiveTime" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_FJkcMOb2EeW5Oax7LpOkcw" businessElement="ProceduralInformationalOrderedEffectiveTime" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="b9f91a9d-4bdb-4020-91da-10f3e249c643" modelElementPath="procedureActivityObservation.effectiveTime" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_jnk2wOb2EeW5Oax7LpOkcw" businessElement="ProcedureInformationalPerformedEffectiveTime" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="7d843325-a4d6-4b8c-8e59-39c7402bcd46" modelElementPath="procedureActivityObservation.effectiveTime" condition="@moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_foRTIOb3EeW5Oax7LpOkcw" businessElement="ProcedureOrderedAllOtherEffectiveTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="973c62ce-fdc6-41ee-9258-38a6ecf2d536" modelElementPath="procedureActivityAct.effectiveTime" condition="@moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_jKO-AOb3EeW5Oax7LpOkcw" businessElement="ProcedurePerformedAllOtherEffectiveTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="407570a7-16d8-451d-a92f-63d4af2cb302" modelElementPath="procedureActivityAct.effectiveTime" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_iKVswMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherId" modelElement="_hPwGkBg4EeGs5a462vYX5Q" businessElementId="6fa1de87-ffbc-4173-ae6d-e6356db9558d" modelElementPath="procedureActivityAct.id" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_8ErSYMXGEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherId" modelElement="_hPwGkBg4EeGs5a462vYX5Q" businessElementId="4b813b99-0ed2-4f70-8842-81e0cb12d389" modelElementPath="procedureActivityAct.id" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_74oP4MXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherPriorityCode" modelElement="_hPwGlhg4EeGs5a462vYX5Q" businessElementId="8ebc92e7-78df-4352-932b-4c930080e2a5" modelElementPath="procedureActivityAct.priorityCode" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_EEwuYMXHEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherPriorityCode" modelElement="_hPwGlhg4EeGs5a462vYX5Q" businessElementId="05a50c5d-7bfa-4169-8ec8-4f2bf69f1fdc" modelElementPath="procedureActivityAct.priorityCode" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_0WEdYMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherStatusCode" modelElement="_hPwGmhg4EeGs5a462vYX5Q" businessElementId="a4431aa1-04af-4ae1-8a28-da884c117769" modelElementPath="procedureActivityAct.statusCode" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="__uJTcMXGEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherStatusCode" modelElement="_hPwGmhg4EeGs5a462vYX5Q" businessElementId="f3bf5eed-2f89-4193-b04f-047e2982a09a" modelElementPath="procedureActivityAct.statusCode" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_X9ciUMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrdered" modelElement="_Dy1vEOVsEeGpoIKFyl7L7w" businessElementId="663ac6f8-2837-44fe-bee8-dd9108aa6dfd" modelElementPath="procedureActivityObservation" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_k8VIsMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformation" modelElement="_Dy1vEOVsEeGpoIKFyl7L7w" businessElementId="df2bdb55-aa14-460e-b60d-097e100aa902" modelElementPath="procedureActivityObservation" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_bNv1cMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedCode" modelElement="_NMUNcBg4EeGs5a462vYX5Q" businessElementId="6b2799df-b0ec-45bd-9c02-03aa1ab27973" modelElementPath="procedureActivityObservation.code" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_oHHpsMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationCode" modelElement="_NMUNcBg4EeGs5a462vYX5Q" businessElementId="408b342d-1cd8-4f98-9aa5-40508da56bf7" modelElementPath="procedureActivityObservation.code" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_FJkcMOb2EeW5Oax7LpOkcw" businessElement="ProceduralInformationalOrderedEffectiveTime" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="b9f91a9d-4bdb-4020-91da-10f3e249c643" modelElementPath="procedureActivityObservation.effectiveTime" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_jnk2wOb2EeW5Oax7LpOkcw" businessElement="ProcedureInformationalPerformedEffectiveTime" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="7d843325-a4d6-4b8c-8e59-39c7402bcd46" modelElementPath="procedureActivityObservation.effectiveTime" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_mTfa0MXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedEndDate" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="d3729d9d-4ada-4896-accb-418d597657af" modelElementPath="procedureActivityObservation.effectiveTime.high" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_Z0aD8MXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedId" modelElement="_NMUNdhg4EeGs5a462vYX5Q" businessElementId="07d3f57f-4ba2-41e6-84cd-e70d0fb87797" modelElementPath="procedureActivityObservation.id" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_mgEMUMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationId" modelElement="_NMUNdhg4EeGs5a462vYX5Q" businessElementId="d8453f83-4317-42b9-8b31-c66a49636797" modelElementPath="procedureActivityObservation.id" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_4AqnMMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedMethodCode" modelElement="_NMUNehg4EeGs5a462vYX5Q" businessElementId="ec7aa9b9-61f6-43ef-9f7c-b4e871875a1e" modelElementPath="procedureActivityObservation.methodCode" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_wiy1gMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationMethodCode" modelElement="_NMUNehg4EeGs5a462vYX5Q" businessElementId="7eb848de-837d-46ee-8d9b-85e422a31385" modelElementPath="procedureActivityObservation.methodCode" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_2KwOcMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedPriorityCode" modelElement="_NMUNgBg4EeGs5a462vYX5Q" businessElementId="9275d867-188f-4771-9fc9-190133689a74" modelElementPath="procedureActivityObservation.priorityCode" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_u7I7MMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationPriorityCode" modelElement="_NMUNgBg4EeGs5a462vYX5Q" businessElementId="e6ed0a7b-e75b-40b4-a5f2-8e20f83129b9" modelElementPath="procedureActivityObservation.priorityCode" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_dBrRMMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedStatusCode" modelElement="_NMUNhBg4EeGs5a462vYX5Q" businessElementId="7f77591b-c8f7-493b-8bfd-2f68fb55d705" modelElementPath="procedureActivityObservation.statusCode" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_qmyKEMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationStatusCode" modelElement="_NMUNhBg4EeGs5a462vYX5Q" businessElementId="a5844077-e227-4586-8149-279caceed9b2" modelElementPath="procedureActivityObservation.statusCode" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_5wiCUMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedTargetSite" modelElement="_NMUNiBg4EeGs5a462vYX5Q" businessElementId="69872550-0077-4001-9fe3-a2231cd6f0db" modelElementPath="procedureActivityObservation.targetSiteCode" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_yOb38MXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationTargetSite" modelElement="_NMUNiBg4EeGs5a462vYX5Q" businessElementId="a1eb6d4f-5c51-4f99-923a-661678822ea5" modelElementPath="procedureActivityObservation.targetSiteCode" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_QXlDUHCLEeaDT6eyVw56Qg" businessElement="ProcedurePerformedInformationValueCoded" modelElement="_NMUNjBg4EeGs5a462vYX5Q" businessElementId="13cdc8f5-8c0d-444b-a7bb-b3699a0ab335" modelElementPath="procedureActivityObservation.value.cd" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_YVcRwHCLEeaDT6eyVw56Qg" businessElement="ProceduralInformationalOrderedValueCoded" modelElement="_NMUNjBg4EeGs5a462vYX5Q" businessElementId="f221d11c-42b5-4915-8f4e-4bfc352c07e7" modelElementPath="procedureActivityObservation.value.cd" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_TJ-5gHCLEeaDT6eyVw56Qg" businessElement="ProcedurePerformedInformationValueText" modelElement="_NMUNjBg4EeGs5a462vYX5Q" businessElementId="9eb5035e-3a1e-4f0d-9792-76c328622ddf" modelElementPath="procedureActivityObservation.value.st" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_bhYCQHCLEeaDT6eyVw56Qg" businessElement="ProceduralInformationalOrderedValueText" modelElement="_NMUNjBg4EeGs5a462vYX5Q" businessElementId="903fac10-577e-476f-9353-06e5e62ef023" modelElementPath="procedureActivityObservation.value.st" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_BtG-sMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysical" modelElement="_CM7hMOVsEeGpoIKFyl7L7w" businessElementId="80f6bd11-1243-4afb-8914-af7c3544eb73" modelElementPath="procedureActivityProcedure" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_LJQTkMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysical" modelElement="_CM7hMOVsEeGpoIKFyl7L7w" businessElementId="3fe9f1d2-f666-4313-931b-88a0bb41789b" modelElementPath="procedureActivityProcedure" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_Fl84gMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalCode" modelElement="_2OTHKhSVEeGGzu7fmW9pXw" businessElementId="e63ad412-d1d8-424a-9ae1-19338c1238b0" modelElementPath="procedureActivityProcedure.code" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_OgiYcMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalCode" modelElement="_2OTHKhSVEeGGzu7fmW9pXw" businessElementId="0932b27b-b833-4525-9f3a-ee99a88261a7" modelElementPath="procedureActivityProcedure.code" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_PIv4kObqEeW5Oax7LpOkcw" businessElement="ProcedureOrderedPhysicalEffectiveTime" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="0436bc7a-cb75-4c24-be4e-42bf3dca1536" modelElementPath="procedureActivityProcedure.effectiveTime" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_rFPXoOb1EeW5Oax7LpOkcw" businessElement="ProcedurePerformedPhysicalEffectiveTime" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="398efc17-f453-46bd-b9f4-72c45842f82d" modelElementPath="procedureActivityProcedure.effectiveTime" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_Dp8e0MXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalId" modelElement="_2OTHJhSVEeGGzu7fmW9pXw" businessElementId="5816cae0-adad-4f89-8a0b-055ba7843cc5" modelElementPath="procedureActivityProcedure.id" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_MxxJgMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalId" modelElement="_2OTHJhSVEeGGzu7fmW9pXw" businessElementId="f23632b4-de3d-4a10-9881-ceff3b0d6a20" modelElementPath="procedureActivityProcedure.id" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_TFkfUMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalMethodCode" modelElement="_ozsKkBrUEeGxIZCGAXKxsQ" businessElementId="ff055858-7834-4213-8605-b23d80f39be0" modelElementPath="procedureActivityProcedure.methodCode" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_W4dFoMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalMethodCode" modelElement="_ozsKkBrUEeGxIZCGAXKxsQ" businessElementId="c1bf56e5-c17a-46b8-9646-6adf0d3e40ca" modelElementPath="procedureActivityProcedure.methodCode" condition="@moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_w4nfMAiZEea3l_nL7zBeHQ" businessElement="ProcedureActivityProcedurePerformers" modelElement="_2OTHPxSVEeGGzu7fmW9pXw" businessElementId="3879f1e6-ed8b-4908-a11d-f9d92e873282" modelElementPath="procedureActivityProcedure.performer" condition=""/>
-    <elements xmi:id="_zPvHkAiZEea3l_nL7zBeHQ" businessElement="ProcedureActivityProcedurePerformerOrganizaitonID" modelElement="_F6-HYMMiEeKhp9meU6hZdQ" businessElementId="a1fc9f5f-7983-47ea-8cb9-83cc3857f725" modelElementPath="procedureActivityProcedure.performer.assignedEntity.id" condition=""/>
     <elements xmi:id="_1PSkgAiZEea3l_nL7zBeHQ" businessElement="ProcedureActivityProcedurePerformerOrganizationAddress" modelElement="_F69gUMMiEeKhp9meU6hZdQ" businessElementId="d4f571e4-5499-4718-9b1a-302e3ef375da" modelElementPath="procedureActivityProcedure.performer.assignedEntity.addr" condition=""/>
-    <elements xmi:id="_4FNowAiZEea3l_nL7zBeHQ" businessElement="ProcedureActivityProcedurePerformerOrganizationAddress" modelElement="_F6-HY8MiEeKhp9meU6hZdQ" businessElementId="d4f571e4-5499-4718-9b1a-302e3ef375da" modelElementPath="procedureActivityProcedure.performer.assignedEntity.telecom" condition=""/>
+    <elements xmi:id="_zPvHkAiZEea3l_nL7zBeHQ" businessElement="ProcedureActivityProcedurePerformerOrganizaitonID" modelElement="_F6-HYMMiEeKhp9meU6hZdQ" businessElementId="a1fc9f5f-7983-47ea-8cb9-83cc3857f725" modelElementPath="procedureActivityProcedure.performer.assignedEntity.id" condition=""/>
     <elements xmi:id="_7VyBoAiZEea3l_nL7zBeHQ" businessElement="ProcedureActivityProcedurePerformerRepresentedOrganizationID" modelElement="_ibioE8MmEeKhp9meU6hZdQ" businessElementId="ca8e7420-fe3e-4d36-8610-f274d71d8a53" modelElementPath="procedureActivityProcedure.performer.assignedEntity.representedOrganization.id" condition=""/>
     <elements xmi:id="_AibssAiaEea3l_nL7zBeHQ" businessElement="ProcedureActivityProcedurePerformerRepresentedOrganizationName" modelElement="_ibioFsMmEeKhp9meU6hZdQ" businessElementId="0aa0e545-c64c-4efb-a293-1be19881df82" modelElementPath="procedureActivityProcedure.performer.assignedEntity.representedOrganization.name" condition=""/>
-    <elements xmi:id="_QXlDUHCLEeaDT6eyVw56Qg" businessElement="ProcedurePerformedInformationValueCoded" modelElement="_NMUNjBg4EeGs5a462vYX5Q" businessElementId="13cdc8f5-8c0d-444b-a7bb-b3699a0ab335" modelElementPath="procedureActivityObservation.value.cd" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_TJ-5gHCLEeaDT6eyVw56Qg" businessElement="ProcedurePerformedInformationValueText" modelElement="_NMUNjBg4EeGs5a462vYX5Q" businessElementId="9eb5035e-3a1e-4f0d-9792-76c328622ddf" modelElementPath="procedureActivityObservation.value.st" condition="@moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_YVcRwHCLEeaDT6eyVw56Qg" businessElement="ProceduralInformationalOrderedValueCoded" modelElement="_NMUNjBg4EeGs5a462vYX5Q" businessElementId="f221d11c-42b5-4915-8f4e-4bfc352c07e7" modelElementPath="procedureActivityObservation.value.cd" condition="@moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_bhYCQHCLEeaDT6eyVw56Qg" businessElement="ProceduralInformationalOrderedValueText" modelElement="_NMUNjBg4EeGs5a462vYX5Q" businessElementId="903fac10-577e-476f-9353-06e5e62ef023" modelElementPath="procedureActivityObservation.value.st" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_4FNowAiZEea3l_nL7zBeHQ" businessElement="ProcedureActivityProcedurePerformerOrganizationAddress" modelElement="_F6-HY8MiEeKhp9meU6hZdQ" businessElementId="d4f571e4-5499-4718-9b1a-302e3ef375da" modelElementPath="procedureActivityProcedure.performer.assignedEntity.telecom" condition=""/>
+    <elements xmi:id="_RKM-0MXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalPriorityCode" modelElement="_ozsKlBrUEeGxIZCGAXKxsQ" businessElementId="6aa203f6-6fd1-49dd-a4e3-9085abcd6ef6" modelElementPath="procedureActivityProcedure.priorityCode" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_VBnf0MXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalPriorityCode" modelElement="_ozsKlBrUEeGxIZCGAXKxsQ" businessElementId="f587acbd-3be7-416c-86e2-5072e0c038f8" modelElementPath="procedureActivityProcedure.priorityCode" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_LGtLUMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalStatusCode" modelElement="_2OG6CBSVEeGGzu7fmW9pXw" businessElementId="960724e7-1dc8-4e92-be32-640d1b4763d5" modelElementPath="procedureActivityProcedure.statusCode" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_QRWOwMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalStatusCode" modelElement="_2OG6CBSVEeGGzu7fmW9pXw" businessElementId="9c40c0fe-59b2-4c50-90c0-decc9d04d39d" modelElementPath="procedureActivityProcedure.statusCode" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_U7llwMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalTargetSite" modelElement="_ozsKmBrUEeGxIZCGAXKxsQ" businessElementId="2ace2e94-939d-4406-8ca5-bae0b53040aa" modelElementPath="procedureActivityProcedure.targetSiteCode" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_Y8-iIMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalTargetSite" modelElement="_ozsKmBrUEeGxIZCGAXKxsQ" businessElementId="dbe0f0a1-50b8-4d9d-9118-2f3bed08cca5" modelElementPath="procedureActivityProcedure.targetSiteCode" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_qvAZUMXBEeWCquoDViU_jA" businessElement="ProcedureSectionText" modelElement="_7eV1s1GkEeG3H6xvuD7Z0Q" businessElementId="c086fc0b-4874-416d-be81-3cebab335d5f" modelElementPath="text" condition=""/>
+    <elements xmi:id="_Z8cXcL7kEeWoV-fDNleHag" businessElement="ProcedureSectiontitle" modelElement="_2OAzTRSVEeGGzu7fmW9pXw" businessElementId="b53ae5e0-c044-4695-a3af-7de38f13695c" modelElementPath="title" condition=""/>
+    <elements xmi:id="_3h110MXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherEndDate" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="59975f16-9464-493a-9916-9626b528adec" modelElementPath="xxxprocedureActivityAct.effectiveTime.high" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_CkX5sMXHEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherEndTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="43765df6-65d9-4202-971e-54db6a39ecbd" modelElementPath="xxxprocedureActivityAct.effectiveTime.hign" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_2HG9MMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherStartDate" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="c71613b3-ab25-4954-ba08-20ce3d9d77da" modelElementPath="xxxprocedureActivityAct.effectiveTime.low" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_BXa-YMXHEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherStartTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="4e853986-9f61-4c60-a68b-e87f7fdca443" modelElementPath="xxxprocedureActivityAct.effectiveTime.low" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_tgpTIMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationEndTime" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="e7131c27-c05c-4853-aaf9-2d9affee79f5" modelElementPath="xxxprocedureActivityObservation.effectiveTime.high" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_k4ifwMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedStartDate" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="f08d6cb6-a225-4cb3-9ede-90091559123f" modelElementPath="xxxprocedureActivityObservation.effectiveTime.low" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_sF8PsMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationStartDate" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="1acd4b97-aa48-430a-9308-515da73e8530" modelElementPath="xxxprocedureActivityObservation.effectiveTime.low" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_PLzYcMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalEndDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="8ce18fa2-ef45-4778-bc5a-455248b5d610" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.high" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_TSfEgMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalEndDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="c6b67a5b-5214-4a51-87e8-69a4a4a8f6d5" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.high" condition="@moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_Nj_GEMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalStartDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="1d26f6c8-4b8c-469b-af3d-e7afaa826f84" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.low" condition="@moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_R41J8MXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalStartDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="412327c9-e3ff-4f3c-b629-99a11918404f" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.low" condition="@moodCode = &quot;EVN&quot;"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_gVawgPAOEeefBvVUv-KCHA" base_Class="_N6wUUALoEeSBA9s7kRnaEg">
-    <elements xmi:id="_gVbXkPAOEeefBvVUv-KCHA" businessElement="ProcedureContainer" modelElement="_N6wUUALoEeSBA9s7kRnaEg" businessElementId="b7a63343-ca32-4394-88a2-0f4cd2c2aad6" modelElementPath=""/>
+    <elements xmi:id="_gVbXkPAOEeefBvVUv-KCHA" businessElement="ProcedureContainer" modelElement="_N6wUUALoEeSBA9s7kRnaEg" businessElementId="b7a63343-ca32-4394-88a2-0f4cd2c2aad6" modelElementPath="" condition=""/>
+    <elements xmi:id="_619p4CCIEeivrJEkbRVQfQ" businessElement="ProcedureIDCode" modelElement="_6Y1XYALoEeSBA9s7kRnaEg" businessElementId="e4de3f81-3c8b-4b8a-9ea4-7193c85b6976" modelElementPath="code" condition=""/>
+    <elements xmi:id="_so1nYCCJEeiLj5dIQmPgjA" businessElement="ProcedurePerformedContainer" modelElement="_liHKsALpEeSBA9s7kRnaEg" businessElementId="3fe9f1d2-f666-4313-931b-88a0bb41789b" modelElementPath="procedureActivityAct2" condition=""/>
+    <elements xmi:id="_ZuTAcCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorContainer" modelElement="_56Cy0MnLEeSr1c1X9ACWbg" businessElementId="6c4c614c-79e0-4303-9631-7077d6a585f0" modelElementPath="procedureActivityAct2.authorParticipation" condition=""/>
+    <elements xmi:id="_irSJkCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorName" businessElementId="2fc03f81-b8ba-4f4d-914b-a7121e666180" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_f081oCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorSpecialtyCode" businessElementId="77fdf705-1821-4899-9328-606011dfaf66" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_dSsUQCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorII" businessElementId="efbf5756-7bd8-4495-b413-8ef72022debc" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_8iO5cCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorOrganizationAddress" businessElementId="69df49b1-97bd-4241-9e61-48b58141114f" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_3TQTICC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorOrganizationII" businessElementId="fe5d42c2-fe07-4dd2-a19d-15b8f7d0b204" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_6EY-ACC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorOrganizationName" businessElementId="f926c240-f8eb-4325-9474-25af59a34daf" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.representedOrganization.name" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_lp520CC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorEmailContact" businessElementId="e1d225a3-2367-4745-892a-24d08b4bd68d" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'mailto:'))">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_oO1RsCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorFaxContact" businessElementId="b2c779a1-11bb-403f-be37-ed0946f3b751" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'fax:'))">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_qyln4CC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorPagerContact" businessElementId="fd5246e3-0f83-448d-a7b0-42bdc413637a" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(not(true))">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_tj_YgCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorPhoneContact" businessElementId="d792527a-749d-4b10-8448-64325986244d" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'tel:'))">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_v_fxoCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorSMSContact" businessElementId="dcd7df03-ed37-406f-8498-2e17b48b7c92" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'sms:'))">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_zw4YkCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorURLContact" businessElementId="aa15eb71-d3d6-4766-89fd-8dcd330feb42" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'http:'))">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_bT-k0CC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorDateTime" businessElementId="a55fec8f-48e7-4930-8fd5-38a0c444962d" modelElementPath="procedureActivityAct2.authorParticipation.time" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_3uhQcCCLEeigvdKjjjX_lw" businessElement="ProcedurePerformedTypeCode" modelElement="_DpF28CCKEeiLj5dIQmPgjA" businessElementId="2c6db9c5-d17c-4c92-94a3-7f0eb52e16be" modelElementPath="procedureActivityAct2.code" condition=""/>
+    <elements xmi:id="_UKHj0CCLEeigvdKjjjX_lw" businessElement="ProcedurePerformedEndDateTime" modelElement="_pMMc0MnIEeSr1c1X9ACWbg" businessElementId="c2ccb38d-8ecf-4e4d-a2eb-2a9708f1e9d4" modelElementPath="procedureActivityAct2.effectiveTime.high" condition=""/>
+    <elements xmi:id="_nMvVoCCKEeigvdKjjjX_lw" businessElement="ProcedurePerformedStartDateTime" modelElement="_pMMc0MnIEeSr1c1X9ACWbg" businessElementId="d99f557b-d156-43b7-b9c0-d8567ef18c4e" modelElementPath="procedureActivityAct2.effectiveTime.high" condition=""/>
+    <elements xmi:id="_V3nncCCLEeigvdKjjjX_lw" businessElement="ProcedurePerformedID" modelElement="_DpAXYCCKEeiLj5dIQmPgjA" businessElementId="f23632b4-de3d-4a10-9881-ceff3b0d6a20" modelElementPath="procedureActivityAct2.id1" condition=""/>
+    <elements xmi:id="_2cLz8CCNEeigvdKjjjX_lw" businessElement="ProcedurePerformedReasonContainer" modelElement="_m1i3cPDgEeOKPKE9au0oug" businessElementId="677b0a06-f351-4d1d-9d8b-c2e02b38b1c1" modelElementPath="procedureActivityAct2.indication2" condition=""/>
+    <elements xmi:id="_P-6x4CCPEeigvdKjjjX_lw" businessElement="ProcedurePerformedReasonTypeCode" businessElementId="986198da-433c-4947-8d09-f9ba46f8738d" modelElementPath="procedureActivityAct2.indication2.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2Hh3kOHpEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_Nmyc4CCPEeigvdKjjjX_lw" businessElement="ProcedurePerformedReasonID" businessElementId="86a262ae-1511-43d4-af2e-a70a5f06b653" modelElementPath="procedureActivityAct2.indication2.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_STSBMCCPEeigvdKjjjX_lw" businessElement="ProcedurePerformedReasonValueCode" businessElementId="50e66ce4-b45d-4e3e-a9b2-2148d4fc11d5" modelElementPath="procedureActivityAct2.indication2.value.cd" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
+    </elements>
+    <elements xmi:id="_K9F-ICCMEeigvdKjjjX_lw" businessElement="ProcedurePerformedInformationContainer" modelElement="_xCHEAPDeEeOKPKE9au0oug" businessElementId="df2bdb55-aa14-460e-b60d-097e100aa902" modelElementPath="procedureActivityAct2.instruction2" condition=""/>
+    <elements xmi:id="_00xxQCCNEeigvdKjjjX_lw" businessElement="ProcedurePerformedInstructionCode" businessElementId="408b342d-1cd8-4f98-9aa5-40508da56bf7" modelElementPath="procedureActivityAct2.instruction2.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_yT5I4CCNEeigvdKjjjX_lw" businessElement="ProcedurePerformedInstructionNotes" businessElementId="86cfd28d-16fb-4a3f-a1fe-745bcab0018b" modelElementPath="procedureActivityAct2.instruction2.text" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_kzRcgMK8EeSqg-Exmsy2kg"/>
+    </elements>
+    <elements xmi:id="_WKva8CCPEeigvdKjjjX_lw" businessElement="ProcedureMedicationContainer" modelElement="_M2xy4PDhEeOKPKE9au0oug" businessElementId="2ff6253a-1580-45cc-903c-4fe83cadbb12" modelElementPath="procedureActivityAct2.medicationActivity2" condition=""/>
+    <elements xmi:id="_SqFiMCCQEeigvdKjjjX_lw" businessElement="ProcedureMedicationDrugFormCode" businessElementId="eccb727a-7e4f-4230-9d9b-764c938740aa" modelElementPath="procedureActivityAct2.medicationActivity2.administrationUnitCode" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_6PKzwOLYEeOc7-TVP7Wi6w"/>
+    </elements>
+    <elements xmi:id="_KEon8CCTEeiFzeppNxpPfg" businessElement="ProcedureMedicationTargetSiteCode" businessElementId="dfcfd614-9182-4c6e-b2b0-100387576028" modelElementPath="procedureActivityAct2.medicationActivity2.approachSiteCode" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_499F8B5EEeiF7sWWqfxGaw"/>
+    </elements>
+    <elements xmi:id="_b84xMCC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorContainer" businessElementId="b8efc0fb-31f0-44f1-b048-25bf396727f1" modelElementPath="procedureActivityAct2.medicationActivity2.author" condition="">
+      <modelElement xmi:type="uml:Association" href="consol-medications.uml#_ju9Q0OLFEeOc7-TVP7Wi6w"/>
+    </elements>
+    <elements xmi:id="_mexbkCC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorName" businessElementId="8795c862-9ed9-4e20-bc9c-8b18b206deb7" modelElementPath="procedureActivityAct2.medicationActivity2.author.assignedAuthor.assignedPerson.name" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_iulHcCC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorSpecialityCode" businessElementId="3cf38a6d-de56-4d48-a9a0-38e16d355d15" modelElementPath="procedureActivityAct2.medicationActivity2.author.assignedAuthor.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_gAja8CC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorID" businessElementId="d15657f1-6b65-46e9-97e1-4aefee549c85" modelElementPath="procedureActivityAct2.medicationActivity2.author.assignedAuthor.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="__-kPsCC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorOrganizationAddress" businessElementId="3d22763d-6a71-4900-89ff-d4d133a7653c" modelElementPath="procedureActivityAct2.medicationActivity2.author.assignedAuthor.representedOrganization.addr" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_uCcoYCC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorOrganizationID" businessElementId="cce9117d-038c-4a86-a9c2-80e698e039e7" modelElementPath="procedureActivityAct2.medicationActivity2.author.assignedAuthor.representedOrganization.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_xxno0CC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorOrganizationName" businessElementId="c3ecc61a-0421-428d-b6ed-1e95b1818ee6" modelElementPath="procedureActivityAct2.medicationActivity2.author.assignedAuthor.representedOrganization.name" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_05k4QCC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorOrganizationEmailAddress" businessElementId="c379915f-8508-48e5-8d12-3821f27acfce" modelElementPath="procedureActivityAct2.medicationActivity2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'mailto:'))">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_3fbgMCC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorOrganizationFaxContact" businessElementId="2911811b-966c-4d2b-895a-19317339cea4" modelElementPath="procedureActivityAct2.medicationActivity2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'fax:'))">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_6E4fgCC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorOrganizationPhoneContact" businessElementId="1e942238-586c-492c-84cc-1dc176894d67" modelElementPath="procedureActivityAct2.medicationActivity2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'tel:'))">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_9DoIkCC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorOrganizationURLContact" businessElementId="275f41a3-a1ae-4b00-a92d-698558d52236" modelElementPath="procedureActivityAct2.medicationActivity2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'http:'))">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_dzXKoCC6EeiJaOyKxhewmw" businessElement="ProcedureMedicationAuthorDateTime" businessElementId="76eae53c-8b65-4f0c-b4f9-c0be39d70b8c" modelElementPath="procedureActivityAct2.medicationActivity2.author.time" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_H1wOYCC7EeiJaOyKxhewmw" businessElement="ProcedureMedicationInfoContainer" businessElementId="c33fe56e-4b02-4e46-9a20-aa2357f12933" modelElementPath="procedureActivityAct2.medicationActivity2.consumable" condition="">
+      <modelElement xmi:type="uml:Association" href="consol-medications.uml#_94Q4oPiVEeOXlK95I8tUew"/>
+    </elements>
+    <elements xmi:id="_PjgkQCC7EeiJaOyKxhewmw" businessElement="ProcedureMedicationInfoDrugCode" businessElementId="645a653f-6e3f-4461-ae9f-07c78725392e" modelElementPath="procedureActivityAct2.medicationActivity2.consumable.medicationInformation2.manufacturedMaterial.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_MeXngOXsEeOkFcFJ9uzEEw"/>
+    </elements>
+    <elements xmi:id="_-C6p4CCPEeigvdKjjjX_lw" businessElement="ProcedureMedicationDoseUnitMeasure" businessElementId="52158ce3-b0c4-45ba-89ff-8365e98c1c7c" modelElementPath="procedureActivityAct2.medicationActivity2.doseQuantity" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_090HgOLbEeOc7-TVP7Wi6w"/>
+    </elements>
+    <elements xmi:id="_GuADUCCTEeiFzeppNxpPfg" businessElement="ProcedureMedicationEndDateTime" businessElementId="63a66f89-238c-4dae-b2fe-51cda7af2e25" modelElementPath="procedureActivityAct2.medicationActivity2.effectiveTime1.high" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_LNkJcB4jEeiF7sWWqfxGaw"/>
+    </elements>
+    <elements xmi:id="_EEY8wCCTEeiFzeppNxpPfg" businessElement="ProcedureMedicationStartDateTime" businessElementId="e2db66d0-4f08-4ff9-84e4-fcb5dd80a3e3" modelElementPath="procedureActivityAct2.medicationActivity2.effectiveTime1.high" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_LNkJcB4jEeiF7sWWqfxGaw"/>
+    </elements>
+    <elements xmi:id="_O6YO4CCTEeiFzeppNxpPfg" businessElement="ProcedureMedicationRateUnitMeasure" businessElementId="479bfb71-f426-4913-9c2b-b7baf4717e8b" modelElementPath="procedureActivityAct2.medicationActivity2.rateQuantity" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_4-BXYB5EEeiF7sWWqfxGaw"/>
+    </elements>
+    <elements xmi:id="_2sGNUCCPEeigvdKjjjX_lw" businessElement="ProcedureMedicationRepeatNumber" businessElementId="ed32af0a-a1c1-4795-8bbb-ca124e1ae346" modelElementPath="procedureActivityAct2.medicationActivity2.repeatNumber" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_5VihQOLREeOc7-TVP7Wi6w"/>
+    </elements>
+    <elements xmi:id="_7wGSsCCPEeigvdKjjjX_lw" businessElement="ProcedureMedicationRouteCode" businessElementId="7904acab-9d3e-4320-93ad-fed62b95c42d" modelElementPath="procedureActivityAct2.medicationActivity2.routeCode" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_nbjTEMLMEeSqg-Exmsy2kg"/>
+    </elements>
+    <elements xmi:id="_iuLtYCCPEeigvdKjjjX_lw" businessElement="ProcedureMedicationStatusCode" businessElementId="24c98341-f65f-40b9-9319-fce81d49b077" modelElementPath="procedureActivityAct2.medicationActivity2.statusCode" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-medications.uml#__4L5cOLSEeOc7-TVP7Wi6w"/>
+    </elements>
+    <elements xmi:id="_zO1GUCC9EeiN7eaiX9PYiw" businessElement="ProcedurePerformedPerformerContainer" businessElementId="8ef21db3-b771-4820-a200-37c95abae503" modelElementPath="procedureActivityAct2.performer" condition="">
+      <modelElement xmi:type="uml:Association" href="../consol.uml#_O-xbwMnKEeSr1c1X9ACWbg"/>
+    </elements>
+    <elements xmi:id="_IEqswCC-EeiN7eaiX9PYiw" businessElement="ProcedurePerformedPerformerAddress" modelElement="_M4tmQO2kEeOchpob7ipcww" businessElementId="330cc268-7fb2-440a-a0cc-94d11b7c2c39" modelElementPath="procedureActivityAct2.performer.assignedEntity.addr" condition=""/>
+    <elements xmi:id="_L4dugCC-EeiN7eaiX9PYiw" businessElement="ProcedurePerformedPerformerName" businessElementId="4fdf51f1-109d-45a4-8e8c-410df23903ea" modelElementPath="procedureActivityAct2.performer.assignedEntity.assignedPerson.name" condition="">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_PlrAECC-EeiN7eaiX9PYiw" businessElement="ProcedurePerformedPerformerTypeCode" businessElementId="45bf5cf5-f93a-40fa-bb0d-e8cef495decd" modelElementPath="procedureActivityAct2.performer.assignedEntity.code" condition="">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_FXmpkCC-EeiN7eaiX9PYiw" businessElement="ProcedurePerformedPerformerII" modelElement="_M4uNUO2kEeOchpob7ipcww" businessElementId="f879ec08-840a-430b-a35b-f63fb707c236" modelElementPath="procedureActivityAct2.performer.assignedEntity.id" condition=""/>
+    <elements xmi:id="_3Oy70CC9EeiN7eaiX9PYiw" businessElement="ProcedurePerformedPerformerEmailContact" modelElement="_9oUQ0MnKEeSr1c1X9ACWbg" businessElementId="e097ce55-c5c6-466c-a30b-8b9812be6086" modelElementPath="procedureActivityAct2.performer.assignedEntity.telecom" condition="(starts-with(@value, 'mailto:'))"/>
+    <elements xmi:id="_5cY0wCC9EeiN7eaiX9PYiw" businessElement="ProcedurePerformedPerformerFaxContact" modelElement="_9oUQ0MnKEeSr1c1X9ACWbg" businessElementId="1a913028-9cf2-4a14-9a94-678e1c8d960a" modelElementPath="procedureActivityAct2.performer.assignedEntity.telecom" condition="(starts-with(@value, 'fax:'))"/>
+    <elements xmi:id="_7lLtQCC9EeiN7eaiX9PYiw" businessElement="ProcedurePerformedPerformerPagerContact" modelElement="_9oUQ0MnKEeSr1c1X9ACWbg" businessElementId="8692d99a-f987-4c95-8c92-3a3a6b8d0b25" modelElementPath="procedureActivityAct2.performer.assignedEntity.telecom" condition="(not(true))"/>
+    <elements xmi:id="_-JVFACC9EeiN7eaiX9PYiw" businessElement="ProcedurePerformedPerformerPhoneContact" modelElement="_9oUQ0MnKEeSr1c1X9ACWbg" businessElementId="b203c0e7-7de8-4322-99d4-9f76b15f8c4e" modelElementPath="procedureActivityAct2.performer.assignedEntity.telecom" condition="(starts-with(@value, 'tel:'))"/>
+    <elements xmi:id="_AhEYcCC-EeiN7eaiX9PYiw" businessElement="ProcedurePerformedPerformerSMSContact" modelElement="_9oUQ0MnKEeSr1c1X9ACWbg" businessElementId="a31cbf6c-d37f-4c8b-a08e-6f17416a6f7e" modelElementPath="procedureActivityAct2.performer.assignedEntity.telecom" condition="(starts-with(@value, 'sms:'))"/>
+    <elements xmi:id="_CniVsCC-EeiN7eaiX9PYiw" businessElement="ProcedurePerformedPerformerURLContact" modelElement="_9oUQ0MnKEeSr1c1X9ACWbg" businessElementId="cad78935-82cc-4a87-82f3-a1f5b9b7dedb" modelElementPath="procedureActivityAct2.performer.assignedEntity.telecom" condition="(starts-with(@value, 'http:'))"/>
+    <elements xmi:id="_HOXCkCCMEeigvdKjjjX_lw" businessElement="ProcedurePerformedPriorityCode" modelElement="_DpHFECCKEeiLj5dIQmPgjA" businessElementId="f587acbd-3be7-416c-86e2-5072e0c038f8" modelElementPath="procedureActivityAct2.priorityCode" condition=""/>
+    <elements xmi:id="_z0U9sCCJEeiLj5dIQmPgjA" businessElement="ProcedurePerformedStatusCode" modelElement="_MPpN8MnIEeSr1c1X9ACWbg" businessElementId="9c40c0fe-59b2-4c50-90c0-decc9d04d39d" modelElementPath="procedureActivityAct2.statusCode" condition=""/>
+    <elements xmi:id="_nztrgCCJEeiLj5dIQmPgjA" businessElement="ProcedureSectionNotes" modelElement="_zpHhoALpEeSBA9s7kRnaEg" businessElementId="c086fc0b-4874-416d-be81-3cebab335d5f" modelElementPath="text" condition=""/>
+    <elements xmi:id="_lU-YMCCJEeiLj5dIQmPgjA" businessElement="ProcedureSectionTitleText" modelElement="_zpIIsQLpEeSBA9s7kRnaEg" businessElementId="0c9ca3e3-8d14-411f-a779-51fc2e05c567" modelElementPath="title" condition=""/>
+  </MDMI:MDMIMapping>
+  <CDA:PropertyValidation xmi:id="_DpA-cCCKEeiLj5dIQmPgjA" base_Property="_DpAXYCCKEeiLj5dIQmPgjA">
+    <ruleId>CONF:8292</ruleId>
+    <ruleId>R2.0=CONF:1098-8292</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_DpGeACCKEeiLj5dIQmPgjA" base_Property="_DpF28CCKEeiLj5dIQmPgjA">
+    <ruleId>CONF:8293</ruleId>
+    <ruleId>R2.0=CONF:1098-8293</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_DpHFEyCKEeiLj5dIQmPgjA" severity="INFO" base_Property="_DpHFECCKEeiLj5dIQmPgjA"/>
+  <CDA:ValueSetConstraint xmi:id="_DpITMCCKEeiLj5dIQmPgjA" base_Property="_DpHFECCKEeiLj5dIQmPgjA">
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+    <ruleId>CONF:8300</ruleId>
+    <ruleId>R2.0=CONF:1098-8300</ruleId>
+  </CDA:ValueSetConstraint>
+  <MDMI:MDMIMapping xmi:id="_t3froCF1EeiQp7TYMjXhrA" base_Class="_CFMuYPDbEeOKPKE9au0oug">
+    <elements xmi:id="_0e19oCF2Eei-kceakmf0YA" businessElement="ProcedureEncounterContainer" modelElement="_GZ4bgOAWEeGlGcipF_0y2A" businessElementId="01eb254d-902d-44b9-8879-b633ea5fd97a" modelElementPath="entryRelationship"/>
+    <elements xmi:id="_3MKfgCF2Eei-kceakmf0YA" businessElement="ProcedureEncounterII" modelElement="_nc01q9_iEeGiie5feaDcRA" businessElementId="7b9d975d-5291-4372-b6c2-f24e77e413ac" modelElementPath="entryRelationship.procedureActEncounter.id"/>
+    <elements xmi:id="_t3iH4CF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationContainer" modelElement="_OymM0BxsEeGXP8PxDYviDg" businessElementId="50b5939f-0e41-4375-954a-9a6ea23e98a0" modelElementPath="serviceDeliveryLocation"/>
+    <elements xmi:id="_0TBkoCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationAddress" businessElementId="18156c1e-b5a9-437f-9267-0008ea1e47fd" modelElementPath="serviceDeliveryLocation.addr">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nD7_0B-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_xcBiUCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationCode" businessElementId="f65550fe-1f32-4209-afa6-75c7bbf02480" modelElementPath="serviceDeliveryLocation.code">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nD_qMB-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_AB0uECF2EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationName" businessElementId="227ad2f9-c766-4d47-abfc-9dbbc3c253d6" modelElementPath="serviceDeliveryLocation.playingEntity.name">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_3KuxkCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationEmailAddressContact" businessElementId="7609c064-60ba-4d26-869b-86cff477f3cb" modelElementPath="serviceDeliveryLocation.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_5ImzgCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationFaxContact" businessElementId="8f3c5e19-02db-4672-908b-2af939aa82ae" modelElementPath="serviceDeliveryLocation.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_7MFuMCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationPhoneContact" businessElementId="d66bdd29-8bfc-4792-a126-1a8f26bf1e1c" modelElementPath="serviceDeliveryLocation.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_9Ar4UCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationURLContact" businessElementId="135a1dea-c109-4386-8c68-7f7a9a488da8" modelElementPath="serviceDeliveryLocation.telecom">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
+    </elements>
   </MDMI:MDMIMapping>
 </xmi:XMI>
