@@ -129,6 +129,18 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BOwKIs3tEeahpd1P9sS4xg" value="*"/>
           <redefinedProperty href="FHIR-Core.uml#_4kRv88FMEea5pdrFDq-m2g"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_1QQRcCOwEeivEY8WLKV1mA" name="address1" isOrdered="true">
+          <type xmi:type="uml:Class" href="FHIR-Core.uml#_4arvFcFMEea5pdrFDq-m2g"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1QQRcSOwEeivEY8WLKV1mA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1QQRciOwEeivEY8WLKV1mA" value="*"/>
+          <subsettedProperty href="FHIR-Core.uml#_4eX8RsFMEea5pdrFDq-m2g"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_FL1DsCO5EeivEY8WLKV1mA" name="language" isOrdered="true">
+          <type xmi:type="uml:Class" href="FHIR-Core.uml#_4aUissFMEea5pdrFDq-m2g"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FL1DsSO5EeivEY8WLKV1mA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FL1DsiO5EeivEY8WLKV1mA" value="1"/>
+          <redefinedProperty href="FHIR-Core.uml#_4bGl08FMEea5pdrFDq-m2g"/>
+        </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_AJcu9M3tEeahpd1P9sS4xg" name="Identifier-1">
           <generalization xmi:id="_AJcu9c3tEeahpd1P9sS4xg">
             <general xmi:type="uml:Class" href="FHIR-Core.uml#_4ciwRMFMEea5pdrFDq-m2g"/>
@@ -2919,7 +2931,7 @@
   <fhir:ValueSetMember xmi:id="_Gfec5M3tEeahpd1P9sS4xg" base_EnumerationLiteral="_Gfec483tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_GffD883tEeahpd1P9sS4xg" id="Condition:c.subject" base_Property="_GffD8M3tEeahpd1P9sS4xg" mustSupport="true" isModifier="false" isSummary="false"/>
   <MDMI:MDMIMapping xmi:id="_cJ6M8NNnEea-gf-zPrxOmQ" base_Class="_B9bOCM3tEeahpd1P9sS4xg">
-    <elements xmi:id="_oxZwcPn1EeepEf0NNtiTiQ" businessElement="AllergyConcernContainer" modelElement="_B9bOCM3tEeahpd1P9sS4xg" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath=""/>
+    <elements xmi:id="_oxZwcPn1EeepEf0NNtiTiQ" businessElement="AllergyConcernContainer" modelElement="_B9bOCM3tEeahpd1P9sS4xg" businessElementId="fd2c5bda-257f-4b90-8fe4-d483614f2f4d" modelElementPath="" condition=""/>
     <elements xmi:id="_RkOJkPFtEeepI9eMsUph4g" businessElement="AllergyConcernStartDateTime" businessElementId="e7e780ef-09c5-48e9-8b43-75b14e921d35" modelElementPath="assertedDate" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47ShyMFMEea5pdrFDq-m2g"/>
     </elements>
@@ -2941,9 +2953,7 @@
     <elements xmi:id="_ifhuYNNrEeag-vfi0Fbwcw" businessElement="AllergyConcernOnsetDate" businessElementId="6dd1c7a1-26b5-459f-94c4-47ccec635fba" modelElementPath="onsetDateTime" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47R6vMFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_ypA4wPSlEeeORoO2yBIgDQ" businessElement="PatientID" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="patient.identifier" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4lEaKsFMEea5pdrFDq-m2g"/>
-    </elements>
+    <elements xmi:id="_jM_KMCYqEeizpZLE_-yWkA" businessElement="PatientID" modelElement="_CIz-pM3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="patient"/>
     <elements xmi:id="_1YNs8PSEEeeCr4sW4znF_Q" businessElement="AllergyReactionContainer" businessElementId="e20b3fd4-a386-4d90-aa17-d4e16cb377a9" modelElementPath="reaction" condition="">
       <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_47VlFcFMEea5pdrFDq-m2g"/>
     </elements>
@@ -3096,24 +3106,6 @@
     </elements>
     <elements xmi:id="_Y1BWsALREei9IteqhqJMOQ" businessElement="RiskConcernOnsetDateTime" businessElementId="de5b906e-7576-4da6-8787-bf6f568a75e3" modelElementPath="addresses.onsetDateTime" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47A08cFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_B0aEUALdEeiS3IoEUj9KXQ" businessElement="DocumentNonProviderParticipantContainer" businessElementId="bcdb49ad-4b87-44a8-ab2a-4b0aafa92078" modelElementPath="careTeam">
-      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_49gvUcFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_Yk9D8ALdEeiS3IoEUj9KXQ" businessElement="DocumentServiceEventPractitionerContainer" businessElementId="503535eb-e96e-4609-948e-e7ba5ada37ca" modelElementPath="careTeam.participant">
-      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_49eTEMFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_KP6RAALdEeiS3IoEUj9KXQ" businessElement="DocumentNonProviderParticipantID" businessElementId="7f17420e-9e5b-4079-9535-b89153518b17" modelElementPath="careTeam.participant.member.id">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_PRQD8ALdEeiS3IoEUj9KXQ" businessElement="DocumentNonProviderParticipantFunctionCode" businessElementId="cdaa625f-e3ea-4de5-abd6-81fc166d7a40" modelElementPath="careTeam.participant.role">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_49eTGMFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_boBzYALdEeiS3IoEUj9KXQ" businessElement="DocumentServiceEventPractitionerII" businessElementId="a294d280-db36-423a-8f36-371a11af4de6" modelElementPath="careTeam.participant.role">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_49eTGMFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_gmqQkALdEeiS3IoEUj9KXQ" businessElement="PatientID" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="careTeam.subject">
-      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_49cd6cFMEea5pdrFDq-m2g"/>
     </elements>
     <elements xmi:id="_yOrf4ALMEeigApQ0viKTUQ" businessElement="DocumentTypeCode" businessElementId="db98a4bb-4fc0-43cd-b3f2-c860653ea76e" modelElementPath="category" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_49VJJ8FMEea5pdrFDq-m2g"/>
@@ -3277,8 +3269,7 @@
     <elements xmi:id="_dm0-ENghEeaP9MutKDaSyQ" businessElement="VitalSignResultStatusCode" businessElementId="d18fd5d8-935f-4260-99a3-f26a4ceca740" modelElementPath="status" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47kOl8FMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_ejqQwG1xEeeQjfEQMRKssg" businessElement="PatientBirthDateTime" modelElement="_BOu8AM3tEeahpd1P9sS4xg" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="subject.birthDate" condition=""/>
-    <elements xmi:id="_X_FwgG1xEeeQjfEQMRKssg" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.identifier" condition=""/>
+    <elements xmi:id="__LwFsCYrEeizpZLE_-yWkA" businessElement="PatientID" modelElement="_CsWwkM3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject"/>
     <elements xmi:id="_2a8_ANghEeaP9MutKDaSyQ" businessElement="VitalSignResultValuePhysicalQuantity" businessElementId="e91130fb-18f8-4528-b81e-a57b00b9229e" modelElementPath="valueQuantity" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47puLcFMEea5pdrFDq-m2g"/>
     </elements>
@@ -3334,6 +3325,9 @@
     <elements xmi:id="_Si2OUGyBEeeXj9p9i-YUIw" businessElement="ProcedurePerformedID" businessElementId="f23632b4-de3d-4a10-9881-ceff3b0d6a20" modelElementPath="identifier" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_5BCkecFMEea5pdrFDq-m2g"/>
     </elements>
+    <elements xmi:id="_AF-w0CLgEeiwsevzJ9LSUQ" businessElement="ProcedureServiceLocationContainer" businessElementId="50b5939f-0e41-4375-954a-9a6ea23e98a0" modelElementPath="location">
+      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_5BKgQMFMEea5pdrFDq-m2g"/>
+    </elements>
     <elements xmi:id="_RdxccHiREeee0OFkQA44cg" businessElement="ProcedureServiceLocationAddress" businessElementId="18156c1e-b5a9-437f-9267-0008ea1e47fd" modelElementPath="location.address" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4dkrB8FMEea5pdrFDq-m2g"/>
     </elements>
@@ -3364,21 +3358,18 @@
     <elements xmi:id="_EwbFoGyUEeeXj9p9i-YUIw" businessElement="ProcedurePerformedStartDateTime" businessElementId="d99f557b-d156-43b7-b9c0-d8567ef18c4e" modelElementPath="performedDateTime" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_5BHc8cFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_Q_Z6gHhGEeez6_1ImKc8og" businessElement="ProcedurePerformedEndDateTime" modelElement="_BmAzlM3tEeahpd1P9sS4xg" businessElementId="c2ccb38d-8ecf-4e4d-a2eb-2a9708f1e9d4" modelElementPath="performedPeriod" condition=""/>
-    <elements xmi:id="_Ip_pIJ1xEeeZPMRFdHO47w" businessElement="ProcedurePerformedStartDateTime" modelElement="_BmAzlM3tEeahpd1P9sS4xg" businessElementId="d99f557b-d156-43b7-b9c0-d8567ef18c4e" modelElementPath="performedPeriod" condition=""/>
+    <elements xmi:id="_Q_Z6gHhGEeez6_1ImKc8og" businessElement="ProcedurePerformedEndDateTime" modelElement="_BmAzlM3tEeahpd1P9sS4xg" businessElementId="c2ccb38d-8ecf-4e4d-a2eb-2a9708f1e9d4" modelElementPath="performedPeriod.end" condition=""/>
+    <elements xmi:id="_Ip_pIJ1xEeeZPMRFdHO47w" businessElement="ProcedurePerformedStartDateTime" modelElement="_BmAzlM3tEeahpd1P9sS4xg" businessElementId="d99f557b-d156-43b7-b9c0-d8567ef18c4e" modelElementPath="performedPeriod.start" condition=""/>
     <elements xmi:id="_-eFDAGyBEeeXj9p9i-YUIw" businessElement="ProcedurePerformedReasonCode" businessElementId="50e66ce4-b45d-4e3e-a9b2-2148d4fc11d5" modelElementPath="reasonCode" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_5BLHVcFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_3umNAG1iEeeQjfEQMRKssg" businessElement="ProcedureOrderedID" businessElementId="5816cae0-adad-4f89-8a0b-055ba7843cc5" modelElementPath="request.id" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
     </elements>
     <elements xmi:id="_YO39AGyBEeeXj9p9i-YUIw" businessElement="ProcedurePerformedStatusCode" businessElementId="9c40c0fe-59b2-4c50-90c0-decc9d04d39d" modelElementPath="status" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_5BDLicFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_RJRD0G1TEeeFetoOzGJkeA" businessElement="PatientID" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.id" condition="">
+    <elements xmi:id="_RJRD0G1TEeeFetoOzGJkeA" businessElement="PatientID" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_gOfqUNVNEeef5K8v0yWSmg" businessElement="ProcedurePerformedProductID" businessElementId="f92b7552-fcf0-4822-aa1f-aedc1746007b" modelElementPath="usedReference.id" condition="">
+    <elements xmi:id="_gOfqUNVNEeef5K8v0yWSmg" businessElement="ProcedurePerformedProductID" businessElementId="f92b7552-fcf0-4822-aa1f-aedc1746007b" modelElementPath="usedReference" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
     </elements>
   </MDMI:MDMIMapping>
@@ -3424,9 +3415,6 @@
     <elements xmi:id="_NszdYHLMEeeNhvz2VGGG0Q" businessElement="MedicationAdministrationManufacturerTypeCode" businessElementId="c73d9bde-1438-4498-bd8d-212a7377d564" modelElementPath="manufacturer.type" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4ctvbMFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_DH2M8HI0EeeQjfEQMRKssg" businessElement="MedicationAdministeredDrugFormCode" businessElementId="0d00c8b8-b802-4d2e-b42f-8b681db9df5c" modelElementPath="package.container" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4pBtGcFMEea5pdrFDq-m2g"/>
-    </elements>
     <elements xmi:id="_vynFEHLMEeeNhvz2VGGG0Q" businessElement="MedicationAdministrationPackageCode" businessElementId="c1943fe7-c1e1-48ea-8da1-a46823ca9fa9" modelElementPath="package.container" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4pBtGcFMEea5pdrFDq-m2g"/>
     </elements>
@@ -3440,15 +3428,6 @@
       <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_4o_35cFMEea5pdrFDq-m2g"/>
     </elements>
     <elements xmi:id="_HgWwMHIyEeeQjfEQMRKssg" businessElement="MedicationAdministeredDrugFormCode" businessElementId="0d00c8b8-b802-4d2e-b42f-8b681db9df5c" modelElementPath="product.form" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4o1f0MFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_hJaAAHLMEeeNhvz2VGGG0Q" businessElement="MedicationAdministeredDrugFormCode" businessElementId="0d00c8b8-b802-4d2e-b42f-8b681db9df5c" modelElementPath="product.form" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4o1f0MFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_oyFH4NVAEeeUjrC-ueHk9w" businessElement="MedicationAdministeredDrugFormCode" businessElementId="0d00c8b8-b802-4d2e-b42f-8b681db9df5c" modelElementPath="product.form" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4o1f0MFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_BULoMOAXEeery9ynvkJ1NQ" businessElement="ImmunizationAdministeredDrugFormCode" businessElementId="99510a1c-e542-459a-aadb-11fd22d30ef1" modelElementPath="product.form" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4o1f0MFMEea5pdrFDq-m2g"/>
     </elements>
     <elements xmi:id="_m6w6oHLMEeeNhvz2VGGG0Q" businessElement="MedicationAdministrationIngredientCode" businessElementId="ac105753-1855-4036-af0a-c5e1e5b69d1a" modelElementPath="product.ingredient" condition="">
@@ -3485,20 +3464,10 @@
     <elements xmi:id="_b00yoHhLEee0aPDRSjo7RQ" businessElement="MedicationOrderNotes" businessElementId="51e0884d-b988-491a-b2d9-a0b9a3615f54" modelElementPath="note.text" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_5AFiNMFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_IB53MHhKEee0aPDRSjo7RQ" businessElement="PatientBirthDateTime" modelElement="_BOu8AM3tEeahpd1P9sS4xg" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="patient.birthDate" condition=""/>
-    <elements xmi:id="_KzlUoHhKEee0aPDRSjo7RQ" businessElement="PatientLanguageCode" modelElement="_BOx_UM3tEeahpd1P9sS4xg" businessElementId="e2229d9e-f294-4005-b4c3-86e397b892fb" modelElementPath="patient.communication.language" condition=""/>
-    <elements xmi:id="_aoLgsHhIEeez6_1ImKc8og" businessElement="PatientRaceCode" modelElement="_AJPTkM3tEeahpd1P9sS4xg" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="patient.extension" condition=""/>
-    <elements xmi:id="_c08TMHhIEeez6_1ImKc8og" businessElement="PatientEthnicityCode" modelElement="_AJX2cM3tEeahpd1P9sS4xg" businessElementId="b29dc139-8a2b-473d-820b-0331b7ae0aa3" modelElementPath="patient.extension" condition=""/>
-    <elements xmi:id="_6tLRwHhJEee0aPDRSjo7RQ" businessElement="PatientBirthSex" modelElement="_AJbg0M3tEeahpd1P9sS4xg" businessElementId="cc13e769-ad20-44ca-9a66-be2600bfdad9" modelElementPath="patient.extension" condition=""/>
-    <elements xmi:id="_F4mBUHhKEee0aPDRSjo7RQ" businessElement="PatientAdministrationGenderCode" modelElement="_AJgZUc3tEeahpd1P9sS4xg" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="patient.gender" condition=""/>
-    <elements xmi:id="_90u4kHhJEee0aPDRSjo7RQ" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="patient.identifier" condition=""/>
-    <elements xmi:id="_EO0AEHhKEee0aPDRSjo7RQ" businessElement="PatientLegalName" modelElement="_AJekIs3tEeahpd1P9sS4xg" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="patient.name" condition=""/>
+    <elements xmi:id="_sy8iYCYrEeizpZLE_-yWkA" businessElement="PatientID" modelElement="_GPmN1M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="patient"/>
     <elements xmi:id="_P_cVgHhKEee0aPDRSjo7RQ" businessElement="MedicationOrderPrescriberD" modelElement="_BmCowM3tEeahpd1P9sS4xg" businessElementId="79d5baf1-8529-4393-b621-d92e3df29f25" modelElementPath="requester.identifier" condition=""/>
     <elements xmi:id="_Tel88HhKEee0aPDRSjo7RQ" businessElement="MedicationOrderPrescribingProviderName" modelElement="_BmEd8M3tEeahpd1P9sS4xg" businessElementId="86731d0d-efda-4f70-95f5-fc253b566ad6" modelElementPath="requester.name" condition=""/>
     <elements xmi:id="_LkPncHhIEeez6_1ImKc8og" businessElement="MedicationOrderStatusCode" modelElement="_GJ7qsc3tEeahpd1P9sS4xg" businessElementId="d16d1fb5-528f-441d-bb65-88be2919125d" modelElementPath="status" condition=""/>
-    <elements xmi:id="_jCqu0HhKEee0aPDRSjo7RQ" businessElement="MedicationOrderStatusCode" businessElementId="d16d1fb5-528f-441d-bb65-88be2919125d" modelElementPath="status" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4_-0h8FMEea5pdrFDq-m2g"/>
-    </elements>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_kJp5UHh8Eee0aPDRSjo7RQ" base_Class="_F-aXMs3tEeahpd1P9sS4xg">
     <elements xmi:id="_El5aQPSUEeeZYJaP5fnpMw" businessElement="ResultsSectionContainer" modelElement="_F-aXMs3tEeahpd1P9sS4xg" businessElementId="5b518a6c-921a-4e90-bfda-db113112c8d1" modelElementPath=""/>
@@ -3566,10 +3535,7 @@
     <elements xmi:id="_D1NA4HiEEee0aPDRSjo7RQ" businessElement="ResultObservationValueNotes" businessElementId="479d2c89-da5f-4410-bd61-7fcb99ff66e4" modelElementPath="result.valueString" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_47puLcFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_kdllIHiAEee0aPDRSjo7RQ" businessElement="PatientID" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.id" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_CwsUEHh9Eee0aPDRSjo7RQ" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.identifier" condition=""/>
+    <elements xmi:id="_5XsR0CYqEeizpZLE_-yWkA" businessElement="PatientID" modelElement="_GJ4AUM3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_3p9kMHyCEeeKts1EILROhQ" base_Class="_B3jPgM3tEeahpd1P9sS4xg">
     <elements xmi:id="__Rn5IHyCEeeKts1EILROhQ" businessElement="EncounterServiceLocationAddress" modelElement="_B3lrwM3tEeahpd1P9sS4xg" businessElementId="f0a9e685-b6ef-4f7d-b289-1d4cfe407afd" modelElementPath="address"/>
@@ -3597,9 +3563,7 @@
   <MDMI:MDMIMapping xmi:id="_blSF4IdhEeejp6WnlgB5tg" base_Class="_Fzh84M3tEeahpd1P9sS4xg">
     <elements xmi:id="_cszuoIdhEeejp6WnlgB5tg" businessElement="SmokingStatusObservationContainer" modelElement="_Fzh84M3tEeahpd1P9sS4xg" businessElementId="3b57ecc3-48b2-446f-8b68-320d07dd6586" modelElementPath=""/>
     <elements xmi:id="_eUjvkIdhEeejp6WnlgB5tg" businessElement="TobaccoUseObservationContainer" modelElement="_Fzh84M3tEeahpd1P9sS4xg" businessElementId="b7a76875-d581-4a89-b0fb-57f9471c0475" modelElementPath=""/>
-    <elements xmi:id="_tZypUIdhEeejp6WnlgB5tg" businessElement="PatientAdministrationGenderCode" modelElement="_AJgZUc3tEeahpd1P9sS4xg" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="subject.gender"/>
-    <elements xmi:id="_qfyWUIdhEeejp6WnlgB5tg" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.identifier"/>
-    <elements xmi:id="_sYHw8IdhEeejp6WnlgB5tg" businessElement="PatientLegalName" modelElement="_AJekIs3tEeahpd1P9sS4xg" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="subject.name"/>
+    <elements xmi:id="_7UguYCYrEeizpZLE_-yWkA" businessElement="PatientID" modelElement="_F5YGMM3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject"/>
     <elements xmi:id="_blT7EIdhEeejp6WnlgB5tg" businessElement="SmokingStatusObservationValueCode" modelElement="_F5YtQM3tEeahpd1P9sS4xg" businessElementId="aadeabc0-625a-450e-9400-cdc85debf531" modelElementPath="valueCodeableConcept"/>
     <elements xmi:id="_gVwyUIdhEeejp6WnlgB5tg" businessElement="TobaccoUseObservationValueCode" modelElement="_F5YtQM3tEeahpd1P9sS4xg" businessElementId="d8e3077e-b2a0-499f-8354-c2a0a148c993" modelElementPath="valueCodeableConcept"/>
   </MDMI:MDMIMapping>
@@ -3627,7 +3591,7 @@
     <elements xmi:id="_Kol-MP-lEeeGOLbHvqqm5g" businessElement="GoalObservationStatusCode" businessElementId="2fa1e580-e4d3-406b-912b-bd74f0f9d0d6" modelElementPath="status">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_49_QfsFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_RSj-AIgTEeep7I1e8HDAFQ" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.identifier" condition=""/>
+    <elements xmi:id="_QbT-cCYrEeizpZLE_-yWkA" businessElement="PatientID" modelElement="_FzhV083tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_QlkYgIg8EeeVloUyGHi59w" base_Class="_CSdp5s3tEeahpd1P9sS4xg">
     <elements xmi:id="_BpEosNUXEeeGDbZYQkRJ_A" businessElement="MedicalEquipmentSupplyDateTime" businessElementId="5798b3f5-f74a-4274-935f-f82de3094abe" modelElementPath="expirationDate" condition="">
@@ -3648,13 +3612,7 @@
     <elements xmi:id="_2n9l4J1WEeezcP8rq3Cg_g" businessElement="MedicalEquipmentSectionNotes" businessElementId="eab8948d-0144-4fe0-8681-5568e442838b" modelElementPath="note.text" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4lTqsMFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_eL4dMIg8EeeVloUyGHi59w" businessElement="PatientBirthDateTime" modelElement="_BOu8AM3tEeahpd1P9sS4xg" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="patient.birthDate" condition=""/>
-    <elements xmi:id="_WVoSoIg8EeeVloUyGHi59w" businessElement="PatientRaceCode" modelElement="_AJPTkM3tEeahpd1P9sS4xg" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="patient.extension" condition=""/>
-    <elements xmi:id="_YAggEIg8EeeVloUyGHi59w" businessElement="PatientEthnicityCode" modelElement="_AJX2cM3tEeahpd1P9sS4xg" businessElementId="b29dc139-8a2b-473d-820b-0331b7ae0aa3" modelElementPath="patient.extension" condition=""/>
-    <elements xmi:id="_Z9GvoIg8EeeVloUyGHi59w" businessElement="PatientBirthSexCode" modelElement="_AJbg0M3tEeahpd1P9sS4xg" businessElementId="cc13e769-ad20-44ca-9a66-be2600bfdad9" modelElementPath="patient.extension" condition=""/>
-    <elements xmi:id="_c6DB4Ig8EeeVloUyGHi59w" businessElement="PatientAdministrationGenderCode" modelElement="_AJgZUc3tEeahpd1P9sS4xg" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="patient.gender" condition=""/>
-    <elements xmi:id="_vSVcIJ1WEeezcP8rq3Cg_g" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="patient.identifier" condition=""/>
-    <elements xmi:id="_b2Se0Ig8EeeVloUyGHi59w" businessElement="PatientLegalName" modelElement="_AJekIs3tEeahpd1P9sS4xg" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="patient.name" condition=""/>
+    <elements xmi:id="_2FQ3wCYqEeizpZLE_-yWkA" businessElement="PatientID" modelElement="_CXJ8pM3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="patient"/>
     <elements xmi:id="_TOLZgIg8EeeVloUyGHi59w" businessElement="ProcedurePerformedProductCode" modelElement="_CSe4BM3tEeahpd1P9sS4xg" businessElementId="056ce4d7-c4d8-46c2-a04a-8148e0761268" modelElementPath="type" condition=""/>
     <elements xmi:id="_oRJdAIg8EeeVloUyGHi59w" businessElement="ProcedurePerformedProductCode" businessElementId="056ce4d7-c4d8-46c2-a04a-8148e0761268" modelElementPath="type" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4lNkF8FMEea5pdrFDq-m2g"/>
@@ -3684,30 +3642,11 @@
     <elements xmi:id="_VH2CAM4mEeeAV_yQVKvJhw" businessElement="PatientLanguageContainer" businessElementId="800fb398-f49c-47da-8187-2d285dd58866" modelElementPath="communication" condition="">
       <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_4kSXAcFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_2saaUJ1REeeRldxvRZ_uPA" businessElement="PatientLanguageCode" modelElement="_BOx_UM3tEeahpd1P9sS4xg" businessElementId="e2229d9e-f294-4005-b4c3-86e397b892fb" modelElementPath="communication.language" condition=""/>
-    <elements xmi:id="_TRSJAM4mEeeAV_yQVKvJhw" businessElement="PatientLanguagePreferenceFlag" businessElementId="b230a553-9ca0-43d8-abf0-c5d633a567bf" modelElementPath="communication.preferred" condition="">
+    <elements xmi:id="_OQnTYCYpEeizpZLE_-yWkA" businessElement="PatientLanguageCode" businessElementId="e2229d9e-f294-4005-b4c3-86e397b892fb" modelElementPath="communication.language">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4kSXDcFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_QH5lICYpEeizpZLE_-yWkA" businessElement="PatientLanguagePreferenceFlag" businessElementId="b230a553-9ca0-43d8-abf0-c5d633a567bf" modelElementPath="communication.preferred">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4kTlIsFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_aYoUMOJ0EeeapbPRlzNegQ" businessElement="ContactContainer" businessElementId="4c7c6ca2-6095-49df-adc4-2af5629a498b" modelElementPath="contact" condition="">
-      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_4ea_lsFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_jxKI4Pe0Eee3bJnGtOxk_g" businessElement="GuardianAddress" businessElementId="8380696b-9da4-4aa9-b481-c2475d6f8e20" modelElementPath="contact.address" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4edb1cFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_oKsdUM4lEeeAV_yQVKvJhw" businessElement="GuardianName" businessElementId="95eaf16d-f5c2-453b-a3a3-006253fddd29" modelElementPath="contact.name" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4ecNuMFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_mg9fYM4lEeeAV_yQVKvJhw" businessElement="GuardianRelationshipCode" businessElementId="49e13ec4-7e7b-4644-b4c1-296503240b62" modelElementPath="contact.relationship" condition="">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4ebmp8FMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_sytxUM4lEeeAV_yQVKvJhw" businessElement="GuardianBusinessPhoneContact" businessElementId="8f71434b-2639-42b6-ae08-6478553d5ea8" modelElementPath="contact.telecom" condition="system/@value='phone'">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4ec0x8FMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_wz5HwM4lEeeAV_yQVKvJhw" businessElement="GuardianEmailContact" businessElementId="f89ce396-b5ad-4a49-aca3-03f5b02b395a" modelElementPath="contact.telecom" condition="system/@value='email'">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4ec0x8FMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_yYtwgM4lEeeAV_yQVKvJhw" businessElement="GuardianURLContact" businessElementId="eccc9dde-78d3-4c54-ad7b-a4c813ec598b" modelElementPath="contact.telecom" condition="system/@value='url'">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4ec0x8FMEea5pdrFDq-m2g"/>
     </elements>
     <elements xmi:id="_qH8WwPvQEeeNesM81y5J_g" businessElement="PatientRaceCode" modelElement="_AJPTkM3tEeahpd1P9sS4xg" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="extension" condition=""/>
     <elements xmi:id="_wo5YsJ1REeeRldxvRZ_uPA" businessElement="PatientAdministrationGenderCode" modelElement="_AJgZUc3tEeahpd1P9sS4xg" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="gender" condition=""/>
@@ -3768,33 +3707,19 @@
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_49Ji8MFMEea5pdrFDq-m2g"/>
     </elements>
     <elements xmi:id="_eUgBQPSmEeeORoO2yBIgDQ" businessElement="ResultObservationStatusCode" modelElement="_BmJWdM3tEeahpd1P9sS4xg" businessElementId="e1cc3c00-7ec5-4727-a982-b05e6c6c76d1" modelElementPath="status" condition=""/>
-    <elements xmi:id="_D92BIPSnEeeORoO2yBIgDQ" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.identifier" condition=""/>
+    <elements xmi:id="_xjfgQCYrEeizpZLE_-yWkA" businessElement="PatientID" modelElement="_Bxwwk83tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject"/>
     <elements xmi:id="_hcr9YPSqEeeFNZwvHWvcGQ" businessElement="ResultObservationValueCode" modelElement="_Bx5TcM3tEeahpd1P9sS4xg" businessElementId="6a0b73cb-8123-4364-9b6c-9f27094e3e57" modelElementPath="valueCodeableConcept" condition=""/>
     <elements xmi:id="_fopM4PSqEeeFNZwvHWvcGQ" businessElement="ResultObservationValueUnitMeasure" modelElement="_Bx4FUs3tEeahpd1P9sS4xg" businessElementId="702872c1-6d7f-4a18-b846-7008a16c8825" modelElementPath="valueQuantity" condition=""/>
   </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_gj9Y0PfPEee9CfQv0N-wsA" base_Class="_BmBaoc3tEeahpd1P9sS4xg">
-    <elements xmi:id="_7RkREP64EeeDL5Qe2AxTNQ" businessElement="DocumentDataEntererAddress" businessElementId="19815eb8-ac6e-40c9-a5cb-b27382c71463" modelElementPath="address">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4dS-OsFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_fgXF4P62EeeDL5Qe2AxTNQ" businessElement="DocumentDataEntererII" businessElementId="6249660d-0b62-43fa-b28f-2098a25fd002" modelElementPath="identifier">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4dRJCsFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_qcnYEP62EeeDL5Qe2AxTNQ" businessElement="DocumentDataEntererII" businessElementId="6249660d-0b62-43fa-b28f-2098a25fd002" modelElementPath="identifier">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4dRJCsFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_iN-78P91EeeEPap6rGENcg" businessElement="DocumentDataEntererPersonName" businessElementId="46a9bddc-4152-4fa2-9f5b-36a7a708ad28" modelElementPath="name">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4dSXIMFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_TzcIgP92EeeEPap6rGENcg" businessElement="DocumentDataEntererPersonName" businessElementId="46a9bddc-4152-4fa2-9f5b-36a7a708ad28" modelElementPath="name">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4dSXIMFMEea5pdrFDq-m2g"/>
-    </elements>
-    <elements xmi:id="_qUqggP63EeeDL5Qe2AxTNQ" businessElement="DocumentDataEntererPhoneContact" businessElementId="0ef74fc9-38a0-42e2-a9d6-5265aeccbba3" modelElementPath="telecom">
-      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4dSXLMFMEea5pdrFDq-m2g"/>
-    </elements>
-  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_gj9Y0PfPEee9CfQv0N-wsA" base_Class="_BmBaoc3tEeahpd1P9sS4xg"/>
   <fhir:ElementDefinition xmi:id="_BOvjE83tEeahpd1P9sS4xg" id="Patient:uscorepatient.animal" base_Property="_BOvjEM3tEeahpd1P9sS4xg" mustSupport="false" isModifier="false" isSummary="false"/>
   <fhir:TypeChoice xmi:id="_fZY_cBs3EeiSNcn0VljeCg" base_Property="_CsXXos3tEeahpd1P9sS4xg">
     <types xmi:type="uml:Class" href="FHIR-Core.uml#_4a1gFMFMEea5pdrFDq-m2g"/>
     <types xmi:type="uml:Class" href="FHIR-Core.uml#_4ckleMFMEea5pdrFDq-m2g"/>
   </fhir:TypeChoice>
+  <fhir:ElementDefinition xmi:id="_1QRfkCOwEeivEY8WLKV1mA" id="Patient.address" base_Property="_1QQRcCOwEeivEY8WLKV1mA" name="Patient.address" isSummary="true" representation=""/>
+  <fhir:ElementDefinition xmi:id="_FL1qwCO5EeivEY8WLKV1mA" id="Resource.language" base_Property="_FL1DsCO5EeivEY8WLKV1mA" name="Resource.language" representation=""/>
+  <fhir:ValueSetBinding xmi:id="_FL2R0CO5EeivEY8WLKV1mA" base_Property="_FL1DsCO5EeivEY8WLKV1mA" strength="extensible" description="A human language.">
+    <valueSetReference href="FHIR-Core.uml#_4bGl2cFMEea5pdrFDq-m2g"/>
+  </fhir:ValueSetBinding>
 </xmi:XMI>

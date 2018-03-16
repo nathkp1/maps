@@ -2967,6 +2967,9 @@ If the ID isn't referencing an author described elsewhere in the document, then 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kzRcgcK8EeSqg-Exmsy2kg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kzRcgsK8EeSqg-Exmsy2kg" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_9-RaMCOfEeiwsevzJ9LSUQ" name="code" visibility="private" aggregation="composite" redefinedProperty="_2G8h-hSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_sESL0OH7EeO04sHNODkHmQ" base_Class="_D62NwOH7EeO04sHNODkHmQ" templateId="2.16.840.1.113883.10.20.22.4.20" templateVersion="2014-06-09">
     <ruleId>CONF:1098-7393</ruleId>
@@ -3684,7 +3687,6 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_j7yEwMiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorOrganizationPhoneContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="614cbb05-4168-482e-9a14-e45708aab1be" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
     <elements xmi:id="_nLnd0MiyEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorOrganizationURLContact" modelElement="_X2YGYKr4EeOxqJAXCMXUYg" businessElementId="42f8e948-5f2b-4071-9917-4b07b777dbb2" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom"/>
     <elements xmi:id="_wBZBIMixEeeUdKVdUkH0Tg" businessElement="ImmunizationAdministrationAuthorDateTime" modelElement="_-mD94KrlEeOxqJAXCMXUYg" businessElementId="9a1a3b0f-6bff-465c-95be-636fe8625f24" modelElementPath="interventionAct.immunizationActivity2.authorParticipation.time"/>
-    
     <elements xmi:id="_DQ60QMi2EeeEgNQvAxhXEA" businessElement="ImmunizationAdministeredMedicationLotNumber" businessElementId="008bb3da-b5b5-4344-bdb0-e36a0a76269b" modelElementPath="interventionAct.immunizationActivity2.consumable.immunizationMedicationInformation2.manufacturedMaterial.lotNumberText">
       <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_2daj0MKMEeSqg-Exmsy2kg"/>
     </elements>
@@ -3707,7 +3709,6 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_3ufIUMi0EeeTTvcEssHWKg" businessElement="ImmunizationAdministeredMedicationDispenseStatusCode" businessElementId="26ac6800-d260-40c8-9aaa-66f5fcc759ec" modelElementPath="interventionAct.immunizationActivity2.medicationDispense2.statusCode">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_ThIPFBrYEeGo461UQq-B1g"/>
     </elements>
-   
     <elements xmi:id="_GGeXAMi0EeeTTvcEssHWKg" businessElement="ImmunizationAdministeredMedicationSupplyID" businessElementId="8ed179dd-c34d-4f2e-bf3c-26838105fba6" modelElementPath="interventionAct.immunizationActivity2.medicationSupplyOrder2.id">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_z3ymoBrTEeGo461UQq-B1g"/>
     </elements>
@@ -4839,4 +4840,10 @@ Instructions are information or directions to the patient. Use the Instructions 
   <MDMI:MDMIMapping xmi:id="_iYwusNkMEeewwMY8KIUDtw" base_Class="_3WqogMzSEeO93sHu8pHB2g">
     <elements xmi:id="_iYyj4NkMEeewwMY8KIUDtw" businessElement="FunctionalStatusObservationValueCode" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="3a39e4e1-29a9-488d-92fb-59bd0815b850" modelElementPath="value"/>
   </MDMI:MDMIMapping>
+  <CDA:ValueSetConstraint xmi:id="_9-RaMSOfEeiwsevzJ9LSUQ" base_Property="_9-RaMCOfEeiwsevzJ9LSUQ" severity="WARNING">
+    <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
+    <ruleId>CONF:7394</ruleId>
+    <ruleId>R2.0=CONF:1098-7394</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_9-SoUCOfEeiwsevzJ9LSUQ" base_Property="_9-RaMCOfEeiwsevzJ9LSUQ"/>
 </xmi:XMI>
