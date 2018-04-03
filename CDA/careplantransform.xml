@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default" xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+	<target name="default">
+
+		 
+		<delete file="map/careplan.xmi" />
+
+	 
+		<qvto:transformation uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Cda2Mdmi.qvto">
+			<in uri="platform:/resource/CDA/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml" />
+			<out uri="platform:/resource/CDA/map/careplan.mdmi" />
+			<trace uri="platform:/resource/CDA/log/careplan.qvtotrace">
+			</trace>
+			<configProperty name="semanticRoot" value="CarePlan" />
+			<configProperty name="syntaxRoot" value="CarePlan" />
+			<configProperty name="mappingStyle" value="NORMAL" />
+		</qvto:transformation>
+
+		<transformReport reportPath="${basedir}" />
+
+		 
+		<mdmiSort model="platform:/resource/CDA/map/careplan.mdmi" />
+
+
+	</target>
+
+
+
+</project>
