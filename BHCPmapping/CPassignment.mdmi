@@ -174,39 +174,45 @@
           <mapFromMdmi xmi:id="_O0tjgTeDEeihAKy8fWcCuw" name="MDMI2Message4Primary_Language_Spoken_Desc" businessElement="_n3TFQzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_O0tjgDeDEeihAKy8fWcCuw" name="Message2MDMI4Primary_Language_Spoken_Desc" businessElement="_n3TFQzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_n3TFFTdjEeiEvKka141S-Q" name="Primary_Diagnosis" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE4jdjEeiEvKka141S-Q"/>
-        <semanticElements xmi:id="_n3TFFjdjEeiEvKka141S-Q" name="Secondary_Diagnosis" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE4zdjEeiEvKka141S-Q"/>
+        <semanticElements xmi:id="_n3TFFTdjEeiEvKka141S-Q" name="Primary_Diagnosis" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE4jdjEeiEvKka141S-Q">
+          <mapFromMdmi xmi:id="_l3TgsTgYEeiGIZgxsvlwPg" name="MDMI2Message4Primary_Diagnosis" businessElement="_n3U8szdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapCodedElementToString"/>
+          <mapToMdmi xmi:id="_l3TgsDgYEeiGIZgxsvlwPg" name="Message2MDMI4Primary_Diagnosis" businessElement="_n3U8szdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToCodedElement"/>
+        </semanticElements>
+        <semanticElements xmi:id="_n3TFFjdjEeiEvKka141S-Q" name="Secondary_Diagnosis" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE4zdjEeiEvKka141S-Q">
+          <mapFromMdmi xmi:id="_nh3lETgYEeiGIZgxsvlwPg" name="MDMI2Message4Secondary_Diagnosis" businessElement="_n3U8szdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapCodedElementToString"/>
+          <mapToMdmi xmi:id="_nh3lEDgYEeiGIZgxsvlwPg" name="Message2MDMI4Secondary_Diagnosis" businessElement="_n3U8szdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToCodedElement"/>
+        </semanticElements>
         <semanticElements xmi:id="_n3TFFzdjEeiEvKka141S-Q" name="PCP_Name_Last" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE5DdjEeiEvKka141S-Q">
-          <mapFromMdmi xmi:id="_QWA-MTeDEeihAKy8fWcCuw" name="MDMI2Message4PCP_Name_Last" businessElement="_n3WKQDdjEeiEvKka141S-Q"/>
-          <mapToMdmi xmi:id="_QWA-MDeDEeihAKy8fWcCuw" name="Message2MDMI4PCP_Name_Last" businessElement="_n3WKQDdjEeiEvKka141S-Q"/>
+          <mapFromMdmi xmi:id="_HU05ATgcEei5fsYlHwKZ_A" name="MDMI2Message4PCP_Name_Last" businessElement="_n3WIazdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapPersonNameToString"/>
+          <mapToMdmi xmi:id="_HU05ADgcEei5fsYlHwKZ_A" name="Message2MDMI4PCP_Name_Last" businessElement="_n3WIazdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToPersonName"/>
         </semanticElements>
         <semanticElements xmi:id="_n3TFGDdjEeiEvKka141S-Q" name="PCP_NPI" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE5TdjEeiEvKka141S-Q">
-          <mapFromMdmi xmi:id="_SMBdkTeDEeihAKy8fWcCuw" name="MDMI2Message4PCP_NPI" businessElement="_n3WKPTdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapInstanceIdentifierToString"/>
-          <mapToMdmi xmi:id="_SMBdkDeDEeihAKy8fWcCuw" name="Message2MDMI4PCP_NPI" businessElement="_n3WKPTdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToInstanceIdentifier"/>
+          <mapFromMdmi xmi:id="_JAaRETgcEei5fsYlHwKZ_A" name="MDMI2Message4PCP_NPI" businessElement="_n3WIbDdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapInstanceIdentifierToString"/>
+          <mapToMdmi xmi:id="_JAaREDgcEei5fsYlHwKZ_A" name="Message2MDMI4PCP_NPI" businessElement="_n3WIbDdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToInstanceIdentifier"/>
         </semanticElements>
         <semanticElements xmi:id="_n3TFGTdjEeiEvKka141S-Q" name="PCP_Address_Line_1" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE5jdjEeiEvKka141S-Q">
-          <mapFromMdmi xmi:id="_UusOoDeDEeihAKy8fWcCuw" name="MDMI2Message4PCP_Address_Line_1" businessElement="_n3WKSzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapAddressToString"/>
-          <mapToMdmi xmi:id="_UurnkDeDEeihAKy8fWcCuw" name="Message2MDMI4PCP_Address_Line_1" businessElement="_n3WKSzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToAddress"/>
+          <mapFromMdmi xmi:id="_LTGFYTgcEei5fsYlHwKZ_A" name="MDMI2Message4PCP_Address_Line_1" businessElement="_n3WIKzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapAddressToString"/>
+          <mapToMdmi xmi:id="_LTGFYDgcEei5fsYlHwKZ_A" name="Message2MDMI4PCP_Address_Line_1" businessElement="_n3WIKzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToAddress"/>
         </semanticElements>
         <semanticElements xmi:id="_n3TFGjdjEeiEvKka141S-Q" name="PCP_Address_Line_2" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE5zdjEeiEvKka141S-Q">
-          <mapFromMdmi xmi:id="_WYkWgTeDEeihAKy8fWcCuw" name="MDMI2Message4PCP_Address_Line_2" businessElement="_n3WKSzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapAddressToString"/>
-          <mapToMdmi xmi:id="_WYkWgDeDEeihAKy8fWcCuw" name="Message2MDMI4PCP_Address_Line_2" businessElement="_n3WKSzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToAddress"/>
+          <mapFromMdmi xmi:id="_MsBnMTgcEei5fsYlHwKZ_A" name="MDMI2Message4PCP_Address_Line_2" businessElement="_n3WIKzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapAddressToString"/>
+          <mapToMdmi xmi:id="_MsBnMDgcEei5fsYlHwKZ_A" name="Message2MDMI4PCP_Address_Line_2" businessElement="_n3WIKzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToAddress"/>
         </semanticElements>
         <semanticElements xmi:id="_n3TFGzdjEeiEvKka141S-Q" name="PCP_Address_City" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE6DdjEeiEvKka141S-Q">
-          <mapFromMdmi xmi:id="_X24HkTeDEeihAKy8fWcCuw" name="MDMI2Message4PCP_Address_City" businessElement="_n3WKSzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapAddressToString"/>
-          <mapToMdmi xmi:id="_X24HkDeDEeihAKy8fWcCuw" name="Message2MDMI4PCP_Address_City" businessElement="_n3WKSzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToAddress"/>
+          <mapFromMdmi xmi:id="_OGeL8TgcEei5fsYlHwKZ_A" name="MDMI2Message4PCP_Address_City" businessElement="_n3WIKzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapAddressToString"/>
+          <mapToMdmi xmi:id="_OGeL8DgcEei5fsYlHwKZ_A" name="Message2MDMI4PCP_Address_City" businessElement="_n3WIKzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToAddress"/>
         </semanticElements>
         <semanticElements xmi:id="_n3TFHDdjEeiEvKka141S-Q" name="PCP_Adddress_State" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE6TdjEeiEvKka141S-Q">
-          <mapFromMdmi xmi:id="_ZVZ7ETeDEeihAKy8fWcCuw" name="MDMI2Message4PCP_Adddress_State" businessElement="_n3WKSzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapAddressToString"/>
-          <mapToMdmi xmi:id="_ZVZ7EDeDEeihAKy8fWcCuw" name="Message2MDMI4PCP_Adddress_State" businessElement="_n3WKSzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToAddress"/>
+          <mapFromMdmi xmi:id="_PW88YTgcEei5fsYlHwKZ_A" name="MDMI2Message4PCP_Adddress_State" businessElement="_n3WIKzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapAddressToString"/>
+          <mapToMdmi xmi:id="_PW88YDgcEei5fsYlHwKZ_A" name="Message2MDMI4PCP_Adddress_State" businessElement="_n3WIKzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToAddress"/>
         </semanticElements>
         <semanticElements xmi:id="_n3TFHTdjEeiEvKka141S-Q" name="PCP_Address_ZipCode" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE6jdjEeiEvKka141S-Q">
-          <mapFromMdmi xmi:id="_bAC38TeDEeihAKy8fWcCuw" name="MDMI2Message4PCP_Address_ZipCode" businessElement="_n3WKSzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapAddressToString"/>
-          <mapToMdmi xmi:id="_bAC38DeDEeihAKy8fWcCuw" name="Message2MDMI4PCP_Address_ZipCode" businessElement="_n3WKSzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToAddress"/>
+          <mapFromMdmi xmi:id="_QojHITgcEei5fsYlHwKZ_A" name="MDMI2Message4PCP_Address_ZipCode" businessElement="_n3WIKzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapAddressToString"/>
+          <mapToMdmi xmi:id="_QojHIDgcEei5fsYlHwKZ_A" name="Message2MDMI4PCP_Address_ZipCode" businessElement="_n3WIKzdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToAddress"/>
         </semanticElements>
         <semanticElements xmi:id="_n3TFHjdjEeiEvKka141S-Q" name="PCP_Phone_Number" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE6zdjEeiEvKka141S-Q">
-          <mapFromMdmi xmi:id="_deFAoTeDEeihAKy8fWcCuw" name="MDMI2Message4PCP_Phone_Number" businessElement="_n3WKRTdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapTelecomToString"/>
-          <mapToMdmi xmi:id="_deFAoDeDEeihAKy8fWcCuw" name="Message2MDMI4PCP_Phone_Number" businessElement="_n3WKRTdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToTelecom"/>
+          <mapFromMdmi xmi:id="_SnoqADgcEei5fsYlHwKZ_A" name="MDMI2Message4PCP_Phone_Number" businessElement="_n3U87TdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapTelecomToString"/>
+          <mapToMdmi xmi:id="_SnoC8DgcEei5fsYlHwKZ_A" name="Message2MDMI4PCP_Phone_Number" businessElement="_n3U87TdjEeiEvKka141S-Q" rule="DATATYPEMAP:mapStringToTelecom"/>
         </semanticElements>
         <semanticElements xmi:id="_n3TFHzdjEeiEvKka141S-Q" name="DMH_Flag" elementType="NORMAL" datatype="_n3WvvzdjEeiEvKka141S-Q" parent="_n3TE9jdjEeiEvKka141S-Q" syntaxNode="_n3TE7DdjEeiEvKka141S-Q">
           <mapFromMdmi xmi:id="_gbOHMTeDEeihAKy8fWcCuw" name="MDMI2Message4DMH_Flag" businessElement="_bRmwwDd9Eeixm4-jzvlfjQ" rule="DATATYPEMAP:mapBooleanToString"/>
@@ -4238,5 +4244,20 @@
     <datatypeMaps xmi:id="_snVewDeDEeihAKy8fWcCuw" name="MapStringToCodedElement" description="MapStringToCodedElement" fromMDMI="function mapStringToCodedElement(source,target) {}" toMDMI="function mapCodedElementToString(source,target) {}" mdmiDatatype="_n3Wv0zdjEeiEvKka141S-Q"/>
     <datatypeMaps xmi:id="_ulSZMjeDEeihAKy8fWcCuw" name="MapStringToDateTime" description="MapStringToDateTime" fromMDMI="function mapStringToDateTime(source,target) {}" toMDMI="function mapDateTimeToString(source,target) {}" mdmiDatatype="_n3WvvDdjEeiEvKka141S-Q"/>
     <datatypeMaps xmi:id="_4FT98jeDEeihAKy8fWcCuw" name="MapStringToDateTime" description="MapStringToDateTime" fromMDMI="function mapStringToDateTime(source,target) {}" toMDMI="function mapDateTimeToString(source,target) {}" mdmiDatatype="_n3WvvDdjEeiEvKka141S-Q"/>
+    <datatypeMaps xmi:id="_f_xFkDgYEeiGIZgxsvlwPg" name="StringAndBinaryMapping" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_f_xFkTgYEeiGIZgxsvlwPg" name="StringAndBooleanMapping" fromMDMI="" toMDMI="function mapStringToBoolean(source,target) { &#xD;&#xA;&#x9;target.setValue(source);&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_f_xFkjgYEeiGIZgxsvlwPg" name="StringAndDateTimeMapping" fromMDMI=" function mapDateTimeToString(source,target) {&#xD;&#xA;target.setValue(source.getValue());&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToDateTime(source,target) {&#xD;&#xA;&#x9;target.setValue(source );&#xD;&#xA;}&#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_f_xFkzgYEeiGIZgxsvlwPg" name="StringAndDecimalMapping" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_f_xFlDgYEeiGIZgxsvlwPg" name="StringAndIntegerMapping" fromMDMI="function mapIntegerToString(source,target) { &#xD;&#xA;&#x9;target.setValue(source.getValue());&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;" toMDMI="function mapStringToInteger(source,target) { &#xD;&#xA;&#x9;target.setValue(source);&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_l3UHwDgYEeiGIZgxsvlwPg" name="MapStringToCodedElement" description="MapStringToCodedElement" fromMDMI="function mapStringToCodedElement(source,target) {}" toMDMI="function mapCodedElementToString(source,target) {}" mdmiDatatype="_n3Wv0zdjEeiEvKka141S-Q"/>
+    <datatypeMaps xmi:id="_nh4MIDgYEeiGIZgxsvlwPg" name="MapStringToCodedElement" description="MapStringToCodedElement" fromMDMI="function mapStringToCodedElement(source,target) {}" toMDMI="function mapCodedElementToString(source,target) {}" mdmiDatatype="_n3Wv0zdjEeiEvKka141S-Q"/>
+    <datatypeMaps xmi:id="_HU1gEDgcEei5fsYlHwKZ_A" name="MapStringToPersonName" description="MapStringToPersonName" fromMDMI="function mapStringToPersonName(source,target) {}" toMDMI="function mapPersonNameToString(source,target) {}" mdmiDatatype="_n3Wv7DdjEeiEvKka141S-Q"/>
+    <datatypeMaps xmi:id="_JAa4IDgcEei5fsYlHwKZ_A" name="MapStringToInstanceIdentifier" description="MapStringToInstanceIdentifier" fromMDMI="function mapStringToInstanceIdentifier(source,target) {}" toMDMI="function mapInstanceIdentifierToString(source,target) {}" mdmiDatatype="_n3Wv2zdjEeiEvKka141S-Q"/>
+    <datatypeMaps xmi:id="_LTGscDgcEei5fsYlHwKZ_A" name="MapStringToAddress" description="MapStringToAddress" fromMDMI="function mapStringToAddress(source,target) {}" toMDMI="function mapAddressToString(source,target) {}" mdmiDatatype="_n3Wv8jdjEeiEvKka141S-Q"/>
+    <datatypeMaps xmi:id="_MsCOQDgcEei5fsYlHwKZ_A" name="MapStringToAddress" description="MapStringToAddress" fromMDMI="function mapStringToAddress(source,target) {}" toMDMI="function mapAddressToString(source,target) {}" mdmiDatatype="_n3Wv8jdjEeiEvKka141S-Q"/>
+    <datatypeMaps xmi:id="_OGezADgcEei5fsYlHwKZ_A" name="MapStringToAddress" description="MapStringToAddress" fromMDMI="function mapStringToAddress(source,target) {}" toMDMI="function mapAddressToString(source,target) {}" mdmiDatatype="_n3Wv8jdjEeiEvKka141S-Q"/>
+    <datatypeMaps xmi:id="_PW9jcDgcEei5fsYlHwKZ_A" name="MapStringToAddress" description="MapStringToAddress" fromMDMI="function mapStringToAddress(source,target) {}" toMDMI="function mapAddressToString(source,target) {}" mdmiDatatype="_n3Wv8jdjEeiEvKka141S-Q"/>
+    <datatypeMaps xmi:id="_QojuMDgcEei5fsYlHwKZ_A" name="MapStringToAddress" description="MapStringToAddress" fromMDMI="function mapStringToAddress(source,target) {}" toMDMI="function mapAddressToString(source,target) {}" mdmiDatatype="_n3Wv8jdjEeiEvKka141S-Q"/>
+    <datatypeMaps xmi:id="_SnpREDgcEei5fsYlHwKZ_A" name="MapStringToTelecom" description="MapStringToTelecom" fromMDMI="function mapStringToTelecom(source,target) {}" toMDMI="function mapTelecomToString(source,target) {}" mdmiDatatype="_n3Wv6DdjEeiEvKka141S-Q"/>
   </mdmi:MessageGroup>
 </xmi:XMI>
