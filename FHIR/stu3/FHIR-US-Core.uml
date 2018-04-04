@@ -3648,8 +3648,20 @@
     <elements xmi:id="_QH5lICYpEeizpZLE_-yWkA" businessElement="PatientLanguagePreferenceFlag" businessElementId="b230a553-9ca0-43d8-abf0-c5d633a567bf" modelElementPath="communication.preferred">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4kTlIsFMEea5pdrFDq-m2g"/>
     </elements>
+    <elements xmi:id="_DvRPYDK9Eei_ko7PKttzmA" businessElement="GuardianContainer" businessElementId="38f8f0cc-d217-4560-9004-b905135af4c0" modelElementPath="contact">
+      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_4ea_lsFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_FL924DK9Eei_ko7PKttzmA" businessElement="GuardianName" businessElementId="95eaf16d-f5c2-453b-a3a3-006253fddd29" modelElementPath="contact.name">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4ecNuMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_HHlPADK9Eei_ko7PKttzmA" businessElement="GuardianPhoneContact" businessElementId="8f71434b-2639-42b6-ae08-6478553d5ea8" modelElementPath="contact.telecom">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4ec0x8FMEea5pdrFDq-m2g"/>
+    </elements>
     <elements xmi:id="_qH8WwPvQEeeNesM81y5J_g" businessElement="PatientRaceCode" modelElement="_AJPTkM3tEeahpd1P9sS4xg" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="extension" condition=""/>
     <elements xmi:id="_wo5YsJ1REeeRldxvRZ_uPA" businessElement="PatientAdministrationGenderCode" modelElement="_AJgZUc3tEeahpd1P9sS4xg" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="gender" condition=""/>
+    <elements xmi:id="_JV2dYDK9Eei_ko7PKttzmA" businessElement="PrimaryCareProviderContainer" businessElementId="649d98d3-d439-4db5-9198-c076ce84fa83" modelElementPath="generalPractitioner">
+      <modelElement xmi:type="uml:Association" href="FHIR-Core.uml#_4kUMNsFMEea5pdrFDq-m2g"/>
+    </elements>
     <elements xmi:id="_tcS50J1REeeRldxvRZ_uPA" businessElement="PatientID" modelElement="_AJcu8M3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="identifier" condition=""/>
     <elements xmi:id="_lSxBkPfgEeeMmNeRy6gsMg" businessElement="PatientMaritalStatusCode" businessElementId="6cf44ff0-2cfa-493b-98a6-44f35acd195c" modelElementPath="maritalStatus" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4eYjWMFMEea5pdrFDq-m2g"/>
