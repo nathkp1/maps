@@ -5959,6 +5959,35 @@ OIDs SHALL be no more than 64 characters in length..</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1VSckBwkEeSMr-NWzQuDBw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1VSckRwkEeSMr-NWzQuDBw" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_U36h0DzCEeiNReRoMA-0oQ" name="id" visibility="private" aggregation="composite" redefinedProperty="_2DNR7RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U36h0TzCEeiNReRoMA-0oQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U36h0jzCEeiNReRoMA-0oQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_U37I4TzCEeiNReRoMA-0oQ" name="code" visibility="private" aggregation="composite" redefinedProperty="_2DNR5RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U37I4jzCEeiNReRoMA-0oQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U37I4zzCEeiNReRoMA-0oQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_U37v8TzCEeiNReRoMA-0oQ" name="effectiveTime" visibility="private" type="_OB2hAJBlEeSSfIVHL_x3Xw" aggregation="composite" redefinedProperty="_2DNR6xSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_U38XATzCEeiNReRoMA-0oQ" name="confidentialityCode" visibility="private" aggregation="composite" redefinedProperty="_2DNR6RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_U3-MMDzCEeiNReRoMA-0oQ" name="languageCode" visibility="private" aggregation="composite" redefinedProperty="_2DNR8RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U3-MMTzCEeiNReRoMA-0oQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U3-MMjzCEeiNReRoMA-0oQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_U4AocTzCEeiNReRoMA-0oQ" name="setId" visibility="private" aggregation="composite" redefinedProperty="_ZxPgACykEeGMXrZ0DiQwGg">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U4AocjzCEeiNReRoMA-0oQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U4AoczzCEeiNReRoMA-0oQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_U4BPgTzCEeiNReRoMA-0oQ" name="versionNumber" visibility="private" aggregation="composite" redefinedProperty="_ZxQuICykEeGMXrZ0DiQwGg">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U4BPgjzCEeiNReRoMA-0oQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U4BPgzzCEeiNReRoMA-0oQ" value="1"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_5upL0BwLEeSMr-NWzQuDBw" name="RecordTarget">
       <ownedComment xmi:id="_Fn540BwMEeSMr-NWzQuDBw">
         <body>The recordTarget records the administrative and demographic data of the patient whose health information is described by the clinical document; each recordTarget must contain at least one patientRole element</body>
@@ -8129,6 +8158,40 @@ The Patient Generated Document Header template is not a separate document type. 
     <ownedAttribute xmi:id="_to_J4KoCEeO4L-NdFOGFPw" name="documentationOf" type="_0f1s8KoCEeO4L-NdFOGFPw" association="_tpA_EKoCEeO4L-NdFOGFPw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_to_w8KoCEeO4L-NdFOGFPw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_to_w8aoCEeO4L-NdFOGFPw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OpQnMDzCEeiNReRoMA-0oQ" name="id" visibility="private" aggregation="composite" redefinedProperty="_2DNR7RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OpQnMTzCEeiNReRoMA-0oQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OpQnMjzCEeiNReRoMA-0oQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OpXU4DzCEeiNReRoMA-0oQ" name="code" visibility="private" aggregation="composite" redefinedProperty="_2DNR5RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OpXU4TzCEeiNReRoMA-0oQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OpXU4jzCEeiNReRoMA-0oQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OpaYMDzCEeiNReRoMA-0oQ" name="effectiveTime" visibility="private" type="_OB2hAJBlEeSSfIVHL_x3Xw" aggregation="composite" redefinedProperty="_2DNR6xSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_OpbmUDzCEeiNReRoMA-0oQ" name="confidentialityCode" visibility="private" aggregation="composite" redefinedProperty="_2DNR6RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OpeCkDzCEeiNReRoMA-0oQ" name="languageCode" visibility="private" aggregation="composite" redefinedProperty="_2DNR8RSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OpeCkTzCEeiNReRoMA-0oQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OpeCkjzCEeiNReRoMA-0oQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OphF4DzCEeiNReRoMA-0oQ" name="setId" visibility="private" aggregation="composite" redefinedProperty="_ZxPgACykEeGMXrZ0DiQwGg">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OphF4TzCEeiNReRoMA-0oQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OphF4jzCEeiNReRoMA-0oQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Ophs8DzCEeiNReRoMA-0oQ" name="versionNumber" visibility="private" aggregation="composite" redefinedProperty="_ZxQuICykEeGMXrZ0DiQwGg">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ophs8TzCEeiNReRoMA-0oQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ophs8jzCEeiNReRoMA-0oQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_OpjiIDzCEeiNReRoMA-0oQ" name="title" visibility="private" aggregation="composite" redefinedProperty="_xLnFsBwJEeSMr-NWzQuDBw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OpjiITzCEeiNReRoMA-0oQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OpjiIjzCEeiNReRoMA-0oQ" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ctd5cKk9EeOTwZftO6CV5g" name="RecordTarget">
       <ownedComment xmi:id="_fOBKoKk9EeOTwZftO6CV5g">
@@ -14939,6 +15002,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <elements xmi:id="_OsN9QN6LEeeicbDlQdtpPg" businessElement="DocumentEncounterStartDateTime" modelElement="_UiXOECypEeGMXrZ0DiQwGg" businessElementId="ae5d7703-0152-4531-b99d-86652602f5f2" modelElementPath="componentOf.encompassingEncounter.effectiveTime" condition=""/>
     <elements xmi:id="_QaqcEN6LEeeicbDlQdtpPg" businessElement="DocumentEncounterEndDateTime" modelElement="_UiXOECypEeGMXrZ0DiQwGg" businessElementId="92fc97bc-ae86-4eab-a91a-3e0e748d94ce" modelElementPath="componentOf.encompassingEncounter.effectiveTime" condition=""/>
     <elements xmi:id="_LTTgsN6LEeeicbDlQdtpPg" businessElement="DocumentEncounterID" modelElement="_UiX1ICypEeGMXrZ0DiQwGg" businessElementId="a3fbbac5-0a09-4aa2-8f87-f7bc7c573abf" modelElementPath="componentOf.encompassingEncounter.id" condition=""/>
+    <elements xmi:id="_agukcDzCEeiNReRoMA-0oQ" businessElement="DocumentConfidentialityCode" modelElement="_U38XATzCEeiNReRoMA-0oQ" businessElementId="2a08de16-fc84-444d-a91c-d4b229fa502e" modelElementPath="confidentialityCode"/>
     <elements xmi:id="_ALOg8PAOEeefBvVUv-KCHA" businessElement="DocumentCustodianContainer" modelElement="_FvUHYBwXEeSMr-NWzQuDBw" businessElementId="162490ee-28df-4653-a7f9-4af3f812bbc3" modelElementPath="custodian" condition=""/>
     <elements xmi:id="_rzTzwN6BEeeTMIjPESqnaw" businessElement="DocumentCustodianOrganizationBusinessAddress" modelElement="_2zRkcCynEeGMXrZ0DiQwGg" businessElementId="21c0890f-4fec-4a68-89fe-0cbbaae6f311" modelElementPath="custodian.assignedCustodian.representedCustodianOrganization.addr" condition=""/>
     <elements xmi:id="_Vk9iQN6BEeeTMIjPESqnaw" businessElement="DocumentCustodianOrganizationID" modelElement="_2zSLgCynEeGMXrZ0DiQwGg" businessElementId="c2248529-5f7c-4c58-833b-46f53e300145" modelElementPath="custodian.assignedCustodian.representedCustodianOrganization.id" condition=""/>
@@ -15048,6 +15112,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <elements xmi:id="_kBjcwN6DEeex053nKTJxcg" businessElement="DocumentInformationRecipientOrganizationII" modelElement="_NSnM8I1mEeS-Q90NIeadnQ" businessElementId="632ea8eb-69ff-40fd-a8ed-9f8af5737147" modelElementPath="informationRecipient.intendedRecipient.id" condition=""/>
     <elements xmi:id="_qP84sN6DEeex053nKTJxcg" businessElement="DocumentInformationRecipientProviderName" modelElement="_IfG-8CymEeGMXrZ0DiQwGg" businessElementId="ed94e9d1-c8d1-4824-8523-5673bd609d2e" modelElementPath="informationRecipient.intendedRecipient.informationRecipient.name" condition=""/>
     <elements xmi:id="_tKohIN6DEeex053nKTJxcg" businessElement="DocumentInformationRecipientOrganizationName" modelElement="_tXLXQCzEEeGMXrZ0DiQwGg" businessElementId="455e4b2f-a6b5-4445-a9e2-d2387452ffa2" modelElementPath="informationRecipient.intendedRecipient.recievedOrganization.name" condition=""/>
+    <elements xmi:id="_btvKIDzCEeiNReRoMA-0oQ" businessElement="DocumentLanguageCode" modelElement="_U3-MMDzCEeiNReRoMA-0oQ" businessElementId="8f30da3a-b3b1-4842-9207-8dd372aa9c3f" modelElementPath="languageCode"/>
     <elements xmi:id="_uP9OMPANEeefBvVUv-KCHA" businessElement="DocumentLegalAuthenticatorContainer" modelElement="_62QBMBwYEeSMr-NWzQuDBw" businessElementId="99677bea-4fa1-4a70-aaea-d5fd5c18586d" modelElementPath="legalAuthenticator" condition=""/>
     <elements xmi:id="_64weAN6DEeex053nKTJxcg" businessElement="DocumentLegalAuthenticatorPersonAddress" modelElement="_nlqjxDVYEeGIw7CntkyPQw" businessElementId="0575a012-a7a7-40b7-8ad4-4cd0df5e5649" modelElementPath="legalAuthenticator.assignedEntity.addr" condition=""/>
     <elements xmi:id="_MLOEUN6EEeex053nKTJxcg" businessElement="DocumentLegalAuthenticatorPersonName" modelElement="_7LnMcOxvEeG7k4bbVdXbXw" businessElementId="24d9bf2d-849f-4890-b7b6-c074dc3fbce9" modelElementPath="legalAuthenticator.assignedEntity.assignedPerson.name" condition=""/>
@@ -15125,4 +15190,57 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     </elements>
     <elements xmi:id="_cHhRUN52Eeexw8ZuORLxGg" businessElement="DocumentTitle" modelElement="_xLnFsBwJEeSMr-NWzQuDBw" businessElementId="e02fcb5b-8e5e-4ebb-8252-913b1b080fe0" modelElementPath="title" condition=""/>
   </MDMI:MDMIMapping>
+  <CDA:PropertyValidation xmi:id="_OpURkDzCEeiNReRoMA-0oQ" base_Property="_OpQnMDzCEeiNReRoMA-0oQ">
+    <ruleId>CONF:5363, R2.1=CONF:1198-5363</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_OpZKEDzCEeiNReRoMA-0oQ" base_Property="_OpXU4DzCEeiNReRoMA-0oQ">
+    <ruleId>CONF:5253, R2.1=CONF:1198-5253</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Opa_QDzCEeiNReRoMA-0oQ" base_Property="_OpaYMDzCEeiNReRoMA-0oQ">
+    <ruleId>CONF:5256, R2.1=CONF:1198-5256</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_OpcNYDzCEeiNReRoMA-0oQ" base_Property="_OpbmUDzCEeiNReRoMA-0oQ" severity="WARNING">
+    <reference href="../consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
+    <ruleId>CONF:5259, R2.1=CONF:1198-5259</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_OpdbgDzCEeiNReRoMA-0oQ" base_Property="_OpbmUDzCEeiNReRoMA-0oQ"/>
+  <CDA:ValueSetConstraint xmi:id="_OpfQsDzCEeiNReRoMA-0oQ" base_Property="_OpeCkDzCEeiNReRoMA-0oQ">
+    <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:5372, R2.1=CONF:1198-5372</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_Opge0DzCEeiNReRoMA-0oQ" base_Property="_OpeCkDzCEeiNReRoMA-0oQ"/>
+  <CDA:PropertyValidation xmi:id="_OphF4zzCEeiNReRoMA-0oQ" severity="INFO" base_Property="_OphF4DzCEeiNReRoMA-0oQ">
+    <ruleId>CONF:5261, R2.1=CONF:1198-5261</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_OpiUADzCEeiNReRoMA-0oQ" severity="INFO" base_Property="_Ophs8DzCEeiNReRoMA-0oQ">
+    <ruleId>CONF:5264, R2.1=CONF:1198-5264</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_OpkJMDzCEeiNReRoMA-0oQ" base_Property="_OpjiIDzCEeiNReRoMA-0oQ">
+    <ruleId>CONF:1198-5254</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_U37I4DzCEeiNReRoMA-0oQ" base_Property="_U36h0DzCEeiNReRoMA-0oQ">
+    <ruleId>CONF:5363, R2.1=CONF:1198-5363</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_U37v8DzCEeiNReRoMA-0oQ" base_Property="_U37I4TzCEeiNReRoMA-0oQ">
+    <ruleId>CONF:5253, R2.1=CONF:1198-5253</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_U38XADzCEeiNReRoMA-0oQ" base_Property="_U37v8TzCEeiNReRoMA-0oQ">
+    <ruleId>CONF:5256, R2.1=CONF:1198-5256</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_U38-EDzCEeiNReRoMA-0oQ" base_Property="_U38XATzCEeiNReRoMA-0oQ" severity="WARNING">
+    <reference href="../consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
+    <ruleId>CONF:5259, R2.1=CONF:1198-5259</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_U39lIDzCEeiNReRoMA-0oQ" base_Property="_U38XATzCEeiNReRoMA-0oQ"/>
+  <CDA:ValueSetConstraint xmi:id="_U3-zQDzCEeiNReRoMA-0oQ" base_Property="_U3-MMDzCEeiNReRoMA-0oQ">
+    <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:5372, R2.1=CONF:1198-5372</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_U4AocDzCEeiNReRoMA-0oQ" base_Property="_U3-MMDzCEeiNReRoMA-0oQ"/>
+  <CDA:PropertyValidation xmi:id="_U4BPgDzCEeiNReRoMA-0oQ" severity="INFO" base_Property="_U4AocTzCEeiNReRoMA-0oQ">
+    <ruleId>CONF:5261, R2.1=CONF:1198-5261</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_U4B2kDzCEeiNReRoMA-0oQ" severity="INFO" base_Property="_U4BPgTzCEeiNReRoMA-0oQ">
+    <ruleId>CONF:5264, R2.1=CONF:1198-5264</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

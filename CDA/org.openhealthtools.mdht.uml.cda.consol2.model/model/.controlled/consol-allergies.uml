@@ -1105,6 +1105,21 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aQutwOG2Eee7xrSdyolseA" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_K0IpwKvuEeS-mulaI3YUlw" name="code" visibility="private" type="_LgbIAKvuEeS-mulaI3YUlw" redefinedProperty="_2EMv9BSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_6Vz-QD2UEeiEsubymXFtVg" name="id1" visibility="private" subsettedProperty="_2EMv8BSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Vz-QT2UEeiEsubymXFtVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Vz-Qj2UEeiEsubymXFtVg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6WCAsD2UEeiEsubymXFtVg" name="statusCode" visibility="private" aggregation="composite" redefinedProperty="_2ENXABSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6WCAsT2UEeiEsubymXFtVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6WCAsj2UEeiEsubymXFtVg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6WG5MD2UEeiEsubymXFtVg" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_2EPMMBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6WG5MT2UEeiEsubymXFtVg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6WG5Mj2UEeiEsubymXFtVg" value="1"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_LgbIAKvuEeS-mulaI3YUlw" name="CD">
       <ownedComment xmi:id="_MH-kQKy_EeSB84STE1Ny6A">
         <body>INLINE</body>
@@ -2583,4 +2598,15 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>CONF:1198-32750</ruleId>
     <ruleId>CONF:1198-32751</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_6V3ooD2UEeiEsubymXFtVg" base_Property="_6Vz-QD2UEeiEsubymXFtVg">
+    <ruleId>CONF:7472, R2.1=CONF:1198-7472</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_6WFEAD2UEeiEsubymXFtVg" base_Property="_6WCAsD2UEeiEsubymXFtVg">
+    <reference href="../consol-vocab.uml#_2GDxJhSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7485, R2.1=CONF:1198-7485, R2.1=CONF:1198-19086</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_6WG5Mz2UEeiEsubymXFtVg" base_Property="_6WG5MD2UEeiEsubymXFtVg">
+    <ruleId>CONF:7498</ruleId>
+    <ruleId>R2.1=CONF:1198-7498</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
