@@ -1170,68 +1170,74 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7FScFs3tEeahpd1P9sS4xg" value="1"/>
           <redefinedProperty href="FHIR-Core.uml#_4bGl08FMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7FU4UM3tEeahpd1P9sS4xg" name="extension_slice_pos2" type="_7FTDJM3tEeahpd1P9sS4xg" isOrdered="true">
+        <ownedAttribute xmi:id="_7FU4UM3tEeahpd1P9sS4xg" name="extension_slice_pos2" isOrdered="true">
           <ownedComment xmi:id="_7FVfYs3tEeahpd1P9sS4xg">
             <body>MAY contain zero or one [0..1] C-CDA on FHIR Data Enterer (identifier: http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Data-Enterer) (CONF:2219-1844).</body>
           </ownedComment>
           <ownedComment xmi:id="_7FVfYM3tEeahpd1P9sS4xg">
             <body>dataEnterer</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="FHIR-Core.uml#_4lCk_MFMEea5pdrFDq-m2g"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7FU4Uc3tEeahpd1P9sS4xg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7FU4Us3tEeahpd1P9sS4xg" value="1"/>
           <subsettedProperty href="FHIR-Core.uml#_4chiJcFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7FXUkM3tEeahpd1P9sS4xg" name="extension_slice_pos3" type="_7FVfZM3tEeahpd1P9sS4xg" isOrdered="true">
+        <ownedAttribute xmi:id="_7FXUkM3tEeahpd1P9sS4xg" name="extension_slice_pos3" isOrdered="true">
           <ownedComment xmi:id="_7FXUls3tEeahpd1P9sS4xg">
             <body>MAY contain zero or more [0..*] C-CDA on FHIR Informant (identifier: http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Informant) (CONF:2219-1849).</body>
           </ownedComment>
           <ownedComment xmi:id="_7FXUlM3tEeahpd1P9sS4xg">
             <body>informant</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="FHIR-Core.uml#_4lCk_MFMEea5pdrFDq-m2g"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7FXUkc3tEeahpd1P9sS4xg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7FXUks3tEeahpd1P9sS4xg" value="*"/>
           <subsettedProperty href="FHIR-Core.uml#_4chiJcFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7FZJxM3tEeahpd1P9sS4xg" name="extension_slice_pos4" type="_7FXUmM3tEeahpd1P9sS4xg" isOrdered="true">
+        <ownedAttribute xmi:id="_7FZJxM3tEeahpd1P9sS4xg" name="extension_slice_pos4" isOrdered="true">
           <ownedComment xmi:id="_7FZw083tEeahpd1P9sS4xg">
             <body>MAY contain zero or more [0..*] C-CDA on FHIR Information Recipient (identifier: http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Information-Recipient) (CONF:2219-1856).</body>
           </ownedComment>
           <ownedComment xmi:id="_7FZw0c3tEeahpd1P9sS4xg">
             <body>informationRecipient</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="FHIR-Core.uml#_4lCk_MFMEea5pdrFDq-m2g"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7FZJxc3tEeahpd1P9sS4xg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7FZJxs3tEeahpd1P9sS4xg" value="*"/>
           <subsettedProperty href="FHIR-Core.uml#_4chiJcFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7FbmA83tEeahpd1P9sS4xg" name="extension_slice_pos5" type="_7FZw1c3tEeahpd1P9sS4xg" isOrdered="true">
+        <ownedAttribute xmi:id="_7FbmA83tEeahpd1P9sS4xg" name="extension_slice_pos5" isOrdered="true">
           <ownedComment xmi:id="_7FbmCc3tEeahpd1P9sS4xg">
             <body>MAY contain zero or more [0..*] C-CDA on FHIR Participant (identifier: http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Participant) (CONF:2219-1861).</body>
           </ownedComment>
           <ownedComment xmi:id="_7FbmB83tEeahpd1P9sS4xg">
             <body>participant</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="FHIR-Core.uml#_4lCk_MFMEea5pdrFDq-m2g"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7FbmBM3tEeahpd1P9sS4xg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7FbmBc3tEeahpd1P9sS4xg" value="*"/>
           <subsettedProperty href="FHIR-Core.uml#_4chiJcFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7FdbOM3tEeahpd1P9sS4xg" name="extension_slice_pos6" type="_7FcNEM3tEeahpd1P9sS4xg" isOrdered="true">
+        <ownedAttribute xmi:id="_7FdbOM3tEeahpd1P9sS4xg" name="extension_slice_pos6" isOrdered="true">
           <ownedComment xmi:id="_7FeCQs3tEeahpd1P9sS4xg">
             <body>SHOULD contain zero or more [0..*] C-CDA on FHIR Performer (identifier: http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Performer) (CONF:2219-1869).</body>
           </ownedComment>
           <ownedComment xmi:id="_7FeCQM3tEeahpd1P9sS4xg">
             <body>performer</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="FHIR-Core.uml#_4lCk_MFMEea5pdrFDq-m2g"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7FdbOc3tEeahpd1P9sS4xg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7FdbOs3tEeahpd1P9sS4xg" value="*"/>
           <subsettedProperty href="FHIR-Core.uml#_4chiJcFMEea5pdrFDq-m2g"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_7Fhso83tEeahpd1P9sS4xg" name="extension_slice_pos7" type="_7FeCRM3tEeahpd1P9sS4xg" isOrdered="true">
+        <ownedAttribute xmi:id="_7Fhso83tEeahpd1P9sS4xg" name="extension_slice_pos7" isOrdered="true">
           <ownedComment xmi:id="_7FiTsM3tEeahpd1P9sS4xg">
             <body>MAY contain zero or more [0..*] C-CDA on FHIR Authorization (identifier: http://hl7.org/fhir/ccda/StructureDefinition/CCDA-on-FHIR-Authorization) (CONF:2219-2012).</body>
           </ownedComment>
           <ownedComment xmi:id="_7Fhsp83tEeahpd1P9sS4xg">
             <body>authorization</body>
           </ownedComment>
+          <type xmi:type="uml:Class" href="FHIR-Core.uml#_4lCk_MFMEea5pdrFDq-m2g"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7FhspM3tEeahpd1P9sS4xg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Fhspc3tEeahpd1P9sS4xg" value="*"/>
           <subsettedProperty href="FHIR-Core.uml#_4chiJcFMEea5pdrFDq-m2g"/>
@@ -1407,7 +1413,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
             <ownedComment xmi:id="_7LjcLM3tEeahpd1P9sS4xg">
               <body>party</body>
             </ownedComment>
-            <type xmi:type="uml:Class" href="FHIR-US-Core.uml#_BmBaoc3tEeahpd1P9sS4xg"/>
+            <type xmi:type="uml:Class" href="FHIR-Core.uml#_4lCk_MFMEea5pdrFDq-m2g"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7LjcJc3tEeahpd1P9sS4xg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LjcJs3tEeahpd1P9sS4xg" value="1"/>
             <redefinedProperty href="FHIR-Core.uml#_5FSyU8FMEea5pdrFDq-m2g"/>
@@ -1436,7 +1442,7 @@ More specific use cases, such as a Discharge Summary, Transfer Summary, Referral
             <ownedComment xmi:id="_7LmfdM3tEeahpd1P9sS4xg">
               <body>party</body>
             </ownedComment>
-            <type xmi:type="uml:Class" href="FHIR-US-Core.uml#_BmBaoc3tEeahpd1P9sS4xg"/>
+            <type xmi:type="uml:Class" href="FHIR-Core.uml#_4lCk_MFMEea5pdrFDq-m2g"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Ll4Zc3tEeahpd1P9sS4xg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Ll4Zs3tEeahpd1P9sS4xg" value="1"/>
             <redefinedProperty href="FHIR-Core.uml#_5FSyU8FMEea5pdrFDq-m2g"/>
