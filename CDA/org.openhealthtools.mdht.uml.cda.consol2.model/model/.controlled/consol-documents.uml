@@ -14968,7 +14968,6 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_QcivsEAMEd6wZe6nFLrjsw"/>
     </elements>
   </MDMI:MDMIMapping>
-   
   <MDMI:MDMIMapping xmi:id="_cHbxwN52Eeexw8ZuORLxGg" base_Class="_dduXkJ5OEeOr4eM3k36wAg">
     <elements xmi:id="_Uzq-cPfLEee9CfQv0N-wsA" businessElement="DocumentContainer" modelElement="_dduXkJ5OEeOr4eM3k36wAg" businessElementId="2fdd4cc0-f00f-4bd8-af66-36ed83874811" modelElementPath="" condition=""/>
     <elements xmi:id="_v-mhUPANEeefBvVUv-KCHA" businessElement="DocumentAuthenticatorContainer" modelElement="_Q-hqcBwaEeSMr-NWzQuDBw" businessElementId="eaa17bb1-8305-4976-8e8e-b4ad5daee758" modelElementPath="authenticator" condition=""/>
@@ -14997,10 +14996,10 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <elements xmi:id="_Et8SEN6SEee4Na9_qxj53g" businessElement="DocumentConsentValueCode" modelElement="_FDNykPI1EeGu1M-cCXg0Dg" businessElementId="6b5b4a84-f00d-454a-b49f-1a722b961f88" modelElementPath="authorization.consent.code" condition=""/>
     <elements xmi:id="_CsCEsN6SEee4Na9_qxj53g" businessElement="DocumentConsentID" modelElement="_FDOZoPI1EeGu1M-cCXg0Dg" businessElementId="95c3c083-0a46-45db-94cf-fcc21ea18cb6" modelElementPath="authorization.consent.id" condition=""/>
     <elements xmi:id="_GKD44PTaEeeaisKH6rAX4A" businessElement="DocumentTypeCode" modelElement="_2DNR5RSVEeGGzu7fmW9pXw" businessElementId="db98a4bb-4fc0-43cd-b3f2-c860653ea76e" modelElementPath="code" condition=""/>
-    <elements xmi:id="_OsN9QN6LEeeicbDlQdtpPg" businessElement="DocumentEncounterStartDateTime" modelElement="_UiXOECypEeGMXrZ0DiQwGg" businessElementId="ae5d7703-0152-4531-b99d-86652602f5f2" modelElementPath="componentOf.encompassingEncounter.effectiveTime" condition=""/>
-    <elements xmi:id="_QaqcEN6LEeeicbDlQdtpPg" businessElement="DocumentEncounterEndDateTime" modelElement="_UiXOECypEeGMXrZ0DiQwGg" businessElementId="92fc97bc-ae86-4eab-a91a-3e0e748d94ce" modelElementPath="componentOf.encompassingEncounter.effectiveTime" condition=""/>
+    <elements xmi:id="_sCzuIEIzEeiaydcwY1GDEQ" businessElement="DocumentEncompassingEncounterEndDateTime" modelElement="_UiXOECypEeGMXrZ0DiQwGg" businessElementId="a1dd23ff-46d9-4274-9267-310d772c7912" modelElementPath="componentOf.encompassingEncounter.effectiveTime" condition=""/>
+    <elements xmi:id="_t2ui0EIzEeiaydcwY1GDEQ" businessElement="DocumentEncompassingEncounterStartDateTime" modelElement="_UiXOECypEeGMXrZ0DiQwGg" businessElementId="61ba509f-a329-4a82-82a3-09b31311729c" modelElementPath="componentOf.encompassingEncounter.effectiveTime.low" condition=""/>
     <elements xmi:id="_LTTgsN6LEeeicbDlQdtpPg" businessElement="DocumentEncounterID" modelElement="_UiX1ICypEeGMXrZ0DiQwGg" businessElementId="a3fbbac5-0a09-4aa2-8f87-f7bc7c573abf" modelElementPath="componentOf.encompassingEncounter.id" condition=""/>
-    <elements xmi:id="_agukcDzCEeiNReRoMA-0oQ" businessElement="DocumentConfidentialityCode" modelElement="_U38XATzCEeiNReRoMA-0oQ" businessElementId="2a08de16-fc84-444d-a91c-d4b229fa502e" modelElementPath="confidentialityCode"/>
+    <elements xmi:id="_agukcDzCEeiNReRoMA-0oQ" businessElement="DocumentConfidentialityCode" modelElement="_U38XATzCEeiNReRoMA-0oQ" businessElementId="2a08de16-fc84-444d-a91c-d4b229fa502e" modelElementPath="confidentialityCode" condition=""/>
     <elements xmi:id="_ALOg8PAOEeefBvVUv-KCHA" businessElement="DocumentCustodianContainer" modelElement="_FvUHYBwXEeSMr-NWzQuDBw" businessElementId="162490ee-28df-4653-a7f9-4af3f812bbc3" modelElementPath="custodian" condition=""/>
     <elements xmi:id="_rzTzwN6BEeeTMIjPESqnaw" businessElement="DocumentCustodianOrganizationBusinessAddress" modelElement="_2zRkcCynEeGMXrZ0DiQwGg" businessElementId="21c0890f-4fec-4a68-89fe-0cbbaae6f311" modelElementPath="custodian.assignedCustodian.representedCustodianOrganization.addr" condition=""/>
     <elements xmi:id="_Vk9iQN6BEeeTMIjPESqnaw" businessElement="DocumentCustodianOrganizationID" modelElement="_2zSLgCynEeGMXrZ0DiQwGg" businessElementId="c2248529-5f7c-4c58-833b-46f53e300145" modelElementPath="custodian.assignedCustodian.representedCustodianOrganization.id" condition=""/>
@@ -15110,7 +15109,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <elements xmi:id="_kBjcwN6DEeex053nKTJxcg" businessElement="DocumentInformationRecipientOrganizationII" modelElement="_NSnM8I1mEeS-Q90NIeadnQ" businessElementId="632ea8eb-69ff-40fd-a8ed-9f8af5737147" modelElementPath="informationRecipient.intendedRecipient.id" condition=""/>
     <elements xmi:id="_qP84sN6DEeex053nKTJxcg" businessElement="DocumentInformationRecipientProviderName" modelElement="_IfG-8CymEeGMXrZ0DiQwGg" businessElementId="ed94e9d1-c8d1-4824-8523-5673bd609d2e" modelElementPath="informationRecipient.intendedRecipient.informationRecipient.name" condition=""/>
     <elements xmi:id="_tKohIN6DEeex053nKTJxcg" businessElement="DocumentInformationRecipientOrganizationName" modelElement="_tXLXQCzEEeGMXrZ0DiQwGg" businessElementId="455e4b2f-a6b5-4445-a9e2-d2387452ffa2" modelElementPath="informationRecipient.intendedRecipient.recievedOrganization.name" condition=""/>
-    <elements xmi:id="_btvKIDzCEeiNReRoMA-0oQ" businessElement="DocumentLanguageCode" modelElement="_U3-MMDzCEeiNReRoMA-0oQ" businessElementId="8f30da3a-b3b1-4842-9207-8dd372aa9c3f" modelElementPath="languageCode"/>
+    <elements xmi:id="_btvKIDzCEeiNReRoMA-0oQ" businessElement="DocumentLanguageCode" modelElement="_U3-MMDzCEeiNReRoMA-0oQ" businessElementId="8f30da3a-b3b1-4842-9207-8dd372aa9c3f" modelElementPath="languageCode" condition=""/>
     <elements xmi:id="_uP9OMPANEeefBvVUv-KCHA" businessElement="DocumentLegalAuthenticatorContainer" modelElement="_62QBMBwYEeSMr-NWzQuDBw" businessElementId="99677bea-4fa1-4a70-aaea-d5fd5c18586d" modelElementPath="legalAuthenticator" condition=""/>
     <elements xmi:id="_64weAN6DEeex053nKTJxcg" businessElement="DocumentLegalAuthenticatorPersonAddress" modelElement="_nlqjxDVYEeGIw7CntkyPQw" businessElementId="0575a012-a7a7-40b7-8ad4-4cd0df5e5649" modelElementPath="legalAuthenticator.assignedEntity.addr" condition=""/>
     <elements xmi:id="_MLOEUN6EEeex053nKTJxcg" businessElement="DocumentLegalAuthenticatorPersonName" modelElement="_7LnMcOxvEeG7k4bbVdXbXw" businessElementId="24d9bf2d-849f-4890-b7b6-c074dc3fbce9" modelElementPath="legalAuthenticator.assignedEntity.assignedPerson.name" condition=""/>
@@ -15241,4 +15240,5 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:PropertyValidation xmi:id="_U4B2kDzCEeiNReRoMA-0oQ" severity="INFO" base_Property="_U4BPgTzCEeiNReRoMA-0oQ">
     <ruleId>CONF:5264, R2.1=CONF:1198-5264</ruleId>
   </CDA:PropertyValidation>
+  <MDMI:MDMIMapping xmi:id="_uTz28D8_Eei5gJjJcAc_Mw" base_Class="_2jWfwJ5wEeOr4eM3k36wAg"/>
 </xmi:XMI>
