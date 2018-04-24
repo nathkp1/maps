@@ -4,10 +4,11 @@
     <models xmi:id="_wddqcThBEei0S5VSf4XlfQ" messageModelName="ModelName">
       <syntaxModel xmi:id="_wddqcjhBEei0S5VSf4XlfQ">
         <root xsi:type="mdmi:Bag" xmi:id="_wddqczhBEei0S5VSf4XlfQ" name="LTSS" minOccurs="1" maxOccurs="1" location="LTSS" semanticElement="_wddqtDhBEei0S5VSf4XlfQ">
-          <nodes xsi:type="mdmi:Bag" xmi:id="_wddqdDhBEei0S5VSf4XlfQ" name="Demographics" maxOccurs="1" location="Demographics" semanticElement="_wddqtThBEei0S5VSf4XlfQ">
+          <nodes xsi:type="mdmi:Bag" xmi:id="_wddqdDhBEei0S5VSf4XlfQ" name="BeneficiaryDemographics" maxOccurs="1" location="Demographics" semanticElement="_wddqtThBEei0S5VSf4XlfQ">
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqdThBEei0S5VSf4XlfQ" name="PatientName" maxOccurs="1" location="PatientName" semanticElement="_wddqtjhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqdjhBEei0S5VSf4XlfQ" name="PatientID" maxOccurs="1" location="PatientID" semanticElement="_wddqtzhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqdzhBEei0S5VSf4XlfQ" name="PatientBirthDate" maxOccurs="1" location="PatientBirthDate" semanticElement="_wddquDhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqdjhBEei0S5VSf4XlfQ" name="PatientIdentifier" maxOccurs="1" location="PatientIdentifier" semanticElement="_wddqtzhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_osXKIEfuEeiUOMRwwSITGg" name="PersonIdentifierType" maxOccurs="2147483647" semanticElement="_osXKIUfuEeiUOMRwwSITGg" formatExpressionLanguage="JSON"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqdzhBEei0S5VSf4XlfQ" name="PatientDateofBirth" maxOccurs="1" location="PatientDateofBirth" semanticElement="_wddquDhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqeDhBEei0S5VSf4XlfQ" name="PatientPhoneNumber" maxOccurs="1" location="PatientPhoneNumber" semanticElement="_wddquThBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqeThBEei0S5VSf4XlfQ" name="PatientAddress" maxOccurs="1" location="PatientAddress" semanticElement="_wddqujhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqejhBEei0S5VSf4XlfQ" name="EmergencyContactName" maxOccurs="1" location="EmergencyContactName" semanticElement="_wddquzhBEei0S5VSf4XlfQ"/>
@@ -15,65 +16,65 @@
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqfDhBEei0S5VSf4XlfQ" name="EmergencyContactPhoneNumber" maxOccurs="1" location="EmergencyContactPhoneNumber" semanticElement="_wddqvThBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqfThBEei0S5VSf4XlfQ" name="EmergencyBackupPlan" maxOccurs="1" location="EmergencyBackupPlan" semanticElement="_wddqvjhBEei0S5VSf4XlfQ"/>
           </nodes>
-          <nodes xsi:type="mdmi:Bag" xmi:id="_wddqfjhBEei0S5VSf4XlfQ" name="Goals" maxOccurs="1" location="Goals" semanticElement="_wddqvzhBEei0S5VSf4XlfQ">
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqfzhBEei0S5VSf4XlfQ" name="PatientGoal" maxOccurs="1" location="PatientGoal" semanticElement="_wddqwDhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqgDhBEei0S5VSf4XlfQ" name="GoalIntervention" maxOccurs="1" location="GoalIntervention" semanticElement="_wddqwThBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqgThBEei0S5VSf4XlfQ" name="PatientStrength" maxOccurs="1" location="PatientStrength" semanticElement="_wddqwjhBEei0S5VSf4XlfQ"/>
+          <nodes xsi:type="mdmi:Bag" xmi:id="_wddqfjhBEei0S5VSf4XlfQ" name="Goals&amp;Strengths" maxOccurs="1" location="Goals&amp;Strengths" semanticElement="_wddqvzhBEei0S5VSf4XlfQ">
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqfzhBEei0S5VSf4XlfQ" name="Goal" maxOccurs="1" location="Goal" semanticElement="_wddqwDhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqgDhBEei0S5VSf4XlfQ" name="SteporAction" maxOccurs="1" location="SteporAction" semanticElement="_wddqwThBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqgThBEei0S5VSf4XlfQ" name="Strength" maxOccurs="1" location="Strength" semanticElement="_wddqwjhBEei0S5VSf4XlfQ"/>
           </nodes>
           <nodes xsi:type="mdmi:Bag" xmi:id="_wddqgjhBEei0S5VSf4XlfQ" name="PersonCenteredPlanning" maxOccurs="1" location="PersonCenteredPlanning" semanticElement="_wddqwzhBEei0S5VSf4XlfQ">
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqgzhBEei0S5VSf4XlfQ" name="PatientNeed" maxOccurs="1" location="PatientNeed" semanticElement="_wddqxDhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqhDhBEei0S5VSf4XlfQ" name="HabitationChoiceIndicator" maxOccurs="1" location="HabitationChoiceIndicator" semanticElement="_wddqxThBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqhThBEei0S5VSf4XlfQ" name="HabitationChoiceOptions" maxOccurs="1" location="HabitationChoiceOptions" semanticElement="_wddqxjhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqhjhBEei0S5VSf4XlfQ" name="CareManagerName" maxOccurs="1" location="CareManagerName" semanticElement="_wddqxzhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqhzhBEei0S5VSf4XlfQ" name="CareManagerPhone" maxOccurs="1" location="CareManagerPhone" semanticElement="_wddqyDhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqiDhBEei0S5VSf4XlfQ" name="PatientComment" maxOccurs="1" location="PatientComment" semanticElement="_wddqyThBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqiThBEei0S5VSf4XlfQ" name="ServiceOptionsIndicator" maxOccurs="1" location="ServiceOptionsIndicator" semanticElement="_wddqyjhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqgzhBEei0S5VSf4XlfQ" name="AssessedNeed" maxOccurs="1" location="AssessedNeed" semanticElement="_wddqxDhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqhDhBEei0S5VSf4XlfQ" name="PersonSettingChoiceIndicator" maxOccurs="1" location="PersonSettingChoiceIndicator" semanticElement="_wddqxThBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqhThBEei0S5VSf4XlfQ" name="PersonSettingChoiceOptions" maxOccurs="1" location="PersonSettingChoiceOptions" semanticElement="_wddqxjhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqhjhBEei0S5VSf4XlfQ" name="PlanMonitorName" maxOccurs="1" location="PlanMonitorName" semanticElement="_wddqxzhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqhzhBEei0S5VSf4XlfQ" name="PlanMonitorPhoneNumber" maxOccurs="1" location="PlanMonitorPhoneNumber" semanticElement="_wddqyDhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqiDhBEei0S5VSf4XlfQ" name="Preference" maxOccurs="1" location="Preference" semanticElement="_wddqyThBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqiThBEei0S5VSf4XlfQ" name="ServiceOptionsGivenIndicator" maxOccurs="1" location="ServiceOptionsGivenIndicator" semanticElement="_wddqyjhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqijhBEei0S5VSf4XlfQ" name="ServiceSelectionIndicator" maxOccurs="1" location="ServiceSelectionIndicator" semanticElement="_wddqyzhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqizhBEei0S5VSf4XlfQ" name="ServicePlanPatientAgreement" maxOccurs="1" location="ServicePlanPatientAgreement" semanticElement="_wddqzDhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqjDhBEei0S5VSf4XlfQ" name="ProviderOptionsIndicator" maxOccurs="1" location="ProviderOptionsIndicator" semanticElement="_wddqzThBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqjThBEei0S5VSf4XlfQ" name="ProviderSelectionPatientAgreement" maxOccurs="1" location="ProviderSelectionPatientAgreement" semanticElement="_wddqzjhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqizhBEei0S5VSf4XlfQ" name="ServicePlanAgreementIndicator" maxOccurs="1" location="ServicePlanAgreementIndicator" semanticElement="_wddqzDhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqjDhBEei0S5VSf4XlfQ" name="ServiceProviderOptionsGivenIndicator" maxOccurs="1" location="ServiceProviderOptionsGivenIndicator" semanticElement="_wddqzThBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqjThBEei0S5VSf4XlfQ" name="ServiceProviderSelectionAgreementIndicator" maxOccurs="1" location="ServiceProviderSelectionAgreementIndicator" semanticElement="_wddqzjhBEei0S5VSf4XlfQ"/>
           </nodes>
-          <nodes xsi:type="mdmi:Bag" xmi:id="_wddqjjhBEei0S5VSf4XlfQ" name="PlanInfo" maxOccurs="1" location="PlanInfo" semanticElement="_wddqzzhBEei0S5VSf4XlfQ">
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqjzhBEei0S5VSf4XlfQ" name="EffectiveDate" maxOccurs="1" location="EffectiveDate" semanticElement="_wddq0DhBEei0S5VSf4XlfQ"/>
+          <nodes xsi:type="mdmi:Bag" xmi:id="_wddqjjhBEei0S5VSf4XlfQ" name="PlanInformation" maxOccurs="1" location="PlanInfo" semanticElement="_wddqzzhBEei0S5VSf4XlfQ">
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqjzhBEei0S5VSf4XlfQ" name="PlanEffectiveDate" maxOccurs="1" location="PlanEffectiveDate" semanticElement="_wddq0DhBEei0S5VSf4XlfQ"/>
           </nodes>
           <nodes xsi:type="mdmi:Bag" xmi:id="_wddqkDhBEei0S5VSf4XlfQ" name="PlanSignatures" maxOccurs="1" location="PlanSignatures" semanticElement="_wddq0ThBEei0S5VSf4XlfQ">
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqkThBEei0S5VSf4XlfQ" name="PatientSignature" maxOccurs="1" location="PatientSignature" semanticElement="_wddq0jhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqkjhBEei0S5VSf4XlfQ" name="PatientPrintedName" maxOccurs="1" location="PatientPrintedName" semanticElement="_wddq0zhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqkzhBEei0S5VSf4XlfQ" name="PatientSignatureDate" maxOccurs="1" location="PatientSignatureDate" semanticElement="_wddq1DhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqlDhBEei0S5VSf4XlfQ" name="GuardianSignature" maxOccurs="1" location="GuardianSignature" semanticElement="_wddq1ThBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqlThBEei0S5VSf4XlfQ" name="GuardianPrintedName" maxOccurs="1" location="GuardianPrintedName" semanticElement="_wddq1jhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqljhBEei0S5VSf4XlfQ" name="GuardianSignatureDate" maxOccurs="1" location="GuardianSignatureDate" semanticElement="_wddq1zhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqkThBEei0S5VSf4XlfQ" name="PersonSignature" maxOccurs="1" location="PersonSignature" semanticElement="_wddq0jhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqkjhBEei0S5VSf4XlfQ" name="PersonPrintedName" maxOccurs="1" location="PersonPrintedName" semanticElement="_wddq0zhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqkzhBEei0S5VSf4XlfQ" name="PersonSignatureDate" maxOccurs="1" location="PersonSignatureDate" semanticElement="_wddq1DhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqlDhBEei0S5VSf4XlfQ" name="GuardianLegalRepresentativeSignature" maxOccurs="1" location="GuardianLegalRepresentativeSignature" semanticElement="_wddq1ThBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqlThBEei0S5VSf4XlfQ" name="GuardianLegalRepresentativePrintedName" maxOccurs="1" location="GuardianLegalRepresentativePrintedName" semanticElement="_wddq1jhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqljhBEei0S5VSf4XlfQ" name="GuardianLegalRepresentativeSignatureDate" maxOccurs="1" location="GuardianLegalRepresentativeSignatureDate" semanticElement="_wddq1zhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqlzhBEei0S5VSf4XlfQ" name="SupportPlannerSignature" maxOccurs="1" location="SupportPlannerSignature" semanticElement="_wddq2DhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqmDhBEei0S5VSf4XlfQ" name="SupportPlannerPrintedName" maxOccurs="1" location="SupportPlannerPrintedName" semanticElement="_wddq2ThBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqmThBEei0S5VSf4XlfQ" name="SupportPlannerSignatureDate" maxOccurs="1" location="SupportPlannerSignatureDate" semanticElement="_wddq2jhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqmjhBEei0S5VSf4XlfQ" name="ProviderSignature" maxOccurs="1" location="ProviderSignature" semanticElement="_wddq2zhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqmzhBEei0S5VSf4XlfQ" name="ProviderPrintedName" maxOccurs="1" location="ProviderPrintedName" semanticElement="_wddq3DhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqnDhBEei0S5VSf4XlfQ" name="ProviderSignatureDate" maxOccurs="1" location="ProviderSignatureDate" semanticElement="_wddq3ThBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqmjhBEei0S5VSf4XlfQ" name="ServiceProviderSignature" maxOccurs="1" location="ServiceProviderSignature" semanticElement="_wddq2zhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqmzhBEei0S5VSf4XlfQ" name="ServiceProviderPrintedName" maxOccurs="1" location="ServiceProviderPrintedName" semanticElement="_wddq3DhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqnDhBEei0S5VSf4XlfQ" name="ServiceProviderSignatureDate" maxOccurs="1" location="ServiceProviderSignatureDate" semanticElement="_wddq3ThBEei0S5VSf4XlfQ"/>
           </nodes>
           <nodes xsi:type="mdmi:Bag" xmi:id="_wddqnThBEei0S5VSf4XlfQ" name="Risk" maxOccurs="1" location="Risk" semanticElement="_wddq3jhBEei0S5VSf4XlfQ">
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqnjhBEei0S5VSf4XlfQ" name="RiskValue" maxOccurs="1" location="RiskValue" semanticElement="_wddq3zhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqnjhBEei0S5VSf4XlfQ" name="IdentifiedRisk" maxOccurs="1" location="IdentifiedRisk" semanticElement="_wddq3zhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqnzhBEei0S5VSf4XlfQ" name="RiskManagementPlan" maxOccurs="1" location="RiskManagementPlan" semanticElement="_wddq4DhBEei0S5VSf4XlfQ"/>
           </nodes>
-          <nodes xsi:type="mdmi:Bag" xmi:id="_wddqoDhBEei0S5VSf4XlfQ" name="ServiceInfo" maxOccurs="1" location="ServiceInfo" semanticElement="_wddq4ThBEei0S5VSf4XlfQ">
+          <nodes xsi:type="mdmi:Bag" xmi:id="_wddqoDhBEei0S5VSf4XlfQ" name="ServiceInformation" maxOccurs="1" location="ServiceInformation" semanticElement="_wddq4ThBEei0S5VSf4XlfQ">
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqoThBEei0S5VSf4XlfQ" name="ServiceName" maxOccurs="1" location="ServiceName" semanticElement="_wddq4jhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqojhBEei0S5VSf4XlfQ" name="PatientDirectedServiceIndicator" maxOccurs="1" location="PatientDirectedServiceIndicator" semanticElement="_wddq4zhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqojhBEei0S5VSf4XlfQ" name="SelfDirectedServiceIndicator" maxOccurs="1" location="SelfDirectedServiceIndicator" semanticElement="_wddq4zhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqozhBEei0S5VSf4XlfQ" name="ServiceStartDate" maxOccurs="1" location="ServiceStartDate" semanticElement="_wddq5DhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqpDhBEei0S5VSf4XlfQ" name="ServiceEndDate" maxOccurs="1" location="ServiceEndDate" semanticElement="_wddq5ThBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqpThBEei0S5VSf4XlfQ" name="ServiceLocationAddress" maxOccurs="1" location="ServiceLocationAddress" semanticElement="_wddq5jhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqpThBEei0S5VSf4XlfQ" name="ServiceDeliveryAddress" maxOccurs="1" location="ServiceDeliveryAddress" semanticElement="_wddq5jhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqpjhBEei0S5VSf4XlfQ" name="ServiceComment" maxOccurs="1" location="ServiceComment" semanticElement="_wddq5zhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqpzhBEei0S5VSf4XlfQ" name="ServiceFundingSource" maxOccurs="1" location="ServiceFundingSource" semanticElement="_wddq6DhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqqDhBEei0S5VSf4XlfQ" name="ServiceUnitQuantity" maxOccurs="1" location="ServiceUnitQuantity" semanticElement="_wddq6ThBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqqThBEei0S5VSf4XlfQ" name="UnitServiceType" maxOccurs="1" location="UnitServiceType" semanticElement="_wddq6jhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqqjhBEei0S5VSf4XlfQ" name="ServiceUnitInterval" maxOccurs="1" location="ServiceUnitInterval" semanticElement="_wddq6zhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqqzhBEei0S5VSf4XlfQ" name="ServiceRateUnit" maxOccurs="1" location="ServiceRateUnit" semanticElement="_wddq7DhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqrDhBEei0S5VSf4XlfQ" name="TotalCostService" maxOccurs="1" location="TotalCostService" semanticElement="_wddq7ThBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqqThBEei0S5VSf4XlfQ" name="UnitofServiceType" maxOccurs="1" location="UnitofServiceType" semanticElement="_wddq6jhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqqjhBEei0S5VSf4XlfQ" name="ServiceUnitQuantityInterval" maxOccurs="1" location="ServiceUnitQuantityInterval" semanticElement="_wddq6zhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqqzhBEei0S5VSf4XlfQ" name="ServiceRatePerUnit" maxOccurs="1" location="ServiceRatePerUnit" semanticElement="_wddq7DhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqrDhBEei0S5VSf4XlfQ" name="TotalCostofService" maxOccurs="1" location="TotalCostofService" semanticElement="_wddq7ThBEei0S5VSf4XlfQ"/>
           </nodes>
           <nodes xsi:type="mdmi:Bag" xmi:id="_wddqrThBEei0S5VSf4XlfQ" name="ServiceProviderInfo" maxOccurs="1" location="ServiceProviderInfo" semanticElement="_wddq7jhBEei0S5VSf4XlfQ">
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqrjhBEei0S5VSf4XlfQ" name="SupportPlannerName" maxOccurs="1" location="SupportPlannerName" semanticElement="_wddq7zhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqrzhBEei0S5VSf4XlfQ" name="SupportPlannerPhone" maxOccurs="1" location="SupportPlannerPhone" semanticElement="_wddq8DhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqrzhBEei0S5VSf4XlfQ" name="SupportPlannerPhoneNumber" maxOccurs="1" location="SupportPlannerPhoneNumber" semanticElement="_wddq8DhBEei0S5VSf4XlfQ"/>
             <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqsDhBEei0S5VSf4XlfQ" name="ServiceProviderName" maxOccurs="1" location="ServiceProviderName" semanticElement="_wddq8ThBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqsThBEei0S5VSf4XlfQ" name="ServiceProviderPhone" maxOccurs="1" location="ServiceProviderPhone" semanticElement="_wddq8jhBEei0S5VSf4XlfQ"/>
-            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqsjhBEei0S5VSf4XlfQ" name="ParticipantRelationship" maxOccurs="1" location="ParticipantRelationship" semanticElement="_wddq8zhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqsThBEei0S5VSf4XlfQ" name="ServiceProviderPhoneNumber" maxOccurs="1" location="ServiceProviderPhoneNumber" semanticElement="_wddq8jhBEei0S5VSf4XlfQ"/>
+            <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_wddqsjhBEei0S5VSf4XlfQ" name="NonPaidServiceProviderRelationship" maxOccurs="1" location="NonPaidServiceProviderRelationship" semanticElement="_wddq8zhBEei0S5VSf4XlfQ"/>
           </nodes>
         </root>
       </syntaxModel>
@@ -82,7 +83,7 @@
           <mapFromMdmi xmi:id="_9dWBQThBEei0S5VSf4XlfQ" name="MDMI2Message4LTSS" businessElement="_wde9KzhBEei0S5VSf4XlfQ"/>
           <mapToMdmi xmi:id="_9dWBQDhBEei0S5VSf4XlfQ" name="Message2MDMI4LTSS" businessElement="_wde9KzhBEei0S5VSf4XlfQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqtThBEei0S5VSf4XlfQ" name="Demographics" elementType="NORMAL" datatype="_wdfgmjhBEei0S5VSf4XlfQ" parent="_wddqtDhBEei0S5VSf4XlfQ" children="_wddqtjhBEei0S5VSf4XlfQ _wddqtzhBEei0S5VSf4XlfQ _wddquDhBEei0S5VSf4XlfQ _wddquThBEei0S5VSf4XlfQ _wddqujhBEei0S5VSf4XlfQ _wddquzhBEei0S5VSf4XlfQ _wddqvDhBEei0S5VSf4XlfQ _wddqvThBEei0S5VSf4XlfQ _wddqvjhBEei0S5VSf4XlfQ" syntaxNode="_wddqdDhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqtThBEei0S5VSf4XlfQ" name="BeneficiaryDemographics" elementType="NORMAL" datatype="_wdfgmjhBEei0S5VSf4XlfQ" parent="_wddqtDhBEei0S5VSf4XlfQ" children="_wddqtjhBEei0S5VSf4XlfQ _wddqtzhBEei0S5VSf4XlfQ _wddquDhBEei0S5VSf4XlfQ _wddquThBEei0S5VSf4XlfQ _wddqujhBEei0S5VSf4XlfQ _wddquzhBEei0S5VSf4XlfQ _wddqvDhBEei0S5VSf4XlfQ _wddqvThBEei0S5VSf4XlfQ _wddqvjhBEei0S5VSf4XlfQ _osXKIUfuEeiUOMRwwSITGg" syntaxNode="_wddqdDhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_Av4JAThCEei0S5VSf4XlfQ" name="MDMI2Message4Demographics" businessElement="_wdeSjDhBEei0S5VSf4XlfQ"/>
           <mapToMdmi xmi:id="_Av4JADhCEei0S5VSf4XlfQ" name="Message2MDMI4Demographics" businessElement="_wdeSjDhBEei0S5VSf4XlfQ"/>
         </semanticElements>
@@ -90,11 +91,11 @@
           <mapFromMdmi xmi:id="_DDtM0ThCEei0S5VSf4XlfQ" name="MDMI2Message4PatientName" businessElement="_wdeSlDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapPersonNameToString"/>
           <mapToMdmi xmi:id="_DDtM0DhCEei0S5VSf4XlfQ" name="Message2MDMI4PatientName" businessElement="_wdeSlDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToPersonName"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqtzhBEei0S5VSf4XlfQ" name="PatientID" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqtThBEei0S5VSf4XlfQ" syntaxNode="_wddqdjhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqtzhBEei0S5VSf4XlfQ" name="PatientIdentifier" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqtThBEei0S5VSf4XlfQ" syntaxNode="_wddqdjhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_E5UDkThCEei0S5VSf4XlfQ" name="MDMI2Message4PatientID" businessElement="_wddrDThBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapInstanceIdentifierToString"/>
           <mapToMdmi xmi:id="_E5UDkDhCEei0S5VSf4XlfQ" name="Message2MDMI4PatientID" businessElement="_wddrDThBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToInstanceIdentifier"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddquDhBEei0S5VSf4XlfQ" name="PatientBirthDate" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqtThBEei0S5VSf4XlfQ" syntaxNode="_wddqdzhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddquDhBEei0S5VSf4XlfQ" name="PatientDateofBirth" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqtThBEei0S5VSf4XlfQ" syntaxNode="_wddqdzhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_GHnpwThCEei0S5VSf4XlfQ" name="MDMI2Message4PatientBirthDate" businessElement="_wddrCjhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapDateTimeToString"/>
           <mapToMdmi xmi:id="_GHnpwDhCEei0S5VSf4XlfQ" name="Message2MDMI4PatientBirthDate" businessElement="_wddrCjhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToDateTime"/>
         </semanticElements>
@@ -119,85 +120,85 @@
           <mapToMdmi xmi:id="_RbkqQDhCEei0S5VSf4XlfQ" name="Message2MDMI4EmergencyContactPhoneNumber" businessElement="_wde84ThBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToTelecom"/>
         </semanticElements>
         <semanticElements xmi:id="_wddqvjhBEei0S5VSf4XlfQ" name="EmergencyBackupPlan" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqtThBEei0S5VSf4XlfQ" syntaxNode="_wddqfThBEei0S5VSf4XlfQ"/>
-        <semanticElements xmi:id="_wddqvzhBEei0S5VSf4XlfQ" name="Goals" elementType="NORMAL" datatype="_wdfgmjhBEei0S5VSf4XlfQ" parent="_wddqtDhBEei0S5VSf4XlfQ" children="_wddqwDhBEei0S5VSf4XlfQ _wddqwThBEei0S5VSf4XlfQ _wddqwjhBEei0S5VSf4XlfQ" syntaxNode="_wddqfjhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqvzhBEei0S5VSf4XlfQ" name="Goals&amp;Strengths" elementType="NORMAL" datatype="_wdfgmjhBEei0S5VSf4XlfQ" parent="_wddqtDhBEei0S5VSf4XlfQ" children="_wddqwDhBEei0S5VSf4XlfQ _wddqwThBEei0S5VSf4XlfQ _wddqwjhBEei0S5VSf4XlfQ" syntaxNode="_wddqfjhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_UJlvsThCEei0S5VSf4XlfQ" name="MDMI2Message4Goals" businessElement="_wdeTcThBEei0S5VSf4XlfQ"/>
           <mapToMdmi xmi:id="_UJlvsDhCEei0S5VSf4XlfQ" name="Message2MDMI4Goals" businessElement="_wdeTcThBEei0S5VSf4XlfQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqwDhBEei0S5VSf4XlfQ" name="PatientGoal" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqvzhBEei0S5VSf4XlfQ" syntaxNode="_wddqfzhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqwDhBEei0S5VSf4XlfQ" name="Goal" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqvzhBEei0S5VSf4XlfQ" syntaxNode="_wddqfzhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_VuIroThCEei0S5VSf4XlfQ" name="MDMI2Message4PatientGoal" businessElement="_wdeTczhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_VuIroDhCEei0S5VSf4XlfQ" name="Message2MDMI4PatientGoal" businessElement="_wdeTczhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqwThBEei0S5VSf4XlfQ" name="GoalIntervention" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqvzhBEei0S5VSf4XlfQ" syntaxNode="_wddqgDhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqwThBEei0S5VSf4XlfQ" name="SteporAction" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqvzhBEei0S5VSf4XlfQ" syntaxNode="_wddqgDhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_alL6IThCEei0S5VSf4XlfQ" name="MDMI2Message4GoalIntervention" businessElement="_wdeUpzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_alL6IDhCEei0S5VSf4XlfQ" name="Message2MDMI4GoalIntervention" businessElement="_wdeUpzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqwjhBEei0S5VSf4XlfQ" name="PatientStrength" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqvzhBEei0S5VSf4XlfQ" syntaxNode="_wddqgThBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqwjhBEei0S5VSf4XlfQ" name="Strength" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqvzhBEei0S5VSf4XlfQ" syntaxNode="_wddqgThBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_fCVa4ThCEei0S5VSf4XlfQ" name="MDMI2Message4PatientStrength" businessElement="_wdeSIzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_fCVa4DhCEei0S5VSf4XlfQ" name="Message2MDMI4PatientStrength" businessElement="_wdeSIzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
         <semanticElements xmi:id="_wddqwzhBEei0S5VSf4XlfQ" name="PersonCenteredPlanning" elementType="NORMAL" datatype="_wdfgmjhBEei0S5VSf4XlfQ" parent="_wddqtDhBEei0S5VSf4XlfQ" children="_wddqxDhBEei0S5VSf4XlfQ _wddqxThBEei0S5VSf4XlfQ _wddqxjhBEei0S5VSf4XlfQ _wddqxzhBEei0S5VSf4XlfQ _wddqyDhBEei0S5VSf4XlfQ _wddqyThBEei0S5VSf4XlfQ _wddqyjhBEei0S5VSf4XlfQ _wddqyzhBEei0S5VSf4XlfQ _wddqzDhBEei0S5VSf4XlfQ _wddqzThBEei0S5VSf4XlfQ _wddqzjhBEei0S5VSf4XlfQ" syntaxNode="_wddqgjhBEei0S5VSf4XlfQ"/>
-        <semanticElements xmi:id="_wddqxDhBEei0S5VSf4XlfQ" name="PatientNeed" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqgzhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqxDhBEei0S5VSf4XlfQ" name="AssessedNeed" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqgzhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_g4PzoThCEei0S5VSf4XlfQ" name="MDMI2Message4PatientNeed" businessElement="_wde6MjhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_g4PzoDhCEei0S5VSf4XlfQ" name="Message2MDMI4PatientNeed" businessElement="_wde6MjhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqxThBEei0S5VSf4XlfQ" name="HabitationChoiceIndicator" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqhDhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqxThBEei0S5VSf4XlfQ" name="PersonSettingChoiceIndicator" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqhDhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_iMJrgThCEei0S5VSf4XlfQ" name="MDMI2Message4HabitationChoiceIndicator" businessElement="_wdeSIzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_iMJrgDhCEei0S5VSf4XlfQ" name="Message2MDMI4HabitationChoiceIndicator" businessElement="_wdeSIzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqxjhBEei0S5VSf4XlfQ" name="HabitationChoiceOptions" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqhThBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqxjhBEei0S5VSf4XlfQ" name="PersonSettingChoiceOptions" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqhThBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_jglu4ThCEei0S5VSf4XlfQ" name="MDMI2Message4HabitationChoiceOptions" businessElement="_wdeSIzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_jglu4DhCEei0S5VSf4XlfQ" name="Message2MDMI4HabitationChoiceOptions" businessElement="_wdeSIzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqxzhBEei0S5VSf4XlfQ" name="CareManagerName" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqhjhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqxzhBEei0S5VSf4XlfQ" name="PlanMonitorName" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqhjhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_lQ0WYThCEei0S5VSf4XlfQ" name="MDMI2Message4CareManagerName" businessElement="_wdeTnDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapPersonNameToString"/>
           <mapToMdmi xmi:id="_lQ0WYDhCEei0S5VSf4XlfQ" name="Message2MDMI4CareManagerName" businessElement="_wdeTnDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToPersonName"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqyDhBEei0S5VSf4XlfQ" name="CareManagerPhone" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqhzhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqyDhBEei0S5VSf4XlfQ" name="PlanMonitorPhoneNumber" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqhzhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_mxzoAThCEei0S5VSf4XlfQ" name="MDMI2Message4CareManagerPhone" businessElement="_wdfgcDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapTelecomToString"/>
           <mapToMdmi xmi:id="_mxzoADhCEei0S5VSf4XlfQ" name="Message2MDMI4CareManagerPhone" businessElement="_wdfgcDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToTelecom"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqyThBEei0S5VSf4XlfQ" name="PatientComment" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqiDhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqyThBEei0S5VSf4XlfQ" name="Preference" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqiDhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_q2b7EThCEei0S5VSf4XlfQ" name="MDMI2Message4PatientComment" businessElement="_wde6TDhBEei0S5VSf4XlfQ"/>
           <mapToMdmi xmi:id="_q2b7EDhCEei0S5VSf4XlfQ" name="Message2MDMI4PatientComment" businessElement="_wde6TDhBEei0S5VSf4XlfQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqyjhBEei0S5VSf4XlfQ" name="ServiceOptionsIndicator" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqiThBEei0S5VSf4XlfQ"/>
+        <semanticElements xmi:id="_wddqyjhBEei0S5VSf4XlfQ" name="ServiceOptionsGivenIndicator" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqiThBEei0S5VSf4XlfQ"/>
         <semanticElements xmi:id="_wddqyzhBEei0S5VSf4XlfQ" name="ServiceSelectionIndicator" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqijhBEei0S5VSf4XlfQ"/>
-        <semanticElements xmi:id="_wddqzDhBEei0S5VSf4XlfQ" name="ServicePlanPatientAgreement" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqizhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqzDhBEei0S5VSf4XlfQ" name="ServicePlanAgreementIndicator" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqizhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_s05y4ThCEei0S5VSf4XlfQ" name="MDMI2Message4ServicePlanPatientAgreement" businessElement="_wddrHzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_s05y4DhCEei0S5VSf4XlfQ" name="Message2MDMI4ServicePlanPatientAgreement" businessElement="_wddrHzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqzThBEei0S5VSf4XlfQ" name="ProviderOptionsIndicator" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqjDhBEei0S5VSf4XlfQ"/>
-        <semanticElements xmi:id="_wddqzjhBEei0S5VSf4XlfQ" name="ProviderSelectionPatientAgreement" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqjThBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqzThBEei0S5VSf4XlfQ" name="ServiceProviderOptionsGivenIndicator" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqjDhBEei0S5VSf4XlfQ"/>
+        <semanticElements xmi:id="_wddqzjhBEei0S5VSf4XlfQ" name="ServiceProviderSelectionAgreementIndicator" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqwzhBEei0S5VSf4XlfQ" syntaxNode="_wddqjThBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_3KBzoThCEei0S5VSf4XlfQ" name="MDMI2Message4ProviderSelectionPatientAgreement" businessElement="_wddrHzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_3KBzoDhCEei0S5VSf4XlfQ" name="Message2MDMI4ProviderSelectionPatientAgreement" businessElement="_wddrHzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddqzzhBEei0S5VSf4XlfQ" name="PlanInfo" elementType="NORMAL" datatype="_wdfgmjhBEei0S5VSf4XlfQ" parent="_wddqtDhBEei0S5VSf4XlfQ" children="_wddq0DhBEei0S5VSf4XlfQ" syntaxNode="_wddqjjhBEei0S5VSf4XlfQ"/>
-        <semanticElements xmi:id="_wddq0DhBEei0S5VSf4XlfQ" name="EffectiveDate" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqzzhBEei0S5VSf4XlfQ" syntaxNode="_wddqjzhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddqzzhBEei0S5VSf4XlfQ" name="PlanInformation" elementType="NORMAL" datatype="_wdfgmjhBEei0S5VSf4XlfQ" parent="_wddqtDhBEei0S5VSf4XlfQ" children="_wddq0DhBEei0S5VSf4XlfQ" syntaxNode="_wddqjjhBEei0S5VSf4XlfQ"/>
+        <semanticElements xmi:id="_wddq0DhBEei0S5VSf4XlfQ" name="PlanEffectiveDate" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqzzhBEei0S5VSf4XlfQ" syntaxNode="_wddqjzhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_5rPMIThCEei0S5VSf4XlfQ" name="MDMI2Message4EffectiveDate" businessElement="_wdeTvDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapDateTimeToString"/>
           <mapToMdmi xmi:id="_5rPMIDhCEei0S5VSf4XlfQ" name="Message2MDMI4EffectiveDate" businessElement="_wdeTvDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToDateTime"/>
         </semanticElements>
         <semanticElements xmi:id="_wddq0ThBEei0S5VSf4XlfQ" name="PlanSignatures" elementType="NORMAL" datatype="_wdfgmjhBEei0S5VSf4XlfQ" parent="_wddqtDhBEei0S5VSf4XlfQ" children="_wddq0jhBEei0S5VSf4XlfQ _wddq0zhBEei0S5VSf4XlfQ _wddq1DhBEei0S5VSf4XlfQ _wddq1ThBEei0S5VSf4XlfQ _wddq1jhBEei0S5VSf4XlfQ _wddq1zhBEei0S5VSf4XlfQ _wddq2DhBEei0S5VSf4XlfQ _wddq2ThBEei0S5VSf4XlfQ _wddq2jhBEei0S5VSf4XlfQ _wddq2zhBEei0S5VSf4XlfQ _wddq3DhBEei0S5VSf4XlfQ _wddq3ThBEei0S5VSf4XlfQ" syntaxNode="_wddqkDhBEei0S5VSf4XlfQ"/>
-        <semanticElements xmi:id="_wddq0jhBEei0S5VSf4XlfQ" name="PatientSignature" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqkThBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq0jhBEei0S5VSf4XlfQ" name="PersonSignature" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqkThBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_7uCKUThCEei0S5VSf4XlfQ" name="MDMI2Message4PatientSignature" businessElement="_wddrHzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_7uCKUDhCEei0S5VSf4XlfQ" name="Message2MDMI4PatientSignature" businessElement="_wddrHzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq0zhBEei0S5VSf4XlfQ" name="PatientPrintedName" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqkjhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq0zhBEei0S5VSf4XlfQ" name="PersonPrintedName" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqkjhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_-1g4oThCEei0S5VSf4XlfQ" name="MDMI2Message4PatientPrintedName" businessElement="_wdeSlDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapPersonNameToString"/>
           <mapToMdmi xmi:id="_-1g4oDhCEei0S5VSf4XlfQ" name="Message2MDMI4PatientPrintedName" businessElement="_wdeSlDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToPersonName"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq1DhBEei0S5VSf4XlfQ" name="PatientSignatureDate" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqkzhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq1DhBEei0S5VSf4XlfQ" name="PersonSignatureDate" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqkzhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_CGF4kThDEei0S5VSf4XlfQ" name="MDMI2Message4PatientSignatureDate" businessElement="_wddrIDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapDateTimeToString"/>
           <mapToMdmi xmi:id="_CGF4kDhDEei0S5VSf4XlfQ" name="Message2MDMI4PatientSignatureDate" businessElement="_wddrIDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToDateTime"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq1ThBEei0S5VSf4XlfQ" name="GuardianSignature" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqlDhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq1ThBEei0S5VSf4XlfQ" name="GuardianLegalRepresentativeSignature" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqlDhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_DbRi0ThDEei0S5VSf4XlfQ" name="MDMI2Message4GuardianSignature" businessElement="_wddrHzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_DbRi0DhDEei0S5VSf4XlfQ" name="Message2MDMI4GuardianSignature" businessElement="_wddrHzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq1jhBEei0S5VSf4XlfQ" name="GuardianPrintedName" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqlThBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq1jhBEei0S5VSf4XlfQ" name="GuardianLegalRepresentativePrintedName" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqlThBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_Fz1VoThDEei0S5VSf4XlfQ" name="MDMI2Message4GuardianPrintedName" businessElement="_wdeRszhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapPersonNameToString"/>
           <mapToMdmi xmi:id="_Fz1VoDhDEei0S5VSf4XlfQ" name="Message2MDMI4GuardianPrintedName" businessElement="_wdeRszhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToPersonName"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq1zhBEei0S5VSf4XlfQ" name="GuardianSignatureDate" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqljhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq1zhBEei0S5VSf4XlfQ" name="GuardianLegalRepresentativeSignatureDate" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqljhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_GyLNMThDEei0S5VSf4XlfQ" name="MDMI2Message4GuardianSignatureDate" businessElement="_wddrIDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapDateTimeToString"/>
           <mapToMdmi xmi:id="_GyLNMDhDEei0S5VSf4XlfQ" name="Message2MDMI4GuardianSignatureDate" businessElement="_wddrIDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToDateTime"/>
         </semanticElements>
@@ -213,27 +214,27 @@
           <mapFromMdmi xmi:id="_NSdqYThDEei0S5VSf4XlfQ" name="MDMI2Message4SupportPlannerSignatureDate" businessElement="_wdeTnzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapDateTimeToString"/>
           <mapToMdmi xmi:id="_NSdqYDhDEei0S5VSf4XlfQ" name="Message2MDMI4SupportPlannerSignatureDate" businessElement="_wdeTnzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToDateTime"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq2zhBEei0S5VSf4XlfQ" name="ProviderSignature" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqmjhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq2zhBEei0S5VSf4XlfQ" name="ServiceProviderSignature" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqmjhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_Qls8wThDEei0S5VSf4XlfQ" name="MDMI2Message4ProviderSignature" businessElement="_wde9KjhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapInstanceIdentifierToString"/>
           <mapToMdmi xmi:id="_Qls8wDhDEei0S5VSf4XlfQ" name="Message2MDMI4ProviderSignature" businessElement="_wde9KjhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToInstanceIdentifier"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq3DhBEei0S5VSf4XlfQ" name="ProviderPrintedName" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqmzhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq3DhBEei0S5VSf4XlfQ" name="ServiceProviderPrintedName" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqmzhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_TA2JgThDEei0S5VSf4XlfQ" name="MDMI2Message4ProviderPrintedName" businessElement="_wde9KThBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapPersonNameToString"/>
           <mapToMdmi xmi:id="_TA2JgDhDEei0S5VSf4XlfQ" name="Message2MDMI4ProviderPrintedName" businessElement="_wde9KThBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToPersonName"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq3ThBEei0S5VSf4XlfQ" name="ProviderSignatureDate" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqnDhBEei0S5VSf4XlfQ"/>
+        <semanticElements xmi:id="_wddq3ThBEei0S5VSf4XlfQ" name="ServiceProviderSignatureDate" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq0ThBEei0S5VSf4XlfQ" syntaxNode="_wddqnDhBEei0S5VSf4XlfQ"/>
         <semanticElements xmi:id="_wddq3jhBEei0S5VSf4XlfQ" name="Risk" elementType="LOCAL" datatype="_wdfgmjhBEei0S5VSf4XlfQ" parent="_wddqtDhBEei0S5VSf4XlfQ" children="_wddq3zhBEei0S5VSf4XlfQ _wddq4DhBEei0S5VSf4XlfQ" syntaxNode="_wddqnThBEei0S5VSf4XlfQ"/>
-        <semanticElements xmi:id="_wddq3zhBEei0S5VSf4XlfQ" name="RiskValue" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq3jhBEei0S5VSf4XlfQ" syntaxNode="_wddqnjhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq3zhBEei0S5VSf4XlfQ" name="IdentifiedRisk" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq3jhBEei0S5VSf4XlfQ" syntaxNode="_wddqnjhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_l7engThDEei0S5VSf4XlfQ" name="MDMI2Message4RiskValue" businessElement="_wde8ADhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_l7engDhDEei0S5VSf4XlfQ" name="Message2MDMI4RiskValue" businessElement="_wde8ADhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
         <semanticElements xmi:id="_wddq4DhBEei0S5VSf4XlfQ" name="RiskManagementPlan" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq3jhBEei0S5VSf4XlfQ" syntaxNode="_wddqnzhBEei0S5VSf4XlfQ"/>
-        <semanticElements xmi:id="_wddq4ThBEei0S5VSf4XlfQ" name="ServiceInfo" elementType="NORMAL" datatype="_wdfgmjhBEei0S5VSf4XlfQ" parent="_wddqtDhBEei0S5VSf4XlfQ" children="_wddq4jhBEei0S5VSf4XlfQ _wddq4zhBEei0S5VSf4XlfQ _wddq5DhBEei0S5VSf4XlfQ _wddq5ThBEei0S5VSf4XlfQ _wddq5jhBEei0S5VSf4XlfQ _wddq5zhBEei0S5VSf4XlfQ _wddq6DhBEei0S5VSf4XlfQ _wddq6ThBEei0S5VSf4XlfQ _wddq6jhBEei0S5VSf4XlfQ _wddq6zhBEei0S5VSf4XlfQ _wddq7DhBEei0S5VSf4XlfQ _wddq7ThBEei0S5VSf4XlfQ" syntaxNode="_wddqoDhBEei0S5VSf4XlfQ"/>
+        <semanticElements xmi:id="_wddq4ThBEei0S5VSf4XlfQ" name="ServiceInformation" elementType="NORMAL" datatype="_wdfgmjhBEei0S5VSf4XlfQ" parent="_wddqtDhBEei0S5VSf4XlfQ" children="_wddq4jhBEei0S5VSf4XlfQ _wddq4zhBEei0S5VSf4XlfQ _wddq5DhBEei0S5VSf4XlfQ _wddq5ThBEei0S5VSf4XlfQ _wddq5jhBEei0S5VSf4XlfQ _wddq5zhBEei0S5VSf4XlfQ _wddq6DhBEei0S5VSf4XlfQ _wddq6ThBEei0S5VSf4XlfQ _wddq6jhBEei0S5VSf4XlfQ _wddq6zhBEei0S5VSf4XlfQ _wddq7DhBEei0S5VSf4XlfQ _wddq7ThBEei0S5VSf4XlfQ" syntaxNode="_wddqoDhBEei0S5VSf4XlfQ"/>
         <semanticElements xmi:id="_wddq4jhBEei0S5VSf4XlfQ" name="ServiceName" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqoThBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_zT9rkThDEei0S5VSf4XlfQ" name="MDMI2Message4ServiceName" businessElement="_wdeUpzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_zT9rkDhDEei0S5VSf4XlfQ" name="Message2MDMI4ServiceName" businessElement="_wdeUpzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq4zhBEei0S5VSf4XlfQ" name="PatientDirectedServiceIndicator" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqojhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq4zhBEei0S5VSf4XlfQ" name="SelfDirectedServiceIndicator" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqojhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_4LolIThDEei0S5VSf4XlfQ" name="MDMI2Message4PatientDirectedServiceIndicator" businessElement="_wdeUbThBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapPersonNameToString"/>
           <mapToMdmi xmi:id="_4LolIDhDEei0S5VSf4XlfQ" name="Message2MDMI4PatientDirectedServiceIndicator" businessElement="_wdeUbThBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToPersonName"/>
         </semanticElements>
@@ -245,7 +246,7 @@
           <mapFromMdmi xmi:id="_GUvN0DhEEei0S5VSf4XlfQ" name="MDMI2Message4ServiceEndDate" businessElement="_wdfgdDhBEei0S5VSf4XlfQ"/>
           <mapToMdmi xmi:id="_GUumwDhEEei0S5VSf4XlfQ" name="Message2MDMI4ServiceEndDate" businessElement="_wdfgdDhBEei0S5VSf4XlfQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq5jhBEei0S5VSf4XlfQ" name="ServiceLocationAddress" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqpThBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq5jhBEei0S5VSf4XlfQ" name="ServiceDeliveryAddress" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqpThBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_JHr2kThEEei0S5VSf4XlfQ" name="MDMI2Message4ServiceLocationAddress" businessElement="_wdeUEDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapAddressToString"/>
           <mapToMdmi xmi:id="_JHr2kDhEEei0S5VSf4XlfQ" name="Message2MDMI4ServiceLocationAddress" businessElement="_wdeUEDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToAddress"/>
         </semanticElements>
@@ -255,13 +256,13 @@
           <mapToMdmi xmi:id="_RrLhoDhEEei0S5VSf4XlfQ" name="Message2MDMI4ServiceFundingSource" businessElement="_wdeUqzhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToInstanceIdentifier"/>
         </semanticElements>
         <semanticElements xmi:id="_wddq6ThBEei0S5VSf4XlfQ" name="ServiceUnitQuantity" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqqDhBEei0S5VSf4XlfQ"/>
-        <semanticElements xmi:id="_wddq6jhBEei0S5VSf4XlfQ" name="UnitServiceType" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqqThBEei0S5VSf4XlfQ"/>
-        <semanticElements xmi:id="_wddq6zhBEei0S5VSf4XlfQ" name="ServiceUnitInterval" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqqjhBEei0S5VSf4XlfQ"/>
-        <semanticElements xmi:id="_wddq7DhBEei0S5VSf4XlfQ" name="ServiceRateUnit" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqqzhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq6jhBEei0S5VSf4XlfQ" name="UnitofServiceType" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqqThBEei0S5VSf4XlfQ"/>
+        <semanticElements xmi:id="_wddq6zhBEei0S5VSf4XlfQ" name="ServiceUnitQuantityInterval" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqqjhBEei0S5VSf4XlfQ"/>
+        <semanticElements xmi:id="_wddq7DhBEei0S5VSf4XlfQ" name="ServiceRatePerUnit" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqqzhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_U8gIcThEEei0S5VSf4XlfQ" name="MDMI2Message4ServiceRateUnit" businessElement="_wdfgdThBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapPhysicalQuantityToString"/>
           <mapToMdmi xmi:id="_U8gIcDhEEei0S5VSf4XlfQ" name="Message2MDMI4ServiceRateUnit" businessElement="_wdfgdThBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToPhysicalQuantity"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq7ThBEei0S5VSf4XlfQ" name="TotalCostService" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqrDhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq7ThBEei0S5VSf4XlfQ" name="TotalCostofService" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq4ThBEei0S5VSf4XlfQ" syntaxNode="_wddqrDhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_W_IukThEEei0S5VSf4XlfQ" name="MDMI2Message4TotalCostService" businessElement="_wdfgdjhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapPhysicalQuantityToString"/>
           <mapToMdmi xmi:id="_W_IukDhEEei0S5VSf4XlfQ" name="Message2MDMI4TotalCostService" businessElement="_wdfgdjhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToPhysicalQuantity"/>
         </semanticElements>
@@ -270,7 +271,7 @@
           <mapFromMdmi xmi:id="_aW7w0ThEEei0S5VSf4XlfQ" name="MDMI2Message4SupportPlannerName" businessElement="_wdeTnDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapPersonNameToString"/>
           <mapToMdmi xmi:id="_aW7w0DhEEei0S5VSf4XlfQ" name="Message2MDMI4SupportPlannerName" businessElement="_wdeTnDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToPersonName"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq8DhBEei0S5VSf4XlfQ" name="SupportPlannerPhone" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq7jhBEei0S5VSf4XlfQ" syntaxNode="_wddqrzhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq8DhBEei0S5VSf4XlfQ" name="SupportPlannerPhoneNumber" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq7jhBEei0S5VSf4XlfQ" syntaxNode="_wddqrzhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_bZxt4ThEEei0S5VSf4XlfQ" name="MDMI2Message4SupportPlannerPhone" businessElement="_wdfgcDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapTelecomToString"/>
           <mapToMdmi xmi:id="_bZxt4DhEEei0S5VSf4XlfQ" name="Message2MDMI4SupportPlannerPhone" businessElement="_wdfgcDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToTelecom"/>
         </semanticElements>
@@ -278,14 +279,15 @@
           <mapFromMdmi xmi:id="_daF_0ThEEei0S5VSf4XlfQ" name="MDMI2Message4ServiceProviderName" businessElement="_wde9KThBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapPersonNameToString"/>
           <mapToMdmi xmi:id="_daF_0DhEEei0S5VSf4XlfQ" name="Message2MDMI4ServiceProviderName" businessElement="_wde9KThBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToPersonName"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq8jhBEei0S5VSf4XlfQ" name="ServiceProviderPhone" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq7jhBEei0S5VSf4XlfQ" syntaxNode="_wddqsThBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq8jhBEei0S5VSf4XlfQ" name="ServiceProviderPhoneNumber" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq7jhBEei0S5VSf4XlfQ" syntaxNode="_wddqsThBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_fsHFwThEEei0S5VSf4XlfQ" name="MDMI2Message4ServiceProviderPhone" businessElement="_wde6bDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapTelecomToString"/>
           <mapToMdmi xmi:id="_fsHFwDhEEei0S5VSf4XlfQ" name="Message2MDMI4ServiceProviderPhone" businessElement="_wde6bDhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToTelecom"/>
         </semanticElements>
-        <semanticElements xmi:id="_wddq8zhBEei0S5VSf4XlfQ" name="ParticipantRelationship" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq7jhBEei0S5VSf4XlfQ" syntaxNode="_wddqsjhBEei0S5VSf4XlfQ">
+        <semanticElements xmi:id="_wddq8zhBEei0S5VSf4XlfQ" name="NonPaidServiceProviderRelationship" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddq7jhBEei0S5VSf4XlfQ" syntaxNode="_wddqsjhBEei0S5VSf4XlfQ">
           <mapFromMdmi xmi:id="_ucIkgThEEei0S5VSf4XlfQ" name="MDMI2Message4ParticipantRelationship" businessElement="_wde6ajhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_ucIkgDhEEei0S5VSf4XlfQ" name="Message2MDMI4ParticipantRelationship" businessElement="_wde6ajhBEei0S5VSf4XlfQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
+        <semanticElements xmi:id="_osXKIUfuEeiUOMRwwSITGg" name="PersonIdentifierType" elementType="NORMAL" datatype="_wdfgjjhBEei0S5VSf4XlfQ" parent="_wddqtThBEei0S5VSf4XlfQ" syntaxNode="_osXKIEfuEeiUOMRwwSITGg"/>
       </elementSet>
     </models>
     <domainDictionary xmi:id="_wddq9DhBEei0S5VSf4XlfQ">
@@ -4212,6 +4214,18 @@
       <businessElements xmi:id="_UODg4EJyEei8e7XX4oYdHQ" name="DocumentServiceEventPractitionerEmailContact" description="Email contact for a clinician involved in the service event" reference="DocumentServiceEventPractitionerEmailContact" uniqueIdentifier="dc0e9f35-6b60-4c7a-bb2c-0dc2a637fdf6" referenceDatatype="_wdfgtzhBEei0S5VSf4XlfQ" readonly="true"/>
       <businessElements xmi:id="_UODg4UJyEei8e7XX4oYdHQ" name="DocumentServiceEventPractitionerFaxContact" description="Fax contact for a clinician involved in the service event" reference="DocumentServiceEventPractitionerFaxContact" uniqueIdentifier="2874f43a-aac0-41d7-99e2-a80c0f6f0c33" referenceDatatype="_wdfgtzhBEei0S5VSf4XlfQ" readonly="true"/>
       <businessElements xmi:id="_UODg4kJyEei8e7XX4oYdHQ" name="DocumentServiceEventPractitionerURLContact" description="URL contact for a clinician involved in the service event" reference="DocumentServiceEventPractitionerURLContact" uniqueIdentifier="9adc5a31-51c9-4a01-93c0-26097852f830" referenceDatatype="_wdfgtzhBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_VP8NsEfuEeiUOMRwwSITGg" name="DocumentAuthorOrganizationPhoneContact" description="Phone contact for the organization represented by the person that created the health care document" reference="DocumentAuthorOrganizationPhoneContact" uniqueIdentifier="29c2bf78-751f-4541-911c-01141692bba7" referenceDatatype="_wdfgtzhBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_VP8NsUfuEeiUOMRwwSITGg" name="DocumentAuthorOrganizationEmailContact" description="Email address for the the organization represented by person that created the health care document" reference="DocumentAuthorOrganizationEmailContact" uniqueIdentifier="1d85f4dc-eea5-4a47-9766-b863562ad10a" referenceDatatype="_wdfgtzhBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_VP80wEfuEeiUOMRwwSITGg" name="DocumentAuthorOrganizationID" description="Identifier for the the organization represented by the person that created the document" reference="DocumentAuthorOrganizationID" uniqueIdentifier="3fef6a19-d895-4b9e-a686-b8958ea4dd28" referenceDatatype="_wdfgqjhBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_VP80wUfuEeiUOMRwwSITGg" name="DocumentAuthorOrganizationCode" description="A code used to identify type of health care the organization represented by the practitioner that created the document." reference="DocumentAuthorOrganizationCode" uniqueIdentifier="b43d68ae-2e64-4c0a-80c7-e84b40b2c55a" referenceDatatype="_wdfgojhBEei0S5VSf4XlfQ" enumValueSet="2.16.840.1.114222.4.11.1066" readonly="true"/>
+      <businessElements xmi:id="_VP80wkfuEeiUOMRwwSITGg" name="DocumentAuthorOrganizationContainer" description="This contains information regarding the organization represented by the person that created the document." reference="DocumentAuthorOrganizationContainer" uniqueIdentifier="9bd9ed6f-9be2-49e3-a585-5c6f6275f866" referenceDatatype="_wdfgmjhBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_VP9b0EfuEeiUOMRwwSITGg" name="DocumentAuthorOrganizationizationContainer" description="Contains data and metadata about the organization represented by the person that created the document." reference="DocumentAuthorOrganizationizationContainer" uniqueIdentifier="52562a52-819b-47b4-8abb-299c41274955" referenceDatatype="_wdfgmjhBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_VP-C4EfuEeiUOMRwwSITGg" name="DocumentAuthorOrganizationPagerContact" description="Pager number for the organization represented by the person that created the health care document" reference="DocumentAuthorOrganizationPagerContact" uniqueIdentifier="ad14c2d0-8560-47ba-8ec7-404390aa0f90" referenceDatatype="_wdfgtzhBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_VP-C4UfuEeiUOMRwwSITGg" name="DocumentAuthorOrganizationCellPhoneContact" description="Cell phone number for the organization represented by person that created the health care document" reference="DocumentAuthorOrganizationCellPhoneContact" uniqueIdentifier="d5036f96-a699-44d5-85f0-a253605a09b2" referenceDatatype="_wdfgtzhBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_VP-p8EfuEeiUOMRwwSITGg" name="DocumentAuthorOrganizationName" description="This is the name of the organization represented by the person that created the EHR document." reference="DocumentAuthorOrganizationName" uniqueIdentifier="407a74ad-496d-4fe3-b0aa-f7004756a20c" referenceDatatype="_wdfgjjhBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_VP_RAEfuEeiUOMRwwSITGg" name="DocumentAuthorOrganizationAddress" description="Address for the organization represented by person or machine that created the EHR document." reference="DocumentAuthorOrganizationAddress" uniqueIdentifier="d1e13797-dba2-49b7-bb4a-a97ed5ed6a38" referenceDatatype="_wdfgwThBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_VP_RAUfuEeiUOMRwwSITGg" name="DocumentAuthorOrganizationURLContact" description="URL to contact the organization represented by the person that created the health care document" reference="DocumentAuthorOrganizationURLContact" uniqueIdentifier="fb3a5510-e2bb-44d6-83ce-d84331273abd" referenceDatatype="_wdfgtzhBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_VP_4EEfuEeiUOMRwwSITGg" name="DocumentFormatCode" description="Code for the message format of the document, e.g., CDA, FHIR" reference="DocumentFormatCode" uniqueIdentifier="f26c5e67-d2b6-4278-8c56-22437b648908" referenceDatatype="_wdfgojhBEei0S5VSf4XlfQ" readonly="true"/>
     </domainDictionary>
     <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_wdfgiThBEei0S5VSf4XlfQ" typeName="Binary" description="Binary" reference="http://www.w3.org/2001/XMLSchema#hexBinary"/>
     <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_wdfgijhBEei0S5VSf4XlfQ" typeName="Boolean" description="Boolean" reference="http://www.w3.org/2001/XMLSchema#boolean"/>
