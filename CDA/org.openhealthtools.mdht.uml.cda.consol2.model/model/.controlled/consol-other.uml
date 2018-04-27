@@ -3662,6 +3662,9 @@ Instructions are information or directions to the patient. Use the Instructions 
     </elements>
     <elements xmi:id="_1EzOMMlBEee0nNVAd1NCUA" businessElement="EncounterServiceLocationAddress" modelElement="_nD7_0B-YEeGtfPlBCjHWkw" businessElementId="f0a9e685-b6ef-4f7d-b289-1d4cfe407afd" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.addr"/>
     <elements xmi:id="_y4UvkMlBEee0nNVAd1NCUA" businessElement="EncounterServiceLocationTypeCode" modelElement="_nD_qMB-YEeGtfPlBCjHWkw" businessElementId="1c11660d-3f8b-4880-9b60-8831f7b4cb11" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.code"/>
+    <elements xmi:id="_6gcP4EP1EeiEFtUn3C7STQ" businessElement="EncounterServiceLocationName" businessElementId="e8db7c29-dc29-47c4-b150-05ba8c3384a1" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.playingEntity.name">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
+    </elements>
     <elements xmi:id="_3YYaYMlBEee0nNVAd1NCUA" businessElement="EncounterServiceLocationBusinessPhoneContact" modelElement="_nEARQB-YEeGtfPlBCjHWkw" businessElementId="0d2d5872-ff9c-4a64-96b2-dad08860219e" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.telecom"/>
     <elements xmi:id="_6M5JYMlBEee0nNVAd1NCUA" businessElement="EncounterServiceLocationEmailContact" modelElement="_nEARQB-YEeGtfPlBCjHWkw" businessElementId="48bf2416-82a1-4516-9ee3-2ed711c326fb" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.telecom"/>
     <elements xmi:id="_9F2TgMlBEee0nNVAd1NCUA" businessElement="EncounterServiceLocationFaxContact" modelElement="_nEARQB-YEeGtfPlBCjHWkw" businessElementId="6f3f76b3-5655-4389-b2d5-f961b0b75a91" modelElementPath="interventionAct.encounterActivity2.serviceDeliveryLocation.telecom"/>
@@ -4778,6 +4781,7 @@ Instructions are information or directions to the patient. Use the Instructions 
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_pcJJ8NFNEeerl8msWqYVwg" base_Class="_8rMFkPyHEeOozpLKXSm5NA">
     <elements xmi:id="_pcJxANFNEeerl8msWqYVwg" businessElement="FunctionalStatusSectionContainer" modelElement="_8rMFkPyHEeOozpLKXSm5NA" businessElementId="fd766bc7-febf-42ea-be92-2261b10a0e05" modelElementPath=""/>
+    <elements xmi:id="_ffYC8EmrEei1GK3IhTP0Dw" businessElement="FamilyHistorySectionIDCode" modelElement="_Fo-tsPyNEeOozpLKXSm5NA" businessElementId="f8650eda-f57b-4e5d-96ba-646b3b1c27ad" modelElementPath="code"/>
     <elements xmi:id="_GZee8NOeEeewTvEj3-k7xw" businessElement="FunctionalStatusResultOrganizerContainer" modelElement="_0IbdgPyLEeOozpLKXSm5NA" businessElementId="70544a04-0889-46f6-ad2f-87f3c49cd365" modelElementPath="functionalStatusOrganizer2"/>
     <elements xmi:id="_AP078NOlEeeFr58dSfy8-Q" businessElement="FunctionalStatusOrganizerAuthorSpecialtyCode" modelElement="_4YH_gKrmEeOxqJAXCMXUYg" businessElementId="1e06a311-2be5-47de-8d23-000c2bfad895" modelElementPath="functionalStatusOrganizer2.authorParticipation.assignedAuthor.code"/>
     <elements xmi:id="_9ZzKANOkEeeFr58dSfy8-Q" businessElement="FunctionalStatusOrganizerAuthorII" modelElement="_4YImkKrmEeOxqJAXCMXUYg" businessElementId="875fff3c-b9eb-4915-beb5-a32c7f4ef5fa" modelElementPath="functionalStatusOrganizer2.authorParticipation.assignedAuthor.id"/>
@@ -4832,6 +4836,8 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_tKg5INFNEeerl8msWqYVwg" businessElement="SelfCareTypeCode" modelElement="_rBjQsJmzEeOLJeQez13EkQ" businessElementId="799736dd-2601-4a6a-bd72-a7a437386065" modelElementPath="selfCareActivities.code"/>
     <elements xmi:id="_wH8TkNFNEeerl8msWqYVwg" businessElement="SelfCareDateTime" modelElement="_clEksAPmEeWlspDC_8d7eg" businessElementId="c6218af3-275b-4415-9351-7223805a7423" modelElementPath="selfCareActivities.effectiveTime"/>
     <elements xmi:id="_xMWW4NFNEeerl8msWqYVwg" businessElement="SelfCareValueCode" modelElement="_rBjQspmzEeOLJeQez13EkQ" businessElementId="0f3aa296-1c2f-4f1f-90ad-e1bc5a5bf373" modelElementPath="selfCareActivities.value"/>
+    <elements xmi:id="_ifF8YEmrEei1GK3IhTP0Dw" businessElement="FamilyHistorySectionNotes" modelElement="_2KNRUBSVEeGGzu7fmW9pXw" businessElementId="ba3b6032-f091-49c3-8e30-afc09d257502" modelElementPath="text"/>
+    <elements xmi:id="_hCnXUEmrEei1GK3IhTP0Dw" businessElement="FamilyHistorySectionTitleText" modelElement="_2KMqQBSVEeGGzu7fmW9pXw" businessElementId="456b1037-f987-4456-9749-a6e3c4c930e0" modelElementPath="title"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_PivwkNOeEeewTvEj3-k7xw" base_Class="_yU2tgOD0EeOmBMTtnrPqww">
     <elements xmi:id="_Piw-sNOeEeewTvEj3-k7xw" businessElement="FunctionalStatusResultOrganizerID" modelElement="_A3Tx8Ob0EeGINOJ_SD9_dA" businessElementId="1f107244-2f1f-4c57-905d-2a3312129659" modelElementPath="id"/>

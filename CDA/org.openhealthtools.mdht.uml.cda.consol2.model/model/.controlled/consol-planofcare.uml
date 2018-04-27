@@ -3459,6 +3459,12 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N2kGMOLnEeS505YV9ux2XA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N2kGMeLnEeS505YV9ux2XA" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_0C-EoEb_EeiUJ9P-JX2xWA" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0C-EoUb_EeiUJ9P-JX2xWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0C-Eokb_EeiUJ9P-JX2xWA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Njf0cEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ZWYYcOLnEeS505YV9ux2XA" name="Reference">
       <ownedComment xmi:id="_cz_HwOLnEeS505YV9ux2XA">
         <body>INLINE</body>
@@ -4445,6 +4451,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_fgdxgI9CEeeNuo6J86JnLQ" base_Class="_bwml0P4yEeO_Yb9cO8w3bA">
     <elements xmi:id="_fgdxgY9CEeeNuo6J86JnLQ" businessElement="PlannedTreatmentSection" modelElement="_bwml0P4yEeO_Yb9cO8w3bA" businessElementId="528dfaa6-b754-4fb7-91d9-d6827c7fe561" modelElementPath="" condition=""/>
+    <elements xmi:id="_XAiY8EmsEei1GK3IhTP0Dw" businessElement="InterventionPlanSectionIDCode" modelElement="_lXUzAP4zEeO_Yb9cO8w3bA" businessElementId="a1996900-d0c0-4ac7-acbe-226e472a1fca" modelElementPath="code"/>
     <elements xmi:id="_Zsj24JC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorName" businessElementId="b21237d4-1c4c-4ed7-9659-e8f5ca29d7f4" modelElementPath="plannedEncounter2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
@@ -4719,6 +4726,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       <modelElement xmi:type="uml:Property" href="consol-payers.uml#_XfFCwY9DEeOB0eBUISUB4Q"/>
     </elements>
     <elements xmi:id="_vMmlcJBOEeeUP_iWlufZpQ" businessElement="PlannedProcedureTargetSiteCode" modelElement="_jf9D8-eFEeOqBOMhgDlycQ" businessElementId="fda98fa8-924d-4168-bc54-cd1effdaee63" modelElementPath="plannedProcedure2.targetSiteCode" condition=""/>
+    <elements xmi:id="_bUzDcEmsEei1GK3IhTP0Dw" businessElement="InterventionPlanSectionNotes" modelElement="_2NWE4BSVEeGGzu7fmW9pXw" businessElementId="7c05a52c-6a02-4ae5-a0ca-d17781911eca" modelElementPath="text"/>
+    <elements xmi:id="_ZgXRYEmsEei1GK3IhTP0Dw" businessElement="InterventionPlanSectionTitleText" modelElement="_jNy_oOMzEeGfv4R-kzpM0g" businessElementId="c256fc17-a95f-4ff3-9d65-199dbaf2a60c" modelElementPath="title"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_26_JoJMQEeeSquiwsvVy0A" base_Class="_YPOXoJ14EeORR8_YW0n_jQ">
     <elements xmi:id="_27AXwJMQEeeSquiwsvVy0A" businessElement="GoalSectionContainer" modelElement="_YPOXoJ14EeORR8_YW0n_jQ" businessElementId="cac21d83-43b5-4e47-a040-0b741f0b0091" modelElementPath="" condition=""/>
@@ -4788,10 +4797,10 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </elements>
     <elements xmi:id="_RW5LQJMSEeeSquiwsvVy0A" businessElement="GoalObservationPriorityID" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="6fa55e1f-6a60-4891-a164-4f3e0349ffad" modelElementPath="goalObservation.priorityPreference.effectiveTime" condition=""/>
     <elements xmi:id="_K8AygJMSEeeSquiwsvVy0A" businessElement="GoalObservationPriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="6fa55e1f-6a60-4891-a164-4f3e0349ffad" modelElementPath="goalObservation.priorityPreference.id" condition=""/>
-    <elements xmi:id="_OVa-UJMSEeeSquiwsvVy0A" businessElement="GoalObservationPriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="0bc51be1-6da9-41f6-a81a-7694e6f9f8eb" modelElementPath="goalObservation.priorityPreference.value.cd" condition=""/>
+    <elements xmi:id="_OVa-UJMSEeeSquiwsvVy0A" businessElement="GoalObservationPriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="0bc51be1-6da9-41f6-a81a-7694e6f9f8eb" modelElementPath="goalObservation.priorityPreference.value.CD" condition=""/>
     <elements xmi:id="_roI2cEJWEei97rOEheFn2w" businessElement="GoalObservationStatusCode" modelElement="_MFUXo_p4EeS-CfvNxekztA" businessElementId="2fa1e580-e4d3-406b-912b-bd74f0f9d0d6" modelElementPath="goalObservation.statusCode" condition=""/>
-    <elements xmi:id="_CidjUABPEei6YOTMyLqbkw" businessElement="GoalObservationValueUnitMeasure" modelElement="_MFUXpvp4EeS-CfvNxekztA" businessElementId="4d4bd7dd-bf9b-4035-8442-2cc37d9a2358" modelElementPath="goalObservation.value.IVL_Pq" condition=""/>
-    <elements xmi:id="_UfHV4JMREeeSquiwsvVy0A" businessElement="GoalObservationValueCode" modelElement="_MFUXpvp4EeS-CfvNxekztA" businessElementId="3738c6a3-9051-4f2d-ab2f-1a6741382b57" modelElementPath="goalObservation.value.cd" condition=""/>
+    <elements xmi:id="_CidjUABPEei6YOTMyLqbkw" businessElement="GoalObservationValueUnitMeasure" modelElement="_MFUXpvp4EeS-CfvNxekztA" businessElementId="4d4bd7dd-bf9b-4035-8442-2cc37d9a2358" modelElementPath="goalObservation.value.CD" condition=""/>
+    <elements xmi:id="_UfHV4JMREeeSquiwsvVy0A" businessElement="GoalObservationValueCode" modelElement="_MFUXpvp4EeS-CfvNxekztA" businessElementId="3738c6a3-9051-4f2d-ab2f-1a6741382b57" modelElementPath="goalObservation.value.CD" condition=""/>
     <elements xmi:id="_4wSeYJMQEeeSquiwsvVy0A" businessElement="GoalObservationAuthorID" modelElement="_dPt2AJ14EeORR8_YW0n_jQ" businessElementId="b33ceb87-4603-4bb9-97a9-9bbb32b960b7" modelElementPath="text" condition=""/>
     <elements xmi:id="_7Rt5UJMQEeeSquiwsvVy0A" businessElement="GoalSectionNotes" modelElement="_dPt2AJ14EeORR8_YW0n_jQ" businessElementId="6850c5d3-00e8-4268-8a1c-3d5f9b3d650c" modelElementPath="text" condition=""/>
   </MDMI:MDMIMapping>

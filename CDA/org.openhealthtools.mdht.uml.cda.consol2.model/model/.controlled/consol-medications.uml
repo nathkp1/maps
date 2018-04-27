@@ -3020,6 +3020,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_VdnCEIjXEeeQNsptP1LNdA" base_Class="_5OKxwP1bEeO5Hq-yrsJSmg">
     <elements xmi:id="_SuY6IPAOEeefBvVUv-KCHA" businessElement="MedicalEquipmentSectionContainer" modelElement="_5OKxwP1bEeO5Hq-yrsJSmg" businessElementId="171a0111-5a81-4663-a5da-040f3e09cebd" modelElementPath=""/>
+    <elements xmi:id="_wZs2EEmrEei1GK3IhTP0Dw" businessElement="MedicalEquipmentSectionIDCode" modelElement="_2KF8kBSVEeGGzu7fmW9pXw" businessElementId="b0463a89-9e2d-47f8-b674-8b0232f91ff2" modelElementPath="code"/>
     <elements xmi:id="_G1_rcMP-EeeNiPaRrJTPNQ" businessElement="MedicalEquipmentOrganizerContainer" modelElement="_0uxUoP1jEeO5Hq-yrsJSmg" businessElementId="97a6b92f-cd74-477c-865b-41ae290f5022" modelElementPath="medicalEquipmentOrganizer"/>
     <elements xmi:id="_ZaJJEIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerTypeCode" businessElementId="5bae7eda-055a-4b46-97ff-528c39a874fe" modelElementPath="medicalEquipmentOrganizer.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_cHpUQI0dEeOB0eBUISUB4Q"/>
@@ -3057,6 +3058,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <elements xmi:id="_khLH8NFREeerl8msWqYVwg" businessElement="MedicalEquipmentOrderStatusCode" modelElement="_oW6N8MQSEeSt_63yiINGSw" businessElementId="be4360f0-8c0d-4a43-ae4a-496407b79c42" modelElementPath="nonMedicinalSupplyActivity2.statusCode"/>
     <elements xmi:id="_EMN7MNO0EeeXNquIOgF9HQ" businessElement="MedicalEquipmentProcedureContainer" modelElement="_HN47UP1kEeO5Hq-yrsJSmg" businessElementId="f57616cd-ccc1-4d12-872b-69d95400142c" modelElementPath="procedureActivityProcedure2"/>
     <elements xmi:id="_PvaJMNFREeerl8msWqYVwg" businessElement="MedicalEquipmentSectionNotes" modelElement="_2KHKshSVEeGGzu7fmW9pXw" businessElementId="eab8948d-0144-4fe0-8681-5568e442838b" modelElementPath="text"/>
+    <elements xmi:id="_uDcwYEmrEei1GK3IhTP0Dw" businessElement="MedicalEquipmentSectionTitleText" modelElement="_2KHKsBSVEeGGzu7fmW9pXw" businessElementId="daa0782b-01b7-48d5-b939-1a3720729d4c" modelElementPath="title"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_32IKYIjXEeeQNsptP1LNdA" base_Class="_k_C20OaCEeOmzetP5oaH3A">
     <elements xmi:id="_gK8HgNFREeerl8msWqYVwg" businessElement="MedicalEquipmentOrderID" modelElement="_2HTHQhSVEeGGzu7fmW9pXw" businessElementId="3f4b4882-2a19-4b1f-a9c6-4f094dd5c203" modelElementPath="id"/>
@@ -3068,6 +3070,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_nDZVQI8zEeeNuo6J86JnLQ" base_Class="_P2mp4ALQEeS0YMHMf4rRtQ">
     <elements xmi:id="_WCdS8PAOEeefBvVUv-KCHA" businessElement="MedicationSectionContainer" modelElement="_P2mp4ALQEeS0YMHMf4rRtQ" businessElementId="66b674e8-01c3-4eeb-8677-ef4c2636b555" modelElementPath="" condition=""/>
+    <elements xmi:id="_1T6tUEmrEei1GK3IhTP0Dw" businessElement="MedicationSectionIDCode" modelElement="_1zOyIALQEeS0YMHMf4rRtQ" businessElementId="0a81da94-8f2b-4316-9098-5b9b5df34c9d" modelElementPath="code"/>
     <elements xmi:id="_-MmSYNFTEeeRL5UBIHF9kA" businessElement="MedicationAdministeredContainer" modelElement="_tOsv0ALREeS0YMHMf4rRtQ" businessElementId="3a55586d-b8ac-4596-804e-83818f921f91" modelElementPath="medicationActivity2" condition=""/>
     <elements xmi:id="_P4-NgNFUEeeRL5UBIHF9kA" businessElement="MedicationAdministeredDrugFormCode" modelElement="_6PKzwOLYEeOc7-TVP7Wi6w" businessElementId="0d00c8b8-b802-4d2e-b42f-8b681db9df5c" modelElementPath="medicationActivity2.administrationUnitCode" condition=""/>
     <elements xmi:id="_suj7cB5FEeiF7sWWqfxGaw" businessElement="MedicationAdministrationTargetSiteCode" modelElement="_499F8B5EEeiF7sWWqfxGaw" businessElementId="117ffc37-696b-4d72-8aaa-0d04e7f3eba1" modelElementPath="medicationActivity2.approachSiteCode" condition=""/>
@@ -3307,6 +3310,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_bywKBJpdEeOK6dzbL4VoTA"/>
     </elements>
     <elements xmi:id="_7Zn0cNFTEeeRL5UBIHF9kA" businessElement="MedicationAdministeredNotes" modelElement="_lq4HIALTEeS0YMHMf4rRtQ" businessElementId="e8b737cc-12bc-4dcd-a0a5-650654055fab" modelElementPath="text" condition=""/>
+    <elements xmi:id="_3kGAMEmrEei1GK3IhTP0Dw" businessElement="MedicationSectionTitleText" modelElement="_lq5VQALTEeS0YMHMf4rRtQ" businessElementId="2721de24-f159-4fb2-b620-70701db6568c" modelElementPath="title"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_uhI0YBNlEeiEAsaZar18-g" base_Class="_F37nMP4jEeOwFalSp0fRiw"/>
   <MDMI:MDMIMapping xmi:id="_bkcDwBsOEeie1sc-o7Z7nQ" base_Class="_WnSCMOLAEeOc7-TVP7Wi6w">

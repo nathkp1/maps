@@ -1339,27 +1339,30 @@ The sources of payment are represented as a Coverage Activity, which identifies 
   </CDA:ValueSetConstraint>
   <MDMI:MDMIMapping xmi:id="_j1L2QMXLEeWCquoDViU_jA" base_Class="_2MV_UBSVEeGGzu7fmW9pXw">
     <elements xmi:id="_j1L2QcXLEeWCquoDViU_jA" businessElement="PayersSection" modelElement="_2MV_UBSVEeGGzu7fmW9pXw" businessElementId="06e1c816-6678-4ebd-bea6-279c4bd2048d" modelElementPath="" condition=""/>
-    <elements xmi:id="_ufJekMXLEeWCquoDViU_jA" businessElement="PayerSectionTitle" modelElement="_2MYbkBSVEeGGzu7fmW9pXw" businessElementId="55b77b1f-206d-4f6f-8688-55c107d805e7" modelElementPath="title" condition=""/>
-    <elements xmi:id="_wnlxwMXLEeWCquoDViU_jA" businessElement="PayerSectionText" modelElement="_2MZCoRSVEeGGzu7fmW9pXw" businessElementId="1789289c-83dc-4323-b789-5d109c2da816" modelElementPath="text" condition=""/>
     <elements xmi:id="_6LfJ4MXLEeWCquoDViU_jA" businessElement="PayerCoverageCollection" modelElement="_eyK8AhUmEeGvPruliC3crg" businessElementId="746bd27e-cf1b-4e85-97e5-ad524f96ca80" modelElementPath="coverageActivity" condition=""/>
     <elements xmi:id="_zQ-08NRqEee4jZ1YrULr4Q" businessElement="PayerCoverageII" modelElement="_FVBzRBUmEeGvPruliC3crg" businessElementId="8d076286-b1b7-4793-8bb4-bf8e21a790a3" modelElementPath="coverageActivity.id"/>
-    <elements xmi:id="_BpXPwNRrEee4jZ1YrULr4Q" businessElement="PayerPolicyID" modelElement="_UdHpMhUlEeGvPruliC3crg" businessElementId="ea047760-da59-48af-aeca-5173ce114b18" modelElementPath="coverageActivity.policyActivity.id"/>
     <elements xmi:id="_JU9CcNRrEee4jZ1YrULr4Q" businessElement="PayerPolicyTypeCode" modelElement="_UdHpMBUlEeGvPruliC3crg" businessElementId="2d27e43c-7534-4774-8a7a-676fe1d3ed88" modelElementPath="coverageActivity.policyActivity.code"/>
-    <elements xmi:id="_MvSbUNRrEee4jZ1YrULr4Q" businessElement="PayerCoverageTypeCode" modelElement="_JGNh0OWbEeGKmvzED_He2w" businessElementId="13466dc2-3396-4d1f-b358-f9104b96ee55" modelElementPath="coverageActivity.policyActivity.payer.typeCode"/>
+    <elements xmi:id="_BpXPwNRrEee4jZ1YrULr4Q" businessElement="PayerPolicyID" modelElement="_UdHpMhUlEeGvPruliC3crg" businessElementId="ea047760-da59-48af-aeca-5173ce114b18" modelElementPath="coverageActivity.policyActivity.id"/>
     <elements xmi:id="_ZEtf4NRrEee4jZ1YrULr4Q" businessElement="PayerPolicyPaymentAddress" modelElement="_s4EMEF0ZEeGt2doqSDULjA" businessElementId="cd7ead53-c09a-4d62-ba2d-5371fc6ea73f" modelElementPath="coverageActivity.policyActivity.payer.payerAssignedEntity.addr"/>
-    <elements xmi:id="_lZ3esNRrEee4jZ1YrULr4Q" businessElement="PayerPolicyPaymentBusinessPhoneContact" modelElement="_87mhIF0ZEeGt2doqSDULjA" businessElementId="5b2a0852-591c-4d48-ab43-826f678a7adf" modelElementPath="coverageActivity.policyActivity.payer.payerAssignedEntity.telecom"/>
+    <elements xmi:id="_0jqvYNRrEee4jZ1YrULr4Q" businessElement="PayerPolicyPaymentAddress" businessElementId="cd7ead53-c09a-4d62-ba2d-5371fc6ea73f" modelElementPath="coverageActivity.policyActivity.payer.payerAssignedEntity.payerOrganization.addr">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_OC77sErbEd6FXKclYGEDCw"/>
+    </elements>
     <elements xmi:id="_obQMENRrEee4jZ1YrULr4Q" businessElement="PayerPolicyPaymentOrganizationName" modelElement="_CCqsIF0bEeGt2doqSDULjA" businessElementId="13bd316e-4ab2-46a1-b9a6-40a46de5f38b" modelElementPath="coverageActivity.policyActivity.payer.payerAssignedEntity.payerOrganization.name"/>
     <elements xmi:id="_xph5gNRrEee4jZ1YrULr4Q" businessElement="PayerPolicyPaymentBusinessPhoneContact" businessElementId="5b2a0852-591c-4d48-ab43-826f678a7adf" modelElementPath="coverageActivity.policyActivity.payer.payerAssignedEntity.payerOrganization.telecom">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
     </elements>
-    <elements xmi:id="_0jqvYNRrEee4jZ1YrULr4Q" businessElement="PayerPolicyPaymentAddress" businessElementId="cd7ead53-c09a-4d62-ba2d-5371fc6ea73f" modelElementPath="coverageActivity.policyActivity.payer.payerAssignedEntity.payerOrganization.addr">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_OC77sErbEd6FXKclYGEDCw"/>
-    </elements>
+    <elements xmi:id="_lZ3esNRrEee4jZ1YrULr4Q" businessElement="PayerPolicyPaymentBusinessPhoneContact" modelElement="_87mhIF0ZEeGt2doqSDULjA" businessElementId="5b2a0852-591c-4d48-ab43-826f678a7adf" modelElementPath="coverageActivity.policyActivity.payer.payerAssignedEntity.telecom"/>
+    <elements xmi:id="_MvSbUNRrEee4jZ1YrULr4Q" businessElement="PayerCoverageTypeCode" modelElement="_JGNh0OWbEeGKmvzED_He2w" businessElementId="13466dc2-3396-4d1f-b358-f9104b96ee55" modelElementPath="coverageActivity.policyActivity.payer.typeCode"/>
+    <elements xmi:id="_wnlxwMXLEeWCquoDViU_jA" businessElement="PayerSectionText" modelElement="_2MZCoRSVEeGGzu7fmW9pXw" businessElementId="1789289c-83dc-4323-b789-5d109c2da816" modelElementPath="text" condition=""/>
+    <elements xmi:id="_ufJekMXLEeWCquoDViU_jA" businessElement="PayerSectionTitle" modelElement="_2MYbkBSVEeGGzu7fmW9pXw" businessElementId="55b77b1f-206d-4f6f-8688-55c107d805e7" modelElementPath="title" condition=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_uNcCkNRqEee4jZ1YrULr4Q" base_Class="_aJr6ULkxEeODDJAC5t5vpw">
     <elements xmi:id="_uNhiINRqEee4jZ1YrULr4Q" businessElement="PayerCoverageII" modelElement="_FVBzRBUmEeGvPruliC3crg" businessElementId="8d076286-b1b7-4793-8bb4-bf8e21a790a3" modelElementPath="id"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_bYgKkPAOEeefBvVUv-KCHA" base_Class="_twgM0P4lEeOzC5ykp-XCaA">
     <elements xmi:id="_bYhYsPAOEeefBvVUv-KCHA" businessElement="PayerSectionContainer" modelElement="_twgM0P4lEeOzC5ykp-XCaA" businessElementId="06e1c816-6678-4ebd-bea6-279c4bd2048d" modelElementPath=""/>
+    <elements xmi:id="_NoC_kEmsEei1GK3IhTP0Dw" businessElement="PayerSectionIDCode" modelElement="_KlFygP4mEeOzC5ykp-XCaA" businessElementId="cc37a75c-4060-4629-9d59-a402d88135eb" modelElementPath="code"/>
+    <elements xmi:id="_R1epUEmsEei1GK3IhTP0Dw" businessElement="PayerSectionNotes" modelElement="_2MZCoRSVEeGGzu7fmW9pXw" businessElementId="1789289c-83dc-4323-b789-5d109c2da816" modelElementPath="text"/>
+    <elements xmi:id="_QRkmkEmsEei1GK3IhTP0Dw" businessElement="PayerSectionTitleText" modelElement="_2MYbkBSVEeGGzu7fmW9pXw" businessElementId="44e573a3-4487-4208-b5f2-6ca920a599b5" modelElementPath="title"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>
