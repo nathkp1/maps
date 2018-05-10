@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdmi="http://schema.omg.org/spec/MDMI/1.0">
-  <mdmi:MessageGroup xmi:id="_ukNhoDEhEei0KJZN5DmkQw" name="BHCP" description="SKIPCONTAINMENT" defaultLocationExprLang="XPath" defaultConstraintExprLang="JavaScript" defaultRuleExprLang="JavaScript">
+  <mdmi:MessageGroup xmi:id="_ukNhoDEhEei0KJZN5DmkQw" name="BHCP2" description="SKIPCONTAINMENT" defaultLocationExprLang="XPath" defaultConstraintExprLang="JavaScript" defaultRuleExprLang="JavaScript">
     <models xmi:id="_ukNhoTEhEei0KJZN5DmkQw" messageModelName="Partners">
       <syntaxModel xmi:id="_ukNhojEhEei0KJZN5DmkQw">
         <root xsi:type="mdmi:Bag" xmi:id="_ukNhozEhEei0KJZN5DmkQw" name="SendDocuments" minOccurs="1" maxOccurs="1" location="SendDocuments" semanticElement="_ukNh8DEhEei0KJZN5DmkQw">
@@ -99,7 +99,7 @@
         </root>
       </syntaxModel>
       <elementSet xmi:id="_ukNh7zEhEei0KJZN5DmkQw">
-        <semanticElements xmi:id="_ukNh8DEhEei0KJZN5DmkQw" name="SendDocuments" elementType="NORMAL" datatype="_ukQnGzEhEei0KJZN5DmkQw" children="_ukNh8TEhEei0KJZN5DmkQw _ukNh8jEhEei0KJZN5DmkQw" syntaxNode="_ukNhozEhEei0KJZN5DmkQw">
+        <semanticElements xmi:id="_ukNh8DEhEei0KJZN5DmkQw" name="SendDocuments" elementType="NORMAL" datatype="_ukQnGzEhEei0KJZN5DmkQw" children="_ukNh8TEhEei0KJZN5DmkQw _ukNh8jEhEei0KJZN5DmkQw _ukNh8zEhEei0KJZN5DmkQw" syntaxNode="_ukNhozEhEei0KJZN5DmkQw">
           <mapFromMdmi xmi:id="_BmnL0TEzEeiXgN3YXDpWzw" name="MDMI2Message4SendDocuments" businessElement="_ukP_ODEhEei0KJZN5DmkQw"/>
           <mapToMdmi xmi:id="_BmnL0DEzEeiXgN3YXDpWzw" name="Message2MDMI4SendDocuments" businessElement="_ukP_ODEhEei0KJZN5DmkQw"/>
         </semanticElements>
@@ -111,7 +111,7 @@
           <mapFromMdmi xmi:id="_GP2AwTEzEeiXgN3YXDpWzw" name="MDMI2Message4To" businessElement="_t1V2MDExEeiLy4QKTwLebg" rule="DATATYPEMAP:mapTelecomToString"/>
           <mapToMdmi xmi:id="_GP2AwDEzEeiXgN3YXDpWzw" name="Message2MDMI4To" businessElement="_t1V2MDExEeiLy4QKTwLebg" rule="DATATYPEMAP:mapStringToTelecom"/>
         </semanticElements>
-        <semanticElements xmi:id="_ukNh8zEhEei0KJZN5DmkQw" name="ProvideAndRegisterDocumentSet" elementType="NORMAL" datatype="_ukQnGzEhEei0KJZN5DmkQw" parent="_ukNh8zEhEei0KJZN5DmkQw" children="_ukNh9DEhEei0KJZN5DmkQw _ukNh9TEhEei0KJZN5DmkQw _ukNh9zEhEei0KJZN5DmkQw _ukNh-DEhEei0KJZN5DmkQw _ukNh8zEhEei0KJZN5DmkQw" syntaxNode="_ukNhpjEhEei0KJZN5DmkQw"/>
+        <semanticElements xmi:id="_ukNh8zEhEei0KJZN5DmkQw" name="ProvideAndRegisterDocumentSet" elementType="NORMAL" datatype="_ukQnGzEhEei0KJZN5DmkQw" parent="_ukNh8DEhEei0KJZN5DmkQw" children="_ukNh9DEhEei0KJZN5DmkQw _ukNh9TEhEei0KJZN5DmkQw _ukNh9zEhEei0KJZN5DmkQw _ukNh-DEhEei0KJZN5DmkQw" syntaxNode="_ukNhpjEhEei0KJZN5DmkQw"/>
         <semanticElements xmi:id="_ukNh9DEhEei0KJZN5DmkQw" name="Author" elementType="NORMAL" datatype="_ukQnDzEhEei0KJZN5DmkQw" parent="_ukNh8zEhEei0KJZN5DmkQw" syntaxNode="_ukNhqjEhEei0KJZN5DmkQw">
           <mapFromMdmi xmi:id="_2fTv8TEhEei0KJZN5DmkQw" name="MDMI2Message4Author" businessElement="_ukNiFDEhEei0KJZN5DmkQw" rule="DATATYPEMAP:mapPersonNameToString"/>
           <mapToMdmi xmi:id="_2fTv8DEhEei0KJZN5DmkQw" name="Message2MDMI4Author" businessElement="_ukNiFDEhEei0KJZN5DmkQw" rule="DATATYPEMAP:mapStringToPersonName"/>
@@ -4321,9 +4321,6 @@
     <datatypeMaps xmi:id="_vXGXKTEhEei0KJZN5DmkQw" name="StringAndTelecomMapping" fromMDMI=" function mapTelecomToString(source,target) {&#xD;&#xA;target.setValue(source.getValue());&#xD;&#xA;}&#xD;&#xA;" toMDMI=" function mapStringToTelecom(source,target) {&#xD;&#xA;target.setValue(source.getValue());&#xD;&#xA;}&#xD;&#xA;"/>
     <datatypeMaps xmi:id="_vXGXKjEhEei0KJZN5DmkQw" name="StringAndPersonNameMapping" fromMDMI=" function mapPersonNameToString(source,target) {&#xD;&#xA; &#xD;&#xA;&#x9; var personName = '';&#xD;&#xA;&#x9; &#xD;&#xA;&#x9; var prefixSource = source.getXValue('prefix');&#xD;&#xA;&#x9;&#xD;&#xA;//&#x9; var prefixTarget = target.getXValue('prefix');&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;for (i = 0; i &lt; prefixSource.getValues().size(); i++) {&#xD;&#xA;&#x9;&#x9;&#x9;personName += ' ' + prefixSource.getValue(i);&#xD;&#xA;//&#x9;&#x9;&#x9;prefixTarget.addValue(prefixSource.getValue(i));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;var givenSource = source.getXValue('given');&#xD;&#xA;//&#x9;&#x9;var givenTarget = target.getXValue('given');&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;for (i = 0; i &lt; givenSource.getValues().size(); i++) {&#xD;&#xA;&#x9;&#x9;&#x9;personName += ' ' + givenSource.getValue(i);&#xD;&#xA;//&#x9;&#x9;&#x9;givenTarget.addValue(givenSource.getValue(i));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;var familySource = source.getXValue('family');&#xD;&#xA;//&#x9;&#x9;var familyTarget = target.getXValue('family');&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;for (i = 0; i &lt; familySource.getValues().size(); i++) {&#xD;&#xA;&#x9;&#x9;&#x9;personName += ' ' + familySource.getValue(i);&#xD;&#xA;//&#x9;&#x9;&#x9;familyTarget.addValue(familySource.getValue(i));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToPersonName(source,target) {&#xD;&#xA;&#x9;target.getXValue(&quot;family&quot;).addValue(source.getValue());&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;"/>
     <datatypeMaps xmi:id="_vXGXKzEhEei0KJZN5DmkQw" name="StringAndAddressMapping" fromMDMI="" toMDMI=""/>
-    <datatypeMaps xmi:id="_2fTv8jEhEei0KJZN5DmkQw" name="MapStringToPersonName" description="MapStringToPersonName" fromMDMI="function mapStringToPersonName(source,target) {}" toMDMI="function mapPersonNameToString(source,target) {}" mdmiDatatype="_ukQnPDEhEei0KJZN5DmkQw"/>
-    <datatypeMaps xmi:id="_EMpZ8jEzEeiXgN3YXDpWzw" name="MapStringToTelecom" description="MapStringToTelecom" fromMDMI="function mapStringToTelecom(source,target) {}" toMDMI="function mapTelecomToString(source,target) {}" mdmiDatatype="_ukQnODEhEei0KJZN5DmkQw"/>
-    <datatypeMaps xmi:id="_GP2AwjEzEeiXgN3YXDpWzw" name="MapStringToTelecom" description="MapStringToTelecom" fromMDMI="function mapStringToTelecom(source,target) {}" toMDMI="function mapTelecomToString(source,target) {}" mdmiDatatype="_ukQnODEhEei0KJZN5DmkQw"/>
     <datatypeMaps xmi:id="_sJR9cDgKEeiGIZgxsvlwPg" name="StringAndBinaryMapping" fromMDMI="" toMDMI=""/>
     <datatypeMaps xmi:id="_sJR9cTgKEeiGIZgxsvlwPg" name="StringAndBooleanMapping" fromMDMI="" toMDMI="function mapStringToBoolean(source,target) { &#xD;&#xA;&#x9;target.setValue(source);&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;"/>
     <datatypeMaps xmi:id="_sJSkgDgKEeiGIZgxsvlwPg" name="StringAndDateTimeMapping" fromMDMI=" function mapDateTimeToString(source,target) {&#xD;&#xA;target.setValue(source.getValue());&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToDateTime(source,target) {&#xD;&#xA;&#x9;target.setValue(source );&#xD;&#xA;}&#xD;&#xA;"/>
