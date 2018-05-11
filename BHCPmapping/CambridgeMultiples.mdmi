@@ -4285,11 +4285,11 @@
     </datatypes>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_81qUg1OsEeibH43Pyfv7-A" typeName="Container" isReadonly="true"/>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_Qil78FOuEeibH43Pyfv7-A" typeName="DocumentSetType">
-      <fields xmi:id="_T22iAFOuEeibH43Pyfv7-A" name="id"/>
-      <fields xmi:id="_U5VSsFOuEeibH43Pyfv7-A" name="sourceId"/>
-      <fields xmi:id="_Wehu4FOuEeibH43Pyfv7-A" name="submissionTime"/>
-      <fields xmi:id="_YUS9sFOuEeibH43Pyfv7-A" name="title"/>
-      <fields xmi:id="_ZiwU4FOuEeibH43Pyfv7-A" name="uniqueId"/>
+      <fields xmi:id="_T22iAFOuEeibH43Pyfv7-A" name="id" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_U5VSsFOuEeibH43Pyfv7-A" name="sourceId" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_Wehu4FOuEeibH43Pyfv7-A" name="submissionTime" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_YUS9sFOuEeibH43Pyfv7-A" name="title" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_ZiwU4FOuEeibH43Pyfv7-A" name="uniqueId" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
     </datatypes>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_81qUhFOsEeibH43Pyfv7-A" typeName="TranslationDT" isReadonly="true">
       <fields xmi:id="_81qUhVOsEeibH43Pyfv7-A" name="code" minOccurs="1" maxOccurs="1" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
@@ -4309,17 +4309,17 @@
       <fields xmi:id="_81qUklOsEeibH43Pyfv7-A" name="translation" minOccurs="1" maxOccurs="1" datatype="_81qUhFOsEeibH43Pyfv7-A"/>
     </datatypes>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_JjCt4FPEEeiEn5X6DhUUfg" typeName="DocumentData">
-      <fields xmi:id="_LWeaYFPEEeiEn5X6DhUUfg" name="availabilityStatus"/>
-      <fields xmi:id="_OFJAEFPEEeiEn5X6DhUUfg" name="creationTime"/>
-      <fields xmi:id="_SsZfEFPEEeiEn5X6DhUUfg" name="id"/>
-      <fields xmi:id="_Ua6PUFPEEeiEn5X6DhUUfg" name="languageCode"/>
-      <fields xmi:id="_YH6skFPEEeiEn5X6DhUUfg" name="serviceStartTime"/>
-      <fields xmi:id="_ajk2sFPEEeiEn5X6DhUUfg" name="serviceStopTime"/>
-      <fields xmi:id="_dsGt4FPEEeiEn5X6DhUUfg" name="title"/>
+      <fields xmi:id="_LWeaYFPEEeiEn5X6DhUUfg" name="availabilityStatus" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_OFJAEFPEEeiEn5X6DhUUfg" name="creationTime" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_SsZfEFPEEeiEn5X6DhUUfg" name="id" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_Ua6PUFPEEeiEn5X6DhUUfg" name="languageCode" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_YH6skFPEEeiEn5X6DhUUfg" name="serviceStartTime" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_ajk2sFPEEeiEn5X6DhUUfg" name="serviceStopTime" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_dsGt4FPEEeiEn5X6DhUUfg" name="title" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
     </datatypes>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_YSAlEFO2EeiJM7HSdtnLrw" typeName="SendDocumentsType">
-      <fields xmi:id="_ahU8UFO2EeiJM7HSdtnLrw" name="xmlns:ihe"/>
-      <fields xmi:id="_dsi7IFO2EeiJM7HSdtnLrw" name="xmlns:rhap"/>
+      <fields xmi:id="_ahU8UFO2EeiJM7HSdtnLrw" name="xmlns:ihe" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_dsi7IFO2EeiJM7HSdtnLrw" name="xmlns:rhap" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
     </datatypes>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_81qUk1OsEeibH43Pyfv7-A" typeName="InstanceIdentifier" isReadonly="true">
       <fields xmi:id="_81qUlFOsEeibH43Pyfv7-A" name="assigningAuthorityName" minOccurs="1" maxOccurs="1" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
@@ -4334,8 +4334,8 @@
       <fields xmi:id="_81qUnFOsEeibH43Pyfv7-A" name="value" minOccurs="1" maxOccurs="1" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
     </datatypes>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_7kLYkFO-EeiWj6FQgVETWg" typeName="PatientInfo">
-      <fields xmi:id="_85ry8FO-EeiWj6FQgVETWg" name="dateOfBirth"/>
-      <fields xmi:id="__udAoFO-EeiWj6FQgVETWg" name="gender"/>
+      <fields xmi:id="_85ry8FO-EeiWj6FQgVETWg" name="dateOfBirth" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="__udAoFO-EeiWj6FQgVETWg" name="gender" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
     </datatypes>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_81qUnVOsEeibH43Pyfv7-A" typeName="PhysicalRatio" isReadonly="true">
       <fields xmi:id="_81qUnlOsEeibH43Pyfv7-A" name="denominator" minOccurs="1" maxOccurs="1" datatype="_81qUdVOsEeibH43Pyfv7-A"/>
