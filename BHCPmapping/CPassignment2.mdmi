@@ -110,9 +110,7 @@
         </semanticElements>
         <semanticElements xmi:id="_hPqt004ZEei3m6zpCDWXUQ" name="Health_Plan_ID" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtn04ZEei3m6zpCDWXUQ">
           <mapFromMdmi xmi:id="_bPwf8U4hEeilGqJNTftrGg" name="Message2MDMI4Health_Plan_ID" businessElement="_hPquE04ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapInstanceIdentifierToString"/>
-          <mapFromMdmi xmi:id="_67HfUFSAEeiM7uglsE-Y1g" name="Message2MDMI4Health_Plan_ID2" businessElement="_hPqwL04ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapInstanceIdentifierToString"/>
           <mapToMdmi xmi:id="_bPwf8E4hEeilGqJNTftrGg" name="Message2MDMI4Health_Plan_ID" businessElement="_hPquE04ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapStringToInstanceIdentifier"/>
-          <mapToMdmi xmi:id="_67G4QFSAEeiM7uglsE-Y1g" name="Message2MDMI4Health_Plan_ID1" businessElement="_hPqwL04ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapStringToInstanceIdentifier"/>
         </semanticElements>
         <semanticElements xmi:id="_hPqt1E4ZEei3m6zpCDWXUQ" name="Member_CP_Assignment_Plan" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtoE4ZEei3m6zpCDWXUQ">
           <mapFromMdmi xmi:id="_iTjS0U4hEeilGqJNTftrGg" name="Message2MDMI4Member_CP_Assignment_Plan" businessElement="_hPtMiU4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapCodedElementToString"/>
@@ -4351,9 +4349,5 @@
     <datatypeMaps xmi:id="_8ebvhE4aEei3m6zpCDWXUQ" name="StringAndDateTimeMapping" fromMDMI=" function mapDateTimeToString(source,target) {&#xD;&#xA;target.setValue(source.getValue());&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToDateTime(source,target) {&#xD;&#xA;&#x9;target.setValue(source );&#xD;&#xA;}&#xD;&#xA;"/>
     <datatypeMaps xmi:id="_8ebvhU4aEei3m6zpCDWXUQ" name="StringAndDecimalMapping" fromMDMI="" toMDMI=""/>
     <datatypeMaps xmi:id="_8ebvhk4aEei3m6zpCDWXUQ" name="StringAndIntegerMapping" fromMDMI="function mapIntegerToString(source,target) { &#xD;&#xA;&#x9;target.setValue(source.getValue());&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;" toMDMI="function mapStringToInteger(source,target) { &#xD;&#xA;&#x9;target.setValue(source);&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;"/>
-<<<<<<< Upstream, based on branch 'develop' of https://github.com/MDMI/maps.git
-    <datatypeMaps xmi:id="_67HfUVSAEeiM7uglsE-Y1g" name="MapStringToInstanceIdentifier" description="MapStringToInstanceIdentifier" fromMDMI="function mapStringToInstanceIdentifier(source,target) {}" toMDMI="function mapInstanceIdentifierToString(source,target) {}" mdmiDatatype="_hPuYA04ZEei3m6zpCDWXUQ" messageDatatype="_hPtNFk4ZEei3m6zpCDWXUQ"/>
-=======
->>>>>>> 2f8c38e BHCP Update
   </mdmi:MessageGroup>
 </xmi:XMI>
