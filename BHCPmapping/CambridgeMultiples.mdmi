@@ -123,6 +123,7 @@
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_81Kk51OsEeibH43Pyfv7-A" name="id" maxOccurs="1" location="@id" fieldName="id"/>
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_81Kk6FOsEeibH43Pyfv7-A" name="middleName" maxOccurs="1" location="@middleName" fieldName="middleName"/>
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_81Kk6VOsEeibH43Pyfv7-A" name="rawXcn" maxOccurs="1" location="@rawXcn" fieldName="rawXcn"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_7WmqcFaOEeigcJXKBP6BCQ" name="familyName" location="@familyName" fieldName="familyName"/>
                   </nodes>
                   <nodes xsi:type="mdmi:Bag" xmi:id="_81Kk6lOsEeibH43Pyfv7-A" name="Address" maxOccurs="1" location="Address" semanticElement="_81KlFFOsEeibH43Pyfv7-A">
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_81Kk61OsEeibH43Pyfv7-A" name="city" maxOccurs="1" location="@city" fieldName="city"/>
@@ -240,7 +241,7 @@
           <mapFromMdmi xmi:id="_0XnpEVOvEeian8_CI9Xreg" name="Message2MDMI4SourcePatientId" businessElement="_81KlMVOsEeibH43Pyfv7-A" rule="DATATYPEMAP:mapInstanceIdentifierToPersonType"/>
           <mapToMdmi xmi:id="_0XnpEFOvEeian8_CI9Xreg" name="Message2MDMI4SourcePatientId" businessElement="_81KlMVOsEeibH43Pyfv7-A" rule="DATATYPEMAP:mapPersonTypeToInstanceIdentifier"/>
         </semanticElements>
-        <semanticElements xmi:id="_81KlEVOsEeibH43Pyfv7-A" name="SourcePatientInfo" elementType="NORMAL" datatype="_7kLYkFO-EeiWj6FQgVETWg" multipleInstances="false" parent="_81KlB1OsEeibH43Pyfv7-A" children="_81KlElOsEeibH43Pyfv7-A _81KlE1OsEeibH43Pyfv7-A _81KlFFOsEeibH43Pyfv7-A _81KlFVOsEeibH43Pyfv7-A" syntaxNode="_81Kk21OsEeibH43Pyfv7-A">
+        <semanticElements xmi:id="_81KlEVOsEeibH43Pyfv7-A" name="SourcePatientInfo" elementType="NORMAL" datatype="_7kLYkFO-EeiWj6FQgVETWg" parent="_81KlB1OsEeibH43Pyfv7-A" children="_81KlElOsEeibH43Pyfv7-A _81KlE1OsEeibH43Pyfv7-A _81KlFFOsEeibH43Pyfv7-A _81KlFVOsEeibH43Pyfv7-A" syntaxNode="_81Kk21OsEeibH43Pyfv7-A">
           <mapFromMdmi xmi:id="_c2QLUVPBEeiDK5KKNKiSQw" name="Message2MDMI4SourcePatientInfo" businessElement="_81KlLFOsEeibH43Pyfv7-A" rule="DATATYPEMAP:mapCodedElementToPatientInfo"/>
           <mapFromMdmi xmi:id="_eKlhAVPBEeiDK5KKNKiSQw" name="Message2MDMI4SourcePatientInfo2" businessElement="_81KlLlOsEeibH43Pyfv7-A" rule="DATATYPEMAP:mapDateTimeToPatientInfo"/>
           <mapToMdmi xmi:id="_c2QLUFPBEeiDK5KKNKiSQw" name="Message2MDMI4SourcePatientInfo" businessElement="_81KlLFOsEeibH43Pyfv7-A" rule="DATATYPEMAP:mapPatientInfoToCodedElement"/>
@@ -250,7 +251,7 @@
           <mapFromMdmi xmi:id="__vTEQVO1EeiJM7HSdtnLrw" name="Message2MDMI4PatientId" businessElement="_81KlMVOsEeibH43Pyfv7-A" rule="DATATYPEMAP:mapInstanceIdentifierToPersonType"/>
           <mapToMdmi xmi:id="__vTEQFO1EeiJM7HSdtnLrw" name="Message2MDMI4PatientId" businessElement="_81KlMVOsEeibH43Pyfv7-A" rule="DATATYPEMAP:mapPersonTypeToInstanceIdentifier"/>
         </semanticElements>
-        <semanticElements xmi:id="_81KlE1OsEeibH43Pyfv7-A" name="Name" elementType="NORMAL" datatype="_81qUtFOsEeibH43Pyfv7-A" multipleInstances="false" parent="_81KlEVOsEeibH43Pyfv7-A" syntaxNode="_81Kk5FOsEeibH43Pyfv7-A">
+        <semanticElements xmi:id="_81KlE1OsEeibH43Pyfv7-A" name="Name" elementType="NORMAL" datatype="_81qUtFOsEeibH43Pyfv7-A" parent="_81KlEVOsEeibH43Pyfv7-A" syntaxNode="_81Kk5FOsEeibH43Pyfv7-A">
           <mapFromMdmi xmi:id="_xC5zUFScEeiaqu2LshiVtg" name="Message2MDMI4Name" businessElement="_81LMDlOsEeibH43Pyfv7-A" rule="DATATYPEMAP:mapPersonNameToPersonType"/>
           <mapToMdmi xmi:id="_xC3-IFScEeiaqu2LshiVtg" name="Message2MDMI4Name" businessElement="_81LMDlOsEeibH43Pyfv7-A" rule="DATATYPEMAP:mapPersonTypeToPersonName"/>
         </semanticElements>
@@ -4370,6 +4371,7 @@
       <fields xmi:id="_81qUt1OsEeibH43Pyfv7-A" name="id" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
       <fields xmi:id="_81qUuFOsEeibH43Pyfv7-A" name="middleName" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
       <fields xmi:id="_81qUuVOsEeibH43Pyfv7-A" name="rawXcn" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
+      <fields xmi:id="_ViH48FaLEeigcJXKBP6BCQ" name="familyName" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
     </datatypes>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_81qUulOsEeibH43Pyfv7-A" typeName="InstitutionType">
       <fields xmi:id="_81qUu1OsEeibH43Pyfv7-A" name="id" datatype="_81qUd1OsEeibH43Pyfv7-A"/>
