@@ -76,12 +76,12 @@
           <mapToMdmi xmi:id="_uAq2wFI-EeiNhMPK5lloNw" name="Message2MDMI4CareTeamMemberTypeCode" businessElement="_hPtMK04ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
         <semanticElements xmi:id="_hPqtyk4ZEei3m6zpCDWXUQ" name="Member_Name_Last" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtlk4ZEei3m6zpCDWXUQ"/>
-        <semanticElements xmi:id="_DKOqcFI_EeiNhMPK5lloNw" name="PatientName" datatype="_hPuYHU4ZEei3m6zpCDWXUQ" multipleInstances="false" parent="_hPqtyE4ZEei3m6zpCDWXUQ">
-          <relationships xmi:id="__beqUFJKEeiXdLy26r02Ow" name="PatientGivenName" rule="value.getXValue().addValue('given',  '&lt;&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_DKOqcFI_EeiNhMPK5lloNw" relatedSemanticElement="_hPqty04ZEei3m6zpCDWXUQ"/>
-          <relationships xmi:id="_Lx3YMFJLEeiXdLy26r02Ow" name="PatientFamilyName" rule="value.getXValue().addValue('family',  '&lt;&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_DKOqcFI_EeiNhMPK5lloNw" relatedSemanticElement="_hPqtyk4ZEei3m6zpCDWXUQ"/>
-          <relationships xmi:id="_TAzrIFJLEeiXdLy26r02Ow" name="PatientMiddleName" rule="value.getXValue().addValue('middle',  '&lt;&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_DKOqcFI_EeiNhMPK5lloNw" relatedSemanticElement="_hPqtzE4ZEei3m6zpCDWXUQ"/>
-          <relationships xmi:id="_oeG6MFJLEeiXdLy26r02Ow" name="PatientSuffixName" rule="value.getXValue().addValue('suffix',  '&lt;&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_DKOqcFI_EeiNhMPK5lloNw" relatedSemanticElement="_hPqtzU4ZEei3m6zpCDWXUQ"/>
-          <mapFromMdmi xmi:id="_hNBHoVJKEeiXdLy26r02Ow" name="Message2MDMI4PatientName" businessElement="_hPqvTk4ZEei3m6zpCDWXUQ"/>
+        <semanticElements xmi:id="_DKOqcFI_EeiNhMPK5lloNw" name="PatientName" elementType="LOCAL" datatype="_hPuYHU4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ">
+          <relationships xmi:id="__beqUFJKEeiXdLy26r02Ow" name="PatientGivenName" rule="value.getXValue().addValue('given',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_DKOqcFI_EeiNhMPK5lloNw" relatedSemanticElement="_hPqty04ZEei3m6zpCDWXUQ"/>
+          <relationships xmi:id="_Lx3YMFJLEeiXdLy26r02Ow" name="PatientFamilyName" rule="value.getXValue().addValue('family',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_DKOqcFI_EeiNhMPK5lloNw" relatedSemanticElement="_hPqtyk4ZEei3m6zpCDWXUQ"/>
+          <relationships xmi:id="_TAzrIFJLEeiXdLy26r02Ow" name="PatientMiddleName" rule="value.getXValue().addValue('middle',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_DKOqcFI_EeiNhMPK5lloNw" relatedSemanticElement="_hPqtzE4ZEei3m6zpCDWXUQ"/>
+          <relationships xmi:id="_oeG6MFJLEeiXdLy26r02Ow" name="PatientSuffixName" rule="value.getXValue().addValue('suffix',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_DKOqcFI_EeiNhMPK5lloNw" relatedSemanticElement="_hPqtzU4ZEei3m6zpCDWXUQ"/>
+          <mapFromMdmi xmi:id="_1oUx4FXyEeigcJXKBP6BCQ" name="Message2MDMI4PatientName" businessElement="_hPqvTk4ZEei3m6zpCDWXUQ"/>
           <computedValue xmi:id="_1veNIFJMEeiXdLy26r02Ow" expression="SEMANTICROLLUP" language="JavaScript"/>
           <mapToMdmi xmi:id="_hNBHoFJKEeiXdLy26r02Ow" name="Message2MDMI4PatientName" businessElement="_hPqvTk4ZEei3m6zpCDWXUQ"/>
         </semanticElements>
