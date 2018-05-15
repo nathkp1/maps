@@ -4318,6 +4318,7 @@
       <businessElements xmi:id="_YXUy4E4kEeigRPUErYl3TQ" name="QuestionnaireStatusCode" description="Code for the status of the questionnaire" reference="QuestionnaireStatusCode" uniqueIdentifier="2c8bcb79-646f-433a-9044-bebd4fb59d0a" referenceDatatype="_wdfgojhBEei0S5VSf4XlfQ" readonly="true"/>
       <businessElements xmi:id="_YXUy4U4kEeigRPUErYl3TQ" name="QuestionnaireResponseSummaryText" description="Text summary of information in the Questionnaire Response Section" reference="QuestionnaireResponseSummaryText" uniqueIdentifier="6e862b83-69c2-45ba-9fd3-f823a9a139c8" referenceDatatype="_wdfgjjhBEei0S5VSf4XlfQ" readonly="true"/>
       <businessElements xmi:id="_6s8TAE42EeigRPUErYl3TQ" name="DocumentServiceEventPractitionerOrganizationLocationAddress" description="Address for the location from which the practitioner provides services" reference="DocumentServiceEventPractitionerOrganizationLocationCode" uniqueIdentifier="163f1835-74fd-459f-ac87-4156040059aa" referenceDatatype="_wdfgwThBEei0S5VSf4XlfQ" readonly="true"/>
+      <businessElements xmi:id="_7mXk4Fd3EeiBK8wjFSaf3w" name="CambridgePatientIDContainer" description="Container for Patient ID of unknown value in Cambridge Hostpial BHCP message" reference="CambridgePatientIDContainer" uniqueIdentifier="31470f15-08a9-46a0-865d-68f20d6eeb98" referenceDatatype="_wdfgmjhBEei0S5VSf4XlfQ" readonly="true"/>
     </domainDictionary>
     <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_wdfgiThBEei0S5VSf4XlfQ" typeName="Binary" description="Binary" reference="http://www.w3.org/2001/XMLSchema#hexBinary"/>
     <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_wdfgijhBEei0S5VSf4XlfQ" typeName="Boolean" description="Boolean" reference="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -4325,28 +4326,15 @@
     <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_wdfgjDhBEei0S5VSf4XlfQ" typeName="Decimal" description="Decimal" reference="http://www.w3.org/2001/XMLSchema#decimal"/>
     <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_wdfgjThBEei0S5VSf4XlfQ" typeName="Integer" description="Integer" reference="http://www.w3.org/2001/XMLSchema#integer"/>
     <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_wdfgjjhBEei0S5VSf4XlfQ" typeName="String" description="String" reference="http://www.w3.org/2001/XMLSchema#string"/>
-    <datatypes xsi:type="mdmi:DTSEnumerated" xmi:id="_wdfgjzhBEei0S5VSf4XlfQ" typeName="NullFlavor" isReadonly="true">
-      <literals xmi:id="_wdfgkDhBEei0S5VSf4XlfQ" name="NA" description="not available" code="String"/>
-      <literals xmi:id="_wdfgkThBEei0S5VSf4XlfQ" name="NI" description="not indicated" code="String"/>
-      <literals xmi:id="_wdfgkjhBEei0S5VSf4XlfQ" name="NK" description="not known" code="String"/>
-    </datatypes>
-    <datatypes xsi:type="mdmi:DTSEnumerated" xmi:id="_wdfgkzhBEei0S5VSf4XlfQ" typeName="Unit" isReadonly="true">
-      <literals xmi:id="_wdfglDhBEei0S5VSf4XlfQ" name="kg" description="kilograms" code="string"/>
-      <literals xmi:id="_wdfglThBEei0S5VSf4XlfQ" name="m " description="meters" code="string"/>
-      <literals xmi:id="_wdfgljhBEei0S5VSf4XlfQ" name="mg" description="milligrams" code="string"/>
-    </datatypes>
-    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfglzhBEei0S5VSf4XlfQ" typeName="DateRange" isReadonly="true">
-      <fields xmi:id="_wdfgmDhBEei0S5VSf4XlfQ" name="high" minOccurs="1" maxOccurs="1" datatype="_wdfgizhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgmThBEei0S5VSf4XlfQ" name="low" minOccurs="1" maxOccurs="1" datatype="_wdfgizhBEei0S5VSf4XlfQ"/>
-    </datatypes>
-    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfgmjhBEei0S5VSf4XlfQ" typeName="Container" isReadonly="true"/>
-    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfgmzhBEei0S5VSf4XlfQ" typeName="TranslationDT" isReadonly="true">
-      <fields xmi:id="_wdfgnDhBEei0S5VSf4XlfQ" name="code" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgnThBEei0S5VSf4XlfQ" name="codeSystem" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgnjhBEei0S5VSf4XlfQ" name="codeSystemName" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgnzhBEei0S5VSf4XlfQ" name="displayName" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgoDhBEei0S5VSf4XlfQ" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_wdfgjzhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgoThBEei0S5VSf4XlfQ" name="originalText" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfgwThBEei0S5VSf4XlfQ" typeName="Address" isReadonly="true">
+      <fields xmi:id="_wdfgwjhBEei0S5VSf4XlfQ" name="city" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgwzhBEei0S5VSf4XlfQ" name="country" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgxDhBEei0S5VSf4XlfQ" name="county" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgxThBEei0S5VSf4XlfQ" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_wdfgjzhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgxjhBEei0S5VSf4XlfQ" name="postalCode" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgxzhBEei0S5VSf4XlfQ" name="state" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgyDhBEei0S5VSf4XlfQ" name="streetAddressLine" minOccurs="1" maxOccurs="2" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgyThBEei0S5VSf4XlfQ" name="use" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ" description="A qualifier on the Address datatype. For example, the use could be set to HOME or the use could be set to WORK."/>
     </datatypes>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfgojhBEei0S5VSf4XlfQ" typeName="CodedElement" isReadonly="true">
       <fields xmi:id="_wdfgozhBEei0S5VSf4XlfQ" name="code" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
@@ -4357,12 +4345,29 @@
       <fields xmi:id="_wdfgqDhBEei0S5VSf4XlfQ" name="originalText" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
       <fields xmi:id="_wdfgqThBEei0S5VSf4XlfQ" name="translation" minOccurs="1" maxOccurs="1" datatype="_wdfgmzhBEei0S5VSf4XlfQ"/>
     </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfgmjhBEei0S5VSf4XlfQ" typeName="Container" isReadonly="true"/>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfglzhBEei0S5VSf4XlfQ" typeName="DateRange" isReadonly="true">
+      <fields xmi:id="_wdfgmDhBEei0S5VSf4XlfQ" name="high" minOccurs="1" maxOccurs="1" datatype="_wdfgizhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgmThBEei0S5VSf4XlfQ" name="low" minOccurs="1" maxOccurs="1" datatype="_wdfgizhBEei0S5VSf4XlfQ"/>
+    </datatypes>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfgqjhBEei0S5VSf4XlfQ" typeName="InstanceIdentifier" isReadonly="true">
       <fields xmi:id="_wdfgqzhBEei0S5VSf4XlfQ" name="assigningAuthorityName" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
       <fields xmi:id="_wdfgrDhBEei0S5VSf4XlfQ" name="displayable" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
       <fields xmi:id="_wdfgrThBEei0S5VSf4XlfQ" name="extension" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
       <fields xmi:id="_wdfgrjhBEei0S5VSf4XlfQ" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_wdfgjzhBEei0S5VSf4XlfQ"/>
       <fields xmi:id="_wdfgrzhBEei0S5VSf4XlfQ" name="root" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTSEnumerated" xmi:id="_wdfgjzhBEei0S5VSf4XlfQ" typeName="NullFlavor" isReadonly="true">
+      <literals xmi:id="_wdfgkDhBEei0S5VSf4XlfQ" name="NA" description="not available" code="String"/>
+      <literals xmi:id="_wdfgkThBEei0S5VSf4XlfQ" name="NI" description="not indicated" code="String"/>
+      <literals xmi:id="_wdfgkjhBEei0S5VSf4XlfQ" name="NK" description="not known" code="String"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfguzhBEei0S5VSf4XlfQ" typeName="PersonName" isReadonly="true">
+      <fields xmi:id="_wdfgvDhBEei0S5VSf4XlfQ" name="family" minOccurs="1" maxOccurs="2" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgvThBEei0S5VSf4XlfQ" name="given" minOccurs="1" maxOccurs="2" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgvjhBEei0S5VSf4XlfQ" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_wdfgjzhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgvzhBEei0S5VSf4XlfQ" name="prefix" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgwDhBEei0S5VSf4XlfQ" name="suffix" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
     </datatypes>
     <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfgsDhBEei0S5VSf4XlfQ" typeName="PhysicalQuantity" isReadonly="true">
       <fields xmi:id="_wdfgsThBEei0S5VSf4XlfQ" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
@@ -4378,53 +4383,49 @@
       <fields xmi:id="_wdfguThBEei0S5VSf4XlfQ" name="use" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
       <fields xmi:id="_wdfgujhBEei0S5VSf4XlfQ" name="value" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
     </datatypes>
-    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfguzhBEei0S5VSf4XlfQ" typeName="PersonName" isReadonly="true">
-      <fields xmi:id="_wdfgvDhBEei0S5VSf4XlfQ" name="family" minOccurs="1" maxOccurs="2" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgvThBEei0S5VSf4XlfQ" name="given" minOccurs="1" maxOccurs="2" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgvjhBEei0S5VSf4XlfQ" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_wdfgjzhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgvzhBEei0S5VSf4XlfQ" name="prefix" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgwDhBEei0S5VSf4XlfQ" name="suffix" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfgmzhBEei0S5VSf4XlfQ" typeName="TranslationDT" isReadonly="true">
+      <fields xmi:id="_wdfgnDhBEei0S5VSf4XlfQ" name="code" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgnThBEei0S5VSf4XlfQ" name="codeSystem" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgnjhBEei0S5VSf4XlfQ" name="codeSystemName" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgnzhBEei0S5VSf4XlfQ" name="displayName" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgoDhBEei0S5VSf4XlfQ" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_wdfgjzhBEei0S5VSf4XlfQ"/>
+      <fields xmi:id="_wdfgoThBEei0S5VSf4XlfQ" name="originalText" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
     </datatypes>
-    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_wdfgwThBEei0S5VSf4XlfQ" typeName="Address" isReadonly="true">
-      <fields xmi:id="_wdfgwjhBEei0S5VSf4XlfQ" name="city" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgwzhBEei0S5VSf4XlfQ" name="country" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgxDhBEei0S5VSf4XlfQ" name="county" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgxThBEei0S5VSf4XlfQ" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_wdfgjzhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgxjhBEei0S5VSf4XlfQ" name="postalCode" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgxzhBEei0S5VSf4XlfQ" name="state" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgyDhBEei0S5VSf4XlfQ" name="streetAddressLine" minOccurs="1" maxOccurs="2" datatype="_wdfgjjhBEei0S5VSf4XlfQ"/>
-      <fields xmi:id="_wdfgyThBEei0S5VSf4XlfQ" name="use" minOccurs="1" maxOccurs="1" datatype="_wdfgjjhBEei0S5VSf4XlfQ" description="A qualifier on the Address datatype. For example, the use could be set to HOME or the use could be set to WORK."/>
+    <datatypes xsi:type="mdmi:DTSEnumerated" xmi:id="_wdfgkzhBEei0S5VSf4XlfQ" typeName="Unit" isReadonly="true">
+      <literals xmi:id="_wdfglDhBEei0S5VSf4XlfQ" name="kg" description="kilograms" code="string"/>
+      <literals xmi:id="_wdfglThBEei0S5VSf4XlfQ" name="m " description="meters" code="string"/>
+      <literals xmi:id="_wdfgljhBEei0S5VSf4XlfQ" name="mg" description="milligrams" code="string"/>
     </datatypes>
-    <datatypeMaps xmi:id="_6tyqwDhBEei0S5VSf4XlfQ" name="StringAndNullFlavorMapping" fromMDMI="" toMDMI=""/>
-    <datatypeMaps xmi:id="_6tyqwThBEei0S5VSf4XlfQ" name="StringAndUnitMapping" fromMDMI="" toMDMI=""/>
-    <datatypeMaps xmi:id="_6tyqwjhBEei0S5VSf4XlfQ" name="StringAndDateRangeMapping" fromMDMI="" toMDMI=""/>
-    <datatypeMaps xmi:id="_6tyqwzhBEei0S5VSf4XlfQ" name="StringAndContainerMapping" fromMDMI="" toMDMI=""/>
-    <datatypeMaps xmi:id="_6tyqxDhBEei0S5VSf4XlfQ" name="StringAndTranslationDTMapping" fromMDMI="" toMDMI=""/>
-    <datatypeMaps xmi:id="_6tyqxThBEei0S5VSf4XlfQ" name="StringAndCodedElementMapping" fromMDMI="function mapCodedElementToString(source,target) {&#xD;&#xA;&#x9;target.setValue(source.getValue('code'));&#x9;&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA; &#xD;&#xA;" toMDMI="function mapStringToCodedElement(source,target) {&#xD;&#xA;&#x9;target.setValue('code', source);&#xD;&#xA;}&#xD;&#xA;"/>
-    <datatypeMaps xmi:id="_6tzR0DhBEei0S5VSf4XlfQ" name="StringAndInstanceIdentifierMapping" fromMDMI="function mapInstanceIdentifierToString(source,target) {&#xD;&#xA;&#x9;target.setValue(source.getValue('root'));&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToInstanceIdentifier(source,target) {&#xD;&#xA;&#x9;target.setValue('root', source );&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;"/>
-    <datatypeMaps xmi:id="_6tzR0ThBEei0S5VSf4XlfQ" name="StringAndPhysicalQuantityMapping" fromMDMI="function mapPhysicalQuantityToString(source,target) {&#xD;&#xA;&#xD;&#xA;if (source.getValue('value') + null) {&#xD;&#xA;target.setValue(source.getValue('value'));&#xD;&#xA;}&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToPhysicalQuantity(source,target) {&#xD;&#xA;target.setValue('value',source);&#xD;&#xA;}&#xD;&#xA;"/>
-    <datatypeMaps xmi:id="_6tzR0jhBEei0S5VSf4XlfQ" name="StringAndPhysicalRatioMapping" fromMDMI="" toMDMI=""/>
-    <datatypeMaps xmi:id="_6tzR0zhBEei0S5VSf4XlfQ" name="StringAndTelecomMapping" fromMDMI=" function mapTelecomToString(source,target) {&#xD;&#xA;target.setValue(source.getValue('value'));&#xD;&#xA;}&#xD;&#xA;" toMDMI=" function mapStringToTelecom(source,target) {&#xD;&#xA;target.setValue('value',source);&#xD;&#xA;}&#xD;&#xA;"/>
-    <datatypeMaps xmi:id="_6tzR1DhBEei0S5VSf4XlfQ" name="StringAndPersonNameMapping" fromMDMI=" function mapPersonNameToString(source,target) {&#xD;&#xA; &#xD;&#xA;&#x9; var personName = '';&#xD;&#xA;&#x9; &#xD;&#xA;&#x9; var prefixSource = source.getXValue('prefix');&#xD;&#xA;&#x9;&#xD;&#xA;//&#x9; var prefixTarget = target.getXValue('prefix');&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;for (i = 0; i &lt; prefixSource.getValues().size(); i++) {&#xD;&#xA;&#x9;&#x9;&#x9;personName += ' ' + prefixSource.getValue(i);&#xD;&#xA;//&#x9;&#x9;&#x9;prefixTarget.addValue(prefixSource.getValue(i));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;var givenSource = source.getXValue('given');&#xD;&#xA;//&#x9;&#x9;var givenTarget = target.getXValue('given');&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;for (i = 0; i &lt; givenSource.getValues().size(); i++) {&#xD;&#xA;&#x9;&#x9;&#x9;personName += ' ' + givenSource.getValue(i);&#xD;&#xA;//&#x9;&#x9;&#x9;givenTarget.addValue(givenSource.getValue(i));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;var familySource = source.getXValue('family');&#xD;&#xA;//&#x9;&#x9;var familyTarget = target.getXValue('family');&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;for (i = 0; i &lt; familySource.getValues().size(); i++) {&#xD;&#xA;&#x9;&#x9;&#x9;personName += ' ' + familySource.getValue(i);&#xD;&#xA;//&#x9;&#x9;&#x9;familyTarget.addValue(familySource.getValue(i));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;target.setValue(personName);&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToPersonName(source,target) {&#xD;&#xA;&#x9;target.getXValue(&quot;family&quot;).addValue(source);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;"/>
-    <datatypeMaps xmi:id="_6tzR1ThBEei0S5VSf4XlfQ" name="StringAndAddressMapping" fromMDMI=" function mapAddressToString(source,target) {&#xD;&#xA;target.setValue(source.getXValueAsString('streetAddressLine') + ' ' + source.getXValueAsString('city') + ' ' + source.getXValueAsString('state') + ' ' + source.getXValueAsString('postalCode'));&#xD;&#xA;}&#xD;&#xA;" toMDMI="&#xD;&#xA;function mapStringToAddress(source,target) {&#x9;&#xD;&#xA;&#x9;Utils.StringToAddress(source,target);&#xD;&#xA;}&#xD;&#xA;"/>
-    <datatypeMaps xmi:id="_6tzR1jhBEei0S5VSf4XlfQ" name="StringAndBinaryMapping" fromMDMI="" toMDMI=""/>
-    <datatypeMaps xmi:id="_6tzR1zhBEei0S5VSf4XlfQ" name="StringAndBooleanMapping" fromMDMI="" toMDMI="function mapStringToBoolean(source,target) { &#xD;&#xA;&#x9;target.setValue(source);&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;"/>
-    <datatypeMaps xmi:id="_6tzR2DhBEei0S5VSf4XlfQ" name="StringAndDateTimeMapping" fromMDMI=" function mapDateTimeToString(source,target) {&#xD;&#xA;target.setValue(source.getValue());&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToDateTime(source,target) {&#xD;&#xA;&#x9;target.setValue(source );&#xD;&#xA;}&#xD;&#xA;"/>
-    <datatypeMaps xmi:id="_6tzR2ThBEei0S5VSf4XlfQ" name="StringAndDecimalMapping" fromMDMI="" toMDMI=""/>
-    <datatypeMaps xmi:id="_6tzR2jhBEei0S5VSf4XlfQ" name="StringAndIntegerMapping" fromMDMI="function mapIntegerToString(source,target) { &#xD;&#xA;&#x9;target.setValue(source.getValue());&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;" toMDMI="function mapStringToInteger(source,target) { &#xD;&#xA;&#x9;target.setValue(source);&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;"/>
-    <datatypeMaps xmi:id="_DDtz4DhCEei0S5VSf4XlfQ" name="MapStringToPersonName" description="MapStringToPersonName" fromMDMI="function mapStringToPersonName(source,target) {}" toMDMI="function mapPersonNameToString(source,target) {}" mdmiDatatype="_wdfguzhBEei0S5VSf4XlfQ"/>
-    <datatypeMaps xmi:id="_E5UDkjhCEei0S5VSf4XlfQ" name="MapStringToInstanceIdentifier" description="MapStringToInstanceIdentifier" fromMDMI="function mapStringToInstanceIdentifier(source,target) {}" toMDMI="function mapInstanceIdentifierToString(source,target) {}" mdmiDatatype="_wdfgqjhBEei0S5VSf4XlfQ"/>
-    <datatypeMaps xmi:id="_GHnpwjhCEei0S5VSf4XlfQ" name="MapStringToDateTime" description="MapStringToDateTime" fromMDMI="function mapStringToDateTime(source,target) {}" toMDMI="function mapDateTimeToString(source,target) {}" mdmiDatatype="_wdfgizhBEei0S5VSf4XlfQ"/>
-    <datatypeMaps xmi:id="_IDv_QjhCEei0S5VSf4XlfQ" name="MapStringToTelecom" description="MapStringToTelecom" fromMDMI="function mapStringToTelecom(source,target) {}" toMDMI="function mapTelecomToString(source,target) {}" mdmiDatatype="_wdfgtzhBEei0S5VSf4XlfQ"/>
     <datatypeMaps xmi:id="_JaWl0DhCEei0S5VSf4XlfQ" name="MapStringToAddress" description="MapStringToAddress" fromMDMI="function mapStringToAddress(source,target) {}" toMDMI="function mapAddressToString(source,target) {}" mdmiDatatype="_wdfgwThBEei0S5VSf4XlfQ"/>
-    <datatypeMaps xmi:id="_MBLeIjhCEei0S5VSf4XlfQ" name="MapStringToPersonName" description="MapStringToPersonName" fromMDMI="function mapStringToPersonName(source,target) {}" toMDMI="function mapPersonNameToString(source,target) {}" mdmiDatatype="_wdfguzhBEei0S5VSf4XlfQ"/>
     <datatypeMaps xmi:id="_OSicwDhCEei0S5VSf4XlfQ" name="MapStringToCodedElement" description="MapStringToCodedElement" fromMDMI="function mapStringToCodedElement(source,target) {}" toMDMI="function mapCodedElementToString(source,target) {}" mdmiDatatype="_wdfgojhBEei0S5VSf4XlfQ"/>
-    <datatypeMaps xmi:id="_RbkqQjhCEei0S5VSf4XlfQ" name="MapStringToTelecom" description="MapStringToTelecom" fromMDMI="function mapStringToTelecom(source,target) {}" toMDMI="function mapTelecomToString(source,target) {}" mdmiDatatype="_wdfgtzhBEei0S5VSf4XlfQ"/>
     <datatypeMaps xmi:id="_VuIrojhCEei0S5VSf4XlfQ" name="MapStringToCodedElement" description="MapStringToCodedElement" fromMDMI="function mapStringToCodedElement(source,target) {}" toMDMI="function mapCodedElementToString(source,target) {}" mdmiDatatype="_wdfgojhBEei0S5VSf4XlfQ"/>
     <datatypeMaps xmi:id="_alMhMDhCEei0S5VSf4XlfQ" name="MapStringToCodedElement" description="MapStringToCodedElement" fromMDMI="function mapStringToCodedElement(source,target) {}" toMDMI="function mapCodedElementToString(source,target) {}" mdmiDatatype="_wdfgojhBEei0S5VSf4XlfQ"/>
     <datatypeMaps xmi:id="_fCVa4jhCEei0S5VSf4XlfQ" name="MapStringToCodedElement" description="MapStringToCodedElement" fromMDMI="function mapStringToCodedElement(source,target) {}" toMDMI="function mapCodedElementToString(source,target) {}" mdmiDatatype="_wdfgojhBEei0S5VSf4XlfQ"/>
     <datatypeMaps xmi:id="_g4QasDhCEei0S5VSf4XlfQ" name="MapStringToCodedElement" description="MapStringToCodedElement" fromMDMI="function mapStringToCodedElement(source,target) {}" toMDMI="function mapCodedElementToString(source,target) {}" mdmiDatatype="_wdfgojhBEei0S5VSf4XlfQ"/>
     <datatypeMaps xmi:id="_iMJrgjhCEei0S5VSf4XlfQ" name="MapStringToCodedElement" description="MapStringToCodedElement" fromMDMI="function mapStringToCodedElement(source,target) {}" toMDMI="function mapCodedElementToString(source,target) {}" mdmiDatatype="_wdfgojhBEei0S5VSf4XlfQ"/>
     <datatypeMaps xmi:id="_jglu4jhCEei0S5VSf4XlfQ" name="MapStringToCodedElement" description="MapStringToCodedElement" fromMDMI="function mapStringToCodedElement(source,target) {}" toMDMI="function mapCodedElementToString(source,target) {}" mdmiDatatype="_wdfgojhBEei0S5VSf4XlfQ"/>
+    <datatypeMaps xmi:id="_GHnpwjhCEei0S5VSf4XlfQ" name="MapStringToDateTime" description="MapStringToDateTime" fromMDMI="function mapStringToDateTime(source,target) {}" toMDMI="function mapDateTimeToString(source,target) {}" mdmiDatatype="_wdfgizhBEei0S5VSf4XlfQ"/>
+    <datatypeMaps xmi:id="_E5UDkjhCEei0S5VSf4XlfQ" name="MapStringToInstanceIdentifier" description="MapStringToInstanceIdentifier" fromMDMI="function mapStringToInstanceIdentifier(source,target) {}" toMDMI="function mapInstanceIdentifierToString(source,target) {}" mdmiDatatype="_wdfgqjhBEei0S5VSf4XlfQ"/>
+    <datatypeMaps xmi:id="_DDtz4DhCEei0S5VSf4XlfQ" name="MapStringToPersonName" description="MapStringToPersonName" fromMDMI="function mapStringToPersonName(source,target) {}" toMDMI="function mapPersonNameToString(source,target) {}" mdmiDatatype="_wdfguzhBEei0S5VSf4XlfQ"/>
+    <datatypeMaps xmi:id="_MBLeIjhCEei0S5VSf4XlfQ" name="MapStringToPersonName" description="MapStringToPersonName" fromMDMI="function mapStringToPersonName(source,target) {}" toMDMI="function mapPersonNameToString(source,target) {}" mdmiDatatype="_wdfguzhBEei0S5VSf4XlfQ"/>
+    <datatypeMaps xmi:id="_IDv_QjhCEei0S5VSf4XlfQ" name="MapStringToTelecom" description="MapStringToTelecom" fromMDMI="function mapStringToTelecom(source,target) {}" toMDMI="function mapTelecomToString(source,target) {}" mdmiDatatype="_wdfgtzhBEei0S5VSf4XlfQ"/>
+    <datatypeMaps xmi:id="_RbkqQjhCEei0S5VSf4XlfQ" name="MapStringToTelecom" description="MapStringToTelecom" fromMDMI="function mapStringToTelecom(source,target) {}" toMDMI="function mapTelecomToString(source,target) {}" mdmiDatatype="_wdfgtzhBEei0S5VSf4XlfQ"/>
+    <datatypeMaps xmi:id="_6tzR1ThBEei0S5VSf4XlfQ" name="StringAndAddressMapping" fromMDMI=" function mapAddressToString(source,target) {&#xD;&#xA;target.setValue(source.getXValueAsString('streetAddressLine') + ' ' + source.getXValueAsString('city') + ' ' + source.getXValueAsString('state') + ' ' + source.getXValueAsString('postalCode'));&#xD;&#xA;}&#xD;&#xA;" toMDMI="&#xD;&#xA;function mapStringToAddress(source,target) {&#x9;&#xD;&#xA;&#x9;Utils.StringToAddress(source,target);&#xD;&#xA;}&#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_6tzR1jhBEei0S5VSf4XlfQ" name="StringAndBinaryMapping" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_6tzR1zhBEei0S5VSf4XlfQ" name="StringAndBooleanMapping" fromMDMI="" toMDMI="function mapStringToBoolean(source,target) { &#xD;&#xA;&#x9;target.setValue(source);&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_6tyqxThBEei0S5VSf4XlfQ" name="StringAndCodedElementMapping" fromMDMI="function mapCodedElementToString(source,target) {&#xD;&#xA;&#x9;target.setValue(source.getValue('code'));&#x9;&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA; &#xD;&#xA;" toMDMI="function mapStringToCodedElement(source,target) {&#xD;&#xA;&#x9;target.setValue('code', source);&#xD;&#xA;}&#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_6tyqwzhBEei0S5VSf4XlfQ" name="StringAndContainerMapping" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_6tyqwjhBEei0S5VSf4XlfQ" name="StringAndDateRangeMapping" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_6tzR2DhBEei0S5VSf4XlfQ" name="StringAndDateTimeMapping" fromMDMI=" function mapDateTimeToString(source,target) {&#xD;&#xA;target.setValue(source.getValue());&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToDateTime(source,target) {&#xD;&#xA;&#x9;target.setValue(source );&#xD;&#xA;}&#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_6tzR2ThBEei0S5VSf4XlfQ" name="StringAndDecimalMapping" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_6tzR0DhBEei0S5VSf4XlfQ" name="StringAndInstanceIdentifierMapping" fromMDMI="function mapInstanceIdentifierToString(source,target) {&#xD;&#xA;&#x9;target.setValue(source.getValue('root'));&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToInstanceIdentifier(source,target) {&#xD;&#xA;&#x9;target.setValue('root', source );&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_6tzR2jhBEei0S5VSf4XlfQ" name="StringAndIntegerMapping" fromMDMI="function mapIntegerToString(source,target) { &#xD;&#xA;&#x9;target.setValue(source.getValue());&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;" toMDMI="function mapStringToInteger(source,target) { &#xD;&#xA;&#x9;target.setValue(source);&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_6tyqwDhBEei0S5VSf4XlfQ" name="StringAndNullFlavorMapping" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_6tzR1DhBEei0S5VSf4XlfQ" name="StringAndPersonNameMapping" fromMDMI=" function mapPersonNameToString(source,target) {&#xD;&#xA; &#xD;&#xA;&#x9; var personName = '';&#xD;&#xA;&#x9; &#xD;&#xA;&#x9; var prefixSource = source.getXValue('prefix');&#xD;&#xA;&#x9;&#xD;&#xA;//&#x9; var prefixTarget = target.getXValue('prefix');&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;for (i = 0; i &lt; prefixSource.getValues().size(); i++) {&#xD;&#xA;&#x9;&#x9;&#x9;personName += ' ' + prefixSource.getValue(i);&#xD;&#xA;//&#x9;&#x9;&#x9;prefixTarget.addValue(prefixSource.getValue(i));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;var givenSource = source.getXValue('given');&#xD;&#xA;//&#x9;&#x9;var givenTarget = target.getXValue('given');&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;for (i = 0; i &lt; givenSource.getValues().size(); i++) {&#xD;&#xA;&#x9;&#x9;&#x9;personName += ' ' + givenSource.getValue(i);&#xD;&#xA;//&#x9;&#x9;&#x9;givenTarget.addValue(givenSource.getValue(i));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;var familySource = source.getXValue('family');&#xD;&#xA;//&#x9;&#x9;var familyTarget = target.getXValue('family');&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;for (i = 0; i &lt; familySource.getValues().size(); i++) {&#xD;&#xA;&#x9;&#x9;&#x9;personName += ' ' + familySource.getValue(i);&#xD;&#xA;//&#x9;&#x9;&#x9;familyTarget.addValue(familySource.getValue(i));&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;target.setValue(personName);&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToPersonName(source,target) {&#xD;&#xA;&#x9;target.getXValue(&quot;family&quot;).addValue(source);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_6tzR0ThBEei0S5VSf4XlfQ" name="StringAndPhysicalQuantityMapping" fromMDMI="function mapPhysicalQuantityToString(source,target) {&#xD;&#xA;&#xD;&#xA;if (source.getValue('value') + null) {&#xD;&#xA;target.setValue(source.getValue('value'));&#xD;&#xA;}&#xD;&#xA;}&#xD;&#xA;" toMDMI="function mapStringToPhysicalQuantity(source,target) {&#xD;&#xA;target.setValue('value',source);&#xD;&#xA;}&#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_6tzR0jhBEei0S5VSf4XlfQ" name="StringAndPhysicalRatioMapping" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_6tzR0zhBEei0S5VSf4XlfQ" name="StringAndTelecomMapping" fromMDMI=" function mapTelecomToString(source,target) {&#xD;&#xA;target.setValue(source.getValue('value'));&#xD;&#xA;}&#xD;&#xA;" toMDMI=" function mapStringToTelecom(source,target) {&#xD;&#xA;target.setValue('value',source);&#xD;&#xA;}&#xD;&#xA;"/>
+    <datatypeMaps xmi:id="_6tyqxDhBEei0S5VSf4XlfQ" name="StringAndTranslationDTMapping" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_6tyqwThBEei0S5VSf4XlfQ" name="StringAndUnitMapping" fromMDMI="" toMDMI=""/>
   </mdmi:MessageGroup>
 </xmi:XMI>
