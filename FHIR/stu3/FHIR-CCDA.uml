@@ -27616,33 +27616,23 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_tCktsP62EeeDL5Qe2AxTNQ" base_Class="_7FTDJM3tEeahpd1P9sS4xg">
     <elements xmi:id="_2VWA4P93EeeEPap6rGENcg" businessElement="DocumentDataEntererContainer" modelElement="_7FTDJM3tEeahpd1P9sS4xg" businessElementId="bb20adbc-e669-415f-baea-909bafa47a88" modelElementPath=""/>
-    <elements xmi:id="_tCnJ8P62EeeDL5Qe2AxTNQ" businessElement="DocumentDataEntererII" businessElementId="6249660d-0b62-43fa-b28f-2098a25fd002" modelElementPath="valueReference.identifier">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmCowM3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_075SEEmvEei1GK3IhTP0Dw" businessElement="DocumentDataEntererPersonName" businessElementId="46a9bddc-4152-4fa2-9f5b-36a7a708ad28" modelElementPath="valueReference.name">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmEd8M3tEeahpd1P9sS4xg"/>
-    </elements>
+    <elements xmi:id="_NQFpMFhrEeiTFvZAtLxAtQ" businessElement="DocumentDataEntererII" modelElement="_7FURRM3tEeahpd1P9sS4xg" businessElementId="6249660d-0b62-43fa-b28f-2098a25fd002" modelElementPath="valueReference"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_tBaCQP91EeeEPap6rGENcg" base_Class="_7FRN883tEeahpd1P9sS4xg">
     <elements xmi:id="_T4MVsEmxEei1GK3IhTP0Dw" businessElement="DocumentAuthorID" modelElement="_7LgY1M3tEeahpd1P9sS4xg" businessElementId="6ce0a799-fced-485b-ad83-5ab049b51097" modelElementPath="author"/>
     <elements xmi:id="_lqAcEDKoEeiQjrWYV7oyWg" businessElement="DocumentConfidentialityCode" modelElement="_7Fkv9c3tEeahpd1P9sS4xg" businessElementId="2a08de16-fc84-444d-a91c-d4b229fa502e" modelElementPath="confidentiality" condition=""/>
+    <elements xmi:id="_Ds738FhrEeiTFvZAtLxAtQ" businessElement="DocumentCustodianOrganizationID" modelElement="_7LnGgc3tEeahpd1P9sS4xg" businessElementId="c2248529-5f7c-4c58-833b-46f53e300145" modelElementPath="custodian"/>
     <elements xmi:id="_h0sXYDKoEeiQjrWYV7oyWg" businessElement="DocumentDateTime" modelElement="_7Fi6wM3tEeahpd1P9sS4xg" businessElementId="02d57129-9f7a-432f-b520-34452bec6e4b" modelElementPath="date" condition=""/>
-    <elements xmi:id="_dyNu0EmxEei1GK3IhTP0Dw" businessElement="DocumentDataEntererContainer" modelElement="_7FU4UM3tEeahpd1P9sS4xg" businessElementId="bb20adbc-e669-415f-baea-909bafa47a88" modelElementPath="extension_slice_pos2"/>
-    <elements xmi:id="_ocCwEEm4EeiKZMWwbCbtAg" businessElement="DocumentInformantContainer" modelElement="_7FXUkM3tEeahpd1P9sS4xg" businessElementId="21f774e5-6510-4179-89de-621095c502d8" modelElementPath="extension_slice_pos3"/>
     <elements xmi:id="_gUOqMDKoEeiQjrWYV7oyWg" businessElement="DocumentID" modelElement="_7FiTss3tEeahpd1P9sS4xg" businessElementId="17cb9e1f-97d6-4ba9-b43f-b6d906392531" modelElementPath="identifier" condition=""/>
     <elements xmi:id="_3RXUUDKoEeiQjrWYV7oyWg" businessElement="DocumentLanguageCode" modelElement="_7FScFM3tEeahpd1P9sS4xg" businessElementId="8f30da3a-b3b1-4842-9207-8dd372aa9c3f" modelElementPath="language" condition=""/>
     <elements xmi:id="_kiopEDzUEeiNReRoMA-0oQ" businessElement="DocumentStatusCode" modelElement="_7FkI6M3tEeahpd1P9sS4xg" businessElementId="b25cddcd-91fb-4c5b-b736-2d5bfd70e659" modelElementPath="status"/>
+    <elements xmi:id="_mE0jkFhqEeiTFvZAtLxAtQ" businessElement="PatientID" modelElement="_7LfxwM3tEeahpd1P9sS4xg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject"/>
     <elements xmi:id="_CRf1wDzBEei9MNeuvlk-nA" businessElement="DocumentTitle" modelElement="_7FkI4M3tEeahpd1P9sS4xg" businessElementId="e02fcb5b-8e5e-4ebb-8252-913b1b080fe0" modelElementPath="title" condition=""/>
     <elements xmi:id="_jU8CIDKoEeiQjrWYV7oyWg" businessElement="DocumentTypeCode" modelElement="_7Fjh0M3tEeahpd1P9sS4xg" businessElementId="db98a4bb-4fc0-43cd-b3f2-c860653ea76e" modelElementPath="type" condition=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_rNHGoCOyEeivEY8WLKV1mA" base_Class="_7FVfZM3tEeahpd1P9sS4xg">
     <elements xmi:id="_rNHtsCOyEeivEY8WLKV1mA" businessElement="DocumentInformantContainer" modelElement="_7FVfZM3tEeahpd1P9sS4xg" businessElementId="21f774e5-6510-4179-89de-621095c502d8" modelElementPath=""/>
-    <elements xmi:id="_G3IIkEmwEei1GK3IhTP0Dw" businessElement="DocumentInformantII" businessElementId="45e52bc8-17b3-46da-9c3f-bcd7148fe501" modelElementPath="valueReference.identifier">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmCowM3tEeahpd1P9sS4xg"/>
-    </elements>
-    <elements xmi:id="_IVBC4EmwEei1GK3IhTP0Dw" businessElement="DocumentInformantPersonName" businessElementId="7b2d3700-6cc7-49a9-af2c-cde5464af9b5" modelElementPath="valueReference.name">
-      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmEd8M3tEeahpd1P9sS4xg"/>
-    </elements>
+    <elements xmi:id="_RuMzQFhrEeiTFvZAtLxAtQ" businessElement="DocumentInformantII" modelElement="_7FWthc3tEeahpd1P9sS4xg" businessElementId="45e52bc8-17b3-46da-9c3f-bcd7148fe501" modelElementPath="valueReference"/>
   </MDMI:MDMIMapping>
   <fhir:ElementDefinition xmi:id="_ykQocyO0EeivEY8WLKV1mA" id="Composition.attester" base_Property="_ykQocCO0EeivEY8WLKV1mA" name="Composition.attester" isSummary="true" representation=""/>
   <MDMI:MDMIMapping xmi:id="_n5qDcEmyEei1GK3IhTP0Dw" base_Class="_7FXUmM3tEeahpd1P9sS4xg">
