@@ -159,23 +159,34 @@
           <relationships xmi:id="_DmtFMFhMEei4VdfLI-73mQ" name="Address City" rule="value.getXValue().addValue('streetAddressLine',  '&lt;&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_ETkDIE-kEeiNhMPK5lloNw" relatedSemanticElement="_hPqt7U4ZEei3m6zpCDWXUQ"/>
           <relationships xmi:id="_IDINMFhMEei4VdfLI-73mQ" name="Address State" rule="value.getXValue().addValue('streetAddressLine',  '&lt;&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_ETkDIE-kEeiNhMPK5lloNw" relatedSemanticElement="_hPqt7k4ZEei3m6zpCDWXUQ"/>
           <relationships xmi:id="_M1OqQFhMEei4VdfLI-73mQ" name="Address ZipCode" rule="value.getXValue().addValue('streetAddressLine',  '&lt;&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_ETkDIE-kEeiNhMPK5lloNw" relatedSemanticElement="_hPqt704ZEei3m6zpCDWXUQ"/>
+          <mapFromMdmi xmi:id="_Tk7OUF9QEeikcbFrS3LVLA" name="MDMI2Message4PCPAddressRollup" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ"/>
           <computedValue xmi:id="_L85zEE-kEeiNhMPK5lloNw" expression="SEMANTICROLLUP" language="JavaScript"/>
-          <mapToMdmi xmi:id="_i7q1UF3QEeiBH-Tl3UHQfw" name="Message2MDMI4PCPAddressRollup" businessElement="_hPslZ04ZEei3m6zpCDWXUQ"/>
+          <mapToMdmi xmi:id="_ih-ZQF9MEeiJS8hdT-1PfQ" name="Message2MDMI4PCPAddressRollup" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_hPqt3E4ZEei3m6zpCDWXUQ" name="Residential_Address_Line_1" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtqE4ZEei3m6zpCDWXUQ"/>
+        <semanticElements xmi:id="_hPqt3E4ZEei3m6zpCDWXUQ" name="Residential_Address_Line_1" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtqE4ZEei3m6zpCDWXUQ">
+          <mapFromMdmi xmi:id="_PK1I8V9NEeiJS8hdT-1PfQ" name="MDMI2Message4Residential_Address_Line_1" businessElement="_hPslZ04ZEei3m6zpCDWXUQ" rule="value.getXValue().setValue(MDMI2Message4Residential_Address_Line_1.getXDataStruct().getXValueAsString(&quot;streetAddressLine&quot;));"/>
+        </semanticElements>
         <semanticElements xmi:id="_-Bd4gFJMEeiXdLy26r02Ow" name="PatientAddressRollup" datatype="_hPuYFE4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ">
           <relationships xmi:id="_C3i2oFJNEeiXdLy26r02Ow" name="PatientStreetAddress" rule="value.getXValue().addValue('streetAddressLine',  '&lt;&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_-Bd4gFJMEeiXdLy26r02Ow" relatedSemanticElement="_hPqt3E4ZEei3m6zpCDWXUQ"/>
           <relationships xmi:id="_bzpSYFJOEeidAt4ktG3sEA" name="PatientCityAddress" rule="value.getXValue().addValue('city',  '&lt;&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_-Bd4gFJMEeiXdLy26r02Ow" relatedSemanticElement="_hPqt3k4ZEei3m6zpCDWXUQ"/>
           <relationships xmi:id="_oMPmwFJOEeidAt4ktG3sEA" name="PatientStateAddress" rule="value.getXValue().addValue('state',  '&lt;&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_-Bd4gFJMEeiXdLy26r02Ow" relatedSemanticElement="_hPqt304ZEei3m6zpCDWXUQ"/>
           <relationships xmi:id="_0BL0cFJOEeidAt4ktG3sEA" name="PatientZipAddress" rule="value.getXValue().addValue('postalCode',  '&lt;&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_-Bd4gFJMEeiXdLy26r02Ow" relatedSemanticElement="_hPqt4E4ZEei3m6zpCDWXUQ"/>
-          <mapFromMdmi xmi:id="_1D4F8V3SEeiBH-Tl3UHQfw" name="MDMI2Message4PatientAddressRollup" businessElement="_hPslZ04ZEei3m6zpCDWXUQ"/>
+          <mapFromMdmi xmi:id="_Y60U8F9QEeikcbFrS3LVLA" name="MDMI2Message4PatientAddressRollup" businessElement="_hPslZ04ZEei3m6zpCDWXUQ"/>
           <computedValue xmi:id="_A2xRsFJNEeiXdLy26r02Ow" expression="SEMANTICROLLUP" language="JavaScript"/>
           <mapToMdmi xmi:id="_1D4F8F3SEeiBH-Tl3UHQfw" name="Message2MDMI4PatientAddressRollup" businessElement="_hPslZ04ZEei3m6zpCDWXUQ"/>
         </semanticElements>
-        <semanticElements xmi:id="_hPqt3U4ZEei3m6zpCDWXUQ" name="Residential_Address_Line_2" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtqU4ZEei3m6zpCDWXUQ"/>
-        <semanticElements xmi:id="_hPqt3k4ZEei3m6zpCDWXUQ" name="Residential_Address_City" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtqk4ZEei3m6zpCDWXUQ"/>
-        <semanticElements xmi:id="_hPqt304ZEei3m6zpCDWXUQ" name="Residential_Address_State" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtq04ZEei3m6zpCDWXUQ"/>
-        <semanticElements xmi:id="_hPqt4E4ZEei3m6zpCDWXUQ" name="Residential_Address_ZipCode_1" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtrE4ZEei3m6zpCDWXUQ"/>
+        <semanticElements xmi:id="_hPqt3U4ZEei3m6zpCDWXUQ" name="Residential_Address_Line_2" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtqU4ZEei3m6zpCDWXUQ">
+          <mapFromMdmi xmi:id="_QSJ9YV9NEeiJS8hdT-1PfQ" name="MDMI2Message4Residential_Address_Line_2" businessElement="_hPslZ04ZEei3m6zpCDWXUQ" rule="value.getXValue().setValue(MDMI2Message4Residential_Address_Line_2.getXDataStruct().getXValueAsString(&quot;streetAddressLine&quot;));"/>
+        </semanticElements>
+        <semanticElements xmi:id="_hPqt3k4ZEei3m6zpCDWXUQ" name="Residential_Address_City" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtqk4ZEei3m6zpCDWXUQ">
+          <mapFromMdmi xmi:id="_RResYV9NEeiJS8hdT-1PfQ" name="MDMI2Message4Residential_Address_City" businessElement="_hPslZ04ZEei3m6zpCDWXUQ" rule="value.getXValue().setValue(MDMI2Message4Residential_Address_City.getXDataStruct().getXValueAsString(&quot;streetAddressLine&quot;));"/>
+        </semanticElements>
+        <semanticElements xmi:id="_hPqt304ZEei3m6zpCDWXUQ" name="Residential_Address_State" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtq04ZEei3m6zpCDWXUQ">
+          <mapFromMdmi xmi:id="_SO0eYV9NEeiJS8hdT-1PfQ" name="MDMI2Message4Residential_Address_State" businessElement="_hPslZ04ZEei3m6zpCDWXUQ" rule="value.getXValue().setValue(MDMI2Message4Residential_Address_State.getXDataStruct().getXValueAsString(&quot;streetAddressLine&quot;));"/>
+        </semanticElements>
+        <semanticElements xmi:id="_hPqt4E4ZEei3m6zpCDWXUQ" name="Residential_Address_ZipCode_1" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtrE4ZEei3m6zpCDWXUQ">
+          <mapFromMdmi xmi:id="_T9mUYV9NEeiJS8hdT-1PfQ" name="MDMI2Message4Residential_Address_ZipeCode_1" businessElement="_hPslZ04ZEei3m6zpCDWXUQ" rule="value.getXValue().setValue(MDMI2Message4Residential_Address_ZipeCode_1.getXDataStruct().getXValueAsString(&quot;streetAddressLine&quot;));"/>
+        </semanticElements>
         <semanticElements xmi:id="_hPqt4U4ZEei3m6zpCDWXUQ" name="Residential_Address_ZipCode_2" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtrU4ZEei3m6zpCDWXUQ"/>
         <semanticElements xmi:id="_hPqt4k4ZEei3m6zpCDWXUQ" name="Email" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtrk4ZEei3m6zpCDWXUQ">
           <mapFromMdmi xmi:id="_m8prQU4pEeigRPUErYl3TQ" name="Message2MDMI4Email" businessElement="_hPqu004ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapTelecomToString"/>
@@ -214,19 +225,24 @@
           <mapToMdmi xmi:id="_rhqKsE4tEeigRPUErYl3TQ" name="Message2MDMI4PCP_NPI" businessElement="_hPquqk4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapStringToInstanceIdentifier"/>
         </semanticElements>
         <semanticElements xmi:id="_hPqt604ZEei3m6zpCDWXUQ" name="PCP_Address_Line_1" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtt04ZEei3m6zpCDWXUQ">
-          <mapFromMdmi xmi:id="_3kTfgV3LEeiBH-Tl3UHQfw" name="MDMI2Message4PCP_Address_Line_1" businessElement="_hPslZ04ZEei3m6zpCDWXUQ" rule="value.getXValue().setValue(MDMI2Message4PCP_Address_Line_1.getXDataStruct().getXValueAsString(&quot;streetAddressLine&quot;));"/>
+          <mapFromMdmi xmi:id="_3kTfgV3LEeiBH-Tl3UHQfw" name="MDMI2Message4PCP_Address_Line_1" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapAddressToString"/>
+          <mapToMdmi xmi:id="_rye-gF9QEeikcbFrS3LVLA" name="Message2MDMI4PCP_Address_Line_1" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapStringToAddress"/>
         </semanticElements>
         <semanticElements xmi:id="_hPqt7E4ZEei3m6zpCDWXUQ" name="PCP_Address_Line_2" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtuE4ZEei3m6zpCDWXUQ">
-          <mapFromMdmi xmi:id="_5Q_q0V3LEeiBH-Tl3UHQfw" name="MDMI2Message4PCP_Address_Line_2" businessElement="_hPslZ04ZEei3m6zpCDWXUQ" rule="value.getXValue().setValue(MDMI2Message4PCP_Address_Line_2.getXDataStruct().getXValueAsString(&quot;streetAddressLine&quot;));"/>
+          <mapFromMdmi xmi:id="_5Q_q0V3LEeiBH-Tl3UHQfw" name="MDMI2Message4PCP_Address_Line_2" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapAddressToString"/>
+          <mapToMdmi xmi:id="_tBXMcF9QEeikcbFrS3LVLA" name="Message2MDMI4PCP_Address_Line_2" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapStringToAddress"/>
         </semanticElements>
         <semanticElements xmi:id="_hPqt7U4ZEei3m6zpCDWXUQ" name="PCP_Address_City" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtuU4ZEei3m6zpCDWXUQ">
-          <mapFromMdmi xmi:id="_6V7SkV3LEeiBH-Tl3UHQfw" name="MDMI2Message4PCP_Address_City" businessElement="_hPslZ04ZEei3m6zpCDWXUQ" rule="value.getXValue().setValue(MDMI2Message4PCP_Address_City.getXDataStruct().getXValueAsString(&quot;city&quot;));"/>
+          <mapFromMdmi xmi:id="_6V7SkV3LEeiBH-Tl3UHQfw" name="MDMI2Message4PCP_Address_City" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapAddressToString"/>
+          <mapToMdmi xmi:id="_uPVbcF9QEeikcbFrS3LVLA" name="Message2MDMI4PCP_Address_City" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapStringToAddress"/>
         </semanticElements>
         <semanticElements xmi:id="_hPqt7k4ZEei3m6zpCDWXUQ" name="PCP_Adddress_State" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtuk4ZEei3m6zpCDWXUQ">
-          <mapFromMdmi xmi:id="_7fgJwV3LEeiBH-Tl3UHQfw" name="MDMI2Message4PCP_Adddress_State" businessElement="_hPslZ04ZEei3m6zpCDWXUQ" rule="value.getXValue().setValue(MDMI2Message4PCP_Adddress_State.getXDataStruct().getXValueAsString(&quot;state&quot;));"/>
+          <mapFromMdmi xmi:id="_7fgJwV3LEeiBH-Tl3UHQfw" name="MDMI2Message4PCP_Adddress_State" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapAddressToString"/>
+          <mapToMdmi xmi:id="_wF-M8F9QEeikcbFrS3LVLA" name="Message2MDMI4PCP_Adddress_State" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapStringToAddress"/>
         </semanticElements>
         <semanticElements xmi:id="_hPqt704ZEei3m6zpCDWXUQ" name="PCP_Address_ZipCode" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtu04ZEei3m6zpCDWXUQ">
-          <mapFromMdmi xmi:id="_8fDiQV3LEeiBH-Tl3UHQfw" name="MDMI2Message4PCP_Address_ZipCode" businessElement="_hPslZ04ZEei3m6zpCDWXUQ" rule="value.getXValue().setValue(MDMI2Message4PCP_Address_ZipCode.getXDataStruct().getXValueAsString(&quot;postalCode&quot;));"/>
+          <mapFromMdmi xmi:id="_8fDiQV3LEeiBH-Tl3UHQfw" name="MDMI2Message4PCP_Address_ZipCode" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapAddressToString"/>
+          <mapToMdmi xmi:id="_xIy74F9QEeikcbFrS3LVLA" name="Message2MDMI4PCP_Address_ZipCode" businessElement="_hPtMYE4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapStringToAddress"/>
         </semanticElements>
         <semanticElements xmi:id="_hPqt8E4ZEei3m6zpCDWXUQ" name="PCP_Phone_Number" elementType="NORMAL" datatype="_hPtNFk4ZEei3m6zpCDWXUQ" parent="_hPqtyE4ZEei3m6zpCDWXUQ" syntaxNode="_hPqtvE4ZEei3m6zpCDWXUQ">
           <mapFromMdmi xmi:id="_swaHsU4rEeigRPUErYl3TQ" name="Message2MDMI4PCP_Phone_Number" businessElement="_hPrV6k4ZEei3m6zpCDWXUQ" rule="DATATYPEMAP:mapTelecomToString"/>
@@ -4364,6 +4380,7 @@
       <literals xmi:id="_hPtNHU4ZEei3m6zpCDWXUQ" name="m " description="meters" code="string"/>
       <literals xmi:id="_hPtNHk4ZEei3m6zpCDWXUQ" name="mg" description="milligrams" code="string"/>
     </datatypes>
+    <datatypeMaps xmi:id="_PK1wAF9NEeiJS8hdT-1PfQ" name="MapStringToAddress" description="MapStringToAddress" fromMDMI="function mapStringToAddress(source,target) {}" toMDMI="function mapAddressToString(source,target) {}" mdmiDatatype="_hPuYFE4ZEei3m6zpCDWXUQ" messageDatatype="_hPtNFk4ZEei3m6zpCDWXUQ"/>
     <datatypeMaps xmi:id="_8ebvgE4aEei3m6zpCDWXUQ" name="StringAndAddressMapping" fromMDMI=" function mapAddressToString(source,target) {&#xD;&#xA;target.setValue(source.getXValueAsString('streetAddressLine') + ' ' + source.getXValueAsString('city') + ' ' + source.getXValueAsString('state') + ' ' + source.getXValueAsString('postalCode'));&#xD;&#xA;}&#xD;&#xA;" toMDMI="&#xD;&#xA;function mapStringToAddress(source,target) {&#x9;&#xD;&#xA;&#x9;Utils.StringToAddress(source,target);&#xD;&#xA;}&#xD;&#xA;"/>
     <datatypeMaps xmi:id="_8ebvgk4aEei3m6zpCDWXUQ" name="StringAndBinaryMapping" fromMDMI="" toMDMI=""/>
     <datatypeMaps xmi:id="_8ebvg04aEei3m6zpCDWXUQ" name="StringAndBooleanMapping" fromMDMI="" toMDMI="function mapStringToBoolean(source,target) { &#xD;&#xA;&#x9;target.setValue(source);&#xD;&#xA;}&#xD;&#xA; &#xD;&#xA;"/>
