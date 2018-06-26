@@ -15286,7 +15286,6 @@
           <mapFromMdmi xmi:id="_wIOZYXivEeiEV8O_JpG9WQ" name="MDMI2Message4Status63" businessElement="_9Fhtgm5zEeis44t9gECqug" rule="DATATYPEMAP: mapStatusCodeToFHIR_code"/>
           <mapToMdmi xmi:id="_9FddJm5zEeis44t9gECqug" name="TO_ResultObservationStatusCode" ruleExpressionLanguage="javaScript" enumExtResolverUri="http://hl7.org/fhir/ValueSet/observation-status" businessElement="_9FfPlm5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_codeToCodedElement"/>
           <mapToMdmi xmi:id="_tzhy4HivEeiEV8O_JpG9WQ" name="Message2MDMI4Status61" businessElement="_9FeEGm5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_codeToCodedElement"/>
-          <mapToMdmi xmi:id="_wIOZYHivEeiEV8O_JpG9WQ" name="Message2MDMI4Status62" businessElement="_9Fhtgm5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_codeToCodedElement"/>
         </semanticElements>
         <semanticElements xmi:id="_9FddiW5zEeis44t9gECqug" name="Encounter4" elementType="NORMAL" datatype="_9Fhtom5zEeis44t9gECqug" parent="_9FdcyG5zEeis44t9gECqug" children="_9FddjG5zEeis44t9gECqug _9FddjW5zEeis44t9gECqug _9Fddjm5zEeis44t9gECqug _9FddkG5zEeis44t9gECqug _9FddkW5zEeis44t9gECqug _9Fddkm5zEeis44t9gECqug _9Fddk25zEeis44t9gECqug _9FddlG5zEeis44t9gECqug _9FddlW5zEeis44t9gECqug _9Fddlm5zEeis44t9gECqug _9Fddl25zEeis44t9gECqug _9FddmG5zEeis44t9gECqug _9FddmW5zEeis44t9gECqug _9Fddmm5zEeis44t9gECqug _9FddsW5zEeis44t9gECqug" syntaxNode="_9Fc0i25zEeis44t9gECqug">
           <mapFromMdmi xmi:id="_9Fddim5zEeis44t9gECqug" name="From_FHIR-CORE_RESOURCES_OBSERVATION_ENCOUNTER" ruleExpressionLanguage="javaScript" businessElement="_9FeDXm5zEeis44t9gECqug"/>
@@ -16101,7 +16100,7 @@
         </semanticElements>
         <semanticElements xmi:id="_9FeC-25zEeis44t9gECqug" name="ClinicalStatus0" description="active | recurrence | inactive | remission | resolved" elementType="NORMAL" datatype="_9Fht2W5zEeis44t9gECqug" parent="_9FeC8G5zEeis44t9gECqug" syntaxNode="_9FXUaW5zEeis44t9gECqug" enumValueField="http://hl7.org/fhir/ValueSet/condition-clinical" enumValueDescrField="http://hl7.org/fhir/ValueSet/condition-clinical">
           <propertyQualifier>http://hl7.org/fhir/ValueSet/condition-clinical</propertyQualifier>
-          <mapFromMdmi xmi:id="_9FeC_G5zEeis44t9gECqug" name="FROM_ProblemConditionStatusCode" ruleExpressionLanguage="javaScript" businessElement="_9FfQ5W5zEeis44t9gECqug" rule="DATATYPEMAP:mapCodedElementToFHIR_code"/>
+          <mapFromMdmi xmi:id="_9FeC_G5zEeis44t9gECqug" name="FROM_ProblemConditionStatusCode" ruleExpressionLanguage="javaScript" businessElement="_9FfQ5W5zEeis44t9gECqug" rule="DATATYPEMAP:mapStatusCodeToFHIR_code"/>
           <mapToMdmi xmi:id="_9FeC_W5zEeis44t9gECqug" name="TO_ProblemConditionStatusCode" ruleExpressionLanguage="javaScript" enumExtResolverUri="http://hl7.org/fhir/ValueSet/condition-clinical" businessElement="_9FfQ5W5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_codeToCodedElement"/>
         </semanticElements>
         <semanticElements xmi:id="_9FeC_m5zEeis44t9gECqug" name="AssertedDate0" description="Date record was believed accurate" elementType="NORMAL" datatype="_9FhuEG5zEeis44t9gECqug" parent="_9FeC8G5zEeis44t9gECqug" syntaxNode="_9FXUbG5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
