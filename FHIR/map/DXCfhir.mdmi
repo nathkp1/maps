@@ -1953,12 +1953,12 @@
                 </nodes>
               </nodes>
             </nodes>
-            <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiF25zEeis44t9gECqug" name="patient" description="6" minOccurs="1" maxOccurs="1" location="patient" semanticElement="_9FdbIm5zEeis44t9gECqug">
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiLm5zEeis44t9gECqug" name="id" description="0" maxOccurs="1" location="id" semanticElement="_9FdbK25zEeis44t9gECqug">
+            <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiF25zEeis44t9gECqug" name="patient" description="6" minOccurs="1" maxOccurs="1" location="patient">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiLm5zEeis44t9gECqug" name="id" description="0" maxOccurs="1" location="id">
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiMG5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiL25zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiwW5zEeis44t9gECqug" name="identifier" description="0" maxOccurs="2147483647" location="identifier" semanticElement="_9FdbNG5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiwW5zEeis44t9gECqug" name="identifier" description="0" maxOccurs="2147483647" location="identifier">
                 <nodes xsi:type="mdmi:Bag" xmi:id="_9FYi2G5zEeis44t9gECqug" name="assigner" description="99999999" maxOccurs="1" location="assigner" fieldName="assigner">
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYi2m5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYi2W5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
@@ -1995,7 +1995,7 @@
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYizG5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                 </nodes>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYis25zEeis44t9gECqug" name="text" description="0" maxOccurs="1" location="text" semanticElement="_9FdbJW5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYis25zEeis44t9gECqug" name="text" description="0" maxOccurs="1" location="text">
                 <nodes xsi:type="mdmi:Bag" xmi:id="_9FYit25zEeis44t9gECqug" name="div" description="99999999" maxOccurs="1" location="div" fieldName="div">
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiuW5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiuG5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
@@ -2009,11 +2009,11 @@
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYitW5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                 </nodes>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiWG5zEeis44t9gECqug" name="active" description="1" maxOccurs="1" location="active" semanticElement="_9FdbRG5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiWG5zEeis44t9gECqug" name="active" description="1" maxOccurs="1" location="active">
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiWm5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiWW5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiIW5zEeis44t9gECqug" name="meta" description="1" maxOccurs="1" location="meta" semanticElement="_9FdbKW5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiIW5zEeis44t9gECqug" name="meta" description="1" maxOccurs="1" location="meta">
                 <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiK25zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiLW5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiLG5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
@@ -2031,11 +2031,11 @@
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiI25zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                 </nodes>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiGG5zEeis44t9gECqug" name="implicitRules" description="2" maxOccurs="1" location="implicitRules" semanticElement="_9FdbMG5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiGG5zEeis44t9gECqug" name="implicitRules" description="2" maxOccurs="1" location="implicitRules">
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiGm5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiGW5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYil25zEeis44t9gECqug" name="name" description="2" maxOccurs="2147483647" location="name" semanticElement="_9FdbLW5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYil25zEeis44t9gECqug" name="name" description="2" maxOccurs="2147483647" location="name">
                 <nodes xsi:type="mdmi:Bag" xmi:id="_9FYimm5zEeis44t9gECqug" name="family" description="99999999" maxOccurs="2147483647" location="family" fieldName="family">
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYinG5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYim25zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
@@ -2073,11 +2073,11 @@
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYimW5zEeis44t9gECqug" name="text" description="99999999" maxOccurs="1" location="text/@value" fieldName="text"/>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYimG5zEeis44t9gECqug" name="use" description="99999999" maxOccurs="1" location="use/@value" fieldName="use"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiG25zEeis44t9gECqug" name="language" description="3" maxOccurs="1" location="language" semanticElement="_9FdbLG5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiG25zEeis44t9gECqug" name="language" description="3" maxOccurs="1" location="language">
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiHW5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiHG5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYif25zEeis44t9gECqug" name="telecom" description="3" maxOccurs="2147483647" location="telecom" semanticElement="_9FdbOm5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYif25zEeis44t9gECqug" name="telecom" description="3" maxOccurs="2147483647" location="telecom">
                 <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiim5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYijG5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYii25zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
@@ -2110,23 +2110,23 @@
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYihG5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                 </nodes>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiHm5zEeis44t9gECqug" name="gender" description="4" maxOccurs="1" location="gender" semanticElement="_9FdbQW5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiHm5zEeis44t9gECqug" name="gender" description="4" maxOccurs="1" location="gender">
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiIG5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiH25zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYivW5zEeis44t9gECqug" name="birthDate" description="5" maxOccurs="1" location="birthDate" semanticElement="_9FdbJm5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYivW5zEeis44t9gECqug" name="birthDate" description="5" maxOccurs="1" location="birthDate">
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiv25zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYivm5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYifG5zEeis44t9gECqug" name="deceasedBoolean" description="6" maxOccurs="1" location="deceasedBoolean" semanticElement="_9FdbPm5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYifG5zEeis44t9gECqug" name="deceasedBoolean" description="6" maxOccurs="1" location="deceasedBoolean">
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYifm5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYifW5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYidm5zEeis44t9gECqug" name="deceasedDateTime" description="6" maxOccurs="1" location="deceasedDateTime" semanticElement="_9FdbPW5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYidm5zEeis44t9gECqug" name="deceasedDateTime" description="6" maxOccurs="1" location="deceasedDateTime">
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYieG5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYid25zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiMW5zEeis44t9gECqug" name="address" description="7" maxOccurs="2147483647" location="address" semanticElement="_9FdbMW5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiMW5zEeis44t9gECqug" name="address" description="7" maxOccurs="2147483647" location="address">
                 <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiPG5zEeis44t9gECqug" name="city" description="99999999" maxOccurs="1" location="city" fieldName="city">
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiPm5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiPW5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
@@ -2179,7 +2179,7 @@
                 </nodes>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiMm5zEeis44t9gECqug" name="use" description="99999999" maxOccurs="1" location="use/@value" fieldName="use"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiXm5zEeis44t9gECqug" name="maritalStatus" description="8" maxOccurs="1" location="maritalStatus" semanticElement="_9FdbQG5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiXm5zEeis44t9gECqug" name="maritalStatus" description="8" maxOccurs="1" location="maritalStatus">
                 <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiZW5zEeis44t9gECqug" name="coding" description="99999999" maxOccurs="1" location="coding" fieldName="coding">
                   <nodes xsi:type="mdmi:Bag" xmi:id="_9FYibG5zEeis44t9gECqug" name="code" description="99999999" maxOccurs="1" location="code" fieldName="code">
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYibm5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
@@ -2212,21 +2212,21 @@
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiYG5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                 </nodes>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYieW5zEeis44t9gECqug" name="multipleBirthBoolean" description="9" maxOccurs="1" location="multipleBirthBoolean" semanticElement="_9FdbOW5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYieW5zEeis44t9gECqug" name="multipleBirthBoolean" description="9" maxOccurs="1" location="multipleBirthBoolean">
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYie25zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiem5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiW25zEeis44t9gECqug" name="multipleBirthInteger" description="9" maxOccurs="1" location="multipleBirthInteger" semanticElement="_9FdbOG5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiW25zEeis44t9gECqug" name="multipleBirthInteger" description="9" maxOccurs="1" location="multipleBirthInteger">
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiXW5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                 <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYiXG5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiwG5zEeis44t9gECqug" name="photo" description="10" maxOccurs="2147483647" location="photo" semanticElement="_9FdbP25zEeis44t9gECqug"/>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYi3G5zEeis44t9gECqug" name="contact" description="11" minOccurs="1" maxOccurs="2147483647" location="contact" semanticElement="_9FdbTW5zEeis44t9gECqug">
-                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJHG5zEeis44t9gECqug" name="id" description="0" maxOccurs="1" location="id" semanticElement="_9FdbU25zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYiwG5zEeis44t9gECqug" name="photo" description="10" maxOccurs="2147483647" location="photo"/>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FYi3G5zEeis44t9gECqug" name="contact" description="11" minOccurs="1" maxOccurs="2147483647" location="contact">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJHG5zEeis44t9gECqug" name="id" description="0" maxOccurs="1" location="id">
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJHm5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJHW5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                 </nodes>
-                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJH25zEeis44t9gECqug" name="relationship" description="0" maxOccurs="2147483647" location="relationship" semanticElement="_9FdbXG5zEeis44t9gECqug">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJH25zEeis44t9gECqug" name="relationship" description="0" maxOccurs="2147483647" location="relationship">
                   <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJJm5zEeis44t9gECqug" name="coding" description="99999999" maxOccurs="1" location="coding" fieldName="coding">
                     <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJLW5zEeis44t9gECqug" name="code" description="99999999" maxOccurs="1" location="code" fieldName="code">
                       <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJL25zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
@@ -2259,7 +2259,7 @@
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJIW5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                   </nodes>
                 </nodes>
-                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJAG5zEeis44t9gECqug" name="name" description="1" maxOccurs="1" location="name" semanticElement="_9FdbWW5zEeis44t9gECqug">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJAG5zEeis44t9gECqug" name="name" description="1" maxOccurs="1" location="name">
                   <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJA25zEeis44t9gECqug" name="family" description="99999999" maxOccurs="2147483647" location="family" fieldName="family">
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJBW5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJBG5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
@@ -2297,7 +2297,7 @@
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJAm5zEeis44t9gECqug" name="text" description="99999999" maxOccurs="1" location="text/@value" fieldName="text"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJAW5zEeis44t9gECqug" name="use" description="99999999" maxOccurs="1" location="use/@value" fieldName="use"/>
                 </nodes>
-                <nodes xsi:type="mdmi:Bag" xmi:id="_9FYjEW5zEeis44t9gECqug" name="telecom" description="2" maxOccurs="2147483647" location="telecom" semanticElement="_9FdbUG5zEeis44t9gECqug">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_9FYjEW5zEeis44t9gECqug" name="telecom" description="2" maxOccurs="2147483647" location="telecom">
                   <nodes xsi:type="mdmi:Bag" xmi:id="_9FZI825zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZI9W5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZI9G5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
@@ -2330,7 +2330,7 @@
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYjFm5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                   </nodes>
                 </nodes>
-                <nodes xsi:type="mdmi:Bag" xmi:id="_9FYi6m5zEeis44t9gECqug" name="address" description="3" maxOccurs="1" location="address" semanticElement="_9FdbVG5zEeis44t9gECqug">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_9FYi6m5zEeis44t9gECqug" name="address" description="3" maxOccurs="1" location="address">
                   <nodes xsi:type="mdmi:Bag" xmi:id="_9FYi9W5zEeis44t9gECqug" name="city" description="99999999" maxOccurs="1" location="city" fieldName="city">
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYi925zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYi9m5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
@@ -2383,11 +2383,11 @@
                   </nodes>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYi625zEeis44t9gECqug" name="use" description="99999999" maxOccurs="1" location="use/@value" fieldName="use"/>
                 </nodes>
-                <nodes xsi:type="mdmi:Bag" xmi:id="_9FYi525zEeis44t9gECqug" name="gender" description="4" maxOccurs="1" location="gender" semanticElement="_9FdbWG5zEeis44t9gECqug">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_9FYi525zEeis44t9gECqug" name="gender" description="4" maxOccurs="1" location="gender">
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYi6W5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYi6G5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                 </nodes>
-                <nodes xsi:type="mdmi:Bag" xmi:id="_9FYi3W5zEeis44t9gECqug" name="period" description="6" maxOccurs="1" location="period" semanticElement="_9FdbV25zEeis44t9gECqug">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_9FYi3W5zEeis44t9gECqug" name="period" description="6" maxOccurs="1" location="period">
                   <nodes xsi:type="mdmi:Bag" xmi:id="_9FYi4W5zEeis44t9gECqug" name="end" description="99999999" maxOccurs="1" location="end" fieldName="end">
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYi425zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FYi4m5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
@@ -2402,12 +2402,12 @@
                   </nodes>
                 </nodes>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJN25zEeis44t9gECqug" name="communication" description="13" minOccurs="1" maxOccurs="2147483647" location="communication" semanticElement="_9FdbRW5zEeis44t9gECqug">
-                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJO25zEeis44t9gECqug" name="id" description="0" maxOccurs="1" location="id" semanticElement="_9FdbSG5zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJN25zEeis44t9gECqug" name="communication" description="13" minOccurs="1" maxOccurs="2147483647" location="communication">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJO25zEeis44t9gECqug" name="id" description="0" maxOccurs="1" location="id">
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJPW5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJPG5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                 </nodes>
-                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJPm5zEeis44t9gECqug" name="language" description="0" minOccurs="1" maxOccurs="1" location="language" semanticElement="_9FdbSW5zEeis44t9gECqug">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJPm5zEeis44t9gECqug" name="language" description="0" minOccurs="1" maxOccurs="1" location="language">
                   <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJRW5zEeis44t9gECqug" name="coding" description="99999999" maxOccurs="1" location="coding" fieldName="coding">
                     <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJTG5zEeis44t9gECqug" name="code" description="99999999" maxOccurs="1" location="code" fieldName="code">
                       <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJTm5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
@@ -2440,12 +2440,12 @@
                     <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJQG5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                   </nodes>
                 </nodes>
-                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJOG5zEeis44t9gECqug" name="preferred" description="1" maxOccurs="1" location="preferred" semanticElement="_9FdbTG5zEeis44t9gECqug">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJOG5zEeis44t9gECqug" name="preferred" description="1" maxOccurs="1" location="preferred">
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJOm5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJOW5zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
                 </nodes>
               </nodes>
-              <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJVm5zEeis44t9gECqug" name="generalPractitioner" description="14" maxOccurs="2147483647" location="generalPractitioner" semanticElement="_9FdbX25zEeis44t9gECqug">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJVm5zEeis44t9gECqug" name="generalPractitioner" description="14" maxOccurs="2147483647" location="generalPractitioner">
                 <nodes xsi:type="mdmi:Bag" xmi:id="_9FZJWm5zEeis44t9gECqug" name="display" description="99999999" maxOccurs="1" location="display" fieldName="display">
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJXG5zEeis44t9gECqug" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
                   <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_9FZJW25zEeis44t9gECqug" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
@@ -14009,7 +14009,7 @@
         <semanticElements xmi:id="_9Fdadm5zEeis44t9gECqug" name="Communication" description="Knowing which language a practitioner speaks can help in facilitating communication with patients." elementType="NORMAL" datatype="_9Fht3W5zEeis44t9gECqug" parent="_9Fc3wW5zEeis44t9gECqug" syntaxNode="_9FUSFW5zEeis44t9gECqug" enumValueField="http://hl7.org/fhir/ValueSet/languages" enumValueDescrField="http://hl7.org/fhir/ValueSet/languages">
           <propertyQualifier>http://hl7.org/fhir/ValueSet/languages</propertyQualifier>
         </semanticElements>
-        <semanticElements xmi:id="_9Fdad25zEeis44t9gECqug" name="Encounter0" description="An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient." elementType="NORMAL" datatype="_9Fhtom5zEeis44t9gECqug" parent="_9Fc3wG5zEeis44t9gECqug" children="_9FdaeG5zEeis44t9gECqug _9Fdae25zEeis44t9gECqug _9Fdafm5zEeis44t9gECqug _9Fdaf25zEeis44t9gECqug _9FdagG5zEeis44t9gECqug _9FdagW5zEeis44t9gECqug _9FdahG5zEeis44t9gECqug _9Fdah25zEeis44t9gECqug _9FdaiG5zEeis44t9gECqug _9FdaiW5zEeis44t9gECqug _9Fdaim5zEeis44t9gECqug _9Fdai25zEeis44t9gECqug _9Fdajm5zEeis44t9gECqug _9Fda3W5zEeis44t9gECqug _9Fda5G5zEeis44t9gECqug _9FdbIm5zEeis44t9gECqug" syntaxNode="_9FXVE25zEeis44t9gECqug">
+        <semanticElements xmi:id="_9Fdad25zEeis44t9gECqug" name="Encounter0" description="An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient." elementType="NORMAL" datatype="_9Fhtom5zEeis44t9gECqug" parent="_9Fc3wG5zEeis44t9gECqug" children="_9FdaeG5zEeis44t9gECqug _9Fdae25zEeis44t9gECqug _9Fdafm5zEeis44t9gECqug _9Fdaf25zEeis44t9gECqug _9FdagG5zEeis44t9gECqug _9FdagW5zEeis44t9gECqug _9FdahG5zEeis44t9gECqug _9Fdah25zEeis44t9gECqug _9FdaiG5zEeis44t9gECqug _9FdaiW5zEeis44t9gECqug _9Fdaim5zEeis44t9gECqug _9Fdai25zEeis44t9gECqug _9Fdajm5zEeis44t9gECqug _9Fda3W5zEeis44t9gECqug _9Fda5G5zEeis44t9gECqug" syntaxNode="_9FXVE25zEeis44t9gECqug">
           <mapFromMdmi xmi:id="_zMjqEW8MEeiqg6Yt0fwiNQ" name="MDMI2Message4Encounter0" businessElement="_9FeDVW5zEeis44t9gECqug"/>
           <mapToMdmi xmi:id="_zMjqEG8MEeiqg6Yt0fwiNQ" name="Message2MDMI4Encounter0" businessElement="_9FeDVW5zEeis44t9gECqug"/>
         </semanticElements>
@@ -14341,119 +14341,6 @@
           <mapToMdmi xmi:id="_9FdbIG5zEeis44t9gECqug" name="TO_GuardianRelationshipCode" ruleExpressionLanguage="javaScript" enumExtResolverUri="http://hl7.org/fhir/ValueSet/v2-0131" businessElement="_9FeDj25zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_CodeableConceptToCodedElement"/>
         </semanticElements>
         <semanticElements xmi:id="_9FdbIW5zEeis44t9gECqug" name="GeneralPractitioner0" description="Patient's nominated care provider." elementType="NORMAL" datatype="_9Fhuzm5zEeis44t9gECqug" parent="_9Fda5G5zEeis44t9gECqug" syntaxNode="_9FYiDW5zEeis44t9gECqug"/>
-        <semanticElements xmi:id="_9FdbIm5zEeis44t9gECqug" name="Patient1" elementType="NORMAL" datatype="_9Fhtom5zEeis44t9gECqug" parent="_9Fdad25zEeis44t9gECqug" children="_9FdbJW5zEeis44t9gECqug _9FdbJm5zEeis44t9gECqug _9FdbKW5zEeis44t9gECqug _9FdbK25zEeis44t9gECqug _9FdbLG5zEeis44t9gECqug _9FdbLW5zEeis44t9gECqug _9FdbMG5zEeis44t9gECqug _9FdbMW5zEeis44t9gECqug _9FdbNG5zEeis44t9gECqug _9FdbOG5zEeis44t9gECqug _9FdbOW5zEeis44t9gECqug _9FdbOm5zEeis44t9gECqug _9FdbPW5zEeis44t9gECqug _9FdbPm5zEeis44t9gECqug _9FdbP25zEeis44t9gECqug _9FdbQG5zEeis44t9gECqug _9FdbQW5zEeis44t9gECqug _9FdbRG5zEeis44t9gECqug _9FdbRW5zEeis44t9gECqug _9FdbTW5zEeis44t9gECqug _9FdbX25zEeis44t9gECqug" syntaxNode="_9FYiF25zEeis44t9gECqug">
-          <mapFromMdmi xmi:id="_9FdbI25zEeis44t9gECqug" name="From_FHIR-CORE_RESOURCES_ENCOUNTER_PATIENT" ruleExpressionLanguage="javaScript" businessElement="_9FfPvG5zEeis44t9gECqug"/>
-          <mapToMdmi xmi:id="_9FdbJG5zEeis44t9gECqug" name="To_FHIR-CORE_RESOURCES_ENCOUNTER_PATIENT" ruleExpressionLanguage="javaScript" businessElement="_9FfPvG5zEeis44t9gECqug"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbJW5zEeis44t9gECqug" name="Text4" description="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded in formation is added later." elementType="NORMAL" datatype="_9Fhunm5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYis25zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbJm5zEeis44t9gECqug" name="BirthDate2" description="The date of birth for the individual" elementType="NORMAL" datatype="_9FhuEG5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYivW5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-          <mapFromMdmi xmi:id="_9FdbJ25zEeis44t9gECqug" name="FROM_PatientBirthDateTime" ruleExpressionLanguage="javaScript" businessElement="_9FeDMW5zEeis44t9gECqug" rule="DATATYPEMAP:mapDateTimeToFHIR_date"/>
-          <mapToMdmi xmi:id="_9FdbKG5zEeis44t9gECqug" name="TO_PatientBirthDateTime" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_9FeDMW5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_dateToDateTime"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbKW5zEeis44t9gECqug" name="Meta4" description="Metadata about the resource" elementType="LOCAL" datatype="_9Fhujm5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYiIW5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-          <computedInValue xmi:id="_9FdbKm5zEeis44t9gECqug" expression="value.getXValue().intializeStructs(); value.getXValue().getValue().setValueSafely('profile.value', 'http://hl7.org/fhir/StructureDefinition/Patient');  " language="JavaScript"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbK25zEeis44t9gECqug" name="Id9" description="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes." elementType="NORMAL" datatype="_9FhudG5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYiLm5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbLG5zEeis44t9gECqug" name="Language6" description="Language of the resource content" elementType="NORMAL" datatype="_9Fht2W5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYiG25zEeis44t9gECqug" enumValueField="http://hl7.org/fhir/ValueSet/languages" enumValueDescrField="http://hl7.org/fhir/ValueSet/languages">
-          <propertyQualifier>http://hl7.org/fhir/ValueSet/languages</propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbLW5zEeis44t9gECqug" name="Name4" description="A patient may have multiple names with different uses or applicable periods. For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns." elementType="NORMAL" datatype="_9Fhuam5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYil25zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-          <mapFromMdmi xmi:id="_9FdbLm5zEeis44t9gECqug" name="FROM_PatientName" ruleExpressionLanguage="javaScript" businessElement="_9FfPxG5zEeis44t9gECqug" rule="DATATYPEMAP:mapPersonNameToFHIR_HumanName"/>
-          <mapToMdmi xmi:id="_9FdbL25zEeis44t9gECqug" name="TO_PatientName" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_9FfPxG5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_HumanNameToPersonName"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbMG5zEeis44t9gECqug" name="ImplicitRules4" description="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content." elementType="NORMAL" datatype="_9FhvD25zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYiGG5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbMW5zEeis44t9gECqug" name="Address4" description="May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification." elementType="NORMAL" datatype="_9Fhtpm5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYiMW5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-          <mapFromMdmi xmi:id="_9FdbMm5zEeis44t9gECqug" name="FROM_PatientAddress" ruleExpressionLanguage="javaScript" businessElement="_9FhGV25zEeis44t9gECqug" rule="DATATYPEMAP:mapAddressToFHIR_Address"/>
-          <mapToMdmi xmi:id="_9FdbM25zEeis44t9gECqug" name="TO_PatientAddress" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_9FhGV25zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_AddressToAddress"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbNG5zEeis44t9gECqug" name="Identifier4" description="An identifier for this patient" elementType="NORMAL" datatype="_9FhueG5zEeis44t9gECqug" multipleInstances="false" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYiwW5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-          <relationships xmi:id="_9FdbNW5zEeis44t9gECqug" name="PARENTNODE" relatedSemanticElement="_9FdbIm5zEeis44t9gECqug"/>
-          <mapFromMdmi xmi:id="_9FdbNm5zEeis44t9gECqug" name="FROM_PatientID" ruleExpressionLanguage="javaScript" businessElement="_9FeDNG5zEeis44t9gECqug" rule="DATATYPEMAP:mapInstanceIdentifierToFHIR_Identifier"/>
-          <mapToMdmi xmi:id="_9FdbN25zEeis44t9gECqug" name="TO_PatientID" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_9FeDNG5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_IdentifierToInstanceIdentifier"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbOG5zEeis44t9gECqug" name="MultipleBirthinteger3" elementType="NORMAL" datatype="_9FhuhW5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYiW25zEeis44t9gECqug"/>
-        <semanticElements xmi:id="_9FdbOW5zEeis44t9gECqug" name="MultipleBirthboolean4" elementType="NORMAL" datatype="_9Fht1W5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYieW5zEeis44t9gECqug"/>
-        <semanticElements xmi:id="_9FdbOm5zEeis44t9gECqug" name="Telecom4" description="A contact detail for the individual" elementType="NORMAL" datatype="_9Fht725zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYif25zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-          <mapFromMdmi xmi:id="_9FdbO25zEeis44t9gECqug" name="FROM_PatientPhoneContact" ruleExpressionLanguage="javaScript" businessElement="_9FfP4G5zEeis44t9gECqug" rule="DATATYPEMAP:mapPatientPhoneContactTelecomToFHIR_ContactPoint"/>
-          <mapToMdmi xmi:id="_9FdbPG5zEeis44t9gECqug" name="TO_PatientPhoneContact" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_9FfP4G5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_ContactPointToTelecom"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbPW5zEeis44t9gECqug" name="DeceaseddateTime3" elementType="NORMAL" datatype="_9FhuFG5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYidm5zEeis44t9gECqug"/>
-        <semanticElements xmi:id="_9FdbPm5zEeis44t9gECqug" name="Deceasedboolean4" elementType="NORMAL" datatype="_9Fht1W5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYifG5zEeis44t9gECqug"/>
-        <semanticElements xmi:id="_9FdbP25zEeis44t9gECqug" name="Photo2" description="Many EHR systems have the capability to capture an image of the patient. Fits with newer social media usage too." elementType="NORMAL" datatype="_9FhtwW5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYiwG5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbQG5zEeis44t9gECqug" name="MaritalStatus1" description="Marital (civil) status of a patient" elementType="NORMAL" datatype="_9Fht3W5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYiXm5zEeis44t9gECqug" enumValueField="http://hl7.org/fhir/ValueSet/marital-status" enumValueDescrField="http://hl7.org/fhir/ValueSet/marital-status">
-          <propertyQualifier>http://hl7.org/fhir/ValueSet/marital-status</propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbQW5zEeis44t9gECqug" name="Gender4" description="The gender may not match the biological sex as determined by genetics, or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than M and F, though the vast majority of systems and contexts only support M and F.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific gender aspect of interest (anatomical, chromosonal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosonal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overrideable error, not a &quot;hard&quot; error." elementType="NORMAL" datatype="_9Fht2W5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYiHm5zEeis44t9gECqug" enumValueField="http://hl7.org/fhir/ValueSet/administrative-gender" enumValueDescrField="http://hl7.org/fhir/ValueSet/administrative-gender">
-          <propertyQualifier>http://hl7.org/fhir/ValueSet/administrative-gender</propertyQualifier>
-          <mapFromMdmi xmi:id="_9FdbQm5zEeis44t9gECqug" name="FROM_PatientAdministrationGenderCode" ruleExpressionLanguage="javaScript" businessElement="_9FeDL25zEeis44t9gECqug" rule="DATATYPEMAP:mapCodedElementToFHIR_code"/>
-          <mapToMdmi xmi:id="_9FdbQ25zEeis44t9gECqug" name="TO_PatientAdministrationGenderCode" ruleExpressionLanguage="javaScript" enumExtResolverUri="http://hl7.org/fhir/ValueSet/administrative-gender" businessElement="_9FeDL25zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_codeToCodedElement"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbRG5zEeis44t9gECqug" name="Active2" description="Whether this patient record is in active use." elementType="NORMAL" datatype="_9Fht1W5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FYiWG5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbRW5zEeis44t9gECqug" name="Communication2" elementType="NORMAL" datatype="_9Fhtom5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" children="_9FdbSG5zEeis44t9gECqug _9FdbSW5zEeis44t9gECqug _9FdbTG5zEeis44t9gECqug" syntaxNode="_9FZJN25zEeis44t9gECqug">
-          <mapFromMdmi xmi:id="_9FdbRm5zEeis44t9gECqug" name="From_FHIR-CORE_RESOURCES_PATIENT_COMMUNICATION" ruleExpressionLanguage="javaScript" businessElement="_9FeDN25zEeis44t9gECqug"/>
-          <mapToMdmi xmi:id="_9FdbR25zEeis44t9gECqug" name="To_FHIR-CORE_RESOURCES_PATIENT_COMMUNICATION" ruleExpressionLanguage="javaScript" businessElement="_9FeDN25zEeis44t9gECqug"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbSG5zEeis44t9gECqug" name="Id10" description="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." elementType="NORMAL" datatype="_9FhuZm5zEeis44t9gECqug" parent="_9FdbRW5zEeis44t9gECqug" syntaxNode="_9FZJO25zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbSW5zEeis44t9gECqug" name="Language7" description="Most systems in multilingual countries will want to convey language. Not all systems actually need the regional dialect." elementType="NORMAL" datatype="_9Fht3W5zEeis44t9gECqug" parent="_9FdbRW5zEeis44t9gECqug" syntaxNode="_9FZJPm5zEeis44t9gECqug" enumValueField="http://hl7.org/fhir/ValueSet/languages" enumValueDescrField="http://hl7.org/fhir/ValueSet/languages">
-          <propertyQualifier>http://hl7.org/fhir/ValueSet/languages</propertyQualifier>
-          <mapFromMdmi xmi:id="_9FdbSm5zEeis44t9gECqug" name="FROM_PatientLanguageCode" ruleExpressionLanguage="javaScript" businessElement="_9FeDNm5zEeis44t9gECqug" rule="DATATYPEMAP:mapCodedElementToFHIR_CodeableConcept"/>
-          <mapToMdmi xmi:id="_9FdbS25zEeis44t9gECqug" name="TO_PatientLanguageCode" ruleExpressionLanguage="javaScript" enumExtResolverUri="http://hl7.org/fhir/ValueSet/languages" businessElement="_9FeDNm5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_CodeableConceptToCodedElement"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbTG5zEeis44t9gECqug" name="Preferred1" description="People that master multiple languages up to certain level may prefer one or more, i.e. feel more confident in communicating in a particular language making other languages sort of a fall back method." elementType="NORMAL" datatype="_9Fht1W5zEeis44t9gECqug" parent="_9FdbRW5zEeis44t9gECqug" syntaxNode="_9FZJOG5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbTW5zEeis44t9gECqug" name="Contact1" elementType="NORMAL" datatype="_9Fhtom5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" children="_9FdbUG5zEeis44t9gECqug _9FdbU25zEeis44t9gECqug _9FdbVG5zEeis44t9gECqug _9FdbV25zEeis44t9gECqug _9FdbWG5zEeis44t9gECqug _9FdbWW5zEeis44t9gECqug _9FdbXG5zEeis44t9gECqug" syntaxNode="_9FYi3G5zEeis44t9gECqug">
-          <mapFromMdmi xmi:id="_9FdbTm5zEeis44t9gECqug" name="From_FHIR-CORE_RESOURCES_PATIENT_CONTACT" ruleExpressionLanguage="javaScript" businessElement="_9FeD9m5zEeis44t9gECqug"/>
-          <mapToMdmi xmi:id="_9FdbT25zEeis44t9gECqug" name="To_FHIR-CORE_RESOURCES_PATIENT_CONTACT" ruleExpressionLanguage="javaScript" businessElement="_9FeD9m5zEeis44t9gECqug"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbUG5zEeis44t9gECqug" name="Telecom5" description="Contact may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification." elementType="NORMAL" datatype="_9Fht725zEeis44t9gECqug" parent="_9FdbTW5zEeis44t9gECqug" syntaxNode="_9FYjEW5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-          <mapFromMdmi xmi:id="_9FdbUW5zEeis44t9gECqug" name="FROM_GuardianPhoneContact" ruleExpressionLanguage="javaScript" businessElement="_9FfP4m5zEeis44t9gECqug" rule=""/>
-          <mapToMdmi xmi:id="_9FdbUm5zEeis44t9gECqug" name="TO_GuardianPhoneContact" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_9FfP4m5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_ContactPointToTelecom"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbU25zEeis44t9gECqug" name="Id11" description="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." elementType="NORMAL" datatype="_9FhuZm5zEeis44t9gECqug" parent="_9FdbTW5zEeis44t9gECqug" syntaxNode="_9FZJHG5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbVG5zEeis44t9gECqug" name="Address5" description="Address for the contact person" elementType="NORMAL" datatype="_9Fhtpm5zEeis44t9gECqug" parent="_9FdbTW5zEeis44t9gECqug" syntaxNode="_9FYi6m5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-          <mapFromMdmi xmi:id="_9FdbVW5zEeis44t9gECqug" name="FROM_GuardianAddress" ruleExpressionLanguage="javaScript" businessElement="_9FfP8W5zEeis44t9gECqug" rule="DATATYPEMAP:mapAddressToFHIR_Address"/>
-          <mapToMdmi xmi:id="_9FdbVm5zEeis44t9gECqug" name="TO_GuardianAddress" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_9FfP8W5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_AddressToAddress"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbV25zEeis44t9gECqug" name="Period4" description="The period during which this contact person or organization is valid to be contacted relating to this patient" elementType="NORMAL" datatype="_9Fhusm5zEeis44t9gECqug" parent="_9FdbTW5zEeis44t9gECqug" syntaxNode="_9FYi3W5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbWG5zEeis44t9gECqug" name="Gender5" description="Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes." elementType="NORMAL" datatype="_9Fht2W5zEeis44t9gECqug" parent="_9FdbTW5zEeis44t9gECqug" syntaxNode="_9FYi525zEeis44t9gECqug" enumValueField="http://hl7.org/fhir/ValueSet/administrative-gender" enumValueDescrField="http://hl7.org/fhir/ValueSet/administrative-gender">
-          <propertyQualifier>http://hl7.org/fhir/ValueSet/administrative-gender</propertyQualifier>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbWW5zEeis44t9gECqug" name="Name5" description="A name associated with the contact person." elementType="NORMAL" datatype="_9Fhuam5zEeis44t9gECqug" parent="_9FdbTW5zEeis44t9gECqug" syntaxNode="_9FZJAG5zEeis44t9gECqug" enumValueField="" enumValueDescrField="">
-          <propertyQualifier></propertyQualifier>
-          <mapFromMdmi xmi:id="_9FdbWm5zEeis44t9gECqug" name="FROM_GuardianName" ruleExpressionLanguage="javaScript" businessElement="_9FeDjm5zEeis44t9gECqug" rule="DATATYPEMAP:mapPersonNameToFHIR_HumanName"/>
-          <mapToMdmi xmi:id="_9FdbW25zEeis44t9gECqug" name="TO_GuardianName" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_9FeDjm5zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_HumanNameToPersonName"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbXG5zEeis44t9gECqug" name="Relationship1" description="The kind of relationship" elementType="NORMAL" datatype="_9Fht3W5zEeis44t9gECqug" parent="_9FdbTW5zEeis44t9gECqug" syntaxNode="_9FZJH25zEeis44t9gECqug" enumValueField="http://hl7.org/fhir/ValueSet/v2-0131" enumValueDescrField="http://hl7.org/fhir/ValueSet/v2-0131">
-          <propertyQualifier>http://hl7.org/fhir/ValueSet/v2-0131</propertyQualifier>
-          <mapFromMdmi xmi:id="_9FdbXW5zEeis44t9gECqug" name="FROM_GuardianRelationshipCode" ruleExpressionLanguage="javaScript" businessElement="_9FeDj25zEeis44t9gECqug" rule="DATATYPEMAP:mapCodedElementToFHIR_CodeableConcept"/>
-          <mapToMdmi xmi:id="_9FdbXm5zEeis44t9gECqug" name="TO_GuardianRelationshipCode" ruleExpressionLanguage="javaScript" enumExtResolverUri="http://hl7.org/fhir/ValueSet/v2-0131" businessElement="_9FeDj25zEeis44t9gECqug" rule="DATATYPEMAP:mapFHIR_CodeableConceptToCodedElement"/>
-        </semanticElements>
-        <semanticElements xmi:id="_9FdbX25zEeis44t9gECqug" name="GeneralPractitioner1" description="Patient's nominated care provider." elementType="NORMAL" datatype="_9Fhuzm5zEeis44t9gECqug" parent="_9FdbIm5zEeis44t9gECqug" syntaxNode="_9FZJVm5zEeis44t9gECqug"/>
         <semanticElements xmi:id="_9FdbYG5zEeis44t9gECqug" name="Patient3" description="Base StructureDefinition for Patient Resource" elementType="NORMAL" datatype="_9Fhtom5zEeis44t9gECqug" parent="_9Fc3wG5zEeis44t9gECqug" children="_9FdbYW5zEeis44t9gECqug _9FdbYm5zEeis44t9gECqug _9FdbY25zEeis44t9gECqug _9FdbZm5zEeis44t9gECqug _9FdbZ25zEeis44t9gECqug _9FdbaG5zEeis44t9gECqug _9FdbaW5zEeis44t9gECqug _9FdbbG5zEeis44t9gECqug _9FdbbW5zEeis44t9gECqug _9Fdbbm5zEeis44t9gECqug _9Fdbcm5zEeis44t9gECqug _9FdbdW5zEeis44t9gECqug _9Fdbdm5zEeis44t9gECqug _9Fdbd25zEeis44t9gECqug _9FdbfG5zEeis44t9gECqug _9Fdbf25zEeis44t9gECqug _9FdbgG5zEeis44t9gECqug _9FdbgW5zEeis44t9gECqug _9Fdbk25zEeis44t9gECqug _9Fdbm25zEeis44t9gECqug" syntaxNode="_9FTCUG5zEeis44t9gECqug">
           <mapFromMdmi xmi:id="_1wSyIW8MEeiqg6Yt0fwiNQ" name="MDMI2Message4Patient3" businessElement="_9FfPvG5zEeis44t9gECqug"/>
           <mapToMdmi xmi:id="_1wSyIG8MEeiqg6Yt0fwiNQ" name="Message2MDMI4Patient3" businessElement="_9FfPvG5zEeis44t9gECqug"/>
