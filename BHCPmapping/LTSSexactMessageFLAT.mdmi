@@ -61,7 +61,7 @@
           <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_TfNhKleGEeiSaYCgmm2PfA" name="ServiceProviderPhoneNumber" maxOccurs="1" location="ServiceProviderPhoneNumber" semanticElement="_TfNhZFeGEeiSaYCgmm2PfA"/>
           <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_TfNhK1eGEeiSaYCgmm2PfA" name="NonPaidServiceProviderRelationship" maxOccurs="1" location="NonPaidServiceProviderRelationship" semanticElement="_TfNhZVeGEeiSaYCgmm2PfA"/>
           <nodes xsi:type="mdmi:Bag" xmi:id="_jUKgEFeJEeimmaA3ghYhrw" name="Document" minOccurs="1" maxOccurs="2147483647" location="LTSS">
-            <nodes xsi:type="mdmi:Bag" xmi:id="_rRMoEFeJEeimmaA3ghYhrw" name="Document" maxOccurs="2147483647" location="LTSS" semanticElement="_rRNPIFeJEeimmaA3ghYhrw"/>
+            <nodes xsi:type="mdmi:Bag" xmi:id="_rRMoEFeJEeimmaA3ghYhrw" name="Document" maxOccurs="2147483647" location="LTSS"/>
           </nodes>
         </root>
       </syntaxModel>
@@ -291,7 +291,6 @@
           <mapFromMdmi xmi:id="_opXOQXonEeiBd-1gR9ObqQ" name="MDMI2Message4NonPaidServiceProviderRelationship" businessElement="_TfP-61eGEeiSaYCgmm2PfA" rule="DATATYPEMAP:mapCodedElementToString"/>
           <mapToMdmi xmi:id="_opXOQHonEeiBd-1gR9ObqQ" name="Message2MDMI4NonPaidServiceProviderRelationship" businessElement="_TfP-61eGEeiSaYCgmm2PfA" rule="DATATYPEMAP:mapStringToCodedElement"/>
         </semanticElements>
-        <semanticElements xmi:id="_rRNPIFeJEeimmaA3ghYhrw" name="Document" elementType="NORMAL" datatype="_TfRz21eGEeiSaYCgmm2PfA" syntaxNode="_rRMoEFeJEeimmaA3ghYhrw"/>
       </elementSet>
     </models>
     <domainDictionary xmi:id="_TfNhZleGEeiSaYCgmm2PfA">
