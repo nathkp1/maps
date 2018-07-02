@@ -528,6 +528,12 @@ This clinical statement represents any procedure that cannot be classified as an
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HT4loOAWEeGlGcipF_0y2A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HT3-kOAWEeGlGcipF_0y2A" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_tutMEHpWEeill5VfgX-4Ew" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tutMEXpWEeill5VfgX-4Ew"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tutMEnpWEeill5VfgX-4Ew" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Njf0cEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_uu7xUN_iEeGiie5feaDcRA" name="ProcedureActPerformer">
       <ownedComment xmi:id="_XtNssN_jEeGiie5feaDcRA">
         <body>INLINE</body>
@@ -2639,6 +2645,11 @@ The common notion of &quot;procedure&quot; is broader than that specified by the
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q5PsQSF4EeiUrLoLdSW0dQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q5PsQiF4EeiUrLoLdSW0dQ" value="*"/>
       <association href="../consol.uml#_Q5TWoCF4EeiUrLoLdSW0dQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_-lq9oHpgEeiGTPBUv4SUTw" name="text" visibility="private" aggregation="composite" redefinedProperty="_tutMEHpWEeill5VfgX-4Ew">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-lq9oXpgEeiGTPBUv4SUTw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-lq9onpgEeiGTPBUv4SUTw" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_chMe8MnKEeSr1c1X9ACWbg" name="ProcedureActPerformer">
       <ownedComment xmi:id="_f_yswMnKEeSr1c1X9ACWbg">
