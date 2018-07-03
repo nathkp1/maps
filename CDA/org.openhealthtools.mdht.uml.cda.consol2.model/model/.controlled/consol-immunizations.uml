@@ -1078,6 +1078,16 @@ This information should be included in an Immunization Activity when available. 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpU7gcHdEeST26B_nQ4gxA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpU7gsHdEeST26B_nQ4gxA" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_TOy8cH5AEeitU79djhoIfA" name="id1" visibility="private" subsettedProperty="_2MDrcBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOy8cX5AEeitU79djhoIfA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOy8cn5AEeitU79djhoIfA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_cnULAH5AEeitU79djhoIfA" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_2MEShRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cnULAX5AEeitU79djhoIfA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cnULAn5AEeitU79djhoIfA" value="1"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_Bpk3QPgLEeOYeZoWJF5yyQ" name="Consumable">
       <ownedComment xmi:id="_dCZZYPiWEeOXlK95I8tUew">
         <body>INLINE</body>
@@ -1605,11 +1615,13 @@ This information should be included in an Immunization Activity when available. 
     <elements xmi:id="_d-PXANw0EeeutJYfvJ60dA" businessElement="ImmunizationAdministeredDrugVehicleName" businessElementId="87887ce1-e023-4599-a5f2-edb83ce017da" modelElementPath="immunizationActivity2.drugVehicle.playingEntity.name" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
     </elements>
+    <elements xmi:id="_f5j-4H5AEeitU79djhoIfA" businessElement="ImmunizationAdministeredStartDateTime" modelElement="_cnULAH5AEeitU79djhoIfA" businessElementId="f8adcada-f905-4a80-bec8-ae7d53378a3a" modelElementPath="immunizationActivity2.effectiveTime"/>
     <elements xmi:id="_jAa_gBDOEei7bPDqfdB9-w" businessElement="ImmunizationAdministrationCourseContainer" modelElement="_X5kN8MHyEeST26B_nQ4gxA" businessElementId="bf2671e5-5b90-4bd6-b4a4-a878824136ce" modelElementPath="immunizationActivity2.entryRelationshipForSubAdminAct" condition="(@typeCode='COMP')"/>
     <elements xmi:id="_gwoHIBDOEei7bPDqfdB9-w" businessElement="ImmunizationAdministrationCourseNumber" modelElement="_pBEhc8HyEeST26B_nQ4gxA" businessElementId="5d862a33-03ff-409d-aae1-bfd788d2fa84" modelElementPath="immunizationActivity2.entryRelationshipForSubAdminAct.sequenceNumber" condition=""/>
     <elements xmi:id="_lhfOEBDOEei7bPDqfdB9-w" businessElement="ImmunizationAdministrationCourseDateTime" businessElementId="a56f6f98-9b13-4c0c-8902-e3f04a1db2a0" modelElementPath="immunizationActivity2.entryRelationshipForSubAdminAct.substanceAdministeredAct.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_bywKAZpdEeOK6dzbL4VoTA"/>
     </elements>
+    <elements xmi:id="_Vb3Q8H5AEeitU79djhoIfA" businessElement="ImmunizationAdministeredID" modelElement="_TOy8cH5AEeitU79djhoIfA" businessElementId="8c02401f-cd06-41c7-944b-298c0127f188" modelElementPath="immunizationActivity2.id1"/>
     <elements xmi:id="_pINxQBDbEeiXXot8IWSpPw" businessElement="ImmunizationAdministeredReasonContainer" modelElement="_XyKGsPgFEeOYeZoWJF5yyQ" businessElementId="bbc9c3bc-f1c7-4edd-85a9-1f0eeea52b61" modelElementPath="immunizationActivity2.indication2" condition=""/>
     <elements xmi:id="_e1U6kNw1EeemI_lDWG8DRg" businessElement="ImmunizationAdministeredReasonTypeCode" businessElementId="6ea75411-0c3d-4c77-8ce2-d74df5909000" modelElementPath="immunizationActivity2.indication2.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_2Hh3kOHpEeO04sHNODkHmQ"/>
@@ -1657,4 +1669,10 @@ This information should be included in an Immunization Activity when available. 
     <elements xmi:id="_yCYFoNwyEeet7fdkqoLuJA" businessElement="ImmunizationSectionNotes" modelElement="_4abIwALOEeSIPYXg7AgJzw" businessElementId="2dffde33-5f9f-42ea-82c0-0adf78bff617" modelElementPath="text" condition=""/>
     <elements xmi:id="_fSgQYBDbEeiXXot8IWSpPw" businessElement="ImmunizationSectionTitleText" modelElement="_4abv0QLOEeSIPYXg7AgJzw" businessElementId="0450032c-974c-4eb6-83f2-81c7450e0b2a" modelElementPath="title" condition=""/>
   </MDMI:MDMIMapping>
+  <CDA:PropertyValidation xmi:id="_TO0KkH5AEeitU79djhoIfA" base_Property="_TOy8cH5AEeitU79djhoIfA">
+    <ruleId>CONF:8829, R2.1=CONF:1198-8829</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_cnUyEH5AEeitU79djhoIfA" base_Property="_cnULAH5AEeitU79djhoIfA">
+    <ruleId>CONF:8834, R2.1=CONF:1198-8834</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
