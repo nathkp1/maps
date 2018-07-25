@@ -4139,32 +4139,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:8300</ruleId>
     <ruleId>R2.0=CONF:1098-8300</ruleId>
   </CDA:ValueSetConstraint>
-  <MDMI:MDMIMapping xmi:id="_t3froCF1EeiQp7TYMjXhrA" base_Class="_CFMuYPDbEeOKPKE9au0oug">
-    <elements xmi:id="_0e19oCF2Eei-kceakmf0YA" businessElement="ProcedureEncounterContainer" modelElement="_GZ4bgOAWEeGlGcipF_0y2A" businessElementId="01eb254d-902d-44b9-8879-b633ea5fd97a" modelElementPath="entryRelationship"/>
-    <elements xmi:id="_3MKfgCF2Eei-kceakmf0YA" businessElement="ProcedureEncounterII" modelElement="_nc01q9_iEeGiie5feaDcRA" businessElementId="7b9d975d-5291-4372-b6c2-f24e77e413ac" modelElementPath="entryRelationship.procedureActEncounter.id"/>
-    <elements xmi:id="_t3iH4CF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationContainer" modelElement="_OymM0BxsEeGXP8PxDYviDg" businessElementId="50b5939f-0e41-4375-954a-9a6ea23e98a0" modelElementPath="serviceDeliveryLocation"/>
-    <elements xmi:id="_0TBkoCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationAddress" businessElementId="18156c1e-b5a9-437f-9267-0008ea1e47fd" modelElementPath="serviceDeliveryLocation.addr">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nD7_0B-YEeGtfPlBCjHWkw"/>
-    </elements>
-    <elements xmi:id="_xcBiUCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationCode" businessElementId="f65550fe-1f32-4209-afa6-75c7bbf02480" modelElementPath="serviceDeliveryLocation.code">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nD_qMB-YEeGtfPlBCjHWkw"/>
-    </elements>
-    <elements xmi:id="_AB0uECF2EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationName" businessElementId="227ad2f9-c766-4d47-abfc-9dbbc3c253d6" modelElementPath="serviceDeliveryLocation.playingEntity.name">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_OQPJIErhEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_3KuxkCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationEmailAddressContact" businessElementId="7609c064-60ba-4d26-869b-86cff477f3cb" modelElementPath="serviceDeliveryLocation.telecom">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
-    </elements>
-    <elements xmi:id="_5ImzgCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationFaxContact" businessElementId="8f3c5e19-02db-4672-908b-2af939aa82ae" modelElementPath="serviceDeliveryLocation.telecom">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
-    </elements>
-    <elements xmi:id="_7MFuMCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationPhoneContact" businessElementId="d66bdd29-8bfc-4792-a126-1a8f26bf1e1c" modelElementPath="serviceDeliveryLocation.telecom">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
-    </elements>
-    <elements xmi:id="_9Ar4UCF1EeiQp7TYMjXhrA" businessElement="ProcedureServiceLocationURLContact" businessElementId="135a1dea-c109-4386-8c68-7f7a9a488da8" modelElementPath="serviceDeliveryLocation.telecom">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
-    </elements>
-  </MDMI:MDMIMapping>
+ 
   <CDA:PropertyValidation xmi:id="_qTn0gCOfEeiwsevzJ9LSUQ" severity="WARNING" base_Property="_qTlYQCOfEeiwsevzJ9LSUQ">
     <ruleId>CONF:7662</ruleId>
     <ruleId>R2.0=CONF:1098-7662</ruleId>
@@ -4179,16 +4154,5 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:7670</ruleId>
     <ruleId>R2.0=CONF:1098-7670</ruleId>
   </CDA:PropertyValidation>
-  <MDMI:MDMIMapping xmi:id="_Cev7wCOgEeiwsevzJ9LSUQ" base_Class="_fCVOQPDqEeOKPKE9au0oug">
-    <elements xmi:id="_Cewi0COgEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedReasonContainer" modelElement="_9LG_sPDqEeOKPKE9au0oug" businessElementId="677b0a06-f351-4d1d-9d8b-c2e02b38b1c1" modelElementPath="indication2"/>
-    <elements xmi:id="_FiA4cCOgEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedReasonTypeCode" businessElementId="986198da-433c-4947-8d09-f9ba46f8738d" modelElementPath="indication2.code">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2Hh3kOHpEeO04sHNODkHmQ"/>
-    </elements>
-    <elements xmi:id="_ECF90COgEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedReasonID" businessElementId="86a262ae-1511-43d4-af2e-a70a5f06b653" modelElementPath="indication2.id">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
-    </elements>
-    <elements xmi:id="_HkK9cCOgEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedReasonValueCode" businessElementId="50e66ce4-b45d-4e3e-a9b2-2148d4fc11d5" modelElementPath="indication2.value">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
-    </elements>
-  </MDMI:MDMIMapping>
+
 </xmi:XMI>

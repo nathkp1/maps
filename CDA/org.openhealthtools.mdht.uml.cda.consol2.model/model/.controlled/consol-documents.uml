@@ -6358,6 +6358,9 @@ In order to represent providers associated with a specific encounter, they are r
 In a CCD, the encompassingEncounter may be used when documenting a specific encounter and its participants. All relevant encounters in a CCD may be listed in the encounters section.</body>
         </ownedComment>
         <generalization xmi:id="_wa2xoBweEeSMr-NWzQuDBw" general="_TCORACypEeGMXrZ0DiQwGg"/>
+        <ownedAttribute xmi:id="_OktRYJBTEeiKPMv7XkDKLg" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_UiXOECypEeGMXrZ0DiQwGg">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_0uYKYBwgEeSMr-NWzQuDBw" name="ParticipantSupport">
@@ -15002,8 +15005,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     </elements>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_cHbxwN52Eeexw8ZuORLxGg" base_Class="_dduXkJ5OEeOr4eM3k36wAg">
-    <elements xmi:id="_Uzq-cPfLEee9CfQv0N-wsA" businessElement="DocumentContainer" modelElement="_dduXkJ5OEeOr4eM3k36wAg" businessElementId="2fdd4cc0-f00f-4bd8-af66-36ed83874811" modelElementPath="" condition=""/>
-    <elements xmi:id="_v-mhUPANEeefBvVUv-KCHA" businessElement="DocumentAuthenticatorContainer" modelElement="_Q-hqcBwaEeSMr-NWzQuDBw" businessElementId="eaa17bb1-8305-4976-8e8e-b4ad5daee758" modelElementPath="authenticator" condition=""/>
+     <elements xmi:id="_v-mhUPANEeefBvVUv-KCHA" businessElement="DocumentAuthenticatorContainer" modelElement="_Q-hqcBwaEeSMr-NWzQuDBw" businessElementId="eaa17bb1-8305-4976-8e8e-b4ad5daee758" modelElementPath="authenticator" condition=""/>
     <elements xmi:id="_T_4eAN6FEeex053nKTJxcg" businessElement="DocumentAuthenicatorOrganizationBusinessAddress" modelElement="_IMjo0CzGEeGMXrZ0DiQwGg" businessElementId="25c51852-c2b0-4e1c-a366-223aee77276a" modelElementPath="authenticator.assignedEntity.addr" condition=""/>
     <elements xmi:id="_e8nRUN6FEeex053nKTJxcg" businessElement="DocumentAuthenticatordPersonName" modelElement="_Dy1g8OxwEeG7k4bbVdXbXw" businessElementId="5f4bc15c-b4d3-43f5-8d9e-e08f38d39442" modelElementPath="authenticator.assignedEntity.assignedPerson.name" condition=""/>
     <elements xmi:id="_Rtrx4N6FEeex053nKTJxcg" businessElement="DocumentAuthenticatorSpecialtyCode" modelElement="_IMkP4CzGEeGMXrZ0DiQwGg" businessElementId="426141fc-3ef4-46e6-a549-a3e9ff764967" modelElementPath="authenticator.assignedEntity.code" condition=""/>
@@ -15309,5 +15311,8 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Sc7LAXpYEeill5VfgX-4Ew" base_Property="_Sc7LAHpYEeill5VfgX-4Ew">
     <ruleId>CONF:5256, R2.1=CONF:1198-5256</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_OkvtoJBTEeiKPMv7XkDKLg" base_Property="_OktRYJBTEeiKPMv7XkDKLg">
+    <ruleId>CONF:9958, R2.1=CONF:1198-9958</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>
