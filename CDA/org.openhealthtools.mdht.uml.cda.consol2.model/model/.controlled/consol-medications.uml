@@ -479,6 +479,7 @@ Medication timing is complex. This template requires that there be a substanceAd
     </ownedAttribute>
     <ownedAttribute xmi:id="_vTfZoOATEeGlGcipF_0y2A" name="performer" type="_VvuEcOATEeGlGcipF_0y2A" association="_vTgnwOATEeGlGcipF_0y2A">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vTfZoeATEeGlGcipF_0y2A"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fxfrMExnEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_VvuEcOATEeGlGcipF_0y2A" name="Performer">
       <ownedComment xmi:id="_qjToIOATEeGlGcipF_0y2A">
@@ -487,7 +488,7 @@ Medication timing is complex. This template requires that there be a substanceAd
       <generalization xmi:id="_W308AOATEeGlGcipF_0y2A">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_eix1gOATEeGlGcipF_0y2A" name="medicationDispenseAssignedEntity" type="_M7xhgEIxEeG4bZAl2IGXmQ" aggregation="composite" association="_ei0RwOATEeGlGcipF_0y2A">
+      <ownedAttribute xmi:id="_eix1gOATEeGlGcipF_0y2A" name="assignedEntity" type="_M7xhgEIxEeG4bZAl2IGXmQ" aggregation="composite" association="_ei0RwOATEeGlGcipF_0y2A">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fqu8EeATEeGlGcipF_0y2A" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fqu8EOATEeGlGcipF_0y2A" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_toc7gUoYEd6c3qsAxlFHaQ"/>
@@ -2904,9 +2905,6 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <ruleId>CONF:1098-32908</ruleId>
     <ruleId>CONF:1098-32909</ruleId>
   </CDA:EntryRelationship>
-  <MDMI:MDMIMapping xmi:id="_UkrREKi1EeW7nImA73vXpA" base_Class="_DpoGkBUUEeG6PvUxSTZnaw">
-    <elements xmi:id="_Ukyl0Ki1EeW7nImA73vXpA" businessElement="MedicationAdministeredStatusCode" modelElement="_ThIPFBrYEeGo461UQq-B1g" businessElementId="333e512f-80c4-48f0-9e65-1426e4138f00" modelElementPath="statusCode"/>
-  </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_qdlyALJhEeWqI-MGhXmBew" base_Class="_2NIpgBSVEeGGzu7fmW9pXw">
     <elements xmi:id="_8zDGYLJhEeWqI-MGhXmBew" businessElement="MedicationAdminstered" modelElement="_2NJ3oRSVEeGGzu7fmW9pXw" businessElementId="3a55586d-b8ac-4596-804e-83818f921f91" modelElementPath="medication" condition="moodCode=&quot;EVN&quot;"/>
     <elements xmi:id="_EkrvQLMpEeWYEejH_uvbsA" businessElement="MedicationPrescriptionContainer" modelElement="_2NJ3oRSVEeGGzu7fmW9pXw" businessElementId="c95c7f80-c5ff-4b05-b02b-da48c51e248b" modelElementPath="medication" condition="moodCode=&quot;INT&quot;"/>
@@ -3000,24 +2998,6 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
       <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_2FE5sBSVEeGGzu7fmW9pXw"/>
     </elements>
   </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_44wwQIjQEeeQNsptP1LNdA" base_Class="_2KEucBSVEeGGzu7fmW9pXw"/>
-  <MDMI:MDMIMapping xmi:id="_uSLWoIjREeeQNsptP1LNdA" base_Class="_2HIvMBSVEeGGzu7fmW9pXw">
-    <elements xmi:id="_uSLWoYjREeeQNsptP1LNdA" businessElement="MedicalEquipmentOrganizerTypeCode" businessElementId="5bae7eda-055a-4b46-97ff-528c39a874fe" modelElementPath="code">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_1JZ7sErtEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_9olf8IjREeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyDateTime" businessElementId="5798b3f5-f74a-4274-935f-f82de3094abe" modelElementPath="effectiveTime">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_8voGMErtEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_y0aywIjREeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyID" businessElementId="8975de2f-dac5-42ae-9bd2-63f6e34c77fb" modelElementPath="id">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_x1NnEErtEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_EOFNQIjSEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyAmountNumber" businessElementId="a53f0f5e-085a-4f4e-a9b5-04ee79bed667" modelElementPath="quantity">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_KwFJMEruEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_4z_vkIjREeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyStatusCode" businessElementId="fc563be1-b392-445f-9e26-b8ac64bf7e87" modelElementPath="statusCode">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_42xlUErtEd6FXKclYGEDCw"/>
-    </elements>
-  </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_VdnCEIjXEeeQNsptP1LNdA" base_Class="_5OKxwP1bEeO5Hq-yrsJSmg">
     <elements xmi:id="_SuY6IPAOEeefBvVUv-KCHA" businessElement="MedicalEquipmentSectionContainer" modelElement="_5OKxwP1bEeO5Hq-yrsJSmg" businessElementId="171a0111-5a81-4663-a5da-040f3e09cebd" modelElementPath=""/>
     <elements xmi:id="_wZs2EEmrEei1GK3IhTP0Dw" businessElement="MedicalEquipmentSectionIDCode" modelElement="_2KF8kBSVEeGGzu7fmW9pXw" businessElementId="b0463a89-9e2d-47f8-b674-8b0232f91ff2" modelElementPath="code"/>
@@ -3060,14 +3040,6 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <elements xmi:id="_PvaJMNFREeerl8msWqYVwg" businessElement="MedicalEquipmentSectionNotes" modelElement="_2KHKshSVEeGGzu7fmW9pXw" businessElementId="eab8948d-0144-4fe0-8681-5568e442838b" modelElementPath="text"/>
     <elements xmi:id="_uDcwYEmrEei1GK3IhTP0Dw" businessElement="MedicalEquipmentSectionTitleText" modelElement="_2KHKsBSVEeGGzu7fmW9pXw" businessElementId="daa0782b-01b7-48d5-b939-1a3720729d4c" modelElementPath="title"/>
   </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_32IKYIjXEeeQNsptP1LNdA" base_Class="_k_C20OaCEeOmzetP5oaH3A">
-    <elements xmi:id="_gK8HgNFREeerl8msWqYVwg" businessElement="MedicalEquipmentOrderID" modelElement="_2HTHQhSVEeGGzu7fmW9pXw" businessElementId="3f4b4882-2a19-4b1f-a9c6-4f094dd5c203" modelElementPath="id"/>
-    <elements xmi:id="_-SGvUIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyProductID" modelElement="_tsW2JDiCEeGSytqLITd2FA" businessElementId="2fe396b2-1237-4720-b02e-965e26b81e23" modelElementPath="productInstance.id"/>
-    <elements xmi:id="_B3aCEIjYEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyProductValueCode" modelElement="_SXxyEDosEeGSytqLITd2FA" businessElementId="56257f55-ba56-418c-b2fa-034fcd85c533" modelElementPath="productInstance.playingDevice.code"/>
-    <elements xmi:id="_EblZkIjZEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyProductValueCode" modelElement="_SXxyEDosEeGSytqLITd2FA" businessElementId="56257f55-ba56-418c-b2fa-034fcd85c533" modelElementPath="productInstance.playingDevice.code"/>
-    <elements xmi:id="_32IxcIjXEeeQNsptP1LNdA" businessElement="MedicalEquipmentSupplyAmountNumber" modelElement="_2HUVYBSVEeGGzu7fmW9pXw" businessElementId="a53f0f5e-085a-4f4e-a9b5-04ee79bed667" modelElementPath="quantity"/>
-    <elements xmi:id="_dhGFgNFTEeeRL5UBIHF9kA" businessElement="MedicalEquipmentOrderAmountUnitMeasure" modelElement="_2HUVYBSVEeGGzu7fmW9pXw" businessElementId="12bdfb72-eeee-43d8-81fc-1c35979f6b53" modelElementPath="quantity"/>
-  </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_nDZVQI8zEeeNuo6J86JnLQ" base_Class="_P2mp4ALQEeS0YMHMf4rRtQ">
     <elements xmi:id="_WCdS8PAOEeefBvVUv-KCHA" businessElement="MedicationSectionContainer" modelElement="_P2mp4ALQEeS0YMHMf4rRtQ" businessElementId="66b674e8-01c3-4eeb-8677-ef4c2636b555" modelElementPath="" condition=""/>
     <elements xmi:id="_1T6tUEmrEei1GK3IhTP0Dw" businessElement="MedicationSectionIDCode" modelElement="_1zOyIALQEeS0YMHMf4rRtQ" businessElementId="0a81da94-8f2b-4316-9098-5b9b5df34c9d" modelElementPath="code"/>
@@ -3075,40 +3047,37 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <elements xmi:id="_P4-NgNFUEeeRL5UBIHF9kA" businessElement="MedicationAdministeredDrugFormCode" modelElement="_6PKzwOLYEeOc7-TVP7Wi6w" businessElementId="0d00c8b8-b802-4d2e-b42f-8b681db9df5c" modelElementPath="medicationActivity2.administrationUnitCode" condition=""/>
     <elements xmi:id="_suj7cB5FEeiF7sWWqfxGaw" businessElement="MedicationAdministrationTargetSiteCode" modelElement="_499F8B5EEeiF7sWWqfxGaw" businessElementId="117ffc37-696b-4d72-8aaa-0d04e7f3eba1" modelElementPath="medicationActivity2.approachSiteCode" condition=""/>
     <elements xmi:id="_JXsWUPlrEeenuLAi_lxa5A" businessElement="MedicationAdministrationAuthorContainer" modelElement="_ju9Q0OLFEeOc7-TVP7Wi6w" businessElementId="0f873db9-63f4-44f5-8650-5179c82983e5" modelElementPath="medicationActivity2.author" condition=""/>
+    <elements xmi:id="_achr0NFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorName" businessElementId="6a10ad96-8bce-4e33-96ec-0df940137c12" modelElementPath="medicationActivity2.author.assignedAuthor.assignedPerson.name" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_XYaakNFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorSpecialityCode" businessElementId="81564997-b4b1-442e-b7c0-6d5f7aeeaa88" modelElementPath="medicationActivity2.author.assignedAuthor.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
+    </elements>
     <elements xmi:id="_6bVwYB2IEeib29n5I52STA" businessElement="MedicationAdministrationAuthorID" businessElementId="9e0ccc6b-efb2-442e-b869-f4afa4e349dc" modelElementPath="medicationActivity2.author.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_9FRAAB2IEeib29n5I52STA" businessElement="MedicationAdministrationAuthorDateTime" businessElementId="38fb2ea5-42ca-42b5-aec1-a1da2ff63fff" modelElementPath="medicationActivity2.author.time" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_achr0NFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorName" businessElementId="6a10ad96-8bce-4e33-96ec-0df940137c12" modelElementPath="medicationActivity2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_XYaakNFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorSpecialityCode" businessElementId="81564997-b4b1-442e-b7c0-6d5f7aeeaa88" modelElementPath="medicationActivity2.authorParticipation.assignedAuthor.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_uMGNwNFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationAddress" businessElementId="8453fe3a-9128-45a6-abd4-72601f1872b2" modelElementPath="medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
+    <elements xmi:id="_uMGNwNFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationAddress" businessElementId="8453fe3a-9128-45a6-abd4-72601f1872b2" modelElementPath="medicationActivity2.author.assignedAuthor.representedOrganization.addr" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_dgS-0NFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationID" businessElementId="975b9eb9-0b1f-4c0e-9adf-1c5935159341" modelElementPath="medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
+    <elements xmi:id="_dgS-0NFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationID" businessElementId="975b9eb9-0b1f-4c0e-9adf-1c5935159341" modelElementPath="medicationActivity2.author.assignedAuthor.representedOrganization.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_gmYmANFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationName" businessElementId="ade0eb41-ae56-46e7-9eab-f2899ef8aa0e" modelElementPath="medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.name" condition="">
+    <elements xmi:id="_gmYmANFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationName" businessElementId="ade0eb41-ae56-46e7-9eab-f2899ef8aa0e" modelElementPath="medicationActivity2.author.assignedAuthor.representedOrganization.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_jIIKANFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationEmailAddress" businessElementId="d419665b-8b4c-4e15-b533-07691a43b3b6" modelElementPath="medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'mailto:'))">
+    <elements xmi:id="_jIIKANFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationEmailAddress" businessElementId="d419665b-8b4c-4e15-b533-07691a43b3b6" modelElementPath="medicationActivity2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'mailto:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_mBtmQNFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationFaxContact" businessElementId="a8d004d6-1c04-419d-8055-4cd571c5e760" modelElementPath="medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'fax:'))">
+    <elements xmi:id="_mBtmQNFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationFaxContact" businessElementId="a8d004d6-1c04-419d-8055-4cd571c5e760" modelElementPath="medicationActivity2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'fax:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_o2RYkNFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationPhoneContact" businessElementId="23b430c4-1a17-44bb-8f63-af4eb8972b1e" modelElementPath="medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'tel:'))">
+    <elements xmi:id="_o2RYkNFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationPhoneContact" businessElementId="23b430c4-1a17-44bb-8f63-af4eb8972b1e" modelElementPath="medicationActivity2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'tel:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_rrlY0NFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationURLContact" businessElementId="0b039a57-2abb-4dab-8c3f-7ff3b0762c51" modelElementPath="medicationActivity2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'http:'))">
+    <elements xmi:id="_rrlY0NFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorOrganizationURLContact" businessElementId="0b039a57-2abb-4dab-8c3f-7ff3b0762c51" modelElementPath="medicationActivity2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'http:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_SdoioNFUEeeRL5UBIHF9kA" businessElement="MedicationAdministrationAuthorDateTime" businessElementId="38fb2ea5-42ca-42b5-aec1-a1da2ff63fff" modelElementPath="medicationActivity2.authorParticipation.time" condition="">
+    <elements xmi:id="_9FRAAB2IEeib29n5I52STA" businessElement="MedicationAdministrationAuthorDateTime" businessElementId="38fb2ea5-42ca-42b5-aec1-a1da2ff63fff" modelElementPath="medicationActivity2.author.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_y-GQwO_rEeez8vsiAUICHA" businessElement="MedicationAdministrationProductII" modelElement="_2UDJ1RSVEeGGzu7fmW9pXw" businessElementId="63988083-774a-499a-b540-6d1640fbd080" modelElementPath="medicationActivity2.consumable.medicationInformation2.id" condition=""/>
@@ -3143,7 +3112,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     </elements>
     <elements xmi:id="_BHN2oB5GEeiF7sWWqfxGaw" businessElement="MedicationAdministrationMaxDosageUnitMeasure" modelElement="_4-DMkB5EEeiF7sWWqfxGaw" businessElementId="c9b618e5-731b-4a4b-ba7c-a549123015ef" modelElementPath="medicationActivity2.maxDoseQuantity" condition=""/>
     <elements xmi:id="_FNR_QBs0EeiD3MKLcuVxkA" businessElement="MedicationDispenseContainer" modelElement="_FAOH4PiYEeOXlK95I8tUew" businessElementId="8f57d590-40f5-4478-83d6-3102c431172e" modelElementPath="medicationActivity2.medicationDispense2" condition=""/>
-    <elements xmi:id="_s4OewB2KEeiHoZISFyLsTg" businessElement="MedicationDispenseDateTime" modelElement="_ThGZ4BrYEeGo461UQq-B1g" businessElementId="86833667-1409-4ee9-84f5-feb6f9153aff" modelElementPath="medicationActivity2.medicationDispense2.effectiveTime.low" condition=""/>
+    <elements xmi:id="_s4OewB2KEeiHoZISFyLsTg" businessElement="MedicationDispenseDateTime" modelElement="_ThGZ4BrYEeGo461UQq-B1g" businessElementId="86833667-1409-4ee9-84f5-feb6f9153aff" modelElementPath="medicationActivity2.medicationDispense2.effectiveTime" condition=""/>
     <elements xmi:id="_M1JvkBs0EeiD3MKLcuVxkA" businessElement="MedicationDispenseID" modelElement="_ThHA8BrYEeGo461UQq-B1g" businessElementId="f87d540d-8aa1-4a0f-b6f3-ec275b4400a6" modelElementPath="medicationActivity2.medicationDispense2.id" condition=""/>
     <elements xmi:id="_S6M5sB2OEeiF7sWWqfxGaw" businessElement="MedicationDispensePerformerContainer" modelElement="_vTgnwOATEeGlGcipF_0y2A" businessElementId="d0987382-2c0d-45f6-b171-72af09a017b3" modelElementPath="medicationActivity2.medicationDispense2.performer" condition=""/>
     <elements xmi:id="_--gx4B2OEeiF7sWWqfxGaw" businessElement="MedicationDispensePerformerName" businessElementId="87870645-01e8-45ad-9f25-31288113b243" modelElementPath="medicationActivity2.medicationDispense2.performer.assignedEntity.assignedPerson.name" condition="">
@@ -3225,7 +3194,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <elements xmi:id="_Zl4FgBszEeiD3MKLcuVxkA" businessElement="PlannedMedicationAuthorDateTime" businessElementId="850dd5f7-e8f7-4ac8-9eb5-be51c81decdd" modelElementPath="medicationActivity2.medicationSupplyOrder2.author.time" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_t59eEEofEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_JchcUBszEeiD3MKLcuVxkA" businessElement="PlannedMedicationDateTime" modelElement="_p1pzUBrTEeGo461UQq-B1g" businessElementId="cdc7317d-84e0-4284-aa57-a3ba321843de" modelElementPath="medicationActivity2.medicationSupplyOrder2.effectiveTime.low" condition=""/>
+    <elements xmi:id="_JchcUBszEeiD3MKLcuVxkA" businessElement="PlannedMedicationDateTime" modelElement="_p1pzUBrTEeGo461UQq-B1g" businessElementId="cdc7317d-84e0-4284-aa57-a3ba321843de" modelElementPath="medicationActivity2.medicationSupplyOrder2.effectiveTime" condition=""/>
     <elements xmi:id="_QmIYwBsyEeiD3MKLcuVxkA" businessElement="PlannedMedicationID" modelElement="_z3ymoBrTEeGo461UQq-B1g" businessElementId="882a7125-0075-4fd7-8eaf-bb13bcca8f1c" modelElementPath="medicationActivity2.medicationSupplyOrder2.id" condition=""/>
     <elements xmi:id="_J64BsBsyEeiD3MKLcuVxkA" businessElement="PlannedMedicationInstructionTypeCode" businessElementId="f9213d64-da1c-4625-8e07-88019d1ec32f" modelElementPath="medicationActivity2.medicationSupplyOrder2.instruction2.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
@@ -3296,7 +3265,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <elements xmi:id="_kvAX4B1pEeiLWO5FDuMs9Q" businessElement="MedicationAdministrationReactionNotes" businessElementId="235dee03-769e-4736-9c71-45e80c1d48ee" modelElementPath="medicationActivity2.reactionObservation2.text" condition="">
       <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_c7bRsMzcEeSLqosJ4F90vA"/>
     </elements>
-    <elements xmi:id="_tHtvQB1pEeiLWO5FDuMs9Q" businessElement="MedicationAdministrationReactionValueCode" businessElementId="02f52b01-53c8-42b2-8e41-73d00db19588" modelElementPath="medicationActivity2.reactionObservation2.value.cd" condition="">
+    <elements xmi:id="_tHtvQB1pEeiLWO5FDuMs9Q" businessElement="MedicationAdministrationReactionValueCode" businessElementId="02f52b01-53c8-42b2-8e41-73d00db19588" modelElementPath="medicationActivity2.reactionObservation2.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_D_A_EOM-EeeHSPFt8MMbpw"/>
     </elements>
     <elements xmi:id="_XDUXAB5FEeiF7sWWqfxGaw" businessElement="MedicationAdministrationRepeatNumber" modelElement="_5VihQOLREeOc7-TVP7Wi6w" businessElementId="22bb8dee-1055-41a2-9e33-6b70028a50e9" modelElementPath="medicationActivity2.repeatNumber" condition=""/>
@@ -3311,46 +3280,6 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     </elements>
     <elements xmi:id="_7Zn0cNFTEeeRL5UBIHF9kA" businessElement="MedicationAdministeredNotes" modelElement="_lq4HIALTEeS0YMHMf4rRtQ" businessElementId="e8b737cc-12bc-4dcd-a0a5-650654055fab" modelElementPath="text" condition=""/>
     <elements xmi:id="_3kGAMEmrEei1GK3IhTP0Dw" businessElement="MedicationSectionTitleText" modelElement="_lq5VQALTEeS0YMHMf4rRtQ" businessElementId="2721de24-f159-4fb2-b620-70701db6568c" modelElementPath="title"/>
-  </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_uhI0YBNlEeiEAsaZar18-g" base_Class="_F37nMP4jEeOwFalSp0fRiw"/>
-  <MDMI:MDMIMapping xmi:id="_bkcDwBsOEeie1sc-o7Z7nQ" base_Class="_WnSCMOLAEeOc7-TVP7Wi6w">
-    <elements xmi:id="_iborcB2HEeib29n5I52STA" businessElement="MedicationAdministrationTargetSiteCode" modelElement="_2GHbzhSVEeGGzu7fmW9pXw" businessElementId="117ffc37-696b-4d72-8aaa-0d04e7f3eba1" modelElementPath="approachSiteCode"/>
-    <elements xmi:id="_ZQaxsB2KEeiHoZISFyLsTg" businessElement="MedicationAdministrationProductVehicleContainer" modelElement="_U6R5khUVEeG6PvUxSTZnaw" businessElementId="ec56b8b3-7ad1-4ad4-9d95-ff9478779c6c" modelElementPath="drugVehicle"/>
-    <elements xmi:id="_cGC7AB2KEeiHoZISFyLsTg" businessElement="MedicationAdministrationProductVehicleCode" modelElement="_ZXk2NRUTEeG6PvUxSTZnaw" businessElementId="eb7860f8-040c-43ff-be11-db7b05af5fb7" modelElementPath="drugVehicle.code"/>
-    <elements xmi:id="_ovKGsB2BEeij0uQNJKjiVw" businessElement="MedicationAdministratonStartDateTime" modelElement="_h3h8MKgnEea6iYPp5CGByA" businessElementId="fa8b69c8-07ff-4fbf-b8d7-4b5b1854c642" modelElementPath="effectiveTime"/>
-    <elements xmi:id="_sGOJIB2BEeij0uQNJKjiVw" businessElement="MedicationAdministrationEndDateTime" modelElement="_h3h8MKgnEea6iYPp5CGByA" businessElementId="dec8c1cf-9186-4aad-960c-4391b13180eb" modelElementPath="effectiveTime"/>
-    <elements xmi:id="_bkfuIBsOEeie1sc-o7Z7nQ" businessElement="MedicationAdministrationID" modelElement="_2GkugxSVEeGGzu7fmW9pXw" businessElementId="c288c2b4-e001-495d-9cd9-011dcb4c2da5" modelElementPath="id"/>
-    <elements xmi:id="_R_efMB2AEeij0uQNJKjiVw" businessElement="MedicationAdministrationID" modelElement="_2GkugxSVEeGGzu7fmW9pXw" businessElementId="c288c2b4-e001-495d-9cd9-011dcb4c2da5" modelElementPath="id"/>
-    <elements xmi:id="_XZcJUB2HEeib29n5I52STA" businessElement="MedicationAdministrationMaxDosageUnitMeasure" modelElement="_2GHbyhSVEeGGzu7fmW9pXw" businessElementId="c9b618e5-731b-4a4b-ba7c-a549123015ef" modelElementPath="maxDoseQuantity"/>
-    <elements xmi:id="_szXUQB2HEeib29n5I52STA" businessElement="MedicationAdministrationPerformerContainer" modelElement="_2G10QxSVEeGGzu7fmW9pXw" businessElementId="7e2d7c64-ce67-4e4c-b5bc-af5d0a22d8eb" modelElementPath="performer"/>
-    <elements xmi:id="_bSclwB2IEeib29n5I52STA" businessElement="MedicationAdministrationPerformerAddress" businessElementId="fd34b721-7522-4efa-8963-dbe8ef1138c0" modelElementPath="performer.assignedEntity.addr">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_qdwSUB2IEeib29n5I52STA" businessElement="MedicationAdministrationPerformerTypeCode" businessElementId="c67c02c3-af3b-49e0-be05-bd8c8dad0714" modelElementPath="performer.assignedEntity.code">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_V6GoEB2IEeib29n5I52STA" businessElement="MedicationAdministrationPerformerII" businessElementId="736680d9-fcea-440c-ab18-ad22cbe65cc8" modelElementPath="performer.assignedEntity.id">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_d5-osB2IEeib29n5I52STA" businessElement="MedicationAdministrationPerformerEmailContact" businessElementId="8b8c796d-495d-40a3-b517-73a912e7037d" modelElementPath="performer.assignedEntity.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_gs41MB2IEeib29n5I52STA" businessElement="MedicationAdministrationPerformerFaxContact" businessElementId="0cceafe6-6841-4979-a5d9-fba2d91a0486" modelElementPath="performer.assignedEntity.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_j5de4B2IEeib29n5I52STA" businessElement="MedicationAdministrationPerformerPagerContact" businessElementId="875c2d07-f371-4ed9-a2f5-56cd13845466" modelElementPath="performer.assignedEntity.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_m6b8kB2IEeib29n5I52STA" businessElement="MedicationAdministrationPerformerPhoneContact" businessElementId="5775b5cd-3fff-4a97-b808-97fa5a23c1fe" modelElementPath="performer.assignedEntity.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_tXGeAB2IEeib29n5I52STA" businessElement="MedicationAdministrationPerformerSMSContact" businessElementId="83416b13-129b-48ec-9fe2-fbdca4b5e758" modelElementPath="performer.assignedEntity.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_wGk8AB2IEeib29n5I52STA" businessElement="MedicationAdministrationPerformerURLContact" businessElementId="d3deb8ae-0625-43d6-9eff-585724315531" modelElementPath="performer.assignedEntity.telecom">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_6EuukB2FEeij0uQNJKjiVw" businessElement="MedicationAdministrationRateUnitMeasure" modelElement="_2GmjsBSVEeGGzu7fmW9pXw" businessElementId="7c16bb80-4d41-4592-994f-b373a6b56b7d" modelElementPath="rateQuantity"/>
   </MDMI:MDMIMapping>
   <CDA:PropertyValidation xmi:id="_49-7IB5EEeiF7sWWqfxGaw" severity="INFO" base_Property="_499F8B5EEeiF7sWWqfxGaw"/>
   <CDA:ValueSetConstraint xmi:id="_4-AJQB5EEeiF7sWWqfxGaw" base_Property="_499F8B5EEeiF7sWWqfxGaw">

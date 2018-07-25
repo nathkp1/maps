@@ -2564,10 +2564,10 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_5iUvIBAeEeiIlsxqTlBq9A" businessElement="RiskFunctionalStatusAssessmentScaleValueCode" businessElementId="84504716-58c1-463d-9287-1f13db5fa537" modelElementPath="riskConcernAct.assessmentScaleObservation.value.ST" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_QifUoOY0EeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_aE-z8BAdEeiMKtG3wFcgrQ" businessElement="RiskSensoryStatusAssessmentValueNotes" businessElementId="3af92c8b-1317-4dcf-8e16-ba54c43df1d7" modelElementPath="riskConcernAct.assessmentScaleObservation.value.cd" condition="">
+    <elements xmi:id="_aE-z8BAdEeiMKtG3wFcgrQ" businessElement="RiskSensoryStatusAssessmentValueNotes" businessElementId="3af92c8b-1317-4dcf-8e16-ba54c43df1d7" modelElementPath="riskConcernAct.assessmentScaleObservation.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_QifUoOY0EeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_8RWhMBAeEeiIlsxqTlBq9A" businessElement="RiskFunctionalStatusAssessmentScaleValueNumber" businessElementId="dad9b21c-cc8b-420e-92c0-1ef4deff98f7" modelElementPath="riskConcernAct.assessmentScaleObservation.value.cd" condition="">
+    <elements xmi:id="_8RWhMBAeEeiIlsxqTlBq9A" businessElement="RiskFunctionalStatusAssessmentScaleValueNumber" businessElementId="dad9b21c-cc8b-420e-92c0-1ef4deff98f7" modelElementPath="riskConcernAct.assessmentScaleObservation.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_QifUoOY0EeGINOJ_SD9_dA"/>
     </elements>
     <elements xmi:id="_8MdncNEjEeemCaeaZsU11w" businessElement="RiskConcernAuthorName" businessElementId="2977345d-0e07-4b4a-bf63-7e7671aafa3e" modelElementPath="riskConcernAct.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
@@ -2855,7 +2855,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_WkIw4BDBEeix5fwzRJhdMA" businessElement="RiskNutritionObservationAssessmentValueCode" businessElementId="1967783f-4080-47d6-b56c-504041cf933c" modelElementPath="riskConcernAct.nutritionAssessment.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_TlElg405EeOB0eBUISUB4Q"/>
     </elements>
-    <elements xmi:id="_YGbqEBDBEeix5fwzRJhdMA" businessElement="RiskNutritionObservationAssessmentValueNotes" businessElementId="4202b122-811b-48fe-bec9-9f0c06e74ad3" modelElementPath="riskConcernAct.nutritionAssessment.value.cd" condition="">
+    <elements xmi:id="_YGbqEBDBEeix5fwzRJhdMA" businessElement="RiskNutritionObservationAssessmentValueNotes" businessElementId="4202b122-811b-48fe-bec9-9f0c06e74ad3" modelElementPath="riskConcernAct.nutritionAssessment.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_TlElg405EeOB0eBUISUB4Q"/>
     </elements>
     <elements xmi:id="_aa2jwBDBEeix5fwzRJhdMA" businessElement="RiskNutritionObservationAssessmentValueUnitMeasure" businessElementId="4576cccf-1a25-4771-b139-3b383ccfe9bc" modelElementPath="riskConcernAct.nutritionAssessment.value.pq" condition="">
@@ -3298,9 +3298,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
       <modelElement xmi:type="uml:Property" href="consol-exams.uml#_D3_FEJqAEeOK6dzbL4VoTA"/>
     </elements>
   </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_ry3aQLsTEeejBu7P06QdPQ" base_Class="_DMvdYOEFEeOmBMTtnrPqww">
-    <elements xmi:id="_ry52gLsTEeejBu7P06QdPQ" businessElement="GeneralWellnessValueCode" modelElement="_2ExXuBSVEeGGzu7fmW9pXw" businessElementId="b8f337b9-6f9a-40fb-ac8a-127d2d08a1bd" modelElementPath="value"/>
-  </MDMI:MDMIMapping>
+ 
   <MDMI:MDMIMapping xmi:id="_9Wjq0M3oEeeqSZE4BTrNiw" base_Class="_IXrA4ALVEeSyydFGYJajGA">
     <elements xmi:id="_qVfkEOw5EeeZT-QKtwCoyw" businessElement="ProblemSectionContainer" modelElement="_IXrA4ALVEeSyydFGYJajGA" businessElementId="4b655929-8602-4317-9773-3c150b0dc7db" modelElementPath="" condition=""/>
     <elements xmi:id="_gai1QEmsEei1GK3IhTP0Dw" businessElement="ProblemSectionIDCode" modelElement="_193tIALWEeSyydFGYJajGA" businessElementId="540445a3-8ea0-441b-9aa8-3db292be1f12" modelElementPath="code"/>
@@ -3345,7 +3343,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_le8xMPlFEeeGz4YohFN3Uw" businessElement="ProblemConditionPriorityID" businessElementId="b02a3db3-c63a-41a8-a558-1ccbd7b99e86" modelElementPath="problemConcernAct2.priorityPreference.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwcyIpmaEeOLJeQez13EkQ"/>
     </elements>
-    <elements xmi:id="_ze74MBEBEeiWNanfLerEWA" businessElement="ProblemConditionPriorityCode" businessElementId="a7e39052-37d4-480f-89e4-bbea3999b841" modelElementPath="problemConcernAct2.priorityPreference.value.cd" condition="">
+    <elements xmi:id="_ze74MBEBEeiWNanfLerEWA" businessElement="ProblemConditionPriorityCode" businessElementId="a7e39052-37d4-480f-89e4-bbea3999b841" modelElementPath="problemConcernAct2.priorityPreference.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwdZNJmaEeOLJeQez13EkQ"/>
     </elements>
     <elements xmi:id="_8rh7YM3pEeeNdanU6Ci9vA" businessElement="ProblemObservationContainer" modelElement="_wOP0IPifEeOXlK95I8tUew" businessElementId="52f0679a-fcd2-42a0-b79e-f719e4c7bb50" modelElementPath="problemConcernAct2.problemObservation2" condition=""/>
@@ -3417,7 +3415,5 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_hXPsIBDXEeiUsoouH77Mww" businessElement="ProblemSectionNotes" modelElement="_szXagALYEeSyydFGYJajGA" businessElementId="d33c1f71-efbd-40f0-9ff9-53e8914a40f9" modelElementPath="text" condition=""/>
     <elements xmi:id="_AywQwBDYEeiZ84ZP9SDlmQ" businessElement="ProblemSectionTitleText" modelElement="_szXahALYEeSyydFGYJajGA" businessElementId="bd9919bb-d1a9-4200-acf8-a5e4ed443f8d" modelElementPath="title" condition=""/>
   </MDMI:MDMIMapping>
-  <MDMI:MDMIMapping xmi:id="_xMMA8OWoEee0wLCx43pkrw" base_Class="_y5C8IOzbEeOnE-G4kptBiw">
-    <elements xmi:id="_PJ9SgBsuEeiD3MKLcuVxkA" businessElement="ProblemConditionOnsetDateTime" modelElement="_2IBgABSVEeGGzu7fmW9pXw" businessElementId="9ff65a76-3d51-47c9-b2f0-518080214f3c" modelElementPath="effectiveTime"/>
-  </MDMI:MDMIMapping>
+  
 </xmi:XMI>
