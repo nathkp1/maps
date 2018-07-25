@@ -1096,7 +1096,7 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
     </ownedComment>
     <generalization xmi:id="_uCivcLNwEeOtlapy2HWYww" general="_2EAisBSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_0f27sLNxEeOtlapy2HWYww" name="AllergyProblemAct" client="_uCiIYLNwEeOtlapy2HWYww" supplier="_2EAisBSVEeGGzu7fmW9pXw" contract="_2EAisBSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="_lUlkALN0EeOtlapy2HWYww" name="authorParticipation" association="_lUnZMLN0EeOtlapy2HWYww">
+    <ownedAttribute xmi:id="_lUlkALN0EeOtlapy2HWYww" name="author" association="_lUnZMLN0EeOtlapy2HWYww">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b3P_oOG2Eee7xrSdyolseA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b3PYkOG2Eee7xrSdyolseA" value="1"/>
@@ -2050,7 +2050,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0kOVIfMpEeOrR8IF-aqVyQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0kOVIPMpEeOrR8IF-aqVyQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_ynIrcPMrEeOrR8IF-aqVyQ" name="authorParticipation" association="_ynKgoPMrEeOrR8IF-aqVyQ">
+    <ownedAttribute xmi:id="_ynIrcPMrEeOrR8IF-aqVyQ" name="author" association="_ynKgoPMrEeOrR8IF-aqVyQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ynIrcfMrEeOrR8IF-aqVyQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynIrcvMrEeOrR8IF-aqVyQ" value="*"/>
@@ -2528,35 +2528,35 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <elements xmi:id="_FUvoIPDBEee9lP8sXPmlTg" businessElement="AllergyObservationSeverityContainer" modelElement="_5r6gIPfpEeO297ryy8ptVg" businessElementId="280435d2-7273-4054-b8d5-e50c1e46a1b7" modelElementPath="allergyConcernAct2.allergyObservation2.severityObservation2" condition=""/>
     <elements xmi:id="_OWhTYNFAEeeVI6shA3KNFw" businessElement="AllergyObservationSeverityNotes" modelElement="_LNTEMM26EeSEZ8MJJ3ZzLg" businessElementId="9f911ed4-85aa-4628-8b89-a02433b67949" modelElementPath="allergyConcernAct2.allergyObservation2.severityObservation2.text" condition=""/>
     <elements xmi:id="_Rk1pgNFAEeeVI6shA3KNFw" businessElement="AllergyObservationSeverityValueCode" modelElement="_2FGu6hSVEeGGzu7fmW9pXw" businessElementId="7931e589-0680-4a02-9d29-b8cd923b9dc5" modelElementPath="allergyConcernAct2.allergyObservation2.severityObservation2.value.CD" condition=""/>
-    <elements xmi:id="_BHiA0PDBEee9lP8sXPmlTg" businessElement="AllergyConcernAuthorContainer" modelElement="_lUnZMLN0EeOtlapy2HWYww" businessElementId="1d39f697-1c54-4ac1-b161-ce057e24099c" modelElementPath="allergyConcernAct2.authorParticipation" condition=""/>
-    <elements xmi:id="_edtEQNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorLegalName" businessElementId="6f7d3b86-d7d3-47ba-9186-7466c37b4273" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
+    <elements xmi:id="_BHiA0PDBEee9lP8sXPmlTg" businessElement="AllergyConcernAuthorContainer" modelElement="_lUnZMLN0EeOtlapy2HWYww" businessElementId="1d39f697-1c54-4ac1-b161-ce057e24099c" modelElementPath="allergyConcernAct2.author" condition=""/>
+    <elements xmi:id="_edtEQNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorLegalName" businessElementId="6f7d3b86-d7d3-47ba-9186-7466c37b4273" modelElementPath="allergyConcernAct2.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_aPae4NE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorID" businessElementId="7b54e096-b6c1-4f24-80ed-24b35f468902" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.id" condition="">
+    <elements xmi:id="_aPae4NE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorID" businessElementId="7b54e096-b6c1-4f24-80ed-24b35f468902" modelElementPath="allergyConcernAct2.author.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_t1cDQNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationAddress" businessElementId="78d5339d-7cd2-4b0d-b872-d648db096fd3" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
+    <elements xmi:id="_t1cDQNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationAddress" businessElementId="78d5339d-7cd2-4b0d-b872-d648db096fd3" modelElementPath="allergyConcernAct2.author.assignedAuthor.representedOrganization.addr" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_g_wxUNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationEmailContact" businessElementId="81106549-a93c-4283-91b1-b0859a75c9d7" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'mailto:'))">
+    <elements xmi:id="_g_wxUNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationEmailContact" businessElementId="81106549-a93c-4283-91b1-b0859a75c9d7" modelElementPath="allergyConcernAct2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'mailto:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_jUiQUNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationFaxContact" businessElementId="c1a4c938-655b-4e7f-a27e-5e0dd2788c4d" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'fax:'))">
+    <elements xmi:id="_jUiQUNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationFaxContact" businessElementId="c1a4c938-655b-4e7f-a27e-5e0dd2788c4d" modelElementPath="allergyConcernAct2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'fax:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_liOP4NE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationPagerContact" businessElementId="1cf3fc2c-b36d-4cd3-bfc7-ea2e06684515" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(not(true))">
+    <elements xmi:id="_liOP4NE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationPagerContact" businessElementId="1cf3fc2c-b36d-4cd3-bfc7-ea2e06684515" modelElementPath="allergyConcernAct2.author.assignedAuthor.representedOrganization.telecom" condition="(not(true))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_nqdHsNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationPhoneContact" businessElementId="9e36fa9a-410d-482d-bc31-985a51bde578" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'tel:'))">
+    <elements xmi:id="_nqdHsNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationPhoneContact" businessElementId="9e36fa9a-410d-482d-bc31-985a51bde578" modelElementPath="allergyConcernAct2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'tel:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_pjaNYNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationSMSContact" businessElementId="bad47270-37ff-485e-8e97-73c21225edb3" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'sms:'))">
+    <elements xmi:id="_pjaNYNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationSMSContact" businessElementId="bad47270-37ff-485e-8e97-73c21225edb3" modelElementPath="allergyConcernAct2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'sms:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_rjnxoNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationURLContact" businessElementId="50a80e44-1f73-40a0-8af5-d838129ce9ec" modelElementPath="allergyConcernAct2.authorParticipation.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'http:'))">
+    <elements xmi:id="_rjnxoNE-EeeVI6shA3KNFw" businessElement="AllergyConcernAuthorOrganizationURLContact" businessElementId="50a80e44-1f73-40a0-8af5-d838129ce9ec" modelElementPath="allergyConcernAct2.author.assignedAuthor.representedOrganization.telecom" condition="(starts-with(@value, 'http:'))">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_NYqsMPDKEee3Lobqorygow" businessElement="AllergyConcernAuthorDateTime" businessElementId="df5ae0f7-96ea-4237-a132-5af7e945b405" modelElementPath="allergyConcernAct2.authorParticipation.time" condition="">
+    <elements xmi:id="_NYqsMPDKEee3Lobqorygow" businessElement="AllergyConcernAuthorDateTime" businessElementId="df5ae0f7-96ea-4237-a132-5af7e945b405" modelElementPath="allergyConcernAct2.author.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_AQF5kD6AEei8r9_9mP5f1w" businessElement="AllergyConcernEndDateTime" modelElement="_6WG5MD2UEeiEsubymXFtVg" businessElementId="99184840-a095-41b1-b361-ce05425e0352" modelElementPath="allergyConcernAct2.effectiveTime.high" condition=""/>

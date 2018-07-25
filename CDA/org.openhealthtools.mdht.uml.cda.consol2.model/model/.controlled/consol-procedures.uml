@@ -2622,7 +2622,7 @@ The common notion of &quot;procedure&quot; is broader than that specified by the
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O-u_gsnKEeSr1c1X9ACWbg" value="*"/>
       <association href="../consol.uml#_O-xbwMnKEeSr1c1X9ACWbg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_56A9oMnLEeSr1c1X9ACWbg" name="authorParticipation" association="_56Cy0MnLEeSr1c1X9ACWbg">
+    <ownedAttribute xmi:id="_56A9oMnLEeSr1c1X9ACWbg" name="author" association="_56Cy0MnLEeSr1c1X9ACWbg">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ZnMkMnLEeSr1c1X9ACWbg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ZmlgMnLEeSr1c1X9ACWbg" value="*"/>
@@ -2791,7 +2791,7 @@ This template represents procedures that result in new information about the pat
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qjemksw-EeS1kaU6ESW4Lg" value="*"/>
       <association href="../consol.uml#_qjgbwMw-EeS1kaU6ESW4Lg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_w--_gMxAEeS1kaU6ESW4Lg" name="authorParticipation" association="_w_ANoMxAEeS1kaU6ESW4Lg">
+    <ownedAttribute xmi:id="_w--_gMxAEeS1kaU6ESW4Lg" name="author" association="_w_ANoMxAEeS1kaU6ESW4Lg">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zgTFscxAEeS1kaU6ESW4Lg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zgTFsMxAEeS1kaU6ESW4Lg" value="*"/>
@@ -2962,7 +2962,7 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i5QcsszJEeSLqosJ4F90vA" value="*"/>
       <association href="../consol.uml#_i5TgAMzJEeSLqosJ4F90vA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_mdScwMzMEeSLqosJ4F90vA" name="authorParticipation" association="_mdU5AMzMEeSLqosJ4F90vA">
+    <ownedAttribute xmi:id="_mdScwMzMEeSLqosJ4F90vA" name="author" association="_mdU5AMzMEeSLqosJ4F90vA">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o_svIMzMEeSLqosJ4F90vA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o_sIEMzMEeSLqosJ4F90vA" value="*"/>
@@ -3767,44 +3767,44 @@ This template can be used with a contained Product Instance template to represen
     <elements xmi:id="_gVbXkPAOEeefBvVUv-KCHA" businessElement="ProcedureContainer" modelElement="_N6wUUALoEeSBA9s7kRnaEg" businessElementId="b7a63343-ca32-4394-88a2-0f4cd2c2aad6" modelElementPath="" condition=""/>
     <elements xmi:id="_uegfQEmsEei1GK3IhTP0Dw" businessElement="ProcedureSectionIDCode" modelElement="_6Y1XYALoEeSBA9s7kRnaEg" businessElementId="114ce0b9-4b45-491d-b5c9-e501d0355bfe" modelElementPath="code"/>
     <elements xmi:id="_so1nYCCJEeiLj5dIQmPgjA" businessElement="ProcedurePerformedContainer" modelElement="_liHKsALpEeSBA9s7kRnaEg" businessElementId="3fe9f1d2-f666-4313-931b-88a0bb41789b" modelElementPath="procedureActivityAct2" condition=""/>
-    <elements xmi:id="_ZuTAcCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorContainer" modelElement="_56Cy0MnLEeSr1c1X9ACWbg" businessElementId="6c4c614c-79e0-4303-9631-7077d6a585f0" modelElementPath="procedureActivityAct2.authorParticipation" condition=""/>
-    <elements xmi:id="_irSJkCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorName" businessElementId="2fc03f81-b8ba-4f4d-914b-a7121e666180" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
+    <elements xmi:id="_ZuTAcCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorContainer" modelElement="_56Cy0MnLEeSr1c1X9ACWbg" businessElementId="6c4c614c-79e0-4303-9631-7077d6a585f0" modelElementPath="procedureActivityAct2.author" condition=""/>
+    <elements xmi:id="_irSJkCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorName" businessElementId="2fc03f81-b8ba-4f4d-914b-a7121e666180" modelElementPath="procedureActivityAct2.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_f081oCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorSpecialtyCode" businessElementId="77fdf705-1821-4899-9328-606011dfaf66" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.code" condition="">
+    <elements xmi:id="_f081oCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorSpecialtyCode" businessElementId="77fdf705-1821-4899-9328-606011dfaf66" modelElementPath="procedureActivityAct2.author.assignedAuthor.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_dSsUQCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorII" businessElementId="efbf5756-7bd8-4495-b413-8ef72022debc" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.id" condition="">
+    <elements xmi:id="_dSsUQCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorII" businessElementId="efbf5756-7bd8-4495-b413-8ef72022debc" modelElementPath="procedureActivityAct2.author.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_8iO5cCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorOrganizationAddress" businessElementId="69df49b1-97bd-4241-9e61-48b58141114f" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
+    <elements xmi:id="_8iO5cCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorOrganizationAddress" businessElementId="69df49b1-97bd-4241-9e61-48b58141114f" modelElementPath="procedureActivityAct2.author.assignedAuthor.representedOrganization.addr" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_3TQTICC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorOrganizationII" businessElementId="fe5d42c2-fe07-4dd2-a19d-15b8f7d0b204" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
+    <elements xmi:id="_3TQTICC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorOrganizationII" businessElementId="fe5d42c2-fe07-4dd2-a19d-15b8f7d0b204" modelElementPath="procedureActivityAct2.author.assignedAuthor.representedOrganization.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_6EY-ACC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorOrganizationName" businessElementId="f926c240-f8eb-4325-9474-25af59a34daf" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.representedOrganization.name" condition="">
+    <elements xmi:id="_6EY-ACC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorOrganizationName" businessElementId="f926c240-f8eb-4325-9474-25af59a34daf" modelElementPath="procedureActivityAct2.author.assignedAuthor.representedOrganization.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_lp520CC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorEmailContact" businessElementId="e1d225a3-2367-4745-892a-24d08b4bd68d" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'mailto:'))">
+    <elements xmi:id="_lp520CC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorEmailContact" businessElementId="e1d225a3-2367-4745-892a-24d08b4bd68d" modelElementPath="procedureActivityAct2.author.assignedAuthor.telecom" condition="(starts-with(@value, 'mailto:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_oO1RsCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorFaxContact" businessElementId="b2c779a1-11bb-403f-be37-ed0946f3b751" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'fax:'))">
+    <elements xmi:id="_oO1RsCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorFaxContact" businessElementId="b2c779a1-11bb-403f-be37-ed0946f3b751" modelElementPath="procedureActivityAct2.author.assignedAuthor.telecom" condition="(starts-with(@value, 'fax:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_qyln4CC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorPagerContact" businessElementId="fd5246e3-0f83-448d-a7b0-42bdc413637a" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(not(true))">
+    <elements xmi:id="_qyln4CC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorPagerContact" businessElementId="fd5246e3-0f83-448d-a7b0-42bdc413637a" modelElementPath="procedureActivityAct2.author.assignedAuthor.telecom" condition="(not(true))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_tj_YgCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorPhoneContact" businessElementId="d792527a-749d-4b10-8448-64325986244d" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'tel:'))">
+    <elements xmi:id="_tj_YgCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorPhoneContact" businessElementId="d792527a-749d-4b10-8448-64325986244d" modelElementPath="procedureActivityAct2.author.assignedAuthor.telecom" condition="(starts-with(@value, 'tel:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_v_fxoCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorSMSContact" businessElementId="dcd7df03-ed37-406f-8498-2e17b48b7c92" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'sms:'))">
+    <elements xmi:id="_v_fxoCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorSMSContact" businessElementId="dcd7df03-ed37-406f-8498-2e17b48b7c92" modelElementPath="procedureActivityAct2.author.assignedAuthor.telecom" condition="(starts-with(@value, 'sms:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_zw4YkCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorURLContact" businessElementId="aa15eb71-d3d6-4766-89fd-8dcd330feb42" modelElementPath="procedureActivityAct2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'http:'))">
+    <elements xmi:id="_zw4YkCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorURLContact" businessElementId="aa15eb71-d3d6-4766-89fd-8dcd330feb42" modelElementPath="procedureActivityAct2.author.assignedAuthor.telecom" condition="(starts-with(@value, 'http:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_bT-k0CC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorDateTime" businessElementId="a55fec8f-48e7-4930-8fd5-38a0c444962d" modelElementPath="procedureActivityAct2.authorParticipation.time" condition="">
+    <elements xmi:id="_bT-k0CC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorDateTime" businessElementId="a55fec8f-48e7-4930-8fd5-38a0c444962d" modelElementPath="procedureActivityAct2.author.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_3uhQcCCLEeigvdKjjjX_lw" businessElement="ProcedurePerformedTypeCode" modelElement="_DpF28CCKEeiLj5dIQmPgjA" businessElementId="2c6db9c5-d17c-4c92-94a3-7f0eb52e16be" modelElementPath="procedureActivityAct2.code" condition=""/>
@@ -3918,44 +3918,44 @@ This template can be used with a contained Product Instance template to represen
     <elements xmi:id="_HOXCkCCMEeigvdKjjjX_lw" businessElement="ProcedurePerformedPriorityCode" modelElement="_DpHFECCKEeiLj5dIQmPgjA" businessElementId="f587acbd-3be7-416c-86e2-5072e0c038f8" modelElementPath="procedureActivityAct2.priorityCode" condition=""/>
     <elements xmi:id="_z0U9sCCJEeiLj5dIQmPgjA" businessElement="ProcedurePerformedStatusCode" modelElement="_MPpN8MnIEeSr1c1X9ACWbg" businessElementId="9c40c0fe-59b2-4c50-90c0-decc9d04d39d" modelElementPath="procedureActivityAct2.statusCode" condition=""/>
     <elements xmi:id="_LxADACb9EeiwfMA1xUjwzg" businessElement="ProcedurePerformedContainer" modelElement="_QBjzUALpEeSBA9s7kRnaEg" businessElementId="3fe9f1d2-f666-4313-931b-88a0bb41789b" modelElementPath="procedureActivityProcedure2" condition=""/>
-    <elements xmi:id="_u6AcoCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorContainer" modelElement="_mdU5AMzMEeSLqosJ4F90vA" businessElementId="6c4c614c-79e0-4303-9631-7077d6a585f0" modelElementPath="procedureActivityProcedure2.authorParticipation" condition=""/>
-    <elements xmi:id="_3TFAYCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorName" businessElementId="2fc03f81-b8ba-4f4d-914b-a7121e666180" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.assignedPerson.name" condition="">
+    <elements xmi:id="_u6AcoCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorContainer" modelElement="_mdU5AMzMEeSLqosJ4F90vA" businessElementId="6c4c614c-79e0-4303-9631-7077d6a585f0" modelElementPath="procedureActivityProcedure2.author" condition=""/>
+    <elements xmi:id="_3TFAYCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorName" businessElementId="2fc03f81-b8ba-4f4d-914b-a7121e666180" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_080ToCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorSpecialtyCode" businessElementId="77fdf705-1821-4899-9328-606011dfaf66" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.code" condition="">
+    <elements xmi:id="_080ToCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorSpecialtyCode" businessElementId="77fdf705-1821-4899-9328-606011dfaf66" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_yp_VYCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorII" businessElementId="efbf5756-7bd8-4495-b413-8ef72022debc" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.id" condition="">
+    <elements xmi:id="_yp_VYCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorII" businessElementId="efbf5756-7bd8-4495-b413-8ef72022debc" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="__ISCECbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorOrganizationAddress" businessElementId="69df49b1-97bd-4241-9e61-48b58141114f" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.representedOrganization.addr" condition="">
+    <elements xmi:id="__ISCECbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorOrganizationAddress" businessElementId="69df49b1-97bd-4241-9e61-48b58141114f" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.representedOrganization.addr" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_6wJkMCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorOrganizationII" businessElementId="fe5d42c2-fe07-4dd2-a19d-15b8f7d0b204" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.representedOrganization.id" condition="">
+    <elements xmi:id="_6wJkMCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorOrganizationII" businessElementId="fe5d42c2-fe07-4dd2-a19d-15b8f7d0b204" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.representedOrganization.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_8zbDgCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorOrganizationName" businessElementId="f926c240-f8eb-4325-9474-25af59a34daf" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.representedOrganization.name" condition="">
+    <elements xmi:id="_8zbDgCbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorOrganizationName" businessElementId="f926c240-f8eb-4325-9474-25af59a34daf" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.representedOrganization.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_CQVYICbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorEmailContact" businessElementId="e1d225a3-2367-4745-892a-24d08b4bd68d" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'mailto:'))">
+    <elements xmi:id="_CQVYICbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorEmailContact" businessElementId="e1d225a3-2367-4745-892a-24d08b4bd68d" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.telecom" condition="(starts-with(@value, 'mailto:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_EnCJwCbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorFaxContact" businessElementId="b2c779a1-11bb-403f-be37-ed0946f3b751" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'fax:'))">
+    <elements xmi:id="_EnCJwCbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorFaxContact" businessElementId="b2c779a1-11bb-403f-be37-ed0946f3b751" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.telecom" condition="(starts-with(@value, 'fax:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_GkCpACbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorPagerContact" businessElementId="fd5246e3-0f83-448d-a7b0-42bdc413637a" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.telecom" condition="(not(true))">
+    <elements xmi:id="_GkCpACbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorPagerContact" businessElementId="fd5246e3-0f83-448d-a7b0-42bdc413637a" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.telecom" condition="(not(true))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_Iwy0cCbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorPhoneContact" businessElementId="d792527a-749d-4b10-8448-64325986244d" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'tel:'))">
+    <elements xmi:id="_Iwy0cCbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorPhoneContact" businessElementId="d792527a-749d-4b10-8448-64325986244d" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.telecom" condition="(starts-with(@value, 'tel:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_LL16kCbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorSMSContact" businessElementId="dcd7df03-ed37-406f-8498-2e17b48b7c92" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'sms:'))">
+    <elements xmi:id="_LL16kCbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorSMSContact" businessElementId="dcd7df03-ed37-406f-8498-2e17b48b7c92" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.telecom" condition="(starts-with(@value, 'sms:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_NOiLECbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorURLContact" businessElementId="aa15eb71-d3d6-4766-89fd-8dcd330feb42" modelElementPath="procedureActivityProcedure2.authorParticipation.assignedAuthor.telecom" condition="(starts-with(@value, 'http:'))">
+    <elements xmi:id="_NOiLECbIEeizpZLE_-yWkA" businessElement="ProcedureAuthorURLContact" businessElementId="aa15eb71-d3d6-4766-89fd-8dcd330feb42" modelElementPath="procedureActivityProcedure2.author.assignedAuthor.telecom" condition="(starts-with(@value, 'http:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
     </elements>
-    <elements xmi:id="_wm_i4CbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorDateTime" businessElementId="a55fec8f-48e7-4930-8fd5-38a0c444962d" modelElementPath="procedureActivityProcedure2.authorParticipation.time" condition="">
+    <elements xmi:id="_wm_i4CbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorDateTime" businessElementId="a55fec8f-48e7-4930-8fd5-38a0c444962d" modelElementPath="procedureActivityProcedure2.author.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_tMAW4COfEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedStartDateTime" modelElement="_qTlYQCOfEeiwsevzJ9LSUQ" businessElementId="d99f557b-d156-43b7-b9c0-d8567ef18c4e" modelElementPath="procedureActivityProcedure2.effectiveTime" condition=""/>

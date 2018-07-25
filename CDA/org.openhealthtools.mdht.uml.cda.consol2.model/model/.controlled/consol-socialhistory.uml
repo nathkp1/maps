@@ -717,7 +717,7 @@ The smoking status value set includes a special code to communicate if the smoki
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gVPP4I06EeOB0eBUISUB4Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_cgyA8K4iEeORf5eJaKt1KQ" name="authorParticipation" association="_cg0dMK4iEeORf5eJaKt1KQ">
+    <ownedAttribute xmi:id="_cgyA8K4iEeORf5eJaKt1KQ" name="author" association="_cg0dMK4iEeORf5eJaKt1KQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cgyoAK4iEeORf5eJaKt1KQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cgyoAa4iEeORf5eJaKt1KQ" value="*"/>
@@ -932,7 +932,7 @@ If the patient's current smoking status is unknown, the value element must be po
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zeAVcrm5EeOgPNzo_e4B9A" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zeAVcbm5EeOgPNzo_e4B9A" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_iVQjcLnHEeOgPNzo_e4B9A" name="authorParticipation" association="_iVRxkLnHEeOgPNzo_e4B9A">
+    <ownedAttribute xmi:id="_iVQjcLnHEeOgPNzo_e4B9A" name="author" association="_iVRxkLnHEeOgPNzo_e4B9A">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iVQjcbnHEeOgPNzo_e4B9A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iVRKgLnHEeOgPNzo_e4B9A" value="*"/>
@@ -1006,7 +1006,7 @@ If the patient's current smoking status is unknown, the value element must be po
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f0hlQvJgEeO2NaSiicarcg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f0hlQfJgEeO2NaSiicarcg" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_1NpiIPJkEeO2NaSiicarcg" name="authorParticipation" association="_1NrXUPJkEeO2NaSiicarcg">
+    <ownedAttribute xmi:id="_1NpiIPJkEeO2NaSiicarcg" name="author" association="_1NrXUPJkEeO2NaSiicarcg">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1NqJMPJkEeO2NaSiicarcg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1NqJMfJkEeO2NaSiicarcg" value="*"/>
@@ -1070,7 +1070,7 @@ The effectiveTime element is used to describe dates associated with the patient'
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P0E4AvMyEeOUvapeh9bVvQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P0E4AfMyEeOUvapeh9bVvQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_I-d1oPMzEeOUvapeh9bVvQ" name="authorParticipation" association="_I-fDwPMzEeOUvapeh9bVvQ">
+    <ownedAttribute xmi:id="_I-d1oPMzEeOUvapeh9bVvQ" name="author" association="_I-fDwPMzEeOUvapeh9bVvQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I-d1ofMzEeOUvapeh9bVvQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I-d1ovMzEeOUvapeh9bVvQ" value="*"/>
@@ -1313,13 +1313,13 @@ The effectiveTime element is used to describe dates associated with the patient'
     <elements xmi:id="_6pliILKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationID" modelElement="_-9hYUKzCEeSB84STE1Ny6A" businessElementId="6642fc6a-768d-4c7f-9f3c-5bdce9b606f8" modelElementPath="currentSmokingStatus2.id"/>
     <elements xmi:id="_8VseoLKoEeeyLJp8BPm4pw" businessElement="SmokingStatusObservationValueCode" modelElement="_zeAVcLm5EeOgPNzo_e4B9A" businessElementId="aadeabc0-625a-450e-9400-cdc85debf531" modelElementPath="currentSmokingStatus2.value"/>
     <elements xmi:id="_GjwqkLKoEeeiIJcANpZ7qA" businessElement="SocialHistoryObservationContainer" modelElement="_1CAh8AFOEeSG_MJH-zNFRw" businessElementId="07861e9b-b6a3-4b37-a8b1-39fb418d7390" modelElementPath="socialHistoryObservation2"/>
-    <elements xmi:id="_wD4HsLKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationAuthorName" businessElementId="4576a76c-a5ed-4449-ba65-2f6977e0c607" modelElementPath="socialHistoryObservation2.authorParticipation.assignedAuthor.assignedPerson.name">
+    <elements xmi:id="_wD4HsLKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationAuthorName" businessElementId="4576a76c-a5ed-4449-ba65-2f6977e0c607" modelElementPath="socialHistoryObservation2.author.assignedAuthor.assignedPerson.name">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_x4hVILKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationAuthorSpecialtyCode" businessElementId="206867c3-4fdd-4e4b-ba46-e69edb4b0178" modelElementPath="socialHistoryObservation2.authorParticipation.assignedAuthor.code">
+    <elements xmi:id="_x4hVILKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationAuthorSpecialtyCode" businessElementId="206867c3-4fdd-4e4b-ba46-e69edb4b0178" modelElementPath="socialHistoryObservation2.author.assignedAuthor.code">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_tH3pkLKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationAuthorID" businessElementId="507c4d07-6e0d-408d-8e48-e8e56ca7e4fb" modelElementPath="socialHistoryObservation2.authorParticipation.assignedAuthor.id">
+    <elements xmi:id="_tH3pkLKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationAuthorID" businessElementId="507c4d07-6e0d-408d-8e48-e8e56ca7e4fb" modelElementPath="socialHistoryObservation2.author.assignedAuthor.id">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_l5TxILKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationTypeCode" modelElement="_YzlcoPJhEeO2NaSiicarcg" businessElementId="0d7c22c3-57d3-4730-881f-09465d85f878" modelElementPath="socialHistoryObservation2.code"/>
