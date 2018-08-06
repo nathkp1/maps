@@ -5985,10 +5985,11 @@ OIDs SHALL be no more than 64 characters in length..</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U4AocjzCEeiNReRoMA-0oQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U4AoczzCEeiNReRoMA-0oQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_U4BPgTzCEeiNReRoMA-0oQ" name="versionNumber" visibility="private" aggregation="composite" redefinedProperty="_ZxQuICykEeGMXrZ0DiQwGg">
+    <ownedAttribute xmi:id="_U4BPgTzCEeiNReRoMA-0oQ" name="versionNumber" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U4BPgjzCEeiNReRoMA-0oQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U4BPgzzCEeiNReRoMA-0oQ" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_96a3sEokEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_5upL0BwLEeSMr-NWzQuDBw" name="RecordTarget">
       <ownedComment xmi:id="_Fn540BwMEeSMr-NWzQuDBw">
@@ -6536,33 +6537,39 @@ Please see Volume 1 of this guide to view a Care Plan Relationship diagram and s
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_58w50eRdEeS36Oc6kiIbAQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_58w50uRdEeS36Oc6kiIbAQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2Z_yoJ50EeOr4eM3k36wAg" name="informationRecipient" type="_fneAkJ51EeOr4eM3k36wAg" association="_2aBAwJ50EeOr4eM3k36wAg">
+    <ownedAttribute xmi:id="_2Z_yoJ50EeOr4eM3k36wAg" name="informationRecipient" type="_fneAkJ51EeOr4eM3k36wAg" redefinedProperty="_98mjkBwXEeSMr-NWzQuDBw" association="_2aBAwJ50EeOr4eM3k36wAg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2aAZsJ50EeOr4eM3k36wAg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2aAZsZ50EeOr4eM3k36wAg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Vg9b4J57EeOr4eM3k36wAg" name="authenticator" type="_-ok5cJ57EeOr4eM3k36wAg" association="_Vg-qAJ57EeOr4eM3k36wAg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YKvhkJ57EeOr4eM3k36wAg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YKu6gJ57EeOr4eM3k36wAg" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bofJsUcdEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_dbXUYJ6AEeOr4eM3k36wAg" name="participantCarePlanReview" type="_z_QYEJ6AEeOr4eM3k36wAg" association="_dbZJkJ6AEeOr4eM3k36wAg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dbX7cJ6AEeOr4eM3k36wAg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dbX7cZ6AEeOr4eM3k36wAg" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_iEOSgUcnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_DRoGwJ8BEeOr4eM3k36wAg" name="participantCaregiver" type="_fgKZEJ8BEeOr4eM3k36wAg" association="_DRp78J8BEeOr4eM3k36wAg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DRot0J8BEeOr4eM3k36wAg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DRot0Z8BEeOr4eM3k36wAg" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_iEOSgUcnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="__jjq0J8GEeOr4eM3k36wAg" name="documentationOf" type="_LbFScJ8HEeOr4eM3k36wAg" association="__jk48J8GEeOr4eM3k36wAg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BZkxQJ8HEeOr4eM3k36wAg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BZjjIJ8HEeOr4eM3k36wAg" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_4mW64UoVEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2d_XAJ8SEeOr4eM3k36wAg" name="relatedDocument" type="_MHJQwJ8TEeOr4eM3k36wAg" association="_2eAlIJ8SEeOr4eM3k36wAg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2d_-EJ8SEeOr4eM3k36wAg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2d_-EZ8SEeOr4eM3k36wAg" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_w_pdoEoUEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_bXCQcJ8VEeOr4eM3k36wAg" name="componentOf" type="_AVv-8J8WEeOr4eM3k36wAg" association="_bXDekJ8VEeOr4eM3k36wAg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zeDIOULEeS-cp9IWljmeQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zdcEOULEeS-cp9IWljmeQ" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_8etaMUAJEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_zdGxMJ8YEeOr4eM3k36wAg" name="healthConcernsSection" association="_zdH_UJ8YEeOr4eM3k36wAg">
       <type xmi:type="uml:Class" href="consol-problems.uml#_2umuYJ18EeORR8_YW0n_jQ"/>
@@ -6595,24 +6602,27 @@ Please see Volume 1 of this guide to view a Care Plan Relationship diagram and s
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sc6j8npYEeill5VfgX-4Ew" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Sc7LAHpYEeill5VfgX-4Ew" name="effectiveTime" visibility="private" type="_OB2hAJBlEeSSfIVHL_x3Xw" aggregation="composite" redefinedProperty="_U37v8TzCEeiNReRoMA-0oQ"/>
-    <ownedAttribute xmi:id="_Sc7LAnpYEeill5VfgX-4Ew" name="recordTarget1" type="_5upL0BwLEeSMr-NWzQuDBw" subsettedProperty="_nAGCABwLEeSMr-NWzQuDBw">
+    <ownedAttribute xmi:id="_Sc7LAnpYEeill5VfgX-4Ew" name="recordTarget" type="_5upL0BwLEeSMr-NWzQuDBw" redefinedProperty="_nAGCABwLEeSMr-NWzQuDBw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sc7LA3pYEeill5VfgX-4Ew" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sc7LBHpYEeill5VfgX-4Ew" value="*"/>
       <association href="../consol.uml#_Sc7yEHpYEeill5VfgX-4Ew"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Sc9AMHpYEeill5VfgX-4Ew" name="author1" type="_ly08oBwWEeSMr-NWzQuDBw" subsettedProperty="_cXWgsBwWEeSMr-NWzQuDBw">
+    <ownedAttribute xmi:id="_Sc9AMHpYEeill5VfgX-4Ew" name="author" type="_ly08oBwWEeSMr-NWzQuDBw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sc9AMXpYEeill5VfgX-4Ew" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sc9AMnpYEeill5VfgX-4Ew" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_hhbysUcgEd6besF9iFIJkQ"/>
       <association href="../consol.uml#_Sc9AM3pYEeill5VfgX-4Ew"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Sc9nQXpYEeill5VfgX-4Ew" name="informant1" type="_HIK-cBwcEeSMr-NWzQuDBw" subsettedProperty="_BrsHoBwcEeSMr-NWzQuDBw">
+    <ownedAttribute xmi:id="_Sc9nQXpYEeill5VfgX-4Ew" name="informant" type="_HIK-cBwcEeSMr-NWzQuDBw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sc9nQnpYEeill5VfgX-4Ew"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sc9nQ3pYEeill5VfgX-4Ew" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_xsp1YEcmEd6besF9iFIJkQ"/>
       <association href="../consol.uml#_Sc-OUHpYEeill5VfgX-4Ew"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Sc-1YHpYEeill5VfgX-4Ew" name="supportParticipant1" type="_0uYKYBwgEeSMr-NWzQuDBw" subsettedProperty="_qskHMBwgEeSMr-NWzQuDBw">
+    <ownedAttribute xmi:id="_Sc-1YHpYEeill5VfgX-4Ew" name="supportParticipant1" type="_0uYKYBwgEeSMr-NWzQuDBw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sc-1YXpYEeill5VfgX-4Ew"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sc-1YnpYEeill5VfgX-4Ew" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_iEOSgUcnEd6besF9iFIJkQ"/>
       <association href="../consol.uml#_Sc_ccHpYEeill5VfgX-4Ew"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fneAkJ51EeOr4eM3k36wAg" name="InformationRecipient">
@@ -6720,6 +6730,7 @@ This authenticator represents patient agreement or sign-off of the Care Plan</bo
       <ownedAttribute xmi:id="_WLXY4J59EeOr4eM3k36wAg" name="assignedEntity" type="_eg-Y8J59EeOr4eM3k36wAg" association="_WLYnAJ59EeOr4eM3k36wAg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YTHIgJ59EeOr4eM3k36wAg" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YTGhcJ59EeOr4eM3k36wAg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_dsqn8UcdEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="__fUMIEgMEeSfpbeq3Ftc1g" name="sDTCSignatureText" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
@@ -11188,7 +11199,7 @@ The best practice for a Discharge Summary is to include the discharge dispositio
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g0XfUCP9EeS4d9o7u1_H3A" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hUGZMCQGEeS4d9o7u1_H3A" name="allergiesSectionEntriesOptional2" association="_hUIOYCQGEeS4d9o7u1_H3A">
-      <type xmi:type="uml:Class" href="consol-allergies.uml#_nWAcMAIjEeSVzfoPSatgpg"/>
+      <type xmi:type="uml:Class" href="consol-allergies.uml#_EONPMAInEeSr1aKUYorURA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j-vagCQGEeS4d9o7u1_H3A" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j-h_ICQGEeS4d9o7u1_H3A" value="1"/>
     </ownedAttribute>
@@ -11253,7 +11264,7 @@ The best practice for a Discharge Summary is to include the discharge dispositio
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yEjKMJqMEeSoe-LLjMf5Cg" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_LMoo8JqNEeSoe-LLjMf5Cg" name="admissionMedicationsSectionEntriesOptional2" association="_LMp3EJqNEeSoe-LLjMf5Cg">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_ZLY3MPyqEeOlg_Cnc5bODw"/>
+      <type xmi:type="uml:Class" href="consol-medications.uml#_ZQpEwK-1EeO8duI_7f6kZw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MJKioZqNEeSoe-LLjMf5Cg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MJKioJqNEeSoe-LLjMf5Cg" value="1"/>
     </ownedAttribute>
@@ -11278,17 +11289,17 @@ The best practice for a Discharge Summary is to include the discharge dispositio
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0TDQ4CSSEeS4d9o7u1_H3A" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_B8PDYCSTEeS4d9o7u1_H3A" name="immunizationsSectionEntriesOptional2" association="_B8QRgCSTEeS4d9o7u1_H3A">
-      <type xmi:type="uml:Class" href="consol-immunizations.uml#_kdQhIPy3EeO1SvUcmWeLDQ"/>
+      <type xmi:type="uml:Class" href="consol-immunizations.uml#_2L7voBSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D8iuQCSTEeS4d9o7u1_H3A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D8fD4CSTEeS4d9o7u1_H3A" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_WmFcQCSTEeS4d9o7u1_H3A" name="problemSectionEntriesOptional2" association="_WmHRcCSTEeS4d9o7u1_H3A">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_ZgLioAFkEeSJ2uHfynwxCw"/>
+      <type xmi:type="uml:Class" href="consol-problems.uml#_IXrA4ALVEeSyydFGYJajGA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yq_TQCSTEeS4d9o7u1_H3A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yq7B0CSTEeS4d9o7u1_H3A" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_jvNOoCSTEeS4d9o7u1_H3A" name="proceduresSectionEntriesOptional2" association="_jvOcwCSTEeS4d9o7u1_H3A">
-      <type xmi:type="uml:Class" href="consol-procedures.uml#_80dMoAB0EeSLOb2O6vSPzg"/>
+      <type xmi:type="uml:Class" href="consol-procedures.uml#_N6wUUALoEeSBA9s7kRnaEg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lao1sCSTEeS4d9o7u1_H3A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lakkQCSTEeS4d9o7u1_H3A" value="1"/>
     </ownedAttribute>
@@ -11308,7 +11319,7 @@ The best practice for a Discharge Summary is to include the discharge dispositio
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OsZGsCSUEeS4d9o7u1_H3A" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hebpYCSUEeS4d9o7u1_H3A" name="vitalSignsSectionEntriesOptional2" association="_hec3gCSUEeS4d9o7u1_H3A">
-      <type xmi:type="uml:Class" href="consol-vitalsigns.uml#_8LkzYAFTEeSmasYc71ZgMQ"/>
+      <type xmi:type="uml:Class" href="consol-vitalsigns.uml#_D3010ALzEeSM0Jd2D1FgKw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l5v-ICSUEeS4d9o7u1_H3A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l5rssCSUEeS4d9o7u1_H3A" value="1"/>
     </ownedAttribute>
@@ -15005,7 +15016,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     </elements>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_cHbxwN52Eeexw8ZuORLxGg" base_Class="_dduXkJ5OEeOr4eM3k36wAg">
-     <elements xmi:id="_v-mhUPANEeefBvVUv-KCHA" businessElement="DocumentAuthenticatorContainer" modelElement="_Q-hqcBwaEeSMr-NWzQuDBw" businessElementId="eaa17bb1-8305-4976-8e8e-b4ad5daee758" modelElementPath="authenticator" condition=""/>
+    <elements xmi:id="_v-mhUPANEeefBvVUv-KCHA" businessElement="DocumentAuthenticatorContainer" modelElement="_Q-hqcBwaEeSMr-NWzQuDBw" businessElementId="eaa17bb1-8305-4976-8e8e-b4ad5daee758" modelElementPath="authenticator" condition=""/>
     <elements xmi:id="_T_4eAN6FEeex053nKTJxcg" businessElement="DocumentAuthenicatorOrganizationBusinessAddress" modelElement="_IMjo0CzGEeGMXrZ0DiQwGg" businessElementId="25c51852-c2b0-4e1c-a366-223aee77276a" modelElementPath="authenticator.assignedEntity.addr" condition=""/>
     <elements xmi:id="_e8nRUN6FEeex053nKTJxcg" businessElement="DocumentAuthenticatordPersonName" modelElement="_Dy1g8OxwEeG7k4bbVdXbXw" businessElementId="5f4bc15c-b4d3-43f5-8d9e-e08f38d39442" modelElementPath="authenticator.assignedEntity.assignedPerson.name" condition=""/>
     <elements xmi:id="_Rtrx4N6FEeex053nKTJxcg" businessElement="DocumentAuthenticatorSpecialtyCode" modelElement="_IMkP4CzGEeGMXrZ0DiQwGg" businessElementId="426141fc-3ef4-46e6-a549-a3e9ff764967" modelElementPath="authenticator.assignedEntity.code" condition=""/>
@@ -15272,37 +15283,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:PropertyValidation xmi:id="_U4B2kDzCEeiNReRoMA-0oQ" severity="INFO" base_Property="_U4BPgTzCEeiNReRoMA-0oQ">
     <ruleId>CONF:5264, R2.1=CONF:1198-5264</ruleId>
   </CDA:PropertyValidation>
-  <MDMI:MDMIMapping xmi:id="_uTz28D8_Eei5gJjJcAc_Mw" base_Class="_2jWfwJ5wEeOr4eM3k36wAg">
-    <elements xmi:id="_nQgK0HpcEeiGTPBUv4SUTw" businessElement="DocumentAuthenticatorContainer" modelElement="_Vg-qAJ57EeOr4eM3k36wAg" businessElementId="eaa17bb1-8305-4976-8e8e-b4ad5daee758" modelElementPath="authenticator" condition=""/>
-    <elements xmi:id="_dF0isHpgEeiGTPBUv4SUTw" businessElement="DocumentServiceEventPractitionerContainer" modelElement="_Vg-qAJ57EeOr4eM3k36wAg" businessElementId="503535eb-e96e-4609-948e-e7ba5ada37ca" modelElementPath="authenticator" condition=""/>
-    <elements xmi:id="_o9_AUHpcEeiGTPBUv4SUTw" businessElement="DocumentAuthenticatorSignatureCode" modelElement="_H1lbkJ58EeOr4eM3k36wAg" businessElementId="57fde332-3dff-4eda-b8d8-ff915b6f2ba2" modelElementPath="authenticator.signatureCode" condition=""/>
-    <elements xmi:id="_gZItkHpgEeiGTPBUv4SUTw" businessElement="DocumentServiceEventPractitionerSignatureCode" modelElement="_H1lbkJ58EeOr4eM3k36wAg" businessElementId="9c6ebbbe-b8b9-4a62-b2cf-4e25410421d6" modelElementPath="authenticator.signatureCode" condition=""/>
-    <elements xmi:id="_qYJRMHpcEeiGTPBUv4SUTw" businessElement="DocumentAuthenticatorDateTime" modelElement="_H1mCoJ58EeOr4eM3k36wAg" businessElementId="af383f6a-8ca2-41ac-8e3a-9e97ebf5a058" modelElementPath="authenticator.time" condition=""/>
-    <elements xmi:id="_exFxsHpgEeiGTPBUv4SUTw" businessElement="DocumentServiceEventPractitionerSignatureDateTime" modelElement="_H1mCoJ58EeOr4eM3k36wAg" businessElementId="6993f737-3cbd-4017-bbee-918f85b4675b" modelElementPath="authenticator.time" condition=""/>
-    <elements xmi:id="_CgqsMHpkEei0apwqUyYhSg" businessElement="DocumentServiceEventStartDateTime" modelElement="_rDKTdJ8HEeOr4eM3k36wAg" businessElementId="c99279c4-362a-4c93-9d76-e7a9094db140" modelElementPath="documentationOf.serviceEvent.effectiveTime.low" condition=""/>
-    <elements xmi:id="_VMK_gHpYEeill5VfgX-4Ew" businessElement="DocumentID" modelElement="_Sc6j8HpYEeill5VfgX-4Ew" businessElementId="17cb9e1f-97d6-4ba9-b43f-b6d906392531" modelElementPath="id" condition=""/>
-    <elements xmi:id="_krTuYHpVEeill5VfgX-4Ew" businessElement="DocumentVerifierContainer" modelElement="_dbZJkJ6AEeOr4eM3k36wAg" businessElementId="f6d3ec78-623e-4b9b-a971-4e02cef58b79" modelElementPath="participantCarePlanReview" condition=""/>
-    <elements xmi:id="_0cDDQHpVEeill5VfgX-4Ew" businessElement="DocumentVerifierName" businessElementId="67bd383f-0188-4806-80ff-d0ca4c6ebb6b" modelElementPath="participantCarePlanReview.associatedEntity.associatedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_o22hwHpVEeill5VfgX-4Ew" businessElement="DocumentVerfiierRelationshipCode" modelElement="__jD9AZ6BEeOr4eM3k36wAg" businessElementId="0c6e2f84-1cf9-40a4-a9fd-3eb49cd7c116" modelElementPath="participantCarePlanReview.associatedEntity.code" condition=""/>
-    <elements xmi:id="_nceOcHpVEeill5VfgX-4Ew" businessElement="DocumentVerifierID" modelElement="__jD9BJ6BEeOr4eM3k36wAg" businessElementId="1bd3897a-fedd-4a87-ace1-6bea02112c3a" modelElementPath="participantCarePlanReview.associatedEntity.id" condition=""/>
-    <elements xmi:id="_rAr8EHpVEeill5VfgX-4Ew" businessElement="DocumentVerifierPhoneContact" businessElementId="6042202f-dcb4-4544-a09f-caf774817acd" modelElementPath="participantCarePlanReview.associatedEntity.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#__ZTfQEoeEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_IWR9EHpWEeill5VfgX-4Ew" businessElement="DocumentVerifierSignatureCode" modelElement="_3BG_gJ6AEeOr4eM3k36wAg" businessElementId="4879e065-17ec-482e-90f6-505ac4a19e54" modelElementPath="participantCarePlanReview.functionCode" condition=""/>
-    <elements xmi:id="_vlwCsHpVEeill5VfgX-4Ew" businessElement="DocumentVerificationDateTime" modelElement="_3BG_g56AEeOr4eM3k36wAg" businessElementId="75dcc73a-5d60-48e1-a9d9-8c7c225e1bfc" modelElementPath="participantCarePlanReview.time" condition=""/>
-    <elements xmi:id="_aWyDMHpYEeill5VfgX-4Ew" businessElement="PatientContainer" modelElement="_-Di6EBwMEeSMr-NWzQuDBw" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="recordTarget1.patientRole" condition=""/>
-    <elements xmi:id="_p1fz8HpYEeill5VfgX-4Ew" businessElement="PatientAddress" modelElement="_tsTDwCylEeGMXrZ0DiQwGg" businessElementId="ab55f2c5-eaea-4de5-a358-6a9037ebf762" modelElementPath="recordTarget1.patientRole.addr" condition=""/>
-    <elements xmi:id="_dxnLUHpYEeill5VfgX-4Ew" businessElement="PatientID" modelElement="_tsUR4CylEeGMXrZ0DiQwGg" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="recordTarget1.patientRole.id" condition=""/>
-    <elements xmi:id="_hVAZkHpYEeill5VfgX-4Ew" businessElement="PatientBirthDateTime" modelElement="_7Ga1IIurEeSZu6J-Yjmr9w" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="recordTarget1.patientRole.patient.birthTime" condition=""/>
-    <elements xmi:id="_vYNOkHpYEeill5VfgX-4Ew" businessElement="GuardianRelationshipCode" modelElement="_iidm0BwQEeSMr-NWzQuDBw" businessElementId="49e13ec4-7e7b-4644-b4c1-296503240b62" modelElementPath="recordTarget1.patientRole.patient.guardian.code" condition=""/>
-    <elements xmi:id="_0rAk8HpYEeill5VfgX-4Ew" businessElement="GuardianName" modelElement="_RBsv8OxlEeG7k4bbVdXbXw" businessElementId="95eaf16d-f5c2-453b-a3a3-006253fddd29" modelElementPath="recordTarget1.patientRole.patient.guardian.guardianPerson.name" condition=""/>
-    <elements xmi:id="_xi918HpYEeill5VfgX-4Ew" businessElement="GuardianPhoneContact" modelElement="_oC3gIIu1EeSZu6J-Yjmr9w" businessElementId="8f71434b-2639-42b6-ae08-6478553d5ea8" modelElementPath="recordTarget1.patientRole.patient.guardian.telecom" condition=""/>
-    <elements xmi:id="_jfDPQHpYEeill5VfgX-4Ew" businessElement="PatientName" modelElement="_7OuG8SylEeGMXrZ0DiQwGg" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="recordTarget1.patientRole.patient.name" condition=""/>
-    <elements xmi:id="_r5cosHpYEeill5VfgX-4Ew" businessElement="PatientPhoneContact" modelElement="_tsU48CylEeGMXrZ0DiQwGg" businessElementId="1ce00ea1-99d6-40dd-bfa5-50a5bad9e9a8" modelElementPath="recordTarget1.patientRole.telecom" condition=""/>
-    <elements xmi:id="_XHh48HpYEeill5VfgX-4Ew" businessElement="DocumentTitle" modelElement="_Sc25kHpYEeill5VfgX-4Ew" businessElementId="e02fcb5b-8e5e-4ebb-8252-913b1b080fe0" modelElementPath="title" condition=""/>
-  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_uTz28D8_Eei5gJjJcAc_Mw" base_Class="_2jWfwJ5wEeOr4eM3k36wAg"/>
   <CDA:TextValue xmi:id="_Sc4uwHpYEeill5VfgX-4Ew" base_Property="_Sc25kHpYEeill5VfgX-4Ew">
     <ruleId>CONF:1198-5254</ruleId>
   </CDA:TextValue>
