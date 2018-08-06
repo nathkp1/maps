@@ -5,39 +5,38 @@
 
 
 
-		<property name="mdmifocal" value="CCDA-on-FHIR-Discharge-Summary"/>
-		<property name="mdmimap" value="fhirCCDAonFHIRDischarge"/>
+		<property name="mdmifocal" value="USCoreVitalSigns"/>
+		
+		<property name="bundleentries" value="${mdmifocal}"/>
 
-		<delete file="map/${mdmimap}.mdmi" />
+		<delete file="map/fhir${mdmifocal}.mdmi" />
 	
 
 
 		<echo message="" />
-		<echo message="Transform ${mdmifocal}" />
+		<echo message="Transform CCDA on FHIR" />
 		<echo message="" />
 		<qvto:transformation
 			uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
-			<in uri="platform:/resource/FHIR/stu3/FHIR-CCDA.uml" />
-			<out uri="platform:/resource/FHIR/map/${mdmimap}.mdmi" />
+			<in uri="platform:/resource/FHIR/stu3/FHIR-US-Core.uml" />
+			<out uri="platform:/resource/FHIR/map/fhir${mdmifocal}.mdmi" />
 			<configProperty name="fhirVersion" value="FHIRSTU3" />
-			<configProperty name="packageName" value="Extensions" />
+			<configProperty name="packageName" value="Profiles" />
 			<configProperty name="mappingStyle" value="NORMAL" />
 			<configProperty name="expressionLanguage" value="XPath" />
 			<configProperty name="singleSemantics" value="PatientID" />
 			<configProperty name="syntaxRoot"
-				value="${mdmifocal}" />
+				value="${bundleentries}," />
 		</qvto:transformation>
-
-
-	
-
-
-
-		 
+		
+		
+	 
+ 
 
 
 		<echo message="Start Sort" />
-		<mdmiSort model="platform:/resource/FHIR/map/${mdmimap}.mdmi" />
+	 
+		<mdmiSort model="platform:/resource/FHIR/map/fhir${mdmifocal}.mdmi" />
 
 		<echo message="End Sort" />
 
