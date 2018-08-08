@@ -6,15 +6,18 @@
 		<delete file="map/careplan.xmi" />
 
 	 
-		<qvto:transformation uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Cda2Mdmi.qvto">
-			<in uri="platform:/resource/CDA/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml" />
-			<out uri="platform:/resource/CDA/map/careplan.mdmi" />
-			<trace uri="platform:/resource/CDA/log/careplan.qvtotrace">
-			</trace>
-			<configProperty name="semanticRoot" value="CarePlan" />
-			<configProperty name="syntaxRoot" value="CarePlan" />
-			<configProperty name="mappingStyle" value="NORMAL" />
-		</qvto:transformation>
+		 <qvto:transformation
+				uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Cda2Mdmi.qvto">
+				<in uri="platform:/resource/CDA/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml" />
+		 	 	<out uri="platform:/resource/CDA/map/careplan.mdmi" />
+		 	 	<trace  uri="platform:/resource/CDA/log/cdamap.qvtotrace" ></trace>
+				<configProperty name="semanticRoot" value="CarePlan" />
+				<configProperty name="syntaxRoot" value="CarePlan" />
+				<configProperty name="mappingStyle" value="NORMAL" />
+		 	 	<configProperty name="mapFamily" value="CDAR2" />
+		 	 				<configProperty name="mapInstance" value="CAREPLAN" />
+		 	 		 	 	<configProperty name="mapDisplayName" value="Care Plan" />
+			</qvto:transformation>
 
 		<transformReport reportPath="${basedir}" />
 
