@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Generated using MDMI 0.5.0-SNAPSHOT  2018-08-07 14:24--><Bundle>
+   <entry>
+      <resource>
+         <FamilyMemberHistory>
+            <id value="d42ebf70-5c89-11db-b0de-0800200c9a66"/>
+            <identifier>
+               <value value="d42ebf70-5c89-11db-b0de-0800200c9a66"/>
+            </identifier>
+            <identifier>
+               <value value="5bfe3ec0-5c8b-11db-b0de-0800200c9a66"/>
+            </identifier>
+            <date value="value"/>
+            <relationship>
+               <coding>
+                  <code value="FTH"/>
+                  <display value="Father"/>
+                  <system value="2.16.840.1.113883.5.111"/>
+               </coding>
+               <text value="Father"/>
+            </relationship>
+            <gender value="M"/>
+            <bornDate value="1910"/>
+            <condition>
+               <code>
+                  <coding>
+                     <code value="46635009"/>
+                     <display value="Diabetes mellitus type 1"/>
+                     <system value="2.16.840.1.113883.6.96"/>
+                  </coding>
+                  <text value="Diabetes mellitus type 1"/>
+               </code>
+            </condition>
+            <condition/>
+         </FamilyMemberHistory>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Condition>
+            <identifier>
+               <value value="102ca2e9-884c-4523-a2b4-1b6c3469c397"/>
+            </identifier>
+            <id value="102ca2e9-884c-4523-a2b4-1b6c3469c397"/>
+            <clinicalStatus value="active"/>
+            <code>
+               <coding>
+                  <code value="35064005"/>
+                  <display value="Dark stools"/>
+                  <system value="2.16.840.1.113883.6.96"/>
+               </coding>
+               <text value="Dark stools"/>
+            </code>
+            <subject>
+               <reference value="2.16.840.1.113883.19.5.99999.2::998991"/>
+            </subject>
+            <onsetDateTime value="2014-09-06"/>
+         </Condition>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Condition>
+            <id value="102ca2e9-884c-4523-a2b4-1b6c3469c397"/>
+            <identifier>
+               <value value="102ca2e9-884c-4523-a2b4-1b6c3469c397"/>
+            </identifier>
+            <clinicalStatus value="active"/>
+            <code>
+               <coding>
+                  <code value="74400008"/>
+                  <display value="Appendicitis"/>
+                  <system value="2.16.840.1.113883.6.96"/>
+               </coding>
+               <text value="Appendicitis"/>
+            </code>
+            <subject>
+               <reference value="2.16.840.1.113883.19.5.99999.2::998991"/>
+            </subject>
+            <onsetDateTime value="2014-09-08"/>
+         </Condition>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Immunization>
+            <identifier>
+               <value value="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+            </identifier>
+            <id value="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+            <status value="completed"/>
+            <date value="2014-09-01"/>
+            <vaccineCode>
+               <coding>
+                  <code value="141"/>
+                  <display value="Influenza, seasonal, injectable"/>
+                  <system value="2.16.840.1.113883.12.292"/>
+               </coding>
+               <text value="Influenza, seasonal, injectable"/>
+            </vaccineCode>
+            <patient>
+               <reference value="2.16.840.1.113883.19.5.99999.2::998991"/>
+            </patient>
+            <lotNumber value="11234654AA"/>
+         </Immunization>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Immunization>
+            <identifier>
+               <value value="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+            </identifier>
+            <id value="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+            <status value="entered-in-error"/>
+            <date value="2014-09-01"/>
+            <vaccineCode>
+               <coding>
+                  <code value="103"/>
+                  <display value="Tetanus and diphtheria toxoids - preservative free"/>
+                  <system value="2.16.840.1.113883.12.292"/>
+               </coding>
+               <text value="Tetanus and diphtheria toxoids - preservative free"/>
+            </vaccineCode>
+            <patient>
+               <reference value="2.16.840.1.113883.19.5.99999.2::998991"/>
+            </patient>
+         </Immunization>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Patient>
+            <identifier>
+               <value value="998991"/>
+            </identifier>
+            <identifier>
+               <system value="http://hl7.org/fhir/sid/us-ssn"/>
+               <value value="111-00-2330"/>
+            </identifier>
+            <id value="998991"/>
+            <name>
+               <family value="Jones"/>
+               <given value="Isabella"/>
+            </name>
+            <telecom>
+               <system value="phone"/>
+               <use value="home"/>
+               <value value="(816)276-6909"/>
+            </telecom>
+            <gender value="female"/>
+            <birthDate value="2005-05-01"/>
+            <address>
+               <city value="Beaverton"/>
+               <country value="US"/>
+               <line value="1357 Amber Drive"/>
+               <postalCode value="97867"/>
+               <state value="OR"/>
+            </address>
+            <contact>
+               <relationship>
+                  <coding>
+                     <code value="GRPRN"/>
+                     <display value="Grandparent"/>
+                     <system value="2.16.840.1.113883.5.111"/>
+                  </coding>
+                  <text value="Grandparent"/>
+               </relationship>
+               <name>
+                  <family value="Jones"/>
+                  <given value="Ralph"/>
+               </name>
+               <telecom>
+                  <system value="phone"/>
+                  <use value="home"/>
+                  <value value="(816)276-6909"/>
+               </telecom>
+               <address>
+                  <city value="Beaverton"/>
+                  <country value="US"/>
+                  <line value="1357 Amber Drive"/>
+                  <postalCode value="97867"/>
+                  <state value="OR"/>
+               </address>
+            </contact>
+            <communication>
+               <language>
+                  <coding>
+                     <code value="eng"/>
+                  </coding>
+               </language>
+            </communication>
+         </Patient>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Procedure>
+            <id value="64af26d5-88ef-4169-ba16-c6ef16a1824f"/>
+            <identifier>
+               <value value="64af26d5-88ef-4169-ba16-c6ef16a1824f"/>
+            </identifier>
+            <status value="completed"/>
+            <code>
+               <coding>
+                  <code value="6025007"/>
+                  <display value="Laparoscopic appendectomy"/>
+                  <system value="2.16.840.1.113883.6.96"/>
+               </coding>
+               <text value="Laparoscopic appendectomy"/>
+            </code>
+            <subject>
+               <reference value="2.16.840.1.113883.19.5.99999.2::998991"/>
+            </subject>
+            <bodySite>
+               <coding>
+                  <code value="181255000"/>
+                  <display value="Entire Appendix"/>
+                  <system value="2.16.840.1.113883.6.96"/>
+               </coding>
+               <text value="Entire Appendix"/>
+            </bodySite>
+         </Procedure>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Practitioner/>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Practitioner>
+            <identifier>
+               <value value="KP00017"/>
+            </identifier>
+            <id value="KP00017"/>
+            <name>
+               <family value="Seven"/>
+               <given value="Henry"/>
+            </name>
+         </Practitioner>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Observation>
+            <id value="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+            <identifier>
+               <value value="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+            </identifier>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <code value="8302-2"/>
+                  <display value="Height"/>
+                  <system value="2.16.840.1.113883.6.1"/>
+               </coding>
+               <text value="Height"/>
+            </code>
+            <subject>
+               <reference value="2.16.840.1.113883.19.5.99999.2::998991"/>
+            </subject>
+            <effectiveDateTime value="201409160845+0500"/>
+            <valueQuantity>
+               <unit value="cm"/>
+               <value value="177"/>
+            </valueQuantity>
+            <interpretation>
+               <coding>
+                  <code value="N"/>
+                  <system value="2.16.840.1.113883.5.83"/>
+               </coding>
+            </interpretation>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Observation>
+            <id value="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+            <identifier>
+               <value value="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+            </identifier>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <code value="8480-6"/>
+                  <display value="Intravascular Systolic"/>
+                  <system value="2.16.840.1.113883.6.1"/>
+               </coding>
+               <text value="Intravascular Systolic"/>
+            </code>
+            <subject>
+               <reference value="2.16.840.1.113883.19.5.99999.2::998991"/>
+            </subject>
+            <effectiveDateTime value="201409160845+0500"/>
+            <valueQuantity>
+               <unit value="mm[Hg]"/>
+               <value value="80"/>
+            </valueQuantity>
+            <interpretation>
+               <coding>
+                  <code value="L"/>
+                  <system value="2.16.840.1.113883.5.83"/>
+               </coding>
+            </interpretation>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Observation>
+            <id value="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+            <identifier>
+               <value value="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+            </identifier>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <code value="3141-9"/>
+                  <display value="Patient Body Weight - Measured"/>
+                  <system value="2.16.840.1.113883.6.1"/>
+               </coding>
+               <text value="Patient Body Weight - Measured"/>
+            </code>
+            <subject>
+               <reference value="2.16.840.1.113883.19.5.99999.2::998991"/>
+            </subject>
+            <effectiveDateTime value="201409160845+0500"/>
+            <valueQuantity>
+               <unit value="kg"/>
+               <value value="86"/>
+            </valueQuantity>
+            <interpretation>
+               <coding>
+                  <code value="N"/>
+                  <system value="2.16.840.1.113883.5.83"/>
+               </coding>
+            </interpretation>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <resource>
+         <Observation>
+            <id value="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+            <identifier>
+               <value value="c6f88321-67ad-11db-bd13-0800200c9a66"/>
+            </identifier>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <code value="8462-4"/>
+                  <display value="Intravascular Diastolic"/>
+                  <system value="2.16.840.1.113883.6.1"/>
+               </coding>
+               <text value="Intravascular Diastolic"/>
+            </code>
+            <subject>
+               <reference value="2.16.840.1.113883.19.5.99999.2::998991"/>
+            </subject>
+            <effectiveDateTime value="201409160845+0500"/>
+            <valueQuantity>
+               <unit value="mm[Hg]"/>
+               <value value="55"/>
+            </valueQuantity>
+            <interpretation>
+               <coding>
+                  <code value="L"/>
+                  <system value="2.16.840.1.113883.5.83"/>
+               </coding>
+            </interpretation>
+         </Observation>
+      </resource>
+   </entry>
+</Bundle>
