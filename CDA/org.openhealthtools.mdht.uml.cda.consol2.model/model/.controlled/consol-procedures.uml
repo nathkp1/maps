@@ -3765,7 +3765,7 @@ This template can be used with a contained Product Instance template to represen
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_gVawgPAOEeefBvVUv-KCHA" base_Class="_N6wUUALoEeSBA9s7kRnaEg">
     <elements xmi:id="_gVbXkPAOEeefBvVUv-KCHA" businessElement="ProcedureContainer" modelElement="_N6wUUALoEeSBA9s7kRnaEg" businessElementId="b7a63343-ca32-4394-88a2-0f4cd2c2aad6" modelElementPath="" condition=""/>
-    <elements xmi:id="_uegfQEmsEei1GK3IhTP0Dw" businessElement="ProcedureSectionIDCode" modelElement="_6Y1XYALoEeSBA9s7kRnaEg" businessElementId="114ce0b9-4b45-491d-b5c9-e501d0355bfe" modelElementPath="code"/>
+    <elements xmi:id="_uegfQEmsEei1GK3IhTP0Dw" businessElement="ProcedureSectionIDCode" modelElement="_6Y1XYALoEeSBA9s7kRnaEg" businessElementId="114ce0b9-4b45-491d-b5c9-e501d0355bfe" modelElementPath="code" condition=""/>
     <elements xmi:id="_so1nYCCJEeiLj5dIQmPgjA" businessElement="ProcedurePerformedContainer" modelElement="_liHKsALpEeSBA9s7kRnaEg" businessElementId="3fe9f1d2-f666-4313-931b-88a0bb41789b" modelElementPath="procedureActivityAct2" condition=""/>
     <elements xmi:id="_ZuTAcCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorContainer" modelElement="_56Cy0MnLEeSr1c1X9ACWbg" businessElementId="6c4c614c-79e0-4303-9631-7077d6a585f0" modelElementPath="procedureActivityAct2.author" condition=""/>
     <elements xmi:id="_irSJkCC_EeiqPba0CFlrVw" businessElement="ProcedureAuthorName" businessElementId="2fc03f81-b8ba-4f4d-914b-a7121e666180" modelElementPath="procedureActivityAct2.author.assignedAuthor.assignedPerson.name" condition="">
@@ -3809,7 +3809,7 @@ This template can be used with a contained Product Instance template to represen
     </elements>
     <elements xmi:id="_3uhQcCCLEeigvdKjjjX_lw" businessElement="ProcedurePerformedTypeCode" modelElement="_DpF28CCKEeiLj5dIQmPgjA" businessElementId="2c6db9c5-d17c-4c92-94a3-7f0eb52e16be" modelElementPath="procedureActivityAct2.code" condition=""/>
     <elements xmi:id="_UKHj0CCLEeigvdKjjjX_lw" businessElement="ProcedurePerformedEndDateTime" modelElement="_pMMc0MnIEeSr1c1X9ACWbg" businessElementId="c2ccb38d-8ecf-4e4d-a2eb-2a9708f1e9d4" modelElementPath="procedureActivityAct2.effectiveTime.high" condition=""/>
-    <elements xmi:id="_nMvVoCCKEeigvdKjjjX_lw" businessElement="ProcedurePerformedStartDateTime" modelElement="_pMMc0MnIEeSr1c1X9ACWbg" businessElementId="d99f557b-d156-43b7-b9c0-d8567ef18c4e" modelElementPath="procedureActivityAct2.effectiveTime.high" condition=""/>
+    <elements xmi:id="_nMvVoCCKEeigvdKjjjX_lw" businessElement="ProcedurePerformedStartDateTime" modelElement="_pMMc0MnIEeSr1c1X9ACWbg" businessElementId="d99f557b-d156-43b7-b9c0-d8567ef18c4e" modelElementPath="procedureActivityAct2.effectiveTime.low" condition=""/>
     <elements xmi:id="_V3nncCCLEeigvdKjjjX_lw" businessElement="ProcedurePerformedID" modelElement="_DpAXYCCKEeiLj5dIQmPgjA" businessElementId="f23632b4-de3d-4a10-9881-ceff3b0d6a20" modelElementPath="procedureActivityAct2.id1" condition=""/>
     <elements xmi:id="_2cLz8CCNEeigvdKjjjX_lw" businessElement="ProcedurePerformedReasonContainer" modelElement="_m1i3cPDgEeOKPKE9au0oug" businessElementId="677b0a06-f351-4d1d-9d8b-c2e02b38b1c1" modelElementPath="procedureActivityAct2.indication2" condition=""/>
     <elements xmi:id="_P-6x4CCPEeigvdKjjjX_lw" businessElement="ProcedurePerformedReasonTypeCode" businessElementId="986198da-433c-4947-8d09-f9ba46f8738d" modelElementPath="procedureActivityAct2.indication2.code" condition="">
@@ -3883,7 +3883,7 @@ This template can be used with a contained Product Instance template to represen
     <elements xmi:id="_GuADUCCTEeiFzeppNxpPfg" businessElement="ProcedureMedicationEndDateTime" businessElementId="63a66f89-238c-4dae-b2fe-51cda7af2e25" modelElementPath="procedureActivityAct2.medicationActivity2.effectiveTime1.high" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_LNkJcB4jEeiF7sWWqfxGaw"/>
     </elements>
-    <elements xmi:id="_EEY8wCCTEeiFzeppNxpPfg" businessElement="ProcedureMedicationStartDateTime" businessElementId="e2db66d0-4f08-4ff9-84e4-fcb5dd80a3e3" modelElementPath="procedureActivityAct2.medicationActivity2.effectiveTime1.high" condition="">
+    <elements xmi:id="_EEY8wCCTEeiFzeppNxpPfg" businessElement="ProcedureMedicationStartDateTime" businessElementId="e2db66d0-4f08-4ff9-84e4-fcb5dd80a3e3" modelElementPath="procedureActivityAct2.medicationActivity2.effectiveTime1.low" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_LNkJcB4jEeiF7sWWqfxGaw"/>
     </elements>
     <elements xmi:id="_O6YO4CCTEeiFzeppNxpPfg" businessElement="ProcedureMedicationRateUnitMeasure" businessElementId="479bfb71-f426-4913-9c2b-b7baf4717e8b" modelElementPath="procedureActivityAct2.medicationActivity2.rateQuantity" condition="">
@@ -3958,8 +3958,8 @@ This template can be used with a contained Product Instance template to represen
     <elements xmi:id="_wm_i4CbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorDateTime" businessElementId="a55fec8f-48e7-4930-8fd5-38a0c444962d" modelElementPath="procedureActivityProcedure2.author.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_tMAW4COfEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedStartDateTime" modelElement="_qTlYQCOfEeiwsevzJ9LSUQ" businessElementId="d99f557b-d156-43b7-b9c0-d8567ef18c4e" modelElementPath="procedureActivityProcedure2.effectiveTime" condition=""/>
-    <elements xmi:id="_u8MiICOfEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedEndDateTime" modelElement="_qTlYQCOfEeiwsevzJ9LSUQ" businessElementId="c2ccb38d-8ecf-4e4d-a2eb-2a9708f1e9d4" modelElementPath="procedureActivityProcedure2.effectiveTime" condition=""/>
+    <elements xmi:id="_u8MiICOfEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedEndDateTime" modelElement="_qTlYQCOfEeiwsevzJ9LSUQ" businessElementId="c2ccb38d-8ecf-4e4d-a2eb-2a9708f1e9d4" modelElementPath="procedureActivityProcedure2.effectiveTime.high" condition=""/>
+    <elements xmi:id="_tMAW4COfEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedStartDateTime" modelElement="_qTlYQCOfEeiwsevzJ9LSUQ" businessElementId="d99f557b-d156-43b7-b9c0-d8567ef18c4e" modelElementPath="procedureActivityProcedure2.effectiveTime.high" condition=""/>
     <elements xmi:id="_AxVbACb-EeiwfMA1xUjwzg" businessElement="ProcedurePerformedReasonContainer" modelElement="_9LG_sPDqEeOKPKE9au0oug" businessElementId="677b0a06-f351-4d1d-9d8b-c2e02b38b1c1" modelElementPath="procedureActivityProcedure2.indication2" condition=""/>
     <elements xmi:id="_1TpcECbDEeizpZLE_-yWkA" businessElement="ProcedurePerformedReasonTypeCode" businessElementId="986198da-433c-4947-8d09-f9ba46f8738d" modelElementPath="procedureActivityProcedure2.indication2.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_2Hh3kOHpEeO04sHNODkHmQ"/>
@@ -4029,10 +4029,10 @@ This template can be used with a contained Product Instance template to represen
     <elements xmi:id="_Hv1DgCbEEeizpZLE_-yWkA" businessElement="ProcedureMedicationDoseUnitMeasure" businessElementId="52158ce3-b0c4-45ba-89ff-8365e98c1c7c" modelElementPath="procedureActivityProcedure2.medicationActivity2.doseQuantity" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_090HgOLbEeOc7-TVP7Wi6w"/>
     </elements>
-    <elements xmi:id="_NRlb4CbEEeizpZLE_-yWkA" businessElement="ProcedureMedicationStartDateTime" businessElementId="e2db66d0-4f08-4ff9-84e4-fcb5dd80a3e3" modelElementPath="procedureActivityProcedure2.medicationActivity2.effectiveTime1" condition="">
+    <elements xmi:id="_PSlqUCbEEeizpZLE_-yWkA" businessElement="ProcedureMedicationEndDateTime" businessElementId="63a66f89-238c-4dae-b2fe-51cda7af2e25" modelElementPath="procedureActivityProcedure2.medicationActivity2.effectiveTime1.high" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_LNkJcB4jEeiF7sWWqfxGaw"/>
     </elements>
-    <elements xmi:id="_PSlqUCbEEeizpZLE_-yWkA" businessElement="ProcedureMedicationEndDateTime" businessElementId="63a66f89-238c-4dae-b2fe-51cda7af2e25" modelElementPath="procedureActivityProcedure2.medicationActivity2.effectiveTime1" condition="">
+    <elements xmi:id="_NRlb4CbEEeizpZLE_-yWkA" businessElement="ProcedureMedicationStartDateTime" businessElementId="e2db66d0-4f08-4ff9-84e4-fcb5dd80a3e3" modelElementPath="procedureActivityProcedure2.medicationActivity2.effectiveTime1.high" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_LNkJcB4jEeiF7sWWqfxGaw"/>
     </elements>
     <elements xmi:id="_W4Y-ECbEEeizpZLE_-yWkA" businessElement="ProcedureMedicationMaxDoseUnitMeasure" businessElementId="2fb4db09-a6ee-41e1-a6e3-586d7de1c285" modelElementPath="procedureActivityProcedure2.medicationActivity2.maxDoseQuantity" condition="">
@@ -4069,9 +4069,6 @@ This template can be used with a contained Product Instance template to represen
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#__4L5cOLSEeOc7-TVP7Wi6w"/>
     </elements>
     <elements xmi:id="_z8hocCOfEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedMethodCode" modelElement="_qTstACOfEeiwsevzJ9LSUQ" businessElementId="c1bf56e5-c17a-46b8-9646-6adf0d3e40ca" modelElementPath="procedureActivityProcedure2.methodCode" condition=""/>
-    <elements xmi:id="_ZI_uwCbEEeizpZLE_-yWkA" businessElement="ProcedureMedicationPerformerContainer" businessElementId="27412947-70d5-40fe-9614-7d6134138fba" modelElementPath="procedureActivityProcedure2.performer" condition="">
-      <modelElement xmi:type="uml:Association" href="../consol.uml#_i5TgAMzJEeSLqosJ4F90vA"/>
-    </elements>
     <elements xmi:id="_jQftwCbFEeizpZLE_-yWkA" businessElement="ProcedurePerformedPerformerContainer" businessElementId="8ef21db3-b771-4820-a200-37c95abae503" modelElementPath="procedureActivityProcedure2.performer" condition="">
       <modelElement xmi:type="uml:Association" href="../consol.uml#_i5TgAMzJEeSLqosJ4F90vA"/>
     </elements>
@@ -4139,7 +4136,6 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:8300</ruleId>
     <ruleId>R2.0=CONF:1098-8300</ruleId>
   </CDA:ValueSetConstraint>
- 
   <CDA:PropertyValidation xmi:id="_qTn0gCOfEeiwsevzJ9LSUQ" severity="WARNING" base_Property="_qTlYQCOfEeiwsevzJ9LSUQ">
     <ruleId>CONF:7662</ruleId>
     <ruleId>R2.0=CONF:1098-7662</ruleId>
@@ -4154,5 +4150,4 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:7670</ruleId>
     <ruleId>R2.0=CONF:1098-7670</ruleId>
   </CDA:PropertyValidation>
-
 </xmi:XMI>

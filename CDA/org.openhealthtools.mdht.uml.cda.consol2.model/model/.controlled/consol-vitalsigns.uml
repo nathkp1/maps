@@ -871,9 +871,9 @@ Vital signs are represented in the same way as other results, but are aggregated
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_Mf3YoNxVEeeO4LK-aeYv1g" base_Class="_D3010ALzEeSM0Jd2D1FgKw">
     <elements xmi:id="_Cocp4O5kEeesTO21tnDzKg" businessElement="VitalSignSectionContainer" modelElement="_D3010ALzEeSM0Jd2D1FgKw" businessElementId="1344bbb0-bb05-44df-9d86-b90bd60ac951" modelElementPath="" condition=""/>
-    <elements xmi:id="_KoXF4EmtEei1GK3IhTP0Dw" businessElement="VitalSignSectionIDCode" modelElement="_wYuG4AL0EeSM0Jd2D1FgKw" businessElementId="12e612fc-9614-4fc6-a129-bfdcb271d615" modelElementPath="code"/>
+    <elements xmi:id="_KoXF4EmtEei1GK3IhTP0Dw" businessElement="VitalSignSectionIDCode" modelElement="_wYuG4AL0EeSM0Jd2D1FgKw" businessElementId="12e612fc-9614-4fc6-a129-bfdcb271d615" modelElementPath="code" condition=""/>
     <elements xmi:id="_Mf4mwNxVEeeO4LK-aeYv1g" businessElement="VitalSignSectionNotes" modelElement="_TishUAL1EeSM0Jd2D1FgKw" businessElementId="9230a42b-3f41-45aa-91ff-180c0eb4f1c0" modelElementPath="text" condition=""/>
-    <elements xmi:id="_L9AkoEmtEei1GK3IhTP0Dw" businessElement="VitalSignSectionTitleText" modelElement="_TitIYQL1EeSM0Jd2D1FgKw" businessElementId="8d43cccb-f69d-4a93-a5c0-caeaf03a0209" modelElementPath="title"/>
+    <elements xmi:id="_L9AkoEmtEei1GK3IhTP0Dw" businessElement="VitalSignSectionTitleText" modelElement="_TitIYQL1EeSM0Jd2D1FgKw" businessElementId="8d43cccb-f69d-4a93-a5c0-caeaf03a0209" modelElementPath="title" condition=""/>
     <elements xmi:id="_-CWwwNxVEeeO4LK-aeYv1g" businessElement="VitalSignOrganizerContainer" modelElement="_8tj8oAL0EeSM0Jd2D1FgKw" businessElementId="7ae54db7-4e6c-4350-9e00-226a4c2f7d9a" modelElementPath="vitalSignsOrganizer2" condition=""/>
     <elements xmi:id="_TcRAABWuEei3OOpgVB9waw" businessElement="VitalSignOrganizerAuthorContainer" modelElement="_QGEuIPV7EeONioZkBKP8eQ" businessElementId="0100c2f9-dfe0-4550-aacd-ad1d520cbdaa" modelElementPath="vitalSignsOrganizer2.author" condition=""/>
     <elements xmi:id="_sLZ18NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerAuthorName" businessElementId="6df9a517-4cc1-4799-a0cf-cf7afc38994b" modelElementPath="vitalSignsOrganizer2.author.assignedAuthor.assignedPerson.name" condition="">
@@ -916,7 +916,7 @@ Vital signs are represented in the same way as other results, but are aggregated
     <elements xmi:id="_exGM8NxYEeeIY8GGH27Wow" businessElement="VitalSignOrganizerStartDateTime" modelElement="_yESK8PV5EeONioZkBKP8eQ" businessElementId="5e2f62de-df7a-4af3-935b-34f0af5dcc9d" modelElementPath="vitalSignsOrganizer2.effectiveTime.low" condition=""/>
     <elements xmi:id="_R-zI0O5kEeesTO21tnDzKg" businessElement="VitalSignResultContainer" modelElement="_cqZm0PV6EeONioZkBKP8eQ" businessElementId="e6195bbe-badf-4ff2-8609-a01dffade5ae" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2" condition=""/>
     <elements xmi:id="_Zin6QBWuEei3OOpgVB9waw" businessElement="VitalSignResultAuthorContainer" modelElement="_tt_C0PM5EeOUvapeh9bVvQ" businessElementId="b80e70da-c00f-4b81-b5c5-05b21f8ad1bd" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.author" condition=""/>
-    <elements xmi:id="_OkM14BZTEeiait7YOW80tQ" businessElement="VitalSignObservationAuthorContainer" modelElement="_tt_C0PM5EeOUvapeh9bVvQ" businessElementId="e8533563-1e93-4b2b-a30a-b2b7ef63a240" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.author"/>
+    <elements xmi:id="_OkM14BZTEeiait7YOW80tQ" businessElement="VitalSignObservationAuthorContainer" modelElement="_tt_C0PM5EeOUvapeh9bVvQ" businessElementId="e8533563-1e93-4b2b-a30a-b2b7ef63a240" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.author" condition=""/>
     <elements xmi:id="_66VoMNxbEeeIY8GGH27Wow" businessElement="VitalSignObservationAuthorName" businessElementId="68731508-c47a-48ff-b827-3f9365c0985f" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
@@ -954,7 +954,7 @@ Vital signs are represented in the same way as other results, but are aggregated
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="__Hq2MNxZEeeIY8GGH27Wow" businessElement="VitalSignResultTypeCode" modelElement="_2OrhuBSVEeGGzu7fmW9pXw" businessElementId="1b8d3c96-5161-4ce2-a8a6-1a694febef6f" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.code" condition=""/>
-    <elements xmi:id="_XsUU0H45Eeify4jENFq-fg" businessElement="VitalSignResultStartDateTime" modelElement="_7j7RkM84EeSJsu9BbhWxmQ" businessElementId="a411cc47-098b-408b-9466-210001f6112b" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.effectiveTime"/>
+    <elements xmi:id="_XsUU0H45Eeify4jENFq-fg" businessElement="VitalSignResultStartDateTime" modelElement="_7j7RkM84EeSJsu9BbhWxmQ" businessElementId="a411cc47-098b-408b-9466-210001f6112b" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.effectiveTime.low" condition=""/>
     <elements xmi:id="_Eb3TsNxaEeeIY8GGH27Wow" businessElement="VitalSignResultID" modelElement="_2OxoRxSVEeGGzu7fmW9pXw" businessElementId="33891793-d4c1-44e6-b7ed-26da889b0b48" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.id" condition=""/>
     <elements xmi:id="_3XZX0NxZEeeIY8GGH27Wow" businessElement="VitalSignResultIntepretationCode" modelElement="_eEbiIM9CEeSJsu9BbhWxmQ" businessElementId="60f64b90-2803-465b-ba6d-79e55c7a45c1" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.interpretationCode" condition=""/>
     <elements xmi:id="_JanFoNxaEeeIY8GGH27Wow" businessElement="VitalSignResultMethodCode" modelElement="_2OxoWRSVEeGGzu7fmW9pXw" businessElementId="35f6befa-94c3-4821-8d5a-233bdba159fe" modelElementPath="vitalSignsOrganizer2.vitalSignObservation2.methodCode" condition=""/>

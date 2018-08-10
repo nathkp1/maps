@@ -1594,7 +1594,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_-qNg8LUDEeehe8TgWgDapg" businessElement="SmokingStatusObservationStartDateTime" businessElementId="a6579be0-486d-4bfb-8ac8-a6929ac36c9a" modelElementPath="healthConcernAct.SmokingStatusMeaningfulUse2.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_Yz0EIeWQEeGKmvzED_He2w"/>
     </elements>
-    <elements xmi:id="_BFQAALUEEeehe8TgWgDapg" businessElement="SmokingStatusObservationEndDate" businessElementId="ed08614b-90be-49f5-b896-10f7ee474147" modelElementPath="healthConcernAct.SmokingStatusMeaningfulUse2.effectiveTime" condition="">
+    <elements xmi:id="_BFQAALUEEeehe8TgWgDapg" businessElement="SmokingStatusObservationEndDate" businessElementId="ed08614b-90be-49f5-b896-10f7ee474147" modelElementPath="healthConcernAct.SmokingStatusMeaningfulUse2.effectiveTime.high" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_Yz0EIeWQEeGKmvzED_He2w"/>
     </elements>
     <elements xmi:id="_zWZqYLUDEeehe8TgWgDapg" businessElement="SocialHistoryObservationID" businessElementId="6642fc6a-768d-4c7f-9f3c-5bdce9b606f8" modelElementPath="healthConcernAct.SmokingStatusMeaningfulUse2.id" condition="">
@@ -1663,18 +1663,6 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_Byx1gA3GEeigg4exEKKgKw" businessElement="AllergyObservationValueCode" businessElementId="6c1c8bf7-156e-4567-83da-f9ee9df642ad" modelElementPath="healthConcernAct.allergyObservation2.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_3bHDQLkAEeODDJAC5t5vpw"/>
     </elements>
-    <elements xmi:id="_W4HMULN4EeewQvswtHhuhg" businessElement="FunctionalStatusAssessmentScaleTypeCode" businessElementId="2a0d0f8c-896b-44a3-8926-830651bf152f" modelElementPath="healthConcernAct.assessmentScaleObservation.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_hvJ8UeYxEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_Zd-bULN4EeewQvswtHhuhg" businessElement="CognitiveStatusAssessmentScaleCode" businessElementId="7fbcfcbe-d929-48c2-b003-e1062a0c0116" modelElementPath="healthConcernAct.assessmentScaleObservation.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_hvJ8UeYxEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_EJSgQLN5EeeaW4vGIwzYfg" businessElement="SensoryStatusAssessmentID" businessElementId="8b6a0428-a6fc-4320-84fe-613053adde2c" modelElementPath="healthConcernAct.assessmentScaleObservation.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_hvJ8UeYxEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_HczfcLN5EeeaW4vGIwzYfg" businessElement="SensoryStatusAssessmentDerivationNotes" businessElementId="5b72e80b-9d44-441c-9459-b3d4ccae0ac8" modelElementPath="healthConcernAct.assessmentScaleObservation.derivationExpr" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_hvJ8UuYxEeGINOJ_SD9_dA"/>
-    </elements>
     <elements xmi:id="_Svx9ANEcEeehE-WUsVIz4A" businessElement="HealthConditionAuthorLegalName" businessElementId="078eda47-a8d7-4a19-9bd1-8aa2381dd54a" modelElementPath="healthConcernAct.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
@@ -1741,177 +1729,51 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_K0u9sALPEei9woGWTi5k4g" businessElement="HealthConditionDateDiagnosed" businessElementId="a706e166-f041-49f5-95b6-6a2e534a02c6" modelElementPath="healthConcernAct.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_PDtV8o9kEeOB0eBUISUB4Q"/>
     </elements>
-    <elements xmi:id="_JYhEcLUJEees8rK7-ceJbg" businessElement="EncounterDiagnosisContainer" businessElementId="f3771829-e7fb-4f7e-962a-2e9d0a93f7d0" modelElementPath="healthConcernAct.encounterDiagnosis2" condition="">
+    <elements xmi:id="_RKtNEJv1EeiGZ4d9q65lpg" businessElement="ConcernEncounterDiagnosisContainer" businessElementId="3e902e04-c154-4584-acba-a0b4e4b964a3" modelElementPath="healthConcernAct.encounterDiagnosis2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_XvfzADqaEeSyGa6KC25kiw"/>
     </elements>
-    <elements xmi:id="_TJyxQLUJEees8rK7-ceJbg" businessElement="ProblemObservationContainer" businessElementId="52f0679a-fcd2-42a0-b79e-f719e4c7bb50" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-encounters.uml#_S3hAYPf_EeOYeZoWJF5yyQ"/>
-    </elements>
-    <elements xmi:id="_Kkq5ELUKEees8rK7-ceJbg" businessElement="ProblemObservationAuthorLegalName" businessElementId="37223efd-3472-4306-b383-2ab9aed7a8ba" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.author.assignedAuthor.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_wQhP0LUJEees8rK7-ceJbg" businessElement="ProblemObservationAuthorID" businessElementId="1ae6e12e-c98e-451b-85ef-ef680b9f707b" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.author.assignedAuthor.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_05lssLUJEees8rK7-ceJbg" businessElement="ProblemObservationAuthorBusinessPhoneContact" businessElementId="0417888f-690c-46b3-bddc-17bf7eb835bf" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_nHGNMLUJEees8rK7-ceJbg" businessElement="ProblemObservationCategoryCode" modelElement="_52ZjkMm4EeSr1c1X9ACWbg" businessElementId="98485eab-20bf-48b7-bd96-aef07c190827" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.code" condition=""/>
-    <elements xmi:id="_f2RD4LUJEees8rK7-ceJbg" businessElement="ProblemObservationEndDateTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="f8acb2f5-638a-46b0-b4a2-421c07c1e952" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.effectiveTime" condition=""/>
-    <elements xmi:id="_hpCCALUJEees8rK7-ceJbg" businessElement="ProblemObservationStartTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="b04c3b2a-71e0-4349-9587-57f460487c97" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.effectiveTime" condition=""/>
-    <elements xmi:id="_UlfcwLUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorContainer" businessElementId="85baa1fb-ae62-454f-891f-4cd0867b02ce" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_gjweYK73EeORf5eJaKt1KQ"/>
-    </elements>
-    <elements xmi:id="_ei7WQLUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorName" businessElementId="b3b8a274-b954-4853-8f3f-218340787bfb" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author.assignedAuthor.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_Zs4NULUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorSpecialityCode" businessElementId="1adc0cc1-ab45-4631-b3d2-2dc95b698d24" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author.assignedAuthor.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_Q_IaELUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorID" businessElementId="e1927435-865d-4cbf-92db-df51bd2b6e2f" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author.assignedAuthor.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_jCTroLUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorOrganizationID" businessElementId="e4295e5f-d383-423b-b2fa-f113c1a74e0b" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author.assignedAuthor.representedOrganization.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_nZV9ULUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorOrganizationName" businessElementId="ac447055-4a35-420f-8a7c-cede1b4e3373" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author.assignedAuthor.representedOrganization.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_5ZS7wLUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorOrganiationURLContact" businessElementId="c00120fa-7246-46a3-ab16-bfe3ab1b3e4a" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="__AYgELUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorOrganizationEmailContact" businessElementId="b4e2579b-3123-4500-9516-6d4b88167df1" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_C3pFgLUWEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorOrganizationPagerContact" businessElementId="740003df-65c2-4f8c-99d0-784fc5b84558" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_GEWSELUWEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorOrganizationPhoneContact" businessElementId="696b1687-136a-46e0-9236-610542c6ff56" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_JeXh4LUWEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorOrganizationSMSContact" businessElementId="8fcdf34b-16f3-4713-a887-c819048aea11" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_NTwUgLUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityAuthorDateTime" businessElementId="dea7ca47-d0fa-42c3-9990-4fde35b9c81f" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.author.time" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_E1oRoLUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityDateTime" businessElementId="fdbd1dca-7119-499c-9b2c-f7b357f3bf94" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.effectiveTime.low" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_CWg-oADcEeWNGdLwd_3YGQ"/>
-    </elements>
-    <elements xmi:id="_CEhb8LUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityID" businessElementId="661ec825-195e-486b-9e21-4520e1ba19bf" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwcyIpmaEeOLJeQez13EkQ"/>
-    </elements>
-    <elements xmi:id="_IKWKsLUVEeebrsuN5Qqqtg" businessElement="ProblemObservationPriorityValueCode" businessElementId="dd199fdb-afa7-4c23-b6dd-086a079b47f8" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.priorityPreference.value.CD" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_vwdZNJmaEeOLJeQez13EkQ"/>
-    </elements>
-    <elements xmi:id="_6w8goLUUEeebrsuN5Qqqtg" businessElement="ProblemObservationPrognosisDateTime" modelElement="_PjKJEZmLEeOeSLwbllPCyw" businessElementId="e9b136e0-f209-466b-af1c-6ec7f7f9366f" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.prognosisObservation.effectiveTime" condition=""/>
-    <elements xmi:id="_9lGDQLUUEeebrsuN5Qqqtg" businessElement="ProblemObservationPrognosisValueCode" modelElement="_PjKJGJmLEeOeSLwbllPCyw" businessElementId="fd5524e1-f865-4d1a-a4c5-aec267a05981" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.prognosisObservation.value.CD" condition=""/>
-    <elements xmi:id="_j6P2sLUJEees8rK7-ceJbg" businessElement="ProblemObservationValueCode" modelElement="_bZJcsPDMEeOKPKE9au0oug" businessElementId="90a0b23b-525d-4977-8c5f-d2012dd04da2" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.value" condition=""/>
+    <elements xmi:id="_gh9D4Jv1EeiGZ4d9q65lpg" businessElement="ConcernEncounterDiagnosisID" modelElement="_6-ejQBUyEeGbmN_W114JUw" businessElementId="2e0ba747-95f9-4670-99ff-592a36ea73ac" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation.id" condition=""/>
+    <elements xmi:id="_VWcNsJv1EeiGZ4d9q65lpg" businessElement="ConcernEncounterDiagnosisNotAProblemFlag" modelElement="_dJUTcPDEEeOKPKE9au0oug" businessElementId="6023b07b-a25a-4187-bd49-2e5ef373628c" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.negationInd" condition=""/>
+    <elements xmi:id="_ec4NwJv1EeiGZ4d9q65lpg" businessElement="ConcernEncounterDiagnosisStatusCode" modelElement="_8NsgMMm6EeSr1c1X9ACWbg" businessElementId="07c24702-fffd-4750-8bbf-e8ff81c4aac5" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.statusCode" condition=""/>
+    <elements xmi:id="_YkSpwJv1EeiGZ4d9q65lpg" businessElement="ConcernEncounterDiagnosisValueCode" modelElement="_bZJcsPDMEeOKPKE9au0oug" businessElementId="78a66628-b322-4367-a92f-bb90ca8645b3" modelElementPath="healthConcernAct.encounterDiagnosis2.problemObservation2.value" condition=""/>
     <elements xmi:id="_c8rbwP-0EeebPKLVcQEOsg" businessElement="GoalObservationID" businessElementId="01b26209-7321-4e22-bd9d-59aac407aa86" modelElementPath="healthConcernAct.entryReferenceGeneral.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_bZHVEYkREeOJGtGyq_dBbA"/>
     </elements>
     <elements xmi:id="_Gu5UQALQEei9IteqhqJMOQ" businessElement="GoalObservationID" businessElementId="01b26209-7321-4e22-bd9d-59aac407aa86" modelElementPath="healthConcernAct.entryReferenceGeneral.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_bZHVEYkREeOJGtGyq_dBbA"/>
     </elements>
-    <elements xmi:id="_nJgcALf-EeeE290BGcDqyQ" businessElement="FamilyHistoryOrganizerContainer" businessElementId="aef0e0c6-7494-412d-b3ae-04db49eb5fb1" modelElementPath="healthConcernAct.familyHistoryOrganizer2" condition="">
+    <elements xmi:id="_zPJi0Jv1EeiGZ4d9q65lpg" businessElement="ConcernFamilyHistoryOrganizerContainer" businessElementId="d093b273-e16d-47da-aef0-bf39e1793d22" modelElementPath="healthConcernAct.familyHistoryOrganizer2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_Iu3cUI97EeOB0eBUISUB4Q"/>
     </elements>
-    <elements xmi:id="_rA2hALf-EeeE290BGcDqyQ" businessElement="FamilyHistoryObservationContainer" businessElementId="e67b038a-c632-4106-9e65-72b25ad4b364" modelElementPath="healthConcernAct.familyHistoryOrganizer2.familyHistoryObservation2" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-familyhistory.uml#_ULPOkIb4EeSxzopshBnQuw"/>
-    </elements>
-    <elements xmi:id="_7ixbMLf-EeeE290BGcDqyQ" businessElement="FamilyHistoryAgeAtObservationNumber" modelElement="_2EqqCxSVEeGGzu7fmW9pXw" businessElementId="4b0bf86b-4512-44a4-9473-2c473a106d9f" modelElementPath="healthConcernAct.familyHistoryOrganizer2.familyHistoryObservation2.ageObservation.value" condition=""/>
-    <elements xmi:id="_trxPILf-EeeE290BGcDqyQ" businessElement="FamilyHistoryObservationTypeCode" businessElementId="84750be4-ad86-4baf-8ea6-a480423f0e0f" modelElementPath="healthConcernAct.familyHistoryOrganizer2.familyHistoryObservation2.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-familyhistory.uml#_ApNKsIY6EeS7A_69H25Pzw"/>
-    </elements>
-    <elements xmi:id="_ypTgILf-EeeE290BGcDqyQ" businessElement="FamilyHistoryObservationTypeCode" businessElementId="84750be4-ad86-4baf-8ea6-a480423f0e0f" modelElementPath="healthConcernAct.familyHistoryOrganizer2.familyHistoryObservation2.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-familyhistory.uml#_2IpyJhSVEeGGzu7fmW9pXw"/>
-    </elements>
-    <elements xmi:id="_1NbCsLf-EeeE290BGcDqyQ" businessElement="FamilyHistoryDateTime" businessElementId="1694da9f-ab89-43a3-b6e9-14386e4bb3b9" modelElementPath="healthConcernAct.familyHistoryOrganizer2.familyHistoryObservation2.effectiveTime" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-familyhistory.uml#_R-FSICHiEeGFLIX-2_sWzA"/>
-    </elements>
-    <elements xmi:id="_wHK6kLf-EeeE290BGcDqyQ" businessElement="FamilyHistoryObservationID" businessElementId="55c6a966-2c55-467f-9a8a-76ab62e78f02" modelElementPath="healthConcernAct.familyHistoryOrganizer2.familyHistoryObservation2.id" condition="">
+    <elements xmi:id="_FPDd8Jv2EeiGZ4d9q65lpg" businessElement="ConcernFamilyHistoryObservationID" businessElementId="dc4f1cee-2b15-4aa5-aaf2-c979f8b2b4fa" modelElementPath="healthConcernAct.familyHistoryOrganizer2.familyHistoryObservation.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-familyhistory.uml#_2ItcgRSVEeGGzu7fmW9pXw"/>
     </elements>
-    <elements xmi:id="_4K6HgLf-EeeE290BGcDqyQ" businessElement="FamilyHistoryObservationValueCode" businessElementId="baeed38e-85ae-47e6-bb5d-29cf99db3ec5" modelElementPath="healthConcernAct.familyHistoryOrganizer2.familyHistoryObservation2.value" condition="">
+    <elements xmi:id="_K2-vwJv2EeiGZ4d9q65lpg" businessElement="ConcernFamilyHistoryObservationTypeCode" businessElementId="910eb37e-f0f5-4564-8216-aa480749d8d1" modelElementPath="healthConcernAct.familyHistoryOrganizer2.familyHistoryObservation2.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-familyhistory.uml#_2IpyJhSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_NPI58Jv2EeiGZ4d9q65lpg" businessElement="ConcernFamilyHistoryObservationValueCode" businessElementId="cf2c361c-2142-49e8-8183-a13185bf69c4" modelElementPath="healthConcernAct.familyHistoryOrganizer2.familyHistoryObservation2.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-familyhistory.uml#_2IpyJxSVEeGGzu7fmW9pXw"/>
     </elements>
-    <elements xmi:id="_o-NT0Lf-EeeE290BGcDqyQ" businessElement="FamilyHistoryOrganizerID" businessElementId="e745267e-b9ab-47fc-9c2b-a6e63d6f832f" modelElementPath="healthConcernAct.familyHistoryOrganizer2.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-familyhistory.uml#_0htuAIb1EeSxzopshBnQuw"/>
+    <elements xmi:id="_6kk4QJv1EeiGZ4d9q65lpg" businessElement="ConcernFamilyHistoryOrganizerRelatedPartyTypeCode" businessElementId="997373cf-063c-462f-b96d-104042575abd" modelElementPath="healthConcernAct.familyHistoryOrganizer2.subject.relatedSubject.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-familyhistory.uml#_6_OoINc4EeGfQ6frO0B-Jg"/>
     </elements>
-    <elements xmi:id="_StYrMLgAEeeE290BGcDqyQ" businessElement="FunctionalStatusObservationContainer" businessElementId="d6bf581f-2606-4a13-b804-d5685e9382f7" modelElementPath="healthConcernAct.functionalStatusObservation2" condition="">
+    <elements xmi:id="_ehCfkJv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationContainer" businessElementId="45e29a36-fa58-4aec-805e-13992b76274f" modelElementPath="healthConcernAct.functionalStatusObservation2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_vam9cDqaEeSyGa6KC25kiw"/>
     </elements>
-    <elements xmi:id="_ZN03YA_6EeirWM8M53F7VA" businessElement="FunctionalStatusObservationAuthorContainer" businessElementId="b67714b4-bd0a-430a-ac47-139bc08af0f0" modelElementPath="healthConcernAct.functionalStatusObservation2.author" condition="">
-      <modelElement xmi:type="uml:Association" href="../consol.uml#_M3GEsM7vEeO6qNoyVDglCA"/>
-    </elements>
-    <elements xmi:id="_AOa9EBAGEeirWM8M53F7VA" businessElement="FunctionalStatusObservationAuthorAddress" businessElementId="e00d536b-78a8-4ff0-853a-a294e2eea828" modelElementPath="healthConcernAct.functionalStatusObservation2.author.assignedAuthor.addr" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_NYNVAEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_ZdcKQBAGEeirWM8M53F7VA" businessElement="FunctionalStatusObservationAuthorName" businessElementId="c3e6ef3b-5504-44a3-95ac-394c06d04549" modelElementPath="healthConcernAct.functionalStatusObservation2.author.assignedAuthor.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
-    </elements>
-    <elements xmi:id="_rXUMUA_6EeirWM8M53F7VA" businessElement="FunctionalStatusObservationAuthorSpecialtyCode" businessElementId="9f73cd1a-e336-4bc7-bda1-4f87d7eaf4ef" modelElementPath="healthConcernAct.functionalStatusObservation2.author.assignedAuthor.code" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_LGBP8EodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_GGVysBAGEeirWM8M53F7VA" businessElement="FunctionalStatusObservationAuthorEmailContact" businessElementId="d2b72d44-f187-42b0-b327-61b9f04b6710" modelElementPath="healthConcernAct.functionalStatusObservation2.author.assignedAuthor.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_JRHFkBAGEeirWM8M53F7VA" businessElement="FunctionalStatusObservationAuthorFaxContact" businessElementId="837a4947-a877-4d7a-bb33-a56d1136d45c" modelElementPath="healthConcernAct.functionalStatusObservation2.author.assignedAuthor.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_M_uFUBAGEeirWM8M53F7VA" businessElement="FunctionalStatusObservationAuthorPagerContact" businessElementId="8c13a652-74a7-4d44-ae20-909ed193c3ff" modelElementPath="healthConcernAct.functionalStatusObservation2.author.assignedAuthor.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_Pr9pIBAGEeirWM8M53F7VA" businessElement="FunctionalStatusObservationAuthorPhoneContact" businessElementId="5958121d-99ee-41e8-9ccc-17a114233a86" modelElementPath="healthConcernAct.functionalStatusObservation2.author.assignedAuthor.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_SE7EkBAGEeirWM8M53F7VA" businessElement="FunctionalStatusObservationAuthorSMSContact" businessElementId="2cc9c78d-eca6-4094-ae01-11c34f5e8e7f" modelElementPath="healthConcernAct.functionalStatusObservation2.author.assignedAuthor.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_Vm7LsBAGEeirWM8M53F7VA" businessElement="FunctionalStatusObservationAuthorURLContact" businessElementId="88c30820-d139-4855-a4fa-fead84059983" modelElementPath="healthConcernAct.functionalStatusObservation2.author.assignedAuthor.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_ewMTwA_6EeirWM8M53F7VA" businessElement="FunctionalStatusObservationAuthorDateTime" businessElementId="2e8d153a-27cf-4497-865c-339e79560649" modelElementPath="healthConcernAct.functionalStatusObservation2.author.time" condition="">
-      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_t59eEEofEd6c3qsAxlFHaQ"/>
-    </elements>
-    <elements xmi:id="_7qOGYBA3EeiuG-NWdUL_wQ" businessElement="FunctionalStatusObservationAuthorII" businessElementId="be271d5a-a153-41f9-a631-3aa0ab2cbaf5" modelElementPath="healthConcernAct.functionalStatusObservation2.author.assignedAuthor.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_wtK9QA22Eeigg4exEKKgKw" businessElement="FunctionalStatusObservationIDCode" businessElementId="abf207a6-4e81-491d-bac5-fa3e89f9f732" modelElementPath="healthConcernAct.functionalStatusObservation2.code" condition="">
+    <elements xmi:id="_hK76AJv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationIDCode" businessElementId="7dd9f11b-3e3f-4724-b09b-f4f357a2a51c" modelElementPath="healthConcernAct.functionalStatusObservation2.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_wts7AMzTEeO93sHu8pHB2g"/>
     </elements>
-    <elements xmi:id="_HSzzwA2_Eeigg4exEKKgKw" businessElement="FunctionalStatusObservationInterpretationCode" businessElementId="57491d78-3450-42db-a9cc-d330aec18af1" modelElementPath="healthConcernAct.functionalStatusObservation2.interpretationCode" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_BJU9YM7sEeO6qNoyVDglCA"/>
+    <elements xmi:id="_vs02IJv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationStartDateTime" businessElementId="948d6d60-8f15-426a-95e3-6a81172f3609" modelElementPath="healthConcernAct.functionalStatusObservation2.effectiveTime" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nm5IhebxEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_KWoxIA2_Eeigg4exEKKgKw" businessElement="FunctionalStatusObservationMethodCode" businessElementId="18380f9e-f5d8-4855-ba6f-0a255f69eb6d" modelElementPath="healthConcernAct.functionalStatusObservation2.methodCode" condition="">
+    <elements xmi:id="_3Pc6EJv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationEndDateTime" businessElementId="db50b1a8-6255-4ec2-9c94-cacc4dac38b1" modelElementPath="healthConcernAct.functionalStatusObservation2.effectiveTime" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nm5IhebxEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_5jvQ4Jv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationMethodCode" businessElementId="5ea796e8-ee4d-461c-bbb2-e1d2b135da44" modelElementPath="healthConcernAct.functionalStatusObservation2.methodCode" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_cmHCoM7sEeO6qNoyVDglCA"/>
     </elements>
-    <elements xmi:id="_cjhmEA3EEeigg4exEKKgKw" businessElement="FunctionalStatusMedicalEquipmentSupplyContainer" businessElementId="a3f9e7f0-8245-487b-a288-b9a4a940a13d" modelElementPath="healthConcernAct.functionalStatusObservation2.nonMedicinalSupplyActivity2" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-other.uml#_xWPsUPgCEeOYeZoWJF5yyQ"/>
-    </elements>
-    <elements xmi:id="_h54mwA3EEeigg4exEKKgKw" businessElement="FunctionalStatusMedicalEquipmentSupplyInstructionContainer" businessElementId="0566edc2-5041-43f6-8f92-a2dce7ea560b" modelElementPath="healthConcernAct.functionalStatusObservation2.nonMedicinalSupplyActivity2.instruction2" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-medications.uml#_fbtfMOaEEeOmzetP5oaH3A"/>
-    </elements>
-    <elements xmi:id="_mA5fcA3EEeigg4exEKKgKw" businessElement="FunctionalStatusMedicalEquipmentSupplyInstructionValueText" businessElementId="c275cecd-633a-45ba-b57e-796fa8fc4a1c" modelElementPath="healthConcernAct.functionalStatusObservation2.nonMedicinalSupplyActivity2.instruction2.text" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_kzRcgMK8EeSqg-Exmsy2kg"/>
-    </elements>
-    <elements xmi:id="_uJUYEA3EEeigg4exEKKgKw" businessElement="FunctionalStatusMedicalEquipmentSupplyProductContainer" businessElementId="e4f80871-2169-424c-929c-375eafcc6010" modelElementPath="healthConcernAct.functionalStatusObservation2.nonMedicinalSupplyActivity2.productInstance" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-medications.uml#_YauMIMQUEeSt_63yiINGSw"/>
-    </elements>
-    <elements xmi:id="_zuw9oA3EEeigg4exEKKgKw" businessElement="FunctionalStatusMedicalEquipmentSupplyProductID" businessElementId="8a06e8e5-eadb-4992-bf46-f82228243b87" modelElementPath="healthConcernAct.functionalStatusObservation2.nonMedicinalSupplyActivity2.productInstance.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_tsW2JDiCEeGSytqLITd2FA"/>
-    </elements>
-    <elements xmi:id="_-IcHMA3EEeigg4exEKKgKw" businessElement="FunctionalStatusMedicalEquipmentSupplyProductValueCode" businessElementId="5f49941a-9c4d-462e-b791-494e8420c085" modelElementPath="healthConcernAct.functionalStatusObservation2.nonMedicinalSupplyActivity2.productInstance.playingDevice.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_SXxyEDosEeGSytqLITd2FA"/>
-    </elements>
-    <elements xmi:id="_5gnngA3EEeigg4exEKKgKw" businessElement="FunctionalStatusMedicalEquipmentSupplyProductOrganizationID" businessElementId="c34b7f6f-e327-4650-95ae-2a6e0866bd11" modelElementPath="healthConcernAct.functionalStatusObservation2.nonMedicinalSupplyActivity2.productInstance.scopingEntity.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_iJglcDosEeGSytqLITd2FA"/>
-    </elements>
-    <elements xmi:id="_aQ5cIA3EEeigg4exEKKgKw" businessElement="FunctionalStatusMedicalEquipmentSupplyStatusCode" businessElementId="ef1255d9-cf64-41fa-9c9b-ad3313694c34" modelElementPath="healthConcernAct.functionalStatusObservation2.nonMedicinalSupplyActivity2.statusCode" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-medications.uml#_oW6N8MQSEeSt_63yiINGSw"/>
-    </elements>
-    <elements xmi:id="_ETC4AA20EeiPgLDCFsjuhg" businessElement="FunctionalStatusObservationNotes" businessElementId="4db1369c-dfc2-48a6-84b1-21543dd98c2c" modelElementPath="healthConcernAct.functionalStatusObservation2.text" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_ny_5wK2DEeS-n_bBhdNjYg"/>
+    <elements xmi:id="_seDNAJv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationValueCode" businessElementId="478c3461-427a-4fd1-8716-9726ce330626" modelElementPath="healthConcernAct.functionalStatusObservation2.value" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nnC5iubxEeGINOJ_SD9_dA"/>
     </elements>
     <elements xmi:id="_jXpN8A2zEeiPgLDCFsjuhg" businessElement="HealthConditionID" businessElementId="1a0bf138-15ee-4168-abbf-74ba69fcf10a" modelElementPath="healthConcernAct.healthConcernActErComp.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_bZHVEYkREeOJGtGyq_dBbA"/>
@@ -1919,123 +1781,40 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_fJBRYA2zEeiPgLDCFsjuhg" businessElement="HealthConditionID" businessElementId="1a0bf138-15ee-4168-abbf-74ba69fcf10a" modelElementPath="healthConcernAct.healthConcernActErRefr.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_bZHVEYkREeOJGtGyq_dBbA"/>
     </elements>
-    <elements xmi:id="_rwNfYLgUEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisOrganizerContainer" businessElementId="28d8a77b-a1b0-4345-bdf5-983dc412b5c6" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2" condition="">
+    <elements xmi:id="_JH5iUJv3EeiGZ4d9q65lpg" businessElement="ConcernHospitalAdmissionDiagnosisContainer" businessElementId="78398736-8de6-4fcd-a435-05771858f45c" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_ABsEcDqbEeSyGa6KC25kiw"/>
     </elements>
-    <elements xmi:id="_6dcI0LgUEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisContainer" businessElementId="43146733-ca6b-4bcd-b052-97af6c710e34" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-other.uml#_rHJ3YPgDEeOYeZoWJF5yyQ"/>
-    </elements>
-    <elements xmi:id="_WIkzILgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorName" businessElementId="b5e45c24-6d0d-4bc6-b174-f2f27bcf018f" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.assignedAuthor.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_TgevgLgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorSpecialityCode" businessElementId="173c3bb2-9bf7-4896-b2d3-6a6977c0f2a5" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.assignedAuthor.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_Q85YcLgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorID" businessElementId="1538a145-305b-49b5-a28d-4feddef2f65d" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.assignedAuthor.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_x3LoMLgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorOrganizationAddress" businessElementId="5de6532d-6026-4373-9a62-f34855ef9476" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.assignedAuthor.representedOrganization.addr" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_bPaKELgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorOrganizationID" businessElementId="b833db98-516c-4c62-8724-937aea7a396c" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.assignedAuthor.representedOrganization.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_fcxiYLgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorOrganizationName" businessElementId="2081b1b0-21ce-4046-8ec5-df4acf047569" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.assignedAuthor.representedOrganization.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_jO9akLgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorOrganizationEmailContact" businessElementId="bbde9936-0bfe-4800-a371-fe27b7e2951a" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_mJNlMLgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorOrganizationFaxContact" businessElementId="5391a096-af46-43ad-acc2-3e278baf4738" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_phg9wLgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorOrganizationPagerContact" businessElementId="6fa0bc17-7ca8-4e87-8dbd-ea03c416f7c5" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_spjswLgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorOrganizationPhoneContact" businessElementId="23939fdf-fad2-4e9d-8908-d1678c70727a" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_vV5-QLgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorOrganizationSMSContact" businessElementId="10da2950-fc05-4fcb-83c2-4487853bb2d9" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_OWL04LgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisAuthorDateTime" businessElementId="72a86519-dda5-46c5-b5c6-8f5871eb498f" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.author.time" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_LaWV4LgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisValueCode" modelElement="_52ZjkMm4EeSr1c1X9ACWbg" businessElementId="04d54af2-f501-4368-8403-434dff86f22a" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.code" condition=""/>
-    <elements xmi:id="_CnKB8LgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisStartDateTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="8aeca1dc-859a-4ce7-a502-30747541ff75" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.effectiveTime" condition=""/>
-    <elements xmi:id="_FCTOsLgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisEndDateTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="fc624e1f-6869-4f6b-b195-1f882041a603" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.effectiveTime" condition=""/>
-    <elements xmi:id="_HwyOMLgVEeelhbIH50S8Xw" businessElement="HospitalAdmissionDiagnosisValueCode" modelElement="_bZJcsPDMEeOKPKE9au0oug" businessElementId="04d54af2-f501-4368-8403-434dff86f22a" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.value" condition=""/>
+    <elements xmi:id="_QeWygJv3EeiGZ4d9q65lpg" businessElement="ConcernHospitalAdmissionDiagnosisID" modelElement="_6-ejQBUyEeGbmN_W114JUw" businessElementId="3a4602b2-68d9-4ad1-a3a5-a0378f2d7a04" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation.id" condition=""/>
+    <elements xmi:id="_WFidcJv3EeiGZ4d9q65lpg" businessElement="ConcernHospitalAdmissionDiagnosisTypeCode" modelElement="_52ZjkMm4EeSr1c1X9ACWbg" businessElementId="a7d2f8e6-4a4a-4b91-ad11-61be85919350" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.code" condition=""/>
+    <elements xmi:id="_YMoFwJv3EeiGZ4d9q65lpg" businessElement="ConcernHospitalAdmissionDiagnosisStartDateTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="3e63e7cc-cb14-466c-9452-372f8626e707" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.effectiveTime" condition=""/>
+    <elements xmi:id="_Z5dbAJv3EeiGZ4d9q65lpg" businessElement="ConcernHospitalAdmissionDiagnosisEndDateTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="8b8f9e6e-49c8-4f36-a6cd-c4e4988c7df1" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.effectiveTime.high" condition=""/>
+    <elements xmi:id="_T0PJMJv3EeiGZ4d9q65lpg" businessElement="ConcernHospitalAdmissionDiagnosisValueCode" modelElement="_bZJcsPDMEeOKPKE9au0oug" businessElementId="d26aa8d8-9af3-4e54-bd7d-8f1d09b097ac" modelElementPath="healthConcernAct.hospitalAdmissionDiagnosis2.problemObservation2.value" condition=""/>
     <elements xmi:id="_ORyXgEMGEeiy4_kNxy7rkg" businessElement="HealthConditionID" businessElementId="1a0bf138-15ee-4168-abbf-74ba69fcf10a" modelElementPath="healthConcernAct.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_PDt9AI9kEeOB0eBUISUB4Q"/>
     </elements>
-    <elements xmi:id="_GSLloLUJEees8rK7-ceJbg" businessElement="CognitiveStatusObservationContainer" businessElementId="0a9229a4-8d9b-423b-b98d-05974304bc29" modelElementPath="healthConcernAct.mentalStatusObservation2" condition="">
+    <elements xmi:id="_2wjCcJv0EeiGZ4d9q65lpg" businessElement="ConcernCognitiveStatusObservationContainer" businessElementId="bb99bdfe-92b5-472e-8e02-a3c67445e27d" modelElementPath="healthConcernAct.mentalStatusObservation2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_MZARUDqZEeSyGa6KC25kiw"/>
     </elements>
-    <elements xmi:id="_PFw7ILUJEees8rK7-ceJbg" businessElement="CognitiveStatusAssessmentContainer" businessElementId="f81eed37-bd6a-420d-a2d7-2a406795193d" modelElementPath="healthConcernAct.mentalStatusObservation2.assessmentScaleObservation" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-cognitive.uml#_CPyIIPi6EeOXlK95I8tUew"/>
+    <elements xmi:id="_8CvU0Jv0EeiGZ4d9q65lpg" businessElement="ConcernCognitiveStatusObservationTypeCode" businessElementId="9a57468d-4014-4056-aea4-a09e2431ed96" modelElementPath="healthConcernAct.mentalStatusObservation2.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_DzAr4PiuEeOXlK95I8tUew"/>
     </elements>
-    <elements xmi:id="_CrY-wLUBEee-oOyubJ0iVA" businessElement="CognitiveStatusAssessmentScaleCode" businessElementId="7fbcfcbe-d929-48c2-b003-e1062a0c0116" modelElementPath="healthConcernAct.mentalStatusObservation2.assessmentScaleObservation.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_hvJ8UeYxEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_IVBgwLUBEee-oOyubJ0iVA" businessElement="CognitiveStatusAssessmentDerivationNotes" businessElementId="a011b296-98ab-4625-b83d-0d5d75963b70" modelElementPath="healthConcernAct.mentalStatusObservation2.assessmentScaleObservation.derivationExpr" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_hvJ8UuYxEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_F1_SgLUBEee-oOyubJ0iVA" businessElement="CognitiveStatusAssessmentDateTime" businessElementId="343bdaab-7b11-467f-b04f-2db3aac0c5f6" modelElementPath="healthConcernAct.mentalStatusObservation2.assessmentScaleObservation.effectiveTime" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_hvJ8VeYxEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_PGwoYLUDEeehe8TgWgDapg" businessElement="CognitiveStatusAssessmentID" businessElementId="fe05d004-c59a-4225-af17-c06d6b0049ec" modelElementPath="healthConcernAct.mentalStatusObservation2.assessmentScaleObservation.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_hvJ8WOYxEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_YsUNYLUDEeehe8TgWgDapg" businessElement="CognitiveStatusAssessmentInterpretationCode" businessElementId="76ec4438-63e6-407c-b974-66c5c576a161" modelElementPath="healthConcernAct.mentalStatusObservation2.assessmentScaleObservation.interpretationCode" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_hvJ8W-YxEeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_b7EBULUDEeehe8TgWgDapg" businessElement="CognitiveStatusAssessmentValueCode" businessElementId="09ada7b9-0843-490a-87cd-35f0aa77c14d" modelElementPath="healthConcernAct.mentalStatusObservation2.assessmentScaleObservation.value" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_QifUoOY0EeGINOJ_SD9_dA"/>
-    </elements>
-    <elements xmi:id="_7XyOQLUAEee-oOyubJ0iVA" businessElement="CognitiveStatusObservationAuthorSpecialtyCode" businessElementId="f49516a2-1e16-4b08-b713-0c8062dc5671" modelElementPath="healthConcernAct.mentalStatusObservation2.author.assignedAuthor.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_4MHjgLUAEee-oOyubJ0iVA" businessElement="CognitiveStatusObservationAuthorID" businessElementId="e3e41707-f6bc-4a4a-b1d5-f5219b0cc90f" modelElementPath="healthConcernAct.mentalStatusObservation2.author.assignedAuthor.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_vOPpkLUAEee-oOyubJ0iVA" businessElement="CognitiveStatusObservationDateTime" businessElementId="82bf3953-1cd8-4f2a-b5ff-ee487ccfedfe" modelElementPath="healthConcernAct.mentalStatusObservation2.effectiveTime" condition="">
+    <elements xmi:id="_AO3XAJv1EeiGZ4d9q65lpg" businessElement="ConcernCognitiveStatusObservationDateTime" businessElementId="76ca623b-dd29-4920-8b85-60a712e07986" modelElementPath="healthConcernAct.mentalStatusObservation2.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_DzAr4fiuEeOXlK95I8tUew"/>
     </elements>
-    <elements xmi:id="_oL2k4LUAEee-oOyubJ0iVA" businessElement="CognitiveStatusObservationID" businessElementId="a4ff5817-d5ae-4cfc-a256-4787c3aeb0ce" modelElementPath="healthConcernAct.mentalStatusObservation2.id" condition="">
+    <elements xmi:id="_5W714Jv0EeiGZ4d9q65lpg" businessElement="ConcernCognitiveStatusObservationID" businessElementId="044f998d-6639-4c92-ae84-fae5bfc3b91e" modelElementPath="healthConcernAct.mentalStatusObservation2.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_DzAr5PiuEeOXlK95I8tUew"/>
     </elements>
-    <elements xmi:id="_zt3PgLUAEee-oOyubJ0iVA" businessElement="CognitiveStatusObservationValueCode" businessElementId="270be439-a936-4319-b320-553413fc27a8" modelElementPath="healthConcernAct.mentalStatusObservation2.value" condition="">
+    <elements xmi:id="_DrQlYJv1EeiGZ4d9q65lpg" businessElement="ConcernCognitiveStatusObservationValueCode" businessElementId="6bff6cdf-b23c-4e76-a827-035d26569570" modelElementPath="healthConcernAct.mentalStatusObservation2.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_DzChFviuEeOXlK95I8tUew"/>
     </elements>
-    <elements xmi:id="_4UZjQLgVEeelhbIH50S8Xw" businessElement="NutritionAssessmentContainer" businessElementId="94a68587-c589-45ff-a08f-6515639e319c" modelElementPath="healthConcernAct.nutritionAssessment" condition="">
+    <elements xmi:id="_zbaLQJv3EeiGZ4d9q65lpg" businessElement="ConcernNutritionAssessmentContainer" businessElementId="1cf35615-d8fd-494f-a57d-5f1216ca272b" modelElementPath="healthConcernAct.nutritionAssessment" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_b--wMI99EeOB0eBUISUB4Q"/>
     </elements>
-    <elements xmi:id="_bHRsULgWEeelhbIH50S8Xw" businessElement="NutritionObservationAssessmentDateTime" businessElementId="e04430c6-8d2d-4815-b237-b88dcc7a7c41" modelElementPath="healthConcernAct.nutritionAssessment.effectiveTime" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_TlDXYo05EeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_ZM_J4LgWEeelhbIH50S8Xw" businessElement="NutritionObservationAssessmentID" businessElementId="11cca95d-a1f9-4ce7-bc2c-976e6cca6530" modelElementPath="healthConcernAct.nutritionAssessment.id" condition="">
+    <elements xmi:id="_1U_jEJv3EeiGZ4d9q65lpg" businessElement="ConcernNutritionObservationAssessmentID" businessElementId="77d89169-ea45-4993-8e09-49a94854a059" modelElementPath="healthConcernAct.nutritionAssessment.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_TlD-cI05EeOB0eBUISUB4Q"/>
     </elements>
-    <elements xmi:id="_dqfP8LgWEeelhbIH50S8Xw" businessElement="NutritionObservationAssessmentValueCode" businessElementId="12bb398e-deaf-49d8-b181-ba46387829da" modelElementPath="healthConcernAct.nutritionAssessment.value" condition="">
+    <elements xmi:id="_5KkGcJv3EeiGZ4d9q65lpg" businessElement="ConcernNutritionObservationAssessmentValueUnitMeasure" businessElementId="4d860799-6989-48eb-9e5f-c72f779109ec" modelElementPath="healthConcernAct.nutritionAssessment.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_TlElg405EeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_fWZYILgWEeelhbIH50S8Xw" businessElement="NutritionObservationAssessmentValueNotes" businessElementId="38410f7f-bdec-4aa3-97ce-235723814f6f" modelElementPath="healthConcernAct.nutritionAssessment.value" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_TlElg405EeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_hc3VYLgWEeelhbIH50S8Xw" businessElement="NutritionObservationAssessmentValueUnitMeasure" businessElementId="eead4d3e-10c4-4b08-aebd-f92ccb05cba5" modelElementPath="healthConcernAct.nutritionAssessment.value" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_TlElg405EeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_jo3KgBAIEeirWM8M53F7VA" businessElement="NutritionObservationContainer" businessElementId="9c398233-e5c8-432d-a439-8404f987e455" modelElementPath="healthConcernAct.nutritionalStatusObservation" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_aqT78I-AEeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_qr69kBAIEeirWM8M53F7VA" businessElement="NutritionObservationDateTime" businessElementId="a7307d7b-2e3a-41b4-aad6-e5b191da23e2" modelElementPath="healthConcernAct.nutritionalStatusObservation.effectiveTime" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_ci8KQY37EeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_l0oegBAIEeirWM8M53F7VA" businessElement="NutritionObservationID" businessElementId="fdff1a26-baf4-4278-9d69-0c65dfc59500" modelElementPath="healthConcernAct.nutritionalStatusObservation.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_ci8KRI37EeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_o6bKwBAIEeirWM8M53F7VA" businessElement="NutritionObservationValueCode" businessElementId="e64aaff5-3dd7-4457-8521-c72c6d9bd2bd" modelElementPath="healthConcernAct.nutritionalStatusObservation.value" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_ci8xVI37EeOB0eBUISUB4Q"/>
     </elements>
     <elements xmi:id="_p3qiALgXEeeRbZSKGqh6gw" businessElement="PostprocedureDiagnosisContainer" businessElementId="b1aa3787-6444-4285-ab20-99187c182ef2" modelElementPath="healthConcernAct.postprocedureDiagnosis2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_5V53ADqcEeSyGa6KC25kiw"/>
@@ -2080,21 +1859,6 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_p0T2kLgYEeeRbZSKGqh6gw" businessElement="PostprocedureDiagnosisStartDateTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="4732cee1-1f01-4926-9027-c5f6eb1d2c1e" modelElementPath="healthConcernAct.postprocedureDiagnosis2.problemObservation2.effectiveTime" condition=""/>
     <elements xmi:id="_sEB2cLgYEeeRbZSKGqh6gw" businessElement="PostprocedureDiagnosisEndDateTime" modelElement="_LLteYPDEEeOKPKE9au0oug" businessElementId="e56956b2-69c5-484b-be5a-22f44c47b013" modelElementPath="healthConcernAct.postprocedureDiagnosis2.problemObservation2.effectiveTime" condition=""/>
     <elements xmi:id="_ubNwQLgYEeeRbZSKGqh6gw" businessElement="PostprocedureDiagnosisValueCode" modelElement="_bZJcsPDMEeOKPKE9au0oug" businessElementId="84ecdb2c-5eb4-4a01-bf34-f7270265e0da" modelElementPath="healthConcernAct.postprocedureDiagnosis2.problemObservation2.value" condition=""/>
-    <elements xmi:id="_glE2UA3MEeigg4exEKKgKw" businessElement="SocialHistoryObservationContainer" businessElementId="07861e9b-b6a3-4b37-a8b1-39fb418d7390" modelElementPath="healthConcernAct.pregnancyObservation" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_euo-8I9-EeOB0eBUISUB4Q"/>
-    </elements>
-    <elements xmi:id="_i4JFIA3MEeigg4exEKKgKw" businessElement="SocialHistoryObservationTypeCode" businessElementId="0d7c22c3-57d3-4730-881f-09465d85f878" modelElementPath="healthConcernAct.pregnancyObservation.code" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_2N6soxSVEeGGzu7fmW9pXw"/>
-    </elements>
-    <elements xmi:id="_ubHZEA3MEeigg4exEKKgKw" businessElement="SocialHistoryObservationStartDateTime" businessElementId="5a7fc399-05bd-49a9-8030-0ac5ed3aea51" modelElementPath="healthConcernAct.pregnancyObservation.effectiveTime" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_WJgwIBrkEeGJ_KU17uNyeA"/>
-    </elements>
-    <elements xmi:id="_ytGysA3MEeigg4exEKKgKw" businessElement="SocialHistoryObservationEndDateTime" businessElementId="16a84a20-8936-47eb-9b85-0a5683b0b5bd" modelElementPath="healthConcernAct.pregnancyObservation.estimatedDateOfDelivery.value" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_lcxCQBupEeG0YIoJCEsKqA"/>
-    </elements>
-    <elements xmi:id="_mHv0sA3MEeigg4exEKKgKw" businessElement="SocialHistoryObservationValueCode" businessElementId="9ba020b1-eca6-4082-9b00-a8ff13430474" modelElementPath="healthConcernAct.pregnancyObservation.value" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_2N6ssBSVEeGGzu7fmW9pXw"/>
-    </elements>
     <elements xmi:id="_kFAqELgbEeeNi8ZyrVIAYw" businessElement="PreoperativeDiagnosisContainer" businessElementId="a2c72440-df57-4288-af29-5608388cbf4e" modelElementPath="healthConcernAct.preoperativeDiagnosis2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_jDz4gDqdEeSyGa6KC25kiw"/>
     </elements>
@@ -2240,33 +2004,6 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     </elements>
     <elements xmi:id="_XrBPQABAEeiHnoOLF1UllA" businessElement="ConcernSupportStatusValueCode" modelElement="_8NsgMMm6EeSr1c1X9ACWbg" businessElementId="b7c4cdda-3bd7-4dd0-ba19-969188bc1db3" modelElementPath="healthConcernAct.problemObservation2Support.statusCode" condition=""/>
     <elements xmi:id="_RSwssABAEeiHnoOLF1UllA" businessElement="ConcernSupportValueCode" modelElement="_bZJcsPDMEeOKPKE9au0oug" businessElementId="1e88fa99-9b95-4e1d-abc1-b6735dd9595e" modelElementPath="healthConcernAct.problemObservation2Support.value" condition=""/>
-    <elements xmi:id="_vHpskLglEeeNi8ZyrVIAYw" businessElement="PregnancyEstimatedDeliveryDate" businessElementId="3e6b980e-773c-496d-a728-2143bd5b585b" modelElementPath="healthConcernAct.reactionObservation2" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_Xs1jwDqeEeSyGa6KC25kiw"/>
-    </elements>
-    <elements xmi:id="_6p0vQLglEeexEPXuVOFfIw" businessElement="ProcedureReactionContainer" businessElementId="53f7daa8-310c-4845-abbc-4d9bf0268693" modelElementPath="healthConcernAct.reactionObservation2" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_Xs1jwDqeEeSyGa6KC25kiw"/>
-    </elements>
-    <elements xmi:id="_80R0oLglEeexEPXuVOFfIw" businessElement="MedicationAdministrationReactionContainer" businessElementId="e7ea7ced-6e96-4ec0-af5f-dd7deaed4345" modelElementPath="healthConcernAct.reactionObservation2" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_Xs1jwDqeEeSyGa6KC25kiw"/>
-    </elements>
-    <elements xmi:id="_0P0q0LgmEeesN4cWrTzSwA" businessElement="ImmunizationAdministeredReactionContainer" businessElementId="d8924b49-0b24-4ae5-8000-f4a5c54433fa" modelElementPath="healthConcernAct.reactionObservation2" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_Xs1jwDqeEeSyGa6KC25kiw"/>
-    </elements>
-    <elements xmi:id="_7ATgILgmEeesN4cWrTzSwA" businessElement="AllergyReactionContainer" businessElementId="e20b3fd4-a386-4d90-aa17-d4e16cb377a9" modelElementPath="healthConcernAct.reactionObservation2" condition="">
-      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_Xs1jwDqeEeSyGa6KC25kiw"/>
-    </elements>
-    <elements xmi:id="_8q1IQLgmEeesN4cWrTzSwA" businessElement="AllergyReactionID" businessElementId="634ccc25-1115-4030-8e6c-535de4c546b8" modelElementPath="healthConcernAct.reactionObservation2.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_B1Q8sMzcEeSLqosJ4F90vA"/>
-    </elements>
-    <elements xmi:id="_AjSAgLgnEeesN4cWrTzSwA" businessElement="MedicationAdministrationReactionID" businessElementId="226f4062-7e8c-43bd-9e04-086ca4dbcf5e" modelElementPath="healthConcernAct.reactionObservation2.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_B1Q8sMzcEeSLqosJ4F90vA"/>
-    </elements>
-    <elements xmi:id="_DUPsQLgnEeesN4cWrTzSwA" businessElement="ImmunizationAdminsteredReactionID" businessElementId="2893f361-e39e-463b-a576-9037908eff76" modelElementPath="healthConcernAct.reactionObservation2.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_B1Q8sMzcEeSLqosJ4F90vA"/>
-    </elements>
-    <elements xmi:id="_GQTNsLgnEeesN4cWrTzSwA" businessElement="ProcedureReactionID" businessElementId="f9426da8-4aaf-49c8-805f-dbd088a4c096" modelElementPath="healthConcernAct.reactionObservation2.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_B1Q8sMzcEeSLqosJ4F90vA"/>
-    </elements>
     <elements xmi:id="_75AeYA3IEeigg4exEKKgKw" businessElement="ResultObservationContainer" businessElementId="04efdee4-2132-490a-99c4-0f635300879a" modelElementPath="healthConcernAct.resultObservation2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_m5G5oDqeEeSyGa6KC25kiw"/>
     </elements>
@@ -2321,52 +2058,28 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_Ipj_wA3JEeigg4exEKKgKw" businessElement="ResultObservationValueCode" businessElementId="6a0b73cb-8123-4364-9b6c-9f27094e3e57" modelElementPath="healthConcernAct.resultObservation2.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-results.uml#_fBSjAM2BEeSEZ8MJJ3ZzLg"/>
     </elements>
-    <elements xmi:id="_DxkqELUJEees8rK7-ceJbg" businessElement="SelfCareContainer" businessElementId="ff399c63-8261-4aba-b568-1deaebd0ce40" modelElementPath="healthConcernAct.selfCareActivities" condition="">
+    <elements xmi:id="_Rf2MEJv0EeiGZ4d9q65lpg" businessElement="ConcernSelfCareContainer" businessElementId="2b1633a9-eead-442f-8438-85759360c1e4" modelElementPath="healthConcernAct.selfCareActivities" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_1uPXoK4REeORf5eJaKt1KQ"/>
     </elements>
-    <elements xmi:id="_IBA1ELUAEee-oOyubJ0iVA" businessElement="SelfCareAuthorName" businessElementId="0aa384c2-62c6-4290-acc4-056f8cf1f883" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.assignedPerson.name" condition="">
+    <elements xmi:id="_tcoAAJv0EeiGZ4d9q65lpg" businessElement="ConcernSelfCareAuthorName" businessElementId="63e13c1f-89e3-4e10-bb9d-4fa37cb3b044" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_-B318LUAEee-oOyubJ0iVA" businessElement="CognitiveStatusObservationAuthorName" businessElementId="6d50ded1-ca0d-472e-9bbb-cb0e00cdfbfa" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.assignedPerson.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
+    <elements xmi:id="_q_ZvoJv0EeiGZ4d9q65lpg" businessElement="ConcernSensoryStatusAuthorSpecialityCode" businessElementId="71a94056-bf87-4dbc-b782-d7b59f01b0e4" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YH_gKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_HQg3ILT-EeenfdQbebbkIQ" businessElement="SelfCareAuthorID" businessElementId="9dc26b38-7be3-4acf-9c0d-069b2319ba63" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.id" condition="">
+    <elements xmi:id="_nTUfcJv0EeiGZ4d9q65lpg" businessElement="ConcernSelfCareAuthorID" businessElementId="03bf6af8-237c-4988-a6be-aaf7c2d68ebd" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_Qd9MMLUAEee-oOyubJ0iVA" businessElement="SelfCareAuthorOrganiationAddress" businessElementId="a6a1e3f8-ffa4-45f7-87e3-f6cebe53663f" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.representedOrganization.addr" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_LTst0LUAEee-oOyubJ0iVA" businessElement="SelfCareAuthorOrganizationID" businessElementId="1fa3ad16-9ce1-40eb-a039-0aa22e16c15d" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.representedOrganization.id" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2VqIKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_NuptULUAEee-oOyubJ0iVA" businessElement="SelfCareAuthorOrganizationName" businessElementId="431651ce-5437-4c62-b624-e59e32fa278d" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.representedOrganization.name" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2W4QKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_WwaowLUAEee-oOyubJ0iVA" businessElement="SelfCareAuthorOrganiationURLContact" businessElementId="529b8d6d-778e-4bc2-aae6-d1223a10339c" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_Z-OokLUAEee-oOyubJ0iVA" businessElement="SelfCareAuthorOrganizationEmailContact" businessElementId="9354dd2d-4066-4646-87fb-da826e3fdfbb" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_gPwRALUAEee-oOyubJ0iVA" businessElement="SelfCareAuthorOrganizationPagerContact" businessElementId="540b01b4-e15b-46a3-9c2f-0f35dc3a9d54" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_ijyJILUAEee-oOyubJ0iVA" businessElement="SelfCareAuthorOrganizationPhoneContact" businessElementId="50a18b86-c1a0-43ba-9b75-5407e9fb4915" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_kvkEMLUAEee-oOyubJ0iVA" businessElement="SelfCareAuthorOrganizationSMSContact" businessElementId="cef55e06-729b-4234-b1cc-6b30a686ed33" modelElementPath="healthConcernAct.selfCareActivities.author.assignedAuthor.representedOrganization.telecom" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2YGYKr4EeOxqJAXCMXUYg"/>
-    </elements>
-    <elements xmi:id="_FTDE4LT-EeenfdQbebbkIQ" businessElement="SelfCareAuthorDateTime" businessElementId="9a5f1447-6cc6-4f0e-b6eb-96d55e3eacc4" modelElementPath="healthConcernAct.selfCareActivities.author.time" condition="">
+    <elements xmi:id="_k_SAQJv0EeiGZ4d9q65lpg" businessElement="ConcernSelfCareAuthorDateTime" businessElementId="b8f9f1cc-c570-4d30-8ae4-be63ba703d89" modelElementPath="healthConcernAct.selfCareActivities.author.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="__mZEELT9EeenfdQbebbkIQ" businessElement="SelfCareTypeCode" businessElementId="799736dd-2601-4a6a-bd72-a7a437386065" modelElementPath="healthConcernAct.selfCareActivities.code" condition="">
+    <elements xmi:id="_UAUkwJv0EeiGZ4d9q65lpg" businessElement="ConcernSelfCareTypeCode" businessElementId="26d29d96-efc3-44ca-94b3-9eeed130e1b0" modelElementPath="healthConcernAct.selfCareActivities.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_rBjQsJmzEeOLJeQez13EkQ"/>
     </elements>
-    <elements xmi:id="_COuYQLT-EeenfdQbebbkIQ" businessElement="SelfCareDateTime" businessElementId="c6218af3-275b-4415-9351-7223805a7423" modelElementPath="healthConcernAct.selfCareActivities.effectiveTime" condition="">
+    <elements xmi:id="_cm2VsJv0EeiGZ4d9q65lpg" businessElement="ConcernSelfCareDateTime" businessElementId="51d73962-9a0d-41ce-bd61-45478ed38757" modelElementPath="healthConcernAct.selfCareActivities.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_clEksAPmEeWlspDC_8d7eg"/>
     </elements>
-    <elements xmi:id="_DqnHcLT-EeenfdQbebbkIQ" businessElement="SelfCareValueCode" businessElementId="0f3aa296-1c2f-4f1f-90ad-e1bc5a5bf373" modelElementPath="healthConcernAct.selfCareActivities.value" condition="">
+    <elements xmi:id="_fLIQUJv0EeiGZ4d9q65lpg" businessElement="ConcernSelfCareValueCode" businessElementId="51d3ecef-da2f-436c-bd49-77316df07e91" modelElementPath="healthConcernAct.selfCareActivities.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_rBjQspmzEeOLJeQez13EkQ"/>
     </elements>
     <elements xmi:id="_X-5K0LgxEeemm-NTNbUFDw" businessElement="SensoryStatusContainer" businessElementId="6ed602f3-b3ca-4943-af77-5dc3a435869b" modelElementPath="healthConcernAct.sensoryStatus" condition="">
@@ -2387,6 +2100,9 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_6-y8EA3MEeigg4exEKKgKw" businessElement="SocialHistoryObservationContainer" businessElementId="07861e9b-b6a3-4b37-a8b1-39fb418d7390" modelElementPath="healthConcernAct.socialHistoryObservation2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_ywglcDqeEeSyGa6KC25kiw"/>
     </elements>
+    <elements xmi:id="_O_ub4Jv4EeiGZ4d9q65lpg" businessElement="ConcernSocialHistoryObservationContainer" businessElementId="dd4d3fc8-b47d-425a-804f-e11712b37919" modelElementPath="healthConcernAct.socialHistoryObservation2" condition="">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_ywglcDqeEeSyGa6KC25kiw"/>
+    </elements>
     <elements xmi:id="_opBzwA3OEeiJDZMyxsNAkQ" businessElement="SocialHistoryObservationAuthorContainer" businessElementId="d32e737e-b0ec-47ac-b477-b9e9d6b7d0fd" modelElementPath="healthConcernAct.socialHistoryObservation2.author" condition="">
       <modelElement xmi:type="uml:Association" href="consol-socialhistory.uml#_1NrXUPJkEeO2NaSiicarcg"/>
     </elements>
@@ -2402,10 +2118,19 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_9P2_wA3MEeigg4exEKKgKw" businessElement="SocialHistoryObservationTypeCode" businessElementId="0d7c22c3-57d3-4730-881f-09465d85f878" modelElementPath="healthConcernAct.socialHistoryObservation2.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_YzlcoPJhEeO2NaSiicarcg"/>
     </elements>
+    <elements xmi:id="_QgaykJv4EeiGZ4d9q65lpg" businessElement="ConcernSocialHistoryObservationTypeCode" businessElementId="dea2a7ad-2caf-44c2-bfab-364a4f2a14fe" modelElementPath="healthConcernAct.socialHistoryObservation2.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_YzlcoPJhEeO2NaSiicarcg"/>
+    </elements>
     <elements xmi:id="_D9CCYA3NEeigg4exEKKgKw" businessElement="SocialHistoryObservationStartDateTime" businessElementId="5a7fc399-05bd-49a9-8030-0ac5ed3aea51" modelElementPath="healthConcernAct.socialHistoryObservation2.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_VH7i4PJkEeO2NaSiicarcg"/>
     </elements>
     <elements xmi:id="_F0f6UA3NEeigg4exEKKgKw" businessElement="SocialHistoryObservationEndDateTime" businessElementId="16a84a20-8936-47eb-9b85-0a5683b0b5bd" modelElementPath="healthConcernAct.socialHistoryObservation2.effectiveTime" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_VH7i4PJkEeO2NaSiicarcg"/>
+    </elements>
+    <elements xmi:id="_URFAwJv4EeiGZ4d9q65lpg" businessElement="ConcernSocialHistoryObservationStartDateTime" businessElementId="61e90034-33e3-4ded-82fa-703f91a55b94" modelElementPath="healthConcernAct.socialHistoryObservation2.effectiveTime" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_VH7i4PJkEeO2NaSiicarcg"/>
+    </elements>
+    <elements xmi:id="_V1bIYJv4EeiGZ4d9q65lpg" businessElement="ConcernSocialHistoryObservationEndDateTime" businessElementId="e8f70087-bfa4-4522-9310-cc17befcf28d" modelElementPath="healthConcernAct.socialHistoryObservation2.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_VH7i4PJkEeO2NaSiicarcg"/>
     </elements>
     <elements xmi:id="_KwjkoA3NEeigg4exEKKgKw" businessElement="SocialHistoryObservationID" businessElementId="6642fc6a-768d-4c7f-9f3c-5bdce9b606f8" modelElementPath="healthConcernAct.socialHistoryObservation2.id" condition="">
@@ -2414,35 +2139,54 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_HjytsA3NEeigg4exEKKgKw" businessElement="SocialHistoryObservationValueCode" businessElementId="9ba020b1-eca6-4082-9b00-a8ff13430474" modelElementPath="healthConcernAct.socialHistoryObservation2.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_f0hlQPJgEeO2NaSiicarcg"/>
     </elements>
+    <elements xmi:id="_XoQX8Jv4EeiGZ4d9q65lpg" businessElement="ConcernSocialHistoryObservationValueCode" businessElementId="578e6d6d-6790-4f72-866d-1b3ddea67fc7" modelElementPath="healthConcernAct.socialHistoryObservation2.value" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_f0hlQPJgEeO2NaSiicarcg"/>
+    </elements>
     <elements xmi:id="_DxwtUEMREeiy4_kNxy7rkg" businessElement="HealthConditionStatusCode" businessElementId="b4354d84-2e44-4e88-af4e-4a874b9e665e" modelElementPath="healthConcernAct.statusCode" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_PDukEI9kEeOB0eBUISUB4Q"/>
     </elements>
-    <elements xmi:id="_P9fJkHpXEeill5VfgX-4Ew" businessElement="PatientSettingChoiceFlag" businessElementId="badbd183-7818-4195-a13b-b670c525be22" modelElementPath="healthConcernAct.text">
+    <elements xmi:id="_P9fJkHpXEeill5VfgX-4Ew" businessElement="PatientSettingChoiceFlag" businessElementId="badbd183-7818-4195-a13b-b670c525be22" modelElementPath="healthConcernAct.text" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_OgKP8HpXEeill5VfgX-4Ew"/>
     </elements>
-    <elements xmi:id="_RJUqkHpXEeill5VfgX-4Ew" businessElement="PatientSettingChoiceOptionsText" businessElementId="e094aecc-7710-448f-a27d-77f4b5e26ec4" modelElementPath="healthConcernAct.text">
+    <elements xmi:id="_RJUqkHpXEeill5VfgX-4Ew" businessElement="PatientSettingChoiceOptionsText" businessElementId="e094aecc-7710-448f-a27d-77f4b5e26ec4" modelElementPath="healthConcernAct.text" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_OgKP8HpXEeill5VfgX-4Ew"/>
     </elements>
-    <elements xmi:id="_WcDc0P-zEeebPKLVcQEOsg" businessElement="TobaccoUseObservationContainer" businessElementId="b7a76875-d581-4a89-b0fb-57f9471c0475" modelElementPath="healthConcernAct.tobaccoUse2" condition="">
+    <elements xmi:id="_ZNJ5MJv4EeiGZ4d9q65lpg" businessElement="ConcernTobaccoUseObservationContainer" businessElementId="f7fd1ef5-267a-4def-93ae-b2ed6dc96ed4" modelElementPath="healthConcernAct.tobaccoUse2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_kKDc8DqfEeSyGa6KC25kiw"/>
     </elements>
-    <elements xmi:id="_aX-f0P-zEeebPKLVcQEOsg" businessElement="TobaccoUseObservationIDCode" businessElementId="8304ebcc-85d6-4592-8fe8-591cd3c32e2d" modelElementPath="healthConcernAct.tobaccoUse2.code" condition="">
+    <elements xmi:id="_mlvq8Jv4EeiGZ4d9q65lpg" businessElement="ConcernTobaccoUseOservationIDCode" businessElementId="e086c514-1c0e-439f-8435-c8241ef833dc" modelElementPath="healthConcernAct.tobaccoUse2.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_gpOQMPMyEeOUvapeh9bVvQ"/>
     </elements>
-    <elements xmi:id="_b2yAIP-zEeebPKLVcQEOsg" businessElement="TobaccoUseObservationStartDateTime" businessElementId="c1193027-bef2-4d8c-9840-665de65fddb6" modelElementPath="healthConcernAct.tobaccoUse2.effectiveTime" condition="">
+    <elements xmi:id="_pGxdQJv4EeiGZ4d9q65lpg" businessElement="ConcernTobaccoUseObservationStartDateTime" businessElementId="74cdbf54-9be6-4e5a-953a-8b9b41174585" modelElementPath="healthConcernAct.tobaccoUse2.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_P0E4APMyEeOUvapeh9bVvQ"/>
     </elements>
-    <elements xmi:id="_dKmYcP-zEeebPKLVcQEOsg" businessElement="TobaccoUseObservationEndDateTime" businessElementId="6d06653d-5dee-4f8b-a60a-57779fd207ee" modelElementPath="healthConcernAct.tobaccoUse2.effectiveTime.high" condition="">
+    <elements xmi:id="_qqFDEJv4EeiGZ4d9q65lpg" businessElement="ConcernTobaccoUseObservationEndDateTime" businessElementId="3d7c2a85-411b-4e45-90c0-eddb35832763" modelElementPath="healthConcernAct.tobaccoUse2.effectiveTime" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_P0E4APMyEeOUvapeh9bVvQ"/>
     </elements>
-    <elements xmi:id="_YNIY4P-zEeebPKLVcQEOsg" businessElement="TobaccoUseObservationII" businessElementId="f61eac91-b8e5-4e58-99cd-e9cdd83049c5" modelElementPath="healthConcernAct.tobaccoUse2.id" condition="">
+    <elements xmi:id="_lDGzgJv4EeiGZ4d9q65lpg" businessElement="ConcernTobaccoUseObservationID" businessElementId="d76cfd1f-7b08-469c-b1fa-9adf93595e88" modelElementPath="healthConcernAct.tobaccoUse2.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_1XI8AM80EeSJsu9BbhWxmQ"/>
     </elements>
-    <elements xmi:id="_e2ujEP-zEeebPKLVcQEOsg" businessElement="TobaccoUseObservationValueCode" businessElementId="d8e3077e-b2a0-499f-8354-c2a0a148c993" modelElementPath="healthConcernAct.tobaccoUse2.value" condition="">
+    <elements xmi:id="_tRiNgJv4EeiGZ4d9q65lpg" businessElement="ConcernTobaccoUseObservationValueCode" businessElementId="91451b52-c494-4172-a02e-1d0f767435a0" modelElementPath="healthConcernAct.tobaccoUse2.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_kh-7c-WQEeGKmvzED_He2w"/>
     </elements>
-    <elements xmi:id="_omQUULsTEeejBu7P06QdPQ" businessElement="GeneralWellnessContainer" modelElement="_AVyzwDq9EeSyGa6KC25kiw" businessElementId="26787095-dd9e-47a7-9046-28b0cfb34991" modelElementPath="healthStatusObservation2" condition=""/>
-    <elements xmi:id="_qAIRULsTEeejBu7P06QdPQ" businessElement="GeneralWellnessID" modelElement="_Zob5sMElEeSjB6vMjDsL5Q" businessElementId="d31b92c6-33bb-4e25-9484-77f86a963ab2" modelElementPath="healthStatusObservation2.id" condition=""/>
+    <elements xmi:id="_11iO4Jv4EeiGZ4d9q65lpg" businessElement="ConcernVitalSignResultContainer" businessElementId="3acc0bc1-2f4a-4cfb-b02d-a8031a764e1e" modelElementPath="healthConcernAct.vitalSignObservation2" condition="">
+      <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_vllsIDqfEeSyGa6KC25kiw"/>
+    </elements>
+    <elements xmi:id="_IEbBMJv5EeiGZ4d9q65lpg" businessElement="ConcernVitalSignResultTypeCode" businessElementId="d8e827d2-8d88-4666-8960-f4843e41ec78" modelElementPath="healthConcernAct.vitalSignObservation2.code" condition="">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_7_R0UJv4EeiGZ4d9q65lpg" businessElement="ConcernVitalSignResultStartDateTime" businessElementId="031b0867-2841-421a-bd1f-60cef5e2e95d" modelElementPath="healthConcernAct.vitalSignObservation2.effectiveTime" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-vitalsigns.uml#_7j7RkM84EeSJsu9BbhWxmQ"/>
+    </elements>
+    <elements xmi:id="_9sIXsJv4EeiGZ4d9q65lpg" businessElement="ConcernVitalSignResultEndDateTime" businessElementId="530384d4-7561-4501-8d2e-f00facb4c35a" modelElementPath="healthConcernAct.vitalSignObservation2.effectiveTime" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-vitalsigns.uml#_7j7RkM84EeSJsu9BbhWxmQ"/>
+    </elements>
+    <elements xmi:id="_C4ThoJv5EeiGZ4d9q65lpg" businessElement="ConcernVitalSignResultIntepretationCode" businessElementId="5c6cc51a-0d7b-4c12-a907-fb44961931fe" modelElementPath="healthConcernAct.vitalSignObservation2.interpretationCode" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-vitalsigns.uml#_eEbiIM9CEeSJsu9BbhWxmQ"/>
+    </elements>
+    <elements xmi:id="_AKROEJv5EeiGZ4d9q65lpg" businessElement="ConcernVitalSignResultValueUnitMeasure" businessElementId="e64233bd-bf23-4f5e-b0b8-e38c8dfd0ff1" modelElementPath="healthConcernAct.vitalSignObservation2.value" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-vitalsigns.uml#_qsjuoPM4EeOUvapeh9bVvQ"/>
+    </elements>
     <elements xmi:id="_TCuxYNEgEeetsqYze_ciUA" businessElement="RiskConcernContainer" modelElement="_nlSbIPgEEeSx6PQhw3nAUw" businessElementId="ef978415-d10e-463c-9441-8b77dca2286b" modelElementPath="riskConcernAct" condition=""/>
     <elements xmi:id="_AAoooBAaEeiMKtG3wFcgrQ" businessElement="RiskAllergyObservationContainer" businessElementId="16045697-d632-4dd9-875f-e358dc81d6c4" modelElementPath="riskConcernAct.allergyObservation2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_BycqQON6EeS_XOr-dz_KWA"/>
@@ -2561,13 +2305,13 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_9t7M4BAeEeiIlsxqTlBq9A" businessElement="RiskFunctionalStatusAssessmentScaleValueText" businessElementId="8b5cc0c2-4c12-4cf7-8121-6b9d25d5f85f" modelElementPath="riskConcernAct.assessmentScaleObservation.value" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_QifUoOY0EeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_5iUvIBAeEeiIlsxqTlBq9A" businessElement="RiskFunctionalStatusAssessmentScaleValueCode" businessElementId="84504716-58c1-463d-9287-1f13db5fa537" modelElementPath="riskConcernAct.assessmentScaleObservation.value.ST" condition="">
-      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_QifUoOY0EeGINOJ_SD9_dA"/>
-    </elements>
     <elements xmi:id="_aE-z8BAdEeiMKtG3wFcgrQ" businessElement="RiskSensoryStatusAssessmentValueNotes" businessElementId="3af92c8b-1317-4dcf-8e16-ba54c43df1d7" modelElementPath="riskConcernAct.assessmentScaleObservation.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_QifUoOY0EeGINOJ_SD9_dA"/>
     </elements>
     <elements xmi:id="_8RWhMBAeEeiIlsxqTlBq9A" businessElement="RiskFunctionalStatusAssessmentScaleValueNumber" businessElementId="dad9b21c-cc8b-420e-92c0-1ef4deff98f7" modelElementPath="riskConcernAct.assessmentScaleObservation.value.CD" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_QifUoOY0EeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_5iUvIBAeEeiIlsxqTlBq9A" businessElement="RiskFunctionalStatusAssessmentScaleValueCode" businessElementId="84504716-58c1-463d-9287-1f13db5fa537" modelElementPath="riskConcernAct.assessmentScaleObservation.value.ST" condition="">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_QifUoOY0EeGINOJ_SD9_dA"/>
     </elements>
     <elements xmi:id="_8MdncNEjEeemCaeaZsU11w" businessElement="RiskConcernAuthorName" businessElementId="2977345d-0e07-4b4a-bf63-7e7671aafa3e" modelElementPath="riskConcernAct.author.assignedAuthor.assignedPerson.name" condition="">
@@ -3298,7 +3042,6 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
       <modelElement xmi:type="uml:Property" href="consol-exams.uml#_D3_FEJqAEeOK6dzbL4VoTA"/>
     </elements>
   </MDMI:MDMIMapping>
- 
   <MDMI:MDMIMapping xmi:id="_9Wjq0M3oEeeqSZE4BTrNiw" base_Class="_IXrA4ALVEeSyydFGYJajGA">
     <elements xmi:id="_qVfkEOw5EeeZT-QKtwCoyw" businessElement="ProblemSectionContainer" modelElement="_IXrA4ALVEeSyydFGYJajGA" businessElementId="4b655929-8602-4317-9773-3c150b0dc7db" modelElementPath="" condition=""/>
     <elements xmi:id="_gai1QEmsEei1GK3IhTP0Dw" businessElement="ProblemSectionIDCode" modelElement="_193tIALWEeSyydFGYJajGA" businessElementId="540445a3-8ea0-441b-9aa8-3db292be1f12" modelElementPath="code"/>
@@ -3334,8 +3077,8 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_kM2qsBEAEeiWNanfLerEWA" businessElement="ProblemConditionAuthorDateTime" businessElementId="aa71e06c-cc8c-43b9-9613-9b21fe604de5" modelElementPath="problemConcernAct2.author.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
-    <elements xmi:id="_t8m3YBveEeizVY7VIHKqXw" businessElement="ProblemConditionStartTime" modelElement="_EZInYOzfEeOnE-G4kptBiw" businessElementId="6415a267-564c-400e-8952-aa956c71809f" modelElementPath="problemConcernAct2.effectiveTime.low" condition=""/>
     <elements xmi:id="_w4G_MBveEeizVY7VIHKqXw" businessElement="ProblemConditionOnsetDateTime" modelElement="_EZInYOzfEeOnE-G4kptBiw" businessElementId="9ff65a76-3d51-47c9-b2f0-518080214f3c" modelElementPath="problemConcernAct2.effectiveTime.high" condition=""/>
+    <elements xmi:id="_t8m3YBveEeizVY7VIHKqXw" businessElement="ProblemConditionStartTime" modelElement="_EZInYOzfEeOnE-G4kptBiw" businessElementId="6415a267-564c-400e-8952-aa956c71809f" modelElementPath="problemConcernAct2.effectiveTime.low" condition=""/>
     <elements xmi:id="_FPh20PlaEeeQHKhSbaB4zg" businessElement="ProblemConditionPriorityContainer" modelElement="_mgnKkO0BEeOnE-G4kptBiw" businessElementId="2019d4fe-bbb0-4927-a34a-e224dcbfa9f5" modelElementPath="problemConcernAct2.priorityPreference" condition=""/>
     <elements xmi:id="_2QN2EM3vEeeif6yto2VSrA" businessElement="ProblemConditionPriorityDateTime" businessElementId="924f0dc7-6b0c-466c-a4be-dc54b34012d2" modelElementPath="problemConcernAct2.priorityPreference.effectiveTime.low" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_CWg-oADcEeWNGdLwd_3YGQ"/>
@@ -3415,5 +3158,4 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_hXPsIBDXEeiUsoouH77Mww" businessElement="ProblemSectionNotes" modelElement="_szXagALYEeSyydFGYJajGA" businessElementId="d33c1f71-efbd-40f0-9ff9-53e8914a40f9" modelElementPath="text" condition=""/>
     <elements xmi:id="_AywQwBDYEeiZ84ZP9SDlmQ" businessElement="ProblemSectionTitleText" modelElement="_szXahALYEeSyydFGYJajGA" businessElementId="bd9919bb-d1a9-4200-acf8-a5e4ed443f8d" modelElementPath="title" condition=""/>
   </MDMI:MDMIMapping>
-  
 </xmi:XMI>
