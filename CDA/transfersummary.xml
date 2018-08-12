@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default" xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+	<target name="default">
+
+		<property name="mdmifocal" value="TransferSummary" />
+		<property name="mdmidescription" value="Transfer Summary" />
+		<property name="syntaxfocal" value="TransferSummary2" />
+
+		<delete file="map/${mdmifocal}.mdmi" />
+
+		<qvto:transformation uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Cda2Mdmi.qvto">
+			<in uri="platform:/resource/CDA/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml" />
+			<out uri="platform:/resource/CDA/map/${mdmifocal}.mdmi" />
+			<trace uri="platform:/resource/CDA/log/cdamap.qvtotrace">
+			</trace>
+			<configProperty name="semanticRoot" value="${mdmifocal}" />
+			<configProperty name="syntaxRoot" value="${syntaxfocal}" />
+			<configProperty name="mappingStyle" value="NORMAL" />
+			<configProperty name="mapFamily" value="CDAR2" />
+			<configProperty name="mapInstance" value="${mdmifocal}" />
+			<configProperty name="mapDisplayName" value="${mdmidescription}" />
+		</qvto:transformation>
+
+		<transformReport reportPath="${basedir}/reports" />
+
+		<mdmiSort model="platform:/resource/CDA/map/${mdmifocal}.mdmi" />
+
+
+	</target>
+
+
+
+</project>
