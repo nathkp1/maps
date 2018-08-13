@@ -1010,6 +1010,7 @@ If the patient's current smoking status is unknown, the value element must be po
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1NqJMPJkEeO2NaSiicarcg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1NqJMfJkEeO2NaSiicarcg" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_gHyIME9uEeWsIc5CMrI4GA" name="CD">
       <ownedComment xmi:id="_h478wE9uEeWsIc5CMrI4GA">
@@ -1312,6 +1313,7 @@ The effectiveTime element is used to describe dates associated with the patient'
     <elements xmi:id="_6pliILKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationID" modelElement="_-9hYUKzCEeSB84STE1Ny6A" businessElementId="6642fc6a-768d-4c7f-9f3c-5bdce9b606f8" modelElementPath="currentSmokingStatus2.id" condition=""/>
     <elements xmi:id="_8VseoLKoEeeyLJp8BPm4pw" businessElement="SmokingStatusObservationValueCode" modelElement="_zeAVcLm5EeOgPNzo_e4B9A" businessElementId="aadeabc0-625a-450e-9400-cdc85debf531" modelElementPath="currentSmokingStatus2.value.CD" condition=""/>
     <elements xmi:id="_GjwqkLKoEeeiIJcANpZ7qA" businessElement="SocialHistoryObservationContainer" modelElement="_1CAh8AFOEeSG_MJH-zNFRw" businessElementId="07861e9b-b6a3-4b37-a8b1-39fb418d7390" modelElementPath="socialHistoryObservation2" condition=""/>
+    <elements xmi:id="_KoUDkJ8VEeiJvszmx7V17A" businessElement="SocialHistoryObservationAuthorContainer" modelElement="_1NrXUPJkEeO2NaSiicarcg" businessElementId="d32e737e-b0ec-47ac-b477-b9e9d6b7d0fd" modelElementPath="socialHistoryObservation2.author"/>
     <elements xmi:id="_wD4HsLKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationAuthorName" businessElementId="4576a76c-a5ed-4449-ba65-2f6977e0c607" modelElementPath="socialHistoryObservation2.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>

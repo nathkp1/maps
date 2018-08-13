@@ -1558,8 +1558,8 @@ For example, an observation outcome of a blood oxygen saturation level of 95% is
     </ownedAttribute>
     <ownedAttribute xmi:id="_gjupMK73EeORf5eJaKt1KQ" name="author" association="_gjweYK73EeORf5eJaKt1KQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gjvQQK73EeORf5eJaKt1KQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gjvQQa73EeORf5eJaKt1KQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ln2x0Z8REeiTdZpJ0kkQKA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ln2x0J8REeiTdZpJ0kkQKA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
   </uml:Class>
@@ -1892,6 +1892,7 @@ The priority of the activity to the patient and provider is communicated through
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vaxMEMagEeSY-qHOFt9wVQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vaxMEcagEeSY-qHOFt9wVQ" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AsZwkUxpEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_253pUOdhEeOqBOMhgDlycQ" name="serviceDeliveryLocation" association="_2543cOdhEeOqBOMhgDlycQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
@@ -4457,7 +4458,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_fgdxgI9CEeeNuo6J86JnLQ" base_Class="_bwml0P4yEeO_Yb9cO8w3bA">
     <elements xmi:id="_fgdxgY9CEeeNuo6J86JnLQ" businessElement="PlannedTreatmentSection" modelElement="_bwml0P4yEeO_Yb9cO8w3bA" businessElementId="528dfaa6-b754-4fb7-91d9-d6827c7fe561" modelElementPath="" condition=""/>
-    <elements xmi:id="_XAiY8EmsEei1GK3IhTP0Dw" businessElement="InterventionPlanSectionIDCode" modelElement="_lXUzAP4zEeO_Yb9cO8w3bA" businessElementId="a1996900-d0c0-4ac7-acbe-226e472a1fca" modelElementPath="code"/>
+    <elements xmi:id="_Xn9mUJ8UEeiJvszmx7V17A" businessElement="PlannedEncounterContainer" modelElement="_3Ls-IP40EeO_Yb9cO8w3bA" businessElementId="ea87b0bc-a8c2-4039-ae2a-4dc7c5cfdac0" modelElementPath="plannedEncounter2"/>
+    <elements xmi:id="_xOYxcJ8VEei16JmDaiI36w" businessElement="PlannedEncounterAuthor" modelElement="_vaxzIMagEeSY-qHOFt9wVQ" businessElementId="5f810cb8-e261-4b02-8ee0-5f97bdfb8c82" modelElementPath="plannedEncounter2.author"/>
     <elements xmi:id="_Zsj24JC7EeeyTtReSNa24w" businessElement="PlannedEncounterAuthorName" businessElementId="b21237d4-1c4c-4ed7-9659-e8f5ca29d7f4" modelElementPath="plannedEncounter2.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
@@ -4538,6 +4540,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <elements xmi:id="_ZWRoYJC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationFaxContact" businessElementId="ddc1f160-5f6f-4852-8f82-02fda7b5a55e" modelElementPath="plannedEncounter2.serviceDeliveryLocation.telecom" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
     </elements>
+    <elements xmi:id="_cpwsQJ8UEeiJvszmx7V17A" businessElement="PlannedImmunizationContainer" modelElement="_HBoScKZREeSy2PrVxD6riw" businessElementId="6f607c8f-6a1a-4a8c-b0c7-827f3add8d39" modelElementPath="plannedImmunizationActivity"/>
     <elements xmi:id="_JslKUJD2EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationTargetSiteCode" businessElementId="24487e1b-a751-4798-8c1a-28ec1cf5d998" modelElementPath="plannedImmunizationActivity.approachSiteCode" condition="">
       <modelElement xmi:type="uml:Property" href="consol-immunizations.uml#_romowJXFEeOgXcDbh8Igkw"/>
     </elements>
@@ -4680,9 +4683,11 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </elements>
     <elements xmi:id="_HYf_MOW2Eeer-K67prB3IQ" businessElement="PlannedProcedureTargetSiteCode" modelElement="_ZRSmoOd8EeOqBOMhgDlycQ" businessElementId="fda98fa8-924d-4168-bc54-cd1effdaee63" modelElementPath="plannedObservation2.targetSiteCode"/>
     <elements xmi:id="_AKI7EOW2Eeer-K67prB3IQ" businessElement="PlannedProcedureValueCode" modelElement="_TTgPAOd7EeOqBOMhgDlycQ" businessElementId="c2a9e364-0b01-41a1-a74b-3e7757ed59fb" modelElementPath="plannedObservation2.value.CD" condition=""/>
+    <elements xmi:id="_jyhesJ8UEeiJvszmx7V17A" businessElement="PlannedProcedureContainer" modelElement="_ppoY4P43EeO_Yb9cO8w3bA" businessElementId="d4dc260a-a3b7-40cc-8c5b-d07c0d3d7928" modelElementPath="plannedProcedure2"/>
     <elements xmi:id="_jhiQAJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityDateTime" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="92ecf199-3a4a-4741-ab2e-a14eb4f16754" modelElementPath="plannedProcedure2.PriorityPreference.effectiveTime" condition=""/>
     <elements xmi:id="_cSf2cJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="549d4724-90fb-4a38-b09e-0ba8bf3dce12" modelElementPath="plannedProcedure2.PriorityPreference.id" condition=""/>
     <elements xmi:id="_mnOOkJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="c58f54b2-042a-4507-a47f-459dc4d50836" modelElementPath="plannedProcedure2.PriorityPreference.value.CD" condition=""/>
+    <elements xmi:id="_N6-joJ8UEeiJvszmx7V17A" businessElement="PlannedProcedureAuthor" modelElement="_03TI0OgKEeO-iJTuAv7BKQ" businessElementId="8e8c9cec-3784-4512-ac5e-017ec31ff383" modelElementPath="plannedProcedure2.author"/>
     <elements xmi:id="_wrPbwJBQEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorName" businessElementId="4c73c8bd-b469-48d6-8395-8397e8ff77f3" modelElementPath="plannedProcedure2.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
