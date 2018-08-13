@@ -4522,7 +4522,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </elements>
     <elements xmi:id="_xXipAJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityDateTime" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="07633c33-133f-4585-9354-3f06a861abc6" modelElementPath="plannedEncounter2.priorityPreference.effectiveTime" condition=""/>
     <elements xmi:id="_mksKcJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="dab076cd-9eec-4474-9ee2-4216a3709410" modelElementPath="plannedEncounter2.priorityPreference.id" condition=""/>
-    <elements xmi:id="_0Lc7EJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="21771c66-64cc-429a-854e-84edd19301c6" modelElementPath="plannedEncounter2.priorityPreference.value" condition=""/>
+    <elements xmi:id="_0Lc7EJC8EeeyTtReSNa24w" businessElement="PlannedEncounterPriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="21771c66-64cc-429a-854e-84edd19301c6" modelElementPath="plannedEncounter2.priorityPreference.value.CD" condition=""/>
     <elements xmi:id="_PrY3cJC8EeeyTtReSNa24w" businessElement="PlannedEncounterServiceLocationAddress" businessElementId="3f3043ad-ed0b-4ef9-b429-2e2a32428a4c" modelElementPath="plannedEncounter2.serviceDeliveryLocation.addr" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_nD7_0B-YEeGtfPlBCjHWkw"/>
     </elements>
@@ -4553,13 +4553,13 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <elements xmi:id="_QOPEAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationReasonID" businessElementId="718c046d-9da8-4925-9238-d57ad6bbc06d" modelElementPath="plannedImmunizationActivity.indication2.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
     </elements>
-    <elements xmi:id="_YIhaAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPriorityValueCode" businessElementId="0af390ba-60f2-4506-97ce-3aa73c3e78ff" modelElementPath="plannedImmunizationActivity.indication2.value" condition="">
+    <elements xmi:id="_YIhaAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPriorityValueCode" businessElementId="0af390ba-60f2-4506-97ce-3aa73c3e78ff" modelElementPath="plannedImmunizationActivity.indication2.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
     </elements>
     <elements xmi:id="_gpdgUJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationInstructionTypeCode" businessElementId="1c1c708a-6127-486a-986d-6c0ee1700606" modelElementPath="plannedImmunizationActivity.instruction2.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
     </elements>
-    <elements xmi:id="_AGIYAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPreconditionValueCode" businessElementId="aef808ab-1a78-4806-9bfe-942f295bc8e2" modelElementPath="plannedImmunizationActivity.precondition.preconditionForSubstanceAdministration2.value" condition="">
+    <elements xmi:id="_AGIYAJD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPreconditionValueCode" businessElementId="aef808ab-1a78-4806-9bfe-942f295bc8e2" modelElementPath="plannedImmunizationActivity.precondition.preconditionForSubstanceAdministration2.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-medications.uml#_2fqgUDhEEeS1WeMhbm6GZw"/>
     </elements>
     <elements xmi:id="_Ef8Q4JD3EeeIi7uW0LCuQQ" businessElement="PlannedImmunizationPriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="49a2dda0-34ed-4c3b-bc48-b7a54784cd6f" modelElementPath="plannedImmunizationActivity.priorityPreference.id" condition=""/>
@@ -4596,7 +4596,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </elements>
     <elements xmi:id="_o-fsIOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePriorityDateTime" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="92ecf199-3a4a-4741-ab2e-a14eb4f16754" modelElementPath="plannedObservation2.PriorityPreference.effectiveTime"/>
     <elements xmi:id="_jQb9IOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="549d4724-90fb-4a38-b09e-0ba8bf3dce12" modelElementPath="plannedObservation2.PriorityPreference.id"/>
-    <elements xmi:id="_mSicMOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="c58f54b2-042a-4507-a47f-459dc4d50836" modelElementPath="plannedObservation2.PriorityPreference.value"/>
+    <elements xmi:id="_mSicMOW7EeeXlaU2h5RKiQ" businessElement="PlannedProcedurePriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="c58f54b2-042a-4507-a47f-459dc4d50836" modelElementPath="plannedObservation2.PriorityPreference.value.CD"/>
     <elements xmi:id="_ceQUIOW6EeeXlaU2h5RKiQ" businessElement="PlannedProcedureAuthorName" businessElementId="4c73c8bd-b469-48d6-8395-8397e8ff77f3" modelElementPath="plannedObservation2.author.assignedAuthor.assignedPerson.name">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
@@ -4635,7 +4635,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <elements xmi:id="_iVKVwOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureReasonID" businessElementId="dd4a18a4-1e32-409e-9667-3b1249ab3a8e" modelElementPath="plannedObservation2.indication2.id">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
     </elements>
-    <elements xmi:id="_nffFkOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureReasonValueCode" businessElementId="9d046416-46a8-467b-8d39-4f4d2d0833c6" modelElementPath="plannedObservation2.indication2.value">
+    <elements xmi:id="_nffFkOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureReasonValueCode" businessElementId="9d046416-46a8-467b-8d39-4f4d2d0833c6" modelElementPath="plannedObservation2.indication2.value.CD">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
     </elements>
     <elements xmi:id="_w3IxcOW9EeefYpeaFpZmtQ" businessElement="PlannedProcedureInstructionTypeCode" businessElementId="7e9f8239-1d49-4b15-b740-0dbcfb9eef1e" modelElementPath="plannedObservation2.instruction2.code">
@@ -4682,7 +4682,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <elements xmi:id="_AKI7EOW2Eeer-K67prB3IQ" businessElement="PlannedProcedureValueCode" modelElement="_TTgPAOd7EeOqBOMhgDlycQ" businessElementId="c2a9e364-0b01-41a1-a74b-3e7757ed59fb" modelElementPath="plannedObservation2.value.CD" condition=""/>
     <elements xmi:id="_jhiQAJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityDateTime" modelElement="_CWg-oADcEeWNGdLwd_3YGQ" businessElementId="92ecf199-3a4a-4741-ab2e-a14eb4f16754" modelElementPath="plannedProcedure2.PriorityPreference.effectiveTime" condition=""/>
     <elements xmi:id="_cSf2cJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityID" modelElement="_vwcyIpmaEeOLJeQez13EkQ" businessElementId="549d4724-90fb-4a38-b09e-0ba8bf3dce12" modelElementPath="plannedProcedure2.PriorityPreference.id" condition=""/>
-    <elements xmi:id="_mnOOkJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="c58f54b2-042a-4507-a47f-459dc4d50836" modelElementPath="plannedProcedure2.PriorityPreference.value" condition=""/>
+    <elements xmi:id="_mnOOkJBPEeeUP_iWlufZpQ" businessElement="PlannedProcedurePriorityValueCode" modelElement="_vwdZNJmaEeOLJeQez13EkQ" businessElementId="c58f54b2-042a-4507-a47f-459dc4d50836" modelElementPath="plannedProcedure2.PriorityPreference.value.CD" condition=""/>
     <elements xmi:id="_wrPbwJBQEeeUP_iWlufZpQ" businessElement="PlannedProcedureAuthorName" businessElementId="4c73c8bd-b469-48d6-8395-8397e8ff77f3" modelElementPath="plannedProcedure2.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
@@ -4717,11 +4717,10 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <elements xmi:id="_WzRGQJBSEeeUP_iWlufZpQ" businessElement="PlannedProcedureReasonID" businessElementId="dd4a18a4-1e32-409e-9667-3b1249ab3a8e" modelElementPath="plannedProcedure2.indication2.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_b5IbkOHqEeO04sHNODkHmQ"/>
     </elements>
-    <elements xmi:id="_ThGK4JBSEeeUP_iWlufZpQ" businessElement="PlannedProcedureReasonValueCode" businessElementId="9d046416-46a8-467b-8d39-4f4d2d0833c6" modelElementPath="plannedProcedure2.indication2.value" condition="">
+    <elements xmi:id="_ThGK4JBSEeeUP_iWlufZpQ" businessElement="PlannedProcedureReasonValueCode" businessElementId="9d046416-46a8-467b-8d39-4f4d2d0833c6" modelElementPath="plannedProcedure2.indication2.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_zCqi8OHqEeO04sHNODkHmQ"/>
     </elements>
     <elements xmi:id="_yCaU8JBOEeeUP_iWlufZpQ" businessElement="PlannedProcedureMethodCode" modelElement="_jf8c4OeFEeOqBOMhgDlycQ" businessElementId="04f41798-5d31-4e14-9bf1-3503a722c78f" modelElementPath="plannedProcedure2.methodCode" condition=""/>
-    <elements xmi:id="_7mtY4JBSEeeUP_iWlufZpQ" businessElement="PlannedProcedurePerformerName" modelElement="_eviAcOgKEeO-iJTuAv7BKQ" businessElementId="9abfc5ec-fa2b-428b-b2a2-46b1a8a85cb9" modelElementPath="plannedProcedure2.performer" condition=""/>
     <elements xmi:id="_TXBzcJBTEeeUP_iWlufZpQ" businessElement="PlannedProcedurePerformerName" businessElementId="9abfc5ec-fa2b-428b-b2a2-46b1a8a85cb9" modelElementPath="plannedProcedure2.performer.assignedEntity.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
     </elements>
