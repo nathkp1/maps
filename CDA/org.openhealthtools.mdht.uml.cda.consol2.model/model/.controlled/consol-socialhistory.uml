@@ -1064,10 +1064,11 @@ The effectiveTime element is used to describe dates associated with the patient'
     <ownedAttribute xmi:id="_gpOQMPMyEeOUvapeh9bVvQ" name="code" visibility="private" aggregation="composite" redefinedProperty="_kh9tUOWQEeGKmvzED_He2w">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_P0E4APMyEeOUvapeh9bVvQ" name="effectiveTime" visibility="private" type="_fE3sEPMzEeOUvapeh9bVvQ" aggregation="composite" redefinedProperty="_kh-UYOWQEeGKmvzED_He2w">
+    <ownedAttribute xmi:id="_P0E4APMyEeOUvapeh9bVvQ" name="effectiveTime" visibility="private" aggregation="composite" redefinedProperty="_kh-UYOWQEeGKmvzED_He2w">
       <ownedComment xmi:id="_WhJ0APMyEeOUvapeh9bVvQ">
         <body>Note: The effectiveTime represents the biologically relevant time of the observation. Thus, an observation of &quot;former smoker&quot; will have an effectiveTime defining the time during which the patient has been a former smoker; an observation of &quot;current smoker&quot; will have an effectiveTime defining the time during which the patient has been a current smoker.</body>
       </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P0E4AvMyEeOUvapeh9bVvQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P0E4AfMyEeOUvapeh9bVvQ" value="1"/>
     </ownedAttribute>
@@ -1313,7 +1314,7 @@ The effectiveTime element is used to describe dates associated with the patient'
     <elements xmi:id="_6pliILKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationID" modelElement="_-9hYUKzCEeSB84STE1Ny6A" businessElementId="6642fc6a-768d-4c7f-9f3c-5bdce9b606f8" modelElementPath="currentSmokingStatus2.id" condition=""/>
     <elements xmi:id="_8VseoLKoEeeyLJp8BPm4pw" businessElement="SmokingStatusObservationValueCode" modelElement="_zeAVcLm5EeOgPNzo_e4B9A" businessElementId="aadeabc0-625a-450e-9400-cdc85debf531" modelElementPath="currentSmokingStatus2.value.CD" condition=""/>
     <elements xmi:id="_GjwqkLKoEeeiIJcANpZ7qA" businessElement="SocialHistoryObservationContainer" modelElement="_1CAh8AFOEeSG_MJH-zNFRw" businessElementId="07861e9b-b6a3-4b37-a8b1-39fb418d7390" modelElementPath="socialHistoryObservation2" condition=""/>
-    <elements xmi:id="_KoUDkJ8VEeiJvszmx7V17A" businessElement="SocialHistoryObservationAuthorContainer" modelElement="_1NrXUPJkEeO2NaSiicarcg" businessElementId="d32e737e-b0ec-47ac-b477-b9e9d6b7d0fd" modelElementPath="socialHistoryObservation2.author"/>
+    <elements xmi:id="_KoUDkJ8VEeiJvszmx7V17A" businessElement="SocialHistoryObservationAuthorContainer" modelElement="_1NrXUPJkEeO2NaSiicarcg" businessElementId="d32e737e-b0ec-47ac-b477-b9e9d6b7d0fd" modelElementPath="socialHistoryObservation2.author" condition=""/>
     <elements xmi:id="_wD4HsLKoEeeyLJp8BPm4pw" businessElement="SocialHistoryObservationAuthorName" businessElementId="4576a76c-a5ed-4449-ba65-2f6977e0c607" modelElementPath="socialHistoryObservation2.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
@@ -1330,7 +1331,7 @@ The effectiveTime element is used to describe dates associated with the patient'
     <elements xmi:id="_Fkh_oEmtEei1GK3IhTP0Dw" businessElement="SocialHistorySectionNotes" modelElement="_2JNy0BSVEeGGzu7fmW9pXw" businessElementId="188dd32c-ce3c-47bb-a722-03c046ff6f1a" modelElementPath="text" condition=""/>
     <elements xmi:id="_EQvcgEmtEei1GK3IhTP0Dw" businessElement="SocialHistorySectionTitleText" modelElement="_2JNLwBSVEeGGzu7fmW9pXw" businessElementId="221f8203-b7be-4f4a-ad5e-0031962a74a5" modelElementPath="title" condition=""/>
     <elements xmi:id="_DpUdQLKpEeeyLJp8BPm4pw" businessElement="TobaccoUseObservationContainer" modelElement="_o-mlAAFPEeSG_MJH-zNFRw" businessElementId="b7a76875-d581-4a89-b0fb-57f9471c0475" modelElementPath="tobaccoUse2" condition=""/>
-    <elements xmi:id="_DlXioLKvEeeDzNrZe4KwYA" businessElement="TobaccoUseObservationEndDateTime" modelElement="_P0E4APMyEeOUvapeh9bVvQ" businessElementId="6d06653d-5dee-4f8b-a60a-57779fd207ee" modelElementPath="tobaccoUse2.effectiveTime" condition=""/>
+    <elements xmi:id="_DlXioLKvEeeDzNrZe4KwYA" businessElement="TobaccoUseObservationEndDateTime" modelElement="_P0E4APMyEeOUvapeh9bVvQ" businessElementId="6d06653d-5dee-4f8b-a60a-57779fd207ee" modelElementPath="tobaccoUse2.effectiveTime.high" condition=""/>
     <elements xmi:id="_Enj_cLKvEeeDzNrZe4KwYA" businessElement="TobaccoUseObservationStartDateTime" modelElement="_P0E4APMyEeOUvapeh9bVvQ" businessElementId="c1193027-bef2-4d8c-9840-665de65fddb6" modelElementPath="tobaccoUse2.effectiveTime.low" condition=""/>
     <elements xmi:id="_APKb0LKvEeeDzNrZe4KwYA" businessElement="TobaccoUseObservationID" modelElement="_1XI8AM80EeSJsu9BbhWxmQ" businessElementId="f61eac91-b8e5-4e58-99cd-e9cdd83049c5" modelElementPath="tobaccoUse2.id" condition=""/>
   </MDMI:MDMIMapping>
