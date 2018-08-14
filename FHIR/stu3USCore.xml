@@ -1,0 +1,14 @@
+<project name="stu3USCore" default="stu3USCore"
+	xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+
+	<target name="stu3USCore">
+		<ant antfile="stu3USCoreCarePlan.xml" />
+		<ant antfile="stu3USCoreImmunizations.xml" />
+		<ant antfile="stu3USCoreObservations.xml" />
+		<ant antfile="stu3USCoreProcedures.xml" />
+		<ant antfile="stu3USCoreVitals.xml" />		
+		<ant antfile="stu3USCoreDiagnosticReports.xml" />	
+		<ant antfile="stu3USCoreMedications.xml" />		
+	</target>
+
+</project>

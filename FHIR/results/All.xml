@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Generated using MDMI 0.5.0-SNAPSHOT  2018-08-14 13:11--><Bundle>
+   <entry>
+      <resource>
+         <Observation>
+            <identifier>
+               <system value="VitalSignResultID.system.value"/>
+               <value value="VitalSignResultID.value.value"/>
+            </identifier>
+            <status value="VitalSignResultStatusCode.value"/>
+            <category>
+               <coding>
+                  <code value="VitalSignResultTypeCode.coding.code.value">
+                     <coding>
+                        <code value="VitalSignResultValueCode.coding.code.value"/>
+                        <display value="VitalSignResultValueCode.coding.display.value"/>
+                        <system value="VitalSignResultValueCode.coding.system.value"/>
+                     </coding>
+                     <text value="VitalSignResultValueCode.coding.display.value"/>
+                  </code>
+                  <display value="VitalSignResultTypeCode.coding.display.value"/>
+                  <system value="VitalSignResultTypeCode.coding.system.value"/>
+               </coding>
+               <text value="VitalSignResultTypeCode.coding.display.value"/>
+            </category>
+            <effectiveDateTime value="VitalSignResultStartDateTime.value"/>
+            <issued value="VitalSignResultPublishedDateTime.value"/>
+            <valueQuantity>
+               <unit value="VitalSignResultValueUnitMeasure.unit.value"/>
+               <value value="VitalSignResultValueUnitMeasure.value.value"/>
+            </valueQuantity>
+            <dataAbsentReason>
+               <coding>
+                  <code value="VitalSignResultDataAbsentReasonCode.coding.code.value"/>
+                  <display value="VitalSignResultDataAbsentReasonCode.coding.display.value"/>
+                  <system value="VitalSignResultDataAbsentReasonCode.coding.system.value"/>
+               </coding>
+               <text value="VitalSignResultDataAbsentReasonCode.coding.display.value"/>
+            </dataAbsentReason>
+            <interpretation>
+               <coding>
+                  <code value="VitalSignResultIntepretationCode.coding.code.value"/>
+                  <display value="VitalSignResultIntepretationCode.coding.display.value"/>
+                  <system value="VitalSignResultIntepretationCode.coding.system.value"/>
+               </coding>
+               <text value="VitalSignResultIntepretationCode.coding.display.value"/>
+            </interpretation>
+            <comment value="VitalSignResultNotes.value"/>
+            <bodySite>
+               <coding>
+                  <code value="VitalSignResultBodySiteCode.coding.code.value"/>
+                  <display value="VitalSignResultBodySiteCode.coding.display.value"/>
+                  <system value="VitalSignResultBodySiteCode.coding.system.value"/>
+               </coding>
+               <text value="VitalSignResultBodySiteCode.coding.display.value"/>
+            </bodySite>
+            <method>
+               <coding>
+                  <code value="VitalSignResultMethodCode.coding.code.value"/>
+                  <display value="VitalSignResultMethodCode.coding.display.value"/>
+                  <system value="VitalSignResultMethodCode.coding.system.value"/>
+               </coding>
+               <text value="VitalSignResultMethodCode.coding.display.value"/>
+            </method>
+         </Observation>
+      </resource>
+   </entry>
+</Bundle>
