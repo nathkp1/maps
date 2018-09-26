@@ -1133,6 +1133,11 @@ Many systems display the nested Problem Observation with the most recent author 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgl8ce0BEeOnE-G4kptBiw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mgl8cu0BEeOnE-G4kptBiw" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_GV9RgL2pEeiuxMZuB2vM9w" name="id1" visibility="private" subsettedProperty="_2H-csxSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GV9Rgb2pEeiuxMZuB2vM9w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GV9Rgr2pEeiuxMZuB2vM9w" value="*"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_1-Y8cOzbEeOnE-G4kptBiw" base_Class="_y5C8IOzbEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.3" templateVersion="2015-08-01">
     <ruleId>CONF:1198-16772</ruleId>
@@ -1763,10 +1768,10 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_hK76AJv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationIDCode" businessElementId="7dd9f11b-3e3f-4724-b09b-f4f357a2a51c" modelElementPath="healthConcernAct.functionalStatusObservation2.code" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_wts7AMzTEeO93sHu8pHB2g"/>
     </elements>
-    <elements xmi:id="_vs02IJv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationStartDateTime" businessElementId="948d6d60-8f15-426a-95e3-6a81172f3609" modelElementPath="healthConcernAct.functionalStatusObservation2.effectiveTime.low" condition="">
+    <elements xmi:id="_3Pc6EJv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationEndDateTime" businessElementId="db50b1a8-6255-4ec2-9c94-cacc4dac38b1" modelElementPath="healthConcernAct.functionalStatusObservation2.effectiveTime.high" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_nm5IhebxEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_3Pc6EJv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationEndDateTime" businessElementId="db50b1a8-6255-4ec2-9c94-cacc4dac38b1" modelElementPath="healthConcernAct.functionalStatusObservation2.effectiveTime.high" condition="">
+    <elements xmi:id="_vs02IJv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationStartDateTime" businessElementId="948d6d60-8f15-426a-95e3-6a81172f3609" modelElementPath="healthConcernAct.functionalStatusObservation2.effectiveTime.low" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_nm5IhebxEeGINOJ_SD9_dA"/>
     </elements>
     <elements xmi:id="_5jvQ4Jv2EeiGZ4d9q65lpg" businessElement="ConcernFunctionalStatusObservationMethodCode" businessElementId="5ea796e8-ee4d-461c-bbb2-e1d2b135da44" modelElementPath="healthConcernAct.functionalStatusObservation2.methodCode" condition="">
@@ -2996,6 +3001,9 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_25lSoBKMEeiv6-TWHg8WLg" businessElement="RiskSocialHistoryObservationValueCode" businessElementId="f2372411-2785-41f2-ad4b-6257e41b9ecf" modelElementPath="riskConcernAct.socialHistoryObservation2.value.CD" condition="">
       <modelElement xmi:type="uml:Property" href="consol-socialhistory.uml#_f0hlQPJgEeO2NaSiicarcg"/>
     </elements>
+    <elements xmi:id="_ylS0AMGFEeitj5_kQQcaRQ" businessElement="RiskMitigationText" businessElementId="71cde8c1-9a15-4d8c-8863-94b0f8e4f218" modelElementPath="riskConcernAct.text">
+      <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_ZrHhwMD-Eeitj5_kQQcaRQ"/>
+    </elements>
     <elements xmi:id="_TtxdcBKSEeiqV4jCmoTtJQ" businessElement="RiskTobaccoUseObservationContainer" businessElementId="6299748b-4e29-40f3-b79e-a2f7a5658642" modelElementPath="riskConcernAct.tobaccoUse2" condition="">
       <modelElement xmi:type="uml:Association" href="consol-planofcare.uml#_6lhiAOOkEeS_XOr-dz_KWA"/>
     </elements>
@@ -3079,6 +3087,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     </elements>
     <elements xmi:id="_w4G_MBveEeizVY7VIHKqXw" businessElement="ProblemConditionOnsetDateTime" modelElement="_EZInYOzfEeOnE-G4kptBiw" businessElementId="9ff65a76-3d51-47c9-b2f0-518080214f3c" modelElementPath="problemConcernAct2.effectiveTime.high" condition=""/>
     <elements xmi:id="_t8m3YBveEeizVY7VIHKqXw" businessElement="ProblemConditionStartTime" modelElement="_EZInYOzfEeOnE-G4kptBiw" businessElementId="6415a267-564c-400e-8952-aa956c71809f" modelElementPath="problemConcernAct2.effectiveTime.low" condition=""/>
+    <elements xmi:id="_JKCisL2pEeiuxMZuB2vM9w" businessElement="ProblemConditionID" modelElement="_GV9RgL2pEeiuxMZuB2vM9w" businessElementId="f25c86b1-9a42-45b8-9965-6246b78472ff" modelElementPath="problemConcernAct2.id1"/>
     <elements xmi:id="_FPh20PlaEeeQHKhSbaB4zg" businessElement="ProblemConditionPriorityContainer" modelElement="_mgnKkO0BEeOnE-G4kptBiw" businessElementId="2019d4fe-bbb0-4927-a34a-e224dcbfa9f5" modelElementPath="problemConcernAct2.priorityPreference" condition=""/>
     <elements xmi:id="_2QN2EM3vEeeif6yto2VSrA" businessElement="ProblemConditionPriorityDateTime" businessElementId="924f0dc7-6b0c-466c-a4be-dc54b34012d2" modelElementPath="problemConcernAct2.priorityPreference.effectiveTime.low" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_CWg-oADcEeWNGdLwd_3YGQ"/>
@@ -3158,4 +3167,7 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <elements xmi:id="_hXPsIBDXEeiUsoouH77Mww" businessElement="ProblemSectionNotes" modelElement="_szXagALYEeSyydFGYJajGA" businessElementId="d33c1f71-efbd-40f0-9ff9-53e8914a40f9" modelElementPath="text" condition=""/>
     <elements xmi:id="_AywQwBDYEeiZ84ZP9SDlmQ" businessElement="ProblemSectionTitleText" modelElement="_szXahALYEeSyydFGYJajGA" businessElementId="bd9919bb-d1a9-4200-acf8-a5e4ed443f8d" modelElementPath="title" condition=""/>
   </MDMI:MDMIMapping>
+  <CDA:PropertyValidation xmi:id="_GWD_ML2pEeiuxMZuB2vM9w" base_Property="_GV9RgL2pEeiuxMZuB2vM9w">
+    <ruleId>CONF:9026, R2.1=CONF:1198-9026</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
