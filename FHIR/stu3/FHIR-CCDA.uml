@@ -27543,80 +27543,141 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   <fhir:ShortDescription xmi:id="_8j5vIM3tEeahpd1P9sS4xg" base_Comment="_8j5IHc3tEeahpd1P9sS4xg"/>
   <fhir:Definition xmi:id="_8j5vIs3tEeahpd1P9sS4xg" base_Comment="_8j5vIc3tEeahpd1P9sS4xg"/>
   <MDMI:MDMIMapping xmi:id="_en4WMCgUEeeMR4_BVmg6Og" base_Class="_7FPYwc3tEeahpd1P9sS4xg">
-    <elements xmi:id="_Cj_6MPiVEeeb-vdDOk6Uvw" businessElement="DocumentContainer" modelElement="_7FPYwc3tEeahpd1P9sS4xg" businessElementId="2fdd4cc0-f00f-4bd8-af66-36ed83874811" modelElementPath=""/>
+    <elements xmi:id="_Cj_6MPiVEeeb-vdDOk6Uvw" businessElement="DocumentContainer" modelElement="_7FPYwc3tEeahpd1P9sS4xg" businessElementId="2fdd4cc0-f00f-4bd8-af66-36ed83874811" modelElementPath="" condition=""/>
     <elements xmi:id="_91FowOc1EeeRfYnha8AF3g" businessElement="AdvanceDirectivesSectionContainer" modelElement="_7L9Ewc3tEeahpd1P9sS4xg" businessElementId="3419e565-0cf4-4223-bbb9-3c1855a08e91" modelElementPath="advancedDirectives" condition=""/>
-    <elements xmi:id="__4e_oEmoEeisH73RH3paIw" businessElement="AdvanceDirectiveSectionIDCode" modelElement="_7L-S483tEeahpd1P9sS4xg" businessElementId="07eb0b8d-9539-4e26-963c-03ac57857c66" modelElementPath="advancedDirectives.code"/>
-    <elements xmi:id="_31nIoEmYEeiZbcweEKObEA" businessElement="AdvanceDirectiveObservationII" businessElementId="430e74f5-0f98-4cd8-9581-7b11151771d2" modelElementPath="advancedDirectives.entry.id">
+    <elements xmi:id="__4e_oEmoEeisH73RH3paIw" businessElement="AdvanceDirectiveSectionIDCode" modelElement="_7L-S483tEeahpd1P9sS4xg" businessElementId="07eb0b8d-9539-4e26-963c-03ac57857c66" modelElementPath="advancedDirectives.code" condition=""/>
+    <elements xmi:id="_31nIoEmYEeiZbcweEKObEA" businessElement="AdvanceDirectiveObservationII" businessElementId="430e74f5-0f98-4cd8-9581-7b11151771d2" modelElementPath="advancedDirectives.entry.id" condition="">
       <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
     </elements>
-    <elements xmi:id="_CXQvMEmpEeisH73RH3paIw" businessElement="AdvanceDirectivesSectionNotes" modelElement="_7L-59M3tEeahpd1P9sS4xg" businessElementId="effb6e62-fed7-42d9-b571-886b4b6b3ae0" modelElementPath="advancedDirectives.text"/>
-    <elements xmi:id="_98LrAEmoEeisH73RH3paIw" businessElement="AdvanceDirectiveSectionTitleText" modelElement="_7L9r0M3tEeahpd1P9sS4xg" businessElementId="ae676335-517e-4469-842f-b22996b0177a" modelElementPath="advancedDirectives.title"/>
+    <elements xmi:id="_CXQvMEmpEeisH73RH3paIw" businessElement="AdvanceDirectivesSectionNotes" modelElement="_7L-59M3tEeahpd1P9sS4xg" businessElementId="effb6e62-fed7-42d9-b571-886b4b6b3ae0" modelElementPath="advancedDirectives.text" condition=""/>
+    <elements xmi:id="_98LrAEmoEeisH73RH3paIw" businessElement="AdvanceDirectiveSectionTitleText" modelElement="_7L9r0M3tEeahpd1P9sS4xg" businessElementId="ae676335-517e-4469-842f-b22996b0177a" modelElementPath="advancedDirectives.title" condition=""/>
     <elements xmi:id="_xa620OckEeeL_I9T85C26Q" businessElement="AllergySectionContainer" modelElement="_7LrX9c3tEeahpd1P9sS4xg" businessElementId="a2df7ff3-1a9b-4e83-8b14-3a3d9e92970b" modelElementPath="allergies" condition=""/>
-    <elements xmi:id="_o8ah8EmnEeipyJdBzC4dig" businessElement="AllergySectionIDCode" modelElement="_7LtNIM3tEeahpd1P9sS4xg" businessElementId="62c224fc-1a37-4638-b155-fb420d5909f2" modelElementPath="allergies.code"/>
-    <elements xmi:id="_r2OOwPSDEeeCr4sW4znF_Q" businessElement="AllergySectionNotes" modelElement="_7LtNKM3tEeahpd1P9sS4xg" businessElementId="c3d121c5-eb50-40fe-b72e-a4c342d901e6" modelElementPath="allergies.text"/>
-    <elements xmi:id="_nAExEEmnEeipyJdBzC4dig" businessElement="AllergySectionTitleText" modelElement="_7LsmEM3tEeahpd1P9sS4xg" businessElementId="5a32df40-b523-4dd9-97d3-a0eb47944dcf" modelElementPath="allergies.title"/>
+    <elements xmi:id="_tduvkLp6EeiHb5a8zYQRGQ" businessElement="AllergyObservationSubstanceCode" modelElement="_7LtNIM3tEeahpd1P9sS4xg" businessElementId="a14fdf6b-cab0-434c-9e67-827e6261cb72" modelElementPath="allergies.code"/>
+    <elements xmi:id="_r2OOwPSDEeeCr4sW4znF_Q" businessElement="AllergySectionNotes" modelElement="_7LtNKM3tEeahpd1P9sS4xg" businessElementId="c3d121c5-eb50-40fe-b72e-a4c342d901e6" modelElementPath="allergies.text" condition=""/>
+    <elements xmi:id="_nAExEEmnEeipyJdBzC4dig" businessElement="AllergySectionTitleText" modelElement="_7LsmEM3tEeahpd1P9sS4xg" businessElementId="5a32df40-b523-4dd9-97d3-a0eb47944dcf" modelElementPath="allergies.title" condition=""/>
+    <elements xmi:id="_hQnrwLp1EeiHb5a8zYQRGQ" businessElement="DocumentAuthorContainer" modelElement="_7LgY1M3tEeahpd1P9sS4xg" businessElementId="38e02314-1ad3-4af5-89cb-3b0b17f7760b" modelElementPath="author" condition=""/>
+    <elements xmi:id="_jBwSMLp1EeiHb5a8zYQRGQ" businessElement="DocumentAuthorID" businessElementId="6ce0a799-fced-485b-ad83-5ab049b51097" modelElementPath="author.id" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-Core.uml#_4a_RFMFMEea5pdrFDq-m2g"/>
+    </elements>
+    <elements xmi:id="_oFTroLp1EeiHb5a8zYQRGQ" businessElement="DocumentCustodianContainer" modelElement="_7LnGgc3tEeahpd1P9sS4xg" businessElementId="162490ee-28df-4653-a7f9-4af3f812bbc3" modelElementPath="custodian" condition=""/>
+    <elements xmi:id="_hYCJELp6EeiHb5a8zYQRGQ" businessElement="DocumentCustodianOrganizationAddress" businessElementId="21c0890f-4fec-4a68-89fe-0cbbaae6f311" modelElementPath="custodian.address" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZMfkM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_oWbUALp5EeiHb5a8zYQRGQ" businessElement="DocumentCustodianOrganizationID" businessElementId="c2248529-5f7c-4c58-833b-46f53e300145" modelElementPath="custodian.identifier" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZI1NM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_r7CqQLp5EeiHb5a8zYQRGQ" businessElement="DocumentCustodianOrganizationName" businessElementId="04a10feb-5ab3-4e83-9bf3-d1c158426d0a" modelElementPath="custodian.name" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZLRdM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_WY7XMLp6EeiHb5a8zYQRGQ" businessElement="DocumentCustodianOrganizationEmailContact" businessElementId="60751121-a001-4c8a-b237-7dcaf1450ef1" modelElementPath="custodian.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_YMpXkLp6EeiHb5a8zYQRGQ" businessElement="DocumentCustodianOrganizationFaxContact" businessElementId="68218c07-eb6e-4f71-a5ac-3810e0238c30" modelElementPath="custodian.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_aCmMkLp6EeiHb5a8zYQRGQ" businessElement="DocumentCustodianOrganizationPagerContact" businessElementId="98a4db18-97e4-4c80-98a5-efa57aff868d" modelElementPath="custodian.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_b76eoLp6EeiHb5a8zYQRGQ" businessElement="DocumentCustodianOrganizationPhone" businessElementId="f763e869-574b-458c-bbfe-fd4542492b86" modelElementPath="custodian.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_dquJ0Lp6EeiHb5a8zYQRGQ" businessElement="DocumentCustodianOrganizationSMSContact" businessElementId="f391917d-8286-410e-a322-ac2749a66a99" modelElementPath="custodian.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_fhKuELp6EeiHb5a8zYQRGQ" businessElement="DocumentCustodianOrganizationURLContact" businessElementId="1d1b15ee-a1d0-4d1b-bce7-1b36c7694944" modelElementPath="custodian.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BZL4gc3tEeahpd1P9sS4xg"/>
+    </elements>
     <elements xmi:id="__K6zQOc1EeeRfYnha8AF3g" businessElement="EncounterSectionContainer" modelElement="_7L_hBs3tEeahpd1P9sS4xg" businessElementId="649d9d71-423c-4821-b148-7a7ff2c465c8" modelElementPath="encounters" condition=""/>
-    <elements xmi:id="_LeuC8EmpEeisH73RH3paIw" businessElement="EncounterSectionIDCode" modelElement="_7MBWMM3tEeahpd1P9sS4xg" businessElementId="e4bef674-3d23-4912-82ac-2c4f142e9bc2" modelElementPath="encounters.code"/>
-    <elements xmi:id="_NNTEoEmpEeisH73RH3paIw" businessElement="EncounterSectionTitleText" modelElement="_7MBWOM3tEeahpd1P9sS4xg" businessElementId="f80137f3-cb1a-48e5-9e27-df94658fbf91" modelElementPath="encounters.text"/>
-    <elements xmi:id="_J3EvsEmpEeisH73RH3paIw" businessElement="EncounterSectionTitleText" modelElement="_7MAvIM3tEeahpd1P9sS4xg" businessElementId="f80137f3-cb1a-48e5-9e27-df94658fbf91" modelElementPath="encounters.title"/>
+    <elements xmi:id="_LeuC8EmpEeisH73RH3paIw" businessElement="EncounterSectionIDCode" modelElement="_7MBWMM3tEeahpd1P9sS4xg" businessElementId="e4bef674-3d23-4912-82ac-2c4f142e9bc2" modelElementPath="encounters.code" condition=""/>
+    <elements xmi:id="_NNTEoEmpEeisH73RH3paIw" businessElement="EncounterSectionTitleText" modelElement="_7MBWOM3tEeahpd1P9sS4xg" businessElementId="f80137f3-cb1a-48e5-9e27-df94658fbf91" modelElementPath="encounters.text" condition=""/>
+    <elements xmi:id="_J3EvsEmpEeisH73RH3paIw" businessElement="EncounterSectionTitleText" modelElement="_7MAvIM3tEeahpd1P9sS4xg" businessElementId="f80137f3-cb1a-48e5-9e27-df94658fbf91" modelElementPath="encounters.title" condition=""/>
+    <elements xmi:id="_OKszsLqJEeiHb5a8zYQRGQ" businessElement="DocumentDataEntererContainer" modelElement="_7FU4UM3tEeahpd1P9sS4xg" businessElementId="bb20adbc-e669-415f-baea-909bafa47a88" modelElementPath="extension_slice_pos2"/>
     <elements xmi:id="_AdICAOc2EeeRfYnha8AF3g" businessElement="FamilyHistorySectionContainer" modelElement="_7MCkUc3tEeahpd1P9sS4xg" businessElementId="7e48ac01-1752-48d5-99ce-867c8594d01a" modelElementPath="familyHistory" condition=""/>
-    <elements xmi:id="_RcK40EmpEeisH73RH3paIw" businessElement="FamilyHistorySectionIDCode" modelElement="_7MDycc3tEeahpd1P9sS4xg" businessElementId="f8650eda-f57b-4e5d-96ba-646b3b1c27ad" modelElementPath="familyHistory.code"/>
-    <elements xmi:id="_S-5P0EmpEeisH73RH3paIw" businessElement="FamilyHistorySectionNotes" modelElement="_7MEZgM3tEeahpd1P9sS4xg" businessElementId="ba3b6032-f091-49c3-8e30-afc09d257502" modelElementPath="familyHistory.text"/>
-    <elements xmi:id="_PpxuIEmpEeisH73RH3paIw" businessElement="FamilyHistorySectionTitleText" modelElement="_7MDLYM3tEeahpd1P9sS4xg" businessElementId="456b1037-f987-4456-9749-a6e3c4c930e0" modelElementPath="familyHistory.title"/>
+    <elements xmi:id="_RcK40EmpEeisH73RH3paIw" businessElement="FamilyHistorySectionIDCode" modelElement="_7MDycc3tEeahpd1P9sS4xg" businessElementId="f8650eda-f57b-4e5d-96ba-646b3b1c27ad" modelElementPath="familyHistory.code" condition=""/>
+    <elements xmi:id="_S-5P0EmpEeisH73RH3paIw" businessElement="FamilyHistorySectionNotes" modelElement="_7MEZgM3tEeahpd1P9sS4xg" businessElementId="ba3b6032-f091-49c3-8e30-afc09d257502" modelElementPath="familyHistory.text" condition=""/>
+    <elements xmi:id="_PpxuIEmpEeisH73RH3paIw" businessElement="FamilyHistorySectionTitleText" modelElement="_7MDLYM3tEeahpd1P9sS4xg" businessElementId="456b1037-f987-4456-9749-a6e3c4c930e0" modelElementPath="familyHistory.title" condition=""/>
     <elements xmi:id="_B_a7MOc2EeeRfYnha8AF3g" businessElement="FunctionalStatusSectionContainer" modelElement="_7MFAlM3tEeahpd1P9sS4xg" businessElementId="fd766bc7-febf-42ea-be92-2261b10a0e05" modelElementPath="functionalStatus" condition=""/>
-    <elements xmi:id="_rWGrQEmpEeitypWIkLHWkw" businessElement="FunctionalStatusSectionIDCode" modelElement="_7MGOtM3tEeahpd1P9sS4xg" businessElementId="6364f6ee-4f25-4b94-86ec-99bd957e0fbc" modelElementPath="functionalStatus.code"/>
-    <elements xmi:id="_tAaQ8EmpEeitypWIkLHWkw" businessElement="FunctionalStatusSectionNotes" modelElement="_7MG1w83tEeahpd1P9sS4xg" businessElementId="b3092720-8497-45d5-bd31-8f09a04a1581" modelElementPath="functionalStatus.text"/>
-    <elements xmi:id="_VEgRcEmpEeisH73RH3paIw" businessElement="FunctionalStatusSectionTitleText" modelElement="_7MFnos3tEeahpd1P9sS4xg" businessElementId="dd95715c-803c-4183-b764-f8c157b6be6e" modelElementPath="functionalStatus.title"/>
+    <elements xmi:id="_rWGrQEmpEeitypWIkLHWkw" businessElement="FunctionalStatusSectionIDCode" modelElement="_7MGOtM3tEeahpd1P9sS4xg" businessElementId="6364f6ee-4f25-4b94-86ec-99bd957e0fbc" modelElementPath="functionalStatus.code" condition=""/>
+    <elements xmi:id="_tAaQ8EmpEeitypWIkLHWkw" businessElement="FunctionalStatusSectionNotes" modelElement="_7MG1w83tEeahpd1P9sS4xg" businessElementId="b3092720-8497-45d5-bd31-8f09a04a1581" modelElementPath="functionalStatus.text" condition=""/>
+    <elements xmi:id="_VEgRcEmpEeisH73RH3paIw" businessElement="FunctionalStatusSectionTitleText" modelElement="_7MFnos3tEeahpd1P9sS4xg" businessElementId="dd95715c-803c-4183-b764-f8c157b6be6e" modelElementPath="functionalStatus.title" condition=""/>
     <elements xmi:id="_DZa0AOc2EeeRfYnha8AF3g" businessElement="ImmunizationSectionContainer" modelElement="_7MHc1M3tEeahpd1P9sS4xg" businessElementId="7c3e5413-220e-4bea-b672-a98ad8c931a8" modelElementPath="immunizations" condition=""/>
-    <elements xmi:id="_xAcX4EmpEeitypWIkLHWkw" businessElement="ImmunizationSectionIDCode" modelElement="_7MIq-M3tEeahpd1P9sS4xg" businessElementId="c24d7158-6c97-4ef6-8cde-228e7d7f5bd1" modelElementPath="immunizations.code"/>
-    <elements xmi:id="_ykb6MEmpEeitypWIkLHWkw" businessElement="ImmunizationSectionNotes" modelElement="_7MJSBM3tEeahpd1P9sS4xg" businessElementId="2dffde33-5f9f-42ea-82c0-0adf78bff617" modelElementPath="immunizations.text"/>
-    <elements xmi:id="_va3hMEmpEeitypWIkLHWkw" businessElement="ImmunizationSectionTitleText" modelElement="_7MIq8M3tEeahpd1P9sS4xg" businessElementId="0450032c-974c-4eb6-83f2-81c7450e0b2a" modelElementPath="immunizations.title"/>
-    <elements xmi:id="_Z0kRsEmqEeitypWIkLHWkw" businessElement="MedicalEquipmentSectionIDCode" modelElement="_7Mc0Ac3tEeahpd1P9sS4xg" businessElementId="b0463a89-9e2d-47f8-b674-8b0232f91ff2" modelElementPath="medicalEquipment.code"/>
-    <elements xmi:id="_bVXWEEmqEeitypWIkLHWkw" businessElement="MedicalEquipmentSectionTitleText" modelElement="_7MdbEM3tEeahpd1P9sS4xg" businessElementId="daa0782b-01b7-48d5-b939-1a3720729d4c" modelElementPath="medicalEquipment.text"/>
-    <elements xmi:id="_YDIwUEmqEeitypWIkLHWkw" businessElement="MedicalEquipmentSectionTitleText" modelElement="_7McM8M3tEeahpd1P9sS4xg" businessElementId="daa0782b-01b7-48d5-b939-1a3720729d4c" modelElementPath="medicalEquipment.title"/>
+    <elements xmi:id="_xAcX4EmpEeitypWIkLHWkw" businessElement="ImmunizationSectionIDCode" modelElement="_7MIq-M3tEeahpd1P9sS4xg" businessElementId="c24d7158-6c97-4ef6-8cde-228e7d7f5bd1" modelElementPath="immunizations.code" condition=""/>
+    <elements xmi:id="_ykb6MEmpEeitypWIkLHWkw" businessElement="ImmunizationSectionNotes" modelElement="_7MJSBM3tEeahpd1P9sS4xg" businessElementId="2dffde33-5f9f-42ea-82c0-0adf78bff617" modelElementPath="immunizations.text" condition=""/>
+    <elements xmi:id="_va3hMEmpEeitypWIkLHWkw" businessElement="ImmunizationSectionTitleText" modelElement="_7MIq8M3tEeahpd1P9sS4xg" businessElementId="0450032c-974c-4eb6-83f2-81c7450e0b2a" modelElementPath="immunizations.title" condition=""/>
+    <elements xmi:id="_Z0kRsEmqEeitypWIkLHWkw" businessElement="MedicalEquipmentSectionIDCode" modelElement="_7Mc0Ac3tEeahpd1P9sS4xg" businessElementId="b0463a89-9e2d-47f8-b674-8b0232f91ff2" modelElementPath="medicalEquipment.code" condition=""/>
+    <elements xmi:id="_bVXWEEmqEeitypWIkLHWkw" businessElement="MedicalEquipmentSectionTitleText" modelElement="_7MdbEM3tEeahpd1P9sS4xg" businessElementId="daa0782b-01b7-48d5-b939-1a3720729d4c" modelElementPath="medicalEquipment.text" condition=""/>
+    <elements xmi:id="_YDIwUEmqEeitypWIkLHWkw" businessElement="MedicalEquipmentSectionTitleText" modelElement="_7McM8M3tEeahpd1P9sS4xg" businessElementId="daa0782b-01b7-48d5-b939-1a3720729d4c" modelElementPath="medicalEquipment.title" condition=""/>
     <elements xmi:id="_0Y6pQOc1EeeRfYnha8AF3g" businessElement="MedicationSectionContainer" modelElement="_7LvCVM3tEeahpd1P9sS4xg" businessElementId="66b674e8-01c3-4eeb-8677-ef4c2636b555" modelElementPath="medications" condition=""/>
-    <elements xmi:id="_uFD2wEmnEeipyJdBzC4dig" businessElement="MedicationSectionIDCode" modelElement="_7LwQd83tEeahpd1P9sS4xg" businessElementId="0a81da94-8f2b-4316-9098-5b9b5df34c9d" modelElementPath="medications.code"/>
-    <elements xmi:id="_UnorYPVLEeeXFvpo0DYmrg" businessElement="ProblemSectionNotes" modelElement="_7Lw3hM3tEeahpd1P9sS4xg" businessElementId="d33c1f71-efbd-40f0-9ff9-53e8914a40f9" modelElementPath="medications.text"/>
-    <elements xmi:id="_ssEDgEmnEeipyJdBzC4dig" businessElement="MedicationSectionTitleText" modelElement="_7LvpZc3tEeahpd1P9sS4xg" businessElementId="2721de24-f159-4fb2-b620-70701db6568c" modelElementPath="medications.title"/>
-    <elements xmi:id="_aHjKkPIzEeekvM4lxDLwvg" businessElement="MentalStatusSection" modelElement="_7MNjdM3tEeahpd1P9sS4xg" businessElementId="48cc9c65-e6b5-46d9-bf9a-fa290a0c589f" modelElementPath="mentalStatus"/>
-    <elements xmi:id="_-kYeAEmpEeitypWIkLHWkw" businessElement="CognitiveStatusSectionIDCode" modelElement="_7MOxks3tEeahpd1P9sS4xg" businessElementId="d6b8c499-dd7c-4cb4-b4e7-a001b0dea91a" modelElementPath="mentalStatus.code"/>
-    <elements xmi:id="_AZ_70EmqEeitypWIkLHWkw" businessElement="CognitiveStatusSectionNotes" modelElement="_7MPYoM3tEeahpd1P9sS4xg" businessElementId="132f27da-f835-4e5e-badb-8eb3d61791be" modelElementPath="mentalStatus.text"/>
-    <elements xmi:id="_5vYd8EmpEeitypWIkLHWkw" businessElement="CognitiveStatusSectionTitleText" modelElement="_7MOKgM3tEeahpd1P9sS4xg" businessElementId="c7db336b-efb8-4353-94f9-dafca4516f37" modelElementPath="mentalStatus.title"/>
+    <elements xmi:id="_uFD2wEmnEeipyJdBzC4dig" businessElement="MedicationSectionIDCode" modelElement="_7LwQd83tEeahpd1P9sS4xg" businessElementId="0a81da94-8f2b-4316-9098-5b9b5df34c9d" modelElementPath="medications.code" condition=""/>
+    <elements xmi:id="_UnorYPVLEeeXFvpo0DYmrg" businessElement="ProblemSectionNotes" modelElement="_7Lw3hM3tEeahpd1P9sS4xg" businessElementId="d33c1f71-efbd-40f0-9ff9-53e8914a40f9" modelElementPath="medications.text" condition=""/>
+    <elements xmi:id="_ssEDgEmnEeipyJdBzC4dig" businessElement="MedicationSectionTitleText" modelElement="_7LvpZc3tEeahpd1P9sS4xg" businessElementId="2721de24-f159-4fb2-b620-70701db6568c" modelElementPath="medications.title" condition=""/>
+    <elements xmi:id="_aHjKkPIzEeekvM4lxDLwvg" businessElement="MentalStatusSection" modelElement="_7MNjdM3tEeahpd1P9sS4xg" businessElementId="48cc9c65-e6b5-46d9-bf9a-fa290a0c589f" modelElementPath="mentalStatus" condition=""/>
+    <elements xmi:id="_-kYeAEmpEeitypWIkLHWkw" businessElement="CognitiveStatusSectionIDCode" modelElement="_7MOxks3tEeahpd1P9sS4xg" businessElementId="d6b8c499-dd7c-4cb4-b4e7-a001b0dea91a" modelElementPath="mentalStatus.code" condition=""/>
+    <elements xmi:id="_AZ_70EmqEeitypWIkLHWkw" businessElement="CognitiveStatusSectionNotes" modelElement="_7MPYoM3tEeahpd1P9sS4xg" businessElementId="132f27da-f835-4e5e-badb-8eb3d61791be" modelElementPath="mentalStatus.text" condition=""/>
+    <elements xmi:id="_5vYd8EmpEeitypWIkLHWkw" businessElement="CognitiveStatusSectionTitleText" modelElement="_7MOKgM3tEeahpd1P9sS4xg" businessElementId="c7db336b-efb8-4353-94f9-dafca4516f37" modelElementPath="mentalStatus.title" condition=""/>
     <elements xmi:id="_Ewhw4Oc2EeeRfYnha8AF3g" businessElement="NutritionSectionContainer" modelElement="_7MLHMM3tEeahpd1P9sS4xg" businessElementId="18b3800c-34bb-4191-b709-612c4e63c16f" modelElementPath="nutrition" condition=""/>
-    <elements xmi:id="_2RVCsEmpEeitypWIkLHWkw" businessElement="NutritionSectionIDCode" modelElement="_7MMVUM3tEeahpd1P9sS4xg" businessElementId="ed6d9250-cebb-436c-8a1f-672092ae6272" modelElementPath="nutrition.code"/>
-    <elements xmi:id="_3gVMcEmpEeitypWIkLHWkw" businessElement="NutritionSectionNotes" modelElement="_7MMVWM3tEeahpd1P9sS4xg" businessElementId="0cf6df79-d88f-4fe3-a8e7-a50157563f44" modelElementPath="nutrition.text"/>
-    <elements xmi:id="_08FHAEmpEeitypWIkLHWkw" businessElement="NutritionSectionTitleText" modelElement="_7MLuQM3tEeahpd1P9sS4xg" businessElementId="519f0b94-8f0c-472f-ab90-b23d3cf65cc4" modelElementPath="nutrition.title"/>
-    <elements xmi:id="_U8YawEmqEeitypWIkLHWkw" businessElement="PayerSectionIDCode" modelElement="_7MaXwM3tEeahpd1P9sS4xg" businessElementId="cc37a75c-4060-4629-9d59-a402d88135eb" modelElementPath="payers.code"/>
-    <elements xmi:id="_WK41QEmqEeitypWIkLHWkw" businessElement="PayerSectionTitleText" modelElement="_7MaXyM3tEeahpd1P9sS4xg" businessElementId="44e573a3-4487-4208-b5f2-6ca920a599b5" modelElementPath="payers.text"/>
-    <elements xmi:id="_TT4y8EmqEeitypWIkLHWkw" businessElement="PayerSectionTitleText" modelElement="_7MZwsM3tEeahpd1P9sS4xg" businessElementId="44e573a3-4487-4208-b5f2-6ca920a599b5" modelElementPath="payers.title"/>
-    <elements xmi:id="_PfFroEmqEeitypWIkLHWkw" businessElement="InterventionPlanSectionIDCode" modelElement="_7MXUeM3tEeahpd1P9sS4xg" businessElementId="a1996900-d0c0-4ac7-acbe-226e472a1fca" modelElementPath="planOfTreatment.code"/>
-    <elements xmi:id="_RlbGAEmqEeitypWIkLHWkw" businessElement="InterventionPlanSectionNotes" modelElement="_7MX7hc3tEeahpd1P9sS4xg" businessElementId="7c05a52c-6a02-4ae5-a0ca-d17781911eca" modelElementPath="planOfTreatment.text"/>
-    <elements xmi:id="_N1pooEmqEeitypWIkLHWkw" businessElement="InterventionPlanSectionTitleText" modelElement="_7MXUcM3tEeahpd1P9sS4xg" businessElementId="c256fc17-a95f-4ff3-9d65-199dbaf2a60c" modelElementPath="planOfTreatment.title"/>
+    <elements xmi:id="_2RVCsEmpEeitypWIkLHWkw" businessElement="NutritionSectionIDCode" modelElement="_7MMVUM3tEeahpd1P9sS4xg" businessElementId="ed6d9250-cebb-436c-8a1f-672092ae6272" modelElementPath="nutrition.code" condition=""/>
+    <elements xmi:id="_3gVMcEmpEeitypWIkLHWkw" businessElement="NutritionSectionNotes" modelElement="_7MMVWM3tEeahpd1P9sS4xg" businessElementId="0cf6df79-d88f-4fe3-a8e7-a50157563f44" modelElementPath="nutrition.text" condition=""/>
+    <elements xmi:id="_08FHAEmpEeitypWIkLHWkw" businessElement="NutritionSectionTitleText" modelElement="_7MLuQM3tEeahpd1P9sS4xg" businessElementId="519f0b94-8f0c-472f-ab90-b23d3cf65cc4" modelElementPath="nutrition.title" condition=""/>
+    <elements xmi:id="_U8YawEmqEeitypWIkLHWkw" businessElement="PayerSectionIDCode" modelElement="_7MaXwM3tEeahpd1P9sS4xg" businessElementId="cc37a75c-4060-4629-9d59-a402d88135eb" modelElementPath="payers.code" condition=""/>
+    <elements xmi:id="_WK41QEmqEeitypWIkLHWkw" businessElement="PayerSectionTitleText" modelElement="_7MaXyM3tEeahpd1P9sS4xg" businessElementId="44e573a3-4487-4208-b5f2-6ca920a599b5" modelElementPath="payers.text" condition=""/>
+    <elements xmi:id="_TT4y8EmqEeitypWIkLHWkw" businessElement="PayerSectionTitleText" modelElement="_7MZwsM3tEeahpd1P9sS4xg" businessElementId="44e573a3-4487-4208-b5f2-6ca920a599b5" modelElementPath="payers.title" condition=""/>
+    <elements xmi:id="_PfFroEmqEeitypWIkLHWkw" businessElement="InterventionPlanSectionIDCode" modelElement="_7MXUeM3tEeahpd1P9sS4xg" businessElementId="a1996900-d0c0-4ac7-acbe-226e472a1fca" modelElementPath="planOfTreatment.code" condition=""/>
+    <elements xmi:id="_RlbGAEmqEeitypWIkLHWkw" businessElement="InterventionPlanSectionNotes" modelElement="_7MX7hc3tEeahpd1P9sS4xg" businessElementId="7c05a52c-6a02-4ae5-a0ca-d17781911eca" modelElementPath="planOfTreatment.text" condition=""/>
+    <elements xmi:id="_N1pooEmqEeitypWIkLHWkw" businessElement="InterventionPlanSectionTitleText" modelElement="_7MXUcM3tEeahpd1P9sS4xg" businessElementId="c256fc17-a95f-4ff3-9d65-199dbaf2a60c" modelElementPath="planOfTreatment.title" condition=""/>
     <elements xmi:id="_11U84Oc1EeeRfYnha8AF3g" businessElement="ProblemSectionContainer" modelElement="_7LyFpM3tEeahpd1P9sS4xg" businessElementId="4b655929-8602-4317-9773-3c150b0dc7db" modelElementPath="problems" condition=""/>
-    <elements xmi:id="_GNE_oEmoEeip051mgHkdsA" businessElement="ProblemSectionIDCode" modelElement="_7L0h4M3tEeahpd1P9sS4xg" businessElementId="540445a3-8ea0-441b-9aa8-3db292be1f12" modelElementPath="problems.code"/>
-    <elements xmi:id="_H8zQ0EmoEeip051mgHkdsA" businessElement="ProblemSectionTitleText" modelElement="_7L1I8c3tEeahpd1P9sS4xg" businessElementId="bd9919bb-d1a9-4200-acf8-a5e4ed443f8d" modelElementPath="problems.text"/>
-    <elements xmi:id="_ESgwYEmoEeip051mgHkdsA" businessElement="ProblemSectionTitleText" modelElement="_7LzTwM3tEeahpd1P9sS4xg" businessElementId="bd9919bb-d1a9-4200-acf8-a5e4ed443f8d" modelElementPath="problems.title"/>
-    <elements xmi:id="_9Ga9sPIyEeeC3LsfcKoOyw" businessElement="ProcedureSection" modelElement="_7L2XFM3tEeahpd1P9sS4xg" businessElementId="b7a63343-ca32-4394-88a2-0f4cd2c2aad6" modelElementPath="procedures"/>
-    <elements xmi:id="_bpA8wEmoEeiAPIo2XIlfCQ" businessElement="ProcedureSectionIDCode" modelElement="_7L3lN83tEeahpd1P9sS4xg" businessElementId="114ce0b9-4b45-491d-b5c9-e501d0355bfe" modelElementPath="procedures.code"/>
-    <elements xmi:id="_dRv1IEmoEeiAPIo2XIlfCQ" businessElement="ProcedureSectionNotes" modelElement="_7L4MRM3tEeahpd1P9sS4xg" businessElementId="c086fc0b-4874-416d-be81-3cebab335d5f" modelElementPath="procedures.text"/>
-    <elements xmi:id="_NHBS8EmoEeip051mgHkdsA" businessElement="ProcedureSectionTitleText" modelElement="_7L2-Jc3tEeahpd1P9sS4xg" businessElementId="0c9ca3e3-8d14-411f-a779-51fc2e05c567" modelElementPath="procedures.title"/>
+    <elements xmi:id="_GNE_oEmoEeip051mgHkdsA" businessElement="ProblemSectionIDCode" modelElement="_7L0h4M3tEeahpd1P9sS4xg" businessElementId="540445a3-8ea0-441b-9aa8-3db292be1f12" modelElementPath="problems.code" condition=""/>
+    <elements xmi:id="_H8zQ0EmoEeip051mgHkdsA" businessElement="ProblemSectionTitleText" modelElement="_7L1I8c3tEeahpd1P9sS4xg" businessElementId="bd9919bb-d1a9-4200-acf8-a5e4ed443f8d" modelElementPath="problems.text" condition=""/>
+    <elements xmi:id="_ESgwYEmoEeip051mgHkdsA" businessElement="ProblemSectionTitleText" modelElement="_7LzTwM3tEeahpd1P9sS4xg" businessElementId="bd9919bb-d1a9-4200-acf8-a5e4ed443f8d" modelElementPath="problems.title" condition=""/>
+    <elements xmi:id="_9Ga9sPIyEeeC3LsfcKoOyw" businessElement="ProcedureSection" modelElement="_7L2XFM3tEeahpd1P9sS4xg" businessElementId="b7a63343-ca32-4394-88a2-0f4cd2c2aad6" modelElementPath="procedures" condition=""/>
+    <elements xmi:id="_bpA8wEmoEeiAPIo2XIlfCQ" businessElement="ProcedureSectionIDCode" modelElement="_7L3lN83tEeahpd1P9sS4xg" businessElementId="114ce0b9-4b45-491d-b5c9-e501d0355bfe" modelElementPath="procedures.code" condition=""/>
+    <elements xmi:id="_dRv1IEmoEeiAPIo2XIlfCQ" businessElement="ProcedureSectionNotes" modelElement="_7L4MRM3tEeahpd1P9sS4xg" businessElementId="c086fc0b-4874-416d-be81-3cebab335d5f" modelElementPath="procedures.text" condition=""/>
+    <elements xmi:id="_NHBS8EmoEeip051mgHkdsA" businessElement="ProcedureSectionTitleText" modelElement="_7L2-Jc3tEeahpd1P9sS4xg" businessElementId="0c9ca3e3-8d14-411f-a779-51fc2e05c567" modelElementPath="procedures.title" condition=""/>
     <elements xmi:id="_7lRiQOc1EeeRfYnha8AF3g" businessElement="ResultsSectionContainer" modelElement="_7L5aZs3tEeahpd1P9sS4xg" businessElementId="5b518a6c-921a-4e90-bfda-db113112c8d1" modelElementPath="results" condition=""/>
-    <elements xmi:id="_6COW4EmoEeisH73RH3paIw" businessElement="ResultsSectionIDCode" modelElement="_7L7PkM3tEeahpd1P9sS4xg" businessElementId="816539d2-f6b6-4164-90be-71779cec8d74" modelElementPath="results.code"/>
-    <elements xmi:id="_7OOP8EmoEeisH73RH3paIw" businessElement="ResultsSectionNotes" modelElement="_7L7PmM3tEeahpd1P9sS4xg" businessElementId="2e91d766-11a6-446a-8d2f-8c9fc786ce89" modelElementPath="results.text"/>
-    <elements xmi:id="_337CgEmoEeisH73RH3paIw" businessElement="ResultSectionTitleText" modelElement="_7L6ogM3tEeahpd1P9sS4xg" businessElementId="134d9d0d-8a33-45de-ac5e-0d01c20fd704" modelElementPath="results.title"/>
-    <elements xmi:id="_KCS-QPIzEeeC3LsfcKoOyw" businessElement="SocialHistorySection" modelElement="_7MTDA83tEeahpd1P9sS4xg" businessElementId="0d98de46-d0bf-4b4b-8336-7d8c4f20b9e2" modelElementPath="socialHistory"/>
-    <elements xmi:id="_JQh3oEmqEeitypWIkLHWkw" businessElement="SocialHistorySectionIDCode" modelElement="_7MURJs3tEeahpd1P9sS4xg" businessElementId="d71d16c5-13c8-4954-b5e8-405fe27cee2e" modelElementPath="socialHistory.code"/>
-    <elements xmi:id="_KtMC4EmqEeitypWIkLHWkw" businessElement="SocialHistorySectionNotes" modelElement="_7MU4M83tEeahpd1P9sS4xg" businessElementId="188dd32c-ce3c-47bb-a722-03c046ff6f1a" modelElementPath="socialHistory.text"/>
-    <elements xmi:id="_Hgy_YEmqEeitypWIkLHWkw" businessElement="SocialHistorySectionTitleText" modelElement="_7MTqE83tEeahpd1P9sS4xg" businessElementId="221f8203-b7be-4f4a-ad5e-0031962a74a5" modelElementPath="socialHistory.title"/>
-    <elements xmi:id="_C4D7IPiUEeeb-vdDOk6Uvw" businessElement="PatientContainer" modelElement="_7LfxwM3tEeahpd1P9sS4xg" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="subject"/>
+    <elements xmi:id="_6COW4EmoEeisH73RH3paIw" businessElement="ResultsSectionIDCode" modelElement="_7L7PkM3tEeahpd1P9sS4xg" businessElementId="816539d2-f6b6-4164-90be-71779cec8d74" modelElementPath="results.code" condition=""/>
+    <elements xmi:id="_7OOP8EmoEeisH73RH3paIw" businessElement="ResultsSectionNotes" modelElement="_7L7PmM3tEeahpd1P9sS4xg" businessElementId="2e91d766-11a6-446a-8d2f-8c9fc786ce89" modelElementPath="results.text" condition=""/>
+    <elements xmi:id="_337CgEmoEeisH73RH3paIw" businessElement="ResultSectionTitleText" modelElement="_7L6ogM3tEeahpd1P9sS4xg" businessElementId="134d9d0d-8a33-45de-ac5e-0d01c20fd704" modelElementPath="results.title" condition=""/>
+    <elements xmi:id="_KCS-QPIzEeeC3LsfcKoOyw" businessElement="SocialHistorySection" modelElement="_7MTDA83tEeahpd1P9sS4xg" businessElementId="0d98de46-d0bf-4b4b-8336-7d8c4f20b9e2" modelElementPath="socialHistory" condition=""/>
+    <elements xmi:id="_JQh3oEmqEeitypWIkLHWkw" businessElement="SocialHistorySectionIDCode" modelElement="_7MURJs3tEeahpd1P9sS4xg" businessElementId="d71d16c5-13c8-4954-b5e8-405fe27cee2e" modelElementPath="socialHistory.code" condition=""/>
+    <elements xmi:id="_KtMC4EmqEeitypWIkLHWkw" businessElement="SocialHistorySectionNotes" modelElement="_7MU4M83tEeahpd1P9sS4xg" businessElementId="188dd32c-ce3c-47bb-a722-03c046ff6f1a" modelElementPath="socialHistory.text" condition=""/>
+    <elements xmi:id="_Hgy_YEmqEeitypWIkLHWkw" businessElement="SocialHistorySectionTitleText" modelElement="_7MTqE83tEeahpd1P9sS4xg" businessElementId="221f8203-b7be-4f4a-ad5e-0031962a74a5" modelElementPath="socialHistory.title" condition=""/>
+    <elements xmi:id="_C4D7IPiUEeeb-vdDOk6Uvw" businessElement="PatientContainer" modelElement="_7LfxwM3tEeahpd1P9sS4xg" businessElementId="5d201387-d695-48fb-90cb-565251e1c825" modelElementPath="subject" condition=""/>
+    <elements xmi:id="_ZRAw4Lp1EeiHb5a8zYQRGQ" businessElement="PatientAddress" businessElementId="ab55f2c5-eaea-4de5-a358-6a9037ebf762" modelElementPath="subject.address1" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_1QQRcCOwEeivEY8WLKV1mA"/>
+    </elements>
+    <elements xmi:id="_XhcQsLp1EeiHb5a8zYQRGQ" businessElement="PatientBirthDateTime" businessElementId="86f39389-81b7-464b-a90d-d19ae8410fa2" modelElementPath="subject.birthDate" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BOu8AM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_EsoG0Lp1EeiHb5a8zYQRGQ" businessElement="PatientRaceCode" businessElementId="a0a2b4f1-2ce7-42f3-a184-2dcf71564aea" modelElementPath="subject.extension" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJPTkM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_IeAGsLp1EeiHb5a8zYQRGQ" businessElement="PatientEthnicityCode" businessElementId="b29dc139-8a2b-473d-820b-0331b7ae0aa3" modelElementPath="subject.extension" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJX2cM3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_KyAwsLp1EeiHb5a8zYQRGQ" businessElement="PatientBirthSexCode" businessElementId="cc13e769-ad20-44ca-9a66-be2600bfdad9" modelElementPath="subject.extension" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJbg0M3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_R8ASMLp1EeiHb5a8zYQRGQ" businessElement="PatientAdministrationGenderCode" businessElementId="03844ed8-168e-4a76-8777-1f759e86eea2" modelElementPath="subject.gender" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJgZUc3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_Muu8ELp1EeiHb5a8zYQRGQ" businessElement="PatientID" businessElementId="c904cd8d-6283-46f9-b671-25702214a8b6" modelElementPath="subject.identifier" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJcu8M3tEeahpd1P9sS4xg"/>
+    </elements>
+    <elements xmi:id="_be6y4Lp1EeiHb5a8zYQRGQ" businessElement="PatientLanguageCode" businessElementId="e2229d9e-f294-4005-b4c3-86e397b892fb" modelElementPath="subject.language" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_FL1DsCO5EeivEY8WLKV1mA"/>
+    </elements>
+    <elements xmi:id="_PLcPELp1EeiHb5a8zYQRGQ" businessElement="PatientName" businessElementId="59cf761a-4737-4f95-92cd-c3ef485f2159" modelElementPath="subject.name" condition="">
+      <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_AJekIs3tEeahpd1P9sS4xg"/>
+    </elements>
     <elements xmi:id="_Hp9cIOc2EeeRfYnha8AF3g" businessElement="VitalSignSectionContainer" modelElement="_7MP_tM3tEeahpd1P9sS4xg" businessElementId="1344bbb0-bb05-44df-9d86-b90bd60ac951" modelElementPath="vitalSigns" condition=""/>
-    <elements xmi:id="_ED1wUEmqEeitypWIkLHWkw" businessElement="VitalSignSectionIDCode" modelElement="_7MRN1M3tEeahpd1P9sS4xg" businessElementId="12e612fc-9614-4fc6-a129-bfdcb271d615" modelElementPath="vitalSigns.code"/>
-    <elements xmi:id="_FlUxMEmqEeitypWIkLHWkw" businessElement="VitalSignSectionTitleText" modelElement="_7MR04M3tEeahpd1P9sS4xg" businessElementId="8d43cccb-f69d-4a93-a5c0-caeaf03a0209" modelElementPath="vitalSigns.text"/>
-    <elements xmi:id="_ClLZ8EmqEeitypWIkLHWkw" businessElement="VitalSignSectionTitleText" modelElement="_7MQmw83tEeahpd1P9sS4xg" businessElementId="8d43cccb-f69d-4a93-a5c0-caeaf03a0209" modelElementPath="vitalSigns.title"/>
+    <elements xmi:id="_ED1wUEmqEeitypWIkLHWkw" businessElement="VitalSignSectionIDCode" modelElement="_7MRN1M3tEeahpd1P9sS4xg" businessElementId="12e612fc-9614-4fc6-a129-bfdcb271d615" modelElementPath="vitalSigns.code" condition=""/>
+    <elements xmi:id="_FlUxMEmqEeitypWIkLHWkw" businessElement="VitalSignSectionTitleText" modelElement="_7MR04M3tEeahpd1P9sS4xg" businessElementId="8d43cccb-f69d-4a93-a5c0-caeaf03a0209" modelElementPath="vitalSigns.text" condition=""/>
+    <elements xmi:id="_ClLZ8EmqEeitypWIkLHWkw" businessElement="VitalSignSectionTitleText" modelElement="_7MQmw83tEeahpd1P9sS4xg" businessElementId="8d43cccb-f69d-4a93-a5c0-caeaf03a0209" modelElementPath="vitalSigns.title" condition=""/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_tCktsP62EeeDL5Qe2AxTNQ" base_Class="_7FTDJM3tEeahpd1P9sS4xg">
     <elements xmi:id="_2VWA4P93EeeEPap6rGENcg" businessElement="DocumentDataEntererContainer" modelElement="_7FTDJM3tEeahpd1P9sS4xg" businessElementId="bb20adbc-e669-415f-baea-909bafa47a88" modelElementPath=""/>
     <elements xmi:id="_NQFpMFhrEeiTFvZAtLxAtQ" businessElement="DocumentDataEntererII" modelElement="_7FURRM3tEeahpd1P9sS4xg" businessElementId="6249660d-0b62-43fa-b28f-2098a25fd002" modelElementPath="valueReference"/>
+    <elements xmi:id="_WfpscLqJEeiHb5a8zYQRGQ" businessElement="DocumentDataEntererII" modelElement="_7FURRM3tEeahpd1P9sS4xg" businessElementId="6249660d-0b62-43fa-b28f-2098a25fd002" modelElementPath="valueReference"/>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_tBaCQP91EeeEPap6rGENcg" base_Class="_7FRN883tEeahpd1P9sS4xg">
     <elements xmi:id="_T4MVsEmxEei1GK3IhTP0Dw" businessElement="DocumentAuthorID" modelElement="_7LgY1M3tEeahpd1P9sS4xg" businessElementId="6ce0a799-fced-485b-ad83-5ab049b51097" modelElementPath="author"/>
@@ -27632,11 +27693,15 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_rNHGoCOyEeivEY8WLKV1mA" base_Class="_7FVfZM3tEeahpd1P9sS4xg">
     <elements xmi:id="_rNHtsCOyEeivEY8WLKV1mA" businessElement="DocumentInformantContainer" modelElement="_7FVfZM3tEeahpd1P9sS4xg" businessElementId="21f774e5-6510-4179-89de-621095c502d8" modelElementPath=""/>
+    <elements xmi:id="_cCrQILqJEeiHb5a8zYQRGQ" businessElement="DocumentInformantContainer" modelElement="_7FVfZM3tEeahpd1P9sS4xg" businessElementId="21f774e5-6510-4179-89de-621095c502d8" modelElementPath=""/>
     <elements xmi:id="_RuMzQFhrEeiTFvZAtLxAtQ" businessElement="DocumentInformantII" modelElement="_7FWthc3tEeahpd1P9sS4xg" businessElementId="45e52bc8-17b3-46da-9c3f-bcd7148fe501" modelElementPath="valueReference"/>
+    <elements xmi:id="_d1f4oLqJEeiHb5a8zYQRGQ" businessElement="DocumentInformantII" modelElement="_7FWthc3tEeahpd1P9sS4xg" businessElementId="45e52bc8-17b3-46da-9c3f-bcd7148fe501" modelElementPath="valueReference"/>
   </MDMI:MDMIMapping>
   <fhir:ElementDefinition xmi:id="_ykQocyO0EeivEY8WLKV1mA" id="Composition.attester" base_Property="_ykQocCO0EeivEY8WLKV1mA" name="Composition.attester" isSummary="true" representation=""/>
   <MDMI:MDMIMapping xmi:id="_n5qDcEmyEei1GK3IhTP0Dw" base_Class="_7FXUmM3tEeahpd1P9sS4xg">
     <elements xmi:id="_n5sfsEmyEei1GK3IhTP0Dw" businessElement="DocumentInformationRecipientContainer" modelElement="_7FXUmM3tEeahpd1P9sS4xg" businessElementId="c23536d9-1f87-4d95-9fd8-179c22b9db21" modelElementPath=""/>
+    <elements xmi:id="_gbcAILqJEeiHb5a8zYQRGQ" businessElement="DocumentInformationRecipientContainer" modelElement="_7FXUmM3tEeahpd1P9sS4xg" businessElementId="c23536d9-1f87-4d95-9fd8-179c22b9db21" modelElementPath=""/>
+    <elements xmi:id="_j9TkYLqJEeiHb5a8zYQRGQ" businessElement="DocumentInformationRecipientProviderII" modelElement="_7FYiu83tEeahpd1P9sS4xg" businessElementId="cb0c1ff1-164c-4c8b-9bbb-5ec235e0b878" modelElementPath="valueReference"/>
     <elements xmi:id="_rMqsUEmyEei1GK3IhTP0Dw" businessElement="DocumentInformationRecipientProviderII" businessElementId="cb0c1ff1-164c-4c8b-9bbb-5ec235e0b878" modelElementPath="valueReference.identifier">
       <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmCowM3tEeahpd1P9sS4xg"/>
     </elements>
@@ -27687,6 +27752,8 @@ Key differentiators between a Care Plan profile and CCD  profile (another snapsh
     </elements>
   </MDMI:MDMIMapping>
   <MDMI:MDMIMapping xmi:id="_nOud0Em3EeiKZMWwbCbtAg" base_Class="_7FcNEM3tEeahpd1P9sS4xg">
+    <elements xmi:id="_QITTYLqKEeiHb5a8zYQRGQ" businessElement="DocumentProviderContainer" modelElement="_7FcNEM3tEeahpd1P9sS4xg" businessElementId="61acfce5-6550-44d9-90c9-8d9c7cc0d0f7" modelElementPath=""/>
+    <elements xmi:id="_SIXtsLqKEeiHb5a8zYQRGQ" businessElement="DocumentProviderID" modelElement="_7FdbMM3tEeahpd1P9sS4xg" businessElementId="3a3855f4-8c14-4ba0-9591-e79179faa517" modelElementPath="valueReference"/>
     <elements xmi:id="_nOyvQEm3EeiKZMWwbCbtAg" businessElement="DocumentServiceEventPractitionerII" businessElementId="a294d280-db36-423a-8f36-371a11af4de6" modelElementPath="valueReference.identifier">
       <modelElement xmi:type="uml:Property" href="FHIR-US-Core.uml#_BmCowM3tEeahpd1P9sS4xg"/>
     </elements>
