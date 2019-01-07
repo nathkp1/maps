@@ -368,10 +368,16 @@
         <semanticElements xmi:id="_Sx4xgBJ-EemlufMoVucaHw" name="PID2.04" description="a" datatype="_2kZNVA7PEemosKqZjGvVyw" parent="_1LlYQA-OEembeIndZgMglw" syntaxNode="_7UOVAA-PEembeIndZgMglw"/>
         <semanticElements xmi:id="_iEFWYA-jEembeIndZgMglw" name="PID2.06.03" description="a" datatype="_2kZNSA7PEemosKqZjGvVyw" parent="_1LlYQA-OEembeIndZgMglw" syntaxNode="_IyQncw-QEembeIndZgMglw"/>
         <semanticElements xmi:id="_REFZEA-jEembeIndZgMglw" name="PID2.06.02" description="AssigningFacilityUniversalIDa" datatype="_2kZNSA7PEemosKqZjGvVyw" parent="_1LlYQA-OEembeIndZgMglw" syntaxNode="_IyQncg-QEembeIndZgMglw"/>
-        <semanticElements xmi:id="_MqD6QA-iEembeIndZgMglw" name="PID2.06AssigningFacilityRollup" description="PIDAssigningFacilityID" datatype="_2kZNaw7PEemosKqZjGvVyw" parent="_1LlYQA-OEembeIndZgMglw" syntaxNode="_qjNVEA9yEembeIndZgMglw"/>
+        <semanticElements xmi:id="_MqD6QA-iEembeIndZgMglw" name="PID2.06AssigningFacilityRollup" description="PIDAssigningFacilityID" datatype="_2kZNaw7PEemosKqZjGvVyw" parent="_1LlYQA-OEembeIndZgMglw" syntaxNode="_qjNVEA9yEembeIndZgMglw">
+          <relationships xmi:id="_eT0l0BKNEemqxMcELjNGMg" name="AssigningFacilityRootID" rule="value.getXValue().addValue('root',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_MqD6QA-iEembeIndZgMglw" relatedSemanticElement="_KVh2YA-jEembeIndZgMglw"/>
+          <relationships xmi:id="_uR2IwBKNEemqxMcELjNGMg" name="AssigningAuthorityExtID" rule="value.getXValue().addValue('extension',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_MqD6QA-iEembeIndZgMglw" relatedSemanticElement="_REFZEA-jEembeIndZgMglw"/>
+          <relationships xmi:id="_LirlkBKOEemqxMcELjNGMg" name="AssigningAuthorityUseID" rule="value.getXValue().addValue('use',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_MqD6QA-iEembeIndZgMglw" relatedSemanticElement="_iEFWYA-jEembeIndZgMglw"/>
+          <mapFromMdmi xmi:id="_csrB0RKNEemqxMcELjNGMg" name="MDMI2Message4PID2.06AssigningFacilityRollup" businessElement="_PZDNcBJ-EemlufMoVucaHw"/>
+          <mapToMdmi xmi:id="_csrB0BKNEemqxMcELjNGMg" name="Message2MDMI4PID2.06AssigningFacilityRollup" businessElement="_PZDNcBJ-EemlufMoVucaHw"/>
+        </semanticElements>
         <semanticElements xmi:id="_KVh2YA-jEembeIndZgMglw" name="PID2.06.01" description="AssigningFacilityNameSpaceIDa" datatype="_2kZNSA7PEemosKqZjGvVyw" parent="_1LlYQA-OEembeIndZgMglw" syntaxNode="_IyQncQ-QEembeIndZgMglw"/>
         <semanticElements xmi:id="_51D1EA-fEembeIndZgMglw" name="PID2.04AssigningAuthorityRollup" description="a" datatype="_2kZNaw7PEemosKqZjGvVyw" parent="_1LlYQA-OEembeIndZgMglw">
-          <relationships xmi:id="_qa-JYBKDEemqxMcELjNGMg" name="AssigningAuthorityRootID" rule="value.getXValue().addValue('extension',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_51D1EA-fEembeIndZgMglw" relatedSemanticElement="_KzaJYA-cEembeIndZgMglw"/>
+          <relationships xmi:id="_qa-JYBKDEemqxMcELjNGMg" name="AssigningAuthorityExtensionID" rule="value.getXValue().addValue('extension',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_51D1EA-fEembeIndZgMglw" relatedSemanticElement="_KzaJYA-cEembeIndZgMglw"/>
           <relationships xmi:id="_xHJtgBKDEemqxMcELjNGMg" name="AssigningAuthorityType" rule="value.getXValue().addValue('use',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_51D1EA-fEembeIndZgMglw" relatedSemanticElement="_UOm4gA-cEembeIndZgMglw"/>
           <relationships xmi:id="_4V2v4BKDEemqxMcELjNGMg" name="AssigningAuthorityNameSpace" rule="value.getXValue().addValue('root',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_51D1EA-fEembeIndZgMglw" relatedSemanticElement="_vhG10A-bEembeIndZgMglw"/>
           <mapFromMdmi xmi:id="_p1Cx0BKDEemqxMcELjNGMg" name="MDMI2Message4PID2.04AssigningAuthorityRollup" businessElement="_PZB_UBJ-EemlufMoVucaHw"/>
@@ -388,6 +394,7 @@
         <semanticElements xmi:id="_pBm4QA-aEembeIndZgMglw" name="PID2PatientIDRollup" description="for PatientID SEER element" datatype="_2kZNaw7PEemosKqZjGvVyw" parent="_1LlYQA-OEembeIndZgMglw">
           <relationships xmi:id="_BhCp4BKAEemlufMoVucaHw" name="PatientIDValue" rule="value.getXValue().addValue('root',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_pBm4QA-aEembeIndZgMglw" relatedSemanticElement="_C64jYA-bEembeIndZgMglw"/>
           <relationships xmi:id="_Nh4ToBKCEemlufMoVucaHw" name="PatientIDAssigingAuthority" rule="value.getXValue().addValue('assigningAuthorityName',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_pBm4QA-aEembeIndZgMglw" relatedSemanticElement="_vhG10A-bEembeIndZgMglw"/>
+          <relationships xmi:id="_RhVKwBKNEemqxMcELjNGMg" name="PatientIDUse" rule="value.getXValue().addValue('use',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_pBm4QA-aEembeIndZgMglw" relatedSemanticElement="_5GSqkA-fEembeIndZgMglw"/>
           <mapFromMdmi xmi:id="_A29LERKAEemlufMoVucaHw" name="MDMI2Message4PID2PatientIDRollup" businessElement="_2kWwMA7PEemosKqZjGvVyw"/>
           <computedValue xmi:id="_wFWAwA-aEembeIndZgMglw" expression="SEMANTICROLLUP" language="JavaScript"/>
           <mapToMdmi xmi:id="_A29LEBKAEemlufMoVucaHw" name="Message2MDMI4PID2PatientIDRollup" businessElement="_2kWwMA7PEemosKqZjGvVyw"/>
