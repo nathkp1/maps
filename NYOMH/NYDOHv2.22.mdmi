@@ -98,6 +98,7 @@
         <semanticElements xmi:id="_944gAAVQEemcz_yLK1Wcpw" name="EncounterType" datatype="_vpJbXuz3Eeiiw_rSGpWYEw" parent="_opA44ALzEemJLKkET3EXYQ">
           <relationships xmi:id="_H-F1cAVREemcz_yLK1Wcpw" name="TypeCode" rule="value.getXValue().addValue('code',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_944gAAVQEemcz_yLK1Wcpw" relatedSemanticElement="_vo91OOz3Eeiiw_rSGpWYEw"/>
           <relationships xmi:id="_fy9_4AVREemcz_yLK1Wcpw" name="TypeName" rule="value.getXValue().addValue('displayName',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_944gAAVQEemcz_yLK1Wcpw" relatedSemanticElement="_vo91Oez3Eeiiw_rSGpWYEw"/>
+          <relationships xmi:id="_SCrIQDuVEemfmvCMDTLvbw" name="ServiceText" rule="value.getXValue().addValue('originalText',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_944gAAVQEemcz_yLK1Wcpw" relatedSemanticElement="_vo91Ouz3Eeiiw_rSGpWYEw"/>
           <mapFromMdmi xmi:id="_F4yV0QVREemcz_yLK1Wcpw" name="MDMI2Message4EncounterType" businessElement="_vo-cMuz3Eeiiw_rSGpWYEw"/>
           <computedValue xmi:id="_DPEhkAVREemcz_yLK1Wcpw" expression="SEMANTICROLLUP" language="JavaScript"/>
           <mapToMdmi xmi:id="_F4yV0AVREemcz_yLK1Wcpw" name="Message2MDMI4EncounterType" businessElement="_vo-cMuz3Eeiiw_rSGpWYEw"/>
@@ -249,7 +250,9 @@
         </semanticElements>
         <semanticElements xmi:id="_vo91Tez3Eeiiw_rSGpWYEw" name="DAYS_SUPPLY_3232" elementType="NORMAL" datatype="_vpJbUuz3Eeiiw_rSGpWYEw" parent="_arO-YBNlEemQOv55eaEoYw" syntaxNode="_vo91GOz3Eeiiw_rSGpWYEw">
           <mapFromMdmi xmi:id="_opu00fNAEeiAcJE4z3tRMw" name="MDMI2Message4DAYS_SUPPLY_32322" businessElement="_vpARQez3Eeiiw_rSGpWYEw" rule="DATATYPEMAP:mapPhysicalQuantityToString"/>
+          <mapFromMdmi xmi:id="_9jShsTuOEemfmvCMDTLvbw" name="MDMI2Message4DAYS_SUPPLY_32322" businessElement="_vpA4Zuz3Eeiiw_rSGpWYEw" rule="DATATYPEMAP:mapIntegerToString"/>
           <mapToMdmi xmi:id="_opu00PNAEeiAcJE4z3tRMw" name="Message2MDMI4DAYS_SUPPLY_32321" businessElement="_vpARQez3Eeiiw_rSGpWYEw" rule="DATATYPEMAP:mapStringToPhysicalQuantity"/>
+          <mapToMdmi xmi:id="_9jShsDuOEemfmvCMDTLvbw" name="Message2MDMI4DAYS_SUPPLY_32321" businessElement="_vpA4Zuz3Eeiiw_rSGpWYEw" rule="DATATYPEMAP:mapStringToInteger"/>
         </semanticElements>
         <semanticElements xmi:id="_vo91Tuz3Eeiiw_rSGpWYEw" name="AMT_QUANTITY_DISPENSED_3251" elementType="NORMAL" datatype="_vpJbUuz3Eeiiw_rSGpWYEw" parent="_arO-YBNlEemQOv55eaEoYw" syntaxNode="_vo91Gez3Eeiiw_rSGpWYEw">
           <mapFromMdmi xmi:id="_iLiM4fNBEeiAcJE4z3tRMw" name="MDMI2Message4AMT_QUANTITY_DISPENSED_32514" businessElement="_vpARP-z3Eeiiw_rSGpWYEw" rule="DATATYPEMAP:mapPhysicalQuantityToString"/>
@@ -4534,6 +4537,7 @@
       <businessElements xmi:id="_F1wnYRKAEemlufMoVucaHw" name="PatientIdentifierCheckDigitCode" description="Code used to ensure accuracy of patient ID" reference="PatientIdentifierCheckDigitCode" uniqueIdentifier="0119ce9b-be5c-4b52-826b-9b00cebaf5ab" referenceDatatype="_vpJbXuz3Eeiiw_rSGpWYEw" readonly="true"/>
       <businessElements xmi:id="_F1wnYhKAEemlufMoVucaHw" name="PatientIdentifierAssigningFacilityID" description="Identifier for the instant location or facility where a patient ID was assigned" reference="PatientIdentifierAssigningFacilityID" uniqueIdentifier="8eeca7bb-1fe4-474d-a6c0-ccf1652d260d" referenceDatatype="_vpJbbuz3Eeiiw_rSGpWYEw" readonly="true"/>
       <businessElements xmi:id="_ZINgsBNKEemgfPasPLDMEA" name="PatientIdentifierAssigningJurisdictionID" description="Identifier for the geo-political entitiy responsble for assigning an identifier to a patient" reference="PatientIdentifierAssigningJurisdictionID" uniqueIdentifier="935d0490-36b3-4adb-b10e-045e7a289053" referenceDatatype="_vpJbUuz3Eeiiw_rSGpWYEw" readonly="true"/>
+      <businessElements xmi:id="_UVMTkDuMEemfmvCMDTLvbw" name="PatientMetaTagCode" description="Coded metadata attached as tags to the patient message" reference="PatientMetaTagCode" uniqueIdentifier="98349f08-a3e2-45c1-9b48-d2bcb51186a4" referenceDatatype="_vpJbXuz3Eeiiw_rSGpWYEw" readonly="true"/>
     </domainDictionary>
     <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_vpJbTez3Eeiiw_rSGpWYEw" typeName="Binary" description="Binary" reference="http://www.w3.org/2001/XMLSchema#hexBinary"/>
     <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_vpJbTuz3Eeiiw_rSGpWYEw" typeName="Boolean" description="Boolean" reference="http://www.w3.org/2001/XMLSchema#boolean"/>
