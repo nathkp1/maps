@@ -1140,6 +1140,8 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   </CDA:CodeSystemConstraint>
   <MDMI:MDMIMapping xmi:id="_4RfeILsTEeejBu7P06QdPQ" base_Class="_EHgh0J2AEeORR8_YW0n_jQ">
     <elements xmi:id="_4RgFMLsTEeejBu7P06QdPQ" businessElement="HealthOutcomeSectionContainer" modelElement="_EHgh0J2AEeORR8_YW0n_jQ" businessElementId="35a607f7-4c96-4bc8-9791-fac978bd8ca4" modelElementPath="" condition=""/>
+    <elements xmi:id="_gUHkEMHEEeiYHNOvW6UWuw" businessElement="HealthOutcomeObservationContainer" modelElement="_UCEroJ2BEeORR8_YW0n_jQ" businessElementId="4105b626-4583-4781-b772-9583f59ce8e7" modelElementPath="outcomeObservation"/>
+    <elements xmi:id="_qeJSoMHFEeicf_ljFNLP6w" businessElement="HealthOutcomeAuthorContainer" modelElement="_Bpk7sK4nEeORf5eJaKt1KQ" businessElementId="189b8b5e-b2b8-4dc4-aec9-f725bde4c937" modelElementPath="outcomeObservation.author"/>
     <elements xmi:id="_oWpXwLsjEeeJebzvFLYuNQ" businessElement="HealthOutcomeAuthorName" businessElementId="c39c62a9-7846-477b-a351-c4ca206c5a92" modelElementPath="outcomeObservation.author.assignedAuthor.assignedPerson.name" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_fgiTgKrpEeOxqJAXCMXUYg"/>
     </elements>
@@ -1148,6 +1150,9 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     </elements>
     <elements xmi:id="_kaWhULsjEeeJebzvFLYuNQ" businessElement="HealthOutcomeAuthorID" businessElementId="68334f05-d87b-4ebd-a222-2c700f56e3f4" modelElementPath="outcomeObservation.author.assignedAuthor.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_4YImkKrmEeOxqJAXCMXUYg"/>
+    </elements>
+    <elements xmi:id="_o4vo0MHKEeiQTu8bewxK9Q" businessElement="HealthOutcomeOrganizationContainer" businessElementId="d233ecc7-ec22-4650-95d9-129f9f217776" modelElementPath="outcomeObservation.author.assignedAuthor.representedOrganization">
+      <modelElement xmi:type="uml:Association" href="consol-other.uml#_98NDYKr3EeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_L7UxMLskEeeJebzvFLYuNQ" businessElement="HealthOutcomeOrganizationAddress" businessElementId="d2e08685-d310-4b35-964f-00d3f6db055d" modelElementPath="outcomeObservation.author.assignedAuthor.representedOrganization.addr" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_X2UcAKr4EeOxqJAXCMXUYg"/>
@@ -1174,7 +1179,9 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
     <elements xmi:id="_Omt8cP-sEeebPKLVcQEOsg" businessElement="HealthOutcomeTypeCode" modelElement="_HhH-EP82EeS4jrgU1p4iug" businessElementId="aa028f33-9320-4b27-bc95-60e8e710c59d" modelElementPath="outcomeObservation.code" condition=""/>
+    <elements xmi:id="_ky6DkMHEEeiYHNOvW6UWuw" businessElement="GoalObservationContainer" modelElement="_Qjxz4I6bEeOB0eBUISUB4Q" businessElementId="f60663c9-013b-4695-bcbb-7471c865e1f8" modelElementPath="outcomeObservation.entryReferenceGoalObs"/>
     <elements xmi:id="_KAMUgLsUEeejBu7P06QdPQ" businessElement="HealthOutcomeObservationID" modelElement="_36udgY55EeOB0eBUISUB4Q" businessElementId="e7e0a919-bcbb-47e2-922a-5f54234b0156" modelElementPath="outcomeObservation.id" condition=""/>
+    <elements xmi:id="_SbxM0MHHEeicf_ljFNLP6w" businessElement="GoalProgressContainer" modelElement="_8Hgk0K4nEeORf5eJaKt1KQ" businessElementId="b0dc51e2-b289-4cf2-815a-5d19ed4bafb3" modelElementPath="outcomeObservation.progressTowardGoalObservation"/>
     <elements xmi:id="_hlTKULskEeeJebzvFLYuNQ" businessElement="GoalProgressID" businessElementId="391d6171-a379-4b83-b15d-6de5eedea9f6" modelElementPath="outcomeObservation.progressTowardGoalObservation.id" condition="">
       <modelElement xmi:type="uml:Property" href="consol-planofcare.uml#_7xZNwpmVEeOLJeQez13EkQ"/>
     </elements>

@@ -2125,6 +2125,12 @@ This clinical statement represents procedures whose immediate and primary outcom
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N8Zk0UEwEeGdmoWy_aLP0Q" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N8Zk0EEwEeGdmoWy_aLP0Q" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_738QwMJZEeiAP9d0O8UtvA" name="id1" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_738QwcJZEeiAP9d0O8UtvA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_738QwsJZEeiAP9d0O8UtvA" value="*"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_IiPpQkEwEeGdmoWy_aLP0Q" memberEnd="_IiPpQEEwEeGdmoWy_aLP0Q _IiPpQ0EwEeGdmoWy_aLP0Q">
     <ownedEnd xmi:id="_IiPpQ0EwEeGdmoWy_aLP0Q" type="_0fjXAEEvEeGdmoWy_aLP0Q" association="_IiPpQkEwEeGdmoWy_aLP0Q"/>
@@ -3018,6 +3024,9 @@ This template can be used with a contained Product Instance template to represen
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qTxlgSOfEeiwsevzJ9LSUQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qTxlgiOfEeiwsevzJ9LSUQ" value="*"/>
       <association href="../consol.uml#_qTyMkCOfEeiwsevzJ9LSUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FdXVYAViEemFILsgJ_l7JA" name="code" visibility="private" aggregation="composite" redefinedProperty="_2OTHKhSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ZJi5IPDuEeOKPKE9au0oug" name="ProcedureSpecimen">
       <ownedComment xmi:id="_dOQrwPDuEeOKPKE9au0oug">
@@ -3958,6 +3967,7 @@ This template can be used with a contained Product Instance template to represen
     <elements xmi:id="_wm_i4CbHEeizpZLE_-yWkA" businessElement="ProcedureAuthorDateTime" businessElementId="a55fec8f-48e7-4930-8fd5-38a0c444962d" modelElementPath="procedureActivityProcedure2.author.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
+    <elements xmi:id="_IYaKMAViEemFILsgJ_l7JA" businessElement="ProcedurePerformedTypeCode" modelElement="_FdXVYAViEemFILsgJ_l7JA" businessElementId="2c6db9c5-d17c-4c92-94a3-7f0eb52e16be" modelElementPath="procedureActivityProcedure2.code"/>
     <elements xmi:id="_u8MiICOfEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedEndDateTime" modelElement="_qTlYQCOfEeiwsevzJ9LSUQ" businessElementId="c2ccb38d-8ecf-4e4d-a2eb-2a9708f1e9d4" modelElementPath="procedureActivityProcedure2.effectiveTime.high" condition=""/>
     <elements xmi:id="_tMAW4COfEeiwsevzJ9LSUQ" businessElement="ProcedurePerformedStartDateTime" modelElement="_qTlYQCOfEeiwsevzJ9LSUQ" businessElementId="d99f557b-d156-43b7-b9c0-d8567ef18c4e" modelElementPath="procedureActivityProcedure2.effectiveTime.high" condition=""/>
     <elements xmi:id="_AxVbACb-EeiwfMA1xUjwzg" businessElement="ProcedurePerformedReasonContainer" modelElement="_9LG_sPDqEeOKPKE9au0oug" businessElementId="677b0a06-f351-4d1d-9d8b-c2e02b38b1c1" modelElementPath="procedureActivityProcedure2.indication2" condition=""/>
@@ -4149,5 +4159,9 @@ This template can be used with a contained Product Instance template to represen
   <CDA:PropertyValidation xmi:id="_qTstAyOfEeiwsevzJ9LSUQ" severity="INFO" base_Property="_qTstACOfEeiwsevzJ9LSUQ">
     <ruleId>CONF:7670</ruleId>
     <ruleId>R2.0=CONF:1098-7670</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_FdYjgAViEemFILsgJ_l7JA" base_Property="_FdXVYAViEemFILsgJ_l7JA">
+    <ruleId>CONF:7656</ruleId>
+    <ruleId>R2.0=CONF:1098-7656</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>

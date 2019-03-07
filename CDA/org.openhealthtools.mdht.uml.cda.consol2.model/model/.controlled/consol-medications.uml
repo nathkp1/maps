@@ -3077,6 +3077,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <elements xmi:id="_9FRAAB2IEeib29n5I52STA" businessElement="MedicationAdministrationAuthorDateTime" businessElementId="38fb2ea5-42ca-42b5-aec1-a1da2ff63fff" modelElementPath="medicationActivity2.author.time" condition="">
       <modelElement xmi:type="uml:Property" href="consol-other.uml#_-mD94KrlEeOxqJAXCMXUYg"/>
     </elements>
+    <elements xmi:id="_a-mWIALZEem-QIFzb25lbQ" businessElement="MedicationAdministrationProductCode" modelElement="_rX5FMOLSEeOc7-TVP7Wi6w" businessElementId="271b979b-7064-46cd-b0ad-3d43224499fb" modelElementPath="medicationActivity2.code"/>
     <elements xmi:id="_y-GQwO_rEeez8vsiAUICHA" businessElement="MedicationAdministrationProductII" modelElement="_2UDJ1RSVEeGGzu7fmW9pXw" businessElementId="63988083-774a-499a-b540-6d1640fbd080" modelElementPath="medicationActivity2.consumable.medicationInformation2.id" condition=""/>
     <elements xmi:id="_uzZx8O_rEeez8vsiAUICHA" businessElement="MedicationAdministrationProductValueCode" modelElement="_MeXngOXsEeOkFcFJ9uzEEw" businessElementId="3079839b-257b-4a03-9dc2-bf2a451cf13a" modelElementPath="medicationActivity2.consumable.medicationInformation2.manufacturedMaterial.code" condition=""/>
     <elements xmi:id="_2q3dcO_rEeez8vsiAUICHA" businessElement="MedicationAdministrationProductManufacturerName" businessElementId="0d848be0-9463-48c0-887e-64e4f77e78ff" modelElementPath="medicationActivity2.consumable.medicationInformation2.manufacturerOrganization.name" condition="">
@@ -3130,6 +3131,9 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     </elements>
     <elements xmi:id="_C_VjAB2PEeiF7sWWqfxGaw" businessElement="MedicationDispensePerformerOrganizationName" businessElementId="633e3123-fbf1-440f-bed8-b8e81e9177b6" modelElementPath="medicationActivity2.medicationDispense2.performer.assignedEntity.representedOrganization.name" condition="">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_aJapAPgBEeizhbr4foddpg" businessElement="MedicationDispensePerformerOrganizationPhoneContact" businessElementId="cf21f1d0-3198-4759-98fc-981158870d0a" modelElementPath="medicationActivity2.medicationDispense2.performer.assignedEntity.representedOrganization.telecom">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
     </elements>
     <elements xmi:id="_g_INAB2OEeiF7sWWqfxGaw" businessElement="MedicationDispensePerformerEmailContact" businessElementId="2ecdd276-4370-4bfc-b52d-790378ab1cc6" modelElementPath="medicationActivity2.medicationDispense2.performer.assignedEntity.telecom" condition="(starts-with(@value, 'mailto:'))">
       <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
@@ -3291,4 +3295,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <ruleId>CONF:7518</ruleId>
     <ruleId>R2.0=CONF:1098-7518</ruleId>
   </CDA:PropertyValidation>
+  <MDMI:MDMIMapping xmi:id="_YSYSMNuiEei3scvzVYQ4-w" base_Class="_ZQpEwK-1EeO8duI_7f6kZw">
+    <elements xmi:id="_YSaucNuiEei3scvzVYQ4-w" businessElement="MedicationAdministrationTargetSiteCode" modelElement="_499F8B5EEeiF7sWWqfxGaw" businessElementId="117ffc37-696b-4d72-8aaa-0d04e7f3eba1" modelElementPath="medicationActivity2.approachSiteCode"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
