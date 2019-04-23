@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project" default="default"
+	xmlns:qvto="http://www.eclipse.org/qvt/1.0.0/Operational">
+	<target name="default">
+
+
+
+		<property name="mdmifocal" value="Provenance"/>
+
+		<delete file="map/fhir${mdmifocal}.mdmi" />
+	
+
+
+		<echo message="" />
+		<echo message="Transform CCDA on FHIR" />
+		<echo message="" />
+		<qvto:transformation
+			uri="platform:/plugin/org.mdmi.qvt.transforms/transforms/Fhir2Mdmi.qvto">
+			<in uri="platform:/resource/FHIRSTU3/model/FHIR-Core.uml" />
+			<out uri="platform:/resource/FHIRSTU3/maps/fhir${mdmifocal}.mdmi" />
+			<configProperty name="fhirVersion" value="FHIRSTU3" />
+			<configProperty name="packageName" value="Resources" />
+			<configProperty name="mappingStyle" value="NORMAL" />
+			<configProperty name="expressionLanguage" value="XPath" />
+			<configProperty name="singleSemantics" value="PatientID" />
+			<configProperty name="syntaxRoot"
+				value="${mdmifocal}" />
+			<configProperty name="datatypemappings" value="platform:/resource/FHIRSTU3/model/datatypemappings/" />
+		</qvto:transformation>
+		
+		
+	 
+ 
+
+
+		<echo message="Start Sort" />
+	 
+		<mdmiSort model="platform:/resource/FHIRSTU3/maps/fhir${mdmifocal}.mdmi" />
+
+		<echo message="End Sort" />
+
+	</target>
+
+
+
+</project>

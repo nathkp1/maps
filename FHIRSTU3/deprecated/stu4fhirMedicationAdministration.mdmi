@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdmi="http://schema.omg.org/spec/MDMI/1.0">
+  <mdmi:MessageGroup xmi:id="_I7yW0GXHEemxAeHgG0yB7Q" name="STU4" description=" Message Group" defaultLocationExprLang="XPath" defaultConstraintExprLang="JavaScript" defaultRuleExprLang="JavaScript">
+    <models xmi:id="_I7yW0WXHEemxAeHgG0yB7Q" messageModelName="MedicationAdministration" source="Resources">
+      <syntaxModel xmi:id="_I7yW0mXHEemxAeHgG0yB7Q">
+        <root xsi:type="mdmi:Bag" xmi:id="_I7yW02XHEemxAeHgG0yB7Q" name="Bundle" minOccurs="1" maxOccurs="1" location="Bundle" semanticElement="_I7y962XHEemxAeHgG0yB7Q">
+          <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW1GXHEemxAeHgG0yB7Q" name="MedicationAdministration" description="99999999" minOccurs="1" maxOccurs="1" location="entry/resource/MedicationAdministration" semanticElement="_I7y97GXHEemxAeHgG0yB7Q">
+            <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW6WXHEemxAeHgG0yB7Q" name="identifier" description="0" maxOccurs="2147483647" location="identifier" semanticElement="_I7y992XHEemxAeHgG0yB7Q">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXAGXHEemxAeHgG0yB7Q" name="assigner" description="99999999" maxOccurs="1" location="assigner" fieldName="assigner">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXAmXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXAWXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+              <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXA2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id/@value" fieldName="id"/>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW9mXHEemxAeHgG0yB7Q" name="period" description="99999999" location="period" fieldName="period">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW-mXHEemxAeHgG0yB7Q" name="end" description="99999999" maxOccurs="1" location="end" fieldName="end">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW_GXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW-2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW_WXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW_2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW_mXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW92XHEemxAeHgG0yB7Q" name="start" description="99999999" maxOccurs="1" location="start" fieldName="start">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW-WXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW-GXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW8GXHEemxAeHgG0yB7Q" name="system" description="99999999" maxOccurs="1" location="system" fieldName="system">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW8mXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW8WXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW7WXHEemxAeHgG0yB7Q" name="type" description="99999999" maxOccurs="1" location="type" fieldName="type">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW72XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW7mXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW6mXHEemxAeHgG0yB7Q" name="use" description="99999999" maxOccurs="1" location="use" fieldName="use">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW7GXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW62XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW82XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="value" fieldName="value">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW9WXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW9GXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+            </nodes>
+            <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXJmXHEemxAeHgG0yB7Q" name="status" description="3" minOccurs="1" maxOccurs="1" location="status" semanticElement="_I7y9_GXHEemxAeHgG0yB7Q">
+              <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXKGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+              <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXJ2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+            </nodes>
+            <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXDmXHEemxAeHgG0yB7Q" name="medicationCodeableConcept" description="6" minOccurs="1" maxOccurs="1" location="medicationCodeableConcept" semanticElement="_I7y9-mXHEemxAeHgG0yB7Q">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXFWXHEemxAeHgG0yB7Q" name="coding" description="99999999" maxOccurs="1" location="coding" fieldName="coding">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXHGXHEemxAeHgG0yB7Q" name="code" description="99999999" maxOccurs="1" location="code" fieldName="code">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXHmXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXHWXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXH2XHEemxAeHgG0yB7Q" name="display" description="99999999" maxOccurs="1" location="display" fieldName="display">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXIWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXIGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXJWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id/@value" fieldName="id"/>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXFmXHEemxAeHgG0yB7Q" name="system" description="99999999" maxOccurs="1" location="system" fieldName="system">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXGGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXF2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXImXHEemxAeHgG0yB7Q" name="userSelected" description="99999999" maxOccurs="1" location="userSelected" fieldName="userSelected">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXJGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXI2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXGWXHEemxAeHgG0yB7Q" name="version" description="99999999" maxOccurs="1" location="version" fieldName="version">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXG2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXGmXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXEmXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXFGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXE2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXD2XHEemxAeHgG0yB7Q" name="text" description="99999999" maxOccurs="1" location="text" fieldName="text">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXEWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXEGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+            </nodes>
+            <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXBGXHEemxAeHgG0yB7Q" name="medicationReference" description="6" minOccurs="1" maxOccurs="1" location="medicationReference" semanticElement="_I7y9-2XHEemxAeHgG0yB7Q">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXCGXHEemxAeHgG0yB7Q" name="display" description="99999999" maxOccurs="1" location="display" fieldName="display">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXCmXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXCWXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXC2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXDWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXDGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXBWXHEemxAeHgG0yB7Q" name="reference" description="99999999" maxOccurs="1" location="reference" fieldName="reference">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXB2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXBmXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+            </nodes>
+            <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW1WXHEemxAeHgG0yB7Q" name="effectiveDateTime" description="10" minOccurs="1" maxOccurs="1" location="effectiveDateTime" semanticElement="_I7y982XHEemxAeHgG0yB7Q">
+              <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW12XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+              <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW1mXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+            </nodes>
+            <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW2GXHEemxAeHgG0yB7Q" name="effectivePeriod" description="10" location="effectivePeriod">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW3GXHEemxAeHgG0yB7Q" name="end" description="10" minOccurs="1" maxOccurs="1" location="effective[x]" semanticElement="_I7y98GXHEemxAeHgG0yB7Q">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW3mXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW3WXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW2WXHEemxAeHgG0yB7Q" name="start" description="10" minOccurs="1" maxOccurs="1" location="effective[x]" semanticElement="_I7y97WXHEemxAeHgG0yB7Q">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW22XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW2mXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+            </nodes>
+            <nodes xsi:type="mdmi:Bag" xmi:id="_I7y96WXHEemxAeHgG0yB7Q" name="performer" description="11" minOccurs="1" maxOccurs="2147483647" location="performer" semanticElement="_I7y-EWXHEemxAeHgG0yB7Q"/>
+            <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW32XHEemxAeHgG0yB7Q" name="reasonReference" description="13" maxOccurs="2147483647" location="reasonReference" semanticElement="_I7y99GXHEemxAeHgG0yB7Q">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW42XHEemxAeHgG0yB7Q" name="display" description="99999999" maxOccurs="1" location="display" fieldName="display">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW5WXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW5GXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW5mXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW6GXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW52XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yW4GXHEemxAeHgG0yB7Q" name="reference" description="99999999" maxOccurs="1" location="reference" fieldName="reference">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW4mXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yW4WXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+            </nodes>
+            <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXKWXHEemxAeHgG0yB7Q" name="dosage" description="17" minOccurs="1" maxOccurs="1" location="dosage" semanticElement="_I7y9_2XHEemxAeHgG0yB7Q">
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7y95mXHEemxAeHgG0yB7Q" name="text" description="0" maxOccurs="1" location="text" semanticElement="_I7y-A2XHEemxAeHgG0yB7Q">
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7y96GXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7y952XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXKmXHEemxAeHgG0yB7Q" name="site" description="1" maxOccurs="1" location="site" semanticElement="_I7y-AGXHEemxAeHgG0yB7Q">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXMWXHEemxAeHgG0yB7Q" name="coding" description="99999999" maxOccurs="1" location="coding" fieldName="coding">
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXOGXHEemxAeHgG0yB7Q" name="code" description="99999999" maxOccurs="1" location="code" fieldName="code">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXOmXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXOWXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXO2XHEemxAeHgG0yB7Q" name="display" description="99999999" maxOccurs="1" location="display" fieldName="display">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXPWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXPGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXQWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id/@value" fieldName="id"/>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXMmXHEemxAeHgG0yB7Q" name="system" description="99999999" maxOccurs="1" location="system" fieldName="system">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXNGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXM2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXPmXHEemxAeHgG0yB7Q" name="userSelected" description="99999999" maxOccurs="1" location="userSelected" fieldName="userSelected">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXQGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXP2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXNWXHEemxAeHgG0yB7Q" name="version" description="99999999" maxOccurs="1" location="version" fieldName="version">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXN2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXNmXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXLmXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXMGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXL2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXK2XHEemxAeHgG0yB7Q" name="text" description="99999999" maxOccurs="1" location="text" fieldName="text">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXLWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXLGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXQmXHEemxAeHgG0yB7Q" name="route" description="2" maxOccurs="1" location="route" semanticElement="_I7y-BmXHEemxAeHgG0yB7Q">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXSWXHEemxAeHgG0yB7Q" name="coding" description="99999999" maxOccurs="1" location="coding" fieldName="coding">
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXUGXHEemxAeHgG0yB7Q" name="code" description="99999999" maxOccurs="1" location="code" fieldName="code">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXUmXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXUWXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXU2XHEemxAeHgG0yB7Q" name="display" description="99999999" maxOccurs="1" location="display" fieldName="display">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXVWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXVGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXWWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id/@value" fieldName="id"/>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXSmXHEemxAeHgG0yB7Q" name="system" description="99999999" maxOccurs="1" location="system" fieldName="system">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXTGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXS2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXVmXHEemxAeHgG0yB7Q" name="userSelected" description="99999999" maxOccurs="1" location="userSelected" fieldName="userSelected">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXWGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXV2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXTWXHEemxAeHgG0yB7Q" name="version" description="99999999" maxOccurs="1" location="version" fieldName="version">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXT2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXTmXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXRmXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXSGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXR2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXQ2XHEemxAeHgG0yB7Q" name="text" description="99999999" maxOccurs="1" location="text" fieldName="text">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXRWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXRGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXd2XHEemxAeHgG0yB7Q" name="method" description="3" maxOccurs="1" location="method" semanticElement="_I7y-CWXHEemxAeHgG0yB7Q">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXfmXHEemxAeHgG0yB7Q" name="coding" description="99999999" maxOccurs="1" location="coding" fieldName="coding">
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXhWXHEemxAeHgG0yB7Q" name="code" description="99999999" maxOccurs="1" location="code" fieldName="code">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXh2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXhmXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXiGXHEemxAeHgG0yB7Q" name="display" description="99999999" maxOccurs="1" location="display" fieldName="display">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXimXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXiWXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXjmXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id/@value" fieldName="id"/>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXf2XHEemxAeHgG0yB7Q" name="system" description="99999999" maxOccurs="1" location="system" fieldName="system">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXgWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXgGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXi2XHEemxAeHgG0yB7Q" name="userSelected" description="99999999" maxOccurs="1" location="userSelected" fieldName="userSelected">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXjWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXjGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                  <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXgmXHEemxAeHgG0yB7Q" name="version" description="99999999" maxOccurs="1" location="version" fieldName="version">
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXhGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                    <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXg2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                  </nodes>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXe2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXfWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXfGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXeGXHEemxAeHgG0yB7Q" name="text" description="99999999" maxOccurs="1" location="text" fieldName="text">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXemXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXeWXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXZGXHEemxAeHgG0yB7Q" name="dose" description="4" maxOccurs="1" location="dose" semanticElement="_I7y-DGXHEemxAeHgG0yB7Q">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXcWXHEemxAeHgG0yB7Q" name="code" description="99999999" maxOccurs="1" location="code" fieldName="code">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXc2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXcmXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXaGXHEemxAeHgG0yB7Q" name="comparator" description="99999999" maxOccurs="1" location="comparator" fieldName="comparator">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXamXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXaWXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXdGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXdmXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXdWXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXbmXHEemxAeHgG0yB7Q" name="system" description="99999999" maxOccurs="1" location="system" fieldName="system">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXcGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXb2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXa2XHEemxAeHgG0yB7Q" name="unit" description="99999999" maxOccurs="1" location="unit" fieldName="unit">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXbWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXbGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXZWXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="value" fieldName="value">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXZ2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXZmXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXj2XHEemxAeHgG0yB7Q" name="rateQuantity" description="5" maxOccurs="1" location="rateQuantity" semanticElement="_I7y-EGXHEemxAeHgG0yB7Q">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7y94GXHEemxAeHgG0yB7Q" name="code" description="99999999" maxOccurs="1" location="code" fieldName="code">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7y94mXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7y94WXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXk2XHEemxAeHgG0yB7Q" name="comparator" description="99999999" maxOccurs="1" location="comparator" fieldName="comparator">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXlWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXlGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7y942XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7y95WXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7y95GXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXmWXHEemxAeHgG0yB7Q" name="system" description="99999999" maxOccurs="1" location="system" fieldName="system">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXm2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXmmXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXlmXHEemxAeHgG0yB7Q" name="unit" description="99999999" maxOccurs="1" location="unit" fieldName="unit">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXmGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXl2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXkGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="value" fieldName="value">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXkmXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXkWXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+              </nodes>
+              <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXWmXHEemxAeHgG0yB7Q" name="rateRatio" description="5" maxOccurs="1" location="rateRatio" semanticElement="_I7y-D2XHEemxAeHgG0yB7Q">
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXXmXHEemxAeHgG0yB7Q" name="denominator" description="99999999" maxOccurs="1" location="denominator" fieldName="denominator">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXYGXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXX2XHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXYWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="id" fieldName="id">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXY2XHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXYmXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+                <nodes xsi:type="mdmi:Bag" xmi:id="_I7yXW2XHEemxAeHgG0yB7Q" name="numerator" description="99999999" maxOccurs="1" location="numerator" fieldName="numerator">
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXXWXHEemxAeHgG0yB7Q" name="id" description="99999999" maxOccurs="1" location="@id" fieldName="id"/>
+                  <nodes xsi:type="mdmi:LeafSyntaxTranslator" xmi:id="_I7yXXGXHEemxAeHgG0yB7Q" name="value" description="99999999" maxOccurs="1" location="@value" fieldName="value"/>
+                </nodes>
+              </nodes>
+            </nodes>
+          </nodes>
+        </root>
+      </syntaxModel>
+      <elementSet xmi:id="_I7y96mXHEemxAeHgG0yB7Q">
+        <semanticElements xmi:id="_I7y962XHEemxAeHgG0yB7Q" name="Resources" elementType="NORMAL" datatype="_I70N_GXHEemxAeHgG0yB7Q" children="_I7y97GXHEemxAeHgG0yB7Q" syntaxNode="_I7yW02XHEemxAeHgG0yB7Q"/>
+        <semanticElements xmi:id="_I7y97GXHEemxAeHgG0yB7Q" name="MedicationAdministration0" description="Administration of medication to a patient" elementType="LOCAL" datatype="_I70N_GXHEemxAeHgG0yB7Q" parent="_I7y962XHEemxAeHgG0yB7Q" children="_I7y97WXHEemxAeHgG0yB7Q _I7y98GXHEemxAeHgG0yB7Q _I7y982XHEemxAeHgG0yB7Q _I7y99GXHEemxAeHgG0yB7Q _I7y992XHEemxAeHgG0yB7Q _I7y9-mXHEemxAeHgG0yB7Q _I7y9-2XHEemxAeHgG0yB7Q _I7y9_GXHEemxAeHgG0yB7Q _I7y9_2XHEemxAeHgG0yB7Q _I7y-EWXHEemxAeHgG0yB7Q" syntaxNode="_I7yW1GXHEemxAeHgG0yB7Q"/>
+        <semanticElements xmi:id="_I7y97WXHEemxAeHgG0yB7Q" name="Effectivestart" description="A specific date/time or interval of time during which the administration took place (or did not take place, when the 'notGiven' attribute is true). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate." elementType="NORMAL" datatype="_I70O4GXHEemxAeHgG0yB7Q" parent="_I7y97GXHEemxAeHgG0yB7Q" syntaxNode="_I7yW2WXHEemxAeHgG0yB7Q" enumValueField="" enumValueDescrField="">
+          <propertyQualifier></propertyQualifier>
+          <mapFromMdmi xmi:id="_I7y97mXHEemxAeHgG0yB7Q" name="FROM_MedicationAdministrationStartDateTime" ruleExpressionLanguage="javaScript" businessElement="_I70M42XHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapDateTimeToFHIR_dateTime"/>
+          <mapToMdmi xmi:id="_I7y972XHEemxAeHgG0yB7Q" name="TO_MedicationAdministrationStartDateTime" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_I70M42XHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapFHIR_dateTimeToDateTime"/>
+        </semanticElements>
+        <semanticElements xmi:id="_I7y98GXHEemxAeHgG0yB7Q" name="Effectiveend0" description="A specific date/time or interval of time during which the administration took place (or did not take place, when the 'notGiven' attribute is true). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate." elementType="NORMAL" datatype="_I70O4GXHEemxAeHgG0yB7Q" parent="_I7y97GXHEemxAeHgG0yB7Q" syntaxNode="_I7yW3GXHEemxAeHgG0yB7Q" enumValueField="" enumValueDescrField="">
+          <propertyQualifier></propertyQualifier>
+          <mapFromMdmi xmi:id="_I7y98WXHEemxAeHgG0yB7Q" name="FROM_MedicationAdministrationEndDateTime" ruleExpressionLanguage="javaScript" businessElement="_I7y_WmXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapDateTimeToFHIR_dateTime"/>
+          <mapToMdmi xmi:id="_I7y98mXHEemxAeHgG0yB7Q" name="TO_MedicationAdministrationEndDateTime" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_I7y_WmXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapFHIR_dateTimeToDateTime"/>
+        </semanticElements>
+        <semanticElements xmi:id="_I7y982XHEemxAeHgG0yB7Q" name="EffectivedateTime1" elementType="NORMAL" datatype="_I70O4GXHEemxAeHgG0yB7Q" parent="_I7y97GXHEemxAeHgG0yB7Q" syntaxNode="_I7yW1WXHEemxAeHgG0yB7Q"/>
+        <semanticElements xmi:id="_I7y99GXHEemxAeHgG0yB7Q" name="ReasonReference" description="Condition or observation that supports why the medication was administered." elementType="NORMAL" datatype="_I70OfmXHEemxAeHgG0yB7Q" parent="_I7y97GXHEemxAeHgG0yB7Q" syntaxNode="_I7yW32XHEemxAeHgG0yB7Q" enumValueField="" enumValueDescrField="">
+          <propertyQualifier></propertyQualifier>
+          <mapFromMdmi xmi:id="_I7y99WXHEemxAeHgG0yB7Q" name="FROM_MedicationAdministrationReasonID" ruleExpressionLanguage="javaScript" businessElement="_I7zB1GXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapInstanceIdentifierToFHIR_Reference"/>
+          <mapToMdmi xmi:id="_I7y99mXHEemxAeHgG0yB7Q" name="TO_MedicationAdministrationReasonID" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_I7zB1GXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapFHIR_ReferenceToInstanceIdentifier"/>
+        </semanticElements>
+        <semanticElements xmi:id="_I7y992XHEemxAeHgG0yB7Q" name="Identifier" description="This is a business identifier, not a resource identifier." elementType="NORMAL" datatype="_I70PiGXHEemxAeHgG0yB7Q" parent="_I7y97GXHEemxAeHgG0yB7Q" syntaxNode="_I7yW6WXHEemxAeHgG0yB7Q" enumValueField="" enumValueDescrField="">
+          <propertyQualifier></propertyQualifier>
+          <mapFromMdmi xmi:id="_I7y9-GXHEemxAeHgG0yB7Q" name="FROM_MedicationAdministrationID" ruleExpressionLanguage="javaScript" businessElement="_I7y-pGXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapInstanceIdentifierToFHIR_Identifier"/>
+          <mapToMdmi xmi:id="_I7y9-WXHEemxAeHgG0yB7Q" name="TO_MedicationAdministrationID" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_I7y-pGXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapFHIR_IdentifierToInstanceIdentifier"/>
+        </semanticElements>
+        <semanticElements xmi:id="_I7y9-mXHEemxAeHgG0yB7Q" name="MedicationCodeableConcept" elementType="NORMAL" datatype="_I70O-GXHEemxAeHgG0yB7Q" parent="_I7y97GXHEemxAeHgG0yB7Q" syntaxNode="_I7yXDmXHEemxAeHgG0yB7Q"/>
+        <semanticElements xmi:id="_I7y9-2XHEemxAeHgG0yB7Q" name="MedicationReference0" elementType="NORMAL" datatype="_I70OfmXHEemxAeHgG0yB7Q" parent="_I7y97GXHEemxAeHgG0yB7Q" syntaxNode="_I7yXBGXHEemxAeHgG0yB7Q"/>
+        <semanticElements xmi:id="_I7y9_GXHEemxAeHgG0yB7Q" name="Status" description="in-progress | not-done | on-hold | completed | entered-in-error | stopped | unknown" elementType="NORMAL" datatype="_I70PPmXHEemxAeHgG0yB7Q" parent="_I7y97GXHEemxAeHgG0yB7Q" syntaxNode="_I7yXJmXHEemxAeHgG0yB7Q" enumValueField="http://hl7.org/fhir/ValueSet/medication-admin-status|4.0.0" enumValueDescrField="http://hl7.org/fhir/ValueSet/medication-admin-status|4.0.0">
+          <propertyQualifier>http://hl7.org/fhir/ValueSet/medication-admin-status|4.0.0</propertyQualifier>
+          <mapFromMdmi xmi:id="_I7y9_WXHEemxAeHgG0yB7Q" name="FROM_MedicationAdministrationStatusCode" ruleExpressionLanguage="javaScript" businessElement="_I7y-p2XHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapCodedElementToFHIR_code"/>
+          <mapToMdmi xmi:id="_I7y9_mXHEemxAeHgG0yB7Q" name="TO_MedicationAdministrationStatusCode" ruleExpressionLanguage="javaScript" enumExtResolverUri="http://hl7.org/fhir/ValueSet/medication-admin-status|4.0.0" businessElement="_I7y-p2XHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapFHIR_codeToCodedElement"/>
+        </semanticElements>
+        <semanticElements xmi:id="_I7y9_2XHEemxAeHgG0yB7Q" name="Dosage" elementType="LOCAL" datatype="_I70N_GXHEemxAeHgG0yB7Q" parent="_I7y97GXHEemxAeHgG0yB7Q" children="_I7y-AGXHEemxAeHgG0yB7Q _I7y-A2XHEemxAeHgG0yB7Q _I7y-BmXHEemxAeHgG0yB7Q _I7y-CWXHEemxAeHgG0yB7Q _I7y-DGXHEemxAeHgG0yB7Q _I7y-D2XHEemxAeHgG0yB7Q _I7y-EGXHEemxAeHgG0yB7Q" syntaxNode="_I7yXKWXHEemxAeHgG0yB7Q"/>
+        <semanticElements xmi:id="_I7y-AGXHEemxAeHgG0yB7Q" name="Site" description="If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both." elementType="NORMAL" datatype="_I70O-GXHEemxAeHgG0yB7Q" parent="_I7y9_2XHEemxAeHgG0yB7Q" syntaxNode="_I7yXKmXHEemxAeHgG0yB7Q" enumValueField="http://hl7.org/fhir/ValueSet/approach-site-codes" enumValueDescrField="http://hl7.org/fhir/ValueSet/approach-site-codes">
+          <propertyQualifier>http://hl7.org/fhir/ValueSet/approach-site-codes</propertyQualifier>
+          <mapFromMdmi xmi:id="_I7y-AWXHEemxAeHgG0yB7Q" name="FROM_MedicationAdministrationTargetSiteCode" ruleExpressionLanguage="javaScript" businessElement="_I7y-omXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapCodedElementToFHIR_CodeableConcept"/>
+          <mapToMdmi xmi:id="_I7y-AmXHEemxAeHgG0yB7Q" name="TO_MedicationAdministrationTargetSiteCode" ruleExpressionLanguage="javaScript" enumExtResolverUri="http://hl7.org/fhir/ValueSet/approach-site-codes" businessElement="_I7y-omXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapFHIR_CodeableConceptToCodedElement"/>
+        </semanticElements>
+        <semanticElements xmi:id="_I7y-A2XHEemxAeHgG0yB7Q" name="Text" description="Free text dosage instructions e.g. SIG" elementType="NORMAL" datatype="_I70PbmXHEemxAeHgG0yB7Q" parent="_I7y9_2XHEemxAeHgG0yB7Q" syntaxNode="_I7y95mXHEemxAeHgG0yB7Q" enumValueField="" enumValueDescrField="">
+          <propertyQualifier></propertyQualifier>
+          <mapFromMdmi xmi:id="_I7y-BGXHEemxAeHgG0yB7Q" name="FROM_MedicationAdministrationDosageNotes" ruleExpressionLanguage="javaScript" businessElement="_I7y_XGXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapStringToFHIR_fhirstring"/>
+          <mapToMdmi xmi:id="_I7y-BWXHEemxAeHgG0yB7Q" name="TO_MedicationAdministrationDosageNotes" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_I7y_XGXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapFHIR_fhirstringToString"/>
+        </semanticElements>
+        <semanticElements xmi:id="_I7y-BmXHEemxAeHgG0yB7Q" name="Route" description="A code specifying the route or physiological path of administration of a therapeutic agent into or onto the patient.  For example, topical, intravenous, etc." elementType="NORMAL" datatype="_I70O-GXHEemxAeHgG0yB7Q" parent="_I7y9_2XHEemxAeHgG0yB7Q" syntaxNode="_I7yXQmXHEemxAeHgG0yB7Q" enumValueField="http://hl7.org/fhir/ValueSet/route-codes" enumValueDescrField="http://hl7.org/fhir/ValueSet/route-codes">
+          <propertyQualifier>http://hl7.org/fhir/ValueSet/route-codes</propertyQualifier>
+          <mapFromMdmi xmi:id="_I7y-B2XHEemxAeHgG0yB7Q" name="FROM_MedicationAdministrationRouteCode" ruleExpressionLanguage="javaScript" businessElement="_I7y-oWXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapCodedElementToFHIR_CodeableConcept"/>
+          <mapToMdmi xmi:id="_I7y-CGXHEemxAeHgG0yB7Q" name="TO_MedicationAdministrationRouteCode" ruleExpressionLanguage="javaScript" enumExtResolverUri="http://hl7.org/fhir/ValueSet/route-codes" businessElement="_I7y-oWXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapFHIR_CodeableConceptToCodedElement"/>
+        </semanticElements>
+        <semanticElements xmi:id="_I7y-CWXHEemxAeHgG0yB7Q" name="Method" description="How drug was administered" elementType="NORMAL" datatype="_I70O-GXHEemxAeHgG0yB7Q" parent="_I7y9_2XHEemxAeHgG0yB7Q" syntaxNode="_I7yXd2XHEemxAeHgG0yB7Q" enumValueField="http://hl7.org/fhir/ValueSet/administration-method-codes" enumValueDescrField="http://hl7.org/fhir/ValueSet/administration-method-codes">
+          <propertyQualifier>http://hl7.org/fhir/ValueSet/administration-method-codes</propertyQualifier>
+          <mapFromMdmi xmi:id="_I7y-CmXHEemxAeHgG0yB7Q" name="FROM_MedicationAdministrationMethodCode" ruleExpressionLanguage="javaScript" businessElement="_I7y_WWXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapCodedElementToFHIR_CodeableConcept"/>
+          <mapToMdmi xmi:id="_I7y-C2XHEemxAeHgG0yB7Q" name="TO_MedicationAdministrationMethodCode" ruleExpressionLanguage="javaScript" enumExtResolverUri="http://hl7.org/fhir/ValueSet/administration-method-codes" businessElement="_I7y_WWXHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapFHIR_CodeableConceptToCodedElement"/>
+        </semanticElements>
+        <semanticElements xmi:id="_I7y-DGXHEemxAeHgG0yB7Q" name="Dose" description="If the administration is not instantaneous (rate is present), this can be specified to convey the total amount administered over period of time of a single administration." elementType="NORMAL" datatype="_I70Os2XHEemxAeHgG0yB7Q" parent="_I7y9_2XHEemxAeHgG0yB7Q" syntaxNode="_I7yXZGXHEemxAeHgG0yB7Q" enumValueField="" enumValueDescrField="">
+          <propertyQualifier></propertyQualifier>
+          <mapFromMdmi xmi:id="_I7y-DWXHEemxAeHgG0yB7Q" name="FROM_MedicationAdministrationDosageUnitMeasure" ruleExpressionLanguage="javaScript" businessElement="_I7y_W2XHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapPhysicalQuantityToFHIR_Quantity"/>
+          <mapToMdmi xmi:id="_I7y-DmXHEemxAeHgG0yB7Q" name="TO_MedicationAdministrationDosageUnitMeasure" ruleExpressionLanguage="javaScript" enumExtResolverUri="" businessElement="_I7y_W2XHEemxAeHgG0yB7Q" rule="DATATYPEMAP:mapFHIR_QuantityToPhysicalQuantity"/>
+        </semanticElements>
+        <semanticElements xmi:id="_I7y-D2XHEemxAeHgG0yB7Q" name="RateRatio" elementType="NORMAL" datatype="_I70OaWXHEemxAeHgG0yB7Q" parent="_I7y9_2XHEemxAeHgG0yB7Q" syntaxNode="_I7yXWmXHEemxAeHgG0yB7Q"/>
+        <semanticElements xmi:id="_I7y-EGXHEemxAeHgG0yB7Q" name="RateQuantity0" elementType="NORMAL" datatype="_I70Os2XHEemxAeHgG0yB7Q" parent="_I7y9_2XHEemxAeHgG0yB7Q" syntaxNode="_I7yXj2XHEemxAeHgG0yB7Q"/>
+        <semanticElements xmi:id="_I7y-EWXHEemxAeHgG0yB7Q" name="Performer" elementType="NORMAL" datatype="_I70N_GXHEemxAeHgG0yB7Q" parent="_I7y97GXHEemxAeHgG0yB7Q" syntaxNode="_I7y96WXHEemxAeHgG0yB7Q">
+          <mapFromMdmi xmi:id="_I7y-EmXHEemxAeHgG0yB7Q" name="From_FHIR-CORE_RESOURCES_MEDICATIONADMINISTRATION_PERFORMER" ruleExpressionLanguage="javaScript" businessElement="_I7zm4mXHEemxAeHgG0yB7Q"/>
+          <mapToMdmi xmi:id="_I7y-E2XHEemxAeHgG0yB7Q" name="To_FHIR-CORE_RESOURCES_MEDICATIONADMINISTRATION_PERFORMER" ruleExpressionLanguage="javaScript" businessElement="_I7zm4mXHEemxAeHgG0yB7Q"/>
+        </semanticElements>
+      </elementSet>
+    </models>
+    <domainDictionary xmi:id="_I7y-FGXHEemxAeHgG0yB7Q">
+      <businessElements xmi:id="_I7y-oWXHEemxAeHgG0yB7Q" name="MedicationAdministrationRouteCode" description="" reference="MedicationAdministrationRouteCode" uniqueIdentifier="8fe79500-d0bf-43f3-a6b3-246b75656043" referenceDatatype="_I70OBGXHEemxAeHgG0yB7Q" enumValueDescrField="FDA Drug Registration and Listing Database" enumValueSet="2.16.840.1.113883.3.88.12.3221.8.7" readonly="true"/>
+      <businessElements xmi:id="_I7y-omXHEemxAeHgG0yB7Q" name="MedicationAdministrationTargetSiteCode" description="" reference="MedicationAdministrationTargetSiteCode" uniqueIdentifier="117ffc37-696b-4d72-8aaa-0d04e7f3eba1" referenceDatatype="_I70OBGXHEemxAeHgG0yB7Q" enumValueDescrField="SNOMED CT" enumValueSet="2.16.840.1.113883.3.88.12.3221.8.9" readonly="true"/>
+      <businessElements xmi:id="_I7y-pGXHEemxAeHgG0yB7Q" name="MedicationAdministrationID" description="" reference="MedicationAdministrationID" uniqueIdentifier="c288c2b4-e001-495d-9cd9-011dcb4c2da5" referenceDatatype="_I70OE2XHEemxAeHgG0yB7Q" readonly="true"/>
+      <businessElements xmi:id="_I7y-p2XHEemxAeHgG0yB7Q" name="MedicationAdministrationStatusCode" description="" reference="MedicationAdministrationStatusCode" uniqueIdentifier="333e512f-80c4-48f0-9e65-1426e4138f00" referenceDatatype="_I70OBGXHEemxAeHgG0yB7Q" enumValueField="code" enumValueDescrField="HL7" enumValueSet="2.16.840.1.113883.11.20.9.19" readonly="true"/>
+      <businessElements xmi:id="_I7y_WWXHEemxAeHgG0yB7Q" name="MedicationAdministrationMethodCode" description="" reference="MedicationAdministrationMethodCode" uniqueIdentifier="47537237-7ca2-4baf-afa3-fecb17bed7b5" referenceDatatype="_I70OBGXHEemxAeHgG0yB7Q" readonly="true"/>
+      <businessElements xmi:id="_I7y_WmXHEemxAeHgG0yB7Q" name="MedicationAdministrationEndDateTime" description="" reference="MedicationAdministrationEndDateTime" uniqueIdentifier="dec8c1cf-9186-4aad-960c-4391b13180eb" referenceDatatype="_I70N7WXHEemxAeHgG0yB7Q" readonly="true"/>
+      <businessElements xmi:id="_I7y_W2XHEemxAeHgG0yB7Q" name="MedicationAdministrationDosageUnitMeasure" description="" reference="MedicationAdministrationDosageUnitMeasure" uniqueIdentifier="2ae32afb-f8ec-4b06-880b-fc12a4ede424" referenceDatatype="_I70ODGXHEemxAeHgG0yB7Q" readonly="true"/>
+      <businessElements xmi:id="_I7y_XGXHEemxAeHgG0yB7Q" name="MedicationAdministrationDosageNotes" description="" reference="MedicationAdministrationDosageNotes" uniqueIdentifier="cfdf21f6-1d98-4c98-b24e-0d4484456365" referenceDatatype="_I70N8GXHEemxAeHgG0yB7Q" readonly="true"/>
+      <businessElements xmi:id="_I7zB1GXHEemxAeHgG0yB7Q" name="MedicationAdministrationReasonID" description="" reference="MedicationAdministrationReasonID" uniqueIdentifier="a6156128-0fc3-48db-ba69-aabcac18acee" referenceDatatype="_I70OE2XHEemxAeHgG0yB7Q" readonly="true"/>
+      <businessElements xmi:id="_I7zm4mXHEemxAeHgG0yB7Q" name="MedicationAdministrationPerformerII" description="" reference="MedicationAdministrationPerformerII" uniqueIdentifier="736680d9-fcea-440c-ab18-ad22cbe65cc8" referenceDatatype="_I70OE2XHEemxAeHgG0yB7Q" readonly="true"/>
+      <businessElements xmi:id="_I70M42XHEemxAeHgG0yB7Q" name="MedicationAdministrationStartDateTime" description="" reference="MedicationAdministrationStartDateTime" uniqueIdentifier="83c8ab3b-3203-4190-8605-64fa1b1fda6a" referenceDatatype="_I70N7WXHEemxAeHgG0yB7Q" readonly="true"/>
+    </domainDictionary>
+    <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_I70N62XHEemxAeHgG0yB7Q" typeName="Binary" description="Binary" reference="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_I70N7GXHEemxAeHgG0yB7Q" typeName="Boolean" description="Boolean" reference="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_I70N7WXHEemxAeHgG0yB7Q" typeName="DateTime" description="DateTime" reference="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_I70N7mXHEemxAeHgG0yB7Q" typeName="Decimal" description="Decimal" reference="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_I70N72XHEemxAeHgG0yB7Q" typeName="Integer" description="Integer" reference="http://www.w3.org/2001/XMLSchema#integer"/>
+    <datatypes xsi:type="mdmi:DTSPrimitive" xmi:id="_I70N8GXHEemxAeHgG0yB7Q" typeName="String" description="String" reference="http://www.w3.org/2001/XMLSchema#string"/>
+    <datatypes xsi:type="mdmi:DTSEnumerated" xmi:id="_I70N8WXHEemxAeHgG0yB7Q" typeName="NullFlavor" isReadonly="true">
+      <literals xmi:id="_I70N8mXHEemxAeHgG0yB7Q" name="NA" description="not available" code="String"/>
+      <literals xmi:id="_I70N82XHEemxAeHgG0yB7Q" name="NI" description="not indicated" code="String"/>
+      <literals xmi:id="_I70N9GXHEemxAeHgG0yB7Q" name="NK" description="not known" code="String"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTSEnumerated" xmi:id="_I70N9WXHEemxAeHgG0yB7Q" typeName="Unit" isReadonly="true">
+      <literals xmi:id="_I70N9mXHEemxAeHgG0yB7Q" name="kg" description="kilograms" code="string"/>
+      <literals xmi:id="_I70N92XHEemxAeHgG0yB7Q" name="m " description="meters" code="string"/>
+      <literals xmi:id="_I70N-GXHEemxAeHgG0yB7Q" name="mg" description="milligrams" code="string"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70N-WXHEemxAeHgG0yB7Q" typeName="DateRange" isReadonly="true">
+      <fields xmi:id="_I70N-mXHEemxAeHgG0yB7Q" name="high" minOccurs="1" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70N-2XHEemxAeHgG0yB7Q" name="low" minOccurs="1" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70N_GXHEemxAeHgG0yB7Q" typeName="Container" isReadonly="true"/>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70N_WXHEemxAeHgG0yB7Q" typeName="TranslationDT" isReadonly="true">
+      <fields xmi:id="_I70N_mXHEemxAeHgG0yB7Q" name="code" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70N_2XHEemxAeHgG0yB7Q" name="codeSystem" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OAGXHEemxAeHgG0yB7Q" name="codeSystemName" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OAWXHEemxAeHgG0yB7Q" name="displayName" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OAmXHEemxAeHgG0yB7Q" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_I70N8WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OA2XHEemxAeHgG0yB7Q" name="originalText" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OBGXHEemxAeHgG0yB7Q" typeName="CodedElement" isReadonly="true">
+      <fields xmi:id="_I70OBWXHEemxAeHgG0yB7Q" name="code" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OBmXHEemxAeHgG0yB7Q" name="codeSystem" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OB2XHEemxAeHgG0yB7Q" name="codeSystemName" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OCGXHEemxAeHgG0yB7Q" name="displayName" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OCWXHEemxAeHgG0yB7Q" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_I70N8WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OCmXHEemxAeHgG0yB7Q" name="originalText" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OC2XHEemxAeHgG0yB7Q" name="translation" minOccurs="1" maxOccurs="1" datatype="_I70N_WXHEemxAeHgG0yB7Q"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70ODGXHEemxAeHgG0yB7Q" typeName="PhysicalQuantity" isReadonly="true">
+      <fields xmi:id="_I70ODWXHEemxAeHgG0yB7Q" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70ODmXHEemxAeHgG0yB7Q" name="unit" minOccurs="1" maxOccurs="1" datatype="_I70N9WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OD2XHEemxAeHgG0yB7Q" name="value" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OEGXHEemxAeHgG0yB7Q" typeName="PhysicalRatio" isReadonly="true">
+      <fields xmi:id="_I70OEWXHEemxAeHgG0yB7Q" name="denominator" minOccurs="1" maxOccurs="1" datatype="_I70N7mXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OEmXHEemxAeHgG0yB7Q" name="numerator" minOccurs="1" maxOccurs="1" datatype="_I70N7mXHEemxAeHgG0yB7Q"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OE2XHEemxAeHgG0yB7Q" typeName="InstanceIdentifier" isReadonly="true">
+      <fields xmi:id="_I70OFGXHEemxAeHgG0yB7Q" name="assigningAuthorityName" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OFWXHEemxAeHgG0yB7Q" name="displayable" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OFmXHEemxAeHgG0yB7Q" name="extension" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OF2XHEemxAeHgG0yB7Q" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_I70N8WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OGGXHEemxAeHgG0yB7Q" name="PeriodEnd" minOccurs="1" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OGWXHEemxAeHgG0yB7Q" name="PeriodStart" minOccurs="1" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OGmXHEemxAeHgG0yB7Q" name="root" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OG2XHEemxAeHgG0yB7Q" name="use" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OHGXHEemxAeHgG0yB7Q" typeName="Address" isReadonly="true">
+      <fields xmi:id="_I70OHWXHEemxAeHgG0yB7Q" name="city" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OHmXHEemxAeHgG0yB7Q" name="country" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OH2XHEemxAeHgG0yB7Q" name="county" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OIGXHEemxAeHgG0yB7Q" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_I70N8WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OIWXHEemxAeHgG0yB7Q" name="PeriodEnd" minOccurs="1" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OImXHEemxAeHgG0yB7Q" name="PeriodStart" minOccurs="1" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OI2XHEemxAeHgG0yB7Q" name="postalCode" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OJGXHEemxAeHgG0yB7Q" name="state" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OJWXHEemxAeHgG0yB7Q" name="streetAddressLine" minOccurs="1" maxOccurs="2" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OJmXHEemxAeHgG0yB7Q" name="use" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="A qualifier on the Address datatype. For example, the use could be set to HOME or the use could be set to WORK."/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OJ2XHEemxAeHgG0yB7Q" typeName="PersonName" isReadonly="true">
+      <fields xmi:id="_I70OKGXHEemxAeHgG0yB7Q" name="family" minOccurs="1" maxOccurs="2" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OKWXHEemxAeHgG0yB7Q" name="given" minOccurs="1" maxOccurs="2" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OKmXHEemxAeHgG0yB7Q" name="middle" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OK2XHEemxAeHgG0yB7Q" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_I70N8WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OLGXHEemxAeHgG0yB7Q" name="PeriodEnd" minOccurs="1" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OLWXHEemxAeHgG0yB7Q" name="PeriodStart" minOccurs="1" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OLmXHEemxAeHgG0yB7Q" name="prefix" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OL2XHEemxAeHgG0yB7Q" name="suffix" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OMGXHEemxAeHgG0yB7Q" name="use" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OMWXHEemxAeHgG0yB7Q" typeName="Telecom" isReadonly="true">
+      <fields xmi:id="_I70OMmXHEemxAeHgG0yB7Q" name="nullFlavor" minOccurs="1" maxOccurs="1" datatype="_I70N8WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OM2XHEemxAeHgG0yB7Q" name="PeriodEnd" minOccurs="1" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70ONGXHEemxAeHgG0yB7Q" name="PeriodStart" minOccurs="1" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70ONWXHEemxAeHgG0yB7Q" name="use" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70ONmXHEemxAeHgG0yB7Q" name="value" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70ON2XHEemxAeHgG0yB7Q" typeName="DigitalSignature" isReadonly="true">
+      <fields xmi:id="_I70OOGXHEemxAeHgG0yB7Q" name="ContentType" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OOWXHEemxAeHgG0yB7Q" name="SignatureContent" minOccurs="1" maxOccurs="1" datatype="_I70N62XHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OOmXHEemxAeHgG0yB7Q" name="Signer" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OO2XHEemxAeHgG0yB7Q" typeName="FHIR_ProductShelfLife" description="FHIR_ProductShelfLife">
+      <fields xmi:id="_I70OPGXHEemxAeHgG0yB7Q" name="identifier" maxOccurs="1" datatype="_I70PiGXHEemxAeHgG0yB7Q" description="FHIR_Identifier"/>
+      <fields xmi:id="_I70OPWXHEemxAeHgG0yB7Q" name="type" minOccurs="1" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70OPmXHEemxAeHgG0yB7Q" name="period" minOccurs="1" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70OP2XHEemxAeHgG0yB7Q" name="specialPrecautionsForStorage" maxOccurs="2147483647" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70OQGXHEemxAeHgG0yB7Q" name="modifierExtension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+      <fields xmi:id="_I70OQWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OQmXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OQ2XHEemxAeHgG0yB7Q" typeName="FHIR_MoneyQuantity" description="FHIR_MoneyQuantity">
+      <fields xmi:id="_I70ORGXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70ORWXHEemxAeHgG0yB7Q" name="comparator" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70ORmXHEemxAeHgG0yB7Q" name="unit" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OR2XHEemxAeHgG0yB7Q" name="system" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70OSGXHEemxAeHgG0yB7Q" name="code" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OSWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OSmXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OS2XHEemxAeHgG0yB7Q" typeName="FHIR_id" description="FHIR_id">
+      <fields xmi:id="_I70OTGXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="String"/>
+      <fields xmi:id="_I70OTWXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="String"/>
+      <fields xmi:id="_I70OTmXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OT2XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OUGXHEemxAeHgG0yB7Q" typeName="FHIR_ParameterDefinition" description="FHIR_ParameterDefinition">
+      <fields xmi:id="_I70OUWXHEemxAeHgG0yB7Q" name="name" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OUmXHEemxAeHgG0yB7Q" name="use" minOccurs="1" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OU2XHEemxAeHgG0yB7Q" name="min" maxOccurs="1" datatype="_I70O2WXHEemxAeHgG0yB7Q" description="FHIR_integer"/>
+      <fields xmi:id="_I70OVGXHEemxAeHgG0yB7Q" name="max" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OVWXHEemxAeHgG0yB7Q" name="documentation" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OVmXHEemxAeHgG0yB7Q" name="type" minOccurs="1" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OV2XHEemxAeHgG0yB7Q" name="profile" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="FHIR_StructureDefinition"/>
+      <fields xmi:id="_I70OWGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OWWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OWmXHEemxAeHgG0yB7Q" typeName="FHIR_url" description="FHIR_url">
+      <fields xmi:id="_I70OW2XHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="AnyURI"/>
+      <fields xmi:id="_I70OXGXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="AnyURI"/>
+      <fields xmi:id="_I70OXWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OXmXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OX2XHEemxAeHgG0yB7Q" typeName="FHIR_Signature" description="FHIR_Signature">
+      <fields xmi:id="_I70OYGXHEemxAeHgG0yB7Q" name="type" minOccurs="1" maxOccurs="2147483647" datatype="_I70QNmXHEemxAeHgG0yB7Q" description="FHIR_Coding"/>
+      <fields xmi:id="_I70OYWXHEemxAeHgG0yB7Q" name="when" minOccurs="1" maxOccurs="1" datatype="_I70P0mXHEemxAeHgG0yB7Q" description="FHIR_instant"/>
+      <fields xmi:id="_I70OYmXHEemxAeHgG0yB7Q" name="who" minOccurs="1" maxOccurs="1" datatype="_I70OfmXHEemxAeHgG0yB7Q" description="FHIR_Reference"/>
+      <fields xmi:id="_I70OY2XHEemxAeHgG0yB7Q" name="onBehalfOf" maxOccurs="1" datatype="_I70OfmXHEemxAeHgG0yB7Q" description="FHIR_Reference"/>
+      <fields xmi:id="_I70OZGXHEemxAeHgG0yB7Q" name="targetFormat" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OZWXHEemxAeHgG0yB7Q" name="sigFormat" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OZmXHEemxAeHgG0yB7Q" name="data" maxOccurs="1" datatype="_I70P9mXHEemxAeHgG0yB7Q" description="FHIR_base64Binary"/>
+      <fields xmi:id="_I70OZ2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OaGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OaWXHEemxAeHgG0yB7Q" typeName="FHIR_Ratio" description="FHIR_Ratio">
+      <fields xmi:id="_I70OamXHEemxAeHgG0yB7Q" name="numerator" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70Oa2XHEemxAeHgG0yB7Q" name="denominator" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70ObGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70ObWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70ObmXHEemxAeHgG0yB7Q" typeName="FHIR_Timing" description="FHIR_Timing">
+      <fields xmi:id="_I70Ob2XHEemxAeHgG0yB7Q" name="event" maxOccurs="2147483647" datatype="_I70O4GXHEemxAeHgG0yB7Q" description="FHIR_dateTime"/>
+      <fields xmi:id="_I70OcGXHEemxAeHgG0yB7Q" name="repeat" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OcWXHEemxAeHgG0yB7Q" name="code" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70OcmXHEemxAeHgG0yB7Q" name="modifierExtension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+      <fields xmi:id="_I70Oc2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OdGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OdWXHEemxAeHgG0yB7Q" typeName="FHIR_Range" description="FHIR_Range">
+      <fields xmi:id="_I70OdmXHEemxAeHgG0yB7Q" name="low" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70Od2XHEemxAeHgG0yB7Q" name="high" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70OeGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OeWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OemXHEemxAeHgG0yB7Q" typeName="FHIR_time" description="FHIR_time">
+      <fields xmi:id="_I70Oe2XHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="Time"/>
+      <fields xmi:id="_I70OfGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OfWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OfmXHEemxAeHgG0yB7Q" typeName="FHIR_Reference" description="FHIR_Reference">
+      <fields xmi:id="_I70Of2XHEemxAeHgG0yB7Q" name="reference" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OgGXHEemxAeHgG0yB7Q" name="type" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70OgWXHEemxAeHgG0yB7Q" name="identifier" maxOccurs="1" datatype="_I70PiGXHEemxAeHgG0yB7Q" description="FHIR_Identifier"/>
+      <fields xmi:id="_I70OgmXHEemxAeHgG0yB7Q" name="display" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70Og2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OhGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OhWXHEemxAeHgG0yB7Q" typeName="FHIR_Base" description="FHIR_Base"/>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OhmXHEemxAeHgG0yB7Q" typeName="FHIR_Period" description="FHIR_Period">
+      <fields xmi:id="_I70Oh2XHEemxAeHgG0yB7Q" name="start" maxOccurs="1" datatype="_I70O4GXHEemxAeHgG0yB7Q" description="FHIR_dateTime"/>
+      <fields xmi:id="_I70OiGXHEemxAeHgG0yB7Q" name="end" maxOccurs="1" datatype="_I70O4GXHEemxAeHgG0yB7Q" description="FHIR_dateTime"/>
+      <fields xmi:id="_I70OiWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OimXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70Oi2XHEemxAeHgG0yB7Q" typeName="FHIR_positiveInt" description="FHIR_positiveInt">
+      <fields xmi:id="_I70OjGXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="Int"/>
+      <fields xmi:id="_I70OjWXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="Int"/>
+      <fields xmi:id="_I70OjmXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70Oj2XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OkGXHEemxAeHgG0yB7Q" typeName="FHIR_Contributor" description="FHIR_Contributor">
+      <fields xmi:id="_I70OkWXHEemxAeHgG0yB7Q" name="type" minOccurs="1" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OkmXHEemxAeHgG0yB7Q" name="name" minOccurs="1" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70Ok2XHEemxAeHgG0yB7Q" name="contact" maxOccurs="2147483647" datatype="_I70QIWXHEemxAeHgG0yB7Q" description="FHIR_ContactDetail"/>
+      <fields xmi:id="_I70OlGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OlWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OlmXHEemxAeHgG0yB7Q" typeName="FHIR_Address" description="FHIR_Address">
+      <fields xmi:id="_I70Ol2XHEemxAeHgG0yB7Q" name="use" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OmGXHEemxAeHgG0yB7Q" name="type" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OmWXHEemxAeHgG0yB7Q" name="text" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OmmXHEemxAeHgG0yB7Q" name="line" maxOccurs="2147483647" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70Om2XHEemxAeHgG0yB7Q" name="city" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OnGXHEemxAeHgG0yB7Q" name="district" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OnWXHEemxAeHgG0yB7Q" name="state" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OnmXHEemxAeHgG0yB7Q" name="postalCode" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70On2XHEemxAeHgG0yB7Q" name="country" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OoGXHEemxAeHgG0yB7Q" name="period" maxOccurs="1" datatype="_I70OhmXHEemxAeHgG0yB7Q" description="FHIR_Period"/>
+      <fields xmi:id="_I70OoWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OomXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70Oo2XHEemxAeHgG0yB7Q" typeName="FHIR_DataRequirement" description="FHIR_DataRequirement">
+      <fields xmi:id="_I70OpGXHEemxAeHgG0yB7Q" name="type" minOccurs="1" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OpWXHEemxAeHgG0yB7Q" name="profile" maxOccurs="2147483647" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="FHIR_StructureDefinition"/>
+      <fields xmi:id="_I70OpmXHEemxAeHgG0yB7Q" name="subject[x]" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70Op2XHEemxAeHgG0yB7Q" name="mustSupport" maxOccurs="2147483647" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OqGXHEemxAeHgG0yB7Q" name="codeFilter" maxOccurs="2147483647" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OqWXHEemxAeHgG0yB7Q" name="dateFilter" maxOccurs="2147483647" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OqmXHEemxAeHgG0yB7Q" name="limit" maxOccurs="1" datatype="_I70Oi2XHEemxAeHgG0yB7Q" description="FHIR_positiveInt"/>
+      <fields xmi:id="_I70Oq2XHEemxAeHgG0yB7Q" name="sort" maxOccurs="2147483647" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OrGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OrWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OrmXHEemxAeHgG0yB7Q" typeName="FHIR_xhtml" description="FHIR_xhtml">
+      <fields xmi:id="_I70Or2XHEemxAeHgG0yB7Q" name="extension" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OsGXHEemxAeHgG0yB7Q" name="value" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OsWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OsmXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70Os2XHEemxAeHgG0yB7Q" typeName="FHIR_Quantity" description="FHIR_Quantity">
+      <fields xmi:id="_I70OtGXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70OtWXHEemxAeHgG0yB7Q" name="comparator" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OtmXHEemxAeHgG0yB7Q" name="unit" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70Ot2XHEemxAeHgG0yB7Q" name="system" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70OuGXHEemxAeHgG0yB7Q" name="code" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OuWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OumXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70Ou2XHEemxAeHgG0yB7Q" typeName="FHIR_DataType" description="FHIR_DataType">
+      <fields xmi:id="_I70OvGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OvWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OvmXHEemxAeHgG0yB7Q" typeName="FHIR_Duration" description="FHIR_Duration">
+      <fields xmi:id="_I70Ov2XHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70OwGXHEemxAeHgG0yB7Q" name="comparator" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OwWXHEemxAeHgG0yB7Q" name="unit" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OwmXHEemxAeHgG0yB7Q" name="system" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70Ow2XHEemxAeHgG0yB7Q" name="code" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OxGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70OxWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70OxmXHEemxAeHgG0yB7Q" typeName="FHIR_HumanName" description="FHIR_HumanName">
+      <fields xmi:id="_I70Ox2XHEemxAeHgG0yB7Q" name="use" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70OyGXHEemxAeHgG0yB7Q" name="text" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OyWXHEemxAeHgG0yB7Q" name="family" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OymXHEemxAeHgG0yB7Q" name="given" maxOccurs="2147483647" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70Oy2XHEemxAeHgG0yB7Q" name="prefix" maxOccurs="2147483647" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OzGXHEemxAeHgG0yB7Q" name="suffix" maxOccurs="2147483647" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70OzWXHEemxAeHgG0yB7Q" name="period" maxOccurs="1" datatype="_I70OhmXHEemxAeHgG0yB7Q" description="FHIR_Period"/>
+      <fields xmi:id="_I70OzmXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70Oz2XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70O0GXHEemxAeHgG0yB7Q" typeName="FHIR_Narrative" description="FHIR_Narrative">
+      <fields xmi:id="_I70O0WXHEemxAeHgG0yB7Q" name="status" minOccurs="1" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70O0mXHEemxAeHgG0yB7Q" name="div" minOccurs="1" maxOccurs="1" datatype="_I70OrmXHEemxAeHgG0yB7Q" description="FHIR_xhtml"/>
+      <fields xmi:id="_I70O02XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70O1GXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70O1WXHEemxAeHgG0yB7Q" typeName="FHIR_date" description="FHIR_date">
+      <fields xmi:id="_I70O1mXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="Date"/>
+      <fields xmi:id="_I70O12XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70O2GXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70O2WXHEemxAeHgG0yB7Q" typeName="FHIR_integer" description="FHIR_integer">
+      <fields xmi:id="_I70O2mXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="Int"/>
+      <fields xmi:id="_I70O22XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70O3GXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70O3WXHEemxAeHgG0yB7Q" typeName="FHIR_Element" description="FHIR_Element">
+      <fields xmi:id="_I70O3mXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70O32XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70O4GXHEemxAeHgG0yB7Q" typeName="FHIR_dateTime" description="FHIR_dateTime">
+      <fields xmi:id="_I70O4WXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q" description="DateTime"/>
+      <fields xmi:id="_I70O4mXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70O42XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70O5GXHEemxAeHgG0yB7Q" typeName="FHIR_ContactPoint" description="FHIR_ContactPoint">
+      <fields xmi:id="_I70O5WXHEemxAeHgG0yB7Q" name="system" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70O5mXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70O52XHEemxAeHgG0yB7Q" name="use" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70O6GXHEemxAeHgG0yB7Q" name="rank" maxOccurs="1" datatype="_I70Oi2XHEemxAeHgG0yB7Q" description="FHIR_positiveInt"/>
+      <fields xmi:id="_I70O6WXHEemxAeHgG0yB7Q" name="period" maxOccurs="1" datatype="_I70OhmXHEemxAeHgG0yB7Q" description="FHIR_Period"/>
+      <fields xmi:id="_I70O6mXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70O62XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70O7GXHEemxAeHgG0yB7Q" typeName="FHIR_BackboneElement" description="FHIR_BackboneElement">
+      <fields xmi:id="_I70O7WXHEemxAeHgG0yB7Q" name="modifierExtension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+      <fields xmi:id="_I70O7mXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70O72XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70O8GXHEemxAeHgG0yB7Q" typeName="FHIR_SubstanceAmount" description="FHIR_SubstanceAmount">
+      <fields xmi:id="_I70O8WXHEemxAeHgG0yB7Q" name="amount[x]" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70O8mXHEemxAeHgG0yB7Q" name="amountType" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70O82XHEemxAeHgG0yB7Q" name="amountText" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70O9GXHEemxAeHgG0yB7Q" name="referenceRange" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70O9WXHEemxAeHgG0yB7Q" name="modifierExtension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+      <fields xmi:id="_I70O9mXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70O92XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70O-GXHEemxAeHgG0yB7Q" typeName="FHIR_CodeableConcept" description="FHIR_CodeableConcept">
+      <fields xmi:id="_I70O-WXHEemxAeHgG0yB7Q" name="coding" maxOccurs="2147483647" datatype="_I70QNmXHEemxAeHgG0yB7Q" description="FHIR_Coding"/>
+      <fields xmi:id="_I70O-mXHEemxAeHgG0yB7Q" name="text" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70O-2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70O_GXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70O_WXHEemxAeHgG0yB7Q" typeName="FHIR_Population" description="FHIR_Population">
+      <fields xmi:id="_I70O_mXHEemxAeHgG0yB7Q" name="age[x]" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70O_2XHEemxAeHgG0yB7Q" name="gender" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70PAGXHEemxAeHgG0yB7Q" name="race" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70PAWXHEemxAeHgG0yB7Q" name="physiologicalCondition" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70PAmXHEemxAeHgG0yB7Q" name="modifierExtension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+      <fields xmi:id="_I70PA2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PBGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PBWXHEemxAeHgG0yB7Q" typeName="FHIR_uri" description="FHIR_uri">
+      <fields xmi:id="_I70PBmXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="AnyURI"/>
+      <fields xmi:id="_I70PB2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PCGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PCWXHEemxAeHgG0yB7Q" typeName="FHIR_Extension">
+      <fields xmi:id="_I70PCmXHEemxAeHgG0yB7Q" name="url" minOccurs="1" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PC2XHEemxAeHgG0yB7Q" name="valueDistance" maxOccurs="1" datatype="_I70P22XHEemxAeHgG0yB7Q" description="FHIR_Distance"/>
+      <fields xmi:id="_I70PDGXHEemxAeHgG0yB7Q" name="valueCodeableConcept" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70PDWXHEemxAeHgG0yB7Q" name="valueMoney" maxOccurs="1" datatype="_I70PkWXHEemxAeHgG0yB7Q" description="FHIR_Money"/>
+      <fields xmi:id="_I70PDmXHEemxAeHgG0yB7Q" name="valueContactDetail" maxOccurs="1" datatype="_I70QIWXHEemxAeHgG0yB7Q" description="FHIR_ContactDetail"/>
+      <fields xmi:id="_I70PD2XHEemxAeHgG0yB7Q" name="valueoid" maxOccurs="1" datatype="_I70QA2XHEemxAeHgG0yB7Q" description="FHIR_oid"/>
+      <fields xmi:id="_I70PEGXHEemxAeHgG0yB7Q" name="valueTiming" maxOccurs="1" datatype="_I70ObmXHEemxAeHgG0yB7Q" description="FHIR_Timing"/>
+      <fields xmi:id="_I70PEWXHEemxAeHgG0yB7Q" name="valueCoding" maxOccurs="1" datatype="_I70QNmXHEemxAeHgG0yB7Q" description="FHIR_Coding"/>
+      <fields xmi:id="_I70PEmXHEemxAeHgG0yB7Q" name="valueDuration" maxOccurs="1" datatype="_I70OvmXHEemxAeHgG0yB7Q" description="FHIR_Duration"/>
+      <fields xmi:id="_I70PE2XHEemxAeHgG0yB7Q" name="valueParameterDefinition" maxOccurs="1" datatype="_I70OUGXHEemxAeHgG0yB7Q" description="FHIR_ParameterDefinition"/>
+      <fields xmi:id="_I70PFGXHEemxAeHgG0yB7Q" name="valueTriggerDefinition" maxOccurs="1" datatype="_I70PtWXHEemxAeHgG0yB7Q" description="FHIR_TriggerDefinition"/>
+      <fields xmi:id="_I70PFWXHEemxAeHgG0yB7Q" name="valueboolean" maxOccurs="1" datatype="_I70PsWXHEemxAeHgG0yB7Q" description="FHIR_boolean"/>
+      <fields xmi:id="_I70PFmXHEemxAeHgG0yB7Q" name="valueDosage" maxOccurs="1" datatype="_I70PlmXHEemxAeHgG0yB7Q" description="FHIR_Dosage"/>
+      <fields xmi:id="_I70PF2XHEemxAeHgG0yB7Q" name="valueAnnotation" maxOccurs="1" datatype="_I70QJmXHEemxAeHgG0yB7Q" description="FHIR_Annotation"/>
+      <fields xmi:id="_I70PGGXHEemxAeHgG0yB7Q" name="valueuuid" maxOccurs="1" datatype="_I70PaWXHEemxAeHgG0yB7Q" description="FHIR_uuid"/>
+      <fields xmi:id="_I70PGWXHEemxAeHgG0yB7Q" name="valuecode" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70PGmXHEemxAeHgG0yB7Q" name="valuemarkdown" maxOccurs="1" datatype="_I70PrGXHEemxAeHgG0yB7Q" description="FHIR_markdown"/>
+      <fields xmi:id="_I70PG2XHEemxAeHgG0yB7Q" name="valueExpression" maxOccurs="1" datatype="_I70PvWXHEemxAeHgG0yB7Q" description="FHIR_Expression"/>
+      <fields xmi:id="_I70PHGXHEemxAeHgG0yB7Q" name="valuedateTime" maxOccurs="1" datatype="_I70O4GXHEemxAeHgG0yB7Q" description="FHIR_dateTime"/>
+      <fields xmi:id="_I70PHWXHEemxAeHgG0yB7Q" name="valueAttachment" maxOccurs="1" datatype="_I70P62XHEemxAeHgG0yB7Q" description="FHIR_Attachment"/>
+      <fields xmi:id="_I70PHmXHEemxAeHgG0yB7Q" name="valuefhirstring" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PH2XHEemxAeHgG0yB7Q" name="valueUsageContext" maxOccurs="1" datatype="_I70P1mXHEemxAeHgG0yB7Q" description="FHIR_UsageContext"/>
+      <fields xmi:id="_I70PIGXHEemxAeHgG0yB7Q" name="valueCount" maxOccurs="1" datatype="_I70PymXHEemxAeHgG0yB7Q" description="FHIR_Count"/>
+      <fields xmi:id="_I70PIWXHEemxAeHgG0yB7Q" name="valueurl" maxOccurs="1" datatype="_I70OWmXHEemxAeHgG0yB7Q" description="FHIR_url"/>
+      <fields xmi:id="_I70PImXHEemxAeHgG0yB7Q" name="valuedate" maxOccurs="1" datatype="_I70O1WXHEemxAeHgG0yB7Q" description="FHIR_date"/>
+      <fields xmi:id="_I70PI2XHEemxAeHgG0yB7Q" name="valueRange" maxOccurs="1" datatype="_I70OdWXHEemxAeHgG0yB7Q" description="FHIR_Range"/>
+      <fields xmi:id="_I70PJGXHEemxAeHgG0yB7Q" name="valueunsignedInt" maxOccurs="1" datatype="_I70PxWXHEemxAeHgG0yB7Q" description="FHIR_unsignedInt"/>
+      <fields xmi:id="_I70PJWXHEemxAeHgG0yB7Q" name="valueRatio" maxOccurs="1" datatype="_I70OaWXHEemxAeHgG0yB7Q" description="FHIR_Ratio"/>
+      <fields xmi:id="_I70PJmXHEemxAeHgG0yB7Q" name="valueinteger" maxOccurs="1" datatype="_I70O2WXHEemxAeHgG0yB7Q" description="FHIR_integer"/>
+      <fields xmi:id="_I70PJ2XHEemxAeHgG0yB7Q" name="valueuri" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70PKGXHEemxAeHgG0yB7Q" name="valueContactPoint" maxOccurs="1" datatype="_I70O5GXHEemxAeHgG0yB7Q" description="FHIR_ContactPoint"/>
+      <fields xmi:id="_I70PKWXHEemxAeHgG0yB7Q" name="valueQuantity" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70PKmXHEemxAeHgG0yB7Q" name="valueAddress" maxOccurs="1" datatype="_I70OlmXHEemxAeHgG0yB7Q" description="FHIR_Address"/>
+      <fields xmi:id="_I70PK2XHEemxAeHgG0yB7Q" name="valuecanonical" maxOccurs="1" datatype="_I70Pp2XHEemxAeHgG0yB7Q" description="FHIR_canonical"/>
+      <fields xmi:id="_I70PLGXHEemxAeHgG0yB7Q" name="valueAge" maxOccurs="1" datatype="_I70P42XHEemxAeHgG0yB7Q" description="FHIR_Age"/>
+      <fields xmi:id="_I70PLWXHEemxAeHgG0yB7Q" name="valueSampledData" maxOccurs="1" datatype="_I70QF2XHEemxAeHgG0yB7Q" description="FHIR_SampledData"/>
+      <fields xmi:id="_I70PLmXHEemxAeHgG0yB7Q" name="valueHumanName" maxOccurs="1" datatype="_I70OxmXHEemxAeHgG0yB7Q" description="FHIR_HumanName"/>
+      <fields xmi:id="_I70PL2XHEemxAeHgG0yB7Q" name="valueid" maxOccurs="1" datatype="_I70OS2XHEemxAeHgG0yB7Q" description="FHIR_id"/>
+      <fields xmi:id="_I70PMGXHEemxAeHgG0yB7Q" name="valueIdentifier" maxOccurs="1" datatype="_I70PiGXHEemxAeHgG0yB7Q" description="FHIR_Identifier"/>
+      <fields xmi:id="_I70PMWXHEemxAeHgG0yB7Q" name="valueDataRequirement" maxOccurs="1" datatype="_I70Oo2XHEemxAeHgG0yB7Q" description="FHIR_DataRequirement"/>
+      <fields xmi:id="_I70PMmXHEemxAeHgG0yB7Q" name="valuePeriod" maxOccurs="1" datatype="_I70OhmXHEemxAeHgG0yB7Q" description="FHIR_Period"/>
+      <fields xmi:id="_I70PM2XHEemxAeHgG0yB7Q" name="valueSignature" maxOccurs="1" datatype="_I70OX2XHEemxAeHgG0yB7Q" description="FHIR_Signature"/>
+      <fields xmi:id="_I70PNGXHEemxAeHgG0yB7Q" name="valuebase64Binary" maxOccurs="1" datatype="_I70P9mXHEemxAeHgG0yB7Q" description="FHIR_base64Binary"/>
+      <fields xmi:id="_I70PNWXHEemxAeHgG0yB7Q" name="valuetime" maxOccurs="1" datatype="_I70OemXHEemxAeHgG0yB7Q" description="FHIR_time"/>
+      <fields xmi:id="_I70PNmXHEemxAeHgG0yB7Q" name="valueRelatedArtifact" maxOccurs="1" datatype="_I70QLGXHEemxAeHgG0yB7Q" description="FHIR_RelatedArtifact"/>
+      <fields xmi:id="_I70PN2XHEemxAeHgG0yB7Q" name="valuepositiveInt" maxOccurs="1" datatype="_I70Oi2XHEemxAeHgG0yB7Q" description="FHIR_positiveInt"/>
+      <fields xmi:id="_I70POGXHEemxAeHgG0yB7Q" name="valueReference" maxOccurs="1" datatype="_I70OfmXHEemxAeHgG0yB7Q" description="FHIR_Reference"/>
+      <fields xmi:id="_I70POWXHEemxAeHgG0yB7Q" name="valuedecimal" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70POmXHEemxAeHgG0yB7Q" name="valueinstant" maxOccurs="1" datatype="_I70P0mXHEemxAeHgG0yB7Q" description="FHIR_instant"/>
+      <fields xmi:id="_I70PO2XHEemxAeHgG0yB7Q" name="valueContributor" maxOccurs="1" datatype="_I70OkGXHEemxAeHgG0yB7Q" description="FHIR_Contributor"/>
+      <fields xmi:id="_I70PPGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PPWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PPmXHEemxAeHgG0yB7Q" typeName="FHIR_code" description="FHIR_code">
+      <fields xmi:id="_I70PP2XHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="String"/>
+      <fields xmi:id="_I70PQGXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="String"/>
+      <fields xmi:id="_I70PQWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PQmXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PQ2XHEemxAeHgG0yB7Q" typeName="FHIR_ElementDefinition" description="FHIR_ElementDefinition">
+      <fields xmi:id="_I70PRGXHEemxAeHgG0yB7Q" name="path" minOccurs="1" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PRWXHEemxAeHgG0yB7Q" name="representation" maxOccurs="2147483647" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70PRmXHEemxAeHgG0yB7Q" name="sliceName" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PR2XHEemxAeHgG0yB7Q" name="sliceIsConstraining" maxOccurs="1" datatype="_I70PsWXHEemxAeHgG0yB7Q" description="FHIR_boolean"/>
+      <fields xmi:id="_I70PSGXHEemxAeHgG0yB7Q" name="label" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PSWXHEemxAeHgG0yB7Q" name="code" maxOccurs="2147483647" datatype="_I70QNmXHEemxAeHgG0yB7Q" description="FHIR_Coding"/>
+      <fields xmi:id="_I70PSmXHEemxAeHgG0yB7Q" name="slicing" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PS2XHEemxAeHgG0yB7Q" name="short" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PTGXHEemxAeHgG0yB7Q" name="definition" maxOccurs="1" datatype="_I70PrGXHEemxAeHgG0yB7Q" description="FHIR_markdown"/>
+      <fields xmi:id="_I70PTWXHEemxAeHgG0yB7Q" name="comment" maxOccurs="1" datatype="_I70PrGXHEemxAeHgG0yB7Q" description="FHIR_markdown"/>
+      <fields xmi:id="_I70PTmXHEemxAeHgG0yB7Q" name="requirements" maxOccurs="1" datatype="_I70PrGXHEemxAeHgG0yB7Q" description="FHIR_markdown"/>
+      <fields xmi:id="_I70PT2XHEemxAeHgG0yB7Q" name="alias" maxOccurs="2147483647" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PUGXHEemxAeHgG0yB7Q" name="min" maxOccurs="1" datatype="_I70PxWXHEemxAeHgG0yB7Q" description="FHIR_unsignedInt"/>
+      <fields xmi:id="_I70PUWXHEemxAeHgG0yB7Q" name="max" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PUmXHEemxAeHgG0yB7Q" name="base" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PU2XHEemxAeHgG0yB7Q" name="contentReference" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70PVGXHEemxAeHgG0yB7Q" name="type" maxOccurs="2147483647" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PVWXHEemxAeHgG0yB7Q" name="defaultValue[x]" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70PVmXHEemxAeHgG0yB7Q" name="meaningWhenMissing" maxOccurs="1" datatype="_I70PrGXHEemxAeHgG0yB7Q" description="FHIR_markdown"/>
+      <fields xmi:id="_I70PV2XHEemxAeHgG0yB7Q" name="orderMeaning" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PWGXHEemxAeHgG0yB7Q" name="fixed[x]" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70PWWXHEemxAeHgG0yB7Q" name="pattern[x]" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70PWmXHEemxAeHgG0yB7Q" name="example" maxOccurs="2147483647" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PW2XHEemxAeHgG0yB7Q" name="minValue[x]" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70PXGXHEemxAeHgG0yB7Q" name="maxValue[x]" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70PXWXHEemxAeHgG0yB7Q" name="maxLength" maxOccurs="1" datatype="_I70O2WXHEemxAeHgG0yB7Q" description="FHIR_integer"/>
+      <fields xmi:id="_I70PXmXHEemxAeHgG0yB7Q" name="condition" maxOccurs="2147483647" datatype="_I70OS2XHEemxAeHgG0yB7Q" description="FHIR_id"/>
+      <fields xmi:id="_I70PX2XHEemxAeHgG0yB7Q" name="constraint" maxOccurs="2147483647" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PYGXHEemxAeHgG0yB7Q" name="mustSupport" maxOccurs="1" datatype="_I70PsWXHEemxAeHgG0yB7Q" description="FHIR_boolean"/>
+      <fields xmi:id="_I70PYWXHEemxAeHgG0yB7Q" name="isModifier" maxOccurs="1" datatype="_I70PsWXHEemxAeHgG0yB7Q" description="FHIR_boolean"/>
+      <fields xmi:id="_I70PYmXHEemxAeHgG0yB7Q" name="isModifierReason" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PY2XHEemxAeHgG0yB7Q" name="isSummary" maxOccurs="1" datatype="_I70PsWXHEemxAeHgG0yB7Q" description="FHIR_boolean"/>
+      <fields xmi:id="_I70PZGXHEemxAeHgG0yB7Q" name="binding" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PZWXHEemxAeHgG0yB7Q" name="mapping" maxOccurs="2147483647" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PZmXHEemxAeHgG0yB7Q" name="modifierExtension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+      <fields xmi:id="_I70PZ2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PaGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PaWXHEemxAeHgG0yB7Q" typeName="FHIR_uuid" description="FHIR_uuid">
+      <fields xmi:id="_I70PamXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="AnyURI"/>
+      <fields xmi:id="_I70Pa2XHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="AnyURI"/>
+      <fields xmi:id="_I70PbGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PbWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PbmXHEemxAeHgG0yB7Q" typeName="FHIR_fhirstring" description="FHIR_fhirstring">
+      <fields xmi:id="_I70Pb2XHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="String"/>
+      <fields xmi:id="_I70PcGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PcWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PcmXHEemxAeHgG0yB7Q" typeName="FHIR_SimpleQuantity" description="FHIR_SimpleQuantity">
+      <fields xmi:id="_I70Pc2XHEemxAeHgG0yB7Q" name="comparator" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PdGXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70PdWXHEemxAeHgG0yB7Q" name="comparator" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70PdmXHEemxAeHgG0yB7Q" name="unit" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70Pd2XHEemxAeHgG0yB7Q" name="system" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70PeGXHEemxAeHgG0yB7Q" name="code" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70PeWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PemXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70Pe2XHEemxAeHgG0yB7Q" typeName="FHIR_Meta" description="FHIR_Meta">
+      <fields xmi:id="_I70PfGXHEemxAeHgG0yB7Q" name="versionId" maxOccurs="1" datatype="_I70OS2XHEemxAeHgG0yB7Q" description="FHIR_id"/>
+      <fields xmi:id="_I70PfWXHEemxAeHgG0yB7Q" name="lastUpdated" maxOccurs="1" datatype="_I70P0mXHEemxAeHgG0yB7Q" description="FHIR_instant"/>
+      <fields xmi:id="_I70PfmXHEemxAeHgG0yB7Q" name="source" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70Pf2XHEemxAeHgG0yB7Q" name="profile" maxOccurs="2147483647" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="FHIR_StructureDefinition"/>
+      <fields xmi:id="_I70PgGXHEemxAeHgG0yB7Q" name="security" maxOccurs="2147483647" datatype="_I70QNmXHEemxAeHgG0yB7Q" description="FHIR_Coding"/>
+      <fields xmi:id="_I70PgWXHEemxAeHgG0yB7Q" name="tag" maxOccurs="2147483647" datatype="_I70QNmXHEemxAeHgG0yB7Q" description="FHIR_Coding"/>
+      <fields xmi:id="_I70PgmXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70Pg2XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PhGXHEemxAeHgG0yB7Q" typeName="FHIR_decimal" description="FHIR_decimal">
+      <fields xmi:id="_I70PhWXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N7mXHEemxAeHgG0yB7Q" description="Decimal"/>
+      <fields xmi:id="_I70PhmXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70Ph2XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PiGXHEemxAeHgG0yB7Q" typeName="FHIR_Identifier" description="FHIR_Identifier">
+      <fields xmi:id="_I70PiWXHEemxAeHgG0yB7Q" name="use" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70PimXHEemxAeHgG0yB7Q" name="type" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70Pi2XHEemxAeHgG0yB7Q" name="system" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70PjGXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PjWXHEemxAeHgG0yB7Q" name="period" maxOccurs="1" datatype="_I70OhmXHEemxAeHgG0yB7Q" description="FHIR_Period"/>
+      <fields xmi:id="_I70PjmXHEemxAeHgG0yB7Q" name="assigner" maxOccurs="1" datatype="_I70OfmXHEemxAeHgG0yB7Q" description="FHIR_Reference"/>
+      <fields xmi:id="_I70Pj2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PkGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PkWXHEemxAeHgG0yB7Q" typeName="FHIR_Money" description="FHIR_Money">
+      <fields xmi:id="_I70PkmXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70Pk2XHEemxAeHgG0yB7Q" name="currency" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70PlGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PlWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PlmXHEemxAeHgG0yB7Q" typeName="FHIR_Dosage" description="FHIR_Dosage">
+      <fields xmi:id="_I70Pl2XHEemxAeHgG0yB7Q" name="sequence" maxOccurs="1" datatype="_I70O2WXHEemxAeHgG0yB7Q" description="FHIR_integer"/>
+      <fields xmi:id="_I70PmGXHEemxAeHgG0yB7Q" name="text" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PmWXHEemxAeHgG0yB7Q" name="additionalInstruction" maxOccurs="2147483647" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70PmmXHEemxAeHgG0yB7Q" name="patientInstruction" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70Pm2XHEemxAeHgG0yB7Q" name="timing" maxOccurs="1" datatype="_I70ObmXHEemxAeHgG0yB7Q" description="FHIR_Timing"/>
+      <fields xmi:id="_I70PnGXHEemxAeHgG0yB7Q" name="asNeeded[x]" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70PnWXHEemxAeHgG0yB7Q" name="site" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70PnmXHEemxAeHgG0yB7Q" name="route" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70Pn2XHEemxAeHgG0yB7Q" name="method" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70PoGXHEemxAeHgG0yB7Q" name="doseAndRate" maxOccurs="2147483647" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PoWXHEemxAeHgG0yB7Q" name="maxDosePerPeriod" maxOccurs="1" datatype="_I70OaWXHEemxAeHgG0yB7Q" description="FHIR_Ratio"/>
+      <fields xmi:id="_I70PomXHEemxAeHgG0yB7Q" name="maxDosePerAdministration" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70Po2XHEemxAeHgG0yB7Q" name="maxDosePerLifetime" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70PpGXHEemxAeHgG0yB7Q" name="modifierExtension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+      <fields xmi:id="_I70PpWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PpmXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70Pp2XHEemxAeHgG0yB7Q" typeName="FHIR_canonical" description="FHIR_canonical">
+      <fields xmi:id="_I70PqGXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="AnyURI"/>
+      <fields xmi:id="_I70PqWXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="AnyURI"/>
+      <fields xmi:id="_I70PqmXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70Pq2XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PrGXHEemxAeHgG0yB7Q" typeName="FHIR_markdown" description="FHIR_markdown">
+      <fields xmi:id="_I70PrWXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="String"/>
+      <fields xmi:id="_I70PrmXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="String"/>
+      <fields xmi:id="_I70Pr2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PsGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PsWXHEemxAeHgG0yB7Q" typeName="FHIR_boolean" description="FHIR_boolean">
+      <fields xmi:id="_I70PsmXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N7GXHEemxAeHgG0yB7Q" description="Boolean"/>
+      <fields xmi:id="_I70Ps2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PtGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PtWXHEemxAeHgG0yB7Q" typeName="FHIR_TriggerDefinition" description="FHIR_TriggerDefinition">
+      <fields xmi:id="_I70PtmXHEemxAeHgG0yB7Q" name="type" minOccurs="1" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70Pt2XHEemxAeHgG0yB7Q" name="name" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PuGXHEemxAeHgG0yB7Q" name="timing[x]" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70PuWXHEemxAeHgG0yB7Q" name="data" maxOccurs="2147483647" datatype="_I70Oo2XHEemxAeHgG0yB7Q" description="FHIR_DataRequirement"/>
+      <fields xmi:id="_I70PumXHEemxAeHgG0yB7Q" name="condition" maxOccurs="1" datatype="_I70PvWXHEemxAeHgG0yB7Q" description="FHIR_Expression"/>
+      <fields xmi:id="_I70Pu2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PvGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PvWXHEemxAeHgG0yB7Q" typeName="FHIR_Expression" description="FHIR_Expression">
+      <fields xmi:id="_I70PvmXHEemxAeHgG0yB7Q" name="description" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70Pv2XHEemxAeHgG0yB7Q" name="name" maxOccurs="1" datatype="_I70OS2XHEemxAeHgG0yB7Q" description="FHIR_id"/>
+      <fields xmi:id="_I70PwGXHEemxAeHgG0yB7Q" name="language" minOccurs="1" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70PwWXHEemxAeHgG0yB7Q" name="expression" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PwmXHEemxAeHgG0yB7Q" name="reference" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70Pw2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PxGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PxWXHEemxAeHgG0yB7Q" typeName="FHIR_unsignedInt" description="FHIR_unsignedInt">
+      <fields xmi:id="_I70PxmXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="Int"/>
+      <fields xmi:id="_I70Px2XHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="Int"/>
+      <fields xmi:id="_I70PyGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70PyWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70PymXHEemxAeHgG0yB7Q" typeName="FHIR_Count" description="FHIR_Count">
+      <fields xmi:id="_I70Py2XHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70PzGXHEemxAeHgG0yB7Q" name="comparator" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70PzWXHEemxAeHgG0yB7Q" name="unit" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70PzmXHEemxAeHgG0yB7Q" name="system" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70Pz2XHEemxAeHgG0yB7Q" name="code" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70P0GXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70P0WXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70P0mXHEemxAeHgG0yB7Q" typeName="FHIR_instant" description="FHIR_instant">
+      <fields xmi:id="_I70P02XHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N7WXHEemxAeHgG0yB7Q" description="DateTime"/>
+      <fields xmi:id="_I70P1GXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70P1WXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70P1mXHEemxAeHgG0yB7Q" typeName="FHIR_UsageContext" description="FHIR_UsageContext">
+      <fields xmi:id="_I70P12XHEemxAeHgG0yB7Q" name="code" minOccurs="1" maxOccurs="1" datatype="_I70QNmXHEemxAeHgG0yB7Q" description="FHIR_Coding"/>
+      <fields xmi:id="_I70P2GXHEemxAeHgG0yB7Q" name="value[x]" minOccurs="1" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70P2WXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70P2mXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70P22XHEemxAeHgG0yB7Q" typeName="FHIR_Distance" description="FHIR_Distance">
+      <fields xmi:id="_I70P3GXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70P3WXHEemxAeHgG0yB7Q" name="comparator" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70P3mXHEemxAeHgG0yB7Q" name="unit" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70P32XHEemxAeHgG0yB7Q" name="system" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70P4GXHEemxAeHgG0yB7Q" name="code" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70P4WXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70P4mXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70P42XHEemxAeHgG0yB7Q" typeName="FHIR_Age" description="FHIR_Age">
+      <fields xmi:id="_I70P5GXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70P5WXHEemxAeHgG0yB7Q" name="comparator" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70P5mXHEemxAeHgG0yB7Q" name="unit" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70P52XHEemxAeHgG0yB7Q" name="system" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70P6GXHEemxAeHgG0yB7Q" name="code" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70P6WXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70P6mXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70P62XHEemxAeHgG0yB7Q" typeName="FHIR_Attachment" description="FHIR_Attachment">
+      <fields xmi:id="_I70P7GXHEemxAeHgG0yB7Q" name="contentType" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70P7WXHEemxAeHgG0yB7Q" name="language" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70P7mXHEemxAeHgG0yB7Q" name="data" maxOccurs="1" datatype="_I70P9mXHEemxAeHgG0yB7Q" description="FHIR_base64Binary"/>
+      <fields xmi:id="_I70P72XHEemxAeHgG0yB7Q" name="url" maxOccurs="1" datatype="_I70OWmXHEemxAeHgG0yB7Q" description="FHIR_url"/>
+      <fields xmi:id="_I70P8GXHEemxAeHgG0yB7Q" name="size" maxOccurs="1" datatype="_I70PxWXHEemxAeHgG0yB7Q" description="FHIR_unsignedInt"/>
+      <fields xmi:id="_I70P8WXHEemxAeHgG0yB7Q" name="hash" maxOccurs="1" datatype="_I70P9mXHEemxAeHgG0yB7Q" description="FHIR_base64Binary"/>
+      <fields xmi:id="_I70P8mXHEemxAeHgG0yB7Q" name="title" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70P82XHEemxAeHgG0yB7Q" name="creation" maxOccurs="1" datatype="_I70O4GXHEemxAeHgG0yB7Q" description="FHIR_dateTime"/>
+      <fields xmi:id="_I70P9GXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70P9WXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70P9mXHEemxAeHgG0yB7Q" typeName="FHIR_base64Binary" description="FHIR_base64Binary">
+      <fields xmi:id="_I70P92XHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="Base64Binary"/>
+      <fields xmi:id="_I70P-GXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70P-WXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70P-mXHEemxAeHgG0yB7Q" typeName="FHIR_MarketingStatus" description="FHIR_MarketingStatus">
+      <fields xmi:id="_I70P-2XHEemxAeHgG0yB7Q" name="country" minOccurs="1" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70P_GXHEemxAeHgG0yB7Q" name="jurisdiction" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70P_WXHEemxAeHgG0yB7Q" name="status" minOccurs="1" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70P_mXHEemxAeHgG0yB7Q" name="dateRange" minOccurs="1" maxOccurs="1" datatype="_I70OhmXHEemxAeHgG0yB7Q" description="FHIR_Period"/>
+      <fields xmi:id="_I70P_2XHEemxAeHgG0yB7Q" name="restoreDate" maxOccurs="1" datatype="_I70O4GXHEemxAeHgG0yB7Q" description="FHIR_dateTime"/>
+      <fields xmi:id="_I70QAGXHEemxAeHgG0yB7Q" name="modifierExtension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+      <fields xmi:id="_I70QAWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70QAmXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70QA2XHEemxAeHgG0yB7Q" typeName="FHIR_oid" description="FHIR_oid">
+      <fields xmi:id="_I70QBGXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="AnyURI"/>
+      <fields xmi:id="_I70QBWXHEemxAeHgG0yB7Q" name="value" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="AnyURI"/>
+      <fields xmi:id="_I70QBmXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70QB2XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70QCGXHEemxAeHgG0yB7Q" typeName="FHIR_ProdCharacteristic" description="FHIR_ProdCharacteristic">
+      <fields xmi:id="_I70QCWXHEemxAeHgG0yB7Q" name="height" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70QCmXHEemxAeHgG0yB7Q" name="width" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70QC2XHEemxAeHgG0yB7Q" name="depth" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70QDGXHEemxAeHgG0yB7Q" name="weight" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70QDWXHEemxAeHgG0yB7Q" name="nominalVolume" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70QDmXHEemxAeHgG0yB7Q" name="externalDiameter" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70QD2XHEemxAeHgG0yB7Q" name="shape" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70QEGXHEemxAeHgG0yB7Q" name="color" maxOccurs="2147483647" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70QEWXHEemxAeHgG0yB7Q" name="imprint" maxOccurs="2147483647" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70QEmXHEemxAeHgG0yB7Q" name="image" maxOccurs="2147483647" datatype="_I70P62XHEemxAeHgG0yB7Q" description="FHIR_Attachment"/>
+      <fields xmi:id="_I70QE2XHEemxAeHgG0yB7Q" name="scoring" maxOccurs="1" datatype="_I70O-GXHEemxAeHgG0yB7Q" description="FHIR_CodeableConcept"/>
+      <fields xmi:id="_I70QFGXHEemxAeHgG0yB7Q" name="modifierExtension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+      <fields xmi:id="_I70QFWXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70QFmXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70QF2XHEemxAeHgG0yB7Q" typeName="FHIR_SampledData" description="FHIR_SampledData">
+      <fields xmi:id="_I70QGGXHEemxAeHgG0yB7Q" name="origin" minOccurs="1" maxOccurs="1" datatype="_I70Os2XHEemxAeHgG0yB7Q" description="FHIR_Quantity"/>
+      <fields xmi:id="_I70QGWXHEemxAeHgG0yB7Q" name="period" minOccurs="1" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70QGmXHEemxAeHgG0yB7Q" name="factor" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70QG2XHEemxAeHgG0yB7Q" name="lowerLimit" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70QHGXHEemxAeHgG0yB7Q" name="upperLimit" maxOccurs="1" datatype="_I70PhGXHEemxAeHgG0yB7Q" description="FHIR_decimal"/>
+      <fields xmi:id="_I70QHWXHEemxAeHgG0yB7Q" name="dimensions" minOccurs="1" maxOccurs="1" datatype="_I70Oi2XHEemxAeHgG0yB7Q" description="FHIR_positiveInt"/>
+      <fields xmi:id="_I70QHmXHEemxAeHgG0yB7Q" name="data" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70QH2XHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70QIGXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70QIWXHEemxAeHgG0yB7Q" typeName="FHIR_ContactDetail" description="FHIR_ContactDetail">
+      <fields xmi:id="_I70QImXHEemxAeHgG0yB7Q" name="name" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70QI2XHEemxAeHgG0yB7Q" name="telecom" maxOccurs="2147483647" datatype="_I70O5GXHEemxAeHgG0yB7Q" description="FHIR_ContactPoint"/>
+      <fields xmi:id="_I70QJGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70QJWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70QJmXHEemxAeHgG0yB7Q" typeName="FHIR_Annotation" description="FHIR_Annotation">
+      <fields xmi:id="_I70QJ2XHEemxAeHgG0yB7Q" name="author[x]" maxOccurs="1" datatype="_I70Ou2XHEemxAeHgG0yB7Q" description="FHIR_DataType"/>
+      <fields xmi:id="_I70QKGXHEemxAeHgG0yB7Q" name="time" maxOccurs="1" datatype="_I70O4GXHEemxAeHgG0yB7Q" description="FHIR_dateTime"/>
+      <fields xmi:id="_I70QKWXHEemxAeHgG0yB7Q" name="text" minOccurs="1" maxOccurs="1" datatype="_I70PrGXHEemxAeHgG0yB7Q" description="FHIR_markdown"/>
+      <fields xmi:id="_I70QKmXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70QK2XHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70QLGXHEemxAeHgG0yB7Q" typeName="FHIR_RelatedArtifact" description="FHIR_RelatedArtifact">
+      <fields xmi:id="_I70QLWXHEemxAeHgG0yB7Q" name="type" minOccurs="1" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70QLmXHEemxAeHgG0yB7Q" name="label" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70QL2XHEemxAeHgG0yB7Q" name="display" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70QMGXHEemxAeHgG0yB7Q" name="citation" maxOccurs="1" datatype="_I70PrGXHEemxAeHgG0yB7Q" description="FHIR_markdown"/>
+      <fields xmi:id="_I70QMWXHEemxAeHgG0yB7Q" name="url" maxOccurs="1" datatype="_I70OWmXHEemxAeHgG0yB7Q" description="FHIR_url"/>
+      <fields xmi:id="_I70QMmXHEemxAeHgG0yB7Q" name="document" maxOccurs="1" datatype="_I70P62XHEemxAeHgG0yB7Q" description="FHIR_Attachment"/>
+      <fields xmi:id="_I70QM2XHEemxAeHgG0yB7Q" name="resource" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q" description="FHIR_Resource"/>
+      <fields xmi:id="_I70QNGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70QNWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypes xsi:type="mdmi:DTCStructured" xmi:id="_I70QNmXHEemxAeHgG0yB7Q" typeName="FHIR_Coding" description="FHIR_Coding">
+      <fields xmi:id="_I70QN2XHEemxAeHgG0yB7Q" name="system" maxOccurs="1" datatype="_I70PBWXHEemxAeHgG0yB7Q" description="FHIR_uri"/>
+      <fields xmi:id="_I70QOGXHEemxAeHgG0yB7Q" name="version" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70QOWXHEemxAeHgG0yB7Q" name="code" maxOccurs="1" datatype="_I70PPmXHEemxAeHgG0yB7Q" description="FHIR_code"/>
+      <fields xmi:id="_I70QOmXHEemxAeHgG0yB7Q" name="display" maxOccurs="1" datatype="_I70PbmXHEemxAeHgG0yB7Q" description="FHIR_fhirstring"/>
+      <fields xmi:id="_I70QO2XHEemxAeHgG0yB7Q" name="userSelected" maxOccurs="1" datatype="_I70PsWXHEemxAeHgG0yB7Q" description="FHIR_boolean"/>
+      <fields xmi:id="_I70QPGXHEemxAeHgG0yB7Q" name="id" maxOccurs="1" datatype="_I70N8GXHEemxAeHgG0yB7Q"/>
+      <fields xmi:id="_I70QPWXHEemxAeHgG0yB7Q" name="extension" maxOccurs="2147483647" datatype="_I70PCWXHEemxAeHgG0yB7Q" description="FHIR_Extension"/>
+    </datatypes>
+    <datatypeMaps xmi:id="_I70QPmXHEemxAeHgG0yB7Q" name="AddressToFHIR_ExtensionMap" fromMDMI="&#xA;&#xA;function mapAddressToFHIR_Extension(source,target) {&#xA;target.setValue('city', source.getValue('city'));&#xA;target.setValue('country', source.getValue('country'));&#xA;target.setValue('state', source.getValue('state'));&#xA;target.setValue('county', source.getValue('county'));&#xA;target.setValue('postalCode', source.getValue('postalCode'));&#xA;target.setValue('streetAddressLine', source.getValue('line'));&#xA;}&#xA;" toMDMI="function mapFHIR_ExtensionToAddress(source,target) {&#xA;&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QP2XHEemxAeHgG0yB7Q" name="CodedElementToFHIR_CodeableConceptMap" fromMDMI="function mapCodedElementToFHIR_CodeableConcept(s, t) {&#xA;&#xA;    if (s.getValue('code') != null) {&#xA;        t.setValueSafely('coding.code.value', s.getValue('code'));&#xA;    }&#xA;&#xA;    if (s.getValue('displayName') != null) {&#xA;        t.setValueSafely('text.value', s.getValue('displayName'));&#xA;    }&#xA;    &#xA;    if (s.getValue('displayName') != null) {&#xA;        t.setValueSafely('coding.display.value', s.getValue('displayName'));&#xA;    }&#xA;&#xA;    if (s.getValue('codeSystem') != null) {&#xA;        t.setValueSafely('coding.system.value', s.getValue('codeSystem'));&#xA;    }&#xA;&#xA;    if (s.getValue('codeSystemName') != null) {&#xA;        t.setValueSafely('coding.system.value', s.getValue('codeSystem'));&#xA;    }&#xA;}&#xA;" toMDMI="function mapFHIR_CodeableConceptToCodedElement(s,t) {&#xA;&#xA;&#x9;&#x9;if (s.getValue(&quot;coding&quot;) != null) {&#xA;&#x9;&#x9;&#x9;&#x9;var sc =  s.getValue(&quot;coding&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;if (sc.getValue(&quot;code&quot;) != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;t.setValue(&quot;code&quot;, sc.getValue(&quot;code&quot;).getValue(&quot;value&quot;));&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;if (sc.getValue(&quot;system&quot;) != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;t.setValue(&quot;codeSystem&quot;, sc.getValue(&quot;system&quot;).getValue(&quot;value&quot;));&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;if (sc.getValue(&quot;display&quot;) != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;t.setValue(&quot;displayName&quot;, sc.getValue(&quot;display&quot;).getValue(&quot;value&quot;));&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;}&#xA; &#x9; &#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QQGXHEemxAeHgG0yB7Q" name="CodedElementToFHIR_codeMap" fromMDMI="function mapCodedElementToFHIR_code(source, target) {&#xA;    if (source.getValue('displayName') != null) {&#xA;        target.setValueSafely('value', source.getValue('displayName'));&#xA;    } else {&#xA;        if (source.getValue(&quot;code&quot;) != null) {&#xA;            target.setValueSafely('value', source.getValue('code'));&#xA;        }&#xA;    }&#xA;}&#xA;" toMDMI="function mapFHIR_codeToCodedElement(source,target) {&#xA;&#xA;if (source.getValue('value') != null) {&#xA;target.setValue('code', source.getValue('value'));&#xA;}&#xA;&#xA;&#xA; &#xA;&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QQWXHEemxAeHgG0yB7Q" name="CodedElementToFHIR_Extension" fromMDMI="function mapCodedElementToFHIR_Extension(source,target) { &#xA;}&#xA; &#xA;" toMDMI="function mapFHIR_ExtensionToCodedElement(source, target) {&#xA;&#xA;&#xA;    if(source.getValue('valueCodeableConcept') != null) {&#xA;        var valueCodeableConcept = source.getValue('valueCodeableConcept');&#xA;&#xA;        var coding = valueCodeableConcept.getValue('coding');&#xA;&#xA;        if(coding != null) {&#xA;            var code = coding.getValue('code');&#xA;&#xA;            if(code != null) {&#xA;                target.setValue('code', code.getValue('value'));&#xA;            }&#xA;&#xA;            var system = coding.getValue('system');&#xA;&#xA;            if(system != null) {&#xA;                target.setValue('codeSystem', system.getValue('value'));&#xA;            }&#xA;&#xA;            var display = coding.getValue('display');&#xA;&#xA;            if(display != null) {&#xA;                target.setValue('displayName', display.getValue('value'));&#xA;            }&#xA;        }&#xA;&#xA;    }&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QQmXHEemxAeHgG0yB7Q" name="DateTimeToFHIR_dateMap" fromMDMI=" function mapDateTimeToFHIR_date(source,target) {&#xA; target.setValue('value', org.mdmi.core.engine.javascript.Utils.FormatDate(&quot;yyyyMMddHHmmssZ&quot;,&quot;yyyy-MM-dd&quot;,source.getValue()));&#xA;}&#xA;" toMDMI="function mapFHIR_dateToDateTime(source,target) {&#xA;&#xA;if (source.getValue('value') != null) {&#xA;&#x9;target.setValue(source.getValue('value'));&#xA;}&#xA;&#xA;&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QQ2XHEemxAeHgG0yB7Q" name="DateTimeToFHIR_dateTimeMap" fromMDMI="function mapDateTimeToFHIR_dateTime(source,target) {&#xA; target.setValue('value', org.mdmi.core.engine.javascript.Utils.FormatDate(&quot;yyyyMMdd&quot;,&quot;yyyy-MM-dd&quot;,source.getValue()));&#xA;}&#xA;" toMDMI="function mapFHIR_dateTimeToDateTime(source,target) {&#xA;target.setValue(source.getValue('value'));&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QRGXHEemxAeHgG0yB7Q" name="FHIR_AddressToAddressMap" fromMDMI="&#xA;function mapAddressToFHIR_Address(source,target) {&#xA;&#xA;&#xA;if (source.getValue('city') != null) {&#xA;&#x9;target.setValueSafely('city.value',source.getValue('city'));&#xA;}&#xA;&#xA;if (source.getValue('country') != null) {&#xA;&#x9;target.setValueSafely('country.value',source.getValue('country'));&#xA;}&#xA;&#xA;if (source.getValue('state') != null) {&#xA;&#x9;target.setValueSafely('state.value',source.getValue('state'));&#xA;}&#xA;&#xA;if (source.getValue('state') != null) {&#xA;&#x9;target.setValueSafely('state.value',source.getValue('state'));&#xA;}&#xA;&#xA;if (source.getValue('postalCode') != null) {&#xA;&#x9;target.setValueSafely('postalCode.value',source.getValue('postalCode'));&#xA;}&#xA;&#xA; &#xA;var streetSource = source.getXValue('streetAddressLine');&#xA;if (streetSource != null) {&#xA;&#x9;target.setValueSafely('line.value',streetSource.getValues());&#xA;}&#xA;&#xA; &#xA; &#xA;}&#xA;" toMDMI="function mapFHIR_AddressToAddress(source, target) {&#xA;&#xA;    if(source.getValue('city') != null) {&#xA;        target.setValue('city', source.getValue('city').getValue(&quot;value&quot;));&#xA;    }&#xA;    if(source.getValue('country') != null) {&#xA;        target.setValue('country', source.getValue('country').getValue(&quot;value&quot;));&#xA;    }&#xA;    if(source.getValue('state') != null) {&#xA;        target.setValue('state', source.getValue('state').getValue(&quot;value&quot;));&#xA;    }&#xA;    if(source.getValue('postalCode') != null) {&#xA;        target.setValue('postalCode', source.getValue('postalCode').getValue(&quot;value&quot;));&#xA;    }&#xA;&#xA;&#xA;&#xA;    var lineSource = source.getXValue('line');&#xA;    var streetAddressLineTarget = target.getXValue('streetAddressLine');&#xA;&#xA;    if(lineSource != null) {&#xA;&#xA;        for(index = 0; index &lt; lineSource.getValues().size(); index++) {&#xA;            var fhirString = lineSource.getValues().get(index);&#xA;            var value = fhirString.getValue(&quot;value&quot;);&#xA;            streetAddressLineTarget.addValue(value);&#xA;        }&#xA;    }&#xA;&#xA;}&#xA;&#xA;"/>
+    <datatypeMaps xmi:id="_I70QRWXHEemxAeHgG0yB7Q" name="InstanceIdentifierToFHIR_IdentifierMap" fromMDMI="function mapInstanceIdentifierToFHIR_Identifier(source, target) {&#xA;&#xA;    if(source.getValue('root') != null) {&#xA;        target.setValueSafely('system.value', source.getValue('root'));&#xA;    }&#xA;    if(source.getValue('extension') != null) {&#xA;        target.setValueSafely('value.value', source.getValue('extension'));&#xA;    }&#xA; //   if(source.getValue('assigningAuthorityName') != null) {&#xA; //       target.setValueSafely('assigner.value', source.getValue('assigningAuthorityName'));&#xA; //   }&#xA;&#xA;&#xA;&#xA;}&#xA;" toMDMI="function mapFHIR_IdentifierToInstanceIdentifier(source, target) {&#xA;&#xA;    if(source.getValue('system') != null) {&#xA;        target.setValue('root', source.getValue('system').getValue(&quot;value&quot;));&#xA;    }&#xA;    if(source.getValue('value') != null) {&#xA;        target.setValue('extension', source.getValue('value').getValue(&quot;value&quot;));&#xA;    }&#xA;    &#xA;//    if(source.getValue('assigner') != null) {&#xA;//        target.setValue('root', source.getValue('assigner').getValue(&quot;reference&quot;).getValue(&quot;value&quot;));&#xA;//    }&#xA;    &#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QRmXHEemxAeHgG0yB7Q" name="InstanceIdentifierToFHIR_ReferenceMap" fromMDMI="function mapInstanceIdentifierToFHIR_Reference(source, target, properties) {&#xA;&#xA;    if(properties.get('REFERENCEURL') != null) {&#xA;        if(source.getValue('extension') != null) {&#xA;            target.setValueSafely('reference.value', properties.get('REFERENCEURL') + source.getValue('extension'));&#xA;        }&#xA;&#xA;        if(source.getValue('root') != null) {&#xA;            target.setValueSafely('reference.value', properties.get('REFERENCEURL') + source.getValue('root'));&#xA;        }&#xA;    } else {&#xA;    &#x9;&#xA;    &#x9; if(source.getValue('extension') != null &amp;&amp; source.getValue('root') != null )  {&#xA;    &#x9;&#x9; target.setValueSafely('reference.value', source.getValue('root') + '::' + source.getValue('extension'));&#xA;    &#x9; } else {&#xA;    &#x9;      if(source.getValue('extension') != null) {&#xA;    &#x9;            target.setValueSafely('reference.value', source.getValue('extension'));&#xA;    &#x9;        }&#xA;&#xA;    &#x9;        if(source.getValue('root') != null) {&#xA;    &#x9;            target.setValueSafely('reference.value', source.getValue('root'));&#xA;    &#x9;        }  &#x9;&#x9; &#xA;    &#x9; }&#xA;  &#xA;&#xA;&#xA;    }&#xA;}&#xA;" toMDMI="function mapFHIR_ReferenceToInstanceIdentifier(s,t) { &#xA;    if (s.getValue(&quot;reference&quot;) != null) {&#xA;        var sc =  s.getValue(&quot;reference&quot;);&#xA;        if (sc.getValue(&quot;value&quot;) != null) {&#xA;            t.setValue(&quot;extension&quot;, sc.getValue(&quot;value&quot;));&#xA;        }&#xA;    }&#xA;}&#xA; &#xA;"/>
+    <datatypeMaps xmi:id="_I70QR2XHEemxAeHgG0yB7Q" name="PersonNameToFHIR_HumanNameMap" fromMDMI="function mapPersonNameToFHIR_HumanName(source, target) {&#xA;&#xA;&#xA;    var familySource = source.getXValue('family');&#xA;    if(familySource != null) {&#xA;        target.setValueSafely('family.value', familySource.getValues());&#xA;    }&#xA;&#xA;    var givenSource = source.getXValue('given');&#xA;    if(givenSource != null) {&#xA;        target.setValueSafely('given.value', givenSource.getValues());&#xA;    }&#xA;&#xA;    var prefixSource = source.getXValue('prefix');&#xA;    if(prefixSource != null) {&#xA;        target.setValueSafely('prefix.value', prefixSource.getValues());&#xA;    }&#xA;&#xA;    var suffixSource = source.getXValue('suffix');&#xA;    if(suffixSource != null) {&#xA;        target.setValueSafely('suffix.value', suffixSource.getValues());&#xA;    }&#xA;&#xA;&#xA;}&#xA;" toMDMI="function mapFHIR_HumanNameToPersonName(source, target) {&#xA;&#xA;    var familySource = source.getXValue('family');&#xA;    var familyTarget = target.getXValue('family');&#xA;&#xA;    if(familySource != null) {&#xA;&#xA;        for(index = 0; index &lt; familySource.getValues().size(); index++) {&#xA;            var fhirString = familySource.getValues().get(index);&#xA;            var value = fhirString.getValue(&quot;value&quot;);&#xA;            familyTarget.addValue(value);&#xA;  &#xA;        }&#xA;    }&#xA;&#xA;    var givenSource = source.getXValue('given');&#xA;    var givenTarget = target.getXValue('given');&#xA;&#xA;    if(givenSource != null) {&#xA;&#xA;        for(index = 0; index &lt; givenSource.getValues().size(); index++) {&#xA;            var fhirString = givenSource.getValues().get(index);&#xA;            var value = fhirString.getValue(&quot;value&quot;);&#xA;            givenTarget.addValue(value);&#xA;        &#xA;        }&#xA;    }&#xA;&#xA;    var suffixSource = source.getXValue('suffix');&#xA;    var suffixTarget = target.getXValue('suffix');&#xA;&#xA;    if(suffixSource != null) {&#xA;&#xA;        for(index = 0; index &lt; suffixSource.getValues().size(); index++) {&#xA;            var fhirString = suffixSource.getValues().get(index);&#xA;            var value = fhirString.getValue(&quot;value&quot;);&#xA;            suffixTarget.addValue(value);&#xA;         &#xA;        }&#xA;    }&#xA;&#xA;    var prefixSource = source.getXValue('prefix');&#xA;    var prefixTarget = target.getXValue('prefix');&#xA;&#xA;    if(prefixSource != null) {&#xA;&#xA;        for(index = 0; index &lt; prefixSource.getValues().size(); index++) {&#xA;            var fhirString = prefixSource.getValues().get(index);&#xA;            var value = fhirString.getValue(&quot;value&quot;);&#xA;            prefixTarget.addValue(value);&#xA;       &#xA;        }&#xA;    }&#xA;&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QSGXHEemxAeHgG0yB7Q" name="StringToFHIR_stringMap" fromMDMI="function mapStringToFHIR_fhirstring(source,target) {&#xA;&#x9;target.setValueSafely('value',source.getValue());&#xA;}&#xA;" toMDMI="function mapFHIR_fhirstringToString(source,target) {&#xA;if (source.getValue('value') != null) {&#xA;&#x9;target.setValue(source.getValue('value'));&#xA;}&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QSWXHEemxAeHgG0yB7Q" name="TelecomToFHIR_ContactPointMap" fromMDMI="" toMDMI="function mapFHIR_ContactPointToTelecom(source,target) {&#xA;&#xA;target.setValue('use', source.getValue('use').getValue('value'));&#xA;target.setValue('value', source.getValue('value').getValue('value'));&#xA;&#xA;&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QSmXHEemxAeHgG0yB7Q" name="BooleanToFHIR_booleanMap" fromMDMI="function mapBooleanToFHIR_boolean(source,target) {&#xA;if (source.getValue() != null) {&#xA;target.setValue('value',source.getValue());&#xA;}&#xA;}&#xA;" toMDMI="function mapFHIR_booleanToBoolean(source,target) {&#xA;if (source.getValue('value') != null) {&#xA;target.setValue(source.getValue('value'));&#xA;}&#xA;}&#xA;&#xA; &#xA;"/>
+    <datatypeMaps xmi:id="_I70QS2XHEemxAeHgG0yB7Q" name="InstanceIdentifierToFHIR_IidMap" fromMDMI="function mapInstanceIdentifierToFHIR_id(source,target) { &#xA;      if(source.getValue('root') != null) {&#xA;        target.setValueSafely('value', source.getValue('root'));&#xA;    }&#xA;}&#xA; &#xA;" toMDMI="function mapFHIR_idToInstanceIdentifier(source, target) {&#xA;&#xA;    if(source.getValue('value') != null) {&#xA;        target.setValue('root', source.getValue(&quot;value&quot;));&#xA;    }&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QTGXHEemxAeHgG0yB7Q" name="InstanceIdentifierToFHIR_stringMap" fromMDMI="function mapInstanceIdentifierToFHIR_string(source,target) { &#xA;}&#xA; &#xA;" toMDMI="function mapFHIR_stringToInstanceIdentifier(source, target) {&#xA;&#xA;    &#xA;    if(source.getValue('value') != null) {&#xA;        target.setValue('extension', source.getValue('value').getValue(&quot;value&quot;));&#xA;    }&#xA;    &#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QTWXHEemxAeHgG0yB7Q" name="PhysicalQuantityToFHIR_Quantity" fromMDMI="function mapPhysicalQuantityToFHIR_Quantity(source,target)&#xA;{&#xA;&#xA;&#x9; &#x9;if (source.getValue(&quot;value&quot;) != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9; target.setValueSafely('value.value', source.getValue('value'));&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;if (source.getValue(&quot;unit&quot;) != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9; target.setValueSafely('unit.value', source.getValue('unit'));&#xA;&#x9;&#x9;&#x9;&#x9;}&#x9;&#x9;&#xA;&#xA;}&#xA;" toMDMI="function mapFHIR_QuantityToPhysicalQuantity(source,target)&#xA;{&#xA;&#xA;if (source.getValue('value') != null) {&#xA;target.setValue('value', source.getValue('value').getValue('value'));&#xA;}&#xA;&#xA;if (source.getValue('unit') != null) {&#xA;target.setValue('unit', source.getValue('unit').getValue('value'));&#xA;}&#xA;&#xA;&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QTmXHEemxAeHgG0yB7Q" name="PhysicalQuantityToFHIR_Money" fromMDMI="function mapPhysicalQuantityToFHIR_Money(source,target)&#xA;{&#xA;&#xA;&#x9; &#x9;if (source.getValue(&quot;value&quot;) != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9; target.setValueSafely('value.value', source.getValue('value'));&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;if (source.getValue(&quot;unit&quot;) != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9; target.setValueSafely('unit.value', source.getValue('unit'));&#xA;&#x9;&#x9;&#x9;&#x9;}&#x9;&#x9;&#xA;&#xA;}&#xA;" toMDMI="function mapFHIR_MoneyToPhysicalQuantity(source,target)&#xA;{&#xA;&#xA;if (source.getValue('value') != null) {&#xA;target.setValue('value', source.getValue('value').getValue('value'));&#xA;}&#xA;&#xA;if (source.getValue('unit') != null) {&#xA;target.setValue('unit', source.getValue('unit').getValue('value'));&#xA;}&#xA;&#xA;&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QT2XHEemxAeHgG0yB7Q" name="FHIR_CodingToCodedElement" fromMDMI="function mapCodedElementToFHIR_Coding(s,t) {&#xA;&#xA;  &#xA;&#x9;&#x9;&#x9;&#x9;if (s.getValue('code') != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9; t.setValueSafely('code.value', s.getValue('code'));&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;  &#xA;&#x9;&#x9;&#x9;&#x9;if (s.getValue('displayName') != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9; t.setValueSafely('display.value', s.getValue('displayName'));&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA; &#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;if (s.getValue('codeSystem') != null) {&#xA;&#x9;&#x9;&#x9;&#x9; t.setValueSafely('system.value', s.getValue('codeSystem'));&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;}&#xA;" toMDMI="function mapFHIR_CodingToCodedElement(s, t) {&#xA;    if (s.getValue(&quot;code&quot;) != null) {&#xA;        t.setValue(&quot;code&quot;, s.getValue(&quot;code&quot;).getValue(&quot;value&quot;));&#xA;    }&#xA;    if (s.getValue(&quot;system&quot;) != null) {&#xA;        t.setValue(&quot;codeSystem&quot;, s.getValue(&quot;system&quot;).getValue(&quot;value&quot;));&#xA;    }&#xA;    if (s.getValue(&quot;display&quot;) != null) {&#xA;        t.setValue(&quot;displayName&quot;, s.getValue(&quot;display&quot;).getValue(&quot;value&quot;));&#xA;    }&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QUGXHEemxAeHgG0yB7Q" name="FHIR_SimpleQuantityToPhysicalQuantity" fromMDMI="function mapPhysicalQuantityToFHIR_SimpleQuantity(source,target) {&#xA; &#x9;if (source.getValue(&quot;value&quot;) != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9; target.setValueSafely('value.value', source.getValue('value'));&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;if (source.getValue(&quot;unit&quot;) != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9; target.setValueSafely('unit.value', source.getValue('unit'));&#xA;&#x9;&#x9;&#x9;&#x9;}&#x9;&#x9;&#xA;}&#xA;" toMDMI="function mapFHIR_SimpleQuantityToPhysicalQuantity(source,target)&#xA;{&#xA;if (source.getValue('value') != null) {&#xA;target.setValue('value', source.getValue('value').getValue('value'));&#xA;}&#xA;&#xA;if (source.getValue('unit') != null) {&#xA;target.setValue('unit', source.getValue('unit').getValue('value'));&#xA;}&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QUWXHEemxAeHgG0yB7Q" name="FHIR_instantToDateTime" fromMDMI="function mapDateTimeToFHIR_instant(source,target) {&#xA; target.setValueSafely('value', source.getValue());&#xA;}&#xA;" toMDMI="function mapFHIR_instantToDateTime(source,target)&#xA;{&#xA;  if(source.getValue('value') != null) {&#xA;        target.setValue(source.getValue(&quot;value&quot;));&#xA;    }&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QUmXHEemxAeHgG0yB7Q" name="FHIR_booleanToBoolean" fromMDMI="function mapBooleanToFHIR_boolean(source,target) {&#xA;if (source.getValue() != null) {&#xA;target.setValue('value',source.getValue());&#xA;}&#xA;}&#xA;" toMDMI="function mapFHIR_booleanToBoolean(source,target) {&#xA;if (source.getValue('value') != null) {&#xA;target.setValue(source.getValue('value'));&#xA;}&#xA;}&#xA;&#xA; &#xA;"/>
+    <datatypeMaps xmi:id="_I70QU2XHEemxAeHgG0yB7Q" name="FHIR_integerToInteger" fromMDMI="function mapIntegerToFHIR_integer(source,target)&#xA;{&#xA; target.setValueSafely('value.value', source.getValue());&#xA;}&#xA;" toMDMI="function mapFHIR_integerToInteger(source,target)&#xA;{&#xA;if (source.getValue('value') != null) {&#xA;target.setValue(source.getValue('value'));&#xA;}&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QVGXHEemxAeHgG0yB7Q" name="FHIR_integerToInteger" fromMDMI="function mapDateTimeToFHIR_instant(source,target) {&#xA; target.setValueSafely('value', source.getValue());&#xA;}&#xA;" toMDMI="function mapFHIR_instantToDateTime(source,target)&#xA;{&#xA;  if(source.getValue('value') != null) {&#xA;        target.setValue(source.getValue(&quot;value&quot;));&#xA;    }&#xA;}&#xA;"/>
+    <datatypeMaps xmi:id="_I70QVWXHEemxAeHgG0yB7Q" name="DocumentCustodianOrganizationPhoneTelecomToFHIR_ContactPointMap" fromMDMI="function mapDocumentCustodianOrganizationPhoneTelecomToFHIR_ContactPoint(source,target) {&#xA;target.setValueSafely('use.value', 'work');&#xA;target.setValueSafely('system.value', 'phone');&#xA;target.setValueSafely('value.value', source.getValue('value'));&#xA;}&#xA;" toMDMI=""/>
+    <datatypeMaps xmi:id="_I70QVmXHEemxAeHgG0yB7Q" name="DocumentCustodianOrganizationEmailContactTelecomToFHIR_ContactPointMap" fromMDMI="function mapDocumentCustodianOrganizationEmailContactTelecomToFHIR_ContactPoint(source,target) {&#xA;target.setValueSafely('use.value', 'work');&#xA;target.setValueSafely('system.value', 'email');&#xA;target.setValueSafely('value.value', source.getValue('value'));&#xA;}&#xA;" toMDMI=""/>
+    <datatypeMaps xmi:id="_I70QV2XHEemxAeHgG0yB7Q" name="DocumentCustodianOrganizationFaxContactTelecomTelecomToFHIR_ContactPointMap" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_I70QWGXHEemxAeHgG0yB7Q" name="DocumentCustodianOrganizationPagerContactTelecomTelecomToFHIR_ContactPointMap" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_I70QWWXHEemxAeHgG0yB7Q" name="DocumentCustodianOrganizationSMSContactTelecomToFHIR_ContactPointMap" fromMDMI="function mapDocumentCustodianOrganizationSMSContactTelemcomToFHIR_ContactPoint(source,target) {&#xA;target.setValueSafely('use.value', 'work');&#xA;target.setValueSafely('system.value', 'sms');&#xA;target.setValueSafely('value.value', source.getValue('value'));&#xA;}&#xA;" toMDMI=""/>
+    <datatypeMaps xmi:id="_I70QWmXHEemxAeHgG0yB7Q" name="DocumentCustodianOrganizationURLTelecomToFHIR_ContactPointMap" fromMDMI="function mapDocumentCustodianOrganizationURLTelecomToFHIR_ContactPoint(source,target) {&#xA;target.setValueSafely('use.value', 'work');&#xA;target.setValueSafely('system.value', 'url');&#xA;target.setValueSafely('value.value', source.getValue('value'));&#xA;}&#xA;" toMDMI=""/>
+    <datatypeMaps xmi:id="_I70QW2XHEemxAeHgG0yB7Q" name="GuardianBusinessPhoneContactTelecomToFHIR_ContactPointMap" fromMDMI="function mapGuardianBusinessPhoneContactTelecomToFHIR_ContactPoint(source,target) {&#xA;target.setValueSafely('use.value', 'work');&#xA;target.setValueSafely('system.value', 'phone');&#xA;target.setValueSafely('value.value', source.getValue('value'));&#xA;}&#xA;" toMDMI=""/>
+    <datatypeMaps xmi:id="_I70QXGXHEemxAeHgG0yB7Q" name="GuardianCellContactTelecomToFHIR_ContactPointMap" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_I70QXWXHEemxAeHgG0yB7Q" name="GuardianHomeContactTelecomToFHIR_ContactPointMap" fromMDMI="" toMDMI=""/>
+    <datatypeMaps xmi:id="_I70QXmXHEemxAeHgG0yB7Q" name="PatientPhoneContactTelecomToFHIR_ContactPointMap" fromMDMI="function mapPatientPhoneContactTelecomToFHIR_ContactPoint(source,target) {&#xA;&#x9;&#xA;    if(source.getValue('use').startsWith('home'))&#xA;    {&#xA;        target.setValue('use', 'HP');&#xA;    }&#xA;    else&#xA;    if(source.getValue('use').startsWith('work'))&#xA;    {&#xA;        target.setValue('use', 'WP');&#xA;    }&#xA;    else&#xA;    if(source.getValue('use').startsWith('mobile'))&#xA;    {&#xA;        target.setValue('use', 'MC');&#xA;    }&#xA;    else&#xA;    {&#xA;        target.setValue('use', 'home');&#xA;    }&#xA;&#x9; &#xA;&#x9;target.setValueSafely('system.value', 'phone');&#xA;&#x9;target.setValueSafely('value.value', source.getValue('value'));&#xA;}&#xA;&#xA;" toMDMI=""/>
+    <datatypeMaps xmi:id="_I70QX2XHEemxAeHgG0yB7Q" name="PatientEmailContactTelecomToFHIR_ContactPointMap" fromMDMI="function mapPatientEmailContactTelecomToFHIR_ContactPoint(source,target) {&#xA;&#x9;target.setValueSafely('use.value', source.getValue('use'));&#x9;&#xA;&#x9;target.setValueSafely('system.value', 'email');&#xA;&#x9;target.setValueSafely('value.value', source.getValue('value'));&#xA;}&#xA;" toMDMI=""/>
+  </mdmi:MessageGroup>
+</xmi:XMI>
