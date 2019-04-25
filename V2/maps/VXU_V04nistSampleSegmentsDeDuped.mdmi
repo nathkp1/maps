@@ -410,11 +410,15 @@
           <relationships xmi:id="_dnH_4GU3EemRyNJA9qXHoA" name="OrderDataEntererLastname" rule="value.getXValue().addValue('family',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_zbQXYGUzEemRyNJA9qXHoA" relatedSemanticElement="_xk_gdGUWEemJJeQSUof6YA"/>
           <relationships xmi:id="_hbqBcGU3EemRyNJA9qXHoA" name="OrderDataEntererFirstName" rule="value.getXValue().addValue('given',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_zbQXYGUzEemRyNJA9qXHoA" relatedSemanticElement="_xk_gdmUWEemJJeQSUof6YA"/>
           <relationships xmi:id="_YHyM4GU4EemRyNJA9qXHoA" name="OrderDataEntererMiddleInitial" rule="value.getXValue().addValue('middle',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_zbQXYGUzEemRyNJA9qXHoA" relatedSemanticElement="_xk_gd2UWEemJJeQSUof6YA"/>
+          <mapFromMdmi xmi:id="_iYZk4WdYEemKDZ6H0mBiYQ" name="MDMI2Message4OrderDataEntererNameRollUp" businessElement="_T8jxUWUyEemRyNJA9qXHoA"/>
+          <mapToMdmi xmi:id="_iYZk4GdYEemKDZ6H0mBiYQ" name="Message2MDMI4OrderDataEntererNameRollUp" businessElement="_T8jxUWUyEemRyNJA9qXHoA"/>
         </semanticElements>
         <semanticElements xmi:id="_udjuUGUzEemRyNJA9qXHoA" name="OrderDataEntererIDRollup" datatype="_xlEZGmUWEemJJeQSUof6YA" parent="_xk_gcmUWEemJJeQSUof6YA">
           <relationships xmi:id="_QXTP8GU0EemRyNJA9qXHoA" name="OrderDataEntererIDextension" rule="value.getXValue().addValue('extension',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_udjuUGUzEemRyNJA9qXHoA" relatedSemanticElement="_xk_gc2UWEemJJeQSUof6YA"/>
           <relationships xmi:id="_Mu10IGU3EemRyNJA9qXHoA" name="OrderDataEntererIDAuthority" rule="value.getXValue().addValue('assigningAuthorityName',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_udjuUGUzEemRyNJA9qXHoA" relatedSemanticElement="_xk_geGUWEemJJeQSUof6YA"/>
+          <mapFromMdmi xmi:id="_gb6DAGdYEemKDZ6H0mBiYQ" name="MDMI2Message4OrderDataEntererIDRollup" businessElement="_T8jxUmUyEemRyNJA9qXHoA"/>
           <computedValue xmi:id="_TOyrIGXcEemaNONugZwOBw" expression="SEMANTICROLLUP" language="JavaScript"/>
+          <mapToMdmi xmi:id="_gb5b8GdYEemKDZ6H0mBiYQ" name="Message2MDMI4OrderDataEntererIDRollup" businessElement="_T8jxUmUyEemRyNJA9qXHoA"/>
         </semanticElements>
         <semanticElements xmi:id="_xk_gc2UWEemJJeQSUof6YA" name="XCN.1" elementType="NORMAL" datatype="_xlEY92UWEemJJeQSUof6YA" parent="_xk_gcmUWEemJJeQSUof6YA" syntaxNode="_xk_frWUWEemJJeQSUof6YA"/>
         <semanticElements xmi:id="_xk_gdGUWEemJJeQSUof6YA" name="XCN.2" elementType="NORMAL" datatype="_xlEZA2UWEemJJeQSUof6YA" parent="_xk_gcmUWEemJJeQSUof6YA" children="_xk_gdWUWEemJJeQSUof6YA" syntaxNode="_xk_frmUWEemJJeQSUof6YA"/>
@@ -428,13 +432,17 @@
           <relationships xmi:id="_e664IGU5EemRyNJA9qXHoA" name="PlannedImmunizationAuthorLastName" rule="value.getXValue().addValue('family',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_Jz-6oGU5EemRyNJA9qXHoA" relatedSemanticElement="_xk_gfWUWEemJJeQSUof6YA"/>
           <relationships xmi:id="_kHcAUGU5EemRyNJA9qXHoA" name="PlannedImmunizationAuthorFirstName" rule="value.getXValue().addValue('given',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_Jz-6oGU5EemRyNJA9qXHoA" relatedSemanticElement="_xk_gf2UWEemJJeQSUof6YA"/>
           <relationships xmi:id="_YuwcIGXOEemRyNJA9qXHoA" name="PlannedImmunizationAuthorNameType" rule="value.getXValue().addValue('use',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_Jz-6oGU5EemRyNJA9qXHoA" relatedSemanticElement="_xk_ggmUWEemJJeQSUof6YA"/>
+          <mapFromMdmi xmi:id="_rerz8WdYEemKDZ6H0mBiYQ" name="MDMI2Message4PlannedImmunizationAuthorNameRollUP" businessElement="_xlAuMGUWEemJJeQSUof6YA"/>
           <computedValue xmi:id="_SwSuUGU5EemRyNJA9qXHoA" expression="SEMANTICROLLUP" language="JavaScript"/>
+          <mapToMdmi xmi:id="_rerz8GdYEemKDZ6H0mBiYQ" name="Message2MDMI4PlannedImmunizationAuthorNameRollUP" businessElement="_xlAuMGUWEemJJeQSUof6YA"/>
         </semanticElements>
         <semanticElements xmi:id="_CLzoUGU5EemRyNJA9qXHoA" name="PlannedImmunizationAuthorIDRollup" datatype="_xlEZGmUWEemJJeQSUof6YA" parent="_xk_ge2UWEemJJeQSUof6YA">
           <relationships xmi:id="_TsJ5oGU5EemRyNJA9qXHoA" name="PlannedImmunizationAuthorIDExtension" rule="value.getXValue().addValue('extension',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_CLzoUGU5EemRyNJA9qXHoA" relatedSemanticElement="_xk_gfGUWEemJJeQSUof6YA"/>
           <relationships xmi:id="_ZM7akGU5EemRyNJA9qXHoA" name="PlannedImmunizationAuthorIDAuthority" rule="value.getXValue().addValue('assigningAuthorityName',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_CLzoUGU5EemRyNJA9qXHoA" relatedSemanticElement="_xk_ggGUWEemJJeQSUof6YA"/>
           <relationships xmi:id="_QIS8oGXOEemRyNJA9qXHoA" name="PlannedImmunizationAuthorIDType" rule="value.getXValue().addValue('use',  '&lt;&lt;LOCALSEMANTICVALUE>>>'  );" context="_CLzoUGU5EemRyNJA9qXHoA" relatedSemanticElement="_xk_gg2UWEemJJeQSUof6YA"/>
+          <mapFromMdmi xmi:id="_nyZvcWdYEemKDZ6H0mBiYQ" name="MDMI2Message4PlannedImmunizationAuthorIDRollup" businessElement="_xlAuEGUWEemJJeQSUof6YA"/>
           <computedValue xmi:id="_JG3V8GU5EemRyNJA9qXHoA" expression="SEMANTICROLLUP" language="JavaScript"/>
+          <mapToMdmi xmi:id="_nyZvcGdYEemKDZ6H0mBiYQ" name="Message2MDMI4PlannedImmunizationAuthorIDRollup" businessElement="_xlAuEGUWEemJJeQSUof6YA"/>
         </semanticElements>
         <semanticElements xmi:id="_xk_gfGUWEemJJeQSUof6YA" name="XCN.1" elementType="NORMAL" datatype="_xlEY92UWEemJJeQSUof6YA" parent="_xk_ge2UWEemJJeQSUof6YA" syntaxNode="_xk_ftmUWEemJJeQSUof6YA"/>
         <semanticElements xmi:id="_xk_gfWUWEemJJeQSUof6YA" name="XCN.2" elementType="NORMAL" datatype="_xlEZA2UWEemJJeQSUof6YA" parent="_xk_ge2UWEemJJeQSUof6YA" children="_xk_gfmUWEemJJeQSUof6YA" syntaxNode="_xk_ft2UWEemJJeQSUof6YA"/>
@@ -536,11 +544,23 @@
         <semanticElements xmi:id="_xk_gtmUWEemJJeQSUof6YA" name="OBX" elementType="NORMAL" datatype="_xlEZA2UWEemJJeQSUof6YA" parent="_xk_gtWUWEemJJeQSUof6YA" children="_xk_gt2UWEemJJeQSUof6YA _xk_guGUWEemJJeQSUof6YA _xk_guWUWEemJJeQSUof6YA _xk_gvWUWEemJJeQSUof6YA _xk_gvmUWEemJJeQSUof6YA _xk_gv2UWEemJJeQSUof6YA _xk_gwGUWEemJJeQSUof6YA" syntaxNode="_xk_f8GUWEemJJeQSUof6YA"/>
         <semanticElements xmi:id="_xk_gt2UWEemJJeQSUof6YA" name="OBX.1" elementType="NORMAL" datatype="_xlEY92UWEemJJeQSUof6YA" parent="_xk_gtmUWEemJJeQSUof6YA" syntaxNode="_xk_f8WUWEemJJeQSUof6YA"/>
         <semanticElements xmi:id="_xk_guGUWEemJJeQSUof6YA" name="OBX.2" elementType="NORMAL" datatype="_xlEY92UWEemJJeQSUof6YA" parent="_xk_gtmUWEemJJeQSUof6YA" syntaxNode="_xk_f8mUWEemJJeQSUof6YA"/>
-        <semanticElements xmi:id="_xk_guWUWEemJJeQSUof6YA" name="OBX.3" description="a" elementType="NORMAL" datatype="_xlEZC2UWEemJJeQSUof6YA" parent="_xk_gtmUWEemJJeQSUof6YA" syntaxNode="_xk_f82UWEemJJeQSUof6YA"/>
+        <semanticElements xmi:id="_xk_guWUWEemJJeQSUof6YA" name="OBX.3" description="a" elementType="NORMAL" datatype="_xlEZC2UWEemJJeQSUof6YA" parent="_xk_gtmUWEemJJeQSUof6YA" syntaxNode="_xk_f82UWEemJJeQSUof6YA">
+          <mapFromMdmi xmi:id="_qLSngWdaEemKDZ6H0mBiYQ" name="MDMI2Message4OBX.3" businessElement="_xlEY2WUWEemJJeQSUof6YA"/>
+          <mapToMdmi xmi:id="_qLSngGdaEemKDZ6H0mBiYQ" name="Message2MDMI4OBX.3" businessElement="_xlEY2WUWEemJJeQSUof6YA"/>
+        </semanticElements>
         <semanticElements xmi:id="_xk_gvWUWEemJJeQSUof6YA" name="OBX.4" elementType="NORMAL" datatype="_xlEY92UWEemJJeQSUof6YA" parent="_xk_gtmUWEemJJeQSUof6YA" syntaxNode="_xk_f92UWEemJJeQSUof6YA"/>
-        <semanticElements xmi:id="_xk_gvmUWEemJJeQSUof6YA" name="OBX.11" elementType="NORMAL" datatype="_xlEY92UWEemJJeQSUof6YA" parent="_xk_gtmUWEemJJeQSUof6YA" syntaxNode="_xk_f-GUWEemJJeQSUof6YA"/>
-        <semanticElements xmi:id="_xk_gv2UWEemJJeQSUof6YA" name="OBX.14" elementType="NORMAL" datatype="_xlEY92UWEemJJeQSUof6YA" parent="_xk_gtmUWEemJJeQSUof6YA" syntaxNode="_xk_f-WUWEemJJeQSUof6YA"/>
-        <semanticElements xmi:id="_xk_gwGUWEemJJeQSUof6YA" name="OBX.17" description="a" elementType="NORMAL" datatype="_xlEZC2UWEemJJeQSUof6YA" parent="_xk_gtmUWEemJJeQSUof6YA" syntaxNode="_xk_f-mUWEemJJeQSUof6YA"/>
+        <semanticElements xmi:id="_xk_gvmUWEemJJeQSUof6YA" name="OBX.11" elementType="NORMAL" datatype="_xlEY92UWEemJJeQSUof6YA" parent="_xk_gtmUWEemJJeQSUof6YA" syntaxNode="_xk_f-GUWEemJJeQSUof6YA">
+          <mapFromMdmi xmi:id="_wJENgGdaEemKDZ6H0mBiYQ" name="MDMI2Message4OBX.11" businessElement="_FSNnRmX3EemfqvDexfcKpg" rule="DATATYPEMAP:mapCodedElementToString"/>
+          <mapToMdmi xmi:id="_wJDmcGdaEemKDZ6H0mBiYQ" name="Message2MDMI4OBX.11" businessElement="_FSNnRmX3EemfqvDexfcKpg" rule="DATATYPEMAP:mapStringToCodedElement"/>
+        </semanticElements>
+        <semanticElements xmi:id="_xk_gv2UWEemJJeQSUof6YA" name="OBX.14" elementType="NORMAL" datatype="_xlEY92UWEemJJeQSUof6YA" parent="_xk_gtmUWEemJJeQSUof6YA" syntaxNode="_xk_f-WUWEemJJeQSUof6YA">
+          <mapFromMdmi xmi:id="_x60fAWdaEemKDZ6H0mBiYQ" name="MDMI2Message4OBX.14" businessElement="_FSNnR2X3EemfqvDexfcKpg" rule="DATATYPEMAP:mapDateTimeToString"/>
+          <mapToMdmi xmi:id="_x60fAGdaEemKDZ6H0mBiYQ" name="Message2MDMI4OBX.14" businessElement="_FSNnR2X3EemfqvDexfcKpg" rule="DATATYPEMAP:mapStringToDateTime"/>
+        </semanticElements>
+        <semanticElements xmi:id="_xk_gwGUWEemJJeQSUof6YA" name="OBX.17" description="a" elementType="NORMAL" datatype="_xlEZC2UWEemJJeQSUof6YA" parent="_xk_gtmUWEemJJeQSUof6YA" syntaxNode="_xk_f-mUWEemJJeQSUof6YA">
+          <mapFromMdmi xmi:id="_zfcTcWdaEemKDZ6H0mBiYQ" name="MDMI2Message4OBX.17" businessElement="_FSNnRWX3EemfqvDexfcKpg"/>
+          <mapToMdmi xmi:id="_zfcTcGdaEemKDZ6H0mBiYQ" name="Message2MDMI4OBX.17" businessElement="_FSNnRWX3EemfqvDexfcKpg"/>
+        </semanticElements>
         <semanticElements xmi:id="_xk_gxGUWEemJJeQSUof6YA" name="NTE" elementType="NORMAL" datatype="_xlEY92UWEemJJeQSUof6YA" parent="_xk_gtWUWEemJJeQSUof6YA" syntaxNode="_xk_f_mUWEemJJeQSUof6YA"/>
       </elementSet>
     </models>
